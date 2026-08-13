@@ -1,7 +1,10 @@
+
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 13/08/2026
+
+**Status:** ⬜ iniciado
+
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -59,35 +62,40 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 | Nome completo | Matrícula | GitHub |
 |---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Gustavo Bertoluzzi Cardoso| 22.123.016-2 | Gugzica3 |
+| Isabella Vieira Silva Rosseto | 22.222.036-0 | IsaRosseto |
+| Kayky Pires | 22.222.040-2	| kaykyypiress |
+| Matheus Ferreira de Freitas | xx.xxx.xxx-x | freitasfmatheus |
+| Rafael Dias | 22.222.039-4 | rafadias008 |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+*MindFlow AI* - Classificação Temporal de Estados Cognitivos em Videoconferências utilizando Redes LSTM e Fusão Multimodal
 
 ## 0.3 Orientador(a)
+Prof.ª Dra. Leila Cristina Carneiro Bergamasco
 
-{{...}}
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
 Marque e descreva:
 
-- [ ] sistema/aplicação interativa;
+- [X] sistema/aplicação interativa;
 - [ ] algoritmo;
-- [ ] modelo de IA/ML/LLM;
+- [X] modelo de IA/ML/LLM;
 - [ ] biblioteca/API/framework;
 - [ ] análise de dataset;
 - [ ] estudo/benchmark/avaliação experimental;
 - [ ] infraestrutura/backend;
 - [ ] componente embarcado/IoT;
-- [ ] outro: {{...}}.
+- [ ] outro: 
 
-**Descrição:** {{...}}
+**Descrição:** Sistema - Estamos desenvolvendo uma aplicação de classificação de estados cognitivos com telas
+Modelo de IA - 
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
-- [ ] Sim, a interface já faz parte do TCC.
+- [X] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
