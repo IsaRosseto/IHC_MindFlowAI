@@ -109,11 +109,11 @@ Modelo de IA -
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+{{Analise comportamental dos participantes de uma reunião via camera}}
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+{Consultor vendendo produtos de forma online, ele não tem um feedback imediato do público}
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
@@ -123,17 +123,17 @@ Complete, se ajudar:
 
 Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
 
-{{...}}
+{{Permite analisar e classificar comportamentos}}
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+{{Melhora da acertividade da apresentação, engajar mais o público}}
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| {{Primeiro projeto para testar fusão multimodal}} | {{Em videoconferencias}} |
 
 ---
 
@@ -143,7 +143,7 @@ Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar 
 
 Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
 
-{{[F/H/?] ...}}
+{{Principal usuário é o organizador da videoconferência}}
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -151,13 +151,13 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| {{Usuário Final}} | {{Afetado diretamente}} | {{Interação com o chatbot }} | {{...}} |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| {{Participante da videoconferência}} | {{Obter melhor aproveitamento da reunião}} | não | {{melhora no feedback}} |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
@@ -173,7 +173,7 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-{{[F/H/?] ...}}
+{{Desenvolver uma apresentação com melhor aproveitamento/entendimento do público melhor preparação para os palestrantes/professores}}
 
 ## 3.2 Quais são as atividades mais importantes?
 
@@ -185,7 +185,7 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+{{[F/H/?] ..}}
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
@@ -199,15 +199,15 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-{{[F/H/?] ...}}
+{{Atualmente, não existe uma métrica para o palestrante se guiar e conseguir feedbacks mais técnicos da sua apresentação}}
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+{{Arriscado tentar deduzir o comportamento humano, analisar qual momento ficaram mais interessados ou desmotivados.}}
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-{{[F/H/?] ...}}
+{{}}
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
