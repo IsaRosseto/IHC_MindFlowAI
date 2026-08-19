@@ -1,4 +1,5 @@
 
+
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
 **Data:** 13/08/2026
@@ -90,8 +91,10 @@ Marque e descreva:
 - [ ] componente embarcado/IoT;
 - [ ] outro: 
 
-**Descrição:** Sistema - Estamos desenvolvendo uma aplicação de classificação de estados cognitivos com telas
-Modelo de IA - 
+**Descrição:** 
+> IA - Tem um modelo LSTM treinado no DAiSEE que classifica quatro estados cognitivos (engajamento, tédio, confusão, frustração). 
+
+> SISTEMA - O sistema que roda esse modelo durante a videochamada: captura a webcam localmente, processa, agrega por janela de tempo e mostra pro comunicador via Semáforo Cognitivo ao vivo e dashboard depois. O modelo é o motor, mas a aplicação/interface já é parte formal do que o TCC promete entregar.
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
@@ -99,41 +102,35 @@ Modelo de IA -
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
-
-> Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
+**Explique o que está formalmente previsto no TCC:** 
+> Teremos  uma "camada de aplicação" desenhada, com dois trilhos: um de tempo real (Semáforo Cognitivo, alerta discreto sobre o estado do grupo durante a sessão) e um de pós-sessão (Dashboard com timeline de engajamento e um chatbot RAG pra consultar a sessão). Nada disso está implementado ainda
 
 ---
 
 # 1. Entendendo a contribuição do projeto
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
-
-{{...}}
+> O MindFlow AI observa, pela webcam, como as pessoas em uma videochamada estão reagindo (engajadas, entediadas, confusas ou frustradas) e devolve esse retrato ao facilitador da reunião em tempo real, sem gravar ou transmitir nenhum vídeo.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+> [F] O tempo em reuniões virtuais explodiu, segundo o Microsoft Work Trend Index, subiu 252% entre 2020 e 2022 , e com isso professores, palestrantes e facilitadores perderam boa parte dos sinais não-verbais que usariam presencialmente pra perceber se o público está ligado, perdido ou de saco cheio. 
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
-Complete, se ajudar:
+> Nosso TCC produz, melhora, analisa ou permite classificar, de forma contínua e temporal, o estado afetivo-cognitivo de participantes de uma videochamada a partir de sinais visuais captados pela própria webcam.
 
-> “Nosso TCC produz, melhora, analisa ou permite `{{capacidade}}`.”
-
-Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
-
-{{...}}
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+> [H] A expectativa é que o professor ou palestrante consiga perceber, na hora, que o grupo está perdendo engajamento ou se confundindo, e mude o rumo ali mesmo em vez de só descobrir depois, na nota da prova ou no silêncio do chat. Em treinamento corporativo é parecido: dar um retorno objetivo pra quem apresenta. 
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| Fusão multimodal precoce (early fusion)com pré-processamento (Z-score, BorderlineSMOTE, PCA com 95% de variância retida) e uma arquitetura LSTM multi-saída para quatro dimensões cognitivas simultâneas| Um assistente de apoio ao facilitador em aulas, treinamentos corporativos e apresentações técnicas, que sinaliza em tempo real o estado predominante do grupo sem exigir que ninguém acione câmera ou responda enquetes |
+| Arquitetura Privacy by Design/Edge AI alinhada à LGPD | Um produto viável de ser adotado em instituições de ensino ou empresas com restrições reais de privacidade, sem depender de processamento em nuvem de vídeo/áudio dos participantes |
 
 ---
 
@@ -141,9 +138,8 @@ Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar 
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
-
-{{[F/H/?] ...}}
+> [H] Dois perfis, mas de formas bem diferentes. O comunicador (professor, palestrante, facilitador) é quem olha a tela: Semáforo em tempo real, Dashboard depois e decide algo a partir disso. 
+> Os participantes da chamada também "interagem" no sentido de que são a fonte dos dados (webcam capturada e processada), mas não veem nenhuma tela.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -151,20 +147,25 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| Professor/instrutor em aula ou treinamento | Usuário direto principal do trilho de tempo real | Acompanharia o Semáforo Cognitivo durante a aula e ajustaria ritmo/conteúdo em resposta a quedas de engajamento ou aumento de confusão | H |
+| Palestrante/apresentador corporativo | Usuário direto do trilho de tempo real e do dashboard pós-sessão | Monitoraria o estado da audiência ao vivo e revisaria a timeline depois, para entender quais trechos da apresentação geraram mais confusão ou frustração|H| 
+| Participante da videochamada | Fonte de dados, não usuário da interface | Teria sua webcam processada localmente durante a sessão | F (cliente local em sessão) |
+| Pesquisador/orientador acadêmico | Usuário indireto do modelo em si, fora do escopo do sistema pronto | Poderia usar o pipeline de extração e o modelo como base para outros estudos sobre estados afetivos em ambientes de aprendizagem | H|
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
 | {{...}} | {{...}} | sim/não | {{...}} |
+| Participante da videochamada | Tem seu comportamento visual inferido e classificado, mesmo sem ver o resultado; pode ser afetado por decisões que o comunicador toma com base nessa inferência |não |H |
+Instituição/empresa que promove a sessão | Pode adotar a ferramenta como política de qualidade de ensino/apresentação, ou usar dados agregados para avaliar formadores | provavelmente não diretamente| ? |
+ Encarregado de dados/DPO da instituição| Responsável por garantir que o uso da ferramenta está de acordo com a LGPD| não, mas pode precisar auditar/aprovar o uso | H | 
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-{{[F/H/?] ...}}
-
+> [H] O comunicador está com a atenção dividida, falando, compartilhando tela, controlando o tempo,  então a tela de tempo real precisa ser lida de relance, sem número ou gráfico complicado. Daí o semáforo fazer mais sentido que um dashboard completo nesse momento. No pós-sessão já sobra mais tempo pra olhar uma timeline ou conversar com o chatbot. 
 ---
 
 # 3. Entendendo objetivos e atividades
@@ -173,23 +174,23 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-{{[F/H/?] ...}}
+> [H] Ele quer conduzir a aula ou apresentação de um jeito que as pessoas realmente entendam e não saiam perdidas ou frustradas, manter a sessão funcionando enquanto ela acontece, não descobrir depois que deu errado. O objetivo não é "ver o semáforo", é decidir na hora se vale parar pra pergunta, trocar de exemplo, dar uma pausa ou acelerar. Hoje ele não tem como saber isso olhando pra a galeria e apresentando o contéudo ao mesmo tempo.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+A01 |Perceber, durante a sessão, se o grupo está engajado, entediado, confuso ou frustrado| Comunicador (professor/palestrante/facilitador)| Alta frequência (toda sessão), alta criticidade| H| 
+A02 | Ajustar a condução da sessão em resposta a esse estado (mudar ritmo, abrir pergunta, dar exemplo)| Comunicador| Frequência variável dentro da sessão, alta criticidade| H|
+A03| Revisar, após a sessão, em quais momentos o grupo mais se confundiu ou desengajou, para melhorar a próxima vez| Comunicador| Baixa frequência (pós-sessão), criticidade média/alta para formação continuada| H |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-{{[F/H/?] ...}}
+> [H] A01 (perceber o estado do grupo) é a mais frequente porque roda o tempo todo, é o pano de fundo da sessão inteira. A A02 (ajustar a condução) é mais pontual, só entra quando o sinal justifica mudar algo.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-{{[F/H/?] ...}}
+> [H] A01 é a mais crítica das três porque as outras dependem dela. Se o comunicador não percebe direito o estado do grupo, seja porque o sistema deu falso negativo (achou que tava tudo bem) ou falso positivo (alertou à toa), ele toma decisão errada ou não toma decisão nenhuma. E isso não é só um risco teórico: os próprios resultados do TCC1 mostram desempenho fraco em algumas dimensões (como reconhecer o estado de Tédio) 
 
 ---
 
@@ -199,31 +200,34 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-{{[F/H/?] ...}}
+> [H] Hoje o comunicador confia na própria leitura visual e intuitiva do grupo. Zoom, Teams e Meet não têm nenhum indicador estruturado de estado cognitivo do grupo; o máximo que existe são reações manuais tipo emoji, enquete pontual ou métrica superficial (quem tá com câmera ligada, quem falou). No meio acadêmico, o mais comum é só perguntar "todo mundo entendeu?" e confiar na resposta (ou no silêncio).
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-{{[F/H/?] ...}}
+> [H] É difícil pegar sinal sutil (tédio, por exemplo) quando o rosto tá mal enquadrado, mal iluminado ou a câmera simplesmente desligada. É cansativo ficar escaneando uma grade de vinte rostos enquanto também fala e compartilha tela. E é pouco transparente porque, mesmo quando o comunicador nota algo, não sabe se é o grupo todo ou só a impressão de uma ou duas pessoas.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-{{[F/H/?] ...}}
-
+> [H] No mínimo: qual proporção do grupo está em cada estado num dado momento, se isso tá subindo, caindo ou estável ao longo da sessão, e se dá pra associar uma queda de engajamento ou pico de confusão a um ponto específico da apresentação (um slide, um tópico). É basicamente o que o Dashboard e o Chatbot pretendem entregar depois da sessão.
+> 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-{{[F/H/?] ...}}
+> [H] Se o comunicador não percebe a tempo, a aula segue por um caminho que já não tá funcionando: o grupo se distancia mais, ou a frustração não resolvida compromete a persistência (. E no sentido contrário: se o MindFlow errar, o comunicador pode interromper a aula à toa, ou pior, parar de confiar na ferramenta depois de um erro perceptível. Esse risco de adoção já aparece meio implícito quando o artigo insiste que é "apoio analítico, não diagnóstico".
 
 ## 4.5 Conte uma situação concreta.
 
 Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
 
-{{[F/H/?] narrativa...}}
+> [H] Uma professora dá aula pra trinta alunos por videoconferência. Compartilha slide, tenta de vez em quando olhar a grade, só oito têm câmera ligada, em miniaturas pequenas num canto da tela. Ela entra num tópico mais difícil da matéria. Metade da turma começa a se perder, mas isso não aparece em lugar nenhum: ninguém liga o microfone, ninguém reage no chat. Ela segue o plano até o fim sem perceber que perdeu parte da turma ali. Só na próxima prova, quando a maioria erra as questões daquele tópico, ela entende tarde demais pra ajustar aquela aula  que devia ter parado, dado outro exemplo ou aberto espaço pra pergunta naquele momento.
 
 ## 4.6 Que evidência existe hoje?
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+Microsoft Work Trend Index (2022)| Aumento de 252% no tempo semanal em reuniões virtuais entre 2020-2022 | Não fala especificamente sobre engajamento/percepção do facilitador, só sobre volume de reuniões | 
+Bailenson, J. N. (2021), "Nonverbal Overload"| Fundamenta teoricamente os mecanismos de sobrecarga em videoconferência (contato visual excessivo, autoexposição, redução de mobilidade, sobrecarga cognitiva)| É um argumento teórico, não um estudo com facilitadores medindo diretamente a "cegueira situacional" |
+Fauville et al. (2021), amostra de 10.591 participantes| Confirma empiricamente associação entre esses mecanismos e maior fadiga, com efeitos diferentes por gênero | Foco em fadiga dos participantes, não especificamente na percepção do facilitador sobre o grupo | 
+Resultados preliminares do próprio TCC1 (POC sobre 22% do DAiSEE) | Mostra que é tecnicamente viável extrair esses sinais e classificá-los, ainda que com acurácia parcial| Amostra pequena, desbalanceada, sem validação com usuários reais ainda
 
 ---
 
@@ -231,31 +235,33 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-{{[F/H/?] ...}}
+> [H] Sala de aula remota ou híbrida, treinamento corporativo online, apresentação técnica pra equipe distribuída, reunião colaborativa de porte médio com um facilitador claro. Não parece fazer muito sentido em conversa 1:1 ou reunião pequena e informal, onde a leitura humana já dá conta.
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-{{[F/H/?] ...}}
+> [F] É pra rodar no dispositivo do participante. Na prática, notebook ou desktop com webcam, que é o cenário padrão de videoconferência corporativa/acadêmica. Celular não é mencionado ainda.
 
 ## 5.3 Existem condições físicas relevantes?
 
 Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
 
-{{[F/H/?] ...}}
+> [H] Várias: iluminação ruim ou ângulo de câmera ruim degradam a extração dos landmarks; ver só busto e rosto limita o que dá pra tirar da postura; conexão instável afeta a taxa de captura. 
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-{{[F/H/?] ...}}
+> [H] Bastante coisa. Tem uma assimetria clara entre quem tá sendo "lido" (os participantes) e quem recebe o resultado (o comunicador) isso já levanta questão de consentimento. Em empresa, pode rolar receio de a ferramenta virar avaliação de desempenho individual, mesmo não sendo essa a intenção do sistema. Na universidade, provavelmente precisa de aprovação institucional antes de usar com aluno de verdade, por causa da LGPD.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-{{[F/H/?] ...}}
+> [F] Sim, persistir só representações reduzidas e metadados, sem dado biométrico bruto, e mostrar timeline com momentos críticos no pós-sessão. Ou seja, tem histórico por sessão, mas de propósito sem o dado bruto.
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-{{[F/H/?] ...}}
+> [H] Sim, pros dois lados. 
+> Falso negativo (não avisa uma queda real de engajamento) faz o comunicador perder a chance de ajustar a aula, a mesma falha de sempre, só que agora com falsa sensação de segurança. 
+> Falso positivo (aponta frustração que não existe) pode gerar interrupção desnecessária ou fazer o comunicador parar de confiar na ferramenta,.
 
 ---
 
