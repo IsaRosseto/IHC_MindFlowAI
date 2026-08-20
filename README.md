@@ -18,31 +18,34 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 ## Identificação
 
 **Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC}}  
-**Orientador(a):** {{NOME}}  
+**TCC/projeto de origem:** MindFlow AI - Classificação Temporal de Estados Cognitivos em Videoconferências utilizando Redes LSTM e Fusão Multimodal  
+**Orientador(a):** Prof.ª Dra. Leila Cristina Carneiro Bergamasco 
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** FEI - Fundação Educacional Pe Inaciana de Sabóia Medeiros   
+**Semestre:** 8º semestre
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Gustavo Bertoluzzi Cardoso | 22.123.016-2 | @Gugzica3 | {{...}} |
+| Isabella Vieira Silva Rosseto | 22.222.036-0 | @IsaRosseto | {{...}} |
+| Kayky Pires de Paula | 22.222.040-2 | @Kaykyypiress | {{...}} |
+| Matheus Ferreira de Freitas | {{matrícula}} | @Freitasfmatheus | {{...}} |
+| Rafael Dias | 22.222.039-4 | @Rafadias008 | {{...}} |
 
 ## Relação entre TCC e projeto de IHC
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | {{...}} |
-| Resultado técnico esperado do TCC | {{algoritmo, estudo, sistema, modelo, análise, API...}} |
-| O TCC já previa interface? | sim / não / parcialmente |
-| Capacidade técnica que pode gerar valor para pessoas | {{...}} |
-| Usuário principal adotado em IHC | {{...}} |
-| Objetivo principal desse usuário | {{...}} |
-| Interface/recorte explorado na disciplina | {{...}} |
-| Relação com o escopo formal do TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra |
+| Tema central do TCC | Desenvolvimento de um sistema de IA para analisar temporalmente sinais visuais em videoconferências e estimar engajamento, tédio, confusão e frustração dos participantes, oferecendo feedback ao comunicador. |
+| Resultado técnico esperado do TCC | Sistema de IA capaz de classificar temporalmente estados afetivo-cognitivos dos participantes e apresentar essas informações de forma compreensível ao comunicador por meio de indicadores e dashboards |
+| O TCC já previa interface? | sim  |
+| Capacidade técnica que pode gerar valor para pessoas | identificar automaticamente mudanças de engajamento, confusão, tédio e frustração durante a videoconferência |
+| Usuário principal adotado em IHC | professor, palestrantes |
+| Objetivo principal desse usuário | Compreender a reação do público e ajustar a apresentação quando necessário |
+| Interface/recorte explorado na disciplina | Painel com indicadores em tempo real e dashboard pós-sessão |
+| Relação com o escopo formal do TCC | Parte prevista |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
