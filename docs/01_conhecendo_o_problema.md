@@ -389,13 +389,13 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Construção de interfaces interativas e funcionais para os palestrantes/professores | Identificar pontos de melhorias para as apresentações/aulas | palestrantes/professores | H |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01 | {{ação}} | {{objetivo}} | alta/média/baixa |
+| F01 | Visualizar os indicadores da reunião | Para conseguir identificar pontos de melhoria em suas palestras/aulas | alta |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
