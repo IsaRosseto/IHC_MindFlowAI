@@ -307,8 +307,9 @@ Demonstração dos indicadores da reunião são muito macro, sem conseguir indic
 
 Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
 
-{{...}}
+Parte de dashboards que é o principal interface do TCC onde o docente poderá se basear para modificar suas decisões de melhoria de aula.
 
+<!--
 ### Caminho B — TCC não possui interface prevista
 
 Faça o exercício de transferência de uso:
@@ -325,28 +326,28 @@ Responda:
 6. quais dados/entradas seriam necessários? {{...}}
 7. quais resultados deveriam ser compreendidos? {{...}}
 8. que erros/rupturas seriam possíveis? {{...}}
+-->
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-{{...}}
+Docentes que utilizam plataformas de videoconferencia
 
 **Por que esse perfil foi escolhido?** {{...}}
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-{{...}}
+Facilitar a compreensão dos indicadores apresentados no dashboard
 
 ## 7.4 Que interface será explorada na disciplina?
 
 Complete:
 
-> **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
+> **Para fins da disciplina de IHC, será projetada uma interface que permita a `docentes` utilizar ` o resultado do TCC` para `compreender a reação dos participante e melhorar suas aulas`, no contexto de `videoconferências`.**
 
-{{...}}
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
-- [ ] Já fazia parte do TCC.
+- [x] Já fazia parte do TCC.
 - [ ] É um aprofundamento de algo parcialmente previsto.
 - [ ] É uma extensão conceitual criada para a disciplina.
 - [ ] É um protótipo demonstrativo de aplicação potencial.
@@ -364,20 +365,20 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | sim/não/talvez | {{...}} | {{...}} |
-| Configuração/parametrização | sim/não/talvez | {{...}} | {{...}} |
-| Entrada/upload/seleção de dados | sim/não/talvez | {{...}} | {{...}} |
-| Acompanhamento de processamento | sim/não/talvez | {{...}} | {{...}} |
-| Relatório/resultados | sim/não/talvez | {{...}} | {{...}} |
-| Histórico com busca/filtros | sim/não/talvez | {{...}} | {{...}} |
-| Comparação de resultados | sim/não/talvez | {{...}} | {{...}} |
-| Explicabilidade/detalhamento | sim/não/talvez | {{...}} | {{...}} |
-| Administração/configurações globais | sim/não/talvez | {{...}} | {{...}} |
-| Usuários/perfis/permissões | sim/não/talvez | {{...}} | {{...}} |
-| CRUD de entidade do domínio | sim/não/talvez | {{...}} | {{...}} |
-| Auditoria/logs | sim/não/talvez | {{...}} | {{...}} |
-| Alertas/ocorrências | sim/não/talvez | {{...}} | {{...}} |
-| Ajuda/documentação | sim/não/talvez | {{...}} | {{...}} |
+| Dashboard/visão geral | sim | Visualizar dashs por reunião | F |
+| Configuração/parametrização | sim | Ajustar preferencias de visualização | H |
+| Entrada/upload/seleção de dados | não | Não faz parte do fluxo principal | F |
+| Acompanhamento de processamento | não | não é prioridade | ? |
+| Relatório/resultados | sim | Analisar a sessão após seu término | F |
+| Histórico com busca/filtros | talvez | Consultar conexões anteriores | H |
+| Comparação de resultados | talvez | comparar diferentes metodologias | H |
+| Explicabilidade/detalhamento | sim | Facilitar interpretação dos indicadores | F |
+| Administração/configurações globais | não | Fora do escopo | H |
+| Usuários/perfis/permissões | não | Fora do escopo | {{...}} |
+| CRUD de entidade do domínio | não | não há necessidade | F |
+| Auditoria/logs | não | não necessário se tivermos histórico dos dashs | F |
+| Alertas/ocorrências | sim | Avisa mudanças durante a sessão | F |
+| Ajuda/documentação | sim | Explicar métricas e funcionamento | H |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -403,7 +404,10 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| MediaPipe |  Extrair sinais faciais, oculares e posturais da webcam | Depende de boa visibilidade do participante |
+| LSTM | Analisar os sinais ao longo do tempo | A resposta considera uma sequência de alguns segundos |
+| Processamento local | Preservar a privacidade e evitar envio do vídeo bruto | Exige capacidade de processamento no dispositivo |
+| Semáforo Cognitivo e Dashboard | Apresentar os resultados ao docente |Precisam ser simples e fáceis de interpretar |
 
 ---
 
@@ -411,9 +415,10 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | {{...}} | {{...}} | Entrega 2/3/7/... |
-| H02 | {{...}} | {{...}} | {{...}} |
-| H03 | {{...}} | {{...}} | {{...}} |
+| H01 | O dashboard será de fácil compreensão para os docentes? | Garante que os resultados sejam interpretados corretamente | Entrega 6/7 |
+| H02 | Os indicadores em tempo real ajudarão sem distrair o docente? | Define como apresentar informações durante a aula | Entrega 6/7 |
+| H03 | A análise pós-sessão ajudará o docente a melhorar aulas futuras? | Verifica se o sistema gera valor prático | Entrega 3/7 |
+
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -423,23 +428,23 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | {{...}} |
-| O TCC já previa interface? | {{...}} |
-| Quem é o usuário prioritário de IHC? | {{...}} |
-| O que ele precisa alcançar? | {{...}} |
-| Qual problema/atividade será estudado? | {{...}} |
-| Como isso acontece hoje? | {{...}} |
-| Qual é o contexto de uso? | {{...}} |
-| Que interface/recorte será explorado? | {{...}} |
-| Como a interface se relaciona ao TCC? | {{...}} |
+| Qual é a contribuição central do TCC? | Classificar temporalmente engajamento, tédio, confusão e frustração em videoconferências |
+| O TCC já previa interface? | Sim|
+| Quem é o usuário prioritário de IHC? | Docentes responsáveis pela videoconferência |
+| O que ele precisa alcançar? | Compreender a reação dos participantes e melhorar suas aulas/palestras |
+| Qual problema/atividade será estudado? | Dificuldade de compreender o estado dos participantes durante a videoconferência |
+| Como isso acontece hoje? | Principalmente por observação visual, perguntas, chat e reações dos participantes |
+| Qual é o contexto de uso? | Aulas e palestras realizadas por videoconferência |
+| Que interface/recorte será explorado? | Dashboard com indicadores dos estados dos participantes. |
+| Como a interface se relaciona ao TCC? | É uma parte já prevista no TCC. |
 | Quais pontos ainda são hipóteses? | {{H01...}} |
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** {{...}}  
-**Fora do escopo de IHC:** {{...}}  
-**Dentro do escopo formal do TCC:** {{...}}  
-**Interface da disciplina será implementada no TCC?** não definido / sim / não — {{justificativa, se houver}}
+**Dentro do escopo de IHC:** usabilidade, organização, clareza e facilidade de interpretação do Semáforo Cognitivo, dashboard e demais informações apresentadas ao docente. 
+**Fora do escopo de IHC:** treinamento da LSTM,  pré-processamento dos dados e avaliação técnica do modelo  
+**Dentro do escopo formal do TCC:** modelo de IA, processamento local dos sinais, classificação dos estados cognitivos e apresentação dos resultados por Semáforo Cognitivo, dashboard.
+**Interface da disciplina será implementada no TCC?** sim
 
 ---
 
@@ -463,9 +468,9 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** {{...}}
-2. **Contribuição técnica do TCC:** {{...}}
-3. **Como uma pessoa poderia utilizar essa contribuição:** {{...}}
+1. **Problema/atividade humana:** Em videoconferências, docentes têm dificuldade para perceber como os participantes estão reagindo ao conteúdo.
+2. **Contribuição técnica do TCC:** O MindFlow AI identifica padrões de engajamento, tédio, confusão e frustração ao longo da sessão.
+3. **Como uma pessoa poderia utilizar essa contribuição:** O docente pode usar esses indicadores para compreender melhor a turma e ajustar suas aulas ou palestras.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
