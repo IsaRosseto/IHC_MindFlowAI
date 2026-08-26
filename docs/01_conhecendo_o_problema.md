@@ -1,10 +1,9 @@
 
-
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
 **Data:** 13/08/2026
 
-**Status:** ⬜ iniciado
+**Status:** ✅ CONCLUIDO
 
 **Responsabilidade:** 1 solução consolidada por equipe
 
@@ -156,10 +155,9 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
 | Participante da videochamada | Tem seu comportamento visual inferido e classificado, mesmo sem ver o resultado; pode ser afetado por decisões que o comunicador toma com base nessa inferência |não |H |
-Instituição/empresa que promove a sessão | Pode adotar a ferramenta como política de qualidade de ensino/apresentação, ou usar dados agregados para avaliar formadores | provavelmente não diretamente| ? |
- Encarregado de dados/DPO da instituição| Responsável por garantir que o uso da ferramenta está de acordo com a LGPD| não, mas pode precisar auditar/aprovar o uso | H | 
+| Instituição/empresa que promove a sessão | Pode adotar a ferramenta como política de qualidade de ensino/apresentação, ou usar dados agregados para avaliar formadores | provavelmente não diretamente| ? |
+| Encarregado de dados/DPO da instituição| Responsável por garantir que o uso da ferramenta está de acordo com a LGPD| não, mas pode precisar auditar/aprovar o uso | H | 
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
@@ -172,7 +170,7 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 ## 3.1 O que o usuário está tentando conseguir no mundo real?
 
-Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
+Não responda "usar o algoritmo", "clicar no sistema" ou "ver o dashboard".
 
 > [H] Ele quer conduzir a aula ou apresentação de um jeito que as pessoas realmente entendam e não saiam perdidas ou frustradas, manter a sessão funcionando enquanto ela acontece, não descobrir depois que deu errado. O objetivo não é "ver o semáforo", é decidir na hora se vale parar pra pergunta, trocar de exemplo, dar uma pausa ou acelerar. Hoje ele não tem como saber isso olhando pra a galeria e apresentando o contéudo ao mesmo tempo.
 
@@ -180,9 +178,9 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-A01 |Perceber, durante a sessão, se o grupo está engajado, entediado, confuso ou frustrado| Comunicador (professor/palestrante/facilitador)| Alta frequência (toda sessão), alta criticidade| H| 
-A02 | Ajustar a condução da sessão em resposta a esse estado (mudar ritmo, abrir pergunta, dar exemplo)| Comunicador| Frequência variável dentro da sessão, alta criticidade| H|
-A03| Revisar, após a sessão, em quais momentos o grupo mais se confundiu ou desengajou, para melhorar a próxima vez| Comunicador| Baixa frequência (pós-sessão), criticidade média/alta para formação continuada| H |
+| A01 |Perceber, durante a sessão, se o grupo está engajado, entediado, confuso ou frustrado| Comunicador (professor/palestrante/facilitador)| Alta frequência (toda sessão), alta criticidade| H| 
+| A02 | Ajustar a condução da sessão em resposta a esse estado (mudar ritmo, abrir pergunta, dar exemplo)| Comunicador| Frequência variável dentro da sessão, alta criticidade| H|
+| A03| Revisar, após a sessão, em quais momentos o grupo mais se confundiu ou desengajou, para melhorar a próxima vez| Comunicador| Baixa frequência (pós-sessão), criticidade média/alta para formação continuada| H |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
@@ -224,10 +222,10 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-Microsoft Work Trend Index (2022)| Aumento de 252% no tempo semanal em reuniões virtuais entre 2020-2022 | Não fala especificamente sobre engajamento/percepção do facilitador, só sobre volume de reuniões | 
-Bailenson, J. N. (2021), "Nonverbal Overload"| Fundamenta teoricamente os mecanismos de sobrecarga em videoconferência (contato visual excessivo, autoexposição, redução de mobilidade, sobrecarga cognitiva)| É um argumento teórico, não um estudo com facilitadores medindo diretamente a "cegueira situacional" |
-Fauville et al. (2021), amostra de 10.591 participantes| Confirma empiricamente associação entre esses mecanismos e maior fadiga, com efeitos diferentes por gênero | Foco em fadiga dos participantes, não especificamente na percepção do facilitador sobre o grupo | 
-Resultados preliminares do próprio TCC1 (POC sobre 22% do DAiSEE) | Mostra que é tecnicamente viável extrair esses sinais e classificá-los, ainda que com acurácia parcial| Amostra pequena, desbalanceada, sem validação com usuários reais ainda
+| Microsoft Work Trend Index (2022)| Aumento de 252% no tempo semanal em reuniões virtuais entre 2020-2022 | Não fala especificamente sobre engajamento/percepção do facilitador, só sobre volume de reuniões | 
+| Bailenson, J. N. (2021), "Nonverbal Overload"| Fundamenta teoricamente os mecanismos de sobrecarga em videoconferência (contato visual excessivo, autoexposição, redução de mobilidade, sobrecarga cognitiva)| É um argumento teórico, não um estudo com facilitadores medindo diretamente a "cegueira situacional" |
+| Fauville et al. (2021), amostra de 10.591 participantes| Confirma empiricamente associação entre esses mecanismos e maior fadiga, com efeitos diferentes por gênero | Foco em fadiga dos participantes, não especificamente na percepção do facilitador sobre o grupo | 
+| Resultados preliminares do próprio TCC1 (POC sobre 22% do DAiSEE) | Mostra que é tecnicamente viável extrair esses sinais e classificá-los, ainda que com acurácia parcial| Amostra pequena, desbalanceada, sem validação com usuários reais ainda |
 
 ---
 
@@ -277,25 +275,24 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-Read AI, é um assistente de inteligência artificial criado para gerenciar, transcrever e resumir reuniões virtuais em plataformas como Zoom, Google Meet e Microsoft Teams. Ele realiza transcrições ao vivo, resumos automaticos, análise de engajamento e feedback de comunicação. 
+> Read AI, é um assistente de inteligência artificial criado para gerenciar, transcrever e resumir reuniões virtuais em plataformas como Zoom, Google Meet e Microsoft Teams. Ele realiza transcrições ao vivo, resumos automaticos, análise de engajamento e feedback de comunicação. 
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
-Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
 
-Dashboards de monitoramento de métricas.
+> Dashboards de monitoramento de métricas.
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-Geração de resumos e transcrições das reuniões.
+> Geração de resumos e transcrições das reuniões.
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-Demonstração dos indicadores da reunião são muito macro, sem conseguir indicar os principais pontos de melhoria.
+> Demonstração dos indicadores da reunião são muito macro, sem conseguir indicar os principais pontos de melhoria.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
 
-{{[F/H/?] ...}}
+> Indicador por cor tipo semáforo, dashboard com gráfico e métrica, resumo automático no estilo Read AI. Timeline de reunião também já é um padrão que esse público reconhece de cara.
 
 ---
 
@@ -305,49 +302,33 @@ Demonstração dos indicadores da reunião são muito macro, sem conseguir indic
 
 ### Caminho A — TCC já possui interface
 
-Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
+> O recorte vai ser o trilho de tempo real do comunicador: acompanhar o Semáforo Cognitivo ao vivo, e como secundário a revisão pós-sessão pelo Dashboard. Faz sentido priorizar esse fluxo porque é onde o problema realmente acontece, o comunicador dando aula ou apresentando sem saber o estado do grupo. Ferramentas como o Read AI já resolvem bem o pós-reunião (resumo, transcrição), mas ninguém ataca o tempo real do jeito que o MindFlow propõe, então esse é o recorte que mais diferencia o projeto.
 
-Parte de dashboards que é o principal interface do TCC onde o docente poderá se basear para modificar suas decisões de melhoria de aula.
-
-<!--
 ### Caminho B — TCC não possui interface prevista
 
-Faça o exercício de transferência de uso:
-
-> **Imagine que o TCC foi concluído com sucesso e uma empresa, laboratório ou organização quer transformar a contribuição em algo utilizável. Quem precisaria interagir com ela e para quê?**
-
-Responda:
-
-1. quem poderia contratar/adotar a solução? {{...}}
-2. quem seria o usuário direto? {{...}}
-3. quem administraria/configuraria? {{...}}
-4. quem interpretaria resultados? {{...}}
-5. quem tomaria decisões? {{...}}
-6. quais dados/entradas seriam necessários? {{...}}
-7. quais resultados deveriam ser compreendidos? {{...}}
-8. que erros/rupturas seriam possíveis? {{...}}
--->
+*Não se aplica, o TCC já prevê interface (ver 0.5 e Caminho A).*
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-Docentes que utilizam plataformas de videoconferencia
+> O **comunicador**: professor, instrutor ou palestrante conduzindo a sessão.
 
-**Por que esse perfil foi escolhido?** {{...}}
+> **Por que esse perfil foi escolhido?** É quem efetivamente olha a interface e decide algo com base nela. É quem sente o problema na pele, tentando dar aula e monitorar a turma ao mesmo tempo. E é em torno dele que o TCC já estrutura o semáforo e o dashboard.
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-Facilitar a compreensão dos indicadores apresentados no dashboard
+> Perceber em tempo real, sem tirar a atenção da própria condução da sessão, se o grupo está engajado, entediado, confuso ou frustrado, pra poder agir enquanto ainda dá tempo.
 
 ## 7.4 Que interface será explorada na disciplina?
 
 Complete:
 
-> **Para fins da disciplina de IHC, será projetada uma interface que permita a `docentes` utilizar ` o resultado do TCC` para `compreender a reação dos participante e melhorar suas aulas`, no contexto de `videoconferências`.**
+> **Para fins da disciplina de IHC, será projetada uma interface que permita ao comunicador utilizar as estimativas cognitivas geradas pelo MindFlow AI para perceber e reagir ao estado de engajamento do grupo, no contexto de uma sessão de videoconferência ao vivo, sem tirar a atenção dele da própria condução da sessão.**
 
+> O foco é o Semáforo Cognitivo em tempo real, com o Dashboard pós-sessão como recorte secundário.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
-- [x] Já fazia parte do TCC.
+- [X] Já fazia parte do TCC.
 - [ ] É um aprofundamento de algo parcialmente previsto.
 - [ ] É uma extensão conceitual criada para a disciplina.
 - [ ] É um protótipo demonstrativo de aplicação potencial.
@@ -365,22 +346,22 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | sim | Visualizar dashs por reunião | F |
-| Configuração/parametrização | sim | Ajustar preferencias de visualização | H |
-| Entrada/upload/seleção de dados | não | Não faz parte do fluxo principal | F |
-| Acompanhamento de processamento | não | não é prioridade | ? |
-| Relatório/resultados | sim | Analisar a sessão após seu término | F |
-| Histórico com busca/filtros | talvez | Consultar conexões anteriores | H |
-| Comparação de resultados | talvez | comparar diferentes metodologias | H |
-| Explicabilidade/detalhamento | sim | Facilitar interpretação dos indicadores | F |
-| Administração/configurações globais | não | Fora do escopo | H |
-| Usuários/perfis/permissões | não | Fora do escopo | {{...}} |
-| CRUD de entidade do domínio | não | não há necessidade | F |
-| Auditoria/logs | não | não necessário se tivermos histórico dos dashs | F |
-| Alertas/ocorrências | sim | Avisa mudanças durante a sessão | F |
-| Ajuda/documentação | sim | Explicar métricas e funcionamento | H |
+| Dashboard/visão geral | sim | Revisar depois da sessão como o engajamento variou ao longo do tempo | Já previsto no TCC |
+| Configuração/parametrização | talvez | Ajustar granularidade da janela de agregação ou sensibilidade do alerta | Mencionado como parâmetro do pipeline, não como tela pro usuário final |
+| Entrada/upload/seleção de dados | não | A entrada é a webcam ao vivo, não upload manual | F |
+| Acompanhamento de processamento | talvez | Indicar que o sistema tá ativo e capturando, por transparência | H |
+| Relatório/resultados | sim | Resumo do que aconteceu na sessão, tipo o que o Read AI já faz mas focado em estado cognitivo | Já previsto (Dashboard + persistência) |
+| Histórico com busca/filtros | talvez | Comparar sessões diferentes ao longo do semestre | H |
+| Comparação de resultados | talvez | Comparar engajamento entre aulas diferentes do mesmo comunicador | H |
+| Explicabilidade/detalhamento | sim | Entender por que o sistema marcou um momento como "confuso", já que o modelo erra bastante em algumas dimensões | H |
+| Administração/configurações globais | não | Fora do recorte, perfil é comunicador comum, não administrador | H |
+| Usuários/perfis/permissões | não | Não é foco, assume-se um comunicador por sessão | H |
+| CRUD de entidade do domínio | não | Não tem entidade que peça CRUD nesse recorte | H |
+| Auditoria/logs | talvez | Pode importar pra LGPD/compliance, mas não pro comunicador comum | H |
+| Alertas/ocorrências | sim | É o núcleo do Semáforo Cognitivo | Já previsto |
+| Ajuda/documentação | talvez | Explicar na primeira vez o que os estados significam e os limites do sistema | H |
 
-> **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
+> **Atenção:** "login + dashboard + CRUD" não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
 ---
 
@@ -390,13 +371,17 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| Construção de interfaces interativas e funcionais para os palestrantes/professores | Identificar pontos de melhorias para as apresentações/aulas | palestrantes/professores | H |
+| Deixar o comunicador perceber, sem esforço extra, quedas de engajamento ou picos de confusão/frustração enquanto ainda pode agir | Cegueira situacional do facilitador em videoconferência | Comunicador | H |
+| Deixar o comunicador revisar depois quais momentos deram mais dificuldade, pra melhorar a próxima sessão | Falta de feedback estruturado sobre a própria condução | Comunicador | H |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01 | Visualizar os indicadores da reunião | Para conseguir identificar pontos de melhoria em suas palestras/aulas | alta |
+| F01 | Ver de relance, sem parar de conduzir a sessão, o estado predominante do grupo | Perceber a tempo uma queda de engajamento ou pico de confusão/frustração | alta |
+| F02 | Entender o que um alerta do semáforo significa sem precisar de treinamento | Confiar e agir sobre a informação sem ficar em dúvida | alta |
+| F03 | Revisar depois da sessão a timeline do engajamento do grupo | Identificar trechos que precisam ser revistos ou melhorados | média |
+| F04 | Perguntar sobre momentos específicos da sessão via chatbot | Ter mais contexto do que só um gráfico | baixa/média |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -404,10 +389,10 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
-| MediaPipe |  Extrair sinais faciais, oculares e posturais da webcam | Depende de boa visibilidade do participante |
-| LSTM | Analisar os sinais ao longo do tempo | A resposta considera uma sequência de alguns segundos |
-| Processamento local | Preservar a privacidade e evitar envio do vídeo bruto | Exige capacidade de processamento no dispositivo |
-| Semáforo Cognitivo e Dashboard | Apresentar os resultados ao docente |Precisam ser simples e fáceis de interpretar |
+| Processamento local (Edge AI), sem enviar vídeo/áudio bruto pra servidor | Privacy by Design e LGPD | A interface não pode mostrar replay de vídeo do participante, só dado agregado |
+| Modelo com acurácia ainda parcial e desigual entre dimensões (tédio é o pior caso) | Limitação técnica já identificada nos resultados do TCC1 | A interface precisa deixar claro que a estimativa tem incerteza, não é certeza absoluta |
+| Agregação por janela de tempo em vez de classificação por pessoa | Decisão de design pra preservar privacidade | A tela mostra o "clima" do grupo, não o estado de uma pessoa específica |
+| Latência compatível com uso ao vivo, em hardware de consumo | Requisito de tempo real do TCC | A interface do tempo real precisa ser leve, sem travar ou atrasar durante a fala |
 
 ---
 
@@ -415,10 +400,10 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | O dashboard será de fácil compreensão para os docentes? | Garante que os resultados sejam interpretados corretamente | Entrega 6/7 |
-| H02 | Os indicadores em tempo real ajudarão sem distrair o docente? | Define como apresentar informações durante a aula | Entrega 6/7 |
-| H03 | A análise pós-sessão ajudará o docente a melhorar aulas futuras? | Verifica se o sistema gera valor prático | Entrega 3/7 |
-
+| H01 | Professor/palestrante acha útil um indicador discreto do estado do grupo durante a própria aula, sem virar mais uma distração | Se for falsa, o semáforo precisa virar outra coisa, tipo só resumo pós-sessão | Entrega 2/3 |
+| H02 | O nível de confiança do modelo precisa aparecer na tela pra não deixar o comunicador confiar cegamente numa classificação errada | Muda como o dashboard e o semáforo mostram a informação | Entrega 7/8 |
+| H03 | Participante da chamada sentiria desconforto sabendo que o comportamento dele tá sendo classificado, mesmo com processamento local | Pode exigir tela de consentimento, ampliando o escopo além do comunicador | Entrega 2/4 |
+| H04 | O MindFlow se diferencia de ferramentas tipo Read AI justamente por atuar em tempo real e não só no pós-reunião | Se for falsa, o valor central do produto precisa ser repensado | Entrega 2 |
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -428,37 +413,37 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | Classificar temporalmente engajamento, tédio, confusão e frustração em videoconferências |
-| O TCC já previa interface? | Sim|
-| Quem é o usuário prioritário de IHC? | Docentes responsáveis pela videoconferência |
-| O que ele precisa alcançar? | Compreender a reação dos participantes e melhorar suas aulas/palestras |
-| Qual problema/atividade será estudado? | Dificuldade de compreender o estado dos participantes durante a videoconferência |
-| Como isso acontece hoje? | Principalmente por observação visual, perguntas, chat e reações dos participantes |
-| Qual é o contexto de uso? | Aulas e palestras realizadas por videoconferência |
-| Que interface/recorte será explorado? | Dashboard com indicadores dos estados dos participantes. |
-| Como a interface se relaciona ao TCC? | É uma parte já prevista no TCC. |
-| Quais pontos ainda são hipóteses? | {{H01...}} |
+| Qual é a contribuição central do TCC? | Classificar em tempo real, localmente no dispositivo, o estado afetivo-cognitivo de participantes de uma videoconferência a partir de sinais visuais da webcam |
+| O TCC já previa interface? | Sim, Semáforo Cognitivo em tempo real e Dashboard/Chatbot pós-sessão já fazem parte do TCC |
+| Quem é o usuário prioritário de IHC? | O comunicador (professor, instrutor, palestrante ou facilitador) |
+| O que ele precisa alcançar? | Perceber a tempo quando o grupo desengaja, confunde ou frustra, e ajustar a condução da sessão |
+| Qual problema/atividade será estudado? | A cegueira situacional do facilitador em videoconferência |
+| Como isso acontece hoje? | Observação visual direta e informal da grade, reações manuais e pergunta aberta, sem indicador estruturado |
+| Qual é o contexto de uso? | Aulas remotas/híbridas, treinamento corporativo e apresentação técnica, em notebook/desktop com webcam |
+| Que interface/recorte será explorado? | Semáforo Cognitivo em tempo real como foco principal, Dashboard pós-sessão como secundário |
+| Como a interface se relaciona ao TCC? | Já fazia parte do TCC, ainda não implementada |
+| Quais pontos ainda são hipóteses? | H01 a H04, na Seção 10 |
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** usabilidade, organização, clareza e facilidade de interpretação do Semáforo Cognitivo, dashboard e demais informações apresentadas ao docente. 
-**Fora do escopo de IHC:** treinamento da LSTM,  pré-processamento dos dados e avaliação técnica do modelo  
-**Dentro do escopo formal do TCC:** modelo de IA, processamento local dos sinais, classificação dos estados cognitivos e apresentação dos resultados por Semáforo Cognitivo, dashboard.
-**Interface da disciplina será implementada no TCC?** sim
+**Dentro do escopo de IHC:** experiência do comunicador com o Semáforo Cognitivo em tempo real e o Dashboard pós-sessão.
+**Fora do escopo de IHC:** configuração/administração do sistema, permissões multiusuário, interface do Chatbot RAG.
+**Dentro do escopo formal do TCC:** modelo LSTM multi-saída, pipeline de extração multimodal, arquitetura Edge AI, Semáforo Cognitivo, Dashboard e Chatbot RAG.
+**Interface da disciplina será implementada no TCC?** não definido, a equipe ainda vai decidir com a orientadora.
 
 ---
 
 # 12. Como esta entrega alimenta as próximas
 
-- **Entrega 2:** verifica mercado, concorrentes e interfaces profissionais representativas.
-- **Entrega 3:** detalha perfis e contexto.
-- **Entrega 4:** aprofunda situações problemáticas.
-- **Entrega 5:** modela tarefas centrais.
-- **Entrega 6:** experimenta alternativas em baixa fidelidade.
-- **Entrega 7:** investiga hipóteses com dados.
-- **Entrega 8:** define restrições e metas de usabilidade.
-- **Entregas 9–11:** transformam o recorte em modelo de interação e protótipo.
-- **Entregas 12–14:** avaliam a interface construída na disciplina.
+> - **Entrega 2:** verifica mercado, concorrentes e interfaces profissionais representativas.
+> - **Entrega 3:** detalha perfis e contexto.
+> - **Entrega 4:** aprofunda situações problemáticas.
+> - **Entrega 5:** modela tarefas centrais.
+> - **Entrega 6:** experimenta alternativas em baixa fidelidade.
+> - **Entrega 7:** investiga hipóteses com dados.
+>- **Entrega 8:** define restrições e metas de usabilidade.
+>- **Entregas 9–11:** transformam o recorte em modelo de interação e protótipo.
+>- **Entregas 12–14:** avaliam a interface construída na disciplina.
 
 A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser revisada quando surgirem evidências.
 
@@ -468,9 +453,11 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** Em videoconferências, docentes têm dificuldade para perceber como os participantes estão reagindo ao conteúdo.
-2. **Contribuição técnica do TCC:** O MindFlow AI identifica padrões de engajamento, tédio, confusão e frustração ao longo da sessão.
-3. **Como uma pessoa poderia utilizar essa contribuição:** O docente pode usar esses indicadores para compreender melhor a turma e ajustar suas aulas ou palestras.
+> 1. **Problema/atividade humana:** Em videoconferência, quem conduz a aula ou reunião perde a maior parte dos sinais não-verbais que usaria presencialmente pra perceber se o grupo tá engajado, entediado, confuso ou frustrado.
+> 
+> 2. **Contribuição técnica do TCC:** O MindFlow AI usa uma LSTM alimentada por landmarks de rosto, postura e olhar, extraídos localmente da webcam, pra classificar em tempo real o estado cognitivo do grupo, sem enviar vídeo pra nenhum servidor.
+> 
+>3. **Como uma pessoa poderia utilizar essa contribuição:** Um professor acompanharia um semáforo discreto durante a própria aula, perceberia na hora se precisa mudar de exemplo ou abrir espaço pra dúvida, e depois revisaria um painel com a timeline do engajamento da turma.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
@@ -478,21 +465,21 @@ Essa síntese ajuda a apresentar o projeto para público não especializado sem 
 
 # Checklist de qualidade
 
-- [ ] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
-- [ ] A equipe declarou se o TCC já previa interface.
-- [ ] Se não previa, foi derivado um usuário plausível e um objetivo de uso.
-- [ ] A interface de IHC não foi apresentada como obrigação automática do TCC.
-- [ ] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
-- [ ] Usuários diretos e stakeholders foram diferenciados.
-- [ ] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
-- [ ] Objetivo do usuário não foi confundido com objetivo do projeto.
-- [ ] Processo/problema atual foi descrito antes da solução.
-- [ ] Existe situação concreta de uso/problema.
-- [ ] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
-- [ ] Mercado/alternativas existentes foram levantados inicialmente.
-- [ ] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
-- [ ] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
-- [ ] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
-- [ ] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
-- [ ] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
-- [ ] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+- [x] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
+- [x] A equipe declarou se o TCC já previa interface.
+- [ ] Se não previa, foi derivado um usuário plausível e um objetivo de uso. *(não se aplica, TCC já previa interface)*
+- [x] A interface de IHC não foi apresentada como obrigação automática do TCC.
+- [x] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
+- [x] Usuários diretos e stakeholders foram diferenciados.
+- [x] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
+- [x] Objetivo do usuário não foi confundido com objetivo do projeto.
+- [x] Processo/problema atual foi descrito antes da solução.
+- [x] Existe situação concreta de uso/problema.
+- [x] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
+- [x] Mercado/alternativas existentes foram levantados inicialmente.
+- [x] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
+- [x] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
+- [x] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
+- [x] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
+- [x] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
+- [x] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
