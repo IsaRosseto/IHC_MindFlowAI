@@ -298,51 +298,98 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 # 7. Derivando o escopo de IHC da disciplina
 
+  
+
 ## 7.1 Escolha o caminho do projeto
+
+  
 
 ### Caminho A — TCC já possui interface
 
-> O recorte vai ser o trilho de tempo real do comunicador: acompanhar o Semáforo Cognitivo ao vivo, e como secundário a revisão pós-sessão pelo Dashboard. Faz sentido priorizar esse fluxo porque é onde o problema realmente acontece, o comunicador dando aula ou apresentando sem saber o estado do grupo. Ferramentas como o Read AI já resolvem bem o pós-reunião (resumo, transcrição), mas ninguém ataca o tempo real do jeito que o MindFlow propõe, então esse é o recorte que mais diferencia o projeto.
+  
+
+> [H] O recorte vai ser o trilho de tempo real do comunicador: acompanhar o Semáforo Cognitivo ao vivo, e como secundário a revisão pós-sessão pelo Dashboard. Faz sentido priorizar esse fluxo porque é onde o problema realmente acontece, o comunicador dando aula ou apresentando sem saber o estado do grupo. Ferramentas como o Read AI já resolvem bem o pós-reunião (resumo, transcrição), mas ninguém ataca o tempo real do jeito que o MindFlow propõe, então esse é o recorte que mais diferencia o projeto.
+
+  
 
 ### Caminho B — TCC não possui interface prevista
 
+  
+
 *Não se aplica, o TCC já prevê interface (ver 0.5 e Caminho A).*
+
+  
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
+  
+
 > O **comunicador**: professor, instrutor ou palestrante conduzindo a sessão.
 
-> **Por que esse perfil foi escolhido?** É quem efetivamente olha a interface e decide algo com base nela. É quem sente o problema na pele, tentando dar aula e monitorar a turma ao mesmo tempo. E é em torno dele que o TCC já estrutura o semáforo e o dashboard.
+  
+
+>  **Por que esse perfil foi escolhido?** É quem efetivamente olha a interface e decide algo com base nela. É quem sente o problema na pele, tentando dar aula e monitorar a turma ao mesmo tempo. E é em torno dele que o TCC já estrutura o semáforo e o dashboard.
+
+  
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
+  
+
 > Perceber em tempo real, sem tirar a atenção da própria condução da sessão, se o grupo está engajado, entediado, confuso ou frustrado, pra poder agir enquanto ainda dá tempo.
+
+  
 
 ## 7.4 Que interface será explorada na disciplina?
 
+  
+
 Complete:
 
-> **Para fins da disciplina de IHC, será projetada uma interface que permita ao comunicador utilizar as estimativas cognitivas geradas pelo MindFlow AI para perceber e reagir ao estado de engajamento do grupo, no contexto de uma sessão de videoconferência ao vivo, sem tirar a atenção dele da própria condução da sessão.**
+  
+
+>  **Para fins da disciplina de IHC, será projetada uma interface que permita ao comunicador utilizar as estimativas cognitivas geradas pelo MindFlow AI para perceber e reagir ao estado de engajamento do grupo, no contexto de uma sessão de videoconferência ao vivo, sem tirar a atenção dele da própria condução da sessão.**
+
+  
 
 > O foco é o Semáforo Cognitivo em tempo real, com o Dashboard pós-sessão como recorte secundário.
 
+  
+
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
+  
+
 - [X] Já fazia parte do TCC.
+
 - [ ] É um aprofundamento de algo parcialmente previsto.
+
 - [ ] É uma extensão conceitual criada para a disciplina.
+
 - [ ] É um protótipo demonstrativo de aplicação potencial.
+
 - [ ] Outra: {{...}}.
 
-> **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
+  
+
+>  **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
+
+  
 
 ---
 
+  
+
 # 8. Levantando possibilidades de interação — sem desenhar ainda
+
+ 
 
 A equipe pode registrar possibilidades para investigação. **Não significa que todas serão implementadas.**
 
+
 Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
+
+  
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
@@ -361,20 +408,34 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 | Alertas/ocorrências | sim | É o núcleo do Semáforo Cognitivo | Já previsto |
 | Ajuda/documentação | talvez | Explicar na primeira vez o que os estados significam e os limites do sistema | H |
 
-> **Atenção:** "login + dashboard + CRUD" não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
+  
+
+>  **Atenção:** "login + dashboard + CRUD" não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
+
+  
 
 ---
 
+  
+
 # 9. Benefícios e ações iniciais
 
+  
+
 ## 9.1 Qual benefício concreto o projeto de IHC pretende oferecer?
+
+  
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
 | Deixar o comunicador perceber, sem esforço extra, quedas de engajamento ou picos de confusão/frustração enquanto ainda pode agir | Cegueira situacional do facilitador em videoconferência | Comunicador | H |
 | Deixar o comunicador revisar depois quais momentos deram mais dificuldade, pra melhorar a próxima sessão | Falta de feedback estruturado sobre a própria condução | Comunicador | H |
 
+  
+
 ## 9.2 Que ações o usuário deverá conseguir realizar?
+
+  
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
@@ -383,10 +444,14 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 | F03 | Revisar depois da sessão a timeline do engajamento do grupo | Identificar trechos que precisam ser revistos ou melhorados | média |
 | F04 | Perguntar sobre momentos específicos da sessão via chatbot | Ter mais contexto do que só um gráfico | baixa/média |
 
+  
+
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
-A tecnologia aparece **agora**, depois do entendimento do uso.
+  
 
+A tecnologia aparece **agora**, depois do entendimento do uso.
+  
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
 | Processamento local (Edge AI), sem enviar vídeo/áudio bruto pra servidor | Privacy by Design e LGPD | A interface não pode mostrar replay de vídeo do participante, só dado agregado |
@@ -394,9 +459,15 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | Agregação por janela de tempo em vez de classificação por pessoa | Decisão de design pra preservar privacidade | A tela mostra o "clima" do grupo, não o estado de uma pessoa específica |
 | Latência compatível com uso ao vivo, em hardware de consumo | Requisito de tempo real do TCC | A interface do tempo real precisa ser leve, sem travar ou atrasar durante a fala |
 
+  
+
 ---
 
+  
+
 # 10. Hipóteses e dúvidas prioritárias
+
+  
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
@@ -404,12 +475,19 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | H02 | O nível de confiança do modelo precisa aparecer na tela pra não deixar o comunicador confiar cegamente numa classificação errada | Muda como o dashboard e o semáforo mostram a informação | Entrega 7/8 |
 | H03 | Participante da chamada sentiria desconforto sabendo que o comportamento dele tá sendo classificado, mesmo com processamento local | Pode exigir tela de consentimento, ampliando o escopo além do comunicador | Entrega 2/4 |
 | H04 | O MindFlow se diferencia de ferramentas tipo Read AI justamente por atuar em tempo real e não só no pós-reunião | Se for falsa, o valor central do produto precisa ser repensado | Entrega 2 |
+  
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
+  
+
 ---
 
+  
+
 # 11. Síntese da equipe
+
+  
 
 | Pergunta | Síntese atual |
 |---|---|
@@ -424,62 +502,118 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 | Como a interface se relaciona ao TCC? | Já fazia parte do TCC, ainda não implementada |
 | Quais pontos ainda são hipóteses? | H01 a H04, na Seção 10 |
 
+  
+
 ### Delimitação
 
+  
+
 **Dentro do escopo de IHC:** experiência do comunicador com o Semáforo Cognitivo em tempo real e o Dashboard pós-sessão.
+
 **Fora do escopo de IHC:** configuração/administração do sistema, permissões multiusuário, interface do Chatbot RAG.
+
 **Dentro do escopo formal do TCC:** modelo LSTM multi-saída, pipeline de extração multimodal, arquitetura Edge AI, Semáforo Cognitivo, Dashboard e Chatbot RAG.
+
 **Interface da disciplina será implementada no TCC?** não definido, a equipe ainda vai decidir com a orientadora.
 
+  
+
 ---
+
+  
 
 # 12. Como esta entrega alimenta as próximas
 
-> - **Entrega 2:** verifica mercado, concorrentes e interfaces profissionais representativas.
-> - **Entrega 3:** detalha perfis e contexto.
-> - **Entrega 4:** aprofunda situações problemáticas.
-> - **Entrega 5:** modela tarefas centrais.
-> - **Entrega 6:** experimenta alternativas em baixa fidelidade.
-> - **Entrega 7:** investiga hipóteses com dados.
->- **Entrega 8:** define restrições e metas de usabilidade.
->- **Entregas 9–11:** transformam o recorte em modelo de interação e protótipo.
->- **Entregas 12–14:** avaliam a interface construída na disciplina.
+  
+
+-  **Entrega 2:** verifica mercado, concorrentes e interfaces profissionais representativas.
+
+-  **Entrega 3:** detalha perfis e contexto.
+
+-  **Entrega 4:** aprofunda situações problemáticas.
+
+-  **Entrega 5:** modela tarefas centrais.
+
+-  **Entrega 6:** experimenta alternativas em baixa fidelidade.
+
+-  **Entrega 7:** investiga hipóteses com dados.
+
+-  **Entrega 8:** define restrições e metas de usabilidade.
+
+-  **Entregas 9–11:** transformam o recorte em modelo de interação e protótipo.
+
+-  **Entregas 12–14:** avaliam a interface construída na disciplina.
+
+  
 
 A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser revisada quando surgirem evidências.
 
+  
+
 ---
+
+  
 
 # 13. Relação com INOVA e comunicação do projeto
 
+  
+
 Prepare uma explicação de até três frases:
 
-> 1. **Problema/atividade humana:** Em videoconferência, quem conduz a aula ou reunião perde a maior parte dos sinais não-verbais que usaria presencialmente pra perceber se o grupo tá engajado, entediado, confuso ou frustrado.
-> 
-> 2. **Contribuição técnica do TCC:** O MindFlow AI usa uma LSTM alimentada por landmarks de rosto, postura e olhar, extraídos localmente da webcam, pra classificar em tempo real o estado cognitivo do grupo, sem enviar vídeo pra nenhum servidor.
-> 
->3. **Como uma pessoa poderia utilizar essa contribuição:** Um professor acompanharia um semáforo discreto durante a própria aula, perceberia na hora se precisa mudar de exemplo ou abrir espaço pra dúvida, e depois revisaria um painel com a timeline do engajamento da turma.
+  
+
+1.  **Problema/atividade humana:** Em videoconferência, quem conduz a aula ou reunião perde a maior parte dos sinais não-verbais que usaria presencialmente pra perceber se o grupo tá engajado, entediado, confuso ou frustrado.
+
+2.  **Contribuição técnica do TCC:** O MindFlow AI usa uma LSTM alimentada por landmarks de rosto, postura e olhar, extraídos localmente da webcam, pra classificar em tempo real o estado cognitivo do grupo, sem enviar vídeo pra nenhum servidor.
+
+3.  **Como uma pessoa poderia utilizar essa contribuição:** Um professor acompanharia um semáforo discreto durante a própria aula, perceberia na hora se precisa mudar de exemplo ou abrir espaço pra dúvida, e depois revisaria um painel com a timeline do engajamento da turma.
+
+  
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
+  
+
 ---
+
+  
 
 # Checklist de qualidade
 
-- [x] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
-- [x] A equipe declarou se o TCC já previa interface.
+  
+
+- [ ] Está clara a diferença entre tema do TCC, escopo formal do TCC e escopo de IHC.
+
+- [ ] A equipe declarou se o TCC já previa interface.
+
 - [ ] Se não previa, foi derivado um usuário plausível e um objetivo de uso. *(não se aplica, TCC já previa interface)*
-- [x] A interface de IHC não foi apresentada como obrigação automática do TCC.
-- [x] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
-- [x] Usuários diretos e stakeholders foram diferenciados.
-- [x] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
-- [x] Objetivo do usuário não foi confundido com objetivo do projeto.
-- [x] Processo/problema atual foi descrito antes da solução.
-- [x] Existe situação concreta de uso/problema.
-- [x] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
-- [x] Mercado/alternativas existentes foram levantados inicialmente.
-- [x] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
-- [x] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
-- [x] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
-- [x] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
-- [x] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
-- [x] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+
+- [ ] A interface de IHC não foi apresentada como obrigação automática do TCC.
+
+- [ ] A contribuição do TCC foi descrita sem começar por tecnologias de implementação.
+
+- [ ] Usuários diretos e stakeholders foram diferenciados.
+
+- [ ] Foram considerados profissionais que configuram, administram, interpretam ou decidem, quando pertinente.
+
+- [ ] Objetivo do usuário não foi confundido com objetivo do projeto.
+
+- [ ] Processo/problema atual foi descrito antes da solução.
+
+- [ ] Existe situação concreta de uso/problema.
+
+- [ ] Contexto físico, social/organizacional, dispositivos e consequências de erro foram considerados.
+
+- [ ] Mercado/alternativas existentes foram levantados inicialmente.
+
+- [ ] Possibilidades como dashboard, relatório, histórico, filtros e CRUD foram tratadas como hipóteses de solução, não como requisitos automáticos.
+
+- [ ] Cada possibilidade de interface tem um objetivo/tarefa que poderia justificá-la.
+
+- [ ] Afirmações relevantes estão marcadas `[F]`, `[H]` ou `[?]`.
+
+- [ ] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
+
+- [ ] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
+
+- [ ] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
