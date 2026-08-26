@@ -263,36 +263,61 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 ---
 
+  
+
 # 6. Entendendo mercado e alternativas existentes
+
+  
 
 > Nesta entrega faça apenas um **levantamento inicial**. A análise aprofundada ocorre na Entrega 2.
 
+  
+
 ## 6.1 Como pessoas resolvem problemas semelhantes hoje?
+
+  
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
 | Alteram mapa de apresentações/aulas sem evidências do que causa o desengajamento de quem esta assistindo | Palestrante/Professores | Com intuito de melhorar o entendimento do publico sobre o tema | H |
 
+  
+
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-> Read AI, é um assistente de inteligência artificial criado para gerenciar, transcrever e resumir reuniões virtuais em plataformas como Zoom, Google Meet e Microsoft Teams. Ele realiza transcrições ao vivo, resumos automaticos, análise de engajamento e feedback de comunicação. 
+  
+
+> [F] Read AI, é um assistente de inteligência artificial criado para gerenciar, transcrever e resumir reuniões virtuais em plataformas como Zoom, Google Meet e Microsoft Teams. Ele realiza transcrições ao vivo, resumos automaticos, análise de engajamento e feedback de comunicação.
+
+  
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
+  
 
-> Dashboards de monitoramento de métricas.
+Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
+
+  
+
+> [H] Dashboards de monitoramento de métricas.
+
+  
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-> Geração de resumos e transcrições das reuniões.
+  
+
+> [F] Geração de resumos e transcrições das reuniões.
+
+  
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
+> [H] Demonstração dos indicadores da reunião são muito macro, sem conseguir indicar os principais pontos de melhoria.
 
-> Demonstração dos indicadores da reunião são muito macro, sem conseguir indicar os principais pontos de melhoria.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
+> [H] Indicador por cor tipo semáforo, dashboard com gráfico e métrica, resumo automático no estilo Read AI. Timeline de reunião também já é um padrão que esse público reconhece de cara.
 
-> Indicador por cor tipo semáforo, dashboard com gráfico e métrica, resumo automático no estilo Read AI. Timeline de reunião também já é um padrão que esse público reconhece de cara.
 
 ---
 
