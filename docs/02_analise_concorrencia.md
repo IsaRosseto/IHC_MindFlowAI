@@ -76,7 +76,7 @@ Apresenta tendência de centralizar, em um único painel, transcrição, resumo,
 
 | ID | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|---|
-|C01| Docentes visualizarem o engajamento da reunião |  | É um concorrente direto do distema |
+|C01| Visualização de engajamento e sentimento da reunião. | Dashboard do Read AI. | Possui função semelhante ao MindFlow, sendo necessário diferenciar o projeto pelo foco educacional e pelos estados afetivo-cognitivos analisados. |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
@@ -86,44 +86,44 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+| Microsoft Teams | Para realizar aulas, reuniões e compartilhar materiais. | Menus laterais, abas, ícones conhecidos e organização dos participantes. | [Teams](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Accordion%201.png) | Manter navegação simples e informações importantes de fácil acesso. |
+| Google Meet | Para realizar videoconferências e aulas on-line. | Interface limpa, poucos controles e ações principais bem destacadas. | [Meet](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/meet.jpg) | Evitar excesso de informações e priorizar as funções principais. |
+| Google Classroom | Para organizar atividades, materiais e comunicação com alunos. | Organização por turmas, cards e divisão do conteúdo em seções. | {{link local}} | Utilizar blocos bem organizados para facilitar a localização das informações. |
 
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
-Registre somente padrões encontrados nas soluções analisadas e que possam ter relação com objetivos reais da equipe.
-
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| dashboard | {{...}} | {{...}} | {{...}} | {{...}} | sim/não/talvez |
-| relatório | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| histórico + filtros | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-
+| Dashboard | Read AI | Visualizar métricas e informações gerais da reunião. | Centraliza os principais dados em uma única tela. | O excesso de indicadores pode dificultar a interpretação. | Sim |
+| Relatório | Read AI | Consultar resumo, transcrição, engajamento, sentimento e destaques da reunião. | Facilita a análise após o término da reunião. | Pode apresentar muitas informações ao mesmo tempo. | Sim |
+| Histórico + filtros | Read AI | Localizar e consultar reuniões anteriores. | Facilita o acesso a resultados passados. | Muitos filtros podem aumentar a complexidade da interface. | Sim |
+| Administração/CRUD | Read AI | Gerenciar reuniões, usuários e configurações da conta. | Permite organizar e controlar os dados da plataforma. | Não é uma funcionalidade central para o objetivo do MindFlow AI. | Talvez |
+| Comparação de resultados | Read AI | Analisar diferenças entre métricas e momentos de uma reunião. | Ajuda a identificar variações de engajamento e sentimento. | As métricas podem ser interpretadas de forma equivocada sem contexto. | Sim |
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 | C02 | C03 | Oportunidade para o projeto |
+| Critério | C01 - Read AI | C02 | C03 | Oportunidade para o projeto |
 |---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Navegação | Dashboard organizado por reuniões, relatórios e métricas. |  |  | Criar uma navegação simples e com acesso rápido às análises das videoconferências. |
+| Feedback/estado | Apresenta indicadores de engajamento, sentimento e destaques da reunião. |  |  | Mostrar de forma clara os estados identificados e suas mudanças ao longo da sessão. |
+| Prevenção/recuperação de erro | Utiliza padrões conhecidos de interface e organização das informações. |  |  | Usar mensagens claras e elementos visuais que reduzam erros de interpretação. |
+| Terminologia | Utiliza termos relacionados a reuniões, engajamento, sentimento e comunicação. |  |  | Utilizar linguagem simples e próxima da realidade dos docentes. |
+| Acessibilidade | Utiliza gráficos, textos e indicadores visuais para apresentar os dados. |  |  | Evitar depender apenas de cores e combinar gráficos com textos e valores. |
+| Eficiência | Automatiza transcrição, resumo e análise da reunião em um único ambiente. |  |  | Automatizar a análise e apresentar ao docente apenas as informações mais relevantes. |
 
 ## 5. Recomendações derivadas
 
 Liste recomendações com origem explícita.
 
-- **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
+- **RC01:** Criar um dashboard simples e objetivo para visualizar os principais resultados da videoconferência — derivada de **C01 (Read AI)**.
+
 - **RC02:** {{...}}
 
 ## Referências
 
-{{fontes dos produtos, avaliações e literatura}}
+https://www.read.ai/pt
 
 ## Checklist
 
