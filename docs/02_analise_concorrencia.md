@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{26/08/2026}}  
+**Status:** 🟨 iniciada  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -30,32 +30,35 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| {{...}} | concorrente / análogo / ferramenta cotidiana / processo manual | {{...}} | F / H / ? | analisar / descartar com justificativa |
+| Read IA | concorrente | Concorrente direto, com quase os mesmos objetivos | F | analisar |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+Professores, palestrantes, docentes que fazem reuniões online por videoconferência.
 
 ## 2. Concorrentes diretos/indiretos
 
 ### Análise C01 — {{produto}}
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):** {{Kayky Pires - 22.222.040-2}}  
+**Tipo:** direto 
+**Link oficial:** [{{Read IA}} ](https://www.read.ai/pt) 
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
-{{...}}
+Read é o seu copiloto de IA — transformando reuniões, e-mails e mensagens em resumos, insights e respostas instantâneas em todos os dispositivos, onde quer que você trabalhe.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+| Transcrição da Reunião | O Read AI registra e transcreve automaticamente as falas da reunião, separando o conteúdo por participante. | [Trasncrição](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Transcri%C3%A7%C3%A3o%20READIA.png) | A organização por participante facilita a compreensão de quem falou e permite consultar rapidamente partes específicas da reunião. |
+|Resumo automático|Após a reunião, a IA gera um resumo com os principais assuntos discutidos, decisões, perguntas e pontos relevantes.|[Resumo](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Resumo%20READIA.png)|Reduz a quantidade de informação que o usuário precisa analisar e apresenta uma visão geral da reunião de forma mais objetiva|
+|Métricas da reunião|O sistema reúne diferentes indicadores de desempenho, como engajamento, sentimento e outras métricas relacionadas à participação e comunicação.|[Metrica](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Dash%20READIA.png)|A centralização das métricas em um painel facilita a comparação das informações, mas exige boa hierarquia visual para não sobrecarregar o usuário|
+|---|---|---|---|
 
 #### Experiência do usuário e opiniões
 
@@ -63,17 +66,17 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 
 #### Preço/modelo de negócio
 
-{{...}}
+Utiliza o modelo freemium, oferecendo um plano gratuito limitado a 5 reuniões por mês e planos pagos por usuário. Atualmente, o plano Pro custa a partir de US$ 15/mês por usuário no pagamento anual, enquanto os planos Enterprise e Enterprise+ oferecem recursos adicionais para equipes e organizações
 
 #### Padrões e tendências percebidos
 
-{{...}}
+Apresenta tendência de centralizar, em um único painel, transcrição, resumo, métricas de engajamento, sentimento e destaques da reunião. Também se percebe forte uso de inteligência artificial para reduzir o esforço de análise do usuário e transformar reuniões longas em informações visuais e objetivas.
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| ID | Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|---|
+|C01| Docentes visualizarem o engajamento da reunião |  | É um concorrente direto do distema |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
@@ -84,6 +87,7 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
 | {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
