@@ -288,6 +288,8 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
   
 
 > [F] Read AI, é um assistente de inteligência artificial criado para gerenciar, transcrever e resumir reuniões virtuais em plataformas como Zoom, Google Meet e Microsoft Teams. Ele realiza transcrições ao vivo, resumos automaticos, análise de engajamento e feedback de comunicação.
+> [F] Noldus FaceReader: é um software de análise automática de expressões faciais capaz de identificar estados como felicidade, tristeza, raiva, surpresa, medo, nojo e neutralidade, apresentando também a intensidade dessas expressões ao longo do tempo. Embora seja voltado principalmente para pesquisas comportamentais, possui relação com o MindFlow AI por utilizar informações faciais para analisar estados e reações dos indivíduos.
+> [F] Microsoft Teams Education Insights: é uma ferramenta integrada ao Microsoft Teams para Educação que fornece aos docentes informações sobre a participação e o engajamento digital dos estudantes. O sistema apresenta dados como participação em reuniões, tempo de presença, acesso a arquivos, realização de atividades, mensagens, respostas e reações. Diferentemente do MindFlow AI, seu foco está principalmente nas ações realizadas pelo estudante dentro da plataforma, e não na classificação automática de estados afetivo-cognitivos como engajamento, tédio, confusão e frustração.
 
   
 
