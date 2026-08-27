@@ -65,7 +65,7 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 | Gustavo Bertoluzzi Cardoso| 22.123.016-2 | Gugzica3 |
 | Isabella Vieira Silva Rosseto | 22.222.036-0 | IsaRosseto |
 | Kayky Pires | 22.222.040-2	| kaykyypiress |
-| Matheus Ferreira de Freitas | xx.xxx.xxx-x | freitasfmatheus |
+| Matheus Ferreira de Freitas | 22.125.085-5 | freitasfmatheus |
 | Rafael Dias | 22.222.039-4 | rafadias008 |
 
 ## 0.2 Título atual do TCC
