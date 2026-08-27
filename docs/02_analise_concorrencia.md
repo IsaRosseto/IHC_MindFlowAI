@@ -36,16 +36,16 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+Professores, Comunicadores, Apresentadores e Vendedores.
 
 ## 2. Concorrentes diretos/indiretos
 
-### Análise C01 — {{produto}}
+### Análise C01 — Noldus FaceReader
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):** Rafael Dias - 22.222.039-4 <br>
+**Tipo:** Análogo <br>
+**Link oficial:** [{{Link}}](https://noldus.com/facereader) <br>
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
