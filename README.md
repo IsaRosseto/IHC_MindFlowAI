@@ -31,7 +31,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 | Gustavo Bertoluzzi Cardoso | 22.123.016-2 | @Gugzica3 | {{...}} |
 | Isabella Vieira Silva Rosseto | 22.222.036-0 | @IsaRosseto | {{...}} |
 | Kayky Pires de Paula | 22.222.040-2 | @Kaykyypiress | {{...}} |
-| Matheus Ferreira de Freitas | {{matrícula}} | @Freitasfmatheus | {{...}} |
+| Matheus Ferreira de Freitas | 22.125.085-5 | @Freitasfmatheus | {{...}} |
 | Rafael Dias | 22.222.039-4 | @Rafadias008 | {{...}} |
 
 ## Relação entre TCC e projeto de IHC
