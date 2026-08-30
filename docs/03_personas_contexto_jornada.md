@@ -1,9 +1,7 @@
-<!-- P02 preenchida (Matheus), com base no material da disciplina CC8122-Personas.pdf (lema, objetivos pessoais × práticos, tarefas, relacionamentos, expectativas). Demais personas e seções de equipe: template intacto — cada integrante faz a sua. -->
-
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** 31/08/2026  
-**Status:** 🟨 em andamento — P02 preenchida; demais personas e seções de equipe pendentes  
+**Data:** {{dd/mm/aaaa}}  
+**Status:** ⬜ não iniciada  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -62,43 +60,6 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - {{...}}
 
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
-
----
-
-### Persona P02 — Carlos, o instrutor corporativo cobrado por resultado
-
-**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
-**Tipo:** primária  
-**Base de evidências:** proto-persona a validar (contextos de uso do TCC1; experiência da equipe com treinamentos corporativos)  
-**Hipóteses da Entrega 1 relacionadas:** H01, H02
-
-![Persona P02](../assets/03_personas/persona_p02.svg)
-
-| Campo | Descrição |
-|---|---|
-| Lema | “Número sem explicação, pra mim, é chute.” |
-| Faixa etária / contexto relevante | 35 anos; analista sênior de TI que ministra onboardings e treinamentos obrigatórios (segurança, compliance, ferramentas internas) |
-| Ocupação/papel | Instrutor interno; 2–4 sessões por mês, de 20 a 200 participantes, quase todos de câmera desligada |
-| Conhecimento do domínio | Alto no conteúdo técnico; médio em didática — dar aula não é a função principal dele |
-| Experiência tecnológica | Alta: Teams, dashboards (Power BI), ferramentas de TI; confortável com métricas, desconfiado de números sem explicação |
-| Objetivos pessoais | Ser levado a sério como instrutor, mesmo sem ser "professor de carreira" |
-| Objetivos práticos | Garantir que o time realmente absorveu o treinamento (A01/A03); provar valor do treinamento para a gestão |
-| Necessidades | Saber quais partes do treinamento funcionaram e quais geraram confusão, com evidência que ele possa citar |
-| Dores/frustrações | Plateia 100% muda e de câmera fechada; pesquisa de reação no fim ("nota 9") que não diz nada; refazer treinamento inteiro quando bastava refazer um módulo |
-| Motivadores | Eficiência; dado que sustente decisão; menos sessões repetidas |
-| Restrições/acessibilidade | Ambiente corporativo com restrições de segurança/LGPD — nada de gravar vídeo dos colegas; ferramentas precisam passar pela TI |
-| Ambiente típico de uso | Escritório/home office, dois monitores, Teams + slides |
-| Comportamentos relevantes | Já usa relatórios do Teams (presença); confere quem concluiu; questiona como a métrica foi calculada antes de confiar nela |
-| Tarefas típicas (frequência/duração) | Ministrar 2–4 treinamentos de 60–120 min por mês (crítica); reportar resultados à gestão (mensal); atualizar material (contínua) |
-| Relacionamentos | Participantes (colegas de empresa); gestão que cobra resultado; TI/segurança; DPO |
-| Expectativas sobre o produto | Espera o padrão dos dashboards que já usa: visão geral → drill-down → "como isso foi calculado" (Power BI) [H] |
-
-**Decisões de design influenciadas por P02:**
-
-- Indicador de confiança/qualidade do sinal visível — esse perfil rejeita caixa-preta (RC02, H02).
-- Comparativo entre sessões no pós-sessão (o "ao longo do tempo" do TCC) para justificar mudanças de formato.
-- Materiais de privacidade prontos (o-que-processamos) para ele defender a adoção junto à TI/DPO (RC05).
-
 
 ### Síntese das personas
 
