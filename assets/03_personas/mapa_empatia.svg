@@ -1,5 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Arial, Helvetica, sans-serif">
+<rect width="960" height="640" fill="#FFFFFF"/><rect width="960" height="640" fill="none" stroke="#D1D5DB"/>
+<text x="24" y="36" font-size="19" font-weight="bold" fill="#1F2937">Mapa de empatia — P01 Renata (professora)</text>
+<text x="24" y="56" font-size="12" fill="#6B7280">Situação atual, sem o MindFlow · tudo [H] proto-persona, exceto onde indicado · MindFlow AI — IHC CC8122</text>
+<rect x="24" y="76" width="444" height="200" rx="8" fill="#F3F4F6"/>
+<rect x="24" y="76" width="444" height="28" rx="8" fill="#0F766E"/><rect x="24" y="90" width="444" height="14" fill="#0F766E"/>
+<text x="36" y="95" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">O QUE VÊ</text>
+<circle cx="42" cy="120" r="3" fill="#0F766E"/>
+<text x="54" y="124" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Grade do Meet: 8 câmeras ligadas, 40 quadrados pretos</text>
+<circle cx="42" cy="142" r="3" fill="#0F766E"/>
+<text x="54" y="146" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Os próprios slides em modo apresentador</text>
+<circle cx="42" cy="164" r="3" fill="#0F766E"/>
+<text x="54" y="168" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Chat parado; nenhuma reação</text>
+<circle cx="42" cy="186" r="3" fill="#0F766E"/>
+<text x="54" y="190" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Nenhum sinal estruturado do estado da turma</text>
+<rect x="492" y="76" width="444" height="200" rx="8" fill="#F3F4F6"/>
+<rect x="492" y="76" width="444" height="28" rx="8" fill="#1D4ED8"/><rect x="492" y="90" width="444" height="14" fill="#1D4ED8"/>
+<text x="504" y="95" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">O QUE OUVE</text>
+<circle cx="510" cy="120" r="3" fill="#1D4ED8"/>
+<text x="522" y="124" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Silêncio quando pergunta se entenderam</text>
+<circle cx="510" cy="142" r="3" fill="#1D4ED8"/>
+<text x="522" y="146" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">&quot;Pode repetir?&quot; — dias depois, na monitoria</text>
+<circle cx="510" cy="164" r="3" fill="#1D4ED8"/>
+<text x="522" y="168" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Colegas: &quot;online é assim mesmo&quot;</text>
+<circle cx="510" cy="186" r="3" fill="#1D4ED8"/>
+<text x="522" y="190" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Coordenação cobrando engajamento e retenção</text>
+<rect x="24" y="296" width="444" height="200" rx="8" fill="#F3F4F6"/>
+<rect x="24" y="296" width="444" height="28" rx="8" fill="#B45309"/><rect x="24" y="310" width="444" height="14" fill="#B45309"/>
+<text x="36" y="315" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">O QUE PENSA E SENTE</text>
+<circle cx="42" cy="340" r="3" fill="#B45309"/>
+<text x="54" y="344" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">&quot;Estou falando sozinha?&quot;</text>
+<circle cx="42" cy="362" r="3" fill="#B45309"/>
+<text x="54" y="366" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Frustração por não alcançar a turma</text>
+<circle cx="42" cy="384" r="3" fill="#B45309"/>
+<text x="54" y="388" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Medo de parecer incompetente se a turma for mal</text>
+<circle cx="42" cy="406" r="3" fill="#B45309"/>
+<text x="54" y="410" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Ceticismo com &quot;mais uma ferramenta&quot;</text>
+<rect x="492" y="296" width="444" height="200" rx="8" fill="#F3F4F6"/>
+<rect x="492" y="296" width="444" height="28" rx="8" fill="#B91C1C"/><rect x="492" y="310" width="444" height="14" fill="#B91C1C"/>
+<text x="504" y="315" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">O QUE DIZ E FAZ</text>
+<circle cx="510" cy="340" r="3" fill="#B91C1C"/>
+<text x="522" y="344" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">&quot;Todo mundo acompanhando?&quot; — e segue no silêncio</text>
+<circle cx="510" cy="362" r="3" fill="#B91C1C"/>
+<text x="522" y="366" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Varre a grade de relance enquanto fala</text>
+<circle cx="510" cy="384" r="3" fill="#B91C1C"/>
+<text x="522" y="388" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Tenta enquete às vezes; desiste do baixo retorno</text>
+<circle cx="510" cy="406" r="3" fill="#B91C1C"/>
+<text x="522" y="410" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1F2937" font-weight="normal" text-anchor="start">Reexplica na aula seguinte, quando a prova vai mal</text>
+<rect x="24" y="516" width="444" height="104" rx="8" fill="#FFFFFF" stroke="#B91C1C"/>
+<text x="36" y="538" font-size="12.5" font-weight="bold" fill="#B91C1C" letter-spacing="1">DORES</text>
+<text x="38" y="558" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">• Decidir às cegas durante a aula</text>
+<text x="38" y="576" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">• Descobrir tarde demais (na prova)</text>
+<text x="38" y="594" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">• Ler a grade competindo com a fala — sobrecarga não-verbal</text>
+<text x="38" y="609" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">(Bailenson, 2021) [F]</text>
+<rect x="492" y="516" width="444" height="104" rx="8" fill="#FFFFFF" stroke="#0F766E"/>
+<text x="504" y="538" font-size="12.5" font-weight="bold" fill="#0F766E" letter-spacing="1">GANHOS</text>
+<text x="506" y="558" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">• Perceber a tempo e ajustar ali mesmo</text>
+<text x="506" y="576" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">• Provar que a aula melhora (para si e para a coordenação)</text>
+<text x="506" y="594" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">• Menos reexplicação e monitoria</text>
 </svg>

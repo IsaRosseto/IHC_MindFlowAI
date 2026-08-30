@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="Arial, Helvetica, sans-serif">
+<rect width="900" height="560" fill="#FFFFFF"/><rect width="900" height="560" fill="none" stroke="#D1D5DB"/>
+<rect width="900" height="86" fill="#FEF3C7"/>
+<circle cx="52" cy="43" r="26" fill="#B45309"/><text x="52" y="49" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">MA</text>
+<text x="94" y="38" font-size="20" font-weight="bold" fill="#1F2937">P04 — Márcia</text>
+<text x="94" y="60" font-size="13" fill="#6B7280">Coordenadora pedagógica EAD · 48 · decide a adoção de ferramentas</text>
+<rect x="710" y="26" rx="10" width="160" height="26" fill="#B45309"/><text x="790" y="44" font-size="12.5" font-weight="bold" fill="#fff" text-anchor="middle">SECUNDÁRIA · DECISORA</text>
+<rect x="22" y="108" width="273" height="330" rx="8" fill="#F3F4F6"/>
+<rect x="22" y="108" width="273" height="30" rx="8" fill="#0F766E"/><rect x="22" y="124" width="273" height="14" fill="#0F766E"/>
+<text x="34" y="128" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">OBJETIVOS</text>
+<circle cx="40" cy="156" r="3" fill="#0F766E"/>
+<text x="52" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Melhorar retenção e qualidade das</text>
+<text x="52" y="175" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">turmas</text>
+<circle cx="40" cy="194" r="3" fill="#0F766E"/>
+<text x="52" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Adotar tecnologia sem risco</text>
+<text x="52" y="213" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">jurídico/reputacional</text>
+<rect x="311" y="108" width="273" height="330" rx="8" fill="#F3F4F6"/>
+<rect x="311" y="108" width="273" height="30" rx="8" fill="#B91C1C"/><rect x="311" y="124" width="273" height="14" fill="#B91C1C"/>
+<text x="323" y="128" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">DORES</text>
+<circle cx="329" cy="156" r="3" fill="#B91C1C"/>
+<text x="341" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Só descobre problema na</text>
+<text x="341" y="175" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">evasão/reclamação</text>
+<circle cx="329" cy="194" r="3" fill="#B91C1C"/>
+<text x="341" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Medo de escândalo de &quot;vigilância de</text>
+<text x="341" y="213" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">alunos&quot;</text>
+<circle cx="329" cy="232" r="3" fill="#B91C1C"/>
+<text x="341" y="236" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Docentes resistentes a mais uma</text>
+<text x="341" y="251" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">plataforma</text>
+<rect x="600" y="108" width="273" height="330" rx="8" fill="#F3F4F6"/>
+<rect x="600" y="108" width="273" height="30" rx="8" fill="#1D4ED8"/><rect x="600" y="124" width="273" height="14" fill="#1D4ED8"/>
+<text x="612" y="128" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">NECESSIDADES</text>
+<circle cx="618" cy="156" r="3" fill="#1D4ED8"/>
+<text x="630" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Visão agregada e anônima da saúde das</text>
+<text x="630" y="175" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">turmas</text>
+<circle cx="618" cy="194" r="3" fill="#1D4ED8"/>
+<text x="630" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Garantias documentadas de privacidade</text>
+<text x="630" y="213" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">(DPO)</text>
+<circle cx="618" cy="232" r="3" fill="#1D4ED8"/>
+<text x="630" y="236" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Piloto controlado antes de liberar</text>
+<rect x="22" y="454" width="856" height="86" rx="8" fill="#FFFFFF" stroke="#D1D5DB"/>
+<text x="36" y="478" font-size="12.5" font-weight="bold" fill="#6B7280" letter-spacing="1">CONTEXTO DE USO</text>
+<text x="36" y="498" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Desktop institucional, relatórios e reuniões; não assiste aulas ao vivo; qualquer dado individual de aluno é linha vermelha — LGPD</text>
+<text x="36" y="514" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">primeiro.</text>
+<text x="22" y="546" font-size="10.5" fill="#6B7280">MindFlow AI · IHC CC8122 · proto-persona a validar (E7) · dados fictícios</text>
+</svg>

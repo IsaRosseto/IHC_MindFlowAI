@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="Arial, Helvetica, sans-serif">
+<rect width="900" height="560" fill="#FFFFFF"/><rect width="900" height="560" fill="none" stroke="#D1D5DB"/>
+<rect width="900" height="86" fill="#DBEAFE"/>
+<circle cx="52" cy="43" r="26" fill="#1D4ED8"/><text x="52" y="49" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">FE</text>
+<text x="94" y="38" font-size="20" font-weight="bold" fill="#1F2937">P03 — Fernanda</text>
+<text x="94" y="60" font-size="13" fill="#6B7280">Tech speaker · 29 · webinars e meetups de 100–500 pessoas</text>
+<rect x="710" y="26" rx="10" width="160" height="26" fill="#1D4ED8"/><text x="790" y="44" font-size="12.5" font-weight="bold" fill="#fff" text-anchor="middle">SECUNDÁRIA</text>
+<rect x="22" y="108" width="273" height="330" rx="8" fill="#F3F4F6"/>
+<rect x="22" y="108" width="273" height="30" rx="8" fill="#0F766E"/><rect x="22" y="124" width="273" height="14" fill="#0F766E"/>
+<text x="34" y="128" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">OBJETIVOS</text>
+<circle cx="40" cy="156" r="3" fill="#0F766E"/>
+<text x="52" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Segurar a audiência até o fim</text>
+<circle cx="40" cy="179" r="3" fill="#0F766E"/>
+<text x="52" y="183" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Melhorar cada talk com base na</text>
+<text x="52" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">anterior (A03)</text>
+<rect x="311" y="108" width="273" height="330" rx="8" fill="#F3F4F6"/>
+<rect x="311" y="108" width="273" height="30" rx="8" fill="#B91C1C"/><rect x="311" y="124" width="273" height="14" fill="#B91C1C"/>
+<text x="323" y="128" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">DORES</text>
+<circle cx="329" cy="156" r="3" fill="#B91C1C"/>
+<text x="341" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Zero retorno durante a fala; chat</text>
+<text x="341" y="175" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">morto</text>
+<circle cx="329" cy="194" r="3" fill="#B91C1C"/>
+<text x="341" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Métrica atual é só &quot;quantos saíram&quot;</text>
+<circle cx="329" cy="217" r="3" fill="#B91C1C"/>
+<text x="341" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Reassistir 1h de gravação para 3</text>
+<text x="341" y="236" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">insights</text>
+<rect x="600" y="108" width="273" height="330" rx="8" fill="#F3F4F6"/>
+<rect x="600" y="108" width="273" height="30" rx="8" fill="#1D4ED8"/><rect x="600" y="124" width="273" height="14" fill="#1D4ED8"/>
+<text x="612" y="128" font-size="12.5" font-weight="bold" fill="#fff" letter-spacing="1">NECESSIDADES</text>
+<circle cx="618" cy="156" r="3" fill="#1D4ED8"/>
+<text x="630" y="160" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Saber em que minuto a audiência caiu</text>
+<circle cx="618" cy="179" r="3" fill="#1D4ED8"/>
+<text x="630" y="183" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Ver o que estava na tela naquele</text>
+<text x="630" y="198" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">momento</text>
+<circle cx="618" cy="217" r="3" fill="#1D4ED8"/>
+<text x="630" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Histórico comparativo entre talks</text>
+<rect x="22" y="454" width="856" height="86" rx="8" fill="#FFFFFF" stroke="#D1D5DB"/>
+<text x="36" y="478" font-size="12.5" font-weight="bold" fill="#6B7280" letter-spacing="1">CONTEXTO DE USO</text>
+<text x="36" y="498" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">Setup caseiro com boa câmera e 2 monitores; plataforma varia por evento (Zoom, StreamYard, Meet); durante a talk, atenção presa no</text>
+<text x="36" y="514" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1F2937" font-weight="normal" text-anchor="start">roteiro e na câmera.</text>
+<text x="22" y="546" font-size="10.5" fill="#6B7280">MindFlow AI · IHC CC8122 · proto-persona a validar (E7) · dados fictícios</text>
+</svg>
