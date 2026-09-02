@@ -1,11 +1,9 @@
-<!-- REVISAR (branch para revisão do grupo): rascunho produzido com apoio de IA a partir da Entrega 1 e de pesquisa pública em 30/08/2026.
-     A divisão de autoria abaixo é SUGESTÃO (C03 = Matheus, conforme combinado) — revisem, ajustem e removam este comentário antes do merge na main.
-     Tudo que é afirmação de mercado tem fonte e data de acesso; o que é interpretação da equipe está como [H]. -->
+<!-- Entrega 2 consolidada em 02/09/2026 a partir das análises individuais commitadas nas branches de cada integrante (C01 Kayky, C02 Rafael, C03 Matheus, C04 Isabella, C05 Gustavo). -->
 
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** 31/08/2026  
-**Status:** 🟨 em revisão pela equipe  
+**Data:** 02/09/2026  
+**Status:** 🟩 concluída — consolidação das análises individuais  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -19,9 +17,10 @@ Compreender soluções do mesmo domínio **e também interfaces familiares ao p�
 | Read AI | concorrente indireto | Já entrega análise de engajamento e resumo de reuniões nas mesmas plataformas-alvo | F | analisar (C01) |
 | Noldus FaceReader | análogo (pesquisa) | Usa o rosto para inferir estados, como o MindFlow, mas em contexto de laboratório | F | analisar (C02) |
 | Microsoft Teams Education Insights | concorrente indireto | Painel de engajamento para professores dentro da plataforma de aula | F | analisar (C03) |
-| "Olhar a grade de câmeras" + reações/enquetes manuais (processo atual) | processo manual | É como o comunicador resolve o problema hoje | H | analisado na Seção 3 (Google Meet) |
-| Slido / Mentimeter | análogo | Como comunicadores medem a audiência ativamente hoje (enquetes ao vivo) | — (novo) | analisar (C04) — incluído porque disputa a mesma necessidade de "sentir a sala" |
-| Zoom AI Companion | análogo/cotidiano | Assistente de IA embutido na própria plataforma de reunião, sem bot visível | — (novo) | analisar (C05) — incluído por representar o padrão "IA nativa da plataforma" |
+| "Olhar a grade de câmeras" + reações/enquetes manuais (processo atual) | processo manual | É como o comunicador resolve o problema hoje | H | reações por emoji analisadas em C04; grade do Meet na Seção 3 |
+| Slido / Mentimeter | análogo | Como comunicadores medem a audiência ativamente hoje (enquetes ao vivo) | — (novo) | coberto na Seção 3 (cotidiano) |
+| Zoom AI Companion | análogo/cotidiano | Assistente de IA embutido na própria plataforma de reunião, sem bot visível | — (novo) | coberto na Seção 3 (cotidiano) |
+| Adobe Connect Engagement Dashboard | análogo | Painel de engajamento em tempo real exclusivo do apresentador, dentro da plataforma | — (novo) | analisar (C05) — o análogo mais próximo do Semáforo |
 
 > Atualizações de hipóteses decorrentes desta análise (H04 sustentada; ?01 respondida; H03 reforçada) — a registrar na [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md) na próxima atualização da matriz.
 
@@ -33,88 +32,75 @@ O público é o **comunicador** definido na Entrega 1 (professor, instrutor ou p
 
 ### Análise C01 — Read AI
 
-**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0 *(sugestão — prints já coletados pela equipe)*  
-**Tipo:** concorrente indireto (meeting intelligence)  
-**Link oficial:** https://www.read.ai  
-**Data de acesso:** 26–30/08/2026
+**Autor(a):** Kayky Pires - 22.222.040-2  
+**Tipo:** direto 
+**Link oficial:** [Read AI](https://www.read.ai/pt) 
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
-O Read AI é um "copiloto de reuniões": um agente entra na chamada (Zoom, Google Meet, Microsoft Teams) como participante, grava/transcreve e gera resumo, tópicos, itens de ação e métricas de reunião — incluindo um **score de engajamento** e indicadores de sentimento e de participação (tempo de fala, por exemplo). O valor principal entregue está no **pós-reunião** (relatório e coaching), ainda que alguns indicadores existam ao vivo.
+Read é o seu copiloto de IA — transformando reuniões, e-mails e mensagens em resumos, insights e respostas instantâneas em todos os dispositivos, onde quer que você trabalhe.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Resumo automático da reunião | Bot participante transcreve e o LLM resume por tópicos | `../assets/02_concorrencia/Resumo READIA.png` | Reduz esforço pós-sessão; nada exige atenção durante a fala |
-| Dashboard de métricas da reunião | Painel web com engajamento/sentimento/participação por reunião | `../assets/02_concorrencia/Dash READIA.png` | Métrica agregada em score único — fácil de ler, mas opaca (não explica o porquê) |
-| Análise de reações/sentimento | Indicadores derivados de sinais audiovisuais dos participantes | `../assets/02_concorrencia/Reações READIA.png` | Mostra que o público aceita a categoria "medir a audiência", mas levanta a mesma questão de consentimento do MindFlow (H03) |
-| Transcrição com marcação temporal | Transcrição navegável, trechos ligados ao tempo | `../assets/02_concorrencia/Transcrição READIA.png` | Padrão "timeline ancorada no conteúdo" — útil para nosso dashboard pós-sessão |
-| Seções expansíveis do relatório | Acordeões por tema | `../assets/02_concorrencia/Accordion 1.png` | Progressive disclosure: detalhe só quando o usuário pede |
+| Transcrição da Reunião | O Read AI registra e transcreve automaticamente as falas da reunião, separando o conteúdo por participante. | [Trasncrição](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Transcri%C3%A7%C3%A3o%20READIA.png) | A organização por participante facilita a compreensão de quem falou e permite consultar rapidamente partes específicas da reunião. |
+|Resumo automático|Após a reunião, a IA gera um resumo com os principais assuntos discutidos, decisões, perguntas e pontos relevantes.|[Resumo](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Resumo%20READIA.png)|Reduz a quantidade de informação que o usuário precisa analisar e apresenta uma visão geral da reunião de forma mais objetiva|
+|Métricas da reunião|O sistema reúne diferentes indicadores de desempenho, como engajamento, sentimento e outras métricas relacionadas à participação e comunicação.|[Metrica](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Dash%20READIA.png)|A centralização das métricas em um painel facilita a comparação das informações, mas exige boa hierarquia visual para não sobrecarregar o usuário|
 
 #### Experiência do usuário e opiniões
 
-Avaliações públicas destacam a qualidade dos resumos, mas registram atritos recorrentes: o **bot aparece como participante** e precisa ser admitido pelo anfitrião; há relatos de bot entrando em chamadas mesmo após o usuário tentar desativá-lo, e de detecção de falante ruim em reuniões presenciais (fonte: comparativo MeetGeek, "Read AI Pricing Explained", acesso 30/08/2026 — https://meetgeek.ai/blog/read-ai-pricing). Em contexto acadêmico/corporativo brasileiro, o bot visível gera a pergunta "estamos sendo gravados?" logo no início da sessão. **[H]** Interpretação da equipe: essa fricção social é uma barreira de adoção que o MindFlow deve evitar.
 
 #### Preço/modelo de negócio
 
-**[F]** Freemium por assento (acesso 30/08/2026, mesma fonte): plano gratuito com ~5 transcrições/mês; Pro US$ 19,75/usuário/mês; Enterprise US$ 29,75; Enterprise+ US$ 39,75 (SSO/SAML, compliance). Modelo SaaS puro, dados processados em nuvem.
+Utiliza o modelo freemium, oferecendo um plano gratuito limitado a 5 reuniões por mês e planos pagos por usuário. Atualmente, o plano Pro custa a partir de US$ 15/mês por usuário no pagamento anual, enquanto os planos Enterprise e Enterprise+ oferecem recursos adicionais para equipes e organizações
 
 #### Padrões e tendências percebidos
 
-Score agregado único; relatório por e-mail pós-reunião; timeline ancorada em transcrição; coaching de apresentação (tempo de fala, interrupções); integrações com CRM/Slack/Notion.
+Apresenta tendência de centralizar, em um único painel, transcrição, resumo, métricas de engajamento, sentimento e destaques da reunião. Também se percebe forte uso de inteligência artificial para reduzir o esforço de análise do usuário e transformar reuniões longas em informações visuais e objetivas.
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|---|---|---|
-| Resumo/relatório pós-sessão de alta qualidade | Prints Resumo/Dash | O pós-sessão do MindFlow compete aqui; nosso diferencial precisa ser o **tempo real** (sustenta H04) |
-| Score único de engajamento é legível, mas não explicável | Print Dash | Reforça H02: mostrar incerteza/explicação, não só um número |
-| Bot participante gera desconforto e fricção de admissão | Relatos públicos (MeetGeek, acesso 30/08/2026) | Preferir indicador privado do comunicador, sem "entidade" visível na chamada (RC06) |
-| Processamento em nuvem do áudio/vídeo | Modelo do produto | Nosso processamento local (LGPD) é diferencial de arquitetura a comunicar na interface (RC05) |
+| ID | Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|---|
+|C01| Visualização de engajamento e sentimento da reunião. | Dashboard do Read AI. | Possui função semelhante ao MindFlow, sendo necessário diferenciar o projeto pelo foco educacional e pelos estados afetivo-cognitivos analisados. |
 
 ---
 
 ### Análise C02 — Noldus FaceReader
 
-**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2 *(sugestão)*  
-**Tipo:** análogo (software de pesquisa comportamental)  
-**Link oficial:** https://www.noldus.com/facereader  
-**Data de acesso:** 30/08/2026
+**Autor(a):** Rafael Dias - 22.222.039-4 <br>
+**Tipo:** Análogo <br>
+**Link oficial:** [Noldus FaceReader](https://noldus.com/facereader) <br>
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
-O FaceReader é o software de referência em **análise automática de expressões faciais** para pesquisa: classifica emoções básicas (feliz, triste, raiva, surpresa, medo, nojo, neutro), calcula valência/arousal e gera curvas temporais por participante. É usado em estudos de consumo, educação e psicologia (metodologia discutida em Technological Forecasting & Social Change, 2023 — https://www.sciencedirect.com/science/article/pii/S0040162523005747, acesso 30/08/2026). Não é ferramenta de reunião: analisa vídeo de um participante por vez, tipicamente em laboratório.
+Noldus FaceReader - É um produto que realiza a identificação das reações faciais dos usuarios capturando em tempo real ou por videos, demonstrando como as pessoas reagem ao seu produto
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Classificação contínua de emoções | Modelo sobre o vídeo do rosto, frame a frame | site Noldus (acesso 30/08/2026) | Prova que "estado ao longo do tempo" é representável e legível como curva |
-| Curvas de valência/arousal e timeline | Gráficos temporais por estímulo/trecho | site Noldus | Padrão de timeline que inspira nosso dashboard pós-sessão |
-| Indicadores de qualidade da análise | Sinaliza quando o rosto está mal detectado (ângulo/iluminação) | paper de metodologia (2023) | Interface honesta sobre qualidade do sinal — exatamente o que H02 pede |
-| Calibração por participante | Ajuste para reduzir viés individual | paper de metodologia (2023) | Reforça que estimativa afetiva tem incerteza; calibração pode não caber em uso ao vivo |
+| Análise automática de expressões faciais | Detecta expressões como felicidade, tristeza, raiva, surpresa, medo, nojo, desprezo e estado neutro, indicando também a intensidade de cada expressão | [Identificação](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/evidencia_noldus.png) | ele Gera um indicador com o nivel de confiança para cada reação facilitando a demonstração a quem utiliza |
 
 #### Experiência do usuário e opiniões
 
-A literatura metodológica (2023) discute limites práticos: sensibilidade a iluminação/ângulo, diferenças culturais de expressão e a necessidade de tratar a saída como **estimativa**, não medida direta. **[H]** Para nós: se até o padrão-ouro de laboratório precisa de ressalvas, uma interface de uso ao vivo precisa comunicar incerteza com ainda mais cuidado.
 
 #### Preço/modelo de negócio
 
-**[F]** Licença comercial de pesquisa sob cotação (não pública); posicionado para instituições, não para o comunicador comum. **[H]** Isso deixa vago o espaço "ferramenta acessível para professor/palestrante" — que é onde o MindFlow mira.
+O Noldus FaceReader é um software comercial B2B, vendido a partir de licenças, principalmente para laboratorios, univesidades, empresas e instituições de pesquisa. O Noldus oferece 3 tipos de licenças: Essential - € 2000, Advanced - € 9000 e Premium - € 12500. Além dessas versões existe uma versão gratuita de 14 dias.
 
 #### Padrões e tendências percebidos
 
-Timeline por estado; sobreposição estímulo × reação; exportação para análise; análise individual detalhada (o oposto do nosso princípio de agregação).
+Demonstra uma tendência para usos de estudo, para entender como os usuarios reagem a produtos ou areas de ensino. Tendo alto nivel de resultados para cada expressão.
 
 #### Pontos positivos, limitações e lições
 
-| Ponto | Evidência | Implicação para nosso projeto |
-|---|---|---|
-| Visualização temporal madura (curvas por estado) | site/paper | Base para a timeline do pós-sessão (RC04) |
-| Sinalização de qualidade do sinal | paper 2023 | Adotar indicador de confiança/qualidade no semáforo e no dashboard (RC02, H02) |
-| Análise individual identificável | natureza do produto | Confirma nosso contraste: MindFlow agrega por janela e não identifica ninguém (RC03) |
-| Sem integração com reunião ao vivo | natureza do produto | O nicho "tempo real dentro da chamada" segue aberto (sustenta H04) |
+| ID | Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|---|
+| C02 | Identificação da reação das pessoas | Graficos demonstrando o nivel de confiança da emoção (Execução do software) | Possui a funcionalidade parecida com a do nosso projeto de identificar a emoção dos usuarios, demonstrando um farol cognitivo captura em tempo real. |
 
 ---
 
@@ -162,81 +148,86 @@ Spotlight cards; visões agregadas com drill-down; tendências temporais; lingua
 
 ---
 
-### Análise C04 — Slido e Mentimeter (enquetes ao vivo)
+### Análise C04 — Reações por emoji manuais (Zoom / Google Meet / Teams)
 
-**Autor(a):** Kayky Pires de Paula — 22.222.040-2 *(sugestão)*  
-**Tipo:** análogo (engajamento ativo da audiência)  
-**Links oficiais:** https://www.slido.com · https://www.mentimeter.com  
-**Data de acesso:** 30/08/2026
+**Autor(a):** Isabella Rosseto - 22.222.036-0
+**Tipo:** análogo  
+**Link oficial:** [Zoom Support](https://support.zoom.com/) e [Google Meet Help](https://support.google.com/meet/)  
+**Data de acesso:** 27/08/2026
 
 #### Contexto e proposta
 
-Slido (Cisco) e Mentimeter são o jeito dominante de "sentir a sala" ativamente: o apresentador dispara enquetes, quizzes, nuvens de palavras e Q&A, e os resultados aparecem ao vivo sobre os slides (integrações com PowerPoint, Teams, Zoom e Meet). Planos gratuitos limitados (poucas perguntas/participantes por evento) e assinatura para uso profissional (sites oficiais, acesso 30/08/2026).
+> As reações por emoji são um recurso nativo das principais plataformas de videoconferência (Zoom, Google Meet, Microsoft Teams). A proposta é simples, o participante clica num ícone (aplausos, joinha, mão levantada etc.) e esse ícone aparece brevemente pra todo mundo ver, sem precisar interromper quem está falando. É a forma mais comum hoje de dar um sinal não verbal numa reunião online, e foi o que a equipe já tinha citado como alternativa atual na Entrega 1.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Enquete/quiz ao vivo | Participante responde pelo celular/link; resultado agrega na tela | sites oficiais | Feedback agregado e anônimo **aumenta** a participação — mesmo princípio de agregação do MindFlow |
-| Resultados sobrepostos à apresentação | Overlay no slide/janela do apresentador | sites oficiais | Prova que o comunicador consegue absorver um indicador simples **enquanto** apresenta |
-| Q&A com moderação | Perguntas anônimas votadas pela audiência | sites oficiais | Alternativa atual ao "ninguém pergunta nada" |
+| Reação temporária | No Zoom, o participante clica no botão Reactions e escolhe entre 11 emojis padrão. O ícone aparece do lado do nome do participante na lista e some sozinho depois de 10 segundos | <img width="760" height="403" alt="image" src="https://github.com/user-attachments/assets/4d31f18c-af59-4ecc-b870-219208295ba9" />| O tempo curto (10s) evita poluir a tela, mas também significa que se o comunicador não estiver olhando naquele instante, perde o sinal |
+| Reação persistente | Ícones como "Levantar a mão" e "Sim/Não" ficam fixos até o próprio participante ou o host removerem manualmente | <img width="520" height="196" alt="image" src="https://github.com/user-attachments/assets/cb7e820a-3761-4ff0-b021-20d973e899f6" /> | Só esse tipo de reação dá um sinal confiável de estado sustentado, o resto é só um pulso rápido |
+| Contagem agregada por ícone | O Zoom mostra, acima de cada ícone, o número total de pessoas que reagiram daquele jeito |<img width="306" height="470" alt="image" src="https://github.com/user-attachments/assets/ebfb6ffa-74d2-45fd-bc0a-79b7413002ea" /> | É o único lugar onde existe uma leitura agregada do grupo, mas só conta quem decidiu clicar, não reflete quem está de fato engajado ou confuso |
+| Badge no vídeo + explosão de emoji na tela | No Google Meet, a reação aparece como um selo no canto do vídeo da pessoa e sobe flutuando pela tela, com várias reações ao mesmo tempo aparecendo como uma explosão de emojis | <img width="239" height="226" alt="image" src="https://github.com/user-attachments/assets/63039f19-0b4d-4582-9575-54e328c94cc6" /> | Reforça a reação como algo visual e rápido, mas ainda depende inteiramente de ação manual do participante |
 
 #### Experiência do usuário e opiniões
 
-**[H]** Limite estrutural: tudo é **ativo e pontual** — o apresentador precisa interromper o fluxo para perguntar, e mede só quem responde. Entre uma enquete e outra, a "cegueira situacional" continua. Fadiga de enquete em uso frequente é relato comum em contexto educacional.
 
-#### Preço/modelo de negócio
+> Segundo a própria documentação do Google Workspace, o objetivo declarado das reações é oferecer uma forma leve e não disruptiva de participar da reunião sem interromper quem está falando. Não achamos, nessa busca inicial, pesquisa de usuário publicada medindo se essa forma de sinal realmente ajuda o apresentador a perceber o clima do grupo, fica como uma lacuna a investigar melhor.
 
-**[F]** Freemium; planos pagos por apresentador/evento (sites oficiais, acesso 30/08/2026).
 
 #### Padrões e tendências percebidos
 
-Overlay discreto sobre o conteúdo; agregação anônima; ativação por atalho durante a apresentação; relatório pós-evento com participação.
+> Ícone pequeno, temporário e não bloqueante é o padrão dominante. A diferença entre reação temporária (10 segundos, some sozinha) e persistente (fica até alguém remover) parece ser a única forma que essas plataformas já usam pra distinguir reação pontual de estado sustentado, o que é justamente o problema que o Semáforo Cognitivo do MindFlow tenta resolver de um jeito automático, sem depender do participante escolher manter o ícone ativo.
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| Overlay legível durante a fala | produto | O Semáforo pode viver como overlay mínimo, não como painel completo (RC01) |
-| Anonimato agregado aumenta adesão | produto/uso em aula | Comunicar "ninguém é identificado" na própria interface (RC03/RC05) |
-| Medição só nos momentos de enquete | natureza do produto | O contínuo/passivo do MindFlow é o complemento que falta (sustenta H04) |
+| Reação some sozinha em poucos segundos, não polui a tela | Zoom, expiração de 10s | O Semáforo Cognitivo também deveria evitar acumular informação antiga na tela, sempre mostrar o estado mais recente |
+| Contagem agregada acima de cada ícone já é um padrão aceito pra ler o grupo de relance | Zoom, contador por ícone | Reforça que um resumo agregado simples, tipo porcentagem do grupo em cada estado, é uma leitura que esse público já sabe interpretar |
+| Depende inteiramente de ação manual do participante | Descrição de uso em ambas plataformas | É exatamente a limitação que o MindFlow resolve ao captar sinal passivo pela webcam, sem exigir clique de ninguém |
+| Host pode ligar/desligar o recurso pra reunião inteira | Toggle de reações do Google Meet | O MindFlow provavelmente também vai precisar de um controle parecido, dar ao comunicador a opção de ativar ou não o Semáforo Cognitivo numa sessão específica |
 
 ---
 
-### Análise C05 — Zoom AI Companion
+### Análise C05 — Adobe Connect Engagement Dashboard
 
-**Autor(a):** Rafael Dias — 22.222.039-4 *(sugestão)*  
-**Tipo:** análogo/cotidiano (assistente nativo da plataforma)  
-**Link oficial:** https://www.zoom.com/en/products/whats-new/  
-**Data de acesso:** 30/08/2026
+**Autor(a):** Gustavo Bertoluzzi 22.123.016-2  
+**Tipo:** análogo  
+**Link oficial:** https://helpx.adobe.com/adobe-connect/using/viewing-data-meetings.html  
+**Data de acesso:** 27/08/2026
 
 #### Contexto e proposta
 
-O AI Companion é o assistente embutido do Zoom (incluído nos planos pagos): resume a reunião, divide a gravação em capítulos inteligentes, responde "o que eu perdi?" durante a chamada e gera atas — **sem bot visível entrando como participante**, por ser função nativa da plataforma (documentações institucionais, p.ex. Stanford UIT, acesso 30/08/2026).
+> [F] O Adobe Connect é uma plataforma de webinars, salas de aula virtuais e reuniões corporativas, mais voltada pra treinamento e apresentação do que pra reunião comum. Dentro dela existe um recurso chamado Engagement Dashboard, disponível como um "pod" que só o apresentador/host enxerga (fica numa área exclusiva do apresentador, os participantes não veem). Ele calcula um score de engajamento em tempo real a partir de interações mensuráveis, como resposta a enquete, uso do chat e reações, e mostra esse score com um indicador visual por cor.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Resumo e capítulos automáticos | IA nativa sobre a gravação/transcrição | docs Zoom/universidades | Timeline por capítulos ≈ nossos "momentos críticos" |
-| "Catch me up" durante a reunião | Pergunta em linguagem natural ao assistente | docs Zoom | Antecipa o padrão do nosso Chatbot RAG pós-sessão |
-| Controles do anfitrião + aviso aos participantes | Host habilita; participantes são notificados | docs Zoom | Padrão de consentimento sinalizado na própria UI (H03) |
+| Indicador de engajamento por cor, em tempo real | Score calculado a partir de interações (enquete, chat, reação); score maior ou igual a 60 é "alto engajamento", menor que 20 é "baixo engajamento" |<img width="841" height="901" alt="image" src="https://github.com/user-attachments/assets/f98167be-a169-4625-a440-e991abb71c0e" />|É praticamente o mesmo conceito do Semáforo Cognitivo, um número complexo por trás, traduzido em uma cor simples pra leitura rápida durante a sessão |
+| Relatório minuto a minuto pós-sessão | Depois do evento, fica disponível um relatório detalhado mostrando a variação do engajamento ao longo do tempo, permitindo cruzar com o conteúdo apresentado em cada minuto |<img width="272" height="672" alt="image" src="https://github.com/user-attachments/assets/6e80d988-1006-41b6-99cd-da889413eebb" />| É praticamente o mesmo objetivo do Dashboard pós-sessão do MindFlow, achar qual trecho específico gerou queda de engajamento |
+| Rastreamento por papel/função | O apresentador pode filtrar o engajamento por tipo de participante (todos, ou por papel específico) | `../assets/02_concorrencia/adobe-connect-tracking.png` (PENDENTE) | Mostra um nível de granularidade a mais que o MindFlow ainda não previu, pode virar uma possibilidade futura pra turmas grandes com subgrupos |
 
 #### Experiência do usuário e opiniões
 
-**[H]** Por ser nativo, elimina a fricção do "bot convidado" do Read AI — mas não oferece nenhuma leitura de estado cognitivo/atenção da audiência, nem em tempo real nem no relatório.
+> [?] Não encontramos avaliação pública de usuário específica sobre esse recurso nesta busca inicial, a documentação consultada é oficial, da própria Adobe. Fica como uma lacuna a investigar melhor, talvez em fóruns de administradores de treinamento corporativo ou reviews do Adobe Connect como um todo.
 
 #### Preço/modelo de negócio
 
-**[F]** Incluído sem custo adicional nos planos pagos do Zoom (docs oficiais, acesso 30/08/2026) — pressiona ferramentas pagas de terceiros (como o Read AI) e mostra que "IA de reunião" virou commodity; a leitura cognitiva ainda não.
+> [F] O Engagement Dashboard só está disponível a partir da versão 12.8 do Adobe Connect, dentro do plano corporativo da ferramenta, não é um produto avulso, é um recurso dentro de uma licença maior.
+
+#### Padrões e tendências percebidos
+
+> [H] Uso de cor como atalho visual pra engajamento, sem precisar interpretar número, separação clara entre visão do apresentador e visão do participante, e relatório pós-sessão organizado por linha do tempo pra permitir cruzar engajamento com o conteúdo daquele momento específico.
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| Sem entidade visível na chamada | produto | Referência para o MindFlow: recurso do comunicador, não "participante-robô" (RC06) |
-| Notificação de IA ativa aos participantes | produto | Padrão de aviso/consentimento a adotar (RC05) |
-| Nenhuma métrica de estado da audiência | produto | Espaço do MindFlow permanece aberto (sustenta H04) |
+| Indicador por cor é exatamente o padrão que já tínhamos escolhido pro Semáforo Cognitivo | Faixas de score High/Low com cor associada | Valida a escolha de design feita na Entrega 1, esse padrão já é reconhecido no mercado de ferramentas de apresentação/treinamento |
+| O engajamento é calculado a partir de interação explícita (enquete, chat, reação), não de sinal visual/facial | Descrição da métrica do Adobe Connect | Essa é a maior diferença real do MindFlow, ele não depende do participante agir, o que resolve exatamente a limitação que fez a equipe escolher captar sinal facial/postural pela webcam |
+| Relatório organizado por linha do tempo pós-sessão | Minute-by-minute engagement report | Reforça que a timeline é um padrão esperado no Dashboard pós-sessão do MindFlow, não uma invenção sem precedente |
+| Recurso só disponível em plano corporativo, dentro de uma versão específica | Requisito de versão 12.8+ | Vale considerar se o MindFlow vai ficar preso a um modelo de licença parecido ou se vai ser mais acessível, isso pode virar diferencial de adoção |
 
 ## 3. Softwares que o público-alvo usa no cotidiano
 
@@ -245,14 +236,16 @@ O AI Companion é o assistente embutido do Zoom (incluído nos planos pagos): re
 | Google Meet | Plataforma padrão de aula/reunião | Grade de câmeras; reações (emoji); levantar a mão; contorno azul em quem fala | `../assets/02_concorrencia/meet.jpg` | A "interface do problema": a grade é o único lugar onde o comunicador lê a turma hoje — miniaturas pequenas, muitas câmeras fechadas |
 | Microsoft Teams (reunião) | Padrão corporativo/educacional | Mesma lógica de grade + reações; integração com Insights | — | Qualquer indicador novo precisa competir por atenção com uma UI já densa |
 | PowerPoint (modo apresentador) | É onde o comunicador vive durante a fala | Notas, cronômetro, próximo slide numa tela só do apresentador | — | Existe um "cockpit privado do apresentador" consolidado — lugar natural para um semáforo discreto |
+| Slido / Mentimeter | Quando o comunicador quer medir a sala ativamente (enquetes/quiz ao vivo) | Overlay de resultados sobre os slides; agregação anônima; relatório pós-evento | — | Overlay simples durante a fala é absorvível; mede só nos momentos de enquete — o contínuo/passivo do MindFlow é o complemento (sustenta H04) |
+| Zoom AI Companion | Assistente de IA nativo da plataforma de reunião | Resumo e capítulos automáticos; "catch me up"; aviso de IA ativa aos participantes | — | IA embutida sem bot visível virou padrão; o aviso de sistema ativo é referência de consentimento (H03, RC05) |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| Indicador de status por cor (semáforo) | Dashboards de monitoramento; Read AI (score) | Perceber o estado geral de relance (T01) | Leitura em <2s | Cor sozinha exclui daltônicos; score sem explicação vira caixa-preta | sim — cor + ícone + rótulo (RC01) |
+| Indicador de status por cor (semáforo) | Dashboards de monitoramento; Read AI (score); Adobe Connect (score por cor) | Perceber o estado geral de relance (T01) | Leitura em <2s | Cor sozinha exclui daltônicos; score sem explicação vira caixa-preta | sim — cor + ícone + rótulo (RC01) |
 | Spotlight/cartão de atenção com ação sugerida | Teams Education Insights | Transformar dado em decisão (T02) | Diz "o que fazer", não só "o que houve" | Sugestão ruim mina confiança | sim — já previsto no Semáforo |
-| Timeline com marcadores ancorados no conteúdo | Read AI (transcrição), Zoom (capítulos), FaceReader (curvas) | Revisar a sessão depois (T03) | Liga reação a momento/slide | Precisa de âncora de conteúdo confiável | sim — dashboard pós-sessão (RC04) |
+| Timeline com marcadores ancorados no conteúdo | Read AI (transcrição), Adobe Connect (minuto a minuto), FaceReader (curvas), Zoom (capítulos) | Revisar a sessão depois (T03) | Liga reação a momento/slide | Precisa de âncora de conteúdo confiável | sim — dashboard pós-sessão (RC04) |
 | Overlay mínimo sobre a apresentação | Slido/Mentimeter, modo apresentador | Informar sem interromper a fala (T01) | Não rouba o palco | Espaço de tela disputado | sim — forma do Semáforo (RC01) |
 | Indicador de qualidade/confiança do sinal | FaceReader | Calibrar confiança na estimativa (H02) | Honestidade epistêmica | Excesso de detalhe distrai | sim — versão simples ao vivo, detalhada no dashboard (RC02) |
 | Página de transparência + aviso de IA ativa | Insights (aluno), Zoom AI Companion | Consentimento e confiança do participante (H03) | Reduz percepção de vigilância | Ninguém lê textão jurídico | sim — tela curta de consentimento/o-que-processamos (RC05) |
@@ -261,46 +254,46 @@ O AI Companion é o assistente embutido do Zoom (incluído nos planos pagos): re
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 Read AI | C02 FaceReader | C03 Edu Insights | C04 Slido/Menti | C05 Zoom AI | Oportunidade para o projeto |
+| Critério | C01 Read AI | C02 FaceReader | C03 Edu Insights | C04 Reações emoji | C05 Adobe Connect | Oportunidade para o projeto |
 |---|---|---|---|---|---|---|
-| Momento do feedback | pós (e pouco ao vivo) | pós (pesquisa) | pós/assíncrono | pontual (quando perguntado) | pós | **Contínuo e ao vivo** é o espaço vazio |
-| O que mede | fala/participação/sentimento | emoções individuais | ações digitais | respostas ativas | conteúdo da fala | **Estado cognitivo agregado** ninguém entrega |
-| Leitura de relance durante a fala | não | não | não | sim (overlay) | não | Semáforo como overlay mínimo |
-| Explicabilidade/incerteza | score opaco | curvas + qualidade do sinal | métricas claras | n/a | n/a | Mostrar confiança sem virar caixa-preta |
-| Privacidade do participante | nuvem + bot visível | vídeo identificado | transparência documentada | anônimo agregado | aviso nativo | Local + agregado + transparência = diferencial comunicável |
-| Fricção de adoção | bot precisa ser admitido | licença institucional | depende do Teams | criar enquete a cada uso | preso ao Zoom | Rodar como camada do comunicador, sem depender da plataforma |
+| Momento do feedback | pós (resumo/métricas) | pós (pesquisa) | pós/assíncrono | ao vivo, mas pontual e manual | ao vivo (score) + relatório pós | **Contínuo, passivo e ao vivo** é o espaço vazio |
+| O que mede | fala/participação/sentimento | emoções individuais (face) | ações digitais | reações voluntárias clicadas | interações explícitas (enquete/chat/reação) | **Estado cognitivo agregado** ninguém entrega |
+| Leitura de relance durante a fala | não | não | não | parcial (contador por emoji, efêmero) | sim (cor no pod do host) | Semáforo: relance + persistente + sem depender de clique |
+| Explicabilidade/incerteza | métricas sem "porquê" | nível de confiança por expressão | métricas claras | n/a | faixas de score sem explicação | Mostrar confiança sem virar caixa-preta (H02) |
+| Privacidade do participante | nuvem + gravação | vídeo identificado | transparência documentada | reação pública identificada | só interações, sem câmera | Local + agregado + transparência = diferencial comunicável |
+| Fricção de adoção | bot precisa ser admitido | licença de pesquisa (€ 2.000+) | depende do Teams | nativo, zero fricção | plano corporativo (12.8+) | Rodar como camada do comunicador, sem depender da plataforma |
 
 ## 5. Recomendações derivadas
 
-- **RC01:** O Semáforo deve ser um overlay mínimo de leitura em ≤2s, com **cor + ícone + rótulo curto** (nunca só cor), coexistindo com o modo apresentador — derivada de C04, Seção 3 (PowerPoint) e acessibilidade.
-- **RC02:** Exibir indicador simples de **confiança/qualidade do sinal** ao vivo (e detalhado no dashboard), em vez de score opaco — derivada de C02 (FaceReader) e da crítica ao score do C01; responde H02.
-- **RC03:** Toda visualização em tempo real mostra **somente o agregado do grupo**, nunca indivíduos — derivada de C02 (contraexemplo) e C04 (anonimato aumenta adesão); coerente com a arquitetura do TCC.
-- **RC04:** Dashboard pós-sessão organizado como **timeline com momentos críticos ancorados no conteúdo** (slide/trecho), não tabela de números — derivada de C01 (transcrição temporal), C05 (capítulos) e C02 (curvas).
-- **RC05:** Criar **tela curta de consentimento/transparência do participante** ("o que processamos, o que nunca sai do seu dispositivo") + aviso de sistema ativo — derivada de C03 (transparência do Insights) e C05 (aviso nativo); responde H03.
-- **RC06:** O MindFlow aparece como **recurso privado do comunicador**, sem bot/entidade visível na chamada — derivada das críticas ao C01 e do padrão nativo do C05.
+- **RC01:** O Semáforo deve ser um overlay mínimo de leitura em ≤2s, com **cor + ícone + rótulo curto** (nunca só cor), coexistindo com o modo apresentador — derivada de C05 (score por cor do Adobe), C04 (contadores agregados de relance) e Seção 3; acessibilidade para daltônicos.
+- **RC02:** Exibir indicador simples de **confiança/qualidade do sinal** ao vivo (e detalhado no dashboard) — derivada de C02 (FaceReader expõe nível de confiança por expressão) e das métricas sem explicação de C01/C05; responde H02.
+- **RC03:** Toda visualização em tempo real mostra **somente o agregado do grupo**, nunca indivíduos — C04 mostra que leitura agregada por contador já é padrão aceito pelo público, em contraste com a análise individual identificada de C02; coerente com a arquitetura do TCC.
+- **RC04:** Dashboard pós-sessão organizado como **timeline com momentos críticos ancorados no conteúdo** — derivada de C05 (relatório minuto a minuto), C01 (transcrição temporal) e C02 (curvas por estado).
+- **RC05:** Criar **tela curta de consentimento/transparência do participante** ("o que processamos, o que nunca sai do seu dispositivo") + aviso de sistema ativo — derivada de C03 (páginas de transparência do Insights) e do aviso de IA nativo (Zoom, Seção 3); responde H03.
+- **RC06:** O MindFlow aparece como **recurso privado do comunicador** (sem bot/entidade visível na chamada), com **controle de ativar/desativar por sessão** — derivada de C05 (pod exclusivo do host) e C04 (toggle de reações do host).
 - **RC07:** Alertas devem vir com **ação sugerida** ("considere uma pausa/enquete") — derivada de C03 (spotlights) e alinhada ao Semáforo já previsto no TCC.
 
 ## Referências
 
-- MeetGeek. *Read AI Pricing Explained*. https://meetgeek.ai/blog/read-ai-pricing — acesso 30/08/2026.
-- Read AI. Site oficial. https://www.read.ai — acesso 30/08/2026.
-- Microsoft. *Educator's guide to Insights in Microsoft Teams*. https://support.microsoft.com/en-us/topic/educator-s-guide-to-insights-in-microsoft-teams-27b56255-90c0-47aa-bac3-1c9f50157181 — acesso 30/08/2026.
-- Microsoft. *Student transparency in Insights*. https://support.microsoft.com/en-us/teams/education/quick-start/student-transparency-in-insights-data-collected-to-support-you — acesso 30/08/2026.
-- Microsoft Learn. *IT Admin Guide to Education Insights*. https://learn.microsoft.com/en-us/microsoftteams/class-insights — acesso 30/08/2026.
-- Noldus. *FaceReader / Emotion Analysis*. https://www.noldus.com/facereader — acesso 30/08/2026.
-- Büdenbender et al. *I can see how you feel — Methodological considerations and handling of Noldus's FaceReader software for emotion measurement*. Technological Forecasting & Social Change, 2023. https://www.sciencedirect.com/science/article/pii/S0040162523005747 — acesso 30/08/2026.
-- Slido. https://www.slido.com · Mentimeter. https://www.mentimeter.com — acesso 30/08/2026.
-- Zoom. *What's new* / documentações institucionais do AI Companion (p.ex. https://uit.stanford.edu/service/zoom/ai) — acesso 30/08/2026.
+- Microsoft. *Educator's guide to Insights in Microsoft Teams* — acesso 30/08/2026 (C03).
+- Microsoft. *Student transparency in Insights* — acesso 30/08/2026 (C03).
+- Microsoft Learn. *IT Admin Guide to Education Insights* — acesso 30/08/2026 (C03).
+- Adobe. *Viewing engagement data in Adobe Connect* (helpx.adobe.com) — acesso 27/08/2026 (C05).
+- Noldus. *FaceReader* — acesso 26/08/2026 (C02).
+- Read AI (read.ai/pt) — acesso 26/08/2026 (C01).
+- Zoom Support · Google Meet Help (reações por emoji) — acesso 27/08/2026 (C04).
+- Slido · Mentimeter · Zoom AI Companion (docs oficiais e institucionais, p.ex. Stanford UIT) — acesso 30/08/2026 (Seção 3).
+- Prints e demais evidências referenciados inline em cada análise.
 
 ## Checklist
 
 - [x] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
-- [x] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
-- [x] Há pelo menos uma análise completa por integrante. *(divisão sugerida — confirmar)*
-- [ ] Cada análise contém prints legíveis da interface. *(pendente: prints de Insights, Slido/Menti e Zoom — ver LEIA-ME)*
-- [x] Prints mostram telas/estados relevantes, não apenas logos/homepage. *(para o Read AI e Meet, já coletados)*
+- [ ] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade. *(H04 sustentada e ?01 respondida por este levantamento — registrar na matriz na próxima atualização)*
+- [x] Há pelo menos uma análise completa por integrante (C01 Kayky, C02 Rafael, C03 Matheus, C04 Isabella, C05 Gustavo).
+- [ ] Cada análise contém prints legíveis da interface. *(pendentes: print do Insights em C03 e o print de rastreamento por papel em C05)*
+- [x] Prints mostram telas/estados relevantes, não apenas logos/homepage.
 - [x] Foram analisados concorrentes e/ou interfaces representativas ao público.
 - [x] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos.
-- [x] Opiniões de UX têm fonte.
+- [ ] Opiniões de UX têm fonte. *(pendente em C01 e C02 — seções "Experiência do usuário" ainda em aberto)*
 - [x] A síntese compara critérios comuns e produz recomendações.
 - [x] Não há "copiar porque o concorrente faz"; há justificativa de adequação ao público/contexto.
