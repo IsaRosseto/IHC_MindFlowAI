@@ -75,7 +75,8 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Persona escolhida:** P01 (Camila Duarte)  
 **Justificativa:** É a persona mais detalhada até agora e representa bem o comunicador em uma situação concreta e comum (aula de idioma em turma pequena), o que ajuda a equipe a validar decisões de design num cenário realista antes de generalizar pra outros contextos.
 
-![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
+<img width="590" height="420" alt="image" src="https://github.com/user-attachments/assets/480fd080-5094-4bac-a365-f7f001a930d5" />
+
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
 
