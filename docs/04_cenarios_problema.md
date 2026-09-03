@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
 **Data:** {{30/08/2026}}  
-**Status:** ⬜ não iniciada  
+**Status:** 🟨 iniciada  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
