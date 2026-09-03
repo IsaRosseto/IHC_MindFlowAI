@@ -50,12 +50,12 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Ocupação/papel | Professora de Filosofia no ensino a distância e responsável pela condução das aulas |
 | Conhecimento do domínio | Alto domínio do conteúdo que ensina e 7 anos de experiência como professora |
 | Experiência tecnológica | Familiaridade baixa a média com plataformas de videoconferência, ambientes virtuais de aprendizagem e compartilhamento de conteúdo |
-| Objetivos | Conduzir aulas claras e perceber quando os alunos apresentam dificuldades de compreensão, desmotivação ou frustração |
+| Objetivos | azer com que os alunos compreendam o conteúdo de Filosofia por meio de aulas didáticas, claras e facilitadoras, mesmo no ambiente de ensino a distância |
 | Necessidades | Compreender como a turma está reagindo durante a aula e saber quando precisa mudar a forma de explicar o conteúdo |
 | Dores/frustrações | Sente falta de observar as expressões e reações dos alunos como fazia presencialmente e se preocupa quando recebe pouco retorno da turma |
 | Motivadores | Paixão por ensinar, ajudar os alunos a compreender conteúdos complexos e melhorar continuamente suas aulas |
 | Restrições/acessibilidade | Possui mobilidade reduzida após um acidente, dificultando o deslocamento até a instituição; durante as aulas também precisa dividir a atenção entre conteúdo, chat, alunos e apresentação |
-| Ambiente típico de uso | Pequena sala organizada e bem iluminada em sua residência, utilizando notebook, webcam e internet para ministrar aulas online |
+| Ambiente típico de uso | Pequena sala, iluminada em sua residência, utilizando notebook, webcam e internet para ministrar aulas online |
 | Comportamentos relevantes | Observa câmeras e chat, pergunta se os alunos entenderam e, diante de pouca participação, utiliza resumos, tópicos nos slides e novos exemplos para tentar facilitar a compreensão |
 
 **Decisões de design influenciadas por P01:**
