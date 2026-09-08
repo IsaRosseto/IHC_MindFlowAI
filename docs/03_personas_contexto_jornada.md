@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{27/08/2026}}  
+**Status:** 🟨 iniciada  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -28,37 +28,42 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 | Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
 |---|---|---|---|
-| {{usuário/objetivo/característica/H01...}} | F / H / ? | {{...}} | incorporar / manter como hipótese / descartar / investigar |
+| Comunicador, como professor, instrutor ou palestrante, é o usuário prioritário da interface | F | Perfil definido pela equipe na seção 7.2 da Entrega 1 | Incorporar |
+| Objetivo de perceber, durante a sessão, se o grupo está engajado, entediado, confuso ou frustrado | H | Registrado como hipótese na atividade A01 da seção 3.2 | Manter como hipótese |
+| Revisar após a sessão os momentos de maior confusão ou desengajamento | H | Registrado como hipótese na atividade A03 da seção 3.2 | Manter como hipótese |
+| Dificuldade de acompanhar visualmente vários participantes enquanto apresenta conteúdo | H | Registrada como hipótese nas seções 2.4 e 4.2 | Manter como hipótese |
 
 ## 1. Personas
 
-### Persona P01 — {{nome fictício}}
+### Persona P02 — Nathanael Lima
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Autor(a):** Rafael Dias - 22.222.039-4  
+**Tipo:** Secundária  
+**Base de evidências:** proto-persona a validar  
+**Hipóteses da Entrega 1 relacionadas:** H01
 
-![Persona P01](../assets/03_personas/persona_p01.svg)
+![Persona P01](../assets/03_personas/persona_nathanael.png)
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | 25–30 anos; profissional de Treinamento e Desenvolvimento que conduz capacitações online para equipes de diferentes áreas da empresa |
+| Ocupação/papel | Instrutor corporativo responsável por apresentar novos processos, ferramentas e procedimentos internos aos funcionários |
+| Conhecimento do domínio | Alto conhecimento dos processos que ensina, mas normalmente trabalha com públicos de áreas e níveis de experiência diferentes |
+| Experiência tecnológica | Familiaridade média a alta com videoconferência, apresentações, enquetes, formulários e plataformas corporativas |
+| Objetivos | Fazer com que os participantes compreendam rapidamente o treinamento e consigam aplicar o conteúdo nas atividades do trabalho |
+| Necessidades | Perceber durante o treinamento quando o grupo está com dificuldade e identificar posteriormente quais partes da apresentação precisam ser melhoradas |
+| Dores/frustrações | Como frequentemente ministra treinamentos para pessoas que não conhece, tem dificuldade para interpretar silêncio ou pouca participação. Muitas vezes só descobre que um conteúdo não ficou claro quando surgem dúvidas ou erros depois do treinamento |
+| Motivadores | Realizar capacitações objetivas, reduzir dúvidas posteriores e melhorar seus materiais para os próximos grupos |
+| Restrições/acessibilidade | Trabalha com horários definidos e precisa cumprir uma pauta dentro de um tempo limitado. Também divide a atenção entre apresentação, chat, perguntas e controle do cronograma |
+| Ambiente típico de uso | Escritório ou home office, utilizando notebook, headset e plataforma de videoconferência para treinamentos com funcionários de diferentes setores |
+| Comportamentos relevantes | Costuma apresentar exemplos práticos, fazer perguntas rápidas e utilizar enquetes para verificar a compreensão. Após o treinamento, revisa feedbacks e ajusta os materiais antes de apresentá-los para outro grupo |
 
-**Decisões de design influenciadas por P01:**
+**Decisões de design influenciadas por P02:**
 
-- {{...}}
-
+- Apresentar informações de forma objetiva durante a sessão, sem interromper o ritmo do treinamento.
+- Permitir a consulta posterior dos momentos em que o grupo apresentou maior dificuldade.
+- Facilitar a comparação entre diferentes sessões ou turmas de treinamento.
+- Apresentar informações agregadas, sem identificar individualmente os funcionários.
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas
