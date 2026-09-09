@@ -1,226 +1,248 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{27/08/2026}} 
-**Status:** 🟨 iniciada
+**Data:** 27/08/2026  
+**Status:** 🟨 iniciada  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
 
 Representar grupos de usuários de forma útil para decisões de design. Persona não é personagem decorativo: suas características devem alterar requisitos, prioridades, linguagem, fluxos ou critérios de avaliação.
 
-## Atenção a projetos técnicos
+## Relação com o projeto de IHC
 
-Em TCCs sem interface original, a persona pode representar um **profissional que se apropria da contribuição técnica**: DBA, analista, cientista de dados, administrador, pesquisador, técnico, operador, gestor ou especialista de domínio.
+O MindFlow AI já prevê uma interface como parte do TCC. Conforme a Entrega 1 e a matriz de rastreabilidade, o projeto de IHC prioriza o **comunicador** — professor, instrutor ou palestrante — que precisa perceber em tempo real o estado afetivo-cognitivo agregado do grupo sem tirar a atenção da condução da sessão.
 
-Não escolha um perfil apenas porque “parece combinar” com a tecnologia. Explique **qual objetivo esse perfil teria e qual parte da contribuição do TCC produziria valor para ele**. Se ainda for hipótese, mantenha como hipótese/proto-persona a validar.
-
-Também considere papéis diferentes quando houver tarefas distintas, por exemplo:
-
-- operador que executa análises;
-- administrador que configura e gerencia permissões;
-- especialista que interpreta resultados;
-- gestor que consulta relatórios e decide;
-- auditor que revisa histórico.
+O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard pós-sessão** é o recorte secundário para revisão da linha temporal e dos momentos de maior dificuldade. Como ainda não há pesquisa com usuários reais registrada, as personas desta entrega são **proto-personas a validar**.
 
 ## Entradas da Entrega 1
 
-Antes de criar personas, retome os tipos de usuários, características relevantes, objetivos e hipóteses registradas na Entrega 1. A persona **não deve transformar uma hipótese inicial em fato por meio de uma história fictícia**.
-
 | Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
 |---|---|---|---|
-| {{usuário/objetivo/característica/H01...}} | F / H / ? | {{...}} | incorporar / manter como hipótese / descartar / investigar |
+| Comunicador — professor, instrutor ou palestrante — como usuário prioritário | H | Entrega 1, itens 2.2 e 7.2; matriz de rastreabilidade, seção 1 | Incorporar nas personas e manter como hipótese até a validação com usuários |
+| Objetivo de perceber o estado do grupo em tempo real sem tirar a atenção da condução | H | Entrega 1, itens 3.1, 7.3 e 9.1 | Incorporar nos objetivos, necessidades, contexto e jornada |
+| A01 — perceber o estado do grupo durante a sessão | H | Entrega 1, item 3.2 | Representar na jornada e nas decisões de design |
+| A02 — ajustar a condução da sessão em resposta ao estado percebido | H | Entrega 1, item 3.2 | Representar como objetivo do comunicador, sem transformar a ação em resposta automática do sistema |
+| A03 — revisar após a sessão os momentos de maior confusão ou desengajamento | H | Entrega 1, item 3.2 | Representar na etapa pós-sessão da jornada |
+| H01 — o comunicador considera útil um indicador discreto durante a própria sessão | H, aberta | Matriz de rastreabilidade, seção 2 | Manter como hipótese central a ser validada |
+| H02 — o nível de confiança deve aparecer para evitar confiança cega na classificação | H, aberta | Matriz de rastreabilidade, seção 2 | Incorporar como necessidade e oportunidade de design, ainda sem tratá-la como requisito validado |
+| H03 — o participante pode sentir desconforto com a classificação de seu comportamento | H, aberta | Matriz de rastreabilidade, seção 2 | Considerar no contexto social, na transparência e na privacidade |
+| Turmas pequenas, de 5 a 15 alunos, como recorte específico de P02 | H nova | Informação introduzida nesta entrega; não constava na Entrega 1 | Investigar se o indicador agregado continua representativo em grupos pequenos |
 
 ## 1. Personas
 
-### Persona P01 — Karol
+### Persona P01 — Karol Schrödinger
 
-**Autor(a):** Kayky Pires — 22.222.040-2  
+**Autor:** Kayky Pires de Paula — 22.222.040-2  
 **Tipo:** primária  
-**Base de evidências:** proto-persona baseada na Entrega 1  
-**Hipóteses da Entrega 1 relacionadas:** H01
+**Base de evidências:** proto-persona baseada na Entrega 1; ainda sem entrevista ou observação com usuários reais  
+**Hipóteses da Entrega 1 relacionadas:** H01 e H02
 
-<img src="https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/03_personas/Karol.png" width="300">
+<img src="https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/03_personas/Karol.png" width="300" alt="Persona P01 — Karol">
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | 30–45 anos; professora que ministra aulas por videoconferência |
+| Faixa etária / contexto relevante | 35 anos; professora que ministra aulas por videoconferência |
 | Ocupação/papel | Professora de Filosofia no ensino a distância e responsável pela condução das aulas |
-| Conhecimento do domínio | Alto domínio do conteúdo que ensina e 7 anos de experiência como professora |
+| Conhecimento do domínio | Alto domínio do conteúdo que ensina e sete anos de experiência como professora |
 | Experiência tecnológica | Familiaridade baixa a média com plataformas de videoconferência, ambientes virtuais de aprendizagem e compartilhamento de conteúdo |
-| Objetivos | azer com que os alunos compreendam o conteúdo de Filosofia por meio de aulas didáticas, claras e facilitadoras, mesmo no ambiente de ensino a distância |
-| Necessidades | Compreender como a turma está reagindo durante a aula e saber quando precisa mudar a forma de explicar o conteúdo |
+| Objetivos | Fazer com que os alunos compreendam o conteúdo de Filosofia por meio de aulas didáticas, claras e facilitadoras, mesmo no ensino a distância |
+| Necessidades | Compreender como a turma está reagindo durante a aula e saber quando pode ser necessário mudar a forma de explicar o conteúdo |
 | Dores/frustrações | Sente falta de observar as expressões e reações dos alunos como fazia presencialmente e se preocupa quando recebe pouco retorno da turma |
 | Motivadores | Paixão por ensinar, ajudar os alunos a compreender conteúdos complexos e melhorar continuamente suas aulas |
-| Restrições/acessibilidade | Possui mobilidade reduzida após um acidente, dificultando o deslocamento até a instituição; durante as aulas também precisa dividir a atenção entre conteúdo, chat, alunos e apresentação |
-| Ambiente típico de uso | Pequena sala, iluminada em sua residência, utilizando notebook, webcam e internet para ministrar aulas online |
-| Comportamentos relevantes | Observa câmeras e chat, pergunta se os alunos entenderam e, diante de pouca participação, utiliza resumos, tópicos nos slides e novos exemplos para tentar facilitar a compreensão |
+| Restrições/acessibilidade | Possui mobilidade reduzida após um acidente, o que dificulta o deslocamento até a instituição; durante as aulas, divide a atenção entre conteúdo, chat, alunos e apresentação |
+| Ambiente típico de uso | Pequena sala iluminada em sua residência, utilizando notebook, webcam e internet para ministrar aulas on-line |
+| Comportamentos relevantes | Observa câmeras e chat, pergunta se os alunos entenderam e, diante de pouca participação, utiliza resumos, tópicos e novos exemplos |
+
+> Os dados específicos de Karol são características da proto-persona e ainda precisam ser validados. Eles não constituem evidência sobre todos os professores.
 
 **Decisões de design influenciadas por P01:**
 
 - Priorizar informações simples e rápidas de interpretar durante a aula.
-- Evitar excesso de elementos e interações que disputem a atenção da professora.
-- Apresentar informações de forma clara, considerando sua familiaridade tecnológica baixa a média.
-- Permitir que estimativas do sistema sejam apresentadas como apoio, sem transmitir certeza absoluta sobre o estado dos alunos.
-> Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
-
+- Evitar elementos e interações que disputem a atenção da professora.
+- Utilizar linguagem clara, considerando sua familiaridade tecnológica baixa a média.
+- Apresentar as classificações como estimativas de apoio, sem transmitir certeza absoluta.
 
 ### Persona P02 — Camila Duarte
 
-**Autor(a):** Isabella Rosseto - 22.222.036-0
+**Autora:** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Tipo:** primária  
-**Base de evidências:** proto-persona a validar, construída a partir das hipóteses e do usuário definido na Entrega 1, ainda sem entrevista real  
-**Hipóteses da Entrega 1 relacionadas:** H01, H02
+**Base de evidências:** proto-persona construída a partir das hipóteses e do usuário definido na Entrega 1; ainda sem entrevista ou observação com usuários reais  
+**Hipóteses da Entrega 1 relacionadas:** H01 e H02; inclui a hipótese nova sobre turmas pequenas
 
-<img width="512" height="279" alt="image" src="https://github.com/user-attachments/assets/7c55de54-a37e-44a8-a060-c40d44d79be6" />
+<img src="https://github.com/user-attachments/assets/7c55de54-a37e-44a8-a060-c40d44d79be6" width="300" alt="Persona P02 — Camila Duarte">
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | 34 anos |
-| Ocupação/papel | Professora de inglês, dá aula em uma escola de idiomas e também turmas particulares por conta própria |
-| Conhecimento do domínio | Alta, é formada em Letras e tem certificação internacional de proficiência, domina bem o conteúdo que ensina |
-| Experiência tecnológica | Mediana, usa bem o Zoom, Google Meet e ferramentas básicas de apresentação, mas não é alguém que acompanha lançamento de tecnologia por hobby |
-| Objetivos | Manter a turma engajada durante a aula toda, mesmo sendo online, e perceber rápido quando algum aluno está se perdendo no conteúdo |
-| Necessidades | Um sinal simples de como a turma está reagindo, sem precisar ficar checando rosto por rosto enquanto fala e compartilha slide |
-| Dores/frustrações | Em turmas de 5 a 15 alunos, é fácil um ou dois alunos ficarem confusos sem avisar nada, e ela só percebe isso quando já é tarde, na correção do exercício ou na aula seguinte |
-| Motivadores | Ver os alunos evoluindo de verdade no idioma, e sentir que a aula foi bem conduzida, não só que o conteúdo foi passado |
-| Restrições/acessibilidade | Nenhuma restrição de acessibilidade conhecida, mas tem pouco tempo entre uma aula e outra, então qualquer ferramenta nova precisa ser rápida de entender |
-| Ambiente típico de uso | Dá aula de casa, notebook com webcam, às vezes numa sala silenciosa, às vezes com alguma interrupção doméstica |
-| Comportamentos relevantes | Fala bastante durante a aula, compartilha tela com exercícios e slides, e só consegue olhar rapidamente pra grade de vídeo entre uma atividade e outra |
+| Faixa etária / contexto relevante | 34 anos; ministra aulas por videoconferência para turmas pequenas, de 5 a 15 alunos |
+| Ocupação/papel | Professora de inglês em uma escola de idiomas e em turmas particulares |
+| Conhecimento do domínio | Alto; formada em Letras e com certificação internacional de proficiência |
+| Experiência tecnológica | Média; utiliza Zoom, Google Meet e ferramentas básicas de apresentação, mas não é especialista em tecnologia |
+| Objetivos | Manter a turma engajada e perceber rapidamente quando os alunos estão encontrando dificuldade no conteúdo |
+| Necessidades | Receber um sinal simples do estado geral da turma sem precisar verificar cada rosto enquanto fala e compartilha a tela |
+| Dores/frustrações | Pode perceber somente na correção de um exercício ou na aula seguinte que parte da turma não compreendeu o conteúdo |
+| Motivadores | Ver os alunos evoluindo no idioma e sentir que a aula produziu compreensão, não apenas exposição de conteúdo |
+| Restrições/acessibilidade | Nenhuma restrição de acessibilidade conhecida; possui pouco tempo entre uma aula e outra, portanto uma nova ferramenta precisa ser rápida de compreender |
+| Ambiente típico de uso | Ministra aulas de casa, com notebook e webcam, em um ambiente que pode sofrer interrupções domésticas |
+| Comportamentos relevantes | Compartilha exercícios e slides, fala durante grande parte da aula e consulta rapidamente a grade de vídeo entre as atividades |
+
+> Os dados específicos de Camila são características da proto-persona. O recorte de 5 a 15 alunos é uma hipótese nova e deve ser investigado.
 
 **Decisões de design influenciadas por P02:**
 
-- O Semáforo Cognitivo precisa ser lido de relance, já que Camila está com a atenção dividida entre falar, compartilhar tela e conduzir a aula.
-- Como a turma é pequena (5 a 15 alunos), o indicador agregado por grupo precisa continuar fazendo sentido mesmo com poucas pessoas, diferente de uma sala de aula cheia com 40 ou 50 alunos.
-- A linguagem da interface não pode usar termo técnico de IA, já que Camila tem experiência tecnológica mediana, não é especialista.
-- O nível de confiança da classificação (ligado à H02) precisa aparecer de um jeito simples, porque ela não teria como validar sozinha se o sistema está certo ou errado numa aula de idioma.
-
+- Permitir que o Semáforo Cognitivo seja interpretado de relance.
+- Avaliar se o indicador agregado continua significativo em grupos pequenos.
+- Evitar terminologia técnica de inteligência artificial.
+- Representar o nível de confiança de maneira simples, conforme H02.
 
 ### Persona P03 — Nathanael Lima
 
-**Autor(a):** Rafael Dias - 22.222.039-4  
-**Tipo:** Secundária  
-**Base de evidências:** proto-persona a validar  
-**Hipóteses da Entrega 1 relacionadas:** H01
+**Autor:** Rafael Dias — 22.222.039-4  
+**Tipo:** secundária  
+**Base de evidências:** proto-persona a validar, construída a partir do contexto de treinamento corporativo previsto na Entrega 1  
+**Hipóteses da Entrega 1 relacionadas:** H01, H02 e H03
 
-![Persona P01](../assets/03_personas/persona_nathanael.png)
+<img src="../assets/03_personas/persona_nathanael.png" width="300" alt="Persona P03 — Nathanael Lima">
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | 25–30 anos; profissional de Treinamento e Desenvolvimento que conduz capacitações online para equipes de diferentes áreas da empresa |
-| Ocupação/papel | Instrutor corporativo responsável por apresentar novos processos, ferramentas e procedimentos internos aos funcionários |
-| Conhecimento do domínio | Alto conhecimento dos processos que ensina, mas normalmente trabalha com públicos de áreas e níveis de experiência diferentes |
+| Faixa etária / contexto relevante | 25–30 anos; profissional de Treinamento e Desenvolvimento que conduz capacitações on-line para equipes de diferentes áreas |
+| Ocupação/papel | Instrutor corporativo responsável por apresentar processos, ferramentas e procedimentos internos |
+| Conhecimento do domínio | Alto conhecimento dos processos que ensina, mas trabalha com públicos de áreas e níveis de experiência variados |
 | Experiência tecnológica | Familiaridade média a alta com videoconferência, apresentações, enquetes, formulários e plataformas corporativas |
-| Objetivos | Fazer com que os participantes compreendam rapidamente o treinamento e consigam aplicar o conteúdo nas atividades do trabalho |
-| Necessidades | Perceber durante o treinamento quando o grupo está com dificuldade e identificar posteriormente quais partes da apresentação precisam ser melhoradas |
-| Dores/frustrações | Como frequentemente ministra treinamentos para pessoas que não conhece, tem dificuldade para interpretar silêncio ou pouca participação. Muitas vezes só descobre que um conteúdo não ficou claro quando surgem dúvidas ou erros depois do treinamento |
+| Objetivos | Fazer com que os participantes compreendam o treinamento e consigam aplicar o conteúdo nas atividades de trabalho |
+| Necessidades | Perceber durante o treinamento quando o grupo encontra dificuldade e identificar posteriormente partes da apresentação que precisam ser melhoradas |
+| Dores/frustrações | Tem dificuldade para interpretar silêncio ou pouca participação de pessoas que não conhece; muitas vezes descobre falhas de compreensão somente após o treinamento |
 | Motivadores | Realizar capacitações objetivas, reduzir dúvidas posteriores e melhorar seus materiais para os próximos grupos |
-| Restrições/acessibilidade | Trabalha com horários definidos e precisa cumprir uma pauta dentro de um tempo limitado. Também divide a atenção entre apresentação, chat, perguntas e controle do cronograma |
-| Ambiente típico de uso | Escritório ou home office, utilizando notebook, headset e plataforma de videoconferência para treinamentos com funcionários de diferentes setores |
-| Comportamentos relevantes | Costuma apresentar exemplos práticos, fazer perguntas rápidas e utilizar enquetes para verificar a compreensão. Após o treinamento, revisa feedbacks e ajusta os materiais antes de apresentá-los para outro grupo |
+| Restrições/acessibilidade | Nenhuma restrição de acessibilidade conhecida; precisa cumprir uma pauta em tempo limitado e divide a atenção entre apresentação, chat, perguntas e cronograma |
+| Ambiente típico de uso | Escritório ou home office, utilizando notebook, headset e plataforma de videoconferência |
+| Comportamentos relevantes | Apresenta exemplos práticos, faz perguntas rápidas, utiliza enquetes e revisa feedbacks para ajustar os materiais |
+
+> Os dados específicos de Nathanael são características da proto-persona e devem ser validados com profissionais de treinamento corporativo.
 
 **Decisões de design influenciadas por P03:**
 
-- Apresentar informações de forma objetiva durante a sessão, sem interromper o ritmo do treinamento.
-- Permitir a consulta posterior dos momentos em que o grupo apresentou maior dificuldade.
-- Facilitar a comparação entre diferentes sessões ou turmas de treinamento.
-- Apresentar informações agregadas, sem identificar individualmente os funcionários.
-> Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
+- Apresentar informações objetivas sem interromper o ritmo do treinamento.
+- Permitir a consulta posterior dos períodos em que o grupo apresentou maior dificuldade.
+- Investigar a comparação entre sessões ou turmas, atualmente registrada apenas como possibilidade na Entrega 1.
+- Manter os resultados agregados e considerar o receio de uso para avaliação individual, relacionado a H03.
 
-### Persona P01 — {{nome fictício}}
+### Persona P04 — Manoel Gomes
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5  
+**Tipo:** secundária  
+**Base de evidências:** proto-persona a validar, construída a partir das hipóteses da Entrega 1, estendendo o perfil do comunicador para o contexto comercial  
+**Hipóteses da Entrega 1 relacionadas:** H01, H03, H04
 
-![Persona P01](../assets/03_personas/persona_p01.svg)
+![Persona P04](../assets/03_personas/persona_manoel_gomes.png)
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | 38–45 anos; vendedor que apresenta propostas e demonstrações por videoconferência (Microsoft Teams) para clientes de outras empresas |
+| Ocupação/papel | Executivo de vendas B2B, responsável por conduzir reuniões comerciais com grupos de 3 a 10 participantes do lado do cliente |
+| Conhecimento do domínio | Alto no produto e no discurso de venda, com anos de experiência em reunião presencial, onde lia o cliente pelo olhar e pela postura |
+| Experiência tecnológica | Média; usa Teams, CRM e slides todos os dias, mas não tem paciência para ferramenta complicada — precisa funcionar sem atrapalhar a reunião |
+| Objetivos | Saber, ainda durante a fala, se o cliente está compreendendo e comprando a ideia, para ajustar o discurso na hora e aumentar a chance de fechar a venda |
+| Necessidades | Um sinal em tempo real da reação do grupo enquanto apresenta, principalmente logo depois das "pílulas de dúvida" — perguntas curtas que ele solta de propósito para testar se o cliente entendeu e se interessou |
+| Dores/frustrações | Hoje, sem a ferramenta, ele tem dificuldade de entender os clientes no mundo virtual: não consegue ver todos na grade do Teams (ainda mais compartilhando tela) e não sabe se estão de fato compreendendo o discurso; muitas vezes interpreta o silêncio como acordo e só descobre a objeção dias depois, quando a proposta é recusada por e-mail |
+| Motivadores | Bater meta, encurtar o ciclo de venda e chegar no follow-up sabendo exatamente qual parte da proposta precisa reforçar |
+| Restrições/acessibilidade | Apresenta quase sempre com tela compartilhada, o que esconde a grade de vídeo; o tempo da reunião é definido pelo cliente e costuma ser curto; não pode constranger o cliente com cobrança direta de atenção |
+| Ambiente típico de uso | Home office ou mesa do escritório, notebook com headset, várias reuniões comerciais por dia no Teams |
+| Comportamentos relevantes | Sem a ferramenta, ele conduz assim: apresenta compartilhando a tela, tenta espiar a grade reduzida de vídeo enquanto fala, solta as pílulas de dúvida ("faz sentido para a operação de vocês?", "esse ponto ficou claro?") e, como nem todos aparecem ou respondem, anota o que conseguiu captar e manda e-mail de follow-up tentando adivinhar onde perdeu o cliente |
 
-**Decisões de design influenciadas por P01:**
+**Decisões de design influenciadas por P04:**
 
-- {{...}}
-
-> Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
+- O Semáforo Cognitivo precisa ser legível de relance com a tela compartilhada, sem cobrir o material da apresentação — a mesma atenção dividida das demais personas, agora em reunião com cliente.
+- O sinal em tempo real precisa reagir rápido o suficiente para mostrar a reação do grupo logo após uma pílula de dúvida, que é o momento em que Manoel decide se avança ou reexplica (H01, H04).
+- O sistema deve indicar quantos participantes estão contribuindo para o sinal (câmeras abertas ou não), para Manoel saber o quanto pode confiar no agregado antes de mudar o discurso por causa dele.
+- Como os participantes são clientes de outra empresa, o aviso e o consentimento sobre a classificação ficam ainda mais sensíveis (H03) — o uso comercial não pode acontecer sem transparência para os convidados.
 
 ### Síntese das personas
 
-Explique diferenças entre os perfis e qual persona é prioritária. Evite personas duplicadas que só mudam nome/foto.
+Karol e Camila são personas primárias porque representam variações centrais do usuário priorizado no projeto de IHC: professoras responsáveis por conduzir aulas por videoconferência e interpretar o Semáforo Cognitivo enquanto ensinam. Karol representa o ensino a distância de conteúdo conceitual, com menor familiaridade tecnológica e necessidade de baixa carga de atenção. Camila representa aulas de idioma mais interativas, turmas pequenas e pouco tempo disponível entre sessões.
+
+Nathanael é uma persona secundária porque leva a mesma contribuição técnica para o contexto corporativo. Suas tarefas incluem cumprir uma pauta, treinar públicos heterogêneos e revisar sessões futuras, além de lidar com uma preocupação organizacional maior sobre o possível uso dos dados para avaliação de funcionários.
+
+Para os artefatos consolidados desta entrega, a equipe adotará **P02 — Camila Duarte** como persona de referência. Essa escolha não torna Karol a única ou a principal persona e não altera a classificação de P01 e P02 como personas primárias.
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** P02 (Camila Duarte)  
-**Justificativa:** É a persona mais detalhada até agora e representa bem o comunicador em uma situação concreta e comum (aula de idioma em turma pequena), o que ajuda a equipe a validar decisões de design num cenário realista antes de generalizar pra outros contextos.
+**Persona escolhida:** P02 — Camila Duarte  
+**Justificativa:** Camila representa diretamente o comunicador definido na Entrega 1 em uma situação concreta de aula on-line. Sua atenção dividida entre explicação, compartilhamento de tela e observação dos alunos permite explorar a hipótese H01. O recorte de turma pequena também introduz uma questão relevante para validação: se um indicador agregado continua útil quando o grupo possui poucos participantes.
 
-<img width="590" height="420" alt="image" src="https://github.com/user-attachments/assets/480fd080-5094-4bac-a365-f7f001a930d5" />
+<img src="https://github.com/user-attachments/assets/480fd080-5094-4bac-a365-f7f001a930d5" width="590" alt="Mapa de empatia da persona P02 — Camila Duarte">
 
-Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
+**O que vê [H]:** a própria tela compartilhada, uma pequena grade de vídeo, o chat e alguns alunos com a câmera desligada.
 
-**O que vê [H]:** a própria tela de compartilhamento, uma grade pequena de vídeo no canto, alguns alunos com câmera desligada.
+**O que ouve [H]:** respostas durante os exercícios, dúvidas pontuais, períodos de silêncio e, eventualmente, ruídos do ambiente doméstico.
 
-**O que ouve [H]:** os alunos respondendo os exercícios em voz alta, silêncio quando ninguém entende a pergunta, às vezes o próprio som da casa.
+**O que diz e faz [H]:** explica a matéria, propõe exercícios, faz perguntas, tenta envolver os alunos mais quietos e compartilha materiais na tela.
 
-**O que diz e faz [H]:** explica a matéria, faz perguntas pra turma, tenta puxar quem está mais quieto, compartilha exercício na tela.
+**O que pensa e sente [H]:** preocupa-se em não perceber quando a turma deixou de acompanhar a explicação e sente insegurança quando não recebe retorno claro.
 
-**O que pensa e sente [H]:** preocupação de estar falando sozinha sem saber se a turma está acompanhando, ansiedade de não ter feedback claro durante a aula.
+**Dores [H]:** perceber tarde que parte da turma ficou confusa; dividir a atenção entre a aula e a grade de participantes; não distinguir se o silêncio significa atenção, dúvida ou desengajamento.
 
-**Dores [H]:** perceber tarde demais que um aluno específico ficou perdido num tópico, não ter como saber se o silêncio da turma é atenção ou desânimo.
+**Ganhos esperados [H]:** perceber rapidamente mudanças no estado geral da turma, verificar a compreensão enquanto ainda pode agir e revisar depois os pontos que precisam ser melhorados.
 
-**Ganhos/necessidades [H]:** um sinal rápido e confiável do clima da turma, que não a distraia da própria condução da aula.
+> Todos os elementos do mapa de empatia são hipóteses da proto-persona e ainda precisam ser validados com usuários reais.
 
 ## 3. Contexto de uso — consolidação
 
+O contexto é consolidado porque representa o escopo do projeto de IHC e as três personas existentes. P02 — Camila é utilizada como referência principal para manter coerência com o mapa de empatia e a jornada.
+
 | Dimensão | Descrição | Implicação de design |
 |---|---|---|
-| Usuários | Comunicador (professor/instrutor/palestrante/facilitador), com a persona P01 representando especificamente professora de idioma em turma pequena (5 a 15 alunos) | A interface precisa funcionar bem tanto pra grupos pequenos quanto pra turmas maiores, sem perder a leitura de "clima do grupo" quando há poucos alunos |
-| Tarefas | Perceber o estado do grupo em tempo real durante a aula, e revisar depois quais momentos tiveram mais dificuldade | Justifica o Semáforo Cognitivo (tempo real) e o Dashboard pós-sessão, já definidos na Entrega 1 |
-| Equipamentos | Notebook ou desktop com webcam, conexão de internet doméstica, às vezes instável | A interface do tempo real precisa ser leve, sem exigir muito processamento nem depender de conexão perfeita |
-| Ambiente físico | Geralmente a casa da professora, nem sempre um espaço silencioso ou bem iluminado | Reforça a decisão já tomada na Entrega 1, de que iluminação ruim pode prejudicar a extração de sinal facial |
-| Ambiente social/organizacional | Aula particular ou de escola de idiomas, sem estrutura de TI dedicada por trás | A ferramenta precisa ser simples de configurar sozinha, sem depender de suporte técnico |
-| Papéis/permissões/governança | Só a professora vê o Semáforo Cognitivo e o Dashboard, os alunos não têm acesso a nenhuma tela do sistema | Confirma a decisão de privacidade já definida na Entrega 1, indicador visível só pro comunicador |
-| Volume de dados/histórico | Turma pequena, poucas aulas por semana, histórico relevante seria por turma ou por aluno ao longo do curso | Levanta uma dúvida nova pra investigar, se faz sentido comparar o engajamento da mesma turma entre aulas diferentes |
-
+| Usuários | Comunicadores — professores, instrutores ou palestrantes — que conduzem sessões por videoconferência. Camila representa especificamente uma professora de idiomas com turma pequena | Priorizar a visão do comunicador e validar se o mesmo indicador atende grupos de tamanhos e contextos diferentes |
+| Tarefas | A01: perceber o estado do grupo; A02: ajustar a condução quando considerar necessário; A03: revisar posteriormente os momentos de dificuldade | Manter o Semáforo Cognitivo como foco principal e o Dashboard pós-sessão como recorte secundário |
+| Equipamentos | Notebook ou desktop com webcam; o processamento ocorre no dispositivo do participante, conforme a arquitetura definida no TCC | A interface deve indicar o estado de funcionamento e considerar os limites de hardware e captura sem exigir celular, que ainda não faz parte do escopo |
+| Ambiente físico | Aula remota ou híbrida em ambiente doméstico ou institucional; iluminação, enquadramento e conexão podem afetar os sinais capturados | Comunicar quando a qualidade do sinal ou da classificação for insuficiente, sem apresentar a estimativa como certeza |
+| Ambiente social/organizacional | Existe assimetria entre o participante, que fornece os sinais, e o comunicador, que recebe o resultado; em instituições de ensino ou empresas pode haver exigências de consentimento e LGPD | Investigar transparência e consentimento, conforme H03, e evitar uso dos dados para avaliação individual |
+| Papéis/permissões/governança | O comunicador é o usuário da interface; o participante é fonte de dados e não possui tela prevista no recorte atual; administração global está fora do escopo | Limitar a interface ao comunicador no protótipo atual, sem inventar CRUD, administração ou perfis não justificados |
+| Volume de dados/histórico | Persistência de representações reduzidas e metadados, sem vídeo ou dado biométrico bruto; histórico organizado por sessão e timeline agregada | Permitir consulta pós-sessão sem replay de vídeo nem classificação individual; busca, filtros e comparação continuam como hipóteses a investigar |
 
 ## 4. Jornada do usuário — equipe
 
-**Persona:** P01 (Camila Duarte)  
-**Objetivo da jornada:** Dar uma aula de inglês de 50 minutos pra uma turma de 12 alunos, percebendo a tempo se alguém está confuso ou desengajado, e revisando depois o que deu certo ou não.  
-**Início e fim da jornada:** Começa alguns minutos antes da aula, quando ela abre a chamada e ativa o MindFlow, e termina depois da aula, quando ela revisa o Dashboard antes de planejar a próxima aula.
+**Persona:** P02 — Camila Duarte  
+**Objetivo da jornada:** conduzir uma aula de inglês por videoconferência, perceber a tempo mudanças no estado geral da turma e revisar posteriormente os momentos que podem exigir melhoria.  
+**Início e fim da jornada:** começa antes da aula, quando Camila prepara a videoconferência e verifica o MindFlow AI, e termina depois da sessão, quando consulta o Dashboard para planejar uma aula futura.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | Abre a videochamada alguns minutos antes e ativa o MindFlow | Deixar tudo pronto antes dos alunos entrarem | Tranquila, rotina já conhecida | Nenhuma até aqui | Ativação simples, poucos cliques | H |
-| 2 | Começa a aula explicando um tópico novo de gramática | Passar o conteúdo com clareza | Focada na explicação, atenção dividida entre falar e compartilhar tela | Não consegue olhar a grade de vídeo com atenção | O Semáforo Cognitivo precisa ser visível sem que ela precise procurar por ele na tela | H |
-| 3 | O indicador mostra sinal de confusão crescente no grupo | Perceber que algo não está sendo entendido | Alerta, mas ainda incerta se deve confiar no sinal | Medo de interromper a aula à toa por um alerta errado | Mostrar o nível de confiança da classificação, ligado à hipótese H02 | H |
-| 4 | Ela para, dá um exemplo extra e pergunta se a turma entendeu | Resolver a confusão percebida antes de seguir em frente | Mais segura, sente que agiu a tempo | Nenhuma, esse é o momento em que a ferramenta cumpriu o propósito dela | Confirma o valor central do Semáforo Cognitivo, definido desde a Entrega 1 | H |
-| 5 | Termina a aula e depois abre o Dashboard pra revisar | Entender quais momentos tiveram mais dificuldade, pra ajustar a próxima aula | Curiosa, quer aprender com a própria condução | Pode não ter tempo sobrando entre uma aula e outra pra revisar com calma | O Dashboard precisa ser rápido de ler, tipo um resumo, não um relatório longo | H |
+| 1. Preparação | Abre a videoconferência, organiza os materiais e verifica se o MindFlow AI está ativo | Começar a aula sem atrasos ou falhas | Espera que a preparação seja rápida | Possui pouco tempo entre as aulas e pode não saber se o processamento está funcionando | Oferecer ativação simples e feedback claro do estado do sistema | H — proto-persona; possibilidade registrada no item 8 da Entrega 1 |
+| 2. Condução | Explica um tópico enquanto compartilha slides ou exercícios | Ensinar com clareza e manter o ritmo | Focada, mas com atenção dividida | Não consegue observar continuamente todos os vídeos e o chat | Manter o indicador discreto e legível de relance | H01; Entrega 1, item 2.4 |
+| 3. Percepção | Observa uma mudança estimada no estado agregado da turma | Decidir se precisa verificar a compreensão | Fica alerta, mas tem dúvida sobre a precisão do resultado | Pode interromper a aula sem necessidade se confiar em uma classificação incorreta | Representar a confiança ou incerteza do modelo de modo compreensível | H02 |
+| 4. Adaptação | Faz uma pergunta, apresenta outro exemplo ou altera o ritmo | Verificar e apoiar a compreensão antes de continuar | Sente que ainda pode agir a tempo | O indicador não explica sozinho a causa do estado observado | Apresentar a estimativa como apoio à decisão, e não como diagnóstico ou comando automático | A02; Entrega 1, itens 3.1 e 4.4 |
+| 5. Encerramento | Finaliza a aula e o registro da sessão | Concluir a atividade preservando somente os dados previstos | Quer segurança sobre o uso das informações | Participantes podem se sentir avaliados ou monitorados | Comunicar finalidade, processamento local, agregação e limites de uso | H03; Entrega 1, itens 5.4 e 9.3 |
+| 6. Revisão | Consulta a timeline agregada no Dashboard antes de preparar outra aula | Identificar trechos que precisam ser retomados ou melhorados | Tem interesse, mas pouco tempo disponível | Um relatório extenso ou técnico pode não ser consultado | Exibir uma síntese objetiva e os momentos críticos da sessão | A03; R03; F02 e F03 da matriz de rastreabilidade |
 
-> A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
+> A jornada inclui momentos antes, durante e depois do uso. Ela descreve objetivos, decisões e dificuldades da persona, e não apenas uma sequência de telas.
 
 ## Síntese
 
-A partir da persona P01 e da jornada, alguns pontos precisam obrigatoriamente aparecer nos cenários e nas tarefas das próximas entregas: o Semáforo Cognitivo precisa ser lido sem esforço mesmo com a atenção da professora dividida, o nível de confiança da classificação precisa aparecer de forma simples (ligado à H02), o indicador agregado precisa fazer sentido mesmo em turmas pequenas de 5 a 15 alunos, e o Dashboard pós-sessão precisa ser rápido de consultar, dado o pouco tempo que a professora tem entre uma aula e outra.
+As próximas entregas devem contemplar:
+
+- a percepção rápida do estado agregado do grupo durante a sessão, relacionada a A01 e H01;
+- a decisão do comunicador de verificar ou adaptar a condução, relacionada a A02;
+- a comunicação da confiança e dos limites da classificação, relacionada a H02;
+- a transparência sobre processamento local, agregação e ausência de avaliação individual, relacionada a H03;
+- a revisão da timeline e dos momentos críticos após a sessão, relacionada a A03 e R03;
+- a validação da utilidade do Semáforo Cognitivo em turmas pequenas;
+- a confirmação, por pesquisa com usuários, das características atribuídas às proto-personas.
+
+## Pendências para concluir a entrega
+
+- Criar as personas P04 e P05, correspondentes aos integrantes Gustavo e Matheus.
+- Atualizar a coluna **Persona** das linhas R01, R02 e R03 em `RASTREABILIDADE.md` depois que a equipe confirmar os vínculos.
+- Substituir no repositório os arquivos SVG que ainda são placeholders, caso eles sejam utilizados no documento final.
+
 ## Checklist
 
-- [ ] Existe pelo menos uma persona por integrante.
-- [ ] As personas não são apenas diferenças demográficas superficiais.
-- [ ] Está claro o que é dado real e o que é hipótese/proto-persona.
-- [ ] A persona não “validou por ficção” uma hipótese da Entrega 1; afirmações continuam marcadas como hipótese quando não há evidência.
-- [ ] Objetivos e dores têm consequência para o design.
-- [ ] Contexto de uso está coerente com a Entrega 1.
-- [ ] Em TCC sem interface original, a persona possui relação explícita com a contribuição técnica.
-- [ ] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
-- [ ] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
-- [ ] IDs das personas foram adicionados à rastreabilidade.
+- [ ] Existe pelo menos uma persona por integrante — atualmente existem 3 personas para 5 integrantes.
+- [x] As personas existentes não são apenas diferenças demográficas superficiais.
+- [x] Está claro que as três personas são proto-personas e que seus dados precisam ser validados.
+- [x] As personas não transformam as hipóteses da Entrega 1 em fatos comprovados.
+- [x] Objetivos e dores têm consequência para o design.
+- [x] O contexto de uso está coerente com a Entrega 1.
+- [x] O TCC já possui interface prevista; portanto, o item destinado a TCCs sem interface original não se aplica.
+- [x] Os papéis existentes foram diferenciados por contexto, objetivos e tarefas.
+- [x] A jornada possui etapas, dores e oportunidades e não é apenas um wireflow.
+- [ ] Os IDs das personas ainda não foram adicionados à matriz de rastreabilidade.
