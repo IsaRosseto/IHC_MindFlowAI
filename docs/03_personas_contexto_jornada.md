@@ -61,9 +61,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 **Decisões de design influenciadas por P01:**
 
-- O Semáforo Cognitivo precisa ser lido de relance, já que Camila está com a atenção dividida entre falar, compartilhar tela e conduzir a aula.
+- O Semáforo Cognitivo precisa ser lido de relance, já que Maya está com a atenção dividida entre falar, compartilhar tela e conduzir a aula.
 - Como a turma é pequena (5 a 15 alunos), o indicador agregado por grupo precisa continuar fazendo sentido mesmo com poucas pessoas, diferente de uma sala de aula cheia com 40 ou 50 alunos.
-- A linguagem da interface não pode usar termo técnico de IA, já que Camila tem experiência tecnológica mediana, não é especialista.
+- A linguagem da interface não pode usar termo técnico de IA, já que Maya tem experiência tecnológica mediana, não é especialista.
 - O nível de confiança da classificação (ligado à H02) precisa aparecer de um jeito simples, porque ela não teria como validar sozinha se o sistema está certo ou errado numa aula de idioma.
 
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
