@@ -1,6 +1,6 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** {{dd/mm/aaaa}}  
+**Data:** {{dd/mm/aaaa}  
 **Status:** ⬜ não iniciada  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
@@ -32,32 +32,36 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ## 1. Personas
 
-### Persona P01 — {{nome fictício}}
+### Persona P05 — Bruno D. Roger
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Autor(a):** Gustavo Bertoluzzi Cardoso - 22.123.016-2  
+**Tipo:** secundária  
+**Base de evidências:** proto-persona a validar. A gente já tinha percebido lá na Entrega 1 que o aluno que participa da chamada é afetado pelo sistema mas não chega a usar a interface, então essa persona vem daí  
+**Hipóteses da Entrega 1 relacionadas:** H03
 
-![Persona P01](../assets/03_personas/persona_p01.svg)
+<img width="450" alt="Gemini_Generated_Image_nocb3hnocb3hnocb" src="https://github.com/user-attachments/assets/1ea7d2ce-5920-4bab-874f-091bec03ca7a" />
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | 20 anos, aluno de graduação que assiste aula por videoconferência como parte de uma disciplina EAD |
+| Ocupação/papel | Participante da chamada, ele que fornece os dados captados pela webcam, mas quem usa a tela do MindFlow é o professor, não ele |
+| Conhecimento do domínio | Conhecimento baixo ou médio do conteúdo da matéria, afinal ele tá ali pra aprender |
+| Experiência tecnológica | Usa Zoom, Meet e vídeo chamada o tempo todo no celular, mas nunca ouviu falar de um sistema que analisa expressão facial durante aula |
+| Objetivos | Acompanhar a aula, entender o conteúdo e conseguir tirar dúvida quando precisa |
+| Necessidades | Saber o que é feito com a imagem dele captada pela câmera e sentir que assistir aula não é a mesma coisa que estar sendo vigiado |
+| Dores/frustrações | Fica incomodado de pensar que o rosto dele pode estar sendo analisado por um sistema sem saber direito o que tá sendo medido. Tem medo de que parecer confuso ou parecer desatento vire algum tipo de avaliação sobre ele, mesmo sabendo que o resultado é só um número agregado da turma inteira |
+| Motivadores | Aprender direito o conteúdo e ter a privacidade dele respeitada durante a aula |
+| Restrições/acessibilidade | Pode escolher deixar a câmera desligada, mas às vezes isso depende da regra do professor ou da instituição |
+| Ambiente típico de uso | Assiste aula de casa, no quarto ou num espaço dividido com a família, usando notebook ou até celular |
+| Comportamentos relevantes | Liga e desliga a câmera dependendo de como tá se sentindo naquele dia, fica mais retraído quando sabe que tem algo analisando ele e provavelmente nunca ouviu falar do Semáforo Cognitivo, porque essa tela é só do professor |
 
-**Decisões de design influenciadas por P01:**
+**Decisões de design influenciadas por P05:**
 
-- {{...}}
+- Reforça que precisa existir algum aviso pro aluno de que a aula está sendo classificada, mesmo que ele nunca veja o resultado
+- Confirma que o resultado do sistema tem que ficar agregado, sem apontar aluno específico, pra não virar avaliação individual
+- Ajuda a justificar o processamento local no próprio dispositivo, não só pela LGPD, mas também pra diminuir a sensação de estar sendo vigiado
+- Levanta uma dúvida pra investigar depois, se desligar a câmera pode prejudicar o aluno de alguma forma
+
 
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
