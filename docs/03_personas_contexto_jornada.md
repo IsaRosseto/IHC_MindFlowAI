@@ -1,7 +1,7 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
 **Data:** 27/08/2026  
-**Status:** 🟨 iniciada  
+**Status:** 🟩 concluído  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
 ## Objetivo da atividade
@@ -158,9 +158,38 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 - O sistema deve indicar quantos participantes estão contribuindo para o sinal (câmeras abertas ou não), para Manoel saber o quanto pode confiar no agregado antes de mudar o discurso por causa dele.
 - Como os participantes são clientes de outra empresa, o aviso e o consentimento sobre a classificação ficam ainda mais sensíveis (H03) — o uso comercial não pode acontecer sem transparência para os convidados.
 
+### Persona P05 — Bruno D. Roger
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso - 22.123.016-2  
+**Tipo:** secundária  
+**Base de evidências:** proto-persona a validar. A gente já tinha percebido lá na Entrega 1 que o aluno que participa da chamada é afetado pelo sistema mas não chega a usar a interface, então essa persona vem daí  
+**Hipóteses da Entrega 1 relacionadas:** H03
+
+<img width="450" alt="Gemini_Generated_Image_nocb3hnocb3hnocb" src="https://github.com/user-attachments/assets/1ea7d2ce-5920-4bab-874f-091bec03ca7a" />
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | 20 anos, aluno de graduação que assiste aula por videoconferência como parte de uma disciplina EAD |
+| Ocupação/papel | Participante da chamada, ele que fornece os dados captados pela webcam, mas quem usa a tela do MindFlow é o professor, não ele |
+| Conhecimento do domínio | Conhecimento baixo ou médio do conteúdo da matéria, afinal ele tá ali pra aprender |
+| Experiência tecnológica | Usa Zoom, Meet e vídeo chamada o tempo todo no celular, mas nunca ouviu falar de um sistema que analisa expressão facial durante aula |
+| Objetivos | Acompanhar a aula, entender o conteúdo e conseguir tirar dúvida quando precisa |
+| Necessidades | Saber o que é feito com a imagem dele captada pela câmera e sentir que assistir aula não é a mesma coisa que estar sendo vigiado |
+| Dores/frustrações | Fica incomodado de pensar que o rosto dele pode estar sendo analisado por um sistema sem saber direito o que tá sendo medido. Tem medo de que parecer confuso ou parecer desatento vire algum tipo de avaliação sobre ele, mesmo sabendo que o resultado é só um número agregado da turma inteira |
+| Motivadores | Aprender direito o conteúdo e ter a privacidade dele respeitada durante a aula |
+| Restrições/acessibilidade | Pode escolher deixar a câmera desligada, mas às vezes isso depende da regra do professor ou da instituição |
+| Ambiente típico de uso | Assiste aula de casa, no quarto ou num espaço dividido com a família, usando notebook ou até celular |
+| Comportamentos relevantes | Liga e desliga a câmera dependendo de como tá se sentindo naquele dia, fica mais retraído quando sabe que tem algo analisando ele e provavelmente nunca ouviu falar do Semáforo Cognitivo, porque essa tela é só do professor |
+
+**Decisões de design influenciadas por P05:**
+
+- Reforça que precisa existir algum aviso pro aluno de que a aula está sendo classificada, mesmo que ele nunca veja o resultado
+- Confirma que o resultado do sistema tem que ficar agregado, sem apontar aluno específico, pra não virar avaliação individual
+- Ajuda a justificar o processamento local no próprio dispositivo, não só pela LGPD, mas também pra diminuir a sensação de estar sendo vigiado
+- Levanta uma dúvida pra investigar depois, se desligar a câmera pode prejudicar o aluno de alguma forma
 ### Síntese das personas
 
-As quatro personas são classificadas como **primárias** porque representam usuários diretos do MindFlow AI: todas conduzem sessões por videoconferência, consultam o Semáforo Cognitivo durante a apresentação e podem utilizar o Dashboard após a sessão. Embora atuem em contextos diferentes, compartilham o objetivo central de perceber a reação do grupo sem perder o foco na própria condução.
+As quatro primeiras personas são classificadas como **primárias** porque representam usuários diretos do MindFlow AI: todas conduzem sessões por videoconferência, consultam o Semáforo Cognitivo durante a apresentação e podem utilizar o Dashboard após a sessão. Embora atuem em contextos diferentes, compartilham o objetivo central de perceber a reação do grupo sem perder o foco na própria condução.
 
 Karol representa o ensino a distância de conteúdo conceitual, com menor familiaridade tecnológica e necessidade de baixa carga de atenção. Camila representa aulas de idioma mais interativas, turmas pequenas e pouco tempo disponível entre sessões. Nathanael representa treinamentos corporativos, nos quais precisa cumprir uma pauta, trabalhar com públicos heterogêneos e evitar que dados agregados sejam interpretados como avaliação individual de funcionários. Manoel representa apresentações comerciais B2B, em que o comunicador precisa interpretar rapidamente a reação de clientes, ajustar o discurso e lidar com exigências ainda mais sensíveis de transparência e consentimento.
 
