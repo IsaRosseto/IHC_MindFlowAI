@@ -278,11 +278,11 @@ flowchart TB
 
 ### Descrição
 
-A tarefa principal, **Conduzir aula com apoio do MindFlow**, é representada como uma tarefa abstrata e é decomposta em duas atividades principais: **Ministrar aula** e **Acompanhar estados dos participantes**. Essas tarefas possuem relação de concorrência (`|||`), pois Docente pode acompanhar as informações fornecidas pelo MindFlow enquanto continua conduzindo a aula.
-O acompanhamento dos estados também é representado como uma tarefa abstrata. Inicialmente, o sistema executa a tarefa **Atualizar dashboard**, disponibilizando os indicadores referentes aos participantes. Por meio de uma relação de habilitação com passagem de informação (`[ ] >>`), esses dados tornam possível a tarefa interativa **Consultar estado do grupo**.
-Após consultar as informações apresentadas pelo sistema, Docente realiza a tarefa **Interpretar estado observado**. A relação de habilitação (`>>`) indica que a interpretação ocorre a partir das informações consultadas anteriormente. Em seguida, a tarefa abstrata **Responder ao estado observado** representa as possíveis ações decorrentes dessa interpretação.
-A resposta pode ocorrer por meio de uma escolha (`[ ]`) entre **Manter condução atual** e **Adaptar aula**. Quando uma das alternativas é iniciada, a outra é desabilitada naquele momento. Caso Docente considere que não é necessária uma intervenção, ela mantém a condução atual. Caso identifique necessidade de alteração, executa a tarefa abstrata **Adaptar aula**, que pode posteriormente ser decomposta em ações específicas, como alterar o ritmo, retomar uma explicação ou solicitar retorno dos participantes.
-O acompanhamento não ocorre apenas uma vez. Enquanto a aula estiver em andamento, Docente pode repetir o ciclo de consulta, interpretação e resposta sempre que novas informações forem apresentadas pelo MindFlow. Dessa forma, o modelo representa a natureza contínua do acompanhamento sem tratar a atividade como uma sequência rígida de etapas.
+O CTT representa a tarefa de **conduzir uma aula com apoio do MindFlow AI**, considerando as atividades do usuário, do sistema e as interações entre ambos.
+
+A tarefa principal é decomposta em **Ministrar aula** e **Acompanhar estados dos participantes**, que podem ocorrer em paralelo (`|||`). Durante o acompanhamento, o sistema **atualiza o dashboard**, o usuário **consulta os indicadores**, **interpreta o estado observado** e então **responde à situação identificada**.
+
+A resposta pode ocorrer por meio de uma escolha (`[ ]`) entre **manter a condução atual** ou **adaptar a aula**. O ciclo de acompanhamento pode se repetir ao longo da sessão conforme novas informações forem apresentadas pelo sistema.
 
 ### Diagrama
 <img src="https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.drawio.png" width="500" alt="CTT — Kayky">
