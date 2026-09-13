@@ -297,107 +297,28 @@ flowchart TB
 
 ### Descrição
 
-{{...}}
+A tarefa principal, **Conduzir aula com apoio do MindFlow**, é representada como uma tarefa abstrata e é decomposta em duas atividades principais: **Ministrar aula** e **Acompanhar estados dos participantes**. Essas tarefas possuem relação de concorrência (`|||`), pois Karol pode acompanhar as informações fornecidas pelo MindFlow enquanto continua conduzindo a aula.
+O acompanhamento dos estados também é representado como uma tarefa abstrata. Inicialmente, o sistema executa a tarefa **Atualizar dashboard**, disponibilizando os indicadores referentes aos participantes. Por meio de uma relação de habilitação com passagem de informação (`[ ] >>`), esses dados tornam possível a tarefa interativa **Consultar estado do grupo**.
+Após consultar as informações apresentadas pelo sistema, Karol realiza a tarefa **Interpretar estado observado**. A relação de habilitação (`>>`) indica que a interpretação ocorre a partir das informações consultadas anteriormente. Em seguida, a tarefa abstrata **Responder ao estado observado** representa as possíveis ações decorrentes dessa interpretação.
+A resposta pode ocorrer por meio de uma escolha (`[ ]`) entre **Manter condução atual** e **Adaptar aula**. Quando uma das alternativas é iniciada, a outra é desabilitada naquele momento. Caso Karol considere que não é necessária uma intervenção, ela mantém a condução atual. Caso identifique necessidade de alteração, executa a tarefa abstrata **Adaptar aula**, que pode posteriormente ser decomposta em ações específicas, como alterar o ritmo, retomar uma explicação ou solicitar retorno dos participantes.
+O acompanhamento não ocorre apenas uma vez. Enquanto a aula estiver em andamento, Karol pode repetir o ciclo de consulta, interpretação e resposta sempre que novas informações forem apresentadas pelo MindFlow. Dessa forma, o modelo representa a natureza contínua do acompanhamento sem tratar a atividade como uma sequência rígida de etapas.
 
 ### Diagrama
-```mermaid
-flowchart TB
-
-    T0(["T03 — Conduzir a aula enquanto acompanha<br/>e responde aos estados dos participantes"])
-
-    %% =========================================================
-    %% PRIMEIRO NÍVEL
-    %% =========================================================
-
-    T1["1. Ministrar o conteúdo da aula"]
-    T2(["2. Acompanhar os estados dos participantes"])
-
-    T0 --> T1
-    T0 --> T2
-
-    %% CTT: tarefas concorrentes
-    T1 <-.->|"||| Concorrência"| T2
-
-    %% =========================================================
-    %% ACOMPANHAMENTO DOS ESTADOS
-    %% =========================================================
-
-    T21{{"2.1 Atualizar os indicadores<br/>dos participantes"}}
-    T22("2.2 Consultar o estado atual<br/>do grupo")
-    T23["2.3 Interpretar a situação<br/>apresentada"]
-    T24["2.4 Decidir se é necessária<br/>uma intervenção"]
-
-    T2 --> T21
-
-    %% CTT: ativação com passagem de informação
-    T21 -.->|"[ ] >> Passagem de informação"| T22
-
-    %% CTT: ativação
-    T22 -.->|">> Ativação"| T23
-    T23 -.->|">> Ativação"| T24
-
-    %% =========================================================
-    %% ESCOLHA: MANTER OU ADAPTAR
-    %% =========================================================
-
-    T25["2.5 Manter a condução<br/>atual da aula"]
-    T26(["2.6 Adaptar a condução<br/>da aula"])
-
-    %% As duas alternativas ficam habilitadas após a decisão.
-    %% Ao iniciar uma, a outra é desabilitada: relação de escolha [ ].
-    T24 -.->|"[ ] Escolha"| T25
-    T24 -.->|"[ ] Escolha"| T26
-
-    %% =========================================================
-    %% FORMAS DE ADAPTAÇÃO
-    %% =========================================================
-
-    T261["2.6.1 Alterar o ritmo<br/>da apresentação"]
-    T262["2.6.2 Retomar ou reformular<br/>a explicação"]
-    T263["2.6.3 Fazer uma pergunta<br/>aos participantes"]
-
-    T26 -.->|"[ ] Escolha"| T261
-    T26 -.->|"[ ] Escolha"| T262
-    T26 -.->|"[ ] Escolha"| T263
-
-    %% =========================================================
-    %% PÓS-INTERVENÇÃO
-    %% =========================================================
-
-    T27("2.7 Verificar os indicadores<br/>após a intervenção")
-
-    T261 -.->|">> Ativação"| T27
-    T262 -.->|">> Ativação"| T27
-    T263 -.->|">> Ativação"| T27
-
-    %% Repetição do ciclo:
-    %% o PDF não apresenta um operador específico de repetição.
-    %% Esta seta de retorno é apenas uma convenção visual.
-    T27 -.->|"Retorno ao acompanhamento<br/>(repetição visual)"| T22
-
-    %% =========================================================
-    %% ESTILOS
-    %% =========================================================
-
-    classDef abstrata fill:#eeeeee,stroke:#333,stroke-width:2px,color:#111;
-    classDef usuario fill:#e8eef7,stroke:#333,stroke-width:2px,color:#111;
-    classDef sistema fill:#f7f1df,stroke:#333,stroke-width:2px,color:#111;
-    classDef interativa fill:#e7f3ea,stroke:#333,stroke-width:2px,color:#111;
-
-    class T0,T2,T26,LA abstrata;
-    class T1,T23,T24,T25,T261,T262,T263,LU usuario;
-    class T21,LS sistema;
-    class T22,T27,LI interativa;
-```
+<img src="https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.drawio.png" width="500" alt="CTT — Kayky">
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Oval | **Tarefa abstrata** | Agrupa ou representa uma composição de outras tarefas e auxilia na decomposição da atividade. |
-| Retângulo | **Tarefa do usuário** | Atividade realizada pelo usuário, sem representar diretamente uma interação com o sistema. |
-| Hexágono | **Tarefa do sistema** | Atividade executada pelo sistema sem interação direta com o usuário naquele momento. |
-| Retângulo arredondado | **Tarefa interativa** | Atividade em que ocorre interação ou diálogo entre usuário e sistema. |
+| Nuvem | **Tarefa abstrata.** Representa uma composição de outras tarefas e é utilizada para organizar a decomposição hierárquica da atividade. | **Conduzir aula com apoio do MindFlow**, **Acompanhar estados**, **Responder ao estado observado** e **Adaptar aula**. |
+| Retângulo | **Tarefa do usuário.** Representa uma atividade realizada diretamente pelo usuário, sem interação direta com o sistema naquele momento. | **Ministrar aula**, **Interpretar estado observado** e **Manter condução atual**. |
+| Hexágono | **Tarefa do sistema.** Representa uma atividade executada pelo sistema sem interação direta do usuário. | **Atualizar dashboard**, realizada pelo MindFlow a partir dos dados processados durante a aula. |
+| Círculo | **Tarefa interativa.** Representa uma atividade em que ocorre interação entre o usuário e o sistema. | **Consultar estado do grupo**, quando Karol observa as informações apresentadas no dashboard. |
+| `|||` — Concorrência | Indica que duas tarefas podem ocorrer simultaneamente ou em qualquer ordem. | **Ministrar aula** `|||` **Acompanhar estados**, pois Karol acompanha os indicadores enquanto continua conduzindo a aula. |
+| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza informações produzidas por ela. | **Atualizar dashboard** `[ ] >>` **Consultar estado do grupo**. Os dados atualizados pelo sistema ficam disponíveis para consulta por Karol. |
+| `>>` — Habilitação | Indica que a segunda tarefa pode ser iniciada após a conclusão da primeira. | **Consultar estado do grupo** `>>` **Interpretar estado observado** e **Interpretar estado observado** `>>` **Responder ao estado observado**. |
+| `[ ]` — Escolha | Indica tarefas alternativas. Quando uma alternativa é iniciada, as demais alternativas daquela escolha são desabilitadas. | **Manter condução atual** `[ ]` **Adaptar aula**. Karol escolhe uma das respostas de acordo com o estado observado. |
+| Repetição do acompanhamento | Indica que o conjunto de tarefas de acompanhamento pode ocorrer diversas vezes enquanto a aula estiver em andamento. | Após manter ou adaptar a condução da aula, Karol continua acompanhando os estados dos participantes durante a sessão. 
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
 
