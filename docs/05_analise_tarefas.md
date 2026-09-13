@@ -300,14 +300,104 @@ flowchart TB
 {{...}}
 
 ### Diagrama
+```mermaid
+flowchart TB
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+    T0(["T03 — Conduzir a aula enquanto acompanha<br/>e responde aos estados dos participantes"])
+
+    %% =========================================================
+    %% PRIMEIRO NÍVEL
+    %% =========================================================
+
+    T1["1. Ministrar o conteúdo da aula"]
+    T2(["2. Acompanhar os estados dos participantes"])
+
+    T0 --> T1
+    T0 --> T2
+
+    %% CTT: tarefas concorrentes
+    T1 <-.->|"||| Concorrência"| T2
+
+    %% =========================================================
+    %% ACOMPANHAMENTO DOS ESTADOS
+    %% =========================================================
+
+    T21{{"2.1 Atualizar os indicadores<br/>dos participantes"}}
+    T22("2.2 Consultar o estado atual<br/>do grupo")
+    T23["2.3 Interpretar a situação<br/>apresentada"]
+    T24["2.4 Decidir se é necessária<br/>uma intervenção"]
+
+    T2 --> T21
+
+    %% CTT: ativação com passagem de informação
+    T21 -.->|"[ ] >> Passagem de informação"| T22
+
+    %% CTT: ativação
+    T22 -.->|">> Ativação"| T23
+    T23 -.->|">> Ativação"| T24
+
+    %% =========================================================
+    %% ESCOLHA: MANTER OU ADAPTAR
+    %% =========================================================
+
+    T25["2.5 Manter a condução<br/>atual da aula"]
+    T26(["2.6 Adaptar a condução<br/>da aula"])
+
+    %% As duas alternativas ficam habilitadas após a decisão.
+    %% Ao iniciar uma, a outra é desabilitada: relação de escolha [ ].
+    T24 -.->|"[ ] Escolha"| T25
+    T24 -.->|"[ ] Escolha"| T26
+
+    %% =========================================================
+    %% FORMAS DE ADAPTAÇÃO
+    %% =========================================================
+
+    T261["2.6.1 Alterar o ritmo<br/>da apresentação"]
+    T262["2.6.2 Retomar ou reformular<br/>a explicação"]
+    T263["2.6.3 Fazer uma pergunta<br/>aos participantes"]
+
+    T26 -.->|"[ ] Escolha"| T261
+    T26 -.->|"[ ] Escolha"| T262
+    T26 -.->|"[ ] Escolha"| T263
+
+    %% =========================================================
+    %% PÓS-INTERVENÇÃO
+    %% =========================================================
+
+    T27("2.7 Verificar os indicadores<br/>após a intervenção")
+
+    T261 -.->|">> Ativação"| T27
+    T262 -.->|">> Ativação"| T27
+    T263 -.->|">> Ativação"| T27
+
+    %% Repetição do ciclo:
+    %% o PDF não apresenta um operador específico de repetição.
+    %% Esta seta de retorno é apenas uma convenção visual.
+    T27 -.->|"Retorno ao acompanhamento<br/>(repetição visual)"| T22
+
+    %% =========================================================
+    %% ESTILOS
+    %% =========================================================
+
+    classDef abstrata fill:#eeeeee,stroke:#333,stroke-width:2px,color:#111;
+    classDef usuario fill:#e8eef7,stroke:#333,stroke-width:2px,color:#111;
+    classDef sistema fill:#f7f1df,stroke:#333,stroke-width:2px,color:#111;
+    classDef interativa fill:#e7f3ea,stroke:#333,stroke-width:2px,color:#111;
+
+    class T0,T2,T26,LA abstrata;
+    class T1,T23,T24,T25,T261,T262,T263,LU usuario;
+    class T21,LS sistema;
+    class T22,T27,LI interativa;
+```
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Oval | **Tarefa abstrata** | Agrupa ou representa uma composição de outras tarefas e auxilia na decomposição da atividade. |
+| Retângulo | **Tarefa do usuário** | Atividade realizada pelo usuário, sem representar diretamente uma interação com o sistema. |
+| Hexágono | **Tarefa do sistema** | Atividade executada pelo sistema sem interação direta com o usuário naquele momento. |
+| Retângulo arredondado | **Tarefa interativa** | Atividade em que ocorre interação ou diálogo entre usuário e sistema. |
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
 
