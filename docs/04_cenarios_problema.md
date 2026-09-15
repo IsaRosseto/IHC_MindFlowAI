@@ -229,6 +229,68 @@ Bruno é aluno do segundo ano de Ciência da Computação e tem duas disciplinas
 
 Precisa validar com alunos reais de disciplinas EAD se essa ansiedade sobre "como estou sendo percebido" é algo comum ou só uma impressão de Bruno. Também vale investigar com professores se realmente existe algum registro informal de participação que pode afetar o aluno, mesmo sem virar nota oficial. Isso tem relação direta com H03, porque reforça que qualquer ferramenta que classifique o comportamento da turma precisa pensar em transparência pro lado do participante, não só em utilidade pro lado do comunicador. Ainda não é hora de desenhar como essa transparência apareceria numa tela, isso fica pras próximas entregas.
 
+## Cenário C04 — Dificuldade em identificar a compreenção e aprendizado durante treinamento online.
+
+**Autor(a):** {{Rafael Dias - 22.222.039-4}}  
+**Persona(s) relacionada(s):** P03 - Nathanael  
+**Necessidade relacionada:** {{R01,R02}}  
+**Situação concreta da Entrega 1 relacionada:** H01 - Tem necessidade de identificar como os grupos estão se sentindo durante os treinamentos.
+**Hipóteses ainda presentes:** H01
+
+### 1. Cenário inicial
+
+Enquanto acontece um treinamento on-line, o profissional necessita identificar durante o treinamento como os demais membros do treinamento/video-conferencia estão conseguindo entender e aprender sobre o tema apresentado, nisso ele verifica suas cameras e chat da chamada.
+
+Em diversos ambientes coorporativos o uso da camera não é obrigatorio e sem interações no chat, assim dificultando a identificação e analise so apresentador, sem conseguir identificar se estão prestando atenção ou confusos com o treinamento, impossibilitando uma ação imediata para repetir ou modificar o ritmo do treinamento.
+
+### 2. Questões de refinamento
+
+Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
+
+| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|
+| Q1 | O que o profissional considera importante para perceber a perca do engejamento do publico? | Ajuda identificar em quais pontos publico perde atenção assim facilitando a tomada de decição | Realizar conversa com os profissionais de treinamento para obter essas informação |
+| Q2 | O que dificulta o profissional para entender o sentimento do publico durante o treinamento? | Vamos poder identificar qual maior bloqueio para o profissional e quais interpretações e ações a serem tomadas | Acompanhar os treinamentos on-line junto ao profissional |
+| Q3 | Qual principal meio para o profissional utiliza para perceber se o publico esta acompanhando e entendendo o treinamento? | Ajuda entender quais informações são mais importantes e como extrair essas informações | Entrevista ao profissional e acompanhamento do treinamento on-line |
+| Q4 | A quantidade de participantes dificulta a compreensão de como esta o publico? | Ajuda identificar melhor forma de demonstrar ao profissional como o publico esta durante o treinamento | Entrevista ao profissional e acompanhamento do treinamento on-line |
+
+### 3. Cenário refinado
+
+Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+
+Enquanto acontece um treinamento on-line, o profissional necessita identificar durante o treinamento como os demais membros do treinamento/video-conferencia estão conseguindo entender e aprender sobre o tema apresentado, nisso ele verifica suas cameras e chat da chamada, `**[NOVO: mas proprio publico não faz o uso desses meios durante o treinamento]**`. 
+
+Em diversos ambientes coorporativos o uso da camera não é obrigatorio e sem interações no chat,`**[NOVO: esses são os principais meios que o profissional usa como para entender as reações do publico para cada tema e momento do treinamento]**`, assim dificultando a identificação e analise do apresentador, sem conseguir identificar se estão prestando atenção ou confusos com o treinamento, impossibilitando uma ação imediata para repetir ou modificar o ritmo do treinamento.
+
+`**[NOVO: A falta de interação do publico com o profissional faz com que ele possa perder a atenção e engajamento durante o treinamento, gerando uma perca de aprendizado para o publico.]**`
+
+`**[NOVO: E quando o volume do publico é muito grando, dificulta ainda mais para o profissional por não conseguir visualizar a camera de todos os membros da reunião, gerando um entendimento errado para o profissional sendo enviesado por uma pequena parcela que consegue visualizar.]**`
+
+### 4. Elementos extraídos
+
+| Elemento | Evidência no cenário |
+|---|---|
+| Ator(es) | Profissional de treinamento e treineiros |
+| Objetivo(s) | Identificar perda de atenção e confusão durante o treinamento |
+| Contexto | Treinamento realizado de forma online, com profissional de treinamento explicando e apresentando o tema enquanto consegue acompanhar a participação dos membros |
+| Recursos/informações | Câmeras, chat, perguntas, reações da plataforma e expressões dos participantes. |
+| Ações | Visualizar os membros, acompanhamento do chat, realizar perguntas, tira duvidas, explicar assuntos novamente quando necessario. |
+| Problemas/rupturas | Cameras desligadas, pouca interação, grandes publicos no treinamento, e excesso de informação desnecessaria para o momento |
+| Consequências | Inconsistencia com o resultado do modelo e duvida de qual ação tomar durante o treinamento. |
+
+### 5. Implicações para as próximas entregas
+
+Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+
+**Quais tarefas merecem analise:**
+ - Visualizar o engajamento dos participantes do treinamento.
+ - Identificar momentos de alto nivel de duvida, confusão e desinteresse
+ - Decisão para a tomada de ações durante o treinamento, como repetir, tirar duvidas, etc...
+
+**Quais informações precisam ser coletadas:**
+ - Reações que o profissional utiliza como meio de identificação para avaliação
+ - Quais ações o profissional toma durante momentos de silencio e pouca interação dos membros
+ - Quais impactos são gerados com a faltas de interação e engajamento do publico
 
 ## Checklist
 
