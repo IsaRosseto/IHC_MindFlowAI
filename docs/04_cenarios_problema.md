@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
 **Data:** {{30/08/2026}}  
-**Status:** 🟨 iniciada  
+**Status:** ✅ Concluido 
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -292,14 +292,77 @@ Quais tarefas merecem análise? Quais informações precisam ser coletadas? **N�
  - Quais ações o profissional toma durante momentos de silencio e pouca interação dos membros
  - Quais impactos são gerados com a faltas de interação e engajamento do publico
 
+## Cenário C05 — Perceber tarde demais que a turma pequena não acompanhou uma estrutura nova da aula de inglês
+
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Persona(s) relacionada(s):** P02 — Camila Duarte  
+**Necessidade relacionada:** R01, R02 — receber um sinal do estado geral da turma em tempo real, sem precisar checar cada rosto enquanto fala e compartilha a tela (necessidade registrada na persona P02)  
+**Situação concreta da Entrega 1 relacionada:** itens 4.4 e 4.5, estendidos ao recorte de turma pequena (5 a 15 alunos) introduzido na Entrega 3 como hipótese nova a validar  
+**Hipóteses ainda presentes:** H01, H02
+
+### 1. Cenário inicial
+
+Camila dá aula particular de inglês para uma turma de oito alunos, pelo Google Meet. Na metade da aula, ela compartilha a tela com um exercício de conversação e, ao mesmo tempo, tenta acompanhar a grade de vídeo reduzida que fica num cantinho da tela. Metade da turma está com a câmera desligada.
+
+Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal. Nota um silêncio maior que o de costume, mas não sabe se é porque estão concentrados ouvindo ou porque não entenderam. Pergunta "entenderam?" e alguns alunos respondem "sim" rapidamente, sem muita convicção. Como o tempo de aula é curto e o plano prevê ainda mais dois tópicos, ela segue em frente.
+
+Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa parte da turma errou justamente os exemplos que usavam aquela estrutura nova. Acaba gastando parte da aula seguinte revisando um conteúdo que já devia ter sido reforçado no momento em que a dificuldade apareceu.
+
+### 2. Questões de refinamento
+
+| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|
+| Q1 | O que leva Camila a interpretar aquele silêncio como "provavelmente entenderam" em vez de dúvida, no momento da aula? | Revela o critério informal que ela usa hoje pra decidir se segue em frente ou reforça o conteúdo | Entrevista com Camila ou professora de idiomas equivalente |
+| Q2 | Mesmo numa turma pequena (5 a 15 alunos), por que ainda é difícil perceber a reação individual de cada aluno enquanto a tela está compartilhada? | Testa se o tamanho pequeno da turma realmente resolveria o problema sozinho, ou se o compartilhamento de tela é a barreira principal | Observação de uma aula com tela compartilhada |
+| Q3 | O que Camila faz hoje, na prática, quando desconfia que alguém não entendeu mas não tem nenhuma confirmação clara? | Mostra a estratégia de contorno já usada, antes de qualquer ferramenta nova | Entrevista semiestruturada com Camila |
+| Q4 | Quanto tempo, em média, passa entre o momento em que a dificuldade acontece na aula e o momento em que Camila descobre que ela existiu? | Dimensiona o atraso real entre o problema e a percepção dele, que é o núcleo da situação | Entrevista com Camila, comparando com o cronograma real das aulas |
+| Q5 | Como o pouco tempo disponível entre uma aula e outra influencia a chance de Camila revisar o conteúdo antes do próximo encontro? | Relaciona a restrição de tempo já registrada na persona P02 com a consequência prática do atraso na percepção | Entrevista com Camila sobre a rotina entre aulas |
+
+### 3. Cenário refinado
+
+Camila dá aula particular de inglês para uma turma de oito alunos, pelo Google Meet. Na metade da aula, ela compartilha a tela com um exercício de conversação e, ao mesmo tempo, tenta acompanhar a grade de vídeo reduzida que fica num cantinho da tela. Metade da turma está com a câmera desligada.
+
+**[NOVO: Mesmo pra quem está com a câmera ligada, a tela compartilhada reduz o vídeo de todo mundo a miniaturas pequenas, então Camila não consegue de fato ler a expressão de cada aluno enquanto explica. O problema não é só o tamanho da turma, é dividir atenção entre explicar, compartilhar e observar ao mesmo tempo (Q2)]**.
+
+Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal. Nota um silêncio maior que o de costume, mas não sabe se é porque estão concentrados ouvindo ou porque não entenderam. **[NOVO: Na falta de outro sinal, ela usa o silêncio "calmo" e a ausência de perguntas como indício de que entenderam, um critério que ela mesma reconhece como frágil, mas é o único que tem disponível na hora (Q1)]**. Pergunta "entenderam?" e alguns alunos respondem "sim" rapidamente, sem muita convicção. Como o tempo de aula é curto e o plano prevê ainda mais dois tópicos, ela segue em frente.
+
+**[NOVO: Quando desconfia de algum aluno específico, hoje ela só tem como recurso perguntar diretamente pra pessoa ou esperar a próxima atividade prática pra ver se ele erra, mas fazer isso toda vez atrasa a aula e pode constranger quem realmente não entendeu (Q3)]**.
+
+Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa parte da turma errou justamente os exemplos que usavam aquela estrutura nova. **[NOVO: Entre o momento em que a dificuldade realmente aconteceu e o momento em que ela descobre isso, se passam de três a sete dias, o intervalo até a próxima aula daquela turma (Q4)]**. Acaba gastando parte da aula seguinte revisando um conteúdo que já devia ter sido reforçado no momento em que a dificuldade apareceu. **[NOVO: Como o intervalo entre as aulas já é curto e dividido entre preparar material novo e revisar o anterior, esse retrabalho de última hora reduz ainda mais o tempo que ela teria pra planejar a aula seguinte com calma (Q5)]**.
+
+### 4. Elementos extraídos
+
+| Elemento | Evidência no cenário |
+|---|---|
+| Ator(es) | Camila, professora de inglês, e os alunos da turma pequena |
+| Objetivo(s) | Perceber, ainda durante a aula, se a turma está acompanhando uma estrutura nova, pra poder reforçar o conteúdo na hora certa |
+| Contexto | Aula particular de inglês por videoconferência (Google Meet), turma pequena de 5 a 15 alunos, com tela compartilhada na maior parte do tempo |
+| Recursos/informações | Grade de vídeo reduzida, câmeras parcialmente desligadas, respostas verbais rápidas e pouco convictas, exercício de casa corrigido na aula seguinte |
+| Ações | Compartilhar tela, explicar o conteúdo, checar a grade de vídeo, perguntar "entenderam?", seguir o plano de aula, corrigir exercício na aula seguinte |
+| Problemas/rupturas | Silêncio ambíguo, atenção dividida entre explicar e observar, resposta verbal pouco confiável, dificuldade só descoberta dias depois |
+| Consequências | Retrabalho na aula seguinte, tempo de preparação reduzido, estrutura gramatical não reforçada no momento em que fazia mais diferença |
+
+### 5. Implicações para as próximas entregas
+
+**Quais tarefas merecem análise?**
+- Perceber, durante a explicação de um tópico novo, se a turma está acompanhando.
+- Decidir, com base em sinais incompletos, se reforça o conteúdo na hora ou segue o plano.
+- Revisar, numa aula posterior, o que não ficou claro na aula anterior.
+
+**Quais informações precisam ser coletadas?**
+- Que critérios professores de turma pequena usam hoje pra interpretar silêncio como compreensão ou dúvida.
+- Se a divisão de atenção entre compartilhar tela e observar a turma é, de fato, o gargalo principal, mais do que o tamanho da turma em si (ligado à hipótese nova sobre turmas pequenas, registrada na Entrega 3).
+- Qual é, na prática, o intervalo entre o momento da dificuldade e o momento em que o professor descobre que ela existiu, e o quanto isso poderia ser antecipado (relacionado a H01).
+- Como um sinal de confiança baixa ou alta nessa percepção mudaria a decisão do professor de parar ou seguir em frente (relacionado a H02).
+
 ## Checklist
 
-- [ ] Há um cenário completo por integrante.
-- [ ] Cada cenário tem título, ator, objetivo, contexto e problema.
-- [ ] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
-- [ ] O texto descreve a situação atual, sem antecipar a solução.
+- [x] Há um cenário completo por integrante.
+- [x] Cada cenário tem título, ator, objetivo, contexto e problema.
+- [x] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
+- [x] O texto descreve a situação atual, sem antecipar a solução.
 - [ ] Para TCC sem interface original, o cenário descreve uma prática humana plausível relacionada à contribuição técnica, e não “a falta de uma tela”.
-- [ ] Questões de refinamento acrescentam informação nova.
-- [ ] O refinamento mostra claramente o que foi adicionado/alterado.
-- [ ] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
-- [ ] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+- [x] Questões de refinamento acrescentam informação nova.
+- [x] O refinamento mostra claramente o que foi adicionado/alterado.
+- [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
+- [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
