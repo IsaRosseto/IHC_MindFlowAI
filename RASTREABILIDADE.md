@@ -29,7 +29,7 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 |---|---|---|---|---|---|---|---|
 | H01 | Professor/palestrante acha útil um indicador discreto do estado do grupo durante a própria aula, sem virar mais uma distração | H | Se for falsa, o semáforo precisa virar outra coisa, tipo só resumo pós-sessão | Entrega 2 / 3 | PENDENTE | aberta | Define se o recorte principal continua sendo o tempo real ou muda pro pós-sessão |
 | H02 | O nível de confiança do modelo precisa aparecer na tela pra não deixar o comunicador confiar cegamente numa classificação errada | H | Muda como o dashboard e o semáforo mostram a informação | Entrega 7 / 8 | PENDENTE | aberta | Impacta diretamente o design visual do semáforo e do dashboard |
-| H03 | Participante da chamada sentiria desconforto sabendo que o comportamento dele tá sendo classificado, mesmo com processamento local | H | Pode exigir tela de consentimento, ampliando o escopo além do comunicador | Entrega 2 / 4 | PENDENTE | aberta | Pode adicionar um novo perfil de usuário e uma nova tela ao escopo |
+| H03 | Participante da chamada sentiria desconforto sabendo que o comportamento dele tá sendo classificado, mesmo com processamento local | H | Pode exigir tela de consentimento, ampliando o escopo além do comunicador | Entrega 2 / 4 | Explorada narrativamente no Cenário C03 (Entrega 4); ainda sem entrevista com aluno real | aberta | Pode adicionar um novo perfil de usuário e uma nova tela ao escopo |
 | H04 | O MindFlow se diferencia de ferramentas tipo Read AI justamente por atuar em tempo real e não só no pós-reunião | H | Se for falsa, o valor central do produto precisa ser repensado | Entrega 2 | PENDENTE | aberta | Sustenta (ou não) a escolha do trilho de tempo real como recorte principal de IHC |
 | ? 01 | Quais outras ferramentas de meeting analytics/proctoring já existem além do Read AI, e o que elas fazem em tempo real | ? | Falta esse levantamento pra saber se o recorte escolhido é realmente diferenciado | Entrega 2 | PENDENTE | aberta | Pode confirmar ou enfraquecer a justificativa do Caminho A (item 7.1) |
 
@@ -37,9 +37,10 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 
 | ID | Capacidade do TCC utilizada | Necessidade/problema | Persona | Cenário problema | Objetivo/tarefa | HTA/GOMS/CTT | Cenário de interação / signos | MoLIC | Tela(s) Figma | Heurística / problema | Tarefa no teste | Decisão/melhoria |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| R01 | Classificação em tempo real do estado do grupo (engajamento, tédio, confusão, frustração) | Cegueira situacional do facilitador durante a sessão | PENDENTE | PENDENTE | T01, perceber o estado do grupo durante a sessão | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
-| R02 | Agregação por janela temporal + alerta discreto (Semáforo Cognitivo) | Necessidade de ajustar a condução da aula/apresentação a tempo | PENDENTE | PENDENTE | T02, ajustar a condução da sessão em resposta ao estado percebido | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
-| R03 | Persistência de representações reduzidas + timeline agregada | Falta de feedback estruturado sobre a própria condução, depois que a sessão já acabou | PENDENTE | PENDENTE | T03, revisar após a sessão quais momentos geraram mais dificuldade | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
+| R01 | Classificação em tempo real do estado do grupo (engajamento, tédio, confusão, frustração) | Cegueira situacional do facilitador durante a sessão | P01, P02, P03, P04 | C02 (Karol), C05 (Camila), C04 (Nathanael), C01 (Manoel) | T01, perceber o estado do grupo durante a sessão | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
+| R02 | Agregação por janela temporal + alerta discreto (Semáforo Cognitivo) | Necessidade de ajustar a condução da aula/apresentação a tempo | P01, P02, P03, P04 | C02 (Karol), C05 (Camila), C04 (Nathanael), C01 (Manoel) | T02, ajustar a condução da sessão em resposta ao estado percebido | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
+| R03 | Persistência de representações reduzidas + timeline agregada | Falta de feedback estruturado sobre a própria condução, depois que a sessão já acabou | P02, P03, P04 | C05 (Camila só descobre na aula seguinte), C04 (Nathanael só descobre após o treinamento), C01 (Manoel só descobre no follow-up) | T03, revisar após a sessão quais momentos geraram mais dificuldade | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
+| R04 | Processamento local (edge) e agregação sem identificação individual | Transparência para o participante sobre o que é feito com sua imagem, e receio de que a classificação vire avaliação individual | P05 | C03 (Bruno) | T04, entender o que acontece com os próprios dados e se a baixa participação pode ser usada contra ele | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE | PENDENTE |
 
 ## 4. Rastreabilidade de padrões de interface
 
@@ -57,6 +58,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 | Data | O que mudou | Evidência/feedback que motivou | Artefatos afetados | Responsável |
 |---|---|---|---|---|
 | 13/08/2026 | Definição inicial do escopo de IHC: Semáforo Cognitivo em tempo real como recorte principal, Dashboard pós-sessão como secundário | Análise da Entrega 1 (entendimento do TCC, do usuário e do problema) | Toda a matriz (Seções 1, 2 e 4) | Equipe |
+| 16/09/2026 | Ligação de P01–P05 e C01–C05 às necessidades R01–R03 (Seção 3); criação de R04 para cobrir a necessidade de transparência do participante (persona P05, cenário C03), até então sem necessidade associada; nota sobre H03 ter sido explorada narrativamente no Cenário C03 (Seção 2) | Entregas 3 (personas) e 4 (cenários de análise/problema) concluídas | Seções 2 e 3 | Equipe |
 
 ## Como usar
 
