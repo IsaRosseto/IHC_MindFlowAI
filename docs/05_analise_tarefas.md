@@ -272,9 +272,9 @@ flowchart TB
 - **Selection Rules:** definem qual método deve ser utilizado conforme o contexto e as informações apresentadas pelo MindFlow AI.
 
 
-## CTT — T03 {{nome da tarefa}}
+## CTT — T03 - Conduzir a aula enquanto acompanha e responde aos estados dos participantes
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Kayky - 22.222.040-2
 
 ### Descrição
 
