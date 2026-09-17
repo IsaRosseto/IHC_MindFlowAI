@@ -235,7 +235,6 @@ Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte id
 |---|---|---|---|
 | Indicador de engajamento por cor, em tempo real | Score calculado a partir de interações (enquete, chat, reação); score maior ou igual a 60 é "alto engajamento", menor que 20 é "baixo engajamento" |![Engagement Dashboard do Adobe Connect (pod do apresentador)](../assets/02_concorrencia/adobe-engagement-dashboard.png)|É praticamente o mesmo conceito do Semáforo Cognitivo, um número complexo por trás, traduzido em uma cor simples pra leitura rápida durante a sessão |
 | Relatório minuto a minuto pós-sessão | Depois do evento, fica disponível um relatório detalhado mostrando a variação do engajamento ao longo do tempo, permitindo cruzar com o conteúdo apresentado em cada minuto |![Relatório minuto a minuto do Adobe Connect](../assets/02_concorrencia/adobe-relatorio-minuto.png)| É praticamente o mesmo objetivo do Dashboard pós-sessão do MindFlow, achar qual trecho específico gerou queda de engajamento |
-| Rastreamento por papel/função | O apresentador pode filtrar o engajamento por tipo de participante (todos, ou por papel específico) | `../assets/02_concorrencia/adobe-connect-tracking.png` (PENDENTE) | Mostra um nível de granularidade a mais que o MindFlow ainda não previu, pode virar uma possibilidade futura pra turmas grandes com subgrupos |
 
 #### Experiência do usuário e opiniões
 
@@ -268,10 +267,10 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 |---|---|---|---|---|
 | Microsoft Teams | Para realizar aulas, reuniões e compartilhar materiais. | Menus laterais, abas, ícones conhecidos e organização dos participantes. | [Teams](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/Accordion%201.png) | Manter navegação simples e informações importantes de fácil acesso. |
 | Google Meet | Para realizar videoconferências e aulas on-line. | Interface limpa, poucos controles e ações principais bem destacadas. | [Meet](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/meet.jpg) | Evitar excesso de informações e priorizar as funções principais. |
-| Google Classroom | Para organizar atividades, materiais e comunicação com alunos. | Organização por turmas, cards e divisão do conteúdo em seções. | `../assets/02_concorrencia/classroom.png` (PENDENTE) | Utilizar blocos bem organizados para facilitar a localização das informações. |
+| Google Classroom | Para organizar atividades, materiais e comunicação com alunos. | Organização por turmas, cards e divisão do conteúdo em seções. | https://github.com/IsaRosseto/IHC_MindFlowAI/assets/02_concorrencia/classroom.png| Utilizar blocos bem organizados para facilitar a localização das informações. |
 | Mentimeter / Slido | Pra medir compreensão do público em um momento específico da aula ou apresentação | Tela cheia com resultado em tempo real (barra, nuvem de palavras), geralmente compartilhada com o público |![Resultados ao vivo no Mentimeter/Slido](../assets/02_concorrencia/menti-slido-resultados.png) | Mostra que esse público já está acostumado a interromper a sessão pra checar entendimento, o MindFlow se diferencia por não precisar dessa pausa |
-| Zoom | Ferramenta de videochamada mais usada em aula/reunião | Reactions agregadas pro host; "Attention Tracking" foi removido em 2020 por pressão de privacidade [F] | `../assets/02_concorrencia/zoom-reactions.png` (PENDENTE) | Público aceita feedback agregado, mas rejeita rastreamento individual explícito |
-| Kahoot! | Quiz gamificado de revisão em aula | Leaderboard ao vivo + relatório pós-jogo com erros da turma [F] | `../assets/02_concorrencia/kahoot-report.png` (PENDENTE) | Relatório pós-sessão já é familiar pro público |
+| Zoom | Ferramenta de videochamada mais usada em aula/reunião | Reactions agregadas pro host; "Attention Tracking" foi removido em 2020 por pressão de privacidade [F] |https://github.com/IsaRosseto/IHC_MindFlowAI/assets/02_concorrencia/zoom-reactions.png| Público aceita feedback agregado, mas rejeita rastreamento individual explícito |
+
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
@@ -351,10 +350,6 @@ https://www.read.ai/pt
 **Mentimeter**
 - Purdue University. *Mentimeter — Online Teaching Hub.* https://onlineteachinghub.education.purdue.edu/mentimeter/
 - K20 Center. *Mentimeter — Authentic Lessons for 21st Century Learning.* https://learn.k20center.ou.edu/tech-tool/645
-
-**Kahoot!**
-- University of Colorado Boulder. *Kahoot! — Research & Innovation Office.* https://www.colorado.edu/researchinnovation/kahoot
-- Purdue University. *Kahoot! — Online Teaching Hub.* https://onlineteachinghub.education.purdue.edu/kahoot/
 
 ## Checklist
 
