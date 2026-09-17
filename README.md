@@ -18,7 +18,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 ## Identificação
 
 **Título do projeto de IHC:** MINDFLOW  
-**TCC/projeto de origem:** MindFlow AI - Classificação Temporal de Estados Cognitivos em Videoconferências utilizando Redes LSTM e Fusão Multimodal  
+**TCC/projeto de origem:** MindFlow AI - Grupo 06 
 **Orientador(a):** Prof.ª Dra. Leila Cristina Carneiro Bergamasco 
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** FEI - Fundação Educacional Pe Inaciana de Sabóia Medeiros   
