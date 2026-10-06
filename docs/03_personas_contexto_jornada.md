@@ -49,7 +49,7 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 | Necessidades | Compreender como a turma está reagindo durante a aula e saber quando pode ser necessário mudar a forma de explicar o conteúdo |
 | Dores/frustrações | Sente falta de observar as expressões e reações dos alunos como fazia presencialmente e se preocupa quando recebe pouco retorno da turma |
 | Motivadores | Paixão por ensinar, ajudar os alunos a compreender conteúdos complexos e melhorar continuamente suas aulas |
-| Restrições/acessibilidade | Possui mobilidade reduzida após um acidente, o que dificulta o deslocamento até a instituição; durante as aulas, divide a atenção entre conteúdo, chat, alunos e apresentação |
+| Restrições/acessibilidade | Possui baixa a média familiaridade com ferramentas digitais e, durante as aulas, divide a atenção entre apresentação, chat, alunos e conteúdo. Por isso, precisa de uma interface simples, com poucas informações simultâneas e leitura rápida. |
 | Ambiente típico de uso | Pequena sala iluminada em sua residência, utilizando notebook, webcam e internet para ministrar aulas on-line |
 | Comportamentos relevantes | Observa câmeras e chat, pergunta se os alunos entenderam e, diante de pouca participação, utiliza resumos, tópicos e novos exemplos |
 
@@ -187,13 +187,28 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 - Confirma que o resultado do sistema tem que ficar agregado, sem apontar aluno específico, pra não virar avaliação individual
 - Ajuda a justificar o processamento local no próprio dispositivo, não só pela LGPD, mas também pra diminuir a sensação de estar sendo vigiado
 - Levanta uma dúvida pra investigar depois, se desligar a câmera pode prejudicar o aluno de alguma forma
+
+
 ### Síntese das personas
 
-As quatro primeiras personas são classificadas como **primárias** porque representam usuários diretos do MindFlow AI: todas conduzem sessões por videoconferência, consultam o Semáforo Cognitivo durante a apresentação e podem utilizar o Dashboard após a sessão. Embora atuem em contextos diferentes, compartilham o objetivo central de perceber a reação do grupo sem perder o foco na própria condução.
+As personas P01, P02, P03 e P04 foram mantidas como **personas primárias** porque todas utilizam diretamente o Semáforo Cognitivo e o Dashboard, mas possuem necessidades, prioridades e contextos de uso que geram diferenças importantes para o design da interface.
 
-Karol representa o ensino a distância de conteúdo conceitual, com menor familiaridade tecnológica e necessidade de baixa carga de atenção. Camila representa aulas de idioma mais interativas, turmas pequenas e pouco tempo disponível entre sessões. Nathanael representa treinamentos corporativos, nos quais precisa cumprir uma pauta, trabalhar com públicos heterogêneos e evitar que dados agregados sejam interpretados como avaliação individual de funcionários. Manoel representa apresentações comerciais B2B, em que o comunicador precisa interpretar rapidamente a reação de clientes, ajustar o discurso e lidar com exigências ainda mais sensíveis de transparência e consentimento.
+**P01 — Karol Schrödinger** representa o contexto de ensino a distância com menor familiaridade tecnológica. Para ela, a interface precisa ser simples, direta e fácil de interpretar, com o mínimo possível de elementos que disputem sua atenção durante a aula.
 
-As diferenças entre elas não são apenas demográficas: cada persona introduz condições de uso e necessidades que influenciam o design. Mesmo sendo todas primárias, a equipe adotará **P02 — Camila Duarte** como persona de referência para o mapa de empatia e a jornada desta entrega. Essa escolha serve apenas para consolidar os artefatos coletivos exigidos pelo modelo e não estabelece hierarquia entre as personas primárias.
+**P02 — Camila Duarte** representa aulas mais interativas e turmas pequenas. Nesse caso, além da leitura rápida durante a aula, é importante entender se o indicador agregado continua útil quando poucos participantes contribuem para o sinal e permitir que ela organize rapidamente quais informações deseja acompanhar no dashboard.
+
+**P03 — Nathanael Lima** representa o contexto de treinamento corporativo, em que existe maior necessidade de revisar resultados depois da sessão, comparar treinamentos e identificar partes do conteúdo que precisam ser melhoradas. Seu contexto também traz uma preocupação maior com o uso dos dados, já que as informações não devem ser interpretadas como avaliação individual dos funcionários.
+
+**P04 — Manoel Gomes** representa apresentações comerciais para clientes externos. Ele costuma trabalhar com tela compartilhada, reuniões curtas e pouco espaço disponível na interface, o que exige indicadores ainda mais rápidos e discretos. Nesse cenário, transparência e privacidade também ganham maior peso por envolver pessoas externas à organização.
+
+Apesar de compartilharem o objetivo geral de acompanhar melhor a reação do grupo durante uma apresentação, essas personas possuem necessidades que alteram prioridades da interface, como nível de simplicidade, quantidade de informação exibida, personalização do dashboard, comparação entre sessões, uso durante compartilhamento de tela e cuidados com privacidade.
+
+Por isso, uma interface projetada pensando apenas em uma dessas personas poderia não atender completamente às necessidades das demais.
+
+A **P02 — Camila Duarte** será utilizada como persona de referência principal para o mapa de empatia e para a jornada desta entrega, por representar de forma clara o uso do MindFlow durante uma aula on-line. Essa escolha não elimina as demais personas primárias, que continuam sendo consideradas nas decisões de design e nas próximas etapas do projeto.
+
+**P05 — Bruno D. Roger** é classificado como **persona secundária**. Ele não utiliza o Semáforo Cognitivo nem o Dashboard, mas possui interação própria com o MindFlow por meio das informações de transparência e participação. Suas necessidades influenciam principalmente decisões relacionadas à privacidade, clareza sobre o processamento dos dados e controle do participante.
+
 
 ## 2. Mapa de empatia — equipe
 
@@ -216,33 +231,38 @@ As diferenças entre elas não são apenas demográficas: cada persona introduz 
 **Ganhos/necessidades [H]:** um sinal rápido e confiável do clima da turma, que não a distraia da própria condução da aula.
 
 
+
+
 ## 3. Contexto de uso — consolidação
 
 | Dimensão | Descrição | Implicação de design |
 |---|---|---|
-| Usuários | Comunicador (professor/instrutor/palestrante/facilitador), com a persona P01 representando especificamente professora de idioma em turma pequena (5 a 15 alunos) | A interface precisa funcionar bem tanto pra grupos pequenos quanto pra turmas maiores, sem perder a leitura de "clima do grupo" quando há poucos alunos |
-| Tarefas | Perceber o estado do grupo em tempo real durante a aula, e revisar depois quais momentos tiveram mais dificuldade | Justifica o Semáforo Cognitivo (tempo real) e o Dashboard pós-sessão, já definidos na Entrega 1 |
-| Equipamentos | Notebook ou desktop com webcam, conexão de internet doméstica, às vezes instável | A interface do tempo real precisa ser leve, sem exigir muito processamento nem depender de conexão perfeita |
-| Ambiente físico | Geralmente a casa da professora, nem sempre um espaço silencioso ou bem iluminado | Reforça a decisão já tomada na Entrega 1, de que iluminação ruim pode prejudicar a extração de sinal facial |
-| Ambiente social/organizacional | Aula particular ou de escola de idiomas, sem estrutura de TI dedicada por trás | A ferramenta precisa ser simples de configurar sozinha, sem depender de suporte técnico |
-| Papéis/permissões/governança | Só a professora vê o Semáforo Cognitivo e o Dashboard, os alunos não têm acesso a nenhuma tela do sistema | Confirma a decisão de privacidade já definida na Entrega 1, indicador visível só pro comunicador |
-| Volume de dados/histórico | Turma pequena, poucas aulas por semana, histórico relevante seria por turma ou por aluno ao longo do curso | Levanta uma dúvida nova pra investigar, se faz sentido comparar o engajamento da mesma turma entre aulas diferentes |
+| Usuários | Os usuários principais são professores, instrutores e apresentadores que conduzem sessões por videoconferência. P01 — Karol representa o ensino a distância, P02 — Camila representa aulas de idioma em turmas pequenas, P03 — Nathanael representa treinamentos corporativos e P04 — Manoel representa apresentações comerciais para clientes externos. P05 — Bruno participa da sessão e utiliza apenas as informações de transparência e participação do MindFlow, não o Semáforo Cognitivo ou o Dashboard. | A interface principal precisa atender diferentes contextos de comunicação sem exigir mudanças grandes no fluxo. O Semáforo e o Dashboard devem ser voltados ao comunicador, enquanto o participante precisa ter acesso somente às informações necessárias para compreender o processamento realizado. |
+| Tarefas | Durante a sessão, o comunicador apresenta conteúdo, pode compartilhar a tela, acompanhar chat e participantes e tentar perceber se o grupo está acompanhando. O MindFlow funciona como apoio nessa percepção, sem substituir a avaliação do próprio comunicador. Após a sessão, o usuário pode revisar momentos importantes e utilizar essas informações para melhorar aulas, treinamentos ou apresentações futuras. | O Semáforo Cognitivo deve oferecer uma leitura rápida e discreta durante a sessão. As inferências não devem ser apresentadas como certezas nem determinar automaticamente qual ação o comunicador deve tomar. O Dashboard deve permitir uma revisão posterior simples e útil. |
+| Equipamentos | O uso ocorre principalmente em notebook ou desktop com webcam, podendo envolver headset, monitor adicional e ferramentas de apresentação. O comunicador também pode estar compartilhando a tela durante grande parte da sessão. Os participantes podem utilizar notebook, computador ou celular e nem sempre manter a câmera ligada. | O indicador precisa ocupar pouco espaço, permanecer legível mesmo durante o compartilhamento de tela e funcionar em diferentes configurações de equipamento. Também deve considerar situações em que nem todos os participantes estejam contribuindo para a análise. |
+| Ambiente físico | O uso pode acontecer em casa, escola, escritório ou ambiente corporativo. Condições como iluminação, ruído, conexão com a internet, posição da webcam e presença de outras pessoas no ambiente podem variar e interferir na qualidade dos sinais analisados. | O sistema deve considerar variações na qualidade da captura e evitar apresentar inferências de baixa qualidade como certezas. Quando necessário, deve informar de maneira simples que a qualidade ou confiança da análise está reduzida. |
+| Ambiente social/organizacional | O MindFlow pode ser utilizado em relações diferentes, como professor e aluno, instrutor e funcionário ou apresentador comercial e cliente. Esses contextos possuem diferentes níveis de autoridade, expectativa de privacidade e liberdade para participar. O uso também pode ser definido pelo próprio comunicador ou por uma escola, empresa ou instituição. | A interface deve considerar que os participantes podem se sentir monitorados ou pouco à vontade para recusar o uso da câmera. Os resultados devem permanecer agregados e servir como apoio ao comunicador, sem serem utilizados como avaliação individual. O sistema também precisa apresentar de forma clara sua finalidade e os limites das inferências realizadas. |
+| Papéis/permissões/governança | O Semáforo Cognitivo e o Dashboard são destinados ao comunicador. Os participantes não visualizam esses painéis, mas possuem uma interação própria com o MindFlow por meio das informações de transparência sobre o processamento realizado. Devem conseguir saber que o sistema está sendo utilizado, quais informações são processadas e qual é a finalidade da análise. A forma de consentimento ou possibilidade de recusa ainda precisa ser investigada. | O sistema deve separar claramente a interface analítica do comunicador da interface de transparência destinada aos participantes. As informações apresentadas ao participante devem ser simples e explicar o que é processado e o que é disponibilizado ao comunicador, sem dar acesso ao Semáforo ou ao Dashboard. |
+| Volume de dados/histórico | O número de participantes pode variar de pequenos grupos a turmas maiores. Após as sessões, pode existir interesse em consultar momentos anteriores e comparar diferentes aulas, treinamentos ou apresentações. Neste momento, o projeto trabalha com informações agregadas do grupo e não assume a existência de histórico individual por participante. | O Dashboard deve organizar o histórico principalmente por sessão e por grupo, permitindo comparar momentos e sessões quando isso for útil. Qualquer acompanhamento individual deve permanecer como hipótese futura e só poderá ser incluído se houver necessidade de usuário, justificativa de privacidade e validação nas próximas etapas. |
+
+
 
 
 ## 4. Jornada do usuário — equipe
 
 **Persona:** P02 — Camila Duarte  
-**Objetivo da jornada:** conduzir uma aula de inglês por videoconferência, perceber a tempo mudanças no estado geral da turma e revisar posteriormente os momentos que podem exigir melhoria.  
-**Início e fim da jornada:** começa antes da aula, quando Camila prepara a videoconferência e verifica o MindFlow AI, e termina depois da sessão, quando consulta o Dashboard para planejar uma aula futura.
-
+**Objetivo da jornada:** conduzir uma aula de inglês por videoconferência, acompanhar possíveis mudanças no estado geral da turma sem perder o foco da explicação e utilizar as informações obtidas para melhorar aulas futuras.  
+**Início e fim da jornada:** começa antes da interação com o MindFlow, quando Camila prepara a aula e pensa em dificuldades percebidas em encontros anteriores, e termina depois do uso do sistema, quando decide se e como vai adaptar uma próxima aula com base nas informações observadas.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | Abre a videochamada alguns minutos antes e ativa o MindFlow | Deixar tudo pronto antes dos alunos entrarem | Tranquila, rotina já conhecida | Nenhuma até aqui | Ativação simples, poucos cliques | H |
-| 2 | Começa a aula explicando um tópico novo de gramática | Passar o conteúdo com clareza | Focada na explicação, atenção dividida entre falar e compartilhar tela | Não consegue olhar a grade de vídeo com atenção | O Semáforo Cognitivo precisa ser visível sem que ela precise procurar por ele na tela | H |
-| 3 | O indicador mostra sinal de confusão crescente no grupo | Perceber que algo não está sendo entendido | Alerta, mas ainda incerta se deve confiar no sinal | Medo de interromper a aula à toa por um alerta errado | Mostrar o nível de confiança da classificação, ligado à hipótese H02 | H |
-| 4 | Ela para, dá um exemplo extra e pergunta se a turma entendeu | Resolver a confusão percebida antes de seguir em frente | Mais segura, sente que agiu a tempo | Nenhuma, esse é o momento em que a ferramenta cumpriu o propósito dela | Confirma o valor central do Semáforo Cognitivo, definido desde a Entrega 1 | H |
-| 5 | Termina a aula e depois abre o Dashboard pra revisar | Entender quais momentos tiveram mais dificuldade, pra ajustar a próxima aula | Curiosa, quer aprender com a própria condução | Pode não ter tempo sobrando entre uma aula e outra pra revisar com calma | O Dashboard precisa ser rápido de ler, tipo um resumo, não um relatório longo | H |
+| 1 | Antes da aula, Camila prepara o conteúdo e relembra pontos em que os alunos tiveram dificuldade em encontros anteriores | Planejar uma aula clara e tentar evitar que as mesmas dúvidas se repitam | Quer preparar uma aula melhor, mas nem sempre sabe quais momentos realmente foram mais difíceis para a turma | O feedback que recebe normalmente é limitado e pode aparecer somente durante exercícios ou em aulas posteriores | O MindFlow pode apoiar a preparação futura ao permitir consultar informações de sessões anteriores sem substituir a percepção da professora | H |
+| 2 | Pouco antes da aula, abre a videoconferência e prepara as ferramentas que vai utilizar | Deixar a aula pronta sem gastar muito tempo com configurações | Quer começar a aula sem precisar aprender ou configurar várias coisas | Possui pouco tempo entre aulas e uma ferramenta complexa pode atrapalhar sua rotina | Permitir ativação rápida e configurações simples, deixando informações mais avançadas como opcionais | H |
+| 3 | Começa a aula, compartilha a tela e explica um novo conteúdo | Ensinar o conteúdo com clareza e manter o ritmo da aula | Focada na explicação e dividindo a atenção entre slides, chat e participantes | Não consegue acompanhar continuamente as câmeras e reações dos alunos enquanto apresenta | O Semáforo Cognitivo deve permanecer visível de forma discreta e permitir leitura rápida sem disputar atenção com a aula | H |
+| 4 | Durante a explicação, o MindFlow apresenta uma mudança no indicador, sugerindo possível aumento de confusão no grupo | Perceber que pode existir alguma dificuldade naquele momento | Fica atenta ao sinal, mas ainda não sabe se ele representa corretamente o que está acontecendo | Pode confiar demais em uma inferência errada ou ignorar um alerta que seria útil | Mostrar a inferência de forma clara e, quando necessário, indicar qualidade ou confiança do sinal para apoiar a interpretação | H |
+| 5 | Camila decide confirmar o sinal fazendo uma pergunta, retomando um exemplo ou observando a resposta da turma | Verificar se a dificuldade indicada pelo sistema também aparece na interação com os alunos | Usa o indicador como apoio, mas combina essa informação com sua própria percepção da aula | Pode modificar a explicação sem necessidade ou interpretar uma reação pontual como dificuldade geral | O sistema não deve determinar automaticamente qual ação deve ser tomada; deve apoiar a decisão do comunicador | H |
+| 6 | Depois da aula, Camila abre o Dashboard e revisa os principais momentos da sessão | Entender em quais partes da aula ocorreram mudanças nos indicadores | Curiosa para comparar sua percepção com o que foi registrado pelo sistema | Pode não ter tempo ou interesse em analisar um relatório longo e cheio de métricas | Apresentar primeiro um resumo simples e uma linha do tempo, permitindo abrir mais detalhes somente quando necessário | H |
+| 7 | Ao preparar uma aula futura, Camila utiliza o que observou no Dashboard junto com sua própria experiência para decidir se vai revisar um conteúdo, trocar um exemplo ou manter a aula como estava | Melhorar as próximas aulas com base em diferentes fontes de informação | Avalia se os dados realmente fazem sentido dentro do contexto que conhece da turma | O sistema pode apontar um momento como relevante, mas isso não significa que Camila precise obrigatoriamente alterar seu planejamento | Permitir que os resultados sirvam como apoio à reflexão e comparação entre sessões, sem transformar as inferências em recomendações obrigatórias | H |
 
 ## Síntese
 
@@ -258,7 +278,7 @@ As próximas entregas devem contemplar:
 
 ## Checklist
 
-- [ ] Existe pelo menos uma persona por integrante — atualmente existem 4 personas para 5 integrantes.
+- [x] Existe pelo menos uma persona por integrante ]]
 - [x] As personas existentes não são apenas diferenças demográficas superficiais.
 - [x] Está claro que as quatro personas são proto-personas e que seus dados precisam ser validados.
 - [x] As personas não transformam as hipóteses da Entrega 1 em fatos comprovados.
@@ -267,4 +287,4 @@ As próximas entregas devem contemplar:
 - [x] O TCC já possui interface prevista; portanto, o item destinado a TCCs sem interface original não se aplica.
 - [x] Os papéis existentes foram diferenciados por contexto, objetivos e tarefas.
 - [x] A jornada possui etapas, dores e oportunidades e não é apenas um wireflow.
-- [ ] Os IDs das personas ainda não foram adicionados à matriz de rastreabilidade.
+- [x] Os IDs das personas ainda não foram adicionados à matriz de rastreabilidade.
