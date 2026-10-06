@@ -109,83 +109,99 @@ Em alguns casos, Manoel interpreta a falta de reação como concordância e só 
 - Como essas dificuldades afetam decisões durante a reunião e o follow-up posterior.
 
 
-## Cenário C02 — Dificuldade em perceber o estado dos participantes durante uma aula on-line
 
-**Autor(a):** {{Kayky Pires — 22.222.040-2}}  
-**Persona(s) relacionada(s):** P01 - Karol 
-**Necessidade relacionada:** {{R01}}  
-**Situação concreta da Entrega 1 relacionada:** H01 — Utilidade de um indicador discreto do estado do grupo em tempo real 
-**Hipóteses ainda presentes:** H01, H03
+## Cenário C02 — Dificuldade de Karol em perceber se a turma está acompanhando a aula on-line
+
+**Autor(a):** Kayky Pires — 22.222.040-2  
+**Persona(s) relacionada(s):** P01 — Karol Schrödinger  
+**Necessidade relacionada:** Perceber, durante a aula, possíveis sinais de dificuldade da turma sem aumentar ainda mais sua carga de atenção.  
+**Origem do cenário:** Situação derivada do contexto de ensino a distância já considerado na Entrega 1 e detalhada pela persona P01 na Entrega 3.  
+**Hipóteses ainda presentes:** H01 e H02  
 
 ### 1. Cenário inicial
 
-Durante uma aula por videoconferência, o professor precisa apresentar o conteúdo e, ao mesmo tempo, perceber como os alunos estão reagindo. Para isso, observa câmeras, chat, perguntas e reações da plataforma.
+Karol é professora de Filosofia no ensino a distância e conduz suas aulas por videoconferência. Durante a explicação, precisa apresentar o conteúdo, acompanhar os slides, observar o chat e tentar perceber se os alunos estão acompanhando.
 
-Porém, muitos participantes permanecem em silêncio, com poucas reações ou com a câmera desligada. Assim, o professor pode ter dificuldade para identificar se a turma está concentrada, desinteressada, confusa ou com dificuldade para acompanhar o conteúdo.
+Como possui baixa a média familiaridade com ferramentas digitais, Karol procura manter sua atenção principalmente na explicação e utiliza os recursos básicos da plataforma. Em alguns momentos, observa a grade de vídeos e verifica o chat para tentar perceber como a turma está reagindo.
 
-Essa incerteza dificulta a decisão sobre continuar a explicação, reduzir o ritmo, repetir um conteúdo ou mudar a dinâmica da aula.
+Porém, parte dos alunos permanece em silêncio, alguns deixam a câmera desligada e nem sempre surgem perguntas quando existe uma dificuldade. Isso faz com que Karol tenha dificuldade para distinguir se a turma está acompanhando, se está confusa ou se simplesmente não está participando.
 
+Quando recebe poucos sinais dos alunos, ela precisa decidir se continua o conteúdo, repete uma explicação, utiliza outro exemplo ou faz uma pergunta para verificar a compreensão. Essa decisão acontece enquanto ainda precisa manter o ritmo da aula e cumprir o conteúdo planejado.
 
 ### 2. Questões de refinamento
 
-Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
-
-
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | Quais informações o professor considera mais importantes para perceber se a turma está acompanhando a aula? | Ajuda a identificar quais sinais recebem maior atenção e como ocorre a tomada de decisão do docente. | Entrevista com professores e observação de aulas on-line. |
-| Q2 | Em quais momentos da aula o professor sente maior dificuldade para acompanhar as reações dos participantes? | Permite compreender quando há maior sobrecarga de atenção e quais tarefas competem entre si. | Entrevista e observação contextual. |
-| Q3 | Como o professor interpreta sinais diferentes ou contraditórios, como silêncio no chat e alunos aparentemente atentos pela câmera? | Ajuda a entender como os docentes atribuem significado aos sinais disponíveis e quais interpretações podem gerar dúvidas. . | Entrevista semiestruturada com docentes. |
-| Q4 | Que estratégias o professor utiliza quando não consegue identificar se os alunos compreenderam o conteúdo? | Revela práticas reais adotadas para contornar a falta de informação durante a aula.| Observação de aulas e entrevista com professores. |
-| Q5 | Como o número de participantes interfere na capacidade do professor de acompanhar a turma? | Permite compreender como o aumento de informações disponíveis influencia o esforço cognitivo e a atenção do docente. | Entrevista e comparação entre aulas com turmas de tamanhos diferentes. |
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Em quais situações da aula Karol encontra maior dificuldade para observar os alunos enquanto explica o conteúdo? | Ajuda a entender quando a divisão de atenção se torna mais crítica e quais condições do ambiente interferem na percepção da turma. | Entrevista com professores de EAD e observação de aulas on-line. |
+| Q2 | Atores | Como o comportamento dos alunos, como câmera desligada, silêncio ou pouca participação, influencia a forma como Karol interpreta a situação da turma? | Permite compreender como as ações dos demais participantes alteram a percepção da professora. | Entrevista com professores e observação de aulas. |
+| Q3 | Objetivos | O que Karol considera mais importante descobrir quando tenta observar a reação da turma durante uma explicação? | Ajuda a separar necessidades diferentes, como verificar compreensão, atenção, participação ou necessidade de repetir um conteúdo. | Entrevista semiestruturada com docentes. |
+| Q4 | Planejamento | Quando percebe poucos sinais da turma, quais alternativas Karol considera antes de decidir se continua ou modifica sua explicação? | Permite compreender o raciocínio utilizado para transformar a dúvida em uma decisão durante a aula. | Entrevista com professores utilizando exemplos de situações reais. |
+| Q5 | Ações | O que Karol costuma fazer atualmente para verificar se os alunos compreenderam quando não consegue interpretar as reações disponíveis? | Revela as estratégias já utilizadas antes da introdução de qualquer nova solução. | Entrevista e observação contextual. |
+| Q6 | Eventos | Quais acontecimentos durante a aula costumam fazer Karol reconsiderar se deve continuar o conteúdo, como uma pergunta inesperada, silêncio prolongado ou erro em uma atividade? | Ajuda a identificar eventos externos que alteram sua decisão durante a aula. | Observação de aulas e entrevistas com professores. |
+| Q7 | Avaliação | Como Karol avalia se a decisão de repetir, continuar ou mudar a explicação realmente ajudou a turma? | Permite entender quais sinais ela utiliza depois de agir para julgar se a intervenção funcionou. | Entrevista e observação de momentos posteriores à intervenção. |
 
 ### 3. Cenário refinado
 
-Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+> Como ainda não foram realizadas entrevistas ou observações com usuários reais, os trechos acrescentados abaixo representam **hipóteses de refinamento** que deverão ser investigadas posteriormente.
 
-Durante uma aula por videoconferência, o professor precisa apresentar o conteúdo e, ao mesmo tempo, perceber como os alunos estão reagindo. Para isso, observa câmeras, chat, perguntas e reações da plataforma.
+Karol é professora de Filosofia no ensino a distância e conduz suas aulas por videoconferência. Durante a explicação, precisa apresentar o conteúdo, acompanhar os slides, observar o chat e tentar perceber se os alunos estão acompanhando.
 
-`**[NOVO: O professor tende a considerar principalmente a participação no chat, as perguntas realizadas e as expressões visíveis dos alunos como sinais de acompanhamento da aula.]**`
+Como possui baixa a média familiaridade com ferramentas digitais, Karol procura manter sua atenção principalmente na explicação e utiliza os recursos básicos da plataforma.
 
-Porém, muitos participantes permanecem em silêncio, apresentam poucas reações ou mantêm a câmera desligada. `**[NOVO: Essa dificuldade aumenta principalmente durante momentos em que o professor está explicando conteúdos mais complexos ou precisa dividir sua atenção entre apresentação, chat e participantes.]**`
+**[HIPÓTESE DE REFINAMENTO — Q1 / Ambiente-contexto: a dificuldade de acompanhar a turma pode aumentar principalmente quando Karol está compartilhando a tela ou explicando conteúdos mais complexos, pois sua atenção já está dividida entre apresentação, fala e chat.]**
 
-Quando os sinais são pouco claros ou contraditórios, o professor pode ter dificuldade para identificar se a turma está concentrada, desinteressada, confusa ou com dificuldade para acompanhar o conteúdo.
+Em alguns momentos, observa a grade de vídeos e verifica o chat para tentar perceber como a turma está reagindo. Porém, parte dos alunos permanece em silêncio, alguns deixam a câmera desligada e nem sempre surgem perguntas quando existe uma dificuldade.
 
-`**[NOVO: Nesses momentos, o professor costuma fazer perguntas diretamente à turma, solicitar alguma interação ou repetir parte da explicação para tentar confirmar se o conteúdo foi compreendido.]**`
+**[HIPÓTESE DE REFINAMENTO — Q2 / Atores: Karol pode interpretar câmera desligada, silêncio ou pouca participação de maneiras diferentes, sem conseguir saber com segurança se esses comportamentos representam atenção, dúvida, desinteresse ou apenas preferência do aluno por participar menos.]**
 
-`**[NOVO: Em turmas maiores, acompanhar individualmente os participantes se torna ainda mais difícil, aumentando a quantidade de informações que o professor precisa observar simultaneamente.]**`
+Isso faz com que Karol tenha dificuldade para distinguir se a turma está acompanhando, se está confusa ou se simplesmente não está participando.
 
-Essa incerteza dificulta a decisão sobre continuar a explicação, reduzir o ritmo, repetir um conteúdo ou alterar a dinâmica da aula.
+**[HIPÓTESE DE REFINAMENTO — Q3 / Objetivos: ao observar a turma, Karol pode estar principalmente tentando descobrir se precisa mudar sua explicação naquele momento, e não necessariamente identificar exatamente o estado de cada aluno.]**
+
+Quando recebe poucos sinais dos alunos, ela precisa decidir se continua o conteúdo, repete uma explicação, utiliza outro exemplo ou faz uma pergunta para verificar a compreensão.
+
+**[HIPÓTESE DE REFINAMENTO — Q4 / Planejamento: antes de mudar a explicação, Karol pode considerar fatores como dificuldade do conteúdo, tempo restante da aula, quantidade de perguntas recebidas e necessidade de cumprir o planejamento previsto.]**
+
+**[HIPÓTESE DE REFINAMENTO — Q5 / Ações: quando permanece em dúvida, ela pode utilizar estratégias como fazer uma pergunta para a turma, pedir um exemplo, retomar brevemente o conteúdo ou aguardar uma atividade para observar se os alunos conseguem aplicar o que foi explicado.]**
+
+Essa decisão acontece enquanto ainda precisa manter o ritmo da aula e cumprir o conteúdo planejado.
+
+**[HIPÓTESE DE REFINAMENTO — Q6 / Eventos: acontecimentos como uma pergunta inesperada, várias respostas erradas em sequência ou um período prolongado sem interação podem fazer Karol interromper o plano inicial e reconsiderar sua condução.]**
+
+**[HIPÓTESE DE REFINAMENTO — Q7 / Avaliação: depois de modificar sua explicação, Karol pode avaliar se a intervenção ajudou observando novas perguntas, respostas dos alunos ou o desempenho deles em uma atividade posterior.]**
 
 ### 4. Elementos extraídos
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | Professor responsável pela aula e alunos participantes da videoconferência. |
-| Objetivo(s) | Compreender como os alunos estão reagindo e se estão acompanhando o conteúdo. |
-| Contexto | Aula realizada por videoconferência, com o professor apresentando o conteúdo enquanto acompanha a participação da turma. |
-| Recursos/informações | Câmeras, chat, perguntas, reações da plataforma e expressões dos participantes. |
-| Ações | Observar os participantes, acompanhar o chat, fazer perguntas, solicitar interação e repetir explicações quando necessário. |
-| Problemas/rupturas | Pouca participação, câmeras desligadas, sinais contraditórios, excesso de informações simultâneas e dificuldade maior em turmas grandes. |
-| Consequências | Incerteza sobre o estado da turma e dificuldade para decidir se deve continuar, repetir, reduzir o ritmo ou alterar a dinâmica da aula. |
+| Ambiente/contexto | Aula de Filosofia realizada por videoconferência, com compartilhamento de conteúdo e atenção dividida entre apresentação, chat e participantes. |
+| Atores | Karol, professora responsável pela aula, e os alunos participantes da videoconferência. |
+| Objetivos | Compreender se a turma está acompanhando o conteúdo e decidir se é necessário modificar a explicação. |
+| Planejamento | Karol precisa considerar alternativas como continuar, repetir, usar outro exemplo ou verificar a compreensão, levando em conta o tempo e o conteúdo previsto. |
+| Ações | Explicar o conteúdo, observar a grade de vídeos, acompanhar o chat, fazer perguntas e eventualmente repetir ou adaptar a explicação. |
+| Eventos | Silêncio prolongado, câmera desligada, perguntas inesperadas, respostas erradas ou pouca interação podem alterar a condução da aula. |
+| Avaliação | Karol precisa interpretar se os sinais disponíveis indicam necessidade de mudança e, depois de agir, avaliar se a intervenção ajudou a turma. |
 
 ### 5. Implicações para as próximas entregas
 
-Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+**Quais tarefas merecem análise?**
 
-**Quais tarefas merecem análise?** 
-- Acompanhar as reações dos participantes enquanto conduz a aula. 
-- Identificar sinais de dúvida, desinteresse, confusão ou dificuldade. 
-- Observar simultaneamente chat, câmeras, perguntas e reações. 
-- Decidir quando continuar, repetir ou adaptar a explicação. 
-- Verificar se a turma compreendeu o conteúdo. 
+- Acompanhar sinais disponíveis enquanto conduz a aula.
+- Interpretar se esses sinais indicam uma possível dificuldade da turma.
+- Decidir se deve continuar, repetir ou mudar a explicação.
+- Escolher uma forma de verificar a compreensão sem interromper excessivamente a aula.
+- Avaliar se a ação tomada ajudou os alunos.
 
-**Quais informações precisam ser coletadas?** 
-- Quais sinais os professores mais utilizam para avaliar a turma. 
-- Em quais momentos da aula há maior dificuldade de acompanhamento. 
-- Como o professor interpreta silêncio, pouca participação e sinais contraditórios. 
-- Quais estratégias utiliza atualmente quando não consegue compreender o estado da turma. 
-- Como essas dificuldades influenciam suas decisões durante a aula.
+**Quais informações precisam ser coletadas?**
+
+- Em quais momentos a atenção dividida mais prejudica a percepção da turma.
+- Quais sinais professores de EAD consideram mais úteis ou confiáveis.
+- Como interpretam silêncio, câmera desligada e pouca participação.
+- Que alternativas consideram antes de modificar uma explicação.
+- Que estratégias já utilizam para confirmar se houve compreensão.
+- Quais acontecimentos fazem o professor mudar o planejamento durante a aula.
+- Como avaliam se uma intervenção realmente funcionou.
+
 
 ## Cenário C03 — Aluno que não sabe como está sendo percebido numa aula online
 
