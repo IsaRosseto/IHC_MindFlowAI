@@ -98,13 +98,13 @@ Apresenta tendência de centralizar, em um único painel, transcrição, resumo,
 
 #### Contexto e proposta
 
-Noldus FaceReader - É um produto que realiza a identificação das reações faciais dos usuarios capturando em tempo real ou por videos, demonstrando como as pessoas reagem ao seu produto
+Noldus FaceReader - É um produto que realiza a análise automática de expressões faciais dos usuários capturando em tempo real ou por videos, demonstrando como as pessoas reagem ao seu produto
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Análise automática de expressões faciais | Detecta expressões como felicidade, tristeza, raiva, surpresa, medo, nojo, desprezo e estado neutro, indicando também a intensidade de cada expressão | [Identificação](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/evidencia_noldus.png) | ele Gera um indicador com o nivel de confiança para cada reação facilitando a demonstração a quem utiliza |
+| Análise automática de expressões faciais | Detecta diferentes expressões faciais e apresenta intensidade e informações relacionadas à qualidade da análise | [Identificação](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/02_concorrencia/evidencia_noldus.png) | A interface mostra que resultados de classificação não precisam ser apresentados como certezas, podendo trazer informações de intensidade, confiança ou qualidade da detecção para ajudar na interpretação |
 
 #### Experiência do usuário e opiniões
 
@@ -123,8 +123,7 @@ Demonstra uma tendência para usos de estudo, para entender como os usuarios rea
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| Identificação da reação das pessoas | Graficos demonstrando o nivel de confiança da emoção (Execução do software) | Possui a funcionalidade parecida com a do nosso projeto de identificar a emoção dos usuarios, demonstrando um farol cognitivo captura em tempo real. |
-
+| Apresentação da classificação acompanhada de informações sobre intensidade e qualidade da detecção | Interface e gráficos do Noldus FaceReader | O MindFlow deve deixar claro que os estados afetivo-cognitivos apresentados são inferências do sistema e considerar uma forma simples de comunicar confiança ou qualidade da classificação |
 ---
 
 ### Análise C03 — Microsoft Teams Education Insights
