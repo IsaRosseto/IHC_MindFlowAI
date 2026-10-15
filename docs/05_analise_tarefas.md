@@ -51,15 +51,16 @@ A tarefa é considerada concluída quando Nathanael reúne os trechos que consid
 ### Diagrama
  
 ```mermaid
-flowchart TB
+%%{init: {"flowchart": {"wrappingWidth": 600, "nodeSpacing": 18, "rankSpacing": 70, "curve": "basis"}}}%%
+flowchart LR
  
-    T0["0. Revisar um treinamento concluído para identificar os trechos<br/>de maior dificuldade e decidir o que ajustar no material<br/><b>Plano 0:</b> 1 > 2 > repetir (3 > 4) até não restarem momentos<br/>a examinar ou acabar o tempo disponível > 5<br/>se 2.2 indicar cobertura muito baixa: 1 > 2 > 5"]
+    T0["<b>0. Revisar um treinamento concluído</b><br/><b>e decidir o que ajustar no material</b><br/><br/><b>Plano 0:</b> 1 > 2 > repetir (3 > 4) > 5<br/>se 2.2 indicar cobertura baixa: 1 > 2 > 5"]
  
-    T1["1. Localizar a sessão<br/><b>Plano 1:</b> 1.1 > (1.2 ou 1.3) > 1.4"]
-    T2["2. Obter uma visão geral da sessão<br/><b>Plano 2:</b> 2.1 > 2.2 > 2.3"]
-    T3["3. Identificar um momento relevante<br/><b>Plano 3:</b> (3.1 ou 3.2) > 3.3"]
-    T4["4. Interpretar o momento selecionado<br/><b>Plano 4:</b> 4.1 > 4.2 > 4.3 > 4.4<br/>se 4.3 indicar baixa confiança: marcar como incerto e voltar a 3"]
-    T5["5. Sintetizar e decidir os ajustes<br/><b>Plano 5:</b> 5.1 > 5.2 > [5.3, se decidir ajustar algo]"]
+    T1["<b>1. Localizar a sessão</b><br/><b>Plano 1:</b> 1.1 > (1.2 ou 1.3) > 1.4"]
+    T2["<b>2. Obter uma visão geral da sessão</b><br/><b>Plano 2:</b> 2.1 > 2.2 > 2.3"]
+    T3["<b>3. Identificar um momento relevante</b><br/><b>Plano 3:</b> (3.1 ou 3.2) > 3.3"]
+    T4["<b>4. Interpretar o momento selecionado</b><br/><b>Plano 4:</b> 4.1 > 4.2 > 4.3 > 4.4<br/>se 4.3 indicar baixa confiança: voltar a 3"]
+    T5["<b>5. Sintetizar e decidir os ajustes</b><br/><b>Plano 5:</b> 5.1 > 5.2 > [5.3, se ajustar]"]
  
     T0 --> T1
     T0 --> T2
@@ -67,9 +68,9 @@ flowchart TB
     T0 --> T4
     T0 --> T5
  
-    T11[["1.1 Acessar o histórico<br/>de sessões"]]
-    T12[["1.2 Reconhecer a sessão<br/>entre as mais recentes"]]
-    T13[["1.3 Buscar a sessão por<br/>data, tema ou grupo"]]
+    T11[["1.1 Acessar o histórico de sessões"]]
+    T12[["1.2 Reconhecer a sessão entre as recentes"]]
+    T13[["1.3 Buscar a sessão por data, tema ou grupo"]]
     T14[["1.4 Abrir a sessão"]]
  
     T1 --> T11
@@ -77,35 +78,35 @@ flowchart TB
     T1 --> T13
     T1 --> T14
  
-    T21[["2.1 Ler o resumo geral<br/>da sessão"]]
-    T22[["2.2 Verificar quantos participantes<br/>contribuíram para o sinal"]]
-    T23[["2.3 Percorrer a linha do tempo<br/>dos estados"]]
+    T21[["2.1 Ler o resumo geral da sessão"]]
+    T22[["2.2 Verificar quantos participantes contribuíram"]]
+    T23[["2.3 Percorrer a linha do tempo dos estados"]]
  
     T2 --> T21
     T2 --> T22
     T2 --> T23
  
-    T31[["3.1 Localizar na linha do tempo<br/>uma variação acentuada"]]
-    T32[["3.2 Ir a um momento destacado<br/>pelo sistema"]]
-    T33[["3.3 Delimitar o trecho<br/>de interesse"]]
+    T31[["3.1 Localizar uma variação acentuada"]]
+    T32[["3.2 Ir a um momento destacado pelo sistema"]]
+    T33[["3.3 Delimitar o trecho de interesse"]]
  
     T3 --> T31
     T3 --> T32
     T3 --> T33
  
-    T41[["4.1 Comparar o trecho com os minutos<br/>anteriores e posteriores"]]
-    T42[["4.2 Avaliar a duração e a<br/>intensidade da alteração"]]
-    T43[["4.3 Verificar a confiança e o número<br/>de participantes no trecho"]]
-    T44[["4.4 Relacionar a alteração ao conteúdo<br/>apresentado naquele horário"]]
+    T41[["4.1 Comparar com os minutos antes e depois"]]
+    T42[["4.2 Avaliar duração e intensidade da alteração"]]
+    T43[["4.3 Verificar confiança e participantes no trecho"]]
+    T44[["4.4 Relacionar ao conteúdo apresentado"]]
  
     T4 --> T41
     T4 --> T42
     T4 --> T43
     T4 --> T44
  
-    T51[["5.1 Reunir os trechos<br/>considerados relevantes"]]
-    T52[["5.2 Decidir o que manter e o<br/>que ajustar no material"]]
-    T53[["5.3 Registrar os ajustes para<br/>o próximo treinamento"]]
+    T51[["5.1 Reunir os trechos relevantes"]]
+    T52[["5.2 Decidir o que manter e o que ajustar"]]
+    T53[["5.3 Registrar os ajustes para o próximo treinamento"]]
  
     T5 --> T51
     T5 --> T52
@@ -272,6 +273,7 @@ A qualquer momento, **encerrar a revisão** interrompe o ciclo de exame (`[>`, d
 ### Diagrama
  
 ```mermaid
+%%{init: {"flowchart": {"wrappingWidth": 600}}}%%
 flowchart LR
  
     subgraph C0["<b>0. Revisar a sessão a partir dos momentos destacados e registrar ajustes</b>"]
