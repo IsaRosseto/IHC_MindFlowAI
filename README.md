@@ -17,8 +17,8 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** MindFlow AI - Classificação Temporal de Estados Cognitivos em Videoconferências utilizando Redes LSTM e Fusão Multimodal  
+**Título do projeto de IHC:** MINDFLOW  
+**TCC/projeto de origem:** MindFlow AI - Grupo 06 
 **Orientador(a):** Prof.ª Dra. Leila Cristina Carneiro Bergamasco 
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** FEI - Fundação Educacional Pe Inaciana de Sabóia Medeiros   
@@ -28,11 +28,11 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| Gustavo Bertoluzzi Cardoso | 22.123.016-2 | @Gugzica3 | {{...}} |
-| Isabella Vieira Silva Rosseto | 22.222.036-0 | @IsaRosseto | {{...}} |
-| Kayky Pires de Paula | 22.222.040-2 | @Kaykyypiress | {{...}} |
-| Matheus Ferreira de Freitas | 22.125.085-5 | @Freitasfmatheus | {{...}} |
-| Rafael Dias | 22.222.039-4 | @Rafadias008 | {{...}} |
+| Gustavo Bertoluzzi Cardoso | 22.123.016-2 | @Gugzica3 | Algoritmo, BackEnd, IA, Segurança |
+| Isabella Vieira Silva Rosseto | 22.222.036-0 | @IsaRosseto | PO, Interface, UX, Pesquisa |
+| Kayky Pires de Paula | 22.222.040-2 | @Kaykyypiress | Dashboards, Dados, Segurança |
+| Matheus Ferreira de Freitas | 22.125.085-5 | @Freitasfmatheus | Algoritmo, BackEnd, IA, Fusão Multimodal |
+| Rafael Dias | 22.222.039-4 | @Rafadias008 | Dashboards, Dados, Fusão Multimodal|
 
 ## Relação entre TCC e projeto de IHC
 
@@ -55,7 +55,7 @@ Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolh
 
 Evite começar pela tecnologia.
 
-> **Estrutura sugerida:** “`{{tipo de usuário}}` precisa `{{objetivo}}` em `{{contexto}}`. Atualmente enfrenta `{{problema/limitação}}` e utiliza `{{processo/alternativa atual}}`. O tema do TCC investiga `{{contribuição técnica}}`. Para fins da disciplina de IHC, será explorada uma interface que permita `{{forma de uso da contribuição}}`.”
+> O comunicador (professor, instrutor ou palestrante) precisa conduzir uma aula ou apresentação por videoconferência percebendo, em tempo real, se o grupo está engajado, entediado, confuso ou frustrado, sem tirar a atenção da própria condução da sessão. Atualmente enfrenta a cegueira situacional, a dificuldade de captar sinais não verbais numa reunião online, e utiliza como alternativa a observação visual direta de uma grade de câmeras muitas vezes desligadas, ou recursos manuais como reações por emoji e enquetes ao vivo, que dependem de o próprio participante decidir se manifestar. O tema do TCC investiga um sistema de classificação temporal de estados cognitivos, baseado em uma rede LSTM alimentada por landmarks faciais, posturais e oculares extraídos localmente da webcam, sem que nenhum dado bruto saia do dispositivo do participante. Para fins da disciplina de IHC, será explorada uma interface que permita ao comunicador acompanhar esse estado do grupo por meio de um Semáforo Cognitivo em tempo real, com um Dashboard pós-sessão como recorte secundário para revisão posterior.
 
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 
@@ -104,10 +104,10 @@ O protótipo de IHC pode, portanto, funcionar como uma demonstração do potenci
 | # | Entrega | Quantidade mínima / responsabilidade | Status |
 |---:|---|---|---|
 | 1 | [Conhecendo o projeto, o usuário e o problema](docs/01_conhecendo_o_problema.md) | 1 solução consolidada por equipe | 🟩 |
-| 2 | [Público-alvo e análise de concorrência](docs/02_analise_concorrencia.md) | no mínimo 1 concorrente/interface representativa por integrante + síntese | 🟨 |
-| 3 | [Personas, empatia, contexto e jornada](docs/03_personas_contexto_jornada.md) | 1 persona por integrante; demais artefatos consolidados | ⬜ |
-| 4 | [Cenários de análise/problema](docs/04_cenarios_problema.md) | 1 solução completa por integrante | ⬜ |
-| 5 | [Análise de tarefas: HTA, GOMS e CTT](docs/05_analise_tarefas.md) | cada integrante: pelo menos 1 HTA + 1 GOMS + 1 CTT | ⬜ |
+| 2 | [Público-alvo e análise de concorrência](docs/02_analise_concorrencia.md) | no mínimo 1 concorrente/interface representativa por integrante + síntese | 🟩 |
+| 3 | [Personas, empatia, contexto e jornada](docs/03_personas_contexto_jornada.md) | 1 persona por integrante; demais artefatos consolidados | 🟩 |
+| 4 | [Cenários de análise/problema](docs/04_cenarios_problema.md) | 1 solução completa por integrante | 🟩 |
+| 5 | [Análise de tarefas: HTA, GOMS e CTT](docs/05_analise_tarefas.md) | cada integrante: pelo menos 1 HTA + 1 GOMS + 1 CTT | 🟧 |
 | 6 | [Prototipação em papel](docs/06_prototipacao_papel.md) | 1 protótipo integrado por equipe | ⬜ |
 | 7 | [Coleta de dados e aspectos éticos](docs/07_coleta_dados.md) | soluções individuais + técnicas distintas; questionário entre as técnicas | ⬜ |
 | 8 | [Ciclo de vida e engenharia de usabilidade](docs/08_engenharia_usabilidade.md) | 1 solução consolidada por equipe | ⬜ |
