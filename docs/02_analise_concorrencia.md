@@ -141,11 +141,24 @@ O Education Insights é o painel de dados do Teams for Education: dá ao docente
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| Painel por turma + visão geral de todas as turmas | Dashboards nativos no Teams | `../assets/02_concorrencia/insights-educator-guide.png` (PENDENTE — guia do educador, link acima) | Padrão "resumo primeiro, detalhe depois" — bom para o nosso pós-sessão |
-| Spotlights (destaques automáticos) | Cartões que apontam quem/o que precisa de atenção | guia do educador | Tradução de dado em **chamada para ação** — inspiração direta para as notificações do Semáforo |
-| Métricas de engajamento por ações | Presença em reunião, posts, edição de arquivos, entregas | guia do educador | Mede **comportamento digital**, não estado cognitivo: presença ≠ atenção |
-| Reflect (check-in emocional) | Aluno autodeclara como se sente, periodicamente | guia do educador | Estado emocional entra só por autodeclaração pontual — nada em tempo real durante a aula |
-| Transparência para o aluno | Página oficial "quais dados o Insights coleta sobre você" | https://support.microsoft.com/en-us/teams/education/quick-start/student-transparency-in-insights-data-collected-to-support-you (acesso 30/08/2026) | Padrão de governança que o MindFlow deveria imitar para tratar a H03 |
+| Painel por turma + visão geral de todas as turmas | Dashboards nativos no Teams: painel de turmas à esquerda e botão "Your classes" para a visão geral | Figura C03-1, regiões ① e ② | Padrão "resumo primeiro, detalhe depois" — bom para o nosso pós-sessão |
+| Spotlights (destaques automáticos) | Cartões que apontam quem/o que precisa de atenção ("5 students might need more support next week") | Figura C03-1, região ④; Figura C03-2 | Tradução de dado em **chamada para ação**, sem prescrever o que o professor deve fazer — inspiração para as notificações do Semáforo (ver RC03) |
+| Métricas de engajamento por ações | Relatórios de Digital Activity, Assignments, Reading e Reflect: presença em reunião, posts, edição de arquivos, entregas | Figura C03-1, região ③ | Mede **comportamento digital**, não estado cognitivo: presença ≠ atenção |
+| Reflect (check-in emocional) | Aluno autodeclara como se sente, periodicamente; o painel mostra a distribuição das respostas da turma | Figura C03-3 | Estado emocional entra só por autodeclaração pontual — nada em tempo real durante a aula |
+| Detalhe por aluno | Lista de alunos com acesso individual aos dados de cada um | Figura C03-1, região ⑤ | Individualização que o MindFlow decidiu **não** adotar (resultado agregado); mostra o risco de o painel virar avaliação individual (H03) |
+| Transparência para o aluno | Página oficial "quais dados o Insights coleta sobre você" | https://support.microsoft.com/en-us/teams/education/quick-start/student-transparency-in-insights-data-collected-to-support-you (acesso 30/08/2026) | Padrão de governança que alimenta a investigação da H03 (ver RC04) |
+
+![Painel do Microsoft Teams Education Insights na visão de uma turma, com regiões numeradas](../assets/02_concorrencia/teams-insights-dashboard-anotado.png)
+
+*Figura C03-1 — Painel do Education Insights na visão de uma turma (dados de demonstração da própria Microsoft, "Demo mode"; nomes fictícios). Regiões: ① painel de turmas; ② botão "Your classes", que abre a visão geral de todas as turmas; ③ relatórios por tipo de atividade digital (Digital Activity, Assignments, Reading, Reflect); ④ spotlights, cartões que destacam o que merece atenção; ⑤ lista de alunos com acesso individual; ⑥ visão geral e tendências da turma. Versão sem anotações: [`teams-insights-dashboard.png`](../assets/02_concorrencia/teams-insights-dashboard.png). Fonte: Microsoft Support, "All-classes view in the Insights app", acesso 16/10/2026.*
+
+![Cartões de spotlight do Education Insights](../assets/02_concorrencia/teams-insights-spotlights.png)
+
+*Figura C03-2 — Spotlights: cada cartão converte um dado da turma em uma chamada de atenção ("5 students might need more support next week"; "Gabriel Woods was often late for meetings last week"). O cartão aponta o que merece atenção, mas não decide pelo professor o que fazer. Fonte: Microsoft Support, "All-classes view in the Insights app", acesso 16/10/2026.*
+
+![Reflect: último check-in emocional da turma](../assets/02_concorrencia/teams-insights-reflect.png)
+
+*Figura C03-3 — Reflect: resultado do último check-in emocional autodeclarado ("How are you feeling today?", 27 de 30 respostas), apresentado como distribuição agregada da turma. Fonte: Microsoft Support, "All-classes view in the Insights app", acesso 16/10/2026.*
 
 #### Experiência do usuário e opiniões
 
@@ -163,10 +176,11 @@ Spotlight cards; visões agregadas com drill-down; tendências temporais; lingua
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| Spotlights transformam métrica em ação sugerida | guia do educador | Nosso alerta deve vir com sugestão de ação (pausa/enquete/reexplicar), como o Semáforo já prevê |
-| Proxy de engajamento por ações digitais | guia do educador | Lacuna que o MindFlow ataca: estado cognitivo em tempo real vs. rastro de atividade (sustenta H04) |
-| Nada de estado em tempo real durante a reunião | guia do educador | Confirma o espaço do trilho de tempo real |
-| Página de transparência para o aluno | doc. de transparência | Criar equivalente no MindFlow: o participante vê o que é (e o que não é) processado — responde H03 (RC05) |
+| Spotlights transformam métrica em chamada de atenção | Figura C03-1 (região ④) e Figura C03-2 | Uma mudança relevante no indicador pode virar uma chamada de atenção para o comunicador. A ação concreta (pausa, enquete, reexplicar ou simplesmente continuar) **não** deve ser prescrita pelo sistema antes de ser investigada com usuários — origem da RC03 |
+| Proxy de engajamento por ações digitais | Figura C03-1 (região ③) | Diferença de mecanismo: o Insights mede rastro de atividade digital, não estado afetivo-cognitivo. Contribui para refinar H04: a diferenciação do MindFlow está no tipo de sinal e de inferência, não apenas em "ter tempo real" |
+| Nada de estado em tempo real durante a reunião | guia do educador; Figura C03-1 | O Insights não apoia a decisão **durante** a aula, mas isso não prova que não existam soluções em tempo real: C05 (Adobe Connect) mostra que esse precedente existe. A utilidade do tempo real continua como hipótese (H01) |
+| Detalhe por aluno disponível no painel | Figura C03-1 (região ⑤) | Reforça a decisão de manter o resultado do MindFlow agregado: individualizar o dado aproxima o painel de uma avaliação individual, risco já registrado em H03 e nas personas P03 e P05 |
+| Página de transparência para o aluno | doc. de transparência (link acima) | Informar ao participante o que é (e o que não é) processado — padrão que alimenta H03 e origina a RC04. Não encerra a hipótese, que ainda depende de investigação com participantes reais |
 
 ---
 
@@ -326,6 +340,7 @@ https://www.read.ai/pt
 
 <!-- Matheus (C03): -->
 - Microsoft. *Educator's guide to Insights in Microsoft Teams.* https://support.microsoft.com/en-us/topic/educator-s-guide-to-insights-in-microsoft-teams-27b56255-90c0-47aa-bac3-1c9f50157181 — acesso 30/08/2026.
+- Microsoft. *All-classes view in the Insights app* (fonte dos prints das Figuras C03-1 a C03-3, dados de demonstração). https://support.microsoft.com/en-us/teams/education/quick-start/all-classes-view-in-the-insights-app — acesso 16/10/2026.
 - Microsoft. *Student transparency in Insights.* https://support.microsoft.com/en-us/teams/education/quick-start/student-transparency-in-insights-data-collected-to-support-you — acesso 30/08/2026.
 - Microsoft Learn. *IT Admin Guide to Education Insights.* https://learn.microsoft.com/en-us/microsoftteams/class-insights — acesso 30/08/2026.
 - MeetGeek. *Read AI Pricing Explained.* https://meetgeek.ai/blog/read-ai-pricing — acesso 30/08/2026 (fonte do complemento de C01).
@@ -364,3 +379,9 @@ https://www.read.ai/pt
 - [x] Opiniões de UX têm fonte.
 - [x] A síntese compara critérios comuns e produz recomendações.
 - [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
+
+## Histórico de revisões
+
+| Data | O que mudou | Motivação | Responsável |
+|---|---|---|---|
+| 16/10/2026 | C03: inclusão dos prints oficiais do Education Insights (Figuras C03-1 a C03-3, com regiões numeradas) no lugar da referência `PENDENTE`; tabela de funcionalidades e tabela de lições revisadas para não prescrever a ação do professor (alinhamento com RC03), para tratar a transparência como insumo da H03 (RC04) e para registrar que o tempo real não é diferencial exclusivo (H04 refinada, C05); referência da fonte dos prints acrescentada | Feedback do professor na Entrega 2 (itens 1, 4, 9, 10 e 11) | Matheus Ferreira de Freitas |
