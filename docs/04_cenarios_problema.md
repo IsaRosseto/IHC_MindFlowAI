@@ -26,9 +26,9 @@ Se o integrante escolher um novo problema/situação, explique por que ele passo
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5  
 **Persona(s) relacionada(s):** P04 — Manoel Gomes  
-**Necessidade relacionada:** Perceber durante a reunião se o cliente está compreendendo e demonstrando interesse pela proposta, para ajustar o discurso quando necessário.  
-**Situação concreta da Entrega 1 relacionada:** H01, H03 e H04, estendidas ao contexto de reuniões comerciais por videoconferência.  
-**Hipóteses ainda presentes:** H01, H03 e H04  
+**Necessidade relacionada:** R01 e R02 da matriz de rastreabilidade: perceber durante a reunião se o cliente está compreendendo e demonstrando interesse pela proposta, para ajustar o discurso quando necessário.  
+**Origem do cenário:** a reunião comercial B2B **não** consta como situação concreta na Entrega 1, cujo relato principal (item 4.5) é uma aula por videoconferência. O cenário aprofunda a situação introduzida pela persona P04 na Entrega 3, estendendo o papel de "palestrante/apresentador" citado nos itens 2.2 e 7.2 da Entrega 1. Trata-se, portanto, de uma **nova situação cuja relevância para o projeto ainda precisa ser investigada** (dúvidas ?02 e ?03 da Entrega 1). O que ele compartilha com a situação da Entrega 1 é a atenção dividida durante o compartilhamento de tela (itens 4.2 e 5.3) e a ambiguidade do silêncio do grupo (itens 4.4 e 4.5).  
+**Hipóteses ainda presentes:** H01 (utilidade de um sinal durante a própria sessão), H02 (quanto confiar em um sinal incompleto), H03 (clientes externos sendo classificados) e H04, já refinada na Entrega 2 (a diferenciação não está em "ter tempo real", e sim no tipo de sinal e de inferência).
 
 ### 1. Cenário inicial
 
@@ -42,72 +42,83 @@ Em alguns casos, ele interpreta a falta de reação como concordância e só des
 
 ### 2. Questões de refinamento
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | Quais sinais Manoel considera mais confiáveis para identificar interesse, dúvida ou resistência do cliente durante a reunião? | Ajuda a entender como ele interpreta as informações disponíveis e quais sinais orientam suas decisões. | Entrevista com profissionais de vendas B2B e observação de reuniões comerciais. |
-| Q2 | Em quais momentos da apresentação Manoel sente maior dificuldade para acompanhar a reação dos participantes? | Permite identificar situações de maior carga de atenção e disputa entre tarefas, especialmente durante o compartilhamento de tela. | Entrevista e observação contextual de reuniões on-line. |
-| Q3 | Como Manoel interpreta situações em que alguns clientes respondem positivamente e outros permanecem em silêncio? | Ajuda a compreender como sinais diferentes ou contraditórios são transformados em significado durante a negociação. | Entrevista semiestruturada com vendedores. |
-| Q4 | Que estratégias Manoel utiliza quando percebe pouca participação, mas não pode interromper constantemente a apresentação para perguntar ao cliente? | Revela práticas atuais usadas para contornar a falta de retorno sem constranger os participantes. | Observação de reuniões e entrevistas com profissionais da área comercial. |
-| Q5 | Como o número de participantes e o tempo disponível para a reunião influenciam a capacidade de Manoel de acompanhar as reações do grupo? | Ajuda a identificar limites de atenção, tempo e quantidade de informação que precisam ser considerados na atividade.| Comparação entre reuniões com diferentes tamanhos de grupo e duração. |
+Antes de formular as perguntas, o cenário inicial foi separado pelos sete elementos característicos (Barbosa e Silva, 2010) para verificar o que ele já informa e o que ainda falta:
 
+| Elemento | O que o cenário inicial já informa | Lacuna que a questão investiga |
+|---|---|---|
+| Ambiente/contexto | Reunião no Teams, tela compartilhada, grupo de clientes, pouco tempo | Pressões e recursos que condicionam a condução (quem define o tempo, apoio de colegas, segundo monitor, momento da pauta) |
+| Atores | Manoel e "um grupo de clientes" | Quem são os participantes do lado do cliente, de quem depende a decisão e quem mais acompanha a reunião |
+| Objetivos | Saber se o cliente compreende e demonstra interesse para ajustar o discurso | Subobjetivos e informações que Manoel usa para julgar se a reunião foi bem-sucedida |
+| Planejamento | Precisa decidir entre continuar, reexplicar ou mudar o discurso | Com base em quê decide, que alternativas pesa e o que faz diante de sinais contraditórios |
+| Ações | Apresenta compartilhando a tela e faz perguntas curtas | Outras ações usadas para obter reação e a ordem em que acontecem |
+| Eventos | Silêncio após a pergunta; recusa descoberta no follow-up | Acontecimentos durante a reunião que mudam o rumo da apresentação |
+| Avaliação | Às vezes interpreta a falta de reação como concordância | Como julga, ainda na reunião, se a decisão funcionou e como compara depois com o resultado |
+
+Cada questão investiga uma informação **ainda ausente** do cenário inicial. Nenhuma delas foi respondida até o momento: as fontes indicadas são formas futuras de obtenção.
+
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Quais pressões (tempo definido pelo cliente, meta do período, concorrência) e quais recursos (segundo monitor, colega de pré-vendas na reunião, material de apoio) estão presentes na reunião, e em que momentos da pauta a dificuldade de observar o grupo pesa mais? | Define as condições sob as quais qualquer apoio à percepção do grupo teria de funcionar, sem supor que toda reunião comercial é igual. | Entrevista com vendedores B2B e observação de reuniões comerciais gravadas, com autorização. |
+| Q2 | Atores | Quem participa do lado do cliente (decisor, usuário técnico, comprador), de quem depende a decisão de compra e alguém do lado de Manoel acompanha a reunião ajudando a observar os participantes? | A reação que importa pode ser a de uma pessoa específica, e não a média do grupo; isso muda o que precisa ser percebido. | Entrevista com vendedores e levantamento da composição típica das reuniões no CRM da empresa. |
+| Q3 | Objetivos | Além de verificar compreensão e interesse, que resultados Manoel persegue na reunião (identificar objeções, avançar para a próxima etapa, cumprir a pauta) e que informações ele precisa ter em mãos para considerar a reunião bem-sucedida? | Separa a necessidade de "ler a reação" de outros objetivos que competem pela atenção dele durante a fala. | Entrevista semiestruturada com vendedores B2B. |
+| Q4 | Planejamento | Com base em quê Manoel decide, no momento, entre continuar, reexplicar ou mudar o discurso? Quais alternativas considera, que critério usa para não interromper a reunião e o que faz quando alguns clientes reagem bem e outros ficam em silêncio? | Torna visível o raciocínio que transforma o objetivo em ação, que é justamente o que um apoio à decisão precisaria respeitar. | Entrevista com vendedores a partir de exemplos de reuniões reais (técnica de incidentes críticos). |
+| Q5 | Ações | Além das perguntas curtas, que outras ações Manoel realiza para obter reação do cliente (pausar o compartilhamento de tela, chamar alguém pelo nome, pedir que o cliente descreva a própria operação, propor uma demonstração) e em que ordem elas costumam ocorrer? | Revela o repertório atual de estratégias e seu custo em tempo e constrangimento, antes de qualquer solução nova. | Observação de reuniões comerciais e entrevista com vendedores. |
+| Q6 | Eventos | Quais acontecimentos durante a reunião fazem Manoel mudar o rumo da apresentação (pergunta inesperada, participante que sai ou desliga a câmera, objeção explícita, aviso de que o tempo está acabando, resposta no chat) e como ele reage a cada um? | Eventos externos competem com a observação do grupo e definem quando a decisão precisa ser tomada. | Observação de reuniões e entrevista com vendedores. |
+| Q7 | Avaliação | Como Manoel avalia, ainda na reunião, se a decisão de reforçar ou seguir funcionou? Que sinais considera como confirmação de que o cliente entendeu e como registra as percepções para compará-las depois com o resultado do follow-up? | Mostra como ele julga o próprio desempenho e onde a avaliação atual falha, o que explica a descoberta tardia das objeções. | Entrevista com vendedores e análise de registros de follow-up (e-mails e anotações no CRM), com autorização. |
 
 ### 3. Cenário refinado
 
-Durante uma reunião comercial pelo Microsoft Teams, Manoel apresenta uma proposta para um grupo de clientes enquanto compartilha sua tela. Ao mesmo tempo, tenta acompanhar as reações dos participantes para entender se eles estão compreendendo e demonstrando interesse no que está sendo apresentado.
+> Como ainda não foram realizadas entrevistas ou observações com vendedores reais, os trechos acrescentados abaixo são **hipóteses de refinamento**, identificadas pela questão e pelo elemento a que respondem. Eles não devem ser lidos como fatos sobre usuários reais; quando a investigação for feita, cada hipótese será confirmada, refutada ou reformulada. O texto do cenário inicial foi mantido.
 
-Como a tela compartilhada reduz a visualização dos participantes, Manoel nem sempre consegue observar todos os clientes. Para tentar confirmar a compreensão, ele faz perguntas curtas, como “esse ponto ficou claro?” ou “faz sentido para a operação de vocês?”.
+Durante uma reunião comercial pelo Microsoft Teams, Manoel apresenta uma proposta para um grupo de clientes enquanto compartilha sua tela. **[HIPÓTESE DE REFINAMENTO — Q1 / Ambiente-contexto: o tempo da reunião costuma ser definido pelo cliente e ficar entre 30 e 45 minutos; Manoel pode usar apenas a tela do notebook, sem segundo monitor, e quase sempre está sozinho do lado da empresa, de modo que a dificuldade de observar o grupo pesa mais nos trechos de preço e condições comerciais, quando ele mais precisa da reação do cliente.]** Ao mesmo tempo, tenta acompanhar as reações dos participantes para entender se eles estão compreendendo e demonstrando interesse no que está sendo apresentado. **[HIPÓTESE DE REFINAMENTO — Q2 / Atores: do lado do cliente podem participar um decisor, um responsável técnico e um comprador, nem sempre apresentados no início; a decisão tende a depender do decisor, que pode ser justamente quem menos se manifesta durante a reunião.]**
 
-**[NOVO: Manoel costuma considerar respostas verbais, perguntas espontâneas, expressões faciais visíveis e mudanças no nível de participação como os sinais mais úteis para interpretar a reação do cliente.]**
+**[HIPÓTESE DE REFINAMENTO — Q3 / Objetivos: além de verificar compreensão e interesse, Manoel pode estar tentando identificar objeções antes que elas se consolidem e garantir um próximo passo (uma visita, uma prova de conceito ou uma proposta formal); para considerar a reunião bem-sucedida, ele precisaria saber quais pontos geraram dúvida e quem precisa ser convencido.]**
 
-Porém, nem todos respondem, e o silêncio pode significar compreensão, dúvida, desinteresse ou até uma objeção não verbalizada. **[NOVO: Quando alguns participantes respondem positivamente e outros permanecem em silêncio, Manoel tem dificuldade para saber se aquela resposta representa realmente a percepção do grupo.]**
+Como a tela compartilhada reduz a visualização dos participantes, Manoel nem sempre consegue observar todos os clientes. Para tentar confirmar a compreensão, ele faz perguntas curtas, como “esse ponto ficou claro?” ou “faz sentido para a operação de vocês?”. **[HIPÓTESE DE REFINAMENTO — Q5 / Ações: quando a pergunta curta não traz resposta, ele pode chamar uma pessoa pelo nome, pedir que o cliente descreva como faz aquilo hoje na própria operação ou oferecer uma demonstração; interromper o compartilhamento de tela para olhar a grade de vídeo tende a ser a última opção, por quebrar o ritmo da apresentação.]** Porém, nem todos respondem, e o silêncio pode significar compreensão, dúvida, desinteresse ou até uma objeção não verbalizada. **[HIPÓTESE DE REFINAMENTO — Q6 / Eventos: acontecimentos como uma pergunta inesperada, um participante que desliga a câmera ou sai da chamada, uma objeção dita abertamente, uma mensagem no chat ou o aviso de que faltam poucos minutos podem fazer Manoel abandonar a sequência prevista e reorganizar o restante da apresentação.]**
 
-**[NOVO: A dificuldade aumenta principalmente enquanto ele compartilha a tela, explica pontos mais complexos da proposta ou precisa controlar o tempo restante da reunião, pois sua atenção fica dividida entre apresentação, clientes e cronograma.]**
+Com pouco tempo disponível e sem querer constranger os clientes com perguntas repetidas, Manoel precisa decidir se continua a apresentação, explica novamente algum ponto ou muda seu discurso com base em sinais incompletos. **[HIPÓTESE DE REFINAMENTO — Q4 / Planejamento: a decisão pode se apoiar em quem reagiu (se o decisor demonstrou interesse, ele avança mesmo com os demais em silêncio), no tempo restante da pauta e na importância do ponto em questão; diante de sinais contraditórios, ele tende a seguir em frente e anotar o ponto para retomá-lo no follow-up, porque interromper a reunião tem custo imediato e a dúvida só tem custo depois.]**
 
-Com pouco tempo disponível e sem querer constranger os clientes com perguntas repetidas, Manoel precisa decidir se continua a apresentação, explica novamente algum ponto ou muda seu discurso com base em sinais incompletos.
-
-**[NOVO: Quando percebe pouca participação, ele costuma fazer perguntas rápidas, apresentar exemplos ou reforçar algum benefício da proposta, tentando obter uma reação sem interromper excessivamente o ritmo da reunião.]**
-
-**[NOVO: Em reuniões com mais participantes ou duração reduzida, acompanhar individualmente as reações se torna ainda mais difícil, aumentando a incerteza sobre a percepção geral do grupo.]**
-
-Em alguns casos, Manoel interpreta a falta de reação como concordância e só descobre posteriormente, durante o follow-up ou após a recusa da proposta, que determinados pontos não haviam sido compreendidos ou aceitos pelo cliente.
-
-
+Em alguns casos, ele interpreta a falta de reação como concordância e só descobre posteriormente, durante o follow-up ou após a recusa da proposta, que determinados pontos não haviam sido compreendidos ou aceitos pelo cliente. **[HIPÓTESE DE REFINAMENTO — Q7 / Avaliação: durante a reunião, Manoel pode considerar como confirmação uma resposta verbal, uma pergunta de detalhe ou um aceno visível na grade; depois, ele compara as anotações feitas ao final da reunião com o que o cliente escreve no e-mail de resposta, e é nessa comparação, dias depois, que percebe os pontos que interpretou errado.]**
 
 ### 4. Elementos extraídos
 
+Os sete elementos característicos aparecem primeiro; recursos, problemas e consequências foram mantidos como complemento.
+
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | Manoel, executivo de vendas B2B, e os clientes participantes da reunião comercial. |
-| Objetivo(s) | Entender se os clientes estão compreendendo e demonstrando interesse na proposta para ajustar sua apresentação quando necessário. |
-| Contexto | Reunião comercial on-line pelo Microsoft Teams, geralmente com compartilhamento de tela e tempo limitado. |
-| Recursos/informações | Câmeras dos participantes, respostas verbais, perguntas, expressões faciais, nível de participação e tempo restante da reunião. |
-| Ações | Apresentar a proposta, observar os participantes, fazer perguntas curtas, interpretar reações, apresentar exemplos e reforçar pontos da proposta. |
-| Problemas/rupturas | Visualização limitada dos participantes, silêncio ambíguo, sinais contraditórios, atenção dividida e dificuldade maior em reuniões com mais pessoas ou pouco tempo. |
-| Consequências | Incerteza sobre a compreensão e o interesse dos clientes, podendo levar Manoel a continuar a apresentação sem perceber dúvidas ou objeções que surgem apenas posteriormente. |
-
-
+| Ambiente/contexto | Reunião comercial on-line pelo Microsoft Teams, com tela compartilhada durante quase toda a apresentação, tempo definido pelo cliente e Manoel sozinho do lado da empresa (parte hipotética: Q1). |
+| Atores | Manoel, executivo de vendas B2B, e os clientes participantes; hipoteticamente um decisor, um responsável técnico e um comprador, com pesos diferentes na decisão (Q2). |
+| Objetivos | Entender se os clientes estão compreendendo e demonstrando interesse para ajustar o discurso; hipoteticamente, também identificar objeções cedo e garantir um próximo passo (Q3). |
+| Planejamento | Decidir entre continuar, reexplicar ou mudar o discurso com sinais incompletos; hipoteticamente, pesando quem reagiu, o tempo restante e a importância do ponto, e preferindo seguir em frente quando os sinais se contradizem (Q4). |
+| Ações | Apresentar compartilhando a tela, observar os participantes visíveis, fazer perguntas curtas; hipoteticamente, chamar alguém pelo nome, pedir que o cliente descreva a própria operação, oferecer demonstração (Q5). |
+| Eventos | Silêncio após a pergunta; recusa descoberta no follow-up; hipoteticamente, perguntas inesperadas, câmera desligada ou saída de participante, objeção explícita, mensagem no chat, aviso de tempo (Q6). |
+| Avaliação | Interpretar a falta de reação como concordância; hipoteticamente, tratar resposta verbal, pergunta de detalhe ou aceno como confirmação e só comparar as anotações com o retorno do cliente dias depois (Q7). |
+| Recursos/informações (complemento) | Câmeras dos participantes em miniatura, respostas verbais, perguntas, chat, tempo restante da reunião, anotações próprias e e-mail de follow-up. |
+| Problemas/rupturas (complemento) | Visualização limitada dos participantes, silêncio ambíguo, sinais contraditórios, atenção dividida entre apresentação, clientes e cronograma, custo de interromper a reunião. |
+| Consequências (complemento) | Incerteza sobre a compreensão e o interesse dos clientes, decisões de ritmo tomadas com pouca informação e objeções percebidas tarde demais, já no follow-up ou na recusa da proposta. |
 
 ### 5. Implicações para as próximas entregas
 
-**Quais tarefas merecem análise?**
+**Quais tarefas merecem análise?** Formuladas a partir do objetivo humano, e não de uma funcionalidade:
 
-- Conduzir a apresentação enquanto acompanha as reações dos clientes.
-- Identificar sinais de dúvida, interesse ou resistência durante a reunião.
-- Fazer perguntas curtas para verificar compreensão e interesse.
-- Interpretar respostas, silêncio e sinais contraditórios do grupo.
-- Decidir quando continuar, reforçar ou reexplicar um ponto da proposta.
-- Registrar percepções importantes para utilizar no follow-up.
+- Conduzir a apresentação enquanto percebe os sinais disponíveis sobre a reação dos clientes.
+- Interpretar silêncio, respostas parciais e sinais contraditórios, decidindo o quanto confiar neles.
+- Decidir, com pouco tempo e sem constranger o cliente, se continua, reforça ou reexplica um ponto da proposta (planejamento).
+- Verificar, ainda na reunião, se a decisão tomada funcionou (avaliação).
+- Registrar as percepções da reunião e revisá-las depois, comparando com o retorno do cliente no follow-up.
+
+Na Entrega 5, a modelagem das tarefas deve incluir os passos de planejamento e de avaliação do Manoel, e não apenas as ações observáveis.
 
 **Quais informações precisam ser coletadas?**
 
-- Quais sinais os vendedores consideram mais confiáveis para avaliar a reação dos clientes.
-- Em quais momentos da reunião ocorre maior dificuldade de acompanhamento.
-- Como o compartilhamento de tela afeta a observação dos participantes.
-- Como o vendedor interpreta silêncio, pouca participação e respostas contraditórias.
-- Quais estratégias utiliza atualmente para confirmar compreensão sem constranger o cliente.
-- Como o número de participantes e o tempo disponível influenciam essa percepção.
-- Como essas dificuldades afetam decisões durante a reunião e o follow-up posterior.
-
+- Pressões e recursos presentes nas reuniões comerciais e em que trechos da pauta a observação do grupo é mais difícil (Q1).
+- Composição do grupo do lado do cliente e de quem depende a decisão (Q2).
+- Objetivos que competem com a leitura da reação durante a fala e critérios de sucesso da reunião (Q3).
+- Critérios usados para decidir entre continuar, reforçar ou mudar o discurso, inclusive diante de sinais contraditórios (Q4).
+- Repertório atual de ações para obter reação e seu custo em tempo e constrangimento (Q5).
+- Eventos que alteram o rumo da reunião e como o vendedor reage a eles (Q6).
+- Sinais considerados como confirmação de compreensão e forma de registro e comparação posterior (Q7).
+- Se vendedores B2B, professores e instrutores compartilham as mesmas tarefas ou exigem recortes diferentes (dúvidas ?02 e ?03 da Entrega 1), o que decide se este cenário permanece no escopo prioritário.
 
 
 ## Cenário C02 — Dificuldade de Karol em perceber se a turma está acompanhando a aula on-line
@@ -382,3 +393,9 @@ Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa part
 - [x] O refinamento mostra claramente o que foi adicionado/alterado.
 - [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
 - [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+
+## Histórico de revisões
+
+| Data | O que mudou | Motivação | Responsável |
+|---|---|---|---|
+| 16/10/2026 | C01: refinamento refeito pelos sete elementos característicos (uma questão por elemento, identificada), com tabela prévia do que o cenário inicial já informava; trechos novos do cenário refinado marcados como hipóteses de refinamento com o número da questão e o elemento; elementos extraídos reorganizados nos sete elementos formais (recursos, problemas e consequências mantidos como complemento); origem rastreável corrigida (P04/Entrega 3 e dúvidas ?02 e ?03, em vez de hipóteses); tarefas para a Entrega 5 formuladas a partir do objetivo humano, com planejamento e avaliação | Feedback do professor na Entrega 4 (itens 1 a 6, 8, 9 e 11) | Matheus Ferreira de Freitas |

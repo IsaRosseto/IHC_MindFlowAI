@@ -132,9 +132,12 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5  
 **Tipo:** primária  
 **Base de evidências:** proto-persona a validar, construída a partir das hipóteses da Entrega 1, estendendo o perfil do comunicador para o contexto comercial  
+**Origem do contexto:** a reunião comercial B2B não aparece como situação concreta na Entrega 1, cujo relato principal (item 4.5) é uma aula por videoconferência. Ela é introduzida nesta entrega como extensão do papel "palestrante/apresentador" citado nos itens 2.2 e 7.2 da Entrega 1, e sua relevância para o projeto ainda precisa ser investigada com profissionais da área (dúvidas ?02 e ?03 da Entrega 1). O Cenário C01 da Entrega 4 deriva deste recorte.  
 **Hipóteses da Entrega 1 relacionadas:** H01, H03, H04
 
-<img src="https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/03_personas/persona_manoel_gomes.png" width="300" alt="Persona P04 — Manoel Gomes">
+<img src="../assets/03_personas/persona_manoel_gomes.png" width="300" alt="Persona P04 — Manoel Gomes">
+
+*Figura P04 — Cartão da proto-persona Manoel Gomes. Fonte: elaboração do autor; dados hipotéticos a validar.*
 
 
 | Campo | Descrição |
@@ -288,3 +291,9 @@ As próximas entregas devem contemplar:
 - [x] Os papéis existentes foram diferenciados por contexto, objetivos e tarefas.
 - [x] A jornada possui etapas, dores e oportunidades e não é apenas um wireflow.
 - [x] Os IDs das personas ainda não foram adicionados à matriz de rastreabilidade.
+
+## Histórico de revisões
+
+| Data | O que mudou | Motivação | Responsável |
+|---|---|---|---|
+| 16/10/2026 | P04: imagem da persona passou a ser referenciada por caminho relativo em `assets/03_personas/`, com legenda; registro explícito da origem do contexto comercial B2B (extensão do papel de palestrante/apresentador da Entrega 1, relevância ainda a investigar em ?02 e ?03) | Feedback do professor na Entrega 3 (item 14) e na Entrega 4 (item 11) | Matheus Ferreira de Freitas |
