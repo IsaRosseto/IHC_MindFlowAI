@@ -393,9 +393,3 @@ Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa part
 - [x] O refinamento mostra claramente o que foi adicionado/alterado.
 - [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
 - [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
-
-## Histórico de revisões
-
-| Data | O que mudou | Motivação | Responsável |
-|---|---|---|---|
-| 16/10/2026 | C01: refinamento refeito pelos sete elementos característicos (uma questão por elemento, identificada), com tabela prévia do que o cenário inicial já informava; trechos novos do cenário refinado marcados como hipóteses de refinamento com o número da questão e o elemento; elementos extraídos reorganizados nos sete elementos formais (recursos, problemas e consequências mantidos como complemento); origem rastreável corrigida (P04/Entrega 3 e dúvidas ?02 e ?03, em vez de hipóteses); tarefas para a Entrega 5 formuladas a partir do objetivo humano, com planejamento e avaliação | Feedback do professor na Entrega 4 (itens 1 a 6, 8, 9 e 11) | Matheus Ferreira de Freitas |

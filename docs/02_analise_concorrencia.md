@@ -150,15 +150,15 @@ O Education Insights é o painel de dados do Teams for Education: dá ao docente
 
 ![Painel do Microsoft Teams Education Insights na visão de uma turma, com regiões numeradas](../assets/02_concorrencia/teams-insights-dashboard-anotado.png)
 
-*Figura C03-1 — Painel do Education Insights na visão de uma turma (dados de demonstração da própria Microsoft, "Demo mode"; nomes fictícios). Regiões: ① painel de turmas; ② botão "Your classes", que abre a visão geral de todas as turmas; ③ relatórios por tipo de atividade digital (Digital Activity, Assignments, Reading, Reflect); ④ spotlights, cartões que destacam o que merece atenção; ⑤ lista de alunos com acesso individual; ⑥ visão geral e tendências da turma. Versão sem anotações: [`teams-insights-dashboard.png`](../assets/02_concorrencia/teams-insights-dashboard.png). Fonte: Microsoft Support, "All-classes view in the Insights app", acesso 16/10/2026.*
+*Figura C03-1 — Painel do Education Insights na visão de uma turma (dados de demonstração da própria Microsoft, "Demo mode"; nomes fictícios). Regiões: ① painel de turmas; ② botão "Your classes", que abre a visão geral de todas as turmas; ③ relatórios por tipo de atividade digital (Digital Activity, Assignments, Reading, Reflect); ④ spotlights, cartões que destacam o que merece atenção; ⑤ lista de alunos com acesso individual; ⑥ visão geral e tendências da turma. Versão sem anotações: [`teams-insights-dashboard.png`](../assets/02_concorrencia/teams-insights-dashboard.png). Fonte: Microsoft Support, "All-classes view in the Insights app".*
 
 ![Cartões de spotlight do Education Insights](../assets/02_concorrencia/teams-insights-spotlights.png)
 
-*Figura C03-2 — Spotlights: cada cartão converte um dado da turma em uma chamada de atenção ("5 students might need more support next week"; "Gabriel Woods was often late for meetings last week"). O cartão aponta o que merece atenção, mas não decide pelo professor o que fazer. Fonte: Microsoft Support, "All-classes view in the Insights app", acesso 16/10/2026.*
+*Figura C03-2 — Spotlights: cada cartão converte um dado da turma em uma chamada de atenção ("5 students might need more support next week"; "Gabriel Woods was often late for meetings last week"). O cartão aponta o que merece atenção, mas não decide pelo professor o que fazer. Fonte: Microsoft Support, "All-classes view in the Insights app".*
 
 ![Reflect: último check-in emocional da turma](../assets/02_concorrencia/teams-insights-reflect.png)
 
-*Figura C03-3 — Reflect: resultado do último check-in emocional autodeclarado ("How are you feeling today?", 27 de 30 respostas), apresentado como distribuição agregada da turma. Fonte: Microsoft Support, "All-classes view in the Insights app", acesso 16/10/2026.*
+*Figura C03-3 — Reflect: resultado do último check-in emocional autodeclarado ("How are you feeling today?", 27 de 30 respostas), apresentado como distribuição agregada da turma. Fonte: Microsoft Support, "All-classes view in the Insights app".*
 
 #### Experiência do usuário e opiniões
 
@@ -340,7 +340,7 @@ https://www.read.ai/pt
 
 <!-- Matheus (C03): -->
 - Microsoft. *Educator's guide to Insights in Microsoft Teams.* https://support.microsoft.com/en-us/topic/educator-s-guide-to-insights-in-microsoft-teams-27b56255-90c0-47aa-bac3-1c9f50157181 — acesso 30/08/2026.
-- Microsoft. *All-classes view in the Insights app* (fonte dos prints das Figuras C03-1 a C03-3, dados de demonstração). https://support.microsoft.com/en-us/teams/education/quick-start/all-classes-view-in-the-insights-app — acesso 16/10/2026.
+- Microsoft. *All-classes view in the Insights app* (fonte dos prints das Figuras C03-1 a C03-3, dados de demonstração). https://support.microsoft.com/en-us/teams/education/quick-start/all-classes-view-in-the-insights-app.
 - Microsoft. *Student transparency in Insights.* https://support.microsoft.com/en-us/teams/education/quick-start/student-transparency-in-insights-data-collected-to-support-you — acesso 30/08/2026.
 - Microsoft Learn. *IT Admin Guide to Education Insights.* https://learn.microsoft.com/en-us/microsoftteams/class-insights — acesso 30/08/2026.
 - MeetGeek. *Read AI Pricing Explained.* https://meetgeek.ai/blog/read-ai-pricing — acesso 30/08/2026 (fonte do complemento de C01).
@@ -379,9 +379,3 @@ https://www.read.ai/pt
 - [x] Opiniões de UX têm fonte.
 - [x] A síntese compara critérios comuns e produz recomendações.
 - [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
-
-## Histórico de revisões
-
-| Data | O que mudou | Motivação | Responsável |
-|---|---|---|---|
-| 16/10/2026 | C03: inclusão dos prints oficiais do Education Insights (Figuras C03-1 a C03-3, com regiões numeradas) no lugar da referência `PENDENTE`; tabela de funcionalidades e tabela de lições revisadas para não prescrever a ação do professor (alinhamento com RC03), para tratar a transparência como insumo da H03 (RC04) e para registrar que o tempo real não é diferencial exclusivo (H04 refinada, C05); referência da fonte dos prints acrescentada | Feedback do professor na Entrega 2 (itens 1, 4, 9, 10 e 11) | Matheus Ferreira de Freitas |

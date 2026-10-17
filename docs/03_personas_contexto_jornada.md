@@ -291,9 +291,3 @@ As próximas entregas devem contemplar:
 - [x] Os papéis existentes foram diferenciados por contexto, objetivos e tarefas.
 - [x] A jornada possui etapas, dores e oportunidades e não é apenas um wireflow.
 - [x] Os IDs das personas ainda não foram adicionados à matriz de rastreabilidade.
-
-## Histórico de revisões
-
-| Data | O que mudou | Motivação | Responsável |
-|---|---|---|---|
-| 16/10/2026 | P04: imagem da persona passou a ser referenciada por caminho relativo em `assets/03_personas/`, com legenda; registro explícito da origem do contexto comercial B2B (extensão do papel de palestrante/apresentador da Entrega 1, relevância ainda a investigar em ?02 e ?03) | Feedback do professor na Entrega 3 (item 14) e na Entrega 4 (item 11) | Matheus Ferreira de Freitas |
