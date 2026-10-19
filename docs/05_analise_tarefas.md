@@ -175,35 +175,117 @@ flowchart TB
 
 **Autor(a):** {{nome — matrícula}}
 
-### Goal
+### GOAL 0: Configurar o acompanhamento de uma aula no MindFlow AI e deixá-lo pronto para uso
 
-`G0: Deixar o MindFlow AI corretamente configurado e pronto para acompanhar uma aula.`
+---
 
-### Métodos, operadores e regras de seleção
+### GOAL 1: Preparar a sessão que será acompanhada
 
-- **Method M1: Realizar a configuração padrão do acompanhamento**
-  - **Operators:**
-    - identificar a aula ou sessão que será acompanhada;
-    - disponibilizar o MindFlow AI para a sessão;
-    - verificar os participantes considerados no acompanhamento;
-    - confirmar a exclusão do apresentador da análise;
-    - verificar se o acompanhamento está ativo;
-    - verificar se os participantes estão sendo reconhecidos;
-    - confirmar se os indicadores estão disponíveis;
-    - concluir que a configuração está pronta para uso.
+#### METHOD 1.A: Utilizar uma sessão já identificada pelo sistema
 
-- **Method M2: Ajustar a configuração após identificar um problema**
-  - **Operators:**
-    - identificar qual etapa da configuração apresentou problema;
-    - verificar se o problema está relacionado à sessão, aos participantes ou ao acompanhamento;
-    - ajustar a configuração necessária;
-    - repetir a verificação correspondente;
-    - confirmar se o problema foi resolvido;
-    - verificar novamente a disponibilidade dos indicadores;
-    - concluir que a configuração está pronta para uso.
+**SEL. RULE:** utilizar quando a aula ou sessão que será acompanhada já estiver disponível e corretamente identificada no MindFlow AI.
 
-- **Selection Rule SR1:** usar **M1** quando a configuração inicial estiver funcionando corretamente e todas as verificações puderem ser concluídas sem ajustes; usar **M2** quando alguma verificação indicar problema na configuração, no reconhecimento dos participantes ou na disponibilidade dos indicadores.
+- **OP. 1.A.1:** examinar a sessão apresentada pelo sistema;
+- **OP. 1.A.2:** verificar se a sessão corresponde à aula desejada;
+- **OP. 1.A.3:** selecionar a sessão;
+- **OP. 1.A.4:** confirmar a seleção.
 
+#### METHOD 1.B: Localizar a sessão manualmente
+
+**SEL. RULE:** utilizar quando a sessão desejada não estiver imediatamente identificada ou quando houver mais de uma sessão disponível.
+
+- **OP. 1.B.1:** acessar as sessões disponíveis;
+- **OP. 1.B.2:** examinar as informações apresentadas;
+- **OP. 1.B.3:** identificar a sessão correspondente à aula;
+- **OP. 1.B.4:** selecionar a sessão;
+- **OP. 1.B.5:** confirmar a seleção.
+
+---
+
+### GOAL 2: Definir quem será considerado no acompanhamento
+
+#### METHOD 2.A: Utilizar os participantes identificados automaticamente
+
+**SEL. RULE:** utilizar quando os participantes reconhecidos pelo MindFlow AI correspondem corretamente às pessoas que devem ser consideradas na análise.
+
+- **OP. 2.A.1:** examinar os participantes identificados;
+- **OP. 2.A.2:** verificar se os participantes esperados estão presentes;
+- **OP. 2.A.3:** verificar se o apresentador está excluído da análise;
+- **OP. 2.A.4:** confirmar o conjunto de participantes.
+
+#### METHOD 2.B: Ajustar os participantes considerados no acompanhamento
+
+**SEL. RULE:** utilizar quando houver participantes identificados incorretamente, pessoas ausentes da análise ou necessidade de ajustar quem será considerado pelo sistema.
+
+- **OP. 2.B.1:** examinar a lista de participantes identificados;
+- **OP. 2.B.2:** identificar participantes que precisam de ajuste;
+- **OP. 2.B.3:** alterar a seleção dos participantes;
+- **OP. 2.B.4:** verificar se o apresentador permanece excluído;
+- **OP. 2.B.5:** confirmar o conjunto atualizado.
+
+---
+
+### GOAL 3: Verificar se o acompanhamento está funcionando corretamente
+
+#### METHOD 3.A: Verificar o status geral da configuração
+
+**SEL. RULE:** utilizar quando o usuário deseja confirmar rapidamente se os principais recursos necessários para o acompanhamento estão disponíveis.
+
+- **OP. 3.A.1:** direcionar a atenção para o status do acompanhamento;
+- **OP. 3.A.2:** verificar se o acompanhamento está ativo;
+- **OP. 3.A.3:** verificar se os participantes estão sendo reconhecidos;
+- **OP. 3.A.4:** verificar se os indicadores estão disponíveis;
+- **OP. 3.A.5:** interpretar o estado geral da configuração.
+
+#### METHOD 3.B: Verificar individualmente os componentes da configuração
+
+**SEL. RULE:** utilizar quando o status geral indicar alguma inconsistência ou quando for necessário identificar qual componente apresenta problema.
+
+- **OP. 3.B.1:** verificar o estado do acompanhamento;
+- **OP. 3.B.2:** verificar o reconhecimento dos participantes;
+- **OP. 3.B.3:** verificar a disponibilidade dos indicadores;
+- **OP. 3.B.4:** comparar os resultados das verificações;
+- **OP. 3.B.5:** identificar o componente que necessita de ajuste.
+
+---
+
+### GOAL 4: Corrigir problemas encontrados na configuração
+
+#### METHOD 4.A: Corrigir apenas o componente que apresentou problema
+
+**SEL. RULE:** utilizar quando o problema estiver claramente identificado e puder ser corrigido sem alterar as demais configurações.
+
+- **OP. 4.A.1:** identificar o componente com problema;
+- **OP. 4.A.2:** acessar a configuração correspondente;
+- **OP. 4.A.3:** realizar o ajuste necessário;
+- **OP. 4.A.4:** repetir a verificação do componente;
+- **OP. 4.A.5:** confirmar se o problema foi resolvido.
+
+#### METHOD 4.B: Revisar a configuração do acompanhamento
+
+**SEL. RULE:** utilizar quando houver mais de um problema, quando a causa não estiver clara ou quando a correção isolada não resolver a inconsistência.
+
+- **OP. 4.B.1:** revisar a sessão selecionada;
+- **OP. 4.B.2:** revisar os participantes considerados;
+- **OP. 4.B.3:** verificar novamente o estado do acompanhamento;
+- **OP. 4.B.4:** verificar a disponibilidade dos indicadores;
+- **OP. 4.B.5:** identificar possíveis inconsistências;
+- **OP. 4.B.6:** realizar os ajustes necessários;
+- **OP. 4.B.7:** repetir a validação da configuração.
+
+---
+
+### GOAL 5: Confirmar que o acompanhamento está pronto para a aula
+
+#### METHOD 5.A: Confirmar a configuração validada
+
+**SEL. RULE:** utilizar quando todas as verificações forem concluídas sem problemas e os recursos necessários estiverem disponíveis.
+
+- **OP. 5.A.1:** verificar o estado final da configuração;
+- **OP. 5.A.2:** confirmar que o acompanhamento está ativo;
+- **OP. 5.A.3:** confirmar que os participantes estão corretamente definidos;
+- **OP. 5.A.4:** confirmar que os indicadores estão disponíveis;
+- **OP. 5.A.5:** concluir que o acompanhamento está pronto para uso.
 
 ## CTT — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
