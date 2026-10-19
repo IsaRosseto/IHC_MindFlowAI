@@ -1,7 +1,7 @@
 # Entrega 6 — Prototipação em papel
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{18/10/2026}}  
+**Status:** 🟨 iniciada
 **Responsabilidade:** 1 solução integrada por equipe
 
 ## Objetivo da atividade
@@ -153,11 +153,13 @@ Realize uma simulação com uma pessoa que não participou da elaboração dessa
 
 | Antes | Problema | Depois | Justificativa |
 |---|---|---|---|
-| Alguns cards apresentavam indicadores sem explicações complementares. | O usuário tinha dificuldade para compreender o significado de determinadas informações. | Foram adicionadas informações complementares na aba Suporte e resumos explicativos exibidos ao passar o mouse sobre os cards. | Facilitar a interpretação dos indicadores e permitir que o usuário compreenda as informações sem precisar sair do dashboard. |
-| A interface utilizava cores muito semelhantes em seus componentes. | A pouca variedade de cores dificultava a diferenciação visual das informações. | Foram adicionadas cores aos cards, mantendo a paleta original definida como tema da plataforma. | Melhorar a hierarquia visual e a identificação dos indicadores sem comprometer a identidade visual do MindFlow AI. |
-| Algumas funcionalidades estavam pouco visíveis ou escondidas na interface. | O usuário apresentava dificuldade para localizar determinados botões e identificar as ações disponíveis. | Os botões foram reformulados para destacar as principais funcionalidades e facilitar sua identificação. | Tornar a navegação mais intuitiva, reduzir o esforço de procura e facilitar o acesso às funções do sistema. |
-| O gráfico de evolução temporal apresentava apenas os indicadores da reunião. | Não havia possibilidade de registrar observações sobre acontecimentos importantes durante a sessão. | Foi adicionada a funcionalidade de inserir anotações no gráfico de tempo. | Permitir que o usuário registre acontecimentos relevantes e relacione suas observações às mudanças dos indicadores, facilitando análises posteriores. |
-| A personalização dos dashboards não estava suficientemente destacada. | O usuário não identificava facilmente a possibilidade de modificar as visualizações, que representa um dos principais diferenciais da plataforma. | Os controles de personalização foram reformulados para tornar as opções de edição e criação de novas visualizações mais evidentes. | Evidenciar o diferencial do MindFlow AI e facilitar a criação de dashboards adaptados às necessidades de cada usuário. |
+| Alguns cards apresentavam indicadores sem informações explicativas. | Dificuldade para compreender o significado dos dados exibidos. | Serão adicionadas informações complementares no suporte e descrições resumidas ao passar o mouse sobre os cards. | Facilitar a interpretação dos indicadores e reduzir dúvidas durante a utilização. |
+| A interface utilizava cores muito semelhantes. | Pouca diferenciação visual entre os componentes. | Serão introduzidas cores nos cards, mantendo a paleta original definida como tema da plataforma. | Melhorar a organização e a diferenciação visual sem comprometer a identidade do sistema. |
+| Algumas funcionalidades principais estavam pouco visíveis. | Dificuldade para identificar e localizar determinados botões. | Os botões serão reformulados, com maior destaque para as ações principais. | Tornar a navegação mais intuitiva e facilitar o acesso às funcionalidades. |
+| O suporte estava concentrado em uma aba específica. | O usuário precisava sair da tela atual para procurar informações de ajuda. | Será disponibilizado um recurso de suporte em formato de pop-up, acessível nas diferentes abas. | Permitir o esclarecimento de dúvidas sem interromper a navegação. |
+| As opções de personalização dos dashboards tinham pouco destaque. | O principal diferencial do MindFlow AI não era facilmente percebido. | As funcionalidades de edição e criação de visualizações serão destacadas na interface. | Evidenciar a possibilidade de o usuário organizar seus dashboards conforme suas necessidades e preferências. |
+| O gráfico de evolução temporal não permitia registrar observações. | Ausência de um recurso para anotar acontecimentos relevantes e consultá-los posteriormente. | Será adicionada a possibilidade de inserir anotações no gráfico de tempo das reuniões. | Facilitar o registro de informações importantes e relacioná-las aos indicadores apresentados durante a sessão. |
+
 
 ## Checklist
 
