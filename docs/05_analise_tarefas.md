@@ -25,29 +25,28 @@ Modele **tarefas humanas relacionadas ao uso da contribuição técnica**, e nã
 
 Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece modelagem se tiver significado no domínio (papéis, validações, riscos, permissões, dependências).
 
+
 ## Seleção das tarefas
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Acompanhar e interpretar o estado dos participantes durante uma aula on-line | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
-| T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução da aula | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
-| T03 | Conduzir a aula enquanto acompanha e responde aos estados dos participantes | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
+| T01 | Configurar o acompanhamento de uma aula no MindFlow AI | P01 / C01 — Docente preparando uma aula EAD síncrona | Média frequência / Alta criticidade | {{nome — matrícula}} |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---
 
-## HTA — T01 Acompanhar e interpretar o estado dos participantes durante uma aula on-line
+## HTA — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
-**Autor(a):** Kayky - 22.222.040-2
+**Autor(a):** {{nome — matrícula}}
 
 ### Descrição da tarefa
 
-A tarefa tem como objetivo permitir que o docente acompanhe, durante uma aula on-line, os estados dos participantes apresentados pelo MindFlow AI, identificando mudanças relevantes de engajamento, tédio, confusão ou frustração e utilizando essas informações como apoio para decidir se deve adaptar a condução da aula.
+A tarefa tem como objetivo preparar o MindFlow AI para acompanhar os estados dos participantes durante uma aula on-line, garantindo que a sessão, os participantes e os recursos necessários para o monitoramento estejam configurados antes do início do acompanhamento.
 
-A tarefa se inicia quando a aula está em andamento e o acompanhamento dos participantes está disponível no MindFlow AI. Durante a apresentação, consulta os indicadores sem interromper sua atividade principal de lecionar, interpreta alterações relevantes e, quando necessário, realiza alguma intervenção pedagógica, como modificar o ritmo, retomar uma explicação ou fazer uma pergunta à turma.
+A tarefa se inicia quando o docente possui uma aula ou videoconferência que deseja acompanhar com o MindFlow AI. Durante a configuração, o usuário prepara a sessão, define quais participantes serão considerados no acompanhamento, verifica se a extensão e a coleta estão disponíveis e confirma se os dados estão sendo apresentados corretamente no sistema.
 
-A tarefa é considerada concluída quando a aula termina. Durante sua execução, o ciclo de monitoramento, interpretação e possível intervenção pode ocorrer diversas vezes.
+A tarefa é considerada concluída quando a configuração é validada e o acompanhamento está pronto para ser utilizado durante a aula. Caso algum problema seja identificado durante a verificação, o usuário deve corrigir a configuração antes de iniciar o monitoramento.
 
 ### Diagrama
 
@@ -58,73 +57,77 @@ flowchart TB
     %% OBJETIVO PRINCIPAL
     %% =====================================================
 
-    T0["0. Acompanhar e interpretar o estado dos participantes<br/>durante uma aula on-line<br/><b>Plano 0:</b> 1 > repetir (2 > 3 > [4, se necessário])<br/>enquanto a aula estiver em andamento"]
+    T0["0. Configurar o acompanhamento de uma aula<br/>no MindFlow AI<br/><b>Plano 0:</b> 1 > 2 > 3 > [4, se necessário] > 5"]
 
     %% =====================================================
     %% NÍVEL 1
     %% =====================================================
 
-    T1[["1. Confirmar que o acompanhamento<br/>está disponível"]]
+    T1["1. Preparar a sessão para acompanhamento<br/><b>Plano 1:</b> 1.1 > 1.2"]
 
-    T2["2. Monitorar o estado do grupo<br/><b>Plano 2:</b> 2.1 > [2.2 / 2.3, se necessário]"]
+    T2["2. Definir o escopo do acompanhamento<br/><b>Plano 2:</b> 2.1 > 2.2"]
 
-    T3["3. Interpretar mudanças relevantes<br/><b>Plano 3:</b> 3.1 > 3.2 > 3.3"]
+    T3["3. Verificar a configuração<br/><b>Plano 3:</b> 3.1 > 3.2 > 3.3"]
 
-    T4["4. Adaptar a condução da aula<br/><b>Plano 4:</b> 4.1 > 4.5 > retornar a 2<br/>em 4.1 escolher 4.2 / 4.3 / 4.4"]
+    T4["4. Corrigir problemas de configuração<br/><b>Plano 4:</b> repetir as operações necessárias<br/>e retornar a 3"]
+
+    T5[["5. Confirmar que o acompanhamento<br/>está pronto para a aula"]]
 
     T0 --> T1
     T0 --> T2
     T0 --> T3
     T0 --> T4
+    T0 --> T5
 
     %% =====================================================
-    %% TAREFA 2 — MONITORAMENTO
+    %% TAREFA 1 — PREPARAR SESSÃO
     %% =====================================================
 
-    T21[["2.1 Observar o indicador geral<br/>do estado do grupo"]]
+    T11[["1.1 Identificar a aula ou sessão<br/>que será acompanhada"]]
 
-    T22[["2.2 Consultar os indicadores específicos<br/>de engajamento, tédio, confusão e frustração"]]
+    T12[["1.2 Disponibilizar o MindFlow AI<br/>para a sessão"]]
 
-    T23[["2.3 Consultar a evolução dos estados<br/>ao longo do tempo"]]
+    T1 --> T11
+    T1 --> T12
+
+    %% =====================================================
+    %% TAREFA 2 — DEFINIR ESCOPO
+    %% =====================================================
+
+    T21[["2.1 Definir os participantes<br/>considerados no acompanhamento"]]
+
+    T22[["2.2 Confirmar a exclusão do apresentador<br/>da análise dos participantes"]]
 
     T2 --> T21
     T2 --> T22
-    T2 --> T23
 
     %% =====================================================
-    %% TAREFA 3 — INTERPRETAÇÃO
+    %% TAREFA 3 — VERIFICAR CONFIGURAÇÃO
     %% =====================================================
 
-    T31[["3.1 Comparar o estado atual<br/>com momentos anteriores"]]
+    T31[["3.1 Verificar se o recurso de<br/>acompanhamento está ativo"]]
 
-    T32[["3.2 Avaliar se a alteração<br/>observada é relevante"]]
+    T32[["3.2 Verificar se os participantes<br/>estão sendo reconhecidos"]]
 
-    T33[["3.3 Decidir se é necessária<br/>alguma intervenção na aula"]]
+    T33[["3.3 Confirmar se os indicadores<br/>estão disponíveis para visualização"]]
 
     T3 --> T31
     T3 --> T32
     T3 --> T33
 
     %% =====================================================
-    %% TAREFA 4 — ADAPTAÇÃO
+    %% TAREFA 4 — CORREÇÕES
     %% =====================================================
 
-    T41["4.1 Escolher uma estratégia de intervenção<br/><b>Plano 4.1:</b> 4.2 / 4.3 / 4.4"]
+    T41[["4.1 Identificar o problema<br/>encontrado na verificação"]]
 
-    T45[["4.5 Verificar o comportamento dos indicadores<br/>após a intervenção"]]
+    T42[["4.2 Ajustar a configuração<br/>necessária"]]
+
+    T43[["4.3 Realizar novamente<br/>a verificação"]]
 
     T4 --> T41
-    T4 --> T45
-
-    T42[["4.2 Alterar o ritmo<br/>da apresentação"]]
-
-    T43[["4.3 Retomar ou reformular<br/>a explicação"]]
-
-    T44[["4.4 Fazer uma pergunta<br/>aos participantes"]]
-
-    T41 --> T42
-    T41 --> T43
-    T41 --> T44
+    T4 --> T42
+    T4 --> T43
 
     %% =====================================================
     %% ESTILOS
@@ -133,8 +136,8 @@ flowchart TB
     classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
     classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
 
-    class T0,T2,T3,T4,T41 objetivo;
-    class T1,T21,T22,T23,T31,T32,T33,T42,T43,T44,T45 operacao;
+    class T0,T1,T2,T3,T4 objetivo;
+    class T5,T11,T12,T21,T22,T31,T32,T33,T41,T42,T43 operacao;
 ```
 
 
@@ -142,22 +145,22 @@ flowchart TB
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Acompanhar e interpretar o estado dos participantes durante uma aula on-line | Docente precisa acompanhar os indicadores enquanto conduz a aula. A interface deve fornecer informação útil sem exigir atenção contínua ou competir excessivamente com a atividade de lecionar. |
-| 1 | Confirmar que o acompanhamento está disponível | Executar antes de iniciar o ciclo de monitoramento | O sistema deve deixar evidente se o acompanhamento está ativo e se há dados disponíveis para a sessão. |
-| 2 | Monitorar o estado do grupo | **2.1 > [2.2 / 2.3, conforme necessidade]** | A informação principal deve ser compreendida rapidamente. Detalhes adicionais devem estar disponíveis sem sobrecarregar a interface durante a aula. |
-| 2.1 | Observar o indicador geral do estado do grupo | Operação principal de monitoramento | O estado predominante deve ser identificável rapidamente e não deve depender exclusivamente de cor para ser compreendido. |
-| 2.2 | Consultar os indicadores específicos de engajamento, tédio, confusão e frustração | Executar quando o indicador geral não fornecer informação suficiente | A apresentação simultânea de muitos indicadores pode aumentar a carga cognitiva de Docente durante a aula. |
-| 2.3 | Consultar a evolução dos estados ao longo do tempo | Executar quando for necessário compreender uma mudança ou tendência | O sistema deve facilitar a relação entre a alteração dos indicadores e o momento correspondente da aula. |
-| 3 | Interpretar mudanças relevantes nos estados dos participantes | **3.1 > 3.2 > 3.3** | Pequenas oscilações não devem ser interpretadas automaticamente como necessidade de intervenção. A interface deve fornecer contexto para apoiar a interpretação. |
-| 3.1 | Comparar o estado atual com momentos anteriores | Executar após perceber uma possível mudança | A comparação temporal deve ser simples e rápida, evitando exigir análise detalhada enquanto Docente conduz a aula. |
-| 3.2 | Avaliar se a alteração observada é relevante | Executar após 3.1 | Os indicadores devem funcionar como apoio à interpretação e não como uma conclusão absoluta sobre o comportamento dos participantes. |
-| 3.3 | Decidir se é necessária alguma intervenção na aula | Executar após 3.2 | A decisão sobre intervir deve permanecer com Docente. O sistema apresenta informações, mas não determina automaticamente a ação pedagógica. |
-| 4 | Adaptar a condução da aula | **4.1 > 4.5 > retornar a 2**, somente quando 3.3 indicar necessidade de intervenção | A adaptação é condicional. O MindFlow auxilia na percepção da situação, mas a escolha da resposta pedagógica pertence à docente. |
-| 4.1 | Escolher uma estratégia de intervenção | **4.2 / 4.3 / 4.4** | A estratégia escolhida depende da situação observada. Não existe uma única intervenção adequada para todos os estados. |
-| 4.2 | Alterar o ritmo da apresentação | Alternativa de 4.1 | Pode ser utilizada quando houver indícios de queda de engajamento ou dificuldade dos participantes em acompanhar o ritmo atual. |
-| 4.3 | Retomar ou reformular a explicação | Alternativa de 4.1 | Pode ser utilizada quando houver indícios de confusão ou dificuldade de compreensão do conteúdo. |
-| 4.4 | Fazer uma pergunta aos participantes | Alternativa de 4.1 | Permite complementar os indicadores do sistema com uma resposta explícita dos participantes e confirmar a interpretação de Docente. |
-| 4.5 | Verificar o comportamento dos indicadores após a intervenção | Executar após a estratégia selecionada em 4.1 | Docente precisa perceber se a intervenção realizada foi acompanhada por alguma alteração nos estados apresentados pelo MindFlow. Após essa verificação, o ciclo retorna ao monitoramento. |
+| 0 | Configurar o acompanhamento de uma aula no MindFlow AI | **1 > 2 > 3 > [4, se necessário] > 5** | A configuração deve ser concluída antes do início do acompanhamento, com feedback claro sobre possíveis problemas e sobre o estado final de prontidão. |
+| 1 | Preparar a sessão para acompanhamento | **1.1 > 1.2** | O usuário precisa identificar corretamente qual aula será acompanhada e disponibilizar o MindFlow AI para essa sessão sem exigir uma sequência extensa de configuração. |
+| 1.1 | Identificar a aula ou sessão que será acompanhada | Executar antes de 1.2 | A identificação da sessão deve ser clara para evitar que dados sejam associados à aula incorreta. |
+| 1.2 | Disponibilizar o MindFlow AI para a sessão | Executar após 1.1 | O sistema deve informar de forma visível quando o recurso estiver disponível para utilização. |
+| 2 | Definir o escopo do acompanhamento | **2.1 > 2.2** | Deve ficar claro quem será considerado na análise, evitando a inclusão indevida de pessoas que não fazem parte do grupo acompanhado. |
+| 2.1 | Definir os participantes considerados no acompanhamento | Executar antes de 2.2 | A identificação dos participantes precisa ser compreensível e permitir verificar quem está incluído na análise. |
+| 2.2 | Confirmar a exclusão do apresentador da análise dos participantes | Executar após 2.1 | O apresentador não deve interferir nos indicadores destinados à análise do grupo participante. |
+| 3 | Verificar a configuração | **3.1 > 3.2 > 3.3** | O usuário precisa saber se todos os componentes necessários estão funcionando antes de considerar a configuração concluída. |
+| 3.1 | Verificar se o recurso de acompanhamento está ativo | Primeira verificação | O estado ativo ou inativo do acompanhamento deve ser apresentado de forma evidente. |
+| 3.2 | Verificar se os participantes estão sendo reconhecidos | Executar após 3.1 | Falhas de reconhecimento precisam ser perceptíveis para que possam ser corrigidas antes do início do acompanhamento. |
+| 3.3 | Confirmar se os indicadores estão disponíveis para visualização | Executar após 3.2 | A interface deve fornecer feedback suficiente para confirmar que os dados necessários estão disponíveis. |
+| 4 | Corrigir problemas de configuração | **4.1 > 4.2 > 4.3 > retornar a 3** | A correção deve permitir identificar a origem do problema e refazer apenas as etapas necessárias, evitando reiniciar toda a configuração. |
+| 4.1 | Identificar o problema encontrado na verificação | Executar quando alguma verificação de 3 falhar | A mensagem apresentada deve ajudar o usuário a compreender o que precisa ser corrigido. |
+| 4.2 | Ajustar a configuração necessária | Executar após 4.1 | A interface deve direcionar o usuário para o ajuste correspondente ao problema identificado. |
+| 4.3 | Realizar novamente a verificação | Executar após 4.2 e retornar a 3 | Após a correção, o sistema deve permitir confirmar se o problema foi resolvido. |
+| 5 | Confirmar que o acompanhamento está pronto para a aula | Executar após 3 quando todas as verificações forem concluídas com sucesso | O sistema deve apresentar uma confirmação clara de que a configuração foi concluída e o acompanhamento está pronto para uso. |
 
 **Verificação do HTA:**
 
@@ -168,146 +171,78 @@ flowchart TB
 
 ---
 
-## GOMS — T02 nterpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução da aula
+## GOMS — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
-**Autor(a):** {{Kayky Pires — 22.222.040-2}}
+**Autor(a):** {{nome — matrícula}}
 
 ### Goal
 
-### GOAL 0: Interpretar os indicadores do MindFlow AI e decidir como prosseguir com a aula
+`G0: Deixar o MindFlow AI corretamente configurado e pronto para acompanhar uma aula.`
 
----
+### Métodos, operadores e regras de seleção
 
-### GOAL 1: Compreender o estado atual dos participantes
+- **Method M1: Realizar a configuração padrão do acompanhamento**
+  - **Operators:**
+    - identificar a aula ou sessão que será acompanhada;
+    - disponibilizar o MindFlow AI para a sessão;
+    - verificar os participantes considerados no acompanhamento;
+    - confirmar a exclusão do apresentador da análise;
+    - verificar se o acompanhamento está ativo;
+    - verificar se os participantes estão sendo reconhecidos;
+    - confirmar se os indicadores estão disponíveis;
+    - concluir que a configuração está pronta para uso.
 
-#### METHOD 1.A: Consultar o indicador geral
+- **Method M2: Ajustar a configuração após identificar um problema**
+  - **Operators:**
+    - identificar qual etapa da configuração apresentou problema;
+    - verificar se o problema está relacionado à sessão, aos participantes ou ao acompanhamento;
+    - ajustar a configuração necessária;
+    - repetir a verificação correspondente;
+    - confirmar se o problema foi resolvido;
+    - verificar novamente a disponibilidade dos indicadores;
+    - concluir que a configuração está pronta para uso.
 
-**SEL. RULE:** utilizar quando o usuário deseja obter rapidamente uma visão geral do estado predominante dos participantes.
-
-- **OP. 1.A.1:** direcionar a atenção para o indicador geral;
-- **OP. 1.A.2:** examinar o estado destacado;
-- **OP. 1.A.3:** verificar o valor apresentado;
-- **OP. 1.A.4:** interpretar o estado predominante.
-
-#### METHOD 1.B: Consultar os indicadores específicos
-
-**SEL. RULE:** utilizar quando o indicador geral não fornecer informação suficiente ou quando for necessário comparar engajamento, tédio, confusão e frustração.
-
-- **OP. 1.B.1:** direcionar a atenção para os indicadores específicos;
-- **OP. 1.B.2:** examinar os valores apresentados;
-- **OP. 1.B.3:** comparar os diferentes estados;
-- **OP. 1.B.4:** identificar quais estados apresentam maior intensidade.
-
----
-
-### GOAL 2: Avaliar se existe uma mudança relevante
-
-#### METHOD 2.A: Analisar a evolução temporal dos indicadores
-
-**SEL. RULE:** utilizar quando for necessário verificar se o estado atual representa uma oscilação momentânea ou uma tendência ao longo da aula.
-
-- **OP. 2.A.1:** consultar o gráfico temporal;
-- **OP. 2.A.2:** localizar o momento atual da transmissão;
-- **OP. 2.A.3:** comparar os valores atuais com momentos anteriores;
-- **OP. 2.A.4:** identificar aumento, redução ou estabilidade dos estados;
-- **OP. 2.A.5:** avaliar se a mudança é relevante.
-
-#### METHOD 2.B: Confirmar a interpretação com os participantes
-
-**SEL. RULE:** utilizar quando os indicadores não forem suficientes para interpretar a situação com segurança.
-
-- **OP. 2.B.1:** formular uma pergunta relacionada ao momento da aula;
-- **OP. 2.B.2:** solicitar retorno dos participantes;
-- **OP. 2.B.3:** observar as respostas recebidas;
-- **OP. 2.B.4:** comparar as respostas com os indicadores apresentados.
-
----
-
-### GOAL 3: Definir como prosseguir com a aula
-
-#### METHOD 3.A: Manter a condução atual
-
-**SEL. RULE:** utilizar quando não houver mudança relevante ou quando os indicadores estiverem compatíveis com o comportamento esperado naquele momento.
-
-- **OP. 3.A.1:** concluir que não é necessária intervenção;
-- **OP. 3.A.2:** manter a condução atual;
-- **OP. 3.A.3:** continuar acompanhando os indicadores.
-
-#### METHOD 3.B: Alterar o ritmo da apresentação
-
-**SEL. RULE:** utilizar quando houver indícios de queda de engajamento ou dificuldade de acompanhamento do ritmo atual.
-
-- **OP. 3.B.1:** identificar a necessidade de ajuste;
-- **OP. 3.B.2:** modificar o ritmo da apresentação;
-- **OP. 3.B.3:** continuar a apresentação;
-- **OP. 3.B.4:** observar novamente os indicadores.
-
-#### METHOD 3.C: Retomar ou reformular a explicação
-
-**SEL. RULE:** utilizar quando houver indícios relevantes de confusão ou dificuldade de compreensão.
-
-- **OP. 3.C.1:** identificar o conteúdo relacionado ao momento de confusão;
-- **OP. 3.C.2:** retomar ou reformular a explicação;
-- **OP. 3.C.3:** prosseguir com o conteúdo;
-- **OP. 3.C.4:** observar novamente os indicadores.
-
-#### METHOD 3.D: Solicitar retorno direto dos participantes
-
-**SEL. RULE:** utilizar quando houver dúvida sobre a interpretação dos indicadores ou quando for necessário obter confirmação explícita do grupo.
-
-- **OP. 3.D.1:** formular uma pergunta;
-- **OP. 3.D.2:** apresentar a pergunta aos participantes;
-- **OP. 3.D.3:** observar as respostas;
-- **OP. 3.D.4:** utilizar as respostas como apoio à decisão;
-- **OP. 3.D.5:** definir como continuar a aula.
-
----
-
-## Síntese do modelo GOMS
-
-- **Goal principal:** acompanhar o estado dos participantes durante uma videoconferência.
-- **Goals secundários:** identificar o estado predominante, identificar alterações relevantes e decidir se é necessário adaptar a apresentação.
-- **Methods:** consultar indicador geral, consultar indicadores específicos, analisar gráfico temporal, continuar a apresentação ou adaptar sua condução.
-- **Operators:** observar, examinar, comparar, interpretar, selecionar uma ação e continuar o monitoramento.
-- **Selection Rules:** definem qual método deve ser utilizado conforme o contexto e as informações apresentadas pelo MindFlow AI.
+- **Selection Rule SR1:** usar **M1** quando a configuração inicial estiver funcionando corretamente e todas as verificações puderem ser concluídas sem ajustes; usar **M2** quando alguma verificação indicar problema na configuração, no reconhecimento dos participantes ou na disponibilidade dos indicadores.
 
 
-## CTT — T03 - Conduzir a aula enquanto acompanha e responde aos estados dos participantes
+## CTT — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
-**Autor(a):** Kayky - 22.222.040-2
+**Autor(a):** {{nome — matrícula}}
 
 ### Descrição
 
-O CTT representa a tarefa de **conduzir uma aula com apoio do MindFlow AI**, considerando as atividades do usuário, do sistema e as interações entre ambos.
+O CTT representa a configuração do MindFlow AI antes do início do acompanhamento de uma aula. A tarefa envolve a interação do usuário com o sistema para selecionar a sessão, definir o escopo do acompanhamento e verificar se os recursos necessários estão disponíveis.
 
-A tarefa principal é decomposta em **Ministrar aula** e **Acompanhar estados dos participantes**, que podem ocorrer em paralelo (`|||`). Durante o acompanhamento, o sistema **atualiza o dashboard**, o usuário **consulta os indicadores**, **interpreta o estado observado** e então **responde à situação identificada**.
-
-A resposta pode ocorrer por meio de uma escolha (`[ ]`) entre **manter a condução atual** ou **adaptar a aula**. O ciclo de acompanhamento pode se repetir ao longo da sessão conforme novas informações forem apresentadas pelo sistema.
+Após a configuração inicial, o sistema verifica o estado do acompanhamento e disponibiliza informações de validação. Caso algum problema seja identificado, o usuário pode realizar os ajustes necessários e repetir a verificação. A tarefa é concluída quando o acompanhamento estiver configurado e pronto para uso.
 
 ### Diagrama
-<img src="https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.drawio.png" width="500" alt="CTT — Kayky">
+
+![CTT T01](../assets/05_tarefas/ctt_t01.svg)
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Nuvem | **Tarefa abstrata.** Representa uma composição de outras tarefas e é utilizada para organizar a decomposição hierárquica da atividade. | **Conduzir aula com apoio do MindFlow**, **Acompanhar estados**, **Responder ao estado observado** e **Adaptar aula**. |
-| Retângulo | **Tarefa do usuário.** Representa uma atividade realizada diretamente pelo usuário, sem interação direta com o sistema naquele momento. | **Ministrar aula**, **Interpretar estado observado** e **Manter condução atual**. |
-| Hexágono | **Tarefa do sistema.** Representa uma atividade executada pelo sistema sem interação direta do usuário. | **Atualizar dashboard**, realizada pelo MindFlow a partir dos dados processados durante a aula. |
-| Círculo | **Tarefa interativa.** Representa uma atividade em que ocorre interação entre o usuário e o sistema. | **Consultar estado do grupo**, quando Docente observa as informações apresentadas no dashboard. |
-| `|||` — Concorrência | Indica que duas tarefas podem ocorrer simultaneamente ou em qualquer ordem. | **Ministrar aula** `|||` **Acompanhar estados**, pois Docente acompanha os indicadores enquanto continua conduzindo a aula. |
-| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza informações produzidas por ela. | **Atualizar dashboard** `[ ] >>` **Consultar estado do grupo**. Os dados atualizados pelo sistema ficam disponíveis para consulta por Docente. |
-| `>>` — Habilitação | Indica que a segunda tarefa pode ser iniciada após a conclusão da primeira. | **Consultar estado do grupo** `>>` **Interpretar estado observado** e **Interpretar estado observado** `>>` **Responder ao estado observado**. |
-| `[ ]` — Escolha | Indica tarefas alternativas. Quando uma alternativa é iniciada, as demais alternativas daquela escolha são desabilitadas. | **Manter condução atual** `[ ]` **Adaptar aula**. Docente escolhe uma das respostas de acordo com o estado observado. |
-| Repetição do acompanhamento | Indica que o conjunto de tarefas de acompanhamento pode ocorrer diversas vezes enquanto a aula estiver em andamento. | Após manter ou adaptar a condução da aula, Docente continua acompanhando os estados dos participantes durante a sessão. 
+| Nuvem | **Tarefa abstrata.** Representa uma composição de outras tarefas e auxilia na decomposição da atividade. | **Configurar o acompanhamento da aula** e **Validar a configuração**. |
+| Retângulo | **Tarefa do usuário.** Representa uma atividade realizada pelo usuário sem interação direta com o sistema naquele momento. | **Avaliar se a configuração apresentada está adequada** e **decidir se é necessário realizar ajustes**. |
+| Hexágono | **Tarefa do sistema.** Representa uma atividade executada pelo sistema sem interação direta do usuário naquele momento. | **Verificar disponibilidade do acompanhamento** e **verificar reconhecimento dos participantes**. |
+| Círculo | **Tarefa interativa.** Representa uma atividade que envolve interação entre usuário e sistema. | **Selecionar a sessão**, **definir participantes**, **consultar o status da configuração** e **realizar ajustes**. |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | **Selecionar a sessão** `>>` **Definir o escopo do acompanhamento** `>>` **Validar a configuração**. |
+| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | **Verificar o estado da configuração** `[ ] >>` **Consultar o status da configuração**. |
+| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra alternativa deixa de estar habilitada naquele momento. | Após a validação, o usuário pode **confirmar a configuração** `[ ]` **corrigir a configuração**. |
+| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Após **corrigir a configuração**, o usuário retorna à tarefa **Validar a configuração** para verificar novamente o acompanhamento. |
 
-Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+No modelo, não foi utilizada relação de concorrência (`|||`), pois as principais atividades de configuração dependem da conclusão das etapas anteriores. A desabilitação ocorre por meio da relação de escolha (`[ ]`): ao optar por confirmar a configuração ou realizar uma correção, a alternativa não escolhida deixa de estar ativa naquele momento.
 
 ---
 
 ## Síntese da equipe
 
-Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
+As modelagens evidenciaram que a configuração do acompanhamento precisa apresentar feedback claro sobre o estado da sessão, os participantes considerados e a disponibilidade dos indicadores. Também foi identificada a necessidade de permitir a correção de problemas sem obrigar o usuário a reiniciar todo o processo de configuração.
+
+Como oportunidades de design, destacam-se a apresentação clara do estado de prontidão do acompanhamento, mensagens específicas para problemas de configuração e confirmação visual dos participantes incluídos na análise.
+
+Para o protótipo e para o teste de usabilidade, devem ser priorizadas as tarefas de **selecionar a sessão**, **definir o escopo do acompanhamento**, **verificar a configuração**, **identificar possíveis problemas**, **realizar ajustes** e **confirmar que o acompanhamento está pronto para uso**.
 
 ## Checklist
 
