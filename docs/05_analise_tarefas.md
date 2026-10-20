@@ -42,36 +42,26 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ### Descrição da tarefa
 
-A tarefa tem como objetivo preparar o MindFlow AI para acompanhar os estados dos participantes durante uma aula on-line, garantindo que a sessão, os participantes e os recursos necessários para o monitoramento estejam configurados antes do início do acompanhamento.
+A tarefa consiste em personalizar a visualização dos resultados de uma aula já concluída no MindFlow AI, permitindo que o usuário organize os indicadores e gráficos de acordo com suas necessidades de análise.
 
-A tarefa se inicia quando o docente possui uma aula ou videoconferência que deseja acompanhar com o MindFlow AI. Durante a configuração, o usuário prepara a sessão, define quais participantes serão considerados no acompanhamento, verifica se a extensão e a coleta estão disponíveis e confirma se os dados estão sendo apresentados corretamente no sistema.
+Após o encerramento da videoconferência, o usuário acessa a página "Minhas Reuniões", localiza a aula desejada e seleciona a opção "Ver Resumo". Na tela de resumo, examina os indicadores disponíveis, como engajamento, tédio, confusão e frustração, e identifica quais informações deseja destacar ou reorganizar.
 
-A tarefa é considerada concluída quando a configuração é validada e o acompanhamento está pronto para ser utilizado durante a aula. Caso algum problema seja identificado durante a verificação, o usuário deve corrigir a configuração antes de iniciar o monitoramento.
+Caso a visualização atual não atenda às suas necessidades, o usuário acessa a opção "Nova Visualização", que permite personalizar a apresentação dos resultados. Durante essa etapa, pode escolher os indicadores e organizar os elementos do dashboard conforme suas preferências.
+
+A tarefa é concluída quando o usuário finaliza a personalização e verifica se a visualização resultante apresenta as informações necessárias de maneira clara e organizada, facilitando a interpretação dos resultados da aula.
 
 ### Diagrama
 
 ```mermaid
 flowchart TB
 
-    %% =====================================================
-    %% OBJETIVO PRINCIPAL
-    %% =====================================================
+    T0["0. Personalizar a visualização dos resultados de uma aula concluída<br/><b>Plano 0:</b> 1 > 2 > 3 > 4 > 5"]
 
-    T0["0. Configurar o acompanhamento de uma aula<br/>no MindFlow AI<br/><b>Plano 0:</b> 1 > 2 > 3 > [4, se necessário] > 5"]
-
-    %% =====================================================
-    %% NÍVEL 1
-    %% =====================================================
-
-    T1["1. Preparar a sessão para acompanhamento<br/><b>Plano 1:</b> 1.1 > 1.2"]
-
-    T2["2. Definir o escopo do acompanhamento<br/><b>Plano 2:</b> 2.1 > 2.2"]
-
-    T3["3. Verificar a configuração<br/><b>Plano 3:</b> 3.1 > 3.2 > 3.3"]
-
-    T4["4. Corrigir problemas de configuração<br/><b>Plano 4:</b> repetir as operações necessárias<br/>e retornar a 3"]
-
-    T5[["5. Confirmar que o acompanhamento<br/>está pronto para a aula"]]
+    T1["1. Localizar a aula concluída<br/><b>Plano 1:</b> 1.1 > 1.2 > 1.3"]
+    T2["2. Consultar o resumo da aula<br/><b>Plano 2:</b> 2.1 > 2.2"]
+    T3["3. Definir as necessidades de personalização<br/><b>Plano 3:</b> 3.1 > 3.2"]
+    T4["4. Personalizar a visualização<br/><b>Plano 4:</b> 4.1 > 4.2 > 4.3"]
+    T5["5. Finalizar e avaliar a visualização<br/><b>Plano 5:</b> 5.1 > 5.2; se necessário, retornar a 4"]
 
     T0 --> T1
     T0 --> T2
@@ -79,88 +69,72 @@ flowchart TB
     T0 --> T4
     T0 --> T5
 
-    %% =====================================================
-    %% TAREFA 1 — PREPARAR SESSÃO
-    %% =====================================================
-
-    T11[["1.1 Identificar a aula ou sessão<br/>que será acompanhada"]]
-
-    T12[["1.2 Disponibilizar o MindFlow AI<br/>para a sessão"]]
+    T11[["1.1 Acessar Minhas Reuniões"]]
+    T12[["1.2 Identificar a aula desejada"]]
+    T13[["1.3 Selecionar Ver Resumo"]]
 
     T1 --> T11
     T1 --> T12
+    T1 --> T13
 
-    %% =====================================================
-    %% TAREFA 2 — DEFINIR ESCOPO
-    %% =====================================================
-
-    T21[["2.1 Definir os participantes<br/>considerados no acompanhamento"]]
-
-    T22[["2.2 Confirmar a exclusão do apresentador<br/>da análise dos participantes"]]
+    T21[["2.1 Examinar os indicadores disponíveis"]]
+    T22[["2.2 Examinar os gráficos apresentados"]]
 
     T2 --> T21
     T2 --> T22
 
-    %% =====================================================
-    %% TAREFA 3 — VERIFICAR CONFIGURAÇÃO
-    %% =====================================================
-
-    T31[["3.1 Verificar se o recurso de<br/>acompanhamento está ativo"]]
-
-    T32[["3.2 Verificar se os participantes<br/>estão sendo reconhecidos"]]
-
-    T33[["3.3 Confirmar se os indicadores<br/>estão disponíveis para visualização"]]
+    T31[["3.1 Identificar informações relevantes para análise"]]
+    T32[["3.2 Decidir quais elementos deseja modificar"]]
 
     T3 --> T31
     T3 --> T32
-    T3 --> T33
 
-    %% =====================================================
-    %% TAREFA 4 — CORREÇÕES
-    %% =====================================================
-
-    T41[["4.1 Identificar o problema<br/>encontrado na verificação"]]
-
-    T42[["4.2 Ajustar a configuração<br/>necessária"]]
-
-    T43[["4.3 Realizar novamente<br/>a verificação"]]
+    T41[["4.1 Selecionar Nova Visualização"]]
+    T42[["4.2 Escolher os indicadores e gráficos desejados"]]
+    T43[["4.3 Organizar os elementos da visualização"]]
 
     T4 --> T41
     T4 --> T42
     T4 --> T43
 
-    %% =====================================================
-    %% ESTILOS
-    %% =====================================================
+    T51[["5.1 Concluir a edição da visualização"]]
+    T52[["5.2 Verificar se a organização atende às necessidades"]]
+
+    T5 --> T51
+    T5 --> T52
 
     classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
     classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
 
-    class T0,T1,T2,T3,T4 objetivo;
-    class T5,T11,T12,T21,T22,T31,T32,T33,T41,T42,T43 operacao;
+    class T0,T1,T2,T3,T4,T5 objetivo;
+    class T11,T12,T13,T21,T22,T31,T32,T41,T42,T43,T51,T52 operacao;
 ```
+
 
 
 ### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Configurar o acompanhamento de uma aula no MindFlow AI | **1 > 2 > 3 > [4, se necessário] > 5** | A configuração deve ser concluída antes do início do acompanhamento, com feedback claro sobre possíveis problemas e sobre o estado final de prontidão. |
-| 1 | Preparar a sessão para acompanhamento | **1.1 > 1.2** | O usuário precisa identificar corretamente qual aula será acompanhada e disponibilizar o MindFlow AI para essa sessão sem exigir uma sequência extensa de configuração. |
-| 1.1 | Identificar a aula ou sessão que será acompanhada | Executar antes de 1.2 | A identificação da sessão deve ser clara para evitar que dados sejam associados à aula incorreta. |
-| 1.2 | Disponibilizar o MindFlow AI para a sessão | Executar após 1.1 | O sistema deve informar de forma visível quando o recurso estiver disponível para utilização. |
-| 2 | Definir o escopo do acompanhamento | **2.1 > 2.2** | Deve ficar claro quem será considerado na análise, evitando a inclusão indevida de pessoas que não fazem parte do grupo acompanhado. |
-| 2.1 | Definir os participantes considerados no acompanhamento | Executar antes de 2.2 | A identificação dos participantes precisa ser compreensível e permitir verificar quem está incluído na análise. |
-| 2.2 | Confirmar a exclusão do apresentador da análise dos participantes | Executar após 2.1 | O apresentador não deve interferir nos indicadores destinados à análise do grupo participante. |
-| 3 | Verificar a configuração | **3.1 > 3.2 > 3.3** | O usuário precisa saber se todos os componentes necessários estão funcionando antes de considerar a configuração concluída. |
-| 3.1 | Verificar se o recurso de acompanhamento está ativo | Primeira verificação | O estado ativo ou inativo do acompanhamento deve ser apresentado de forma evidente. |
-| 3.2 | Verificar se os participantes estão sendo reconhecidos | Executar após 3.1 | Falhas de reconhecimento precisam ser perceptíveis para que possam ser corrigidas antes do início do acompanhamento. |
-| 3.3 | Confirmar se os indicadores estão disponíveis para visualização | Executar após 3.2 | A interface deve fornecer feedback suficiente para confirmar que os dados necessários estão disponíveis. |
-| 4 | Corrigir problemas de configuração | **4.1 > 4.2 > 4.3 > retornar a 3** | A correção deve permitir identificar a origem do problema e refazer apenas as etapas necessárias, evitando reiniciar toda a configuração. |
-| 4.1 | Identificar o problema encontrado na verificação | Executar quando alguma verificação de 3 falhar | A mensagem apresentada deve ajudar o usuário a compreender o que precisa ser corrigido. |
-| 4.2 | Ajustar a configuração necessária | Executar após 4.1 | A interface deve direcionar o usuário para o ajuste correspondente ao problema identificado. |
-| 4.3 | Realizar novamente a verificação | Executar após 4.2 e retornar a 3 | Após a correção, o sistema deve permitir confirmar se o problema foi resolvido. |
-| 5 | Confirmar que o acompanhamento está pronto para a aula | Executar após 3 quando todas as verificações forem concluídas com sucesso | O sistema deve apresentar uma confirmação clara de que a configuração foi concluída e o acompanhamento está pronto para uso. |
+| 0 | Personalizar a visualização dos resultados de uma aula concluída | 1 > 2 > 3 > 4 > 5. Se necessário, repetir 4 e 5. | O usuário precisa adaptar a apresentação dos resultados conforme suas necessidades de análise. |
+| 1 | Localizar a aula concluída | 1.1 > 1.2 > 1.3 | É necessário facilitar a localização da reunião desejada. |
+| 1.1 | Acessar o histórico de reuniões | Operação inicial. | O histórico deve permitir acesso às reuniões realizadas. |
+| 1.2 | Identificar a aula desejada | Após 1.1. | As reuniões precisam apresentar informações que facilitem sua identificação. |
+| 1.3 | Selecionar a aula para análise | Após 1.2. | O acesso ao resumo da reunião deve ser facilmente identificado. |
+| 2 | Consultar o resumo da aula | 2.1 > 2.2 | O usuário precisa compreender os resultados antes de personalizá-los. |
+| 2.1 | Examinar os indicadores disponíveis | Operação inicial do objetivo 2. | Os indicadores devem apresentar informações claras sobre seu significado. |
+| 2.2 | Examinar os gráficos apresentados | Após 2.1. | Os gráficos devem facilitar a interpretação das informações. |
+| 3 | Definir as necessidades de personalização | 3.1 > 3.2 | O usuário precisa identificar quais informações deseja priorizar. |
+| 3.1 | Identificar informações relevantes | Operação inicial do objetivo 3. | É importante facilitar a identificação dos indicadores relevantes. |
+| 3.2 | Decidir quais elementos deseja modificar | Após 3.1. | As possibilidades de personalização devem estar evidentes. |
+| 4 | Personalizar a visualização | 4.1 > 4.2 > 4.3 | O sistema deve permitir que o usuário organize os resultados conforme suas preferências. |
+| 4.1 | Acessar a opção de personalização | Operação inicial do objetivo 4. | A funcionalidade de personalização deve ser facilmente localizada. |
+| 4.2 | Selecionar os indicadores e gráficos desejados | Após 4.1. | As opções disponíveis precisam ser compreensíveis. |
+| 4.3 | Organizar os elementos selecionados | Após 4.2. | O usuário deve conseguir ajustar a apresentação das informações. |
+| 5 | Finalizar e avaliar a visualização | 5.1 > 5.2. Se necessário, retornar ao objetivo 4. | O usuário precisa verificar se a personalização atende às suas necessidades. |
+| 5.1 | Concluir a personalização | Operação inicial do objetivo 5. | Deve existir uma forma clara de finalizar as alterações. |
+| 5.2 | Avaliar a visualização resultante | Após 5.1. | O usuário deve conseguir identificar se precisa realizar novos ajustes. |
+
 
 **Verificação do HTA:**
 
@@ -171,150 +145,136 @@ flowchart TB
 
 ---
 
-## GOMS — T01 Configurar o acompanhamento de uma aula no MindFlow AI
+## GOMS — T02 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{nome — matrícula}}
 
-### GOAL 0: Configurar o acompanhamento de uma aula no MindFlow AI e deixá-lo pronto para uso
+### GOAL 0: Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
 ---
 
-### GOAL 1: Preparar a sessão que será acompanhada
+### GOAL 1: Localizar a aula que deseja analisar
 
-#### METHOD 1.A: Utilizar uma sessão já identificada pelo sistema
+#### METHOD 1.A: Selecionar uma reunião identificada diretamente
 
-**SEL. RULE:** utilizar quando a aula ou sessão que será acompanhada já estiver disponível e corretamente identificada no MindFlow AI.
+**SEL. RULE:** utilizar quando o usuário identifica facilmente a aula desejada na lista de reuniões.
 
-- **OP. 1.A.1:** examinar a sessão apresentada pelo sistema;
-- **OP. 1.A.2:** verificar se a sessão corresponde à aula desejada;
-- **OP. 1.A.3:** selecionar a sessão;
-- **OP. 1.A.4:** confirmar a seleção.
+- **OP. 1.A.1:** acessar a seção "Minhas Reuniões";
+- **OP. 1.A.2:** identificar a reunião desejada;
+- **OP. 1.A.3:** selecionar a opção "Ver Resumo";
+- **OP. 1.A.4:** visualizar os resultados da reunião.
 
-#### METHOD 1.B: Localizar a sessão manualmente
+#### METHOD 1.B: Procurar uma reunião entre as sessões anteriores
 
-**SEL. RULE:** utilizar quando a sessão desejada não estiver imediatamente identificada ou quando houver mais de uma sessão disponível.
+**SEL. RULE:** utilizar quando a reunião desejada não é identificada imediatamente na lista.
 
-- **OP. 1.B.1:** acessar as sessões disponíveis;
-- **OP. 1.B.2:** examinar as informações apresentadas;
-- **OP. 1.B.3:** identificar a sessão correspondente à aula;
-- **OP. 1.B.4:** selecionar a sessão;
-- **OP. 1.B.5:** confirmar a seleção.
-
----
-
-### GOAL 2: Definir quem será considerado no acompanhamento
-
-#### METHOD 2.A: Utilizar os participantes identificados automaticamente
-
-**SEL. RULE:** utilizar quando os participantes reconhecidos pelo MindFlow AI correspondem corretamente às pessoas que devem ser consideradas na análise.
-
-- **OP. 2.A.1:** examinar os participantes identificados;
-- **OP. 2.A.2:** verificar se os participantes esperados estão presentes;
-- **OP. 2.A.3:** verificar se o apresentador está excluído da análise;
-- **OP. 2.A.4:** confirmar o conjunto de participantes.
-
-#### METHOD 2.B: Ajustar os participantes considerados no acompanhamento
-
-**SEL. RULE:** utilizar quando houver participantes identificados incorretamente, pessoas ausentes da análise ou necessidade de ajustar quem será considerado pelo sistema.
-
-- **OP. 2.B.1:** examinar a lista de participantes identificados;
-- **OP. 2.B.2:** identificar participantes que precisam de ajuste;
-- **OP. 2.B.3:** alterar a seleção dos participantes;
-- **OP. 2.B.4:** verificar se o apresentador permanece excluído;
-- **OP. 2.B.5:** confirmar o conjunto atualizado.
+- **OP. 1.B.1:** acessar a seção "Minhas Reuniões";
+- **OP. 1.B.2:** percorrer a lista de reuniões disponíveis;
+- **OP. 1.B.3:** examinar as informações de identificação das reuniões;
+- **OP. 1.B.4:** localizar a reunião desejada;
+- **OP. 1.B.5:** selecionar a opção "Ver Resumo".
 
 ---
 
-### GOAL 3: Verificar se o acompanhamento está funcionando corretamente
+### GOAL 2: Identificar as necessidades de personalização
 
-#### METHOD 3.A: Verificar o status geral da configuração
+#### METHOD 2.A: Avaliar os indicadores apresentados
 
-**SEL. RULE:** utilizar quando o usuário deseja confirmar rapidamente se os principais recursos necessários para o acompanhamento estão disponíveis.
+**SEL. RULE:** utilizar quando o usuário deseja verificar se os indicadores disponíveis atendem às suas necessidades de análise.
 
-- **OP. 3.A.1:** direcionar a atenção para o status do acompanhamento;
-- **OP. 3.A.2:** verificar se o acompanhamento está ativo;
-- **OP. 3.A.3:** verificar se os participantes estão sendo reconhecidos;
-- **OP. 3.A.4:** verificar se os indicadores estão disponíveis;
-- **OP. 3.A.5:** interpretar o estado geral da configuração.
+- **OP. 2.A.1:** examinar os indicadores exibidos no resumo;
+- **OP. 2.A.2:** identificar os estados cognitivos apresentados;
+- **OP. 2.A.3:** avaliar a relevância dos indicadores para a análise;
+- **OP. 2.A.4:** identificar quais informações deseja manter ou modificar.
 
-#### METHOD 3.B: Verificar individualmente os componentes da configuração
+#### METHOD 2.B: Avaliar a organização dos gráficos e indicadores
 
-**SEL. RULE:** utilizar quando o status geral indicar alguma inconsistência ou quando for necessário identificar qual componente apresenta problema.
+**SEL. RULE:** utilizar quando os indicadores apresentados são relevantes, mas sua disposição visual não atende às preferências do usuário.
 
-- **OP. 3.B.1:** verificar o estado do acompanhamento;
-- **OP. 3.B.2:** verificar o reconhecimento dos participantes;
-- **OP. 3.B.3:** verificar a disponibilidade dos indicadores;
-- **OP. 3.B.4:** comparar os resultados das verificações;
-- **OP. 3.B.5:** identificar o componente que necessita de ajuste.
+- **OP. 2.B.1:** observar a disposição dos elementos no resumo;
+- **OP. 2.B.2:** identificar os gráficos e indicadores mais importantes;
+- **OP. 2.B.3:** avaliar se a organização facilita a interpretação;
+- **OP. 2.B.4:** definir quais elementos deseja reorganizar.
 
 ---
 
-### GOAL 4: Corrigir problemas encontrados na configuração
+### GOAL 3: Acessar e utilizar a personalização da visualização
 
-#### METHOD 4.A: Corrigir apenas o componente que apresentou problema
+#### METHOD 3.A: Personalizar os indicadores exibidos
 
-**SEL. RULE:** utilizar quando o problema estiver claramente identificado e puder ser corrigido sem alterar as demais configurações.
+**SEL. RULE:** utilizar quando o usuário deseja modificar quais indicadores ou gráficos serão apresentados na visualização.
 
-- **OP. 4.A.1:** identificar o componente com problema;
-- **OP. 4.A.2:** acessar a configuração correspondente;
-- **OP. 4.A.3:** realizar o ajuste necessário;
-- **OP. 4.A.4:** repetir a verificação do componente;
-- **OP. 4.A.5:** confirmar se o problema foi resolvido.
+- **OP. 3.A.1:** localizar a opção "Nova Visualização";
+- **OP. 3.A.2:** acessar a interface de personalização;
+- **OP. 3.A.3:** examinar os indicadores e gráficos disponíveis;
+- **OP. 3.A.4:** selecionar os elementos desejados;
+- **OP. 3.A.5:** organizar os elementos selecionados.
 
-#### METHOD 4.B: Revisar a configuração do acompanhamento
+#### METHOD 3.B: Reorganizar os elementos da visualização
 
-**SEL. RULE:** utilizar quando houver mais de um problema, quando a causa não estiver clara ou quando a correção isolada não resolver a inconsistência.
+**SEL. RULE:** utilizar quando o usuário deseja manter os indicadores disponíveis, mas modificar sua organização no dashboard.
 
-- **OP. 4.B.1:** revisar a sessão selecionada;
-- **OP. 4.B.2:** revisar os participantes considerados;
-- **OP. 4.B.3:** verificar novamente o estado do acompanhamento;
-- **OP. 4.B.4:** verificar a disponibilidade dos indicadores;
-- **OP. 4.B.5:** identificar possíveis inconsistências;
-- **OP. 4.B.6:** realizar os ajustes necessários;
-- **OP. 4.B.7:** repetir a validação da configuração.
+- **OP. 3.B.1:** localizar a opção "Nova Visualização";
+- **OP. 3.B.2:** acessar a interface de personalização;
+- **OP. 3.B.3:** identificar os elementos que deseja reorganizar;
+- **OP. 3.B.4:** modificar a disposição dos gráficos e indicadores;
+- **OP. 3.B.5:** verificar a nova organização dos elementos.
 
 ---
 
-### GOAL 5: Confirmar que o acompanhamento está pronto para a aula
+### GOAL 4: Avaliar o resultado da personalização
 
-#### METHOD 5.A: Confirmar a configuração validada
+#### METHOD 4.A: Validar a visualização personalizada
 
-**SEL. RULE:** utilizar quando todas as verificações forem concluídas sem problemas e os recursos necessários estiverem disponíveis.
+**SEL. RULE:** utilizar quando a organização dos indicadores e gráficos atende às necessidades de análise do usuário.
 
-- **OP. 5.A.1:** verificar o estado final da configuração;
-- **OP. 5.A.2:** confirmar que o acompanhamento está ativo;
-- **OP. 5.A.3:** confirmar que os participantes estão corretamente definidos;
-- **OP. 5.A.4:** confirmar que os indicadores estão disponíveis;
-- **OP. 5.A.5:** concluir que o acompanhamento está pronto para uso.
+- **OP. 4.A.1:** examinar a visualização personalizada;
+- **OP. 4.A.2:** verificar a presença dos indicadores desejados;
+- **OP. 4.A.3:** avaliar a clareza e a organização das informações;
+- **OP. 4.A.4:** concluir a personalização.
+
+#### METHOD 4.B: Revisar a personalização realizada
+
+**SEL. RULE:** utilizar quando a visualização não apresenta as informações desejadas ou sua organização ainda não está adequada.
+
+- **OP. 4.B.1:** examinar a visualização personalizada;
+- **OP. 4.B.2:** identificar os elementos que precisam de ajustes;
+- **OP. 4.B.3:** retornar às opções de personalização;
+- **OP. 4.B.4:** modificar os indicadores ou a organização dos elementos;
+- **OP. 4.B.5:** avaliar novamente a visualização resultante.
+
+---
 
 ## CTT — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
 **Autor(a):** {{nome — matrícula}}
 
+
 ### Descrição
 
-O CTT representa a configuração do MindFlow AI antes do início do acompanhamento de uma aula. A tarefa envolve a interação do usuário com o sistema para selecionar a sessão, definir o escopo do acompanhamento e verificar se os recursos necessários estão disponíveis.
+O modelo CTT representa a personalização dos resultados de uma aula concluída no MindFlow AI, considerando a sequência das tarefas e suas relações temporais.
 
-Após a configuração inicial, o sistema verifica o estado do acompanhamento e disponibiliza informações de validação. Caso algum problema seja identificado, o usuário pode realizar os ajustes necessários e repetir a verificação. A tarefa é concluída quando o acompanhamento estiver configurado e pronto para uso.
+O usuário acessa "Minhas Reuniões", seleciona a aula desejada e consulta seu resumo. Em seguida, identifica as informações que deseja modificar e utiliza a opção "Nova Visualização" para selecionar indicadores e reorganizar os gráficos.
+
+Após finalizar a edição, verifica se a visualização atende às suas necessidades. Caso contrário, pode retornar à personalização e realizar novos ajustes.
 
 ### Diagrama
 
-![CTT T01](../assets/05_tarefas/ctt_t01.svg)
+![CTT T01]([../assets/05_tarefas/ctt_t01.svg](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/Kayky-Response/assets/05_tarefas/ctt-1.png))
+
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Nuvem | **Tarefa abstrata.** Representa uma composição de outras tarefas e auxilia na decomposição da atividade. | **Configurar o acompanhamento da aula** e **Validar a configuração**. |
-| Retângulo | **Tarefa do usuário.** Representa uma atividade realizada pelo usuário sem interação direta com o sistema naquele momento. | **Avaliar se a configuração apresentada está adequada** e **decidir se é necessário realizar ajustes**. |
-| Hexágono | **Tarefa do sistema.** Representa uma atividade executada pelo sistema sem interação direta do usuário naquele momento. | **Verificar disponibilidade do acompanhamento** e **verificar reconhecimento dos participantes**. |
-| Círculo | **Tarefa interativa.** Representa uma atividade que envolve interação entre usuário e sistema. | **Selecionar a sessão**, **definir participantes**, **consultar o status da configuração** e **realizar ajustes**. |
-| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | **Selecionar a sessão** `>>` **Definir o escopo do acompanhamento** `>>` **Validar a configuração**. |
-| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | **Verificar o estado da configuração** `[ ] >>` **Consultar o status da configuração**. |
-| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra alternativa deixa de estar habilitada naquele momento. | Após a validação, o usuário pode **confirmar a configuração** `[ ]` **corrigir a configuração**. |
-| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Após **corrigir a configuração**, o usuário retorna à tarefa **Validar a configuração** para verificar novamente o acompanhamento. |
-
-No modelo, não foi utilizada relação de concorrência (`|||`), pois as principais atividades de configuração dependem da conclusão das etapas anteriores. A desabilitação ocorre por meio da relação de escolha (`[ ]`): ao optar por confirmar a configuração ou realizar uma correção, a alternativa não escolhida deixa de estar ativa naquele momento.
+| Nuvem | Tarefa abstrata. Representa uma composição de outras tarefas e auxilia na decomposição da atividade. | Localizar a aula concluída, Avaliar o resumo, Personalizar a visualização e Conferir o resultado. |
+| Retângulo | Tarefa do usuário. Representa uma atividade realizada pelo usuário sem interação direta com o sistema naquele momento. | Identificar a aula desejada, Definir elementos a modificar e Verificar se a visualização atende às necessidades. |
+| Hexágono | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | Exibir o resumo da aula, Mostrar opções de personalização e Exibir a visualização personalizada. |
+| Círculo | Tarefa interativa. Representa uma atividade que envolve interação entre usuário e sistema. | Selecionar Ver Resumo, Acessar Nova Visualização, Selecionar indicadores e Reorganizar elementos. |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Localizar a aula → Avaliar o resumo → Personalizar a visualização → Conferir o resultado. |
+| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | Selecionar Ver Resumo → Sistema exibir o resumo da aula. |
+| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Selecionar indicadores e gráficos ou reorganizar elementos no dashboard. |
+| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Caso a visualização não atenda às necessidades, o usuário retorna à personalização e realiza novos ajustes. |
 
 ---
 
