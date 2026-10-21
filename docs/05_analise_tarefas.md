@@ -1,7 +1,8 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** 14/10/2026  
-**Status:** 🟧 em andamento  
+**Status:** 🟧 em andamento 
+
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -30,8 +31,6 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
 | T04 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
-| T05 | Interpretar os sinais de compreensão da turma durante a aula e decidir como conduzir o restante da explicação | P02 / C05 — professora de inglês avaliando, ainda na aula, se a turma entendeu o conteúdo | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
-| T06 | Conduzir uma explicação nova enquanto observa os sinais da turma e reage a eles | P02 / C05 — professora de inglês que explica, observa e decide ao mesmo tempo | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
@@ -120,7 +119,7 @@ flowchart TB
 
 ---
 
-## GOMS — T05 Interpretar os sinais de compreensão da turma durante a aula e decidir como conduzir o restante da explicação
+## GOMS — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
@@ -197,7 +196,7 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 
 ---
 
-## CTT — T06 Conduzir uma explicação nova enquanto observa os sinais da turma e reage a eles
+## CTT — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
