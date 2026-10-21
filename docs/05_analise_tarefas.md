@@ -38,7 +38,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ## HTA — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
 ### Descrição da tarefa
 
@@ -147,7 +147,7 @@ flowchart TB
 
 ## GOMS — T02 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
 ### GOAL 0: Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
@@ -247,7 +247,7 @@ flowchart TB
 
 ## CTT — T01 Configurar o acompanhamento de uma aula no MindFlow AI
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
 
 ### Descrição
@@ -260,8 +260,7 @@ Após finalizar a edição, verifica se a visualização atende às suas necessi
 
 ### Diagrama
 
-![CTT T01]([../assets/05_tarefas/ctt_t01.svg](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/Kayky-Response/assets/05_tarefas/ctt-1.png))
-
+https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_t03_legenda.png
 
 ### Legenda e relações temporais usadas
 
