@@ -50,6 +50,7 @@ Caso a visualização atual não atenda às suas necessidades, o usuário acessa
 
 A tarefa é concluída quando o usuário finaliza a personalização e verifica se a visualização resultante apresenta as informações necessárias de maneira clara e organizada, facilitando a interpretação dos resultados da aula.
 
+
 ### Diagrama
 
 ```mermaid
@@ -90,12 +91,18 @@ flowchart TB
     T3 --> T32
 
     T41[["4.1 Selecionar Nova Visualização"]]
-    T42[["4.2 Escolher os indicadores e gráficos desejados"]]
+    T42["4.2 Escolher os indicadores e gráficos desejados<br/><b>Plano 4.2:</b> 4.2.1 OU 4.2.2"]
     T43[["4.3 Organizar os elementos da visualização"]]
 
     T4 --> T41
     T4 --> T42
     T4 --> T43
+
+    T421[["4.2.1 Priorizar indicadores de engajamento"]]
+    T422[["4.2.2 Priorizar indicadores de tédio, confusão e frustração"]]
+
+    T42 --> T421
+    T42 --> T422
 
     T51[["5.1 Concluir a edição da visualização"]]
     T52[["5.2 Verificar se a organização atende às necessidades"]]
@@ -106,11 +113,9 @@ flowchart TB
     classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
     classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
 
-    class T0,T1,T2,T3,T4,T5 objetivo;
-    class T11,T12,T13,T21,T22,T31,T32,T41,T42,T43,T51,T52 operacao;
+    class T0,T1,T2,T3,T4,T5,T42 objetivo;
+    class T11,T12,T13,T21,T22,T31,T32,T41,T421,T422,T43,T51,T52 operacao;
 ```
-
-
 
 ### Decomposição e planos
 
@@ -129,19 +134,21 @@ flowchart TB
 | 3.2 | Decidir quais elementos deseja modificar | Após 3.1. | As possibilidades de personalização devem estar evidentes. |
 | 4 | Personalizar a visualização | 4.1 > 4.2 > 4.3 | O sistema deve permitir que o usuário organize os resultados conforme suas preferências. |
 | 4.1 | Acessar a opção de personalização | Operação inicial do objetivo 4. | A funcionalidade de personalização deve ser facilmente localizada. |
-| 4.2 | Selecionar os indicadores e gráficos desejados | Após 4.1. | As opções disponíveis precisam ser compreensíveis. |
+| 4.2 | Escolher os indicadores e gráficos desejados | 4.2.1 OU 4.2.2, conforme o objetivo da análise. | Permitir que o usuário priorize diferentes estados cognitivos conforme suas necessidades. |
+| 4.2.1 | Priorizar indicadores de engajamento | Quando o usuário deseja analisar principalmente o nível de engajamento dos participantes. | Destacar informações relacionadas ao engajamento durante a aula. |
+| 4.2.2 | Priorizar indicadores de tédio, confusão e frustração | Quando o usuário deseja identificar momentos de possível dificuldade ou desinteresse. | Destacar informações que auxiliem na identificação de períodos que merecem atenção. |
 | 4.3 | Organizar os elementos selecionados | Após 4.2. | O usuário deve conseguir ajustar a apresentação das informações. |
 | 5 | Finalizar e avaliar a visualização | 5.1 > 5.2. Se necessário, retornar ao objetivo 4. | O usuário precisa verificar se a personalização atende às suas necessidades. |
 | 5.1 | Concluir a personalização | Operação inicial do objetivo 5. | Deve existir uma forma clara de finalizar as alterações. |
 | 5.2 | Avaliar a visualização resultante | Após 5.1. | O usuário deve conseguir identificar se precisa realizar novos ajustes. |
 
-
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+- **O objetivo 0 representa uma meta do usuário?** Sim. Personalizar a apresentação dos resultados conforme as necessidades de análise.
+- **As subtarefas são necessárias e suficientes?** Sim. Abrangem localização, consulta, definição de prioridades, personalização e avaliação.
+- **Os planos indicam ordem, alternativa, repetição ou condição?** Sim. Há execução sequencial, escolha alternativa na tarefa 4.2 e possibilidade de repetir a personalização.
+- **A decomposição parou em nível útil para projeto de interação?** Sim. As operações representam ações e decisões relevantes do usuário.
+
 
 ---
 
@@ -198,27 +205,29 @@ flowchart TB
 
 ---
 
-### GOAL 3: Acessar e utilizar a personalização da visualização
 
-#### METHOD 3.A: Personalizar os indicadores exibidos
+### GOAL 3: Selecionar os indicadores para personalizar a visualização
 
-**SEL. RULE:** utilizar quando o usuário deseja modificar quais indicadores ou gráficos serão apresentados na visualização.
+#### METHOD 3.A: Priorizar indicadores de engajamento
 
-- **OP. 3.A.1:** localizar a opção "Nova Visualização";
-- **OP. 3.A.2:** acessar a interface de personalização;
-- **OP. 3.A.3:** examinar os indicadores e gráficos disponíveis;
-- **OP. 3.A.4:** selecionar os elementos desejados;
-- **OP. 3.A.5:** organizar os elementos selecionados.
+**SEL. RULE:** utilizar quando o usuário deseja analisar principalmente o nível de engajamento dos participantes durante a aula.
 
-#### METHOD 3.B: Reorganizar os elementos da visualização
+- **OP. 3.A.1:** acessar a opção "Nova Visualização";
+- **OP. 3.A.2:** examinar os indicadores disponíveis;
+- **OP. 3.A.3:** selecionar os indicadores de engajamento;
+- **OP. 3.A.4:** organizar os gráficos selecionados;
+- **OP. 3.A.5:** confirmar a personalização.
 
-**SEL. RULE:** utilizar quando o usuário deseja manter os indicadores disponíveis, mas modificar sua organização no dashboard.
+#### METHOD 3.B: Priorizar indicadores de tédio, confusão e frustração
 
-- **OP. 3.B.1:** localizar a opção "Nova Visualização";
-- **OP. 3.B.2:** acessar a interface de personalização;
-- **OP. 3.B.3:** identificar os elementos que deseja reorganizar;
-- **OP. 3.B.4:** modificar a disposição dos gráficos e indicadores;
-- **OP. 3.B.5:** verificar a nova organização dos elementos.
+**SEL. RULE:** utilizar quando o usuário deseja identificar momentos de dificuldade, desinteresse ou frustração dos participantes.
+
+- **OP. 3.B.1:** acessar a opção "Nova Visualização";
+- **OP. 3.B.2:** examinar os indicadores disponíveis;
+- **OP. 3.B.3:** selecionar os indicadores de tédio, confusão e frustração;
+- **OP. 3.B.4:** organizar os gráficos selecionados;
+- **OP. 3.B.5:** confirmar a personalização.
+
 
 ---
 
