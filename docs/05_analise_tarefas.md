@@ -1,4 +1,4 @@
-# Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
+s# Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** {{10/09/2026}}  
 **Status:** 🟨  iniciada  
@@ -91,7 +91,7 @@ flowchart TB
     T3 --> T32
 
     T41[["4.1 Selecionar Nova Visualização"]]
-    T42["4.2 Escolher os indicadores e gráficos desejados<br/><b>Plano 4.2:</b> 4.2.1 OU 4.2.2"]
+    T42["4.2 Escolher os indicadores e gráficos desejados<br/><b>Plano 4.2:</b> 4.2.1 / 4.2.2"]
     T43[["4.3 Organizar os elementos da visualização"]]
 
     T4 --> T41
@@ -185,24 +185,14 @@ flowchart TB
 
 ### GOAL 2: Identificar as necessidades de personalização
 
-#### METHOD 2.A: Avaliar os indicadores apresentados
+#### METHOD 2: Avaliar os indicadores apresentados
 
 **SEL. RULE:** utilizar quando o usuário deseja verificar se os indicadores disponíveis atendem às suas necessidades de análise.
 
-- **OP. 2.A.1:** examinar os indicadores exibidos no resumo;
-- **OP. 2.A.2:** identificar os estados cognitivos apresentados;
-- **OP. 2.A.3:** avaliar a relevância dos indicadores para a análise;
-- **OP. 2.A.4:** identificar quais informações deseja manter ou modificar.
-
-#### METHOD 2.B: Avaliar a organização dos gráficos e indicadores
-
-**SEL. RULE:** utilizar quando os indicadores apresentados são relevantes, mas sua disposição visual não atende às preferências do usuário.
-
-- **OP. 2.B.1:** observar a disposição dos elementos no resumo;
-- **OP. 2.B.2:** identificar os gráficos e indicadores mais importantes;
-- **OP. 2.B.3:** avaliar se a organização facilita a interpretação;
-- **OP. 2.B.4:** definir quais elementos deseja reorganizar.
-
+- **OP. 2.1:** examinar os indicadores exibidos no resumo;
+- **OP. 2.2:** identificar os estados cognitivos apresentados;
+- **OP. 2.3:** avaliar a relevância dos indicadores para a análise;
+- **OP. 2.4:** identificar quais informações deseja manter ou modificar.
 ---
 
 
