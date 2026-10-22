@@ -55,20 +55,17 @@ A tarefa é concluída quando o docente decide manter a condução atual ou real
 ```mermaid
 flowchart TB
 
-    T0["0. Interpretar os indicadores e decidir<br/>se deve adaptar a condução durante a aula<br/><b>Plano 0:</b> 1 > [2, se necessário] > 3 > 4<br/>repetir enquanto a aula estiver em andamento"]
+    T0["0. Interpretar os indicadores e decidir<br/>se deve adaptar a condução durante a aula<br/><b>Plano 0:</b> 1  > 2 > 3<br/>repetir enquanto a aula estiver em andamento"]
 
-    T1["1. Compreender o estado atual<br/><b>Plano 1:</b> 1.1 > [1.2, se necessário]"]
+    T1["1. Analisar o estado atual<br/><b>Plano 1:</b> 1.1 > 1.2"]
 
-    T2["2. Analisar a evolução dos indicadores<br/><b>Plano 2:</b> 2.1 > 2.2 > 2.3"]
+    T2["2. Avaliar a relevância da situação<br/><b>Plano 2:</b> 2.1 > 2.2"]
 
-    T3["3. Avaliar a relevância da situação<br/><b>Plano 3:</b> 3.1 > 3.2"]
-
-    T4["4. Decidir como prosseguir<br/><b>Plano 4:</b> 4.1 / 4.2"]
+    T3["3. Decidir como prosseguir<br/><b>Plano 3:</b> 3.1 / 3.2"]
 
     T0 --> T1
     T0 --> T2
     T0 --> T3
-    T0 --> T4
 
     T11[["1.1 Observar o indicador geral<br/>do estado do grupo"]]
     T12[["1.2 Consultar indicadores específicos<br/>de engajamento, tédio,<br/>confusão e frustração"]]
@@ -76,31 +73,23 @@ flowchart TB
     T1 --> T11
     T1 --> T12
 
-    T21[["2.1 Consultar a evolução temporal<br/>dos indicadores"]]
-    T22[["2.2 Comparar o estado atual<br/>com momentos anteriores"]]
-    T23[["2.3 Identificar tendência,<br/>oscilação ou estabilidade"]]
+    T21[["2.1 Interpretar a alteração<br/>observada"]]
+    T22[["2.2 Avaliar se a mudança<br/>justifica uma intervenção"]]
 
     T2 --> T21
     T2 --> T22
-    T2 --> T23
 
-    T31[["3.1 Interpretar a alteração<br/>observada"]]
-    T32[["3.2 Avaliar se a mudança<br/>justifica uma intervenção"]]
+    T31[["3.1 Manter a condução atual"]]
+    T32[["3.2 Definir uma adaptação<br/>na condução da aula"]]
 
     T3 --> T31
     T3 --> T32
 
-    T41[["4.1 Manter a condução atual"]]
-    T42[["4.2 Definir uma adaptação<br/>na condução da aula"]]
-
-    T4 --> T41
-    T4 --> T42
-
     classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
     classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
 
-    class T0,T1,T2,T3,T4 objetivo;
-    class T11,T12,T21,T22,T23,T31,T32,T41,T42 operacao;
+    class T0,T1,T2,T3 objetivo;
+    class T11,T12,T21,T22,T31,T32 operacao;
 ```
 
 ## Decomposição e planos
