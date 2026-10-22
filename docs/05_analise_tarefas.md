@@ -269,16 +269,16 @@ Após finalizar a edição, verifica se a visualização atende às suas necessi
 
 ### Diagrama
 
-https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_t03_legenda.png
+https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.png
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Nuvem | Tarefa abstrata. Representa uma composição de outras tarefas e auxilia na decomposição da atividade. | Localizar a aula concluída, Avaliar o resumo, Personalizar a visualização e Conferir o resultado. |
-| Retângulo | Tarefa do usuário. Representa uma atividade realizada pelo usuário sem interação direta com o sistema naquele momento. | Identificar a aula desejada, Definir elementos a modificar e Verificar se a visualização atende às necessidades. |
-| Hexágono | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | Exibir o resumo da aula, Mostrar opções de personalização e Exibir a visualização personalizada. |
-| Círculo | Tarefa interativa. Representa uma atividade que envolve interação entre usuário e sistema. | Selecionar Ver Resumo, Acessar Nova Visualização, Selecionar indicadores e Reorganizar elementos. |
+| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Localizar e abrir o resumo da aula; Personalizar e avaliar. |
+| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | IIdentificar a aula desejada; Definir necessidades; Analisar a visualização resultante. |
+| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | ECarregar as reuniões; Exibir o resumo da aula; Atualizar o dashboard. |
+| Pessoa e computador | TTarefa de interação. Representa uma ação do usuário na interface. | Selecionar Ver Resumo; Selecionar indicadores e gráficos desejados; Organizar elementos; Confirmar alterações. |
 | `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Localizar a aula → Avaliar o resumo → Personalizar a visualização → Conferir o resultado. |
 | `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | Selecionar Ver Resumo → Sistema exibir o resumo da aula. |
 | `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Selecionar indicadores e gráficos ou reorganizar elementos no dashboard. |
