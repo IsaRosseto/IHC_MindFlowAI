@@ -1,4 +1,4 @@
-s# Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
+# Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** {{10/09/2026}}  
 **Status:** 🟨  iniciada  
