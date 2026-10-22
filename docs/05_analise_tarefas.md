@@ -30,7 +30,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
 | T01 | Acompanhar e interpretar o estado dos participantes durante uma aula on-line | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
-| T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução da aula | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
+| T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula  | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
 | T03 | Conduzir a aula enquanto acompanha e responde aos estados dos participantes | P01 / C01 — Docente em uma aula EAD síncrona | Alta frequência / Alta criticidade | {{nome — matrícula}} |
 
 
@@ -38,7 +38,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ---
 
-# HTA — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução da aula
+# HTA — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
@@ -55,7 +55,7 @@ A tarefa é concluída quando o docente decide manter a condução atual ou real
 ```mermaid
 flowchart TB
 
-    T0["0. Interpretar os indicadores e decidir<br/>como prosseguir com a aula<br/><b>Plano 0:</b> 1 > [2, se necessário] > 3 > 4<br/>repetir enquanto a aula estiver em andamento"]
+    T0["0. Interpretar os indicadores e decidir<br/>se deve adaptar a condução durante a aula<br/><b>Plano 0:</b> 1 > [2, se necessário] > 3 > 4<br/>repetir enquanto a aula estiver em andamento"]
 
     T1["1. Compreender o estado atual<br/><b>Plano 1:</b> 1.1 > [1.2, se necessário]"]
 
@@ -107,7 +107,7 @@ flowchart TB
 
 | ID  | Objetivo/operação                                               | Plano/ordem                                                  | Problema ou decisão de design observada                                                                                  |
 | --- | --------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| 0   | Interpretar os indicadores e decidir como prosseguir com a aula | **1 > [2, se necessário] > 3 > 4**, repetindo durante a aula | O processo precisa ser rápido para não desviar excessivamente a atenção do docente da aula.                              |
+| 0   | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | **1 > [2, se necessário] > 3 > 4**, repetindo durante a aula | O processo precisa ser rápido para não desviar excessivamente a atenção do docente da aula.                              |
 | 1   | Compreender o estado atual                                      | **1.1 > [1.2, se necessário]**                               | A informação principal precisa ser percebida rapidamente, deixando detalhes disponíveis apenas quando forem necessários. |
 | 1.1 | Observar o indicador geral do estado do grupo                   | Primeira operação                                            | O estado predominante deve ser facilmente identificável e não depender exclusivamente de cores.                          |
 | 1.2 | Consultar indicadores específicos                               | Executar quando o indicador geral não for suficiente         | Exibir vários indicadores simultaneamente pode aumentar a carga cognitiva durante a aula.                                |
@@ -130,11 +130,11 @@ flowchart TB
 
 ---
 
-# GOMS — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução da aula
+# GOMS — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
-## GOAL 0: Interpretar os indicadores do MindFlow AI e decidir como prosseguir com a aula
+## GOAL 0: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 ---
 
@@ -228,7 +228,7 @@ flowchart TB
 
 ---
 
-# CTT — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução da aula
+# CTT — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
@@ -247,7 +247,7 @@ Como os indicadores são atualizados ao longo da sessão, esse processo pode ser
 ```mermaid
 flowchart TB
 
-    T0(["Interpretar indicadores e decidir<br/>como prosseguir com a aula<br/><b>Tarefa abstrata</b>"])
+    T0(["Interpretar indicadores e decidir<br/>se deve adaptar a condução durante a aula<br/><b>Tarefa abstrata</b>"])
 
     S1{{"Atualizar indicadores<br/>do dashboard<br/><b>Sistema</b>"}}
 
