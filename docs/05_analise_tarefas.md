@@ -94,22 +94,19 @@ flowchart TB
 
 ## Decomposição e planos
 
-| ID  | Objetivo/operação                                               | Plano/ordem                                                  | Problema ou decisão de design observada                                                                                  |
-| --- | --------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| 0   | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | **1 > [2, se necessário] > 3 > 4**, repetindo durante a aula | O processo precisa ser rápido para não desviar excessivamente a atenção do docente da aula.                              |
-| 1   | Compreender o estado atual                                      | **1.1 > [1.2, se necessário]**                               | A informação principal precisa ser percebida rapidamente, deixando detalhes disponíveis apenas quando forem necessários. |
-| 1.1 | Observar o indicador geral do estado do grupo                   | Primeira operação                                            | O estado predominante deve ser facilmente identificável e não depender exclusivamente de cores.                          |
-| 1.2 | Consultar indicadores específicos                               | Executar quando o indicador geral não for suficiente         | Exibir vários indicadores simultaneamente pode aumentar a carga cognitiva durante a aula.                                |
-| 2   | Analisar a evolução dos indicadores                             | **2.1 > 2.2 > 2.3**                                          | Uma mudança pontual não deve ser automaticamente interpretada como tendência.                                            |
-| 2.1 | Consultar a evolução temporal                                   | Primeira etapa da análise temporal                           | O histórico precisa permitir associação entre o momento da aula e a alteração observada.                                 |
-| 2.2 | Comparar o estado atual com momentos anteriores                 | Após 2.1                                                     | A comparação precisa ser simples e rápida.                                                                               |
-| 2.3 | Identificar tendência, oscilação ou estabilidade                | Após 2.2                                                     | O sistema deve oferecer contexto suficiente para evitar interpretações baseadas somente em um instante isolado.          |
-| 3   | Avaliar a relevância da situação                                | **3.1 > 3.2**                                                | Os indicadores funcionam como apoio à decisão e não como uma conclusão absoluta sobre os participantes.                  |
-| 3.1 | Interpretar a alteração observada                               | Após compreender os indicadores                              | O docente deve relacionar os dados ao contexto atual da aula.                                                            |
-| 3.2 | Avaliar se a mudança justifica uma intervenção                  | Após 3.1                                                     | A decisão sobre intervir permanece com o docente.                                                                        |
-| 4   | Decidir como prosseguir                                         | **4.1 / 4.2**                                                | A interface deve apoiar a decisão sem impor automaticamente uma ação pedagógica.                                         |
-| 4.1 | Manter a condução atual                                         | Alternativa quando não houver necessidade de adaptação       | Pequenas oscilações podem não justificar alterações na aula.                                                             |
-| 4.2 | Definir uma adaptação na condução da aula                       | Alternativa quando houver mudança considerada relevante      | A adaptação escolhida depende do contexto e do estado observado.     
+| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+|---|---|---|---|
+| **0** | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | **1 > 2 > 3**, repetindo enquanto a aula estiver em andamento. | O processo precisa ser rápido para não desviar excessivamente a atenção do docente durante a aula. |
+| **1** | Analisar o estado atual | **1.1 > 1.2** | Os indicadores devem permitir que o docente compreenda rapidamente o estado dos participantes. |
+| 1.1 | Observar o indicador geral do estado do grupo | Primeira operação. | O estado predominante deve ser facilmente identificado e não depender exclusivamente de cores. |
+| 1.2 | Consultar indicadores específicos de engajamento, tédio, confusão e frustração | Executar após 1.1. | A apresentação simultânea de vários indicadores pode aumentar a carga cognitiva durante a aula. |
+| **2** | Avaliar a relevância da situação | **2.1 > 2.2** | Os indicadores devem funcionar como apoio à decisão, sem representar conclusões absolutas sobre os participantes. |
+| 2.1 | Interpretar a alteração observada | Primeira operação da avaliação. | O docente precisa relacionar os indicadores ao contexto da aula, evitando interpretações baseadas apenas em oscilações pontuais. |
+| 2.2 | Avaliar se a mudança justifica uma intervenção | Executar após 2.1. | A decisão sobre a necessidade de intervenção deve permanecer sob responsabilidade do docente. |
+| **3** | Decidir como prosseguir | **3.1 / 3.2**, conforme a avaliação realizada em 2.2. | A interface deve apoiar a decisão sem impor automaticamente uma ação pedagógica. |
+| 3.1 | Manter a condução atual | Executar quando a situação não justificar uma adaptação. | Pequenas oscilações nos indicadores podem não exigir alterações na condução da aula. |
+| 3.2 | Definir uma adaptação na condução da aula | Executar quando a situação justificar uma intervenção. | A adaptação escolhida depende do contexto da aula e dos estados observados. |
+
 **Verificação do HTA:**
 
 - O objetivo 0 representa uma meta do usuário?
@@ -119,89 +116,83 @@ flowchart TB
 
 ---
 
-# GOMS — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
+
+# GOMS — T02: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
 ## GOAL 0: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
+**METHOD 0.A:** Analisar o estado atual dos participantes, avaliar a relevância da situação e decidir como prosseguir.
+
+- **OP. 0.A.1:** analisar o estado atual dos participantes (GOAL 1);
+- **OP. 0.A.2:** avaliar a relevância da situação (GOAL 2);
+- **OP. 0.A.3:** decidir como prosseguir com a aula (GOAL 3);
+- **OP. 0.A.4:** repetir o processo enquanto a aula estiver em andamento.
+
 ---
 
-## GOAL 1: Compreender o estado atual dos participantes
+## GOAL 1: Analisar o estado atual dos participantes
 
-### METHOD 1.A: Consultar o indicador geral
+### METHOD 1.A: Observar o indicador geral do estado do grupo
 
-**SEL. RULE:** utilizar como primeira forma de consulta, quando o docente precisa compreender rapidamente o estado predominante do grupo.
+**SEL. RULE:** utilizar para identificar rapidamente o estado predominante dos participantes.
 
-* **OP. 1.A.1:** direcionar a atenção para o indicador geral;
-* **OP. 1.A.2:** identificar o estado predominante apresentado;
-* **OP. 1.A.3:** verificar o valor associado ao estado;
-* **OP. 1.A.4:** interpretar a informação apresentada.
+- **OP. 1.A.1:** direcionar a atenção para o indicador geral;
+- **OP. 1.A.2:** observar o estado predominante apresentado;
+- **OP. 1.A.3:** verificar o valor associado ao estado;
+- **OP. 1.A.4:** interpretar a informação apresentada.
 
 ### METHOD 1.B: Consultar os indicadores específicos
 
-**SEL. RULE:** utilizar quando o indicador geral não fornecer informação suficiente ou quando for necessário compreender melhor a composição dos estados apresentados.
+**SEL. RULE:** utilizar após observar o indicador geral, para compreender a distribuição dos estados de engajamento, tédio, confusão e frustração.
 
-* **OP. 1.B.1:** acessar os indicadores específicos;
-* **OP. 1.B.2:** observar os valores de engajamento, tédio, confusão e frustração;
-* **OP. 1.B.3:** comparar os valores;
-* **OP. 1.B.4:** identificar os estados de maior intensidade.
-
----
-
-## GOAL 2: Verificar se houve uma mudança relevante
-
-### METHOD 2.A: Comparar com momentos anteriores
-
-**SEL. RULE:** utilizar quando o estado atual aparentar diferença em relação ao que vinha sendo apresentado anteriormente.
-
-* **OP. 2.A.1:** consultar a evolução temporal;
-* **OP. 2.A.2:** localizar o momento atual;
-* **OP. 2.A.3:** observar os valores anteriores;
-* **OP. 2.A.4:** comparar os valores atuais com os anteriores;
-* **OP. 2.A.5:** identificar aumento, redução ou estabilidade.
-
-### METHOD 2.B: Considerar somente o estado atual
-
-**SEL. RULE:** utilizar quando o indicador estiver estável e não houver evidência de uma alteração que exija análise histórica.
-
-* **OP. 2.B.1:** verificar o estado atual;
-* **OP. 2.B.2:** reconhecer que não há alteração relevante;
-* **OP. 2.B.3:** prosseguir para a decisão.
+- **OP. 1.B.1:** direcionar a atenção para os indicadores específicos;
+- **OP. 1.B.2:** observar os valores de engajamento, tédio, confusão e frustração;
+- **OP. 1.B.3:** comparar os valores apresentados;
+- **OP. 1.B.4:** identificar os estados mais relevantes naquele momento.
 
 ---
 
-## GOAL 3: Interpretar a situação
+## GOAL 2: Avaliar a relevância da situação
 
-### METHOD 3.A: Relacionar os indicadores ao contexto da aula
+### METHOD 2.A: Interpretar a alteração observada
 
-**SEL. RULE:** utilizar após a consulta dos indicadores para avaliar se a informação apresentada possui significado no momento atual da aula.
+**SEL. RULE:** utilizar após analisar os indicadores, considerando o contexto atual da aula.
 
-* **OP. 3.A.1:** identificar o conteúdo ou atividade realizada naquele momento;
-* **OP. 3.A.2:** relacionar o contexto aos estados apresentados;
-* **OP. 3.A.3:** avaliar a intensidade da alteração;
-* **OP. 3.A.4:** determinar se a mudança é relevante.
+- **OP. 2.A.1:** identificar os estados que merecem atenção;
+- **OP. 2.A.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
+- **OP. 2.A.3:** interpretar o significado dos estados observados no contexto da aula.
+
+### METHOD 2.B: Avaliar a necessidade de intervenção
+
+**SEL. RULE:** utilizar após interpretar a situação para determinar se é necessário modificar a condução da aula.
+
+- **OP. 2.B.1:** considerar a relevância dos indicadores observados;
+- **OP. 2.B.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
+- **OP. 2.B.3:** determinar se a situação justifica uma intervenção pedagógica.
 
 ---
 
-## GOAL 4: Decidir como prosseguir com a aula
+## GOAL 3: Decidir como prosseguir com a aula
 
-### METHOD 4.A: Manter a condução atual
+### METHOD 3.A: Manter a condução atual
 
-**SEL. RULE:** utilizar quando não houver alteração relevante ou quando os indicadores estiverem compatíveis com a situação esperada naquele momento.
+**SEL. RULE:** utilizar quando os indicadores não demonstrarem uma situação que justifique adaptação da aula.
 
-* **OP. 4.A.1:** concluir que não é necessária intervenção;
-* **OP. 4.A.2:** manter a condução atual da aula;
-* **OP. 4.A.3:** continuar acompanhando os indicadores.
+- **OP. 3.A.1:** decidir manter a estratégia pedagógica atual;
+- **OP. 3.A.2:** continuar a condução da aula sem alterações;
+- **OP. 3.A.3:** acompanhar os próximos indicadores apresentados pelo sistema.
 
-### METHOD 4.B: Adaptar a condução da aula
+### METHOD 3.B: Definir uma adaptação na condução da aula
 
-**SEL. RULE:** utilizar quando o docente interpretar que a alteração dos indicadores é relevante e pode exigir uma mudança na condução da aula.
+**SEL. RULE:** utilizar quando os indicadores e o contexto da aula demonstrarem necessidade de intervenção.
 
-* **OP. 4.B.1:** reconhecer a necessidade de intervenção;
-* **OP. 4.B.2:** selecionar uma estratégia adequada;
-* **OP. 4.B.3:** realizar a adaptação;
-* **OP. 4.B.4:** continuar acompanhando os indicadores.
+- **OP. 3.B.1:** identificar o estado que motivou a necessidade de adaptação;
+- **OP. 3.B.2:** considerar possíveis mudanças na estratégia pedagógica;
+- **OP. 3.B.3:** selecionar a adaptação mais adequada ao contexto;
+- **OP. 3.B.4:** aplicar a adaptação durante a aula;
+- **OP. 3.B.5:** acompanhar os próximos indicadores para observar a resposta dos participantes.
 
 ---
 
@@ -231,83 +222,65 @@ Quando considerar necessário obter mais contexto, pode **consultar a evolução
 
 Como os indicadores são atualizados ao longo da sessão, esse processo pode ser repetido diversas vezes durante a aula.
 
-## Diagrama
-
-```mermaid
-flowchart TB
-
-    T0(["Interpretar indicadores e decidir<br/>se deve adaptar a condução durante a aula<br/><b>Tarefa abstrata</b>"])
-
-    S1{{"Atualizar indicadores<br/>do dashboard<br/><b>Sistema</b>"}}
-
-    I1(("Consultar estado<br/>do grupo<br/><b>Interação</b>"))
-
-    U1["Interpretar indicadores<br/>apresentados<br/><b>Usuário</b>"]
-
-    I2(("Consultar evolução<br/>temporal<br/><b>Interação</b>"))
-
-    U2["Avaliar relevância<br/>da situação<br/><b>Usuário</b>"]
-
-    A1(["Definir como prosseguir<br/><b>Tarefa abstrata</b>"])
-
-    U3["Manter condução<br/>atual<br/><b>Usuário</b>"]
-
-    U4["Adaptar condução<br/>da aula<br/><b>Usuário</b>"]
-
-    T0 --> S1
-    S1 -->|"[ ] >>"| I1
-    I1 -->|">>"| U1
-
-    U1 -->|"se necessário"| I2
-    U1 -->|"se informação suficiente"| U2
-    I2 -->|">>"| U2
-
-    U2 -->|">>"| A1
-
-    A1 -->|"[ ]"| U3
-    A1 -->|"[ ]"| U4
-
-    U3 -. "repetição durante a aula" .-> S1
-    U4 -. "repetição durante a aula" .-> S1
-```
-
-## Estrutura temporal simplificada
+### Árvore de decomposição
 
 ```text
-Atualizar indicadores
-    [ ] >>
-Consultar estado do grupo
-    >>
-Interpretar indicadores
-    >>
-[ Consultar evolução temporal, se necessário ]
-    >>
-Avaliar relevância da situação
-    >>
-(
-    Manter condução atual
-    [ ]
-    Adaptar condução da aula
-)
-
-Após a decisão, o ciclo pode ser repetido enquanto a aula estiver em andamento.
+0. Interpretar os indicadores e decidir se deve adaptar a aula
+│
+└── >>
+    1. Analisar o estado atual
+    │
+    └── >>
+        1.1. Observar o indicador geral
+        │
+        └── >>
+            1.2. Consultar indicadores específicos
+            │
+            └── >>
+                2. Avaliar a relevância da situação
+                │
+                └── >>
+                    2.1. Interpretar a alteração observada
+                    │
+                    └── >>
+                        2.2. Avaliar se a mudança justifica intervenção
+                        │
+                        └── >>
+                            3. Decidir como prosseguir
+                            │
+                            └── [] ESCOLHA
+                                │
+                                ├── 3.1. Manter a condução atual
+                                │
+                                └── 3.2. Definir uma adaptação na aula
 ```
 
-## Legenda e relações temporais
+### Relações temporais
 
-| Operador/relação  | Significado no modelo                                    | Aplicação na T02                                                                                              |
-| ----------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Tarefa abstrata   | Agrupa tarefas relacionadas a um objetivo maior          | **Interpretar indicadores e decidir como prosseguir** e **Definir como prosseguir**                           |
-| Tarefa do usuário | Ação realizada pelo docente                              | **Interpretar indicadores**, **Avaliar relevância**, **Manter condução atual** e **Adaptar condução da aula** |
-| Tarefa do sistema | Atividade executada automaticamente pelo MindFlow AI     | **Atualizar indicadores do dashboard**                                                                        |
-| Tarefa interativa | Atividade que envolve interação entre usuário e sistema  | **Consultar estado do grupo** e **Consultar evolução temporal**                                               |
-| `[ ] >>`          | Habilitação com passagem de informação                   | O sistema atualiza os indicadores e essas informações ficam disponíveis para consulta                         |
-| `>>`              | Habilitação                                              | A interpretação ocorre após a consulta dos indicadores e a decisão ocorre após sua avaliação                  |
-| `[ ]`             | Escolha                                                  | O docente decide entre **manter a condução atual** ou **adaptar a aula**                                      |
-| Condição          | Determina que uma tarefa ocorre apenas quando necessária | A evolução temporal é consultada quando o estado atual não oferece contexto suficiente                        |
-| Repetição         | Permite executar novamente o conjunto de tarefas         | Após a decisão, novos indicadores podem iniciar outro ciclo de interpretação durante a aula  
+**Sequência principal:**
 
-Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+`0 >> 1 >> 1.1 >> 1.2 >> 2 >> 2.1 >> 2.2 >> 3`
+
+**Decisão final:**
+
+`3 >> (3.1 [] 3.2)`
+
+**Repetição:** o processo é repetido enquanto a aula estiver em andamento.
+
+## Operadores temporais
+
+| Operador | Significado | Aplicação |
+|---|---|---|
+| `>>` | Habilitação (sequência) | Uma tarefa ocorre após a conclusão da anterior. |
+| `[]` | Escolha | Apenas uma das tarefas alternativas é executada. |
+| `*` | Iteração | O processo pode se repetir durante a aula. |
+
+## Regras de execução
+
+- **Tarefa 0:** executar as tarefas 1, 2 e 3 sequencialmente, repetindo o processo enquanto a aula estiver em andamento.
+- **Tarefa 1:** observar o indicador geral e, em seguida, consultar os indicadores específicos.
+- **Tarefa 2:** interpretar a situação observada e avaliar se ela justifica uma intervenção.
+- **Tarefa 3:** escolher entre manter a condução atual ou definir uma adaptação, de acordo com a avaliação realizada.
 
 ---
 
