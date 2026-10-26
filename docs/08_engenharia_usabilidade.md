@@ -1,7 +1,7 @@
 # Entrega 8 — Ciclo de vida e engenharia de usabilidade
 
 **Data:** 25/10/2026  
-**Status:** 🟨 preenchida — metas propostas, aguardando avaliação  
+**Status:** 🟨 iniciada
 **Responsabilidade:** 1 solução por equipe
 
 ## Objetivo da atividade
