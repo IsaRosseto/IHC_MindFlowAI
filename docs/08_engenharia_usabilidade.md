@@ -49,10 +49,6 @@ Inclua apenas normas, leis, padrões e princípios realmente relevantes, explica
 
 Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem dizer o que será medido, em qual tarefa, com qual população e qual limite será considerado aceitável.
 
-O foco é o docente representado pela proto-persona **P01 — Karol**, ainda a validar com usuários, e a tarefa de **personalizar os resultados de uma aula concluída**, conforme o [HTA, GOMS e CTT do recorte individual](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/Kayky-Response/docs/05_analise_tarefas.md) e as [telas da Entrega 6](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/docs/06_prototipacao_papel.md).
-
-Na [matriz de rastreabilidade](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/RASTREABILIDADE.md), o Semáforo em tempo real permanece como foco principal do projeto. Esta avaliação detalha os fluxos **PF02/PF03** e as telas **P01 — Minhas Reuniões, P02 — Resumo e P03 — Editar Resumo** da Entrega 6. A ligação específica dessa personalização à persona P01 e ao cenário C02 ainda precisa ser registrada; R03 atualmente associa a revisão pós-sessão a outras personas. A compreensão das estimativas se relaciona a **H02**; **H01** (utilidade e distração durante a aula) e **H03** (aceitação pelos participantes) exigem investigação própria e permanecem abertas.
-
 ### 3.1 Metas qualitativas
 
 | Meta | Para quem/tarefa | Evidência desejada | Justificativa |
@@ -63,10 +59,6 @@ Na [matriz de rastreabilidade](https://github.com/IsaRosseto/IHC_MindFlowAI/blob
 | Encontrar explicações | Docente com dúvidas sobre os cards. | Consultar ajuda, explicar um indicador e retornar à tarefa. | Atender às dificuldades registradas na simulação da Entrega 6. |
 
 ### 3.2 Metas quantitativas
-
-Os valores são **metas iniciais propostas, ainda não verificadas**, para professores experientes em videoconferências, sem conhecimento prévio do fluxo de personalização. Outros perfis eventualmente incluídos terão resultados identificados separadamente.
-
-Em computador, com conta autenticada, componentes preparados e histórico disponível, o participante deverá localizar uma aula em **Minhas Reuniões**, abrir **Ver Resumo**, acessar **Nova Visualização**, selecionar e organizar dois indicadores e um gráfico e confirmar. O roteiro definirá a mesma aula e configuração para todos, sem demonstrar o caminho.
 
 | ID | Dimensão | Métrica | Tarefa/escopo | Meta | Como medir | Justificativa |
 |---|---|---|---|---|---|---|
