@@ -30,13 +30,13 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Configurar o acompanhamento de uma aula no MindFlow AI | P01 / C01 — Docente preparando uma aula EAD síncrona | Média frequência / Alta criticidade | {{nome — matrícula}} |
+| T01 | Configurar o acompanhamento de uma aula concluída no MindFlow AI | P01 / C01 — Docente preparando uma aula EAD síncrona | Média frequência / Alta criticidade | {{nome — matrícula}} |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---
 
-## HTA — T01 Configurar o acompanhamento de uma aula no MindFlow AI
+## HTA — T01 Configurar o acompanhamento de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
@@ -152,7 +152,7 @@ flowchart TB
 
 ---
 
-## GOMS — T02 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
+## GOMS — T02 Configurar o acompanhamento de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
