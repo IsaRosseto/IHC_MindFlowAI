@@ -180,15 +180,11 @@ flowchart TB
 - **OP. 1.B.3:** examinar as informações de identificação das reuniões;
 - **OP. 1.B.4:** localizar a reunião desejada;
 - **OP. 1.B.5:** selecionar a opção "Ver Resumo".
+- **OP. 1.B.5:** conferir se pagina "resumo" foi carregada.
 
 ---
 
 ### GOAL 2: Identificar as necessidades de personalização
-
-#### METHOD 2: Avaliar os indicadores apresentados
-
-**SEL. RULE:** utilizar quando o usuário deseja verificar se os indicadores disponíveis atendem às suas necessidades de análise.
-
 - **OP. 2.1:** examinar os indicadores exibidos no resumo;
 - **OP. 2.2:** identificar os estados cognitivos apresentados;
 - **OP. 2.3:** avaliar a relevância dos indicadores para a análise;
@@ -207,6 +203,7 @@ flowchart TB
 - **OP. 3.A.3:** selecionar os indicadores de engajamento;
 - **OP. 3.A.4:** organizar os gráficos selecionados;
 - **OP. 3.A.5:** confirmar a personalização.
+- **OP. 3.A.6:** analisar personalização.
 
 #### METHOD 3.B: Priorizar indicadores de tédio, confusão e frustração
 
@@ -217,6 +214,7 @@ flowchart TB
 - **OP. 3.B.3:** selecionar os indicadores de tédio, confusão e frustração;
 - **OP. 3.B.4:** organizar os gráficos selecionados;
 - **OP. 3.B.5:** confirmar a personalização.
+- **OP. 3.B.6:** analisar personalização.
 
 
 ---
@@ -231,6 +229,7 @@ flowchart TB
 - **OP. 4.A.2:** verificar a presença dos indicadores desejados;
 - **OP. 4.A.3:** avaliar a clareza e a organização das informações;
 - **OP. 4.A.4:** concluir a personalização.
+- **OP. 4.A.5:** analisar personalização.
 
 #### METHOD 4.B: Revisar a personalização realizada
 
@@ -259,7 +258,7 @@ Após finalizar a edição, verifica se a visualização atende às suas necessi
 
 ### Diagrama
 
-https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.png
+[https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.png](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/CTT%20Diagrama.png)
 
 ### Legenda e relações temporais usadas
 
