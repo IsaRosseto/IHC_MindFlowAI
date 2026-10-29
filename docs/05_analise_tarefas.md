@@ -200,79 +200,71 @@ flowchart TB
 
 ---
 
-# CTT — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
+# CTT — T02: Interpretar os indicadores do MindFlow AI
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
-## Descrição
+## Diagrama CTT
 
-O CTT representa o processo de interpretação dos indicadores apresentados pelo MindFlow AI e a decisão do docente sobre como prosseguir com a aula.
+```mermaid
+flowchart TB
 
-O sistema inicialmente **atualiza os indicadores do dashboard**. A partir das informações disponibilizadas, o docente **consulta o estado do grupo** e **interpreta os indicadores apresentados**.
+    T0["☁️ 0. Interpretar os indicadores e decidir<br/>se deve adaptar a condução da aula<br/>(*)"]
 
-Quando considerar necessário obter mais contexto, pode **consultar a evolução temporal dos estados** antes de avaliar a relevância da situação. Após essa interpretação, o docente decide entre **manter a condução atual** ou **adaptar a aula**.
+    T1["☁️ 1. Analisar o estado atual"]
+    T2["☁️ 2. Avaliar a relevância da situação"]
+    T3["☁️ 3. Decidir como prosseguir"]
 
-Como os indicadores são atualizados ao longo da sessão, esse processo pode ser repetido diversas vezes durante a aula.
+    T0 --- T1
+    T0 --- T2
+    T0 --- T3
 
-### Árvore de decomposição
+    T11["👤💻 1.1 Observar o indicador<br/>geral do estado do grupo"]
+    T12["👤💻 1.2 Consultar indicadores<br/>específicos"]
 
-```text
-0. Interpretar os indicadores e decidir se deve adaptar a aula
-│
-└── >>
-    1. Analisar o estado atual
-    │
-    └── >>
-        1.1. Observar o indicador geral
-        │
-        └── >>
-            1.2. Consultar indicadores específicos
-            │
-            └── >>
-                2. Avaliar a relevância da situação
-                │
-                └── >>
-                    2.1. Interpretar a alteração observada
-                    │
-                    └── >>
-                        2.2. Avaliar se a mudança justifica intervenção
-                        │
-                        └── >>
-                            3. Decidir como prosseguir
-                            │
-                            └── [] ESCOLHA
-                                │
-                                ├── 3.1. Manter a condução atual
-                                │
-                                └── 3.2. Definir uma adaptação na aula
+    T1 --- T11
+    T1 --- T12
+
+    T21["👤 2.1 Interpretar a<br/>alteração observada"]
+    T22["👤 2.2 Avaliar se a mudança<br/>justifica uma intervenção"]
+
+    T2 --- T21
+    T2 --- T22
+
+    T31["👤 3.1 Manter a<br/>condução atual"]
+    T32["👤 3.2 Definir uma adaptação<br/>na condução da aula"]
+
+    T3 --- T31
+    T3 --- T32
+
+    T11 ~~~|" >> "| T12
+    T21 ~~~|" >> "| T22
+    T31 ~~~|" [] "| T32
+
+    classDef abstrata fill:#fff,stroke:#333,stroke-width:1.8px,color:#111;
+    classDef operacao fill:#f8f8f8,stroke:#555,stroke-width:1px,color:#111;
+
+    class T0,T1,T2,T3 abstrata;
+    class T11,T12,T21,T22,T31,T32 operacao;
 ```
 
-### Relações temporais
+## Relações temporais do CTT
 
-**Sequência principal:**
-
-`0 >> 1 >> 1.1 >> 1.2 >> 2 >> 2.1 >> 2.2 >> 3`
-
-**Decisão final:**
-
-`3 >> (3.1 [] 3.2)`
-
-**Repetição:** o processo é repetido enquanto a aula estiver em andamento.
-
-## Operadores temporais
-
-| Operador | Significado | Aplicação |
+| Tarefas | Operador | Relação |
 |---|---|---|
-| `>>` | Habilitação (sequência) | Uma tarefa ocorre após a conclusão da anterior. |
-| `[]` | Escolha | Apenas uma das tarefas alternativas é executada. |
-| `*` | Iteração | O processo pode se repetir durante a aula. |
+| 1, 2 e 3 | `>>` | Execução sequencial |
+| 1.1 e 1.2 | `>>` | Observar antes de consultar os detalhes |
+| 2.1 e 2.2 | `>>` | Interpretar antes de avaliar a intervenção |
+| 3.1 e 3.2 | `[]` | Escolha entre manter ou adaptar |
+| 0 | `*` | Repetição enquanto a aula estiver em andamento |
 
-## Regras de execução
+### Legenda
 
-- **Tarefa 0:** executar as tarefas 1, 2 e 3 sequencialmente, repetindo o processo enquanto a aula estiver em andamento.
-- **Tarefa 1:** observar o indicador geral e, em seguida, consultar os indicadores específicos.
-- **Tarefa 2:** interpretar a situação observada e avaliar se ela justifica uma intervenção.
-- **Tarefa 3:** escolher entre manter a condução atual ou definir uma adaptação, de acordo com a avaliação realizada.
+- ☁️ **Abstrata:** tarefa que agrupa outras tarefas.
+- 👤 **Usuário:** atividade cognitiva ou decisão realizada pelo docente.
+- 👤💻 **Interação:** atividade do docente envolvendo a interface do MindFlow AI.
+
+**Observação:** o Mermaid permite reproduzir visualmente a hierarquia, mas não é um editor CTT formal. As ligações verticais indicam decomposição, enquanto os operadores temporais aparecem entre as tarefas irmãs. A relação temporal do objetivo principal é `(1 >> 2 >> 3)*`, e a escolha final é `3.1 [] 3.2`.
 
 ---
 
