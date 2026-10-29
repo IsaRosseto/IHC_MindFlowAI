@@ -134,18 +134,14 @@ flowchart TB
 
 ## GOAL 1: Analisar o estado atual dos participantes
 
-### METHOD 1.A: Observar o indicador geral do estado do grupo
-
-**SEL. RULE:** utilizar para identificar rapidamente o estado predominante dos participantes.
+### GOAL 1.A: Observar o indicador geral do estado do grupo
 
 - **OP. 1.A.1:** direcionar a atenção para o indicador geral;
 - **OP. 1.A.2:** observar o estado predominante apresentado;
 - **OP. 1.A.3:** verificar o valor associado ao estado;
 - **OP. 1.A.4:** interpretar a informação apresentada.
 
-### METHOD 1.B: Consultar os indicadores específicos
-
-**SEL. RULE:** utilizar após observar o indicador geral, para compreender a distribuição dos estados de engajamento, tédio, confusão e frustração.
+### GOAL 1.B: Consultar os indicadores específicos
 
 - **OP. 1.B.1:** direcionar a atenção para os indicadores específicos;
 - **OP. 1.B.2:** observar os valores de engajamento, tédio, confusão e frustração;
@@ -156,17 +152,13 @@ flowchart TB
 
 ## GOAL 2: Avaliar a relevância da situação
 
-### METHOD 2.A: Interpretar a alteração observada
-
-**SEL. RULE:** utilizar após analisar os indicadores, considerando o contexto atual da aula.
+### GOAL 2.A: Interpretar a alteração observada
 
 - **OP. 2.A.1:** identificar os estados que merecem atenção;
 - **OP. 2.A.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
 - **OP. 2.A.3:** interpretar o significado dos estados observados no contexto da aula.
 
-### METHOD 2.B: Avaliar a necessidade de intervenção
-
-**SEL. RULE:** utilizar após interpretar a situação para determinar se é necessário modificar a condução da aula.
+### GOAL 2.B: Avaliar a necessidade de intervenção
 
 - **OP. 2.B.1:** considerar a relevância dos indicadores observados;
 - **OP. 2.B.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
