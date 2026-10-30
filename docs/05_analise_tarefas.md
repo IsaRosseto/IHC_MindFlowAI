@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 30/10/2026  
+**Status:** 🟨 em andamento  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -1249,11 +1249,29 @@ Versão renderizada: [`hta_t10.png`](../assets/05_tarefas/hta_t10.png) / [`hta_t
 |---|---|---|---|
 | 0 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir | 1 > repetir (2 > 3 > 4 > 5) para cada bloco da proposta > 6 | Entrada: proposta preparada e reunião agendada pelo cliente. Realimentação: hoje a confirmação de que a proposta foi compreendida só chega no follow-up, dias depois. O ciclo 2 a 5 acontece sob tempo definido pelo cliente, com a atenção dividida entre tela compartilhada, clientes e cronograma |
 | 1 | Preparar a reunião | 1.1 > 1.2 > 1.3 | Manoel já planeja onde vai checar a reação (1.2). Isso mostra que a verificação de compreensão é parte do método de venda dele, não uma novidade a ser introduzida |
+| 1.1 | Confirmar quem participa do lado do cliente | Operação inicial de 1 | Saber quem é o decisor, o responsável técnico e o comprador muda quem Manoel vai observar com mais atenção durante a reunião (ligado à questão Q2 do C01) |
+| 1.2 | Definir a pauta e os pontos em que vai checar a reação (pílulas de dúvida) | Após 1.1 | As pílulas de dúvida são planejadas, não improvisadas: é o momento em que Manoel decide onde vai precisar de retorno do cliente |
+| 1.3 | Abrir a reunião e iniciar o compartilhamento de tela | Após 1.2 | A partir daqui a grade de vídeo fica reduzida; é a condição que limita todo o ciclo seguinte |
 | 2 | Apresentar um bloco da proposta | 2.1 > 2.2 | Enquanto explica com a tela compartilhada, a grade de vídeo fica reduzida e parte da atenção já está ocupada, o que limita o que sobra para observar o grupo |
+| 2.1 | Explicar o ponto com a tela compartilhada | Operação inicial de 2 | Atenção dividida entre falar, controlar o material e acompanhar o tempo |
+| 2.2 | Soltar a pílula de dúvida ao final do bloco | Após 2.1 | Pergunta curta, planejada em 1.2, que dispara o ciclo de percepção (3); o silêncio que pode vir depois dela é o núcleo do problema do C01 |
 | 3 | Perceber a reação dos clientes | 3.1 e 3.2 ao mesmo tempo; 3.3 se houver movimento no chat; 3.4 só se 3.1 a 3.3 não trouxerem resposta | Nenhum canal é confiável sozinho: a grade mostra só quem está com a câmera ligada, o silêncio é ambíguo e chamar alguém pelo nome (3.4) tem custo social com um cliente externo. Problema: quando ninguém responde, Manoel fica sem informação justamente no momento em que precisa decidir |
+| 3.1 | Espiar a grade reduzida de vídeo | Ao mesmo tempo que 3.2 | Só mostra quem está com a câmera ligada, em miniatura; exige desviar o olhar do material |
+| 3.2 | Ouvir respostas e perguntas | Ao mesmo tempo que 3.1 | Canal mais confiável quando alguém responde, mas o silêncio é ambíguo |
+| 3.3 | Verificar o chat | Se houver movimento no chat | Pode trazer concordância ou objeção escrita; costuma passar despercebido durante a fala |
+| 3.4 | Chamar alguém pelo nome quando ninguém responde | Só se 3.1 a 3.3 não trouxerem resposta | Tem custo social com cliente externo; por isso é a última alternativa (regras de seleção do GOMS T11) |
 | 4 | Interpretar os sinais obtidos | 4.1 > 4.2 > 4.3 | Quem reagiu importa tanto quanto o que foi dito (4.1): o decisor calado pesa mais que o técnico que respondeu. O julgamento de confiança (4.3) hoje é subjetivo e sem apoio, o que se relaciona à hipótese H02 (quanto confiar em um sinal incompleto) |
+| 4.1 | Identificar quem reagiu e qual é o papel dessa pessoa | Operação inicial de 4 | O peso do sinal depende de quem o emitiu; hoje essa ponderação é feita de cabeça |
+| 4.2 | Comparar os sinais com o que se espera de um cliente que entendeu | Após 4.1 | Comparação informal, sem registro; sinais contraditórios ficam sem critério claro |
+| 4.3 | Julgar o quanto confia nessa leitura | Após 4.2 | Julgamento subjetivo de confiança, sem apoio; relaciona-se à hipótese H02 |
 | 5 | Decidir como prosseguir | 5.1 ou 5.2 ou 5.3, conforme 4.3 e o tempo restante | Reforçar (5.2) consome tempo que o cliente controla; por isso, diante de dúvida, a tendência é avançar (5.1) ou adiar (5.3). Esse viés para seguir em frente explica a objeção descoberta tarde demais no Cenário C01 |
+| 5.1 | Avançar para o próximo bloco | Alternativa de 5, quando 4.3 indica confiança ou o tempo está curto | Escolha mais frequente; é onde a dúvida não percebida se acumula |
+| 5.2 | Reforçar ou reexplicar o ponto | Alternativa de 5, quando há indício de dúvida em ponto central e há tempo | Consome tempo controlado pelo cliente; após reforçar, Manoel volta a 2.2 |
+| 5.3 | Anotar o ponto para o follow-up e avançar | Alternativa de 5, quando há dúvida mas o tempo está curto ou insistir constrangeria | Adia a verificação para dias depois; depende de anotação feita durante a fala |
 | 6 | Encerrar e registrar a reunião | 6.1 > 6.2 > 6.3 (6.3 dias depois) | A avaliação do que funcionou (6.3) só acontece dias depois, comparando anotações pessoais com o e-mail do cliente. Esse intervalo é a ruptura central da tarefa e se liga à necessidade R03 (revisar depois o que aconteceu) |
+| 6.1 | Combinar o próximo passo com o cliente | Operação inicial de 6 | Fechamento da reunião; define quando haverá nova oportunidade de esclarecer dúvidas |
+| 6.2 | Anotar percepções e pontos de dúvida | Após 6.1 | Registro pessoal, feito de memória logo após a reunião; é a única base para o follow-up |
+| 6.3 | Comparar as anotações com o retorno do cliente | Dias depois, quando chega o e-mail de resposta | Única avaliação efetiva da tarefa hoje; o intervalo de dias é a ruptura central do C01 e liga este recorte a R03 |
 
 **Verificação do HTA:**
 
@@ -1377,110 +1395,41 @@ O modelo detalha o trecho mais crítico do HTA T10 (objetivos 3, 4 e 5): o momen
 
 ### Descrição
 
-O modelo CTT representa a mesma situação do HTA T10 sob a perspectiva das relações temporais. A tarefa raiz (**Conduzir a reunião comercial on-line percebendo a reação dos clientes**) é abstrata e se decompõe em três tarefas: **Preparar a reunião**, **Apresentar a proposta** e **Encerrar e registrar**, em sequência (habilitação).
+O modelo CTT representa a mesma situação do HTA T10 sob a perspectiva das relações temporais, na notação ConcurTaskTrees vista em aula (nuvem para tarefa abstrata, pessoa para tarefa do usuário, pessoa e computador para tarefa de interação, operadores entre tarefas irmãs). A tarefa raiz (**0. Conduzir a reunião comercial on-line percebendo a reação dos clientes**) é abstrata e se decompõe em quatro tarefas: **1. Preparar a reunião**, **2. Apresentar um bloco da proposta**, que se repete a cada bloco, **3. Fechar com os pontos essenciais quando o tempo está acabando** e **4. Encerrar e registrar a reunião**. A leitura é 1 >> (2* [> 3) >> 4: a preparação habilita a apresentação; o ciclo de blocos é desativado pelo fechamento quando o tempo acaba; só depois Manoel encerra e registra.
 
-Dentro de **Apresentar a proposta**, que se repete a cada bloco, explicar o bloco e perceber a reação dos clientes acontecem ao mesmo tempo (concorrência): Manoel observa o grupo enquanto fala. A percepção também é repetida e, a cada rodada, ele escolhe um canal: espiar a grade de vídeo, ouvir respostas e perguntas, ler o chat ou chamar alguém pelo nome. Só depois de perceber é que consegue interpretar os sinais (habilitação), e só depois de interpretar consegue decidir entre avançar, reforçar o ponto ou anotá-lo para o follow-up (escolha).
+Dentro de cada bloco, **2.1 Explicar o bloco observando a reação** é uma tarefa abstrata em que explicar e soltar a pílula de dúvida (2.1.1) acontece ao mesmo tempo que perceber a reação dos clientes (2.1.2), que se repete e, a cada rodada, é uma escolha entre espiar a grade de vídeo, ouvir respostas e perguntas, ler o chat ou chamar alguém pelo nome. Uma pergunta ou objeção do cliente (2.2) suspende a explicação, que é retomada do ponto em que parou. Só depois de perceber é que Manoel consegue interpretar os sinais e decidir quanto confiar neles (2.3), e só depois de interpretar consegue decidir como prosseguir (2.4): avançar, reforçar o ponto ou anotá-lo para o follow-up.
 
-Dois eventos externos foram modelados explicitamente, porque aparecem nas questões de refinamento Q6 do Cenário C01: uma pergunta ou objeção do cliente **suspende** a explicação, que é retomada do ponto em que parou (suspensão/retomada); e o aviso de que o tempo está acabando **desativa** o restante da apresentação, levando Manoel a fechar com os pontos essenciais (desativação). Depois da reunião, combinar o próximo passo, anotar as percepções e, dias depois, compará-las com o retorno do cliente acontecem em sequência.
+Depois da reunião, combinar o próximo passo (4.1), anotar as percepções (4.2) e compará-las com o retorno do cliente, dias depois (4.3), acontecem em sequência. Não há tarefas de sistema porque o modelo descreve a prática atual, sem o MindFlow; os dois eventos externos do Cenário C01 (pergunta ou objeção do cliente e fim do tempo) aparecem como as tarefas 2.2 e 3, ligadas pelos operadores de suspensão/retomada e desativação.
 
 ### Diagrama
 
-```mermaid
-flowchart LR
+![CTT T12 — Conduzir a reunião comercial on-line percebendo a reação dos clientes e reagindo aos eventos da reunião](../assets/05_tarefas/ctt_t12.png)
 
-    subgraph C0["<b>0. Conduzir a reunião comercial on-line percebendo a reação dos clientes</b>"]
-        direction LR
-
-        subgraph C1["<b>1. Preparar a reunião</b>"]
-            direction TB
-            C11("1.1 Confirmar quem participa<br/>do lado do cliente")
-            C12[["1.2 Iniciar a chamada e o<br/>compartilhamento de tela"]]
-            C11 -- "&gt;&gt;" --> C12
-        end
-
-        subgraph C2["<b>2. Apresentar a proposta *</b> (um ciclo por bloco)"]
-            direction TB
-
-            C21[["<b>2.1 Explicar o bloco</b><br/>com a tela compartilhada<br/>e soltar a pílula de dúvida"]]
-
-            subgraph C22["<b>2.2 Perceber a reação dos clientes *</b>"]
-                direction TB
-                C221[["2.2.1 Espiar a grade de vídeo"]]
-                C222[["2.2.2 Ouvir respostas e perguntas"]]
-                C223[["2.2.3 Ler o chat"]]
-                C224[["2.2.4 Chamar alguém pelo nome"]]
-                C221 -- "[ ]" --- C222
-                C222 -- "[ ]" --- C223
-                C223 -- "[ ]" --- C224
-            end
-
-            C23("<b>2.3 Interpretar os sinais</b><br/>(quem reagiu, o que significa,<br/>quanto confiar)")
-
-            subgraph C24["<b>2.4 Decidir como prosseguir</b>"]
-                direction TB
-                C241("2.4.1 Avançar para o próximo bloco")
-                C242[["2.4.2 Reforçar ou reexplicar o ponto"]]
-                C243("2.4.3 Anotar o ponto para o follow-up")
-                C241 -- "[ ]" --- C242
-                C242 -- "[ ]" --- C243
-            end
-
-            C25[["2.5 Responder a uma pergunta<br/>ou objeção do cliente"]]
-
-            C21 -- "|||" --- C22
-            C22 -- "&gt;&gt;" --> C23
-            C23 -- "&gt;&gt;" --> C24
-            C21 -- "|&gt;" --- C25
-        end
-
-        C26[["<b>2.6 Fechar com os pontos essenciais</b><br/>quando o tempo está acabando"]]
-
-        subgraph C3["<b>3. Encerrar e registrar</b>"]
-            direction TB
-            C31[["3.1 Combinar o próximo passo"]]
-            C32("3.2 Anotar percepções<br/>e pontos de dúvida")
-            C33("3.3 Comparar com o retorno<br/>do cliente (dias depois)")
-            C31 -- "&gt;&gt;" --> C32
-            C32 -- "&gt;&gt;" --> C33
-        end
-
-        C1 -- "&gt;&gt;" --> C2
-        C2 -- "[&gt;" --> C26
-        C2 -- "&gt;&gt;" --> C3
-        C26 -- "&gt;&gt;" --> C3
-    end
-
-    classDef interacao fill:#e8f6ec,stroke:#2f855a,stroke-width:2px,color:#111;
-    classDef usuario fill:#fff6e5,stroke:#b7791f,stroke-width:2px,color:#111;
-    classDef abstrata fill:#eef2ff,stroke:#4f5fbf,stroke-width:2px,stroke-dasharray:6 4,color:#111;
-
-    class C12,C21,C221,C222,C223,C224,C242,C25,C26,C31 interacao;
-    class C11,C23,C241,C243,C32,C33 usuario;
-    class C0,C1,C2,C22,C24,C3 abstrata;
-```
-
-Versão renderizada: [`ctt_t12.png`](../assets/05_tarefas/ctt_t12.png) / [`ctt_t12.svg`](../assets/05_tarefas/ctt_t12.svg). Fonte editável: [`ctt_t12.mmd`](../assets/05_tarefas/ctt_t12.mmd).
-
-*Figura T12 — CTT da tarefa "conduzir a reunião comercial on-line percebendo a reação dos clientes e reagindo aos eventos da reunião". Fonte: elaboração do autor a partir do Cenário C01.*
+*Figura T12 — CTT da tarefa "conduzir a reunião comercial on-line percebendo a reação dos clientes e reagindo aos eventos da reunião", na notação ConcurTaskTrees. Fonte editável em SVG: [`ctt_t12.svg`](../assets/05_tarefas/ctt_t12.svg). Elaboração do autor a partir do Cenário C01, do HTA T10 e do GOMS T11.*
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `>>` (habilitação) | A segunda tarefa só começa depois que a primeira termina | Preparar → Apresentar → Encerrar; Perceber → Interpretar → Decidir; Combinar o próximo passo → Anotar → Comparar |
-| `\|\|\|` (concorrência) | As tarefas acontecem ao mesmo tempo, sem ordem fixa entre si | Explicar o bloco e Perceber a reação dos clientes |
-| `[]` (escolha) | Apenas uma das alternativas é executada a cada vez | Espiar a grade, Ouvir respostas, Ler o chat ou Chamar alguém pelo nome; Avançar, Reforçar ou Anotar para o follow-up |
-| `*` (repetição) | A tarefa é repetida enquanto for necessária | Apresentar a proposta (um ciclo por bloco); Perceber a reação dos clientes durante a explicação |
-| `\|>` (suspensão/retomada) | A primeira tarefa é interrompida pela segunda e retomada do ponto em que parou | Explicar o bloco é suspenso por Responder a uma pergunta ou objeção do cliente |
-| `[>` (desativação) | A primeira tarefa é interrompida definitivamente pela segunda | Apresentar a proposta é desativada por Fechar com os pontos essenciais quando o tempo está acabando |
+| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Conduzir a reunião; Preparar a reunião; Apresentar um bloco da proposta; Explicar o bloco observando a reação; Perceber a reação dos clientes; Decidir como prosseguir; Encerrar e registrar. |
+| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | Confirmar quem participa do lado do cliente; Interpretar os sinais e quanto confiar neles; Avançar para o próximo bloco; Anotar o ponto para o follow-up; Anotar percepções; Comparar com o retorno do cliente. |
+| Pessoa e computador | Tarefa de interação. Representa uma ação de Manoel na videochamada, com os clientes. | Iniciar a chamada e o compartilhamento de tela; Explicar o bloco e soltar a pílula de dúvida; Espiar a grade de vídeo; Ler o chat; Chamar alguém pelo nome; Responder a pergunta ou objeção; Reforçar ou reexplicar o ponto; Fechar com os pontos essenciais; Combinar o próximo passo. |
+| Computador | Tarefa do sistema. Não ocorre neste modelo, porque ele descreve a prática atual, sem o MindFlow. | Nenhum. |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Preparar a reunião → Apresentar a proposta; Responder ao cliente → Interpretar os sinais → Decidir como prosseguir; Combinar o próximo passo → Anotar percepções → Comparar com o retorno do cliente. |
+| `[ ]` — Escolha | Tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Espiar a grade de vídeo, Ouvir respostas e perguntas, Ler o chat ou Chamar alguém pelo nome; Avançar, Reforçar ou Anotar para o follow-up. |
+| `\|\|\|` — Concorrência | As tarefas podem ser realizadas em qualquer ordem ou ao mesmo tempo. | Explicar o bloco e soltar a pílula de dúvida ao mesmo tempo que Perceber a reação dos clientes. |
+| `\|>` — Suspensão/retomada | A primeira tarefa é interrompida pela segunda e retomada do ponto em que parou quando a segunda termina. | Explicar o bloco observando a reação é suspenso por Responder a pergunta ou objeção do cliente. |
+| `[>` — Desativação | A primeira tarefa é interrompida definitivamente pela segunda. | O ciclo Apresentar um bloco da proposta é desativado por Fechar com os pontos essenciais quando o tempo está acabando. |
+| `*` — Repetição | A tarefa é repetida enquanto for necessária. | Apresentar um bloco da proposta (um ciclo por bloco); Perceber a reação dos clientes (várias rodadas durante a explicação). |
+| Regra de conclusão | Condição para a tarefa raiz ser considerada concluída. | A reunião termina quando Encerrar e registrar (4) é concluída; a comparação com o retorno do cliente (4.3) acontece dias depois. |
 
-No diagrama, as tarefas abstratas têm borda tracejada, as de usuário são laranja e as de interação são verdes; as subtarefas ficam dentro da caixa da tarefa-pai e o operador temporal aparece sobre a linha que liga duas tarefas irmãs. As tarefas de **usuário** (Confirmar quem participa, Interpretar os sinais, Avançar, Anotar, Comparar com o retorno) são ações cognitivas ou de decisão de Manoel, sem interação direta com a videochamada. As tarefas de **interação** (compartilhar a tela, explicar, espiar a grade, ler o chat, chamar pelo nome, reforçar o ponto, responder ao cliente, combinar o próximo passo) são ações de Manoel sobre a videochamada e com os clientes. Tarefas **abstratas** agrupam subtarefas. Não há tarefas de sistema porque esta modelagem descreve a prática atual, sem antecipar a solução.
+A legenda do diagrama também apresenta os operadores `[ ]>>`, `|[ ]|` e `|=|`, que não foram usados neste modelo: não há tarefa de sistema que receba informação do usuário, e as tarefas concorrentes (explicar e perceber) não trocam informação entre si nem precisam terminar uma antes da outra.
 
 ### Síntese das três modelagens (T10, T11 e T12)
 
 - As três técnicas convergem no mesmo ponto crítico: o intervalo entre perceber, interpretar e decidir acontece com a tela compartilhada, sob tempo controlado pelo cliente e com sinais incompletos. É o trecho em que a tarefa humana hoje falha (Cenário C01).
 - O planejamento de Manoel (critérios de decisão: quem reagiu, importância do ponto, tempo restante, custo de constranger o cliente) e a avaliação (confiança na leitura; comparação tardia com o follow-up) ficaram explícitos nos três modelos, como solicitado no feedback da Entrega 4.
-- Para o protótipo e o teste de usabilidade, as tarefas candidatas deste recorte são: perceber a reação do grupo durante o compartilhamento de tela (T10/T12, objetivo 3 e tarefa 2.2) e decidir se reforça ou segue (T11, Goal 3). A revisão posterior com o retorno do cliente (6.3 e 3.3) liga este recorte à necessidade R03 e ao Dashboard pós-sessão.
+- Para o protótipo e o teste de usabilidade, as tarefas candidatas deste recorte são: perceber a reação do grupo durante o compartilhamento de tela (T10, objetivo 3; T12, tarefa 2.1.2) e decidir se reforça ou segue (T11, Goal 3; T12, tarefa 2.4). A revisão posterior com o retorno do cliente (T10, operação 6.3; T12, tarefa 4.3) liga este recorte à necessidade R03 e ao Dashboard pós-sessão.
 - Permanece em aberto se o recorte comercial B2B compartilha as mesmas tarefas que os contextos de ensino e treinamento (dúvidas ?02 e ?03 da Entrega 1); a comparação entre os modelos dos cinco integrantes, na síntese da equipe, é o lugar para essa decisão.
 
 ---
@@ -1491,13 +1440,13 @@ Quais problemas de interação, oportunidades e requisitos apareceram a partir d
 
 ## Checklist
 
-- [ ] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
-- [ ] Cada artefato identifica autor e tarefa.
-- [ ] Diagramas são legíveis e possuem fonte editável quando possível.
-- [ ] HTA contém planos, não apenas árvore de tópicos.
-- [ ] GOMS distingue Goals, Operators, Methods e Selection Rules.
-- [ ] CTT usa operadores temporais e tipos de tarefa coerentes.
-- [ ] Há texto explicando cada diagrama.
-- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
-- [ ] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
-- [ ] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+- [x] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+- [x] Cada artefato identifica autor e tarefa.
+- [x] Diagramas são legíveis e possuem fonte editável quando possível.
+- [x] HTA contém planos, não apenas árvore de tópicos.
+- [x] GOMS distingue Goals, Operators, Methods e Selection Rules.
+- [x] CTT usa operadores temporais e tipos de tarefa coerentes.
+- [x] Há texto explicando cada diagrama.
+- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade (até agora apenas T10 a T12; as demais tarefas ainda precisam ser registradas na matriz).
+- [x] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
+- [x] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
