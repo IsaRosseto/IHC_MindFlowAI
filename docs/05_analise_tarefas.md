@@ -449,65 +449,20 @@ flowchart TB
 
 ## Diagrama CTT
 
-```mermaid
-flowchart TB
+[https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.png](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/CTT%20Diagrama.png)
 
-    T0["☁️ 0. Interpretar os indicadores e decidir<br/>se deve adaptar a condução da aula<br/>(*)"]
+### Legenda e relações temporais usadas
 
-    T1["☁️ 1. Analisar o estado atual"]
-    T2["☁️ 2. Avaliar a relevância da situação"]
-    T3["☁️ 3. Decidir como prosseguir"]
-
-    T0 --- T1
-    T0 --- T2
-    T0 --- T3
-
-    T11["👤💻 1.1 Observar o indicador<br/>geral do estado do grupo"]
-    T12["👤💻 1.2 Consultar indicadores<br/>específicos"]
-
-    T1 --- T11
-    T1 --- T12
-
-    T21["👤 2.1 Interpretar a<br/>alteração observada"]
-    T22["👤 2.2 Avaliar se a mudança<br/>justifica uma intervenção"]
-
-    T2 --- T21
-    T2 --- T22
-
-    T31["👤 3.1 Manter a<br/>condução atual"]
-    T32["👤 3.2 Definir uma adaptação<br/>na condução da aula"]
-
-    T3 --- T31
-    T3 --- T32
-
-    T11 ~~~|" >> "| T12
-    T21 ~~~|" >> "| T22
-    T31 ~~~|" [] "| T32
-
-    classDef abstrata fill:#fff,stroke:#333,stroke-width:1.8px,color:#111;
-    classDef operacao fill:#f8f8f8,stroke:#555,stroke-width:1px,color:#111;
-
-    class T0,T1,T2,T3 abstrata;
-    class T11,T12,T21,T22,T31,T32 operacao;
-```
-
-## Relações temporais do CTT
-
-| Tarefas | Operador | Relação |
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| 1, 2 e 3 | `>>` | Execução sequencial |
-| 1.1 e 1.2 | `>>` | Observar antes de consultar os detalhes |
-| 2.1 e 2.2 | `>>` | Interpretar antes de avaliar a intervenção |
-| 3.1 e 3.2 | `[]` | Escolha entre manter ou adaptar |
-| 0 | `*` | Repetição enquanto a aula estiver em andamento |
-
-### Legenda
-
-- ☁️ **Abstrata:** tarefa que agrupa outras tarefas.
-- 👤 **Usuário:** atividade cognitiva ou decisão realizada pelo docente.
-- 👤💻 **Interação:** atividade do docente envolvendo a interface do MindFlow AI.
-
-**Observação:** o Mermaid permite reproduzir visualmente a hierarquia, mas não é um editor CTT formal. As ligações verticais indicam decomposição, enquanto os operadores temporais aparecem entre as tarefas irmãs. A relação temporal do objetivo principal é `(1 >> 2 >> 3)*`, e a escolha final é `3.1 [] 3.2`.
+| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Localizar e abrir o resumo da aula; Personalizar e avaliar. |
+| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | IIdentificar a aula desejada; Definir necessidades; Analisar a visualização resultante. |
+| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | ECarregar as reuniões; Exibir o resumo da aula; Atualizar o dashboard. |
+| Pessoa e computador | TTarefa de interação. Representa uma ação do usuário na interface. | Selecionar Ver Resumo; Selecionar indicadores e gráficos desejados; Organizar elementos; Confirmar alterações. |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Localizar a aula → Avaliar o resumo → Personalizar a visualização → Conferir o resultado. |
+| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | Selecionar Ver Resumo → Sistema exibir o resumo da aula. |
+| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Selecionar indicadores e gráficos ou reorganizar elementos no dashboard. |
+| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Caso a visualização não atenda às necessidades, o usuário retorna à personalização e realiza novos ajustes. |
 
 ---
 ## HTA — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
