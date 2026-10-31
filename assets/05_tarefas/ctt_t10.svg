@@ -69,8 +69,8 @@
 <text x="5240.0" y="1411" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
 <path d="M2819.3,354.2 C2799.5,354.2 2796.2,327.8 2813.8,323.4 C2805.0,303.6 2831.4,294.8 2844.6,308.0 C2851.2,286.0 2884.2,286.0 2890.8,305.8 C2910.6,297.0 2923.8,319.0 2910.6,327.8 C2928.2,334.4 2921.6,354.2 2901.8,354.2 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
 <text x="2860.0" y="398.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="30" text-anchor="middle" font-weight="bold" fill="#000">0</text>
-<text x="2860.0" y="438.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">Conduzir a reunião comercial on-line</text>
-<text x="2860.0" y="474.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">percebendo a reação dos clientes</text>
+<text x="2860.0" y="438.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">Conduzir a apresentação comercial percebendo a reação</text>
+<text x="2860.0" y="474.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">dos clientes e decidindo como prosseguir</text>
 <path d="M439.3,904.2 C419.5,904.2 416.2,877.8 433.8,873.4 C425.0,853.6 451.4,844.8 464.6,858.0 C471.2,836.0 504.2,836.0 510.8,855.8 C530.6,847.0 543.8,869.0 530.6,877.8 C548.2,884.4 541.6,904.2 521.8,904.2 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
 <text x="480.0" y="948.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="30" text-anchor="middle" font-weight="bold" fill="#000">1</text>
 <text x="480.0" y="988.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">Preparar</text>
@@ -159,8 +159,8 @@
 <text x="5410.0" y="1468.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="30" text-anchor="middle" font-weight="bold" fill="#000">4.3</text>
 <text x="5410.0" y="1508.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">Comparar com o retorno</text>
 <text x="5410.0" y="1544.2" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="middle" font-weight="normal" fill="#000">do cliente (dias depois)</text>
-<text x="120" y="90" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="34" text-anchor="start" font-weight="bold" fill="#000">CTT  |  MINDFLOW AI  |  T12</text>
-<text x="120" y="140" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="start" font-weight="normal" fill="#000">Conduzir a reunião comercial on-line percebendo a reação dos clientes e reagindo aos eventos da reunião</text>
+<text x="120" y="90" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="34" text-anchor="start" font-weight="bold" fill="#000">CTT  |  MINDFLOW AI  |  T10</text>
+<text x="120" y="140" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="start" font-weight="normal" fill="#000">Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir</text>
 <text x="120" y="180" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="26" text-anchor="start" font-weight="normal" fill="#333">Autor: Matheus Ferreira de Freitas  |  Persona P04 (Manoel Gomes)  |  Cenário C01  |  Prática atual, sem o MindFlow</text>
 <text x="140" y="300" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="28" text-anchor="start" font-weight="bold" fill="#000">TIPOS DE TAREFA</text>
 <path d="M163.0,402.0 C145.0,402.0 142.0,378.0 158.0,374.0 C150.0,356.0 174.0,348.0 186.0,360.0 C192.0,340.0 222.0,340.0 228.0,358.0 C246.0,350.0 258.0,370.0 246.0,378.0 C262.0,384.0 256.0,402.0 238.0,402.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
@@ -199,5 +199,5 @@
 <line x1="120" y1="2648" x2="5480" y2="2648" stroke="#bbb" stroke-width="2"/>
 <text x="120" y="2690" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="26" text-anchor="start" font-weight="normal" fill="#000">Leitura temporal: 1 &gt;&gt; ( 2* [&gt; 3 ) &gt;&gt; 4.   Dentro de 2: ( 2.1 |&gt; 2.2 ) &gt;&gt; 2.3 &gt;&gt; 2.4.   Dentro de 2.1: 2.1.1 ||| 2.1.2*.   Em 2.1.2: 2.1.2.1 [ ] 2.1.2.2 [ ] 2.1.2.3 [ ] 2.1.2.4.   Em 2.4: 2.4.1 [ ] 2.4.2 [ ] 2.4.3.</text>
 <text x="120" y="2734" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="normal" fill="#333">Não há tarefas de sistema porque o modelo descreve como Manoel conduz a reunião hoje, antes de qualquer apoio do MindFlow (Cenário C01, Entrega 4).</text>
-<text x="120" y="2778" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="normal" fill="#333">Base: HTA T10 e GOMS T11 de docs/05_analise_tarefas.md. Notação: ConcurTaskTrees (Paternò), conforme Barbosa e Silva (2010). A legenda inclui operadores não usados neste modelo.</text>
+<text x="120" y="2778" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="24" text-anchor="start" font-weight="normal" fill="#333">Base: HTA T10 e GOMS T10 de docs/05_analise_tarefas.md. Notação: ConcurTaskTrees (Paternò), conforme Barbosa e Silva (2010). A legenda inclui operadores não usados neste modelo.</text>
 </svg>
