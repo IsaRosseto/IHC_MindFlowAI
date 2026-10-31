@@ -449,7 +449,7 @@ flowchart TB
 
 ## Diagrama CTT
 
-[https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.png](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/CTT%20Diagrama.png)
+[https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_rafael.png](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_rafael.png)
 
 ### Legenda e relações temporais usadas
 
