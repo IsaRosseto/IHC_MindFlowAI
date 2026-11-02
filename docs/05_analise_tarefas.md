@@ -31,10 +31,9 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 |---|---|---|---|---|
 | T01 | Revisar uma sessão concluída para identificar momentos relevantes e avaliar a apresentação | P01 / C01 — docente revisando uma aula on-line já finalizada | Média frequência / Alta criticidade | Kayky Pires de Paula - 22.222.040-2 |
 | T02 | Identificar e interpretar momentos relevantes nos indicadores de uma sessão concluída | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
-| T03 | Analisar uma sessão concluída enquanto consulta, compara e interpreta diferentes informações da apresentação | P01 / C01 — docente revisando indicadores e registros de uma aula on-line já realizada | Média frequência / Alta criticidade | {{nome — matrícula}} |
-| T04 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
-| T07 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
-| T10 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
+| T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
+| T04 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
+| T05 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
@@ -453,17 +452,14 @@ flowchart TB
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Localizar e abrir o resumo da aula; Personalizar e avaliar. |
-| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | IIdentificar a aula desejada; Definir necessidades; Analisar a visualização resultante. |
-| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | ECarregar as reuniões; Exibir o resumo da aula; Atualizar o dashboard. |
-| Pessoa e computador | TTarefa de interação. Representa uma ação do usuário na interface. | Selecionar Ver Resumo; Selecionar indicadores e gráficos desejados; Organizar elementos; Confirmar alterações. |
-| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Localizar a aula → Avaliar o resumo → Personalizar a visualização → Conferir o resultado. |
-| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | Selecionar Ver Resumo → Sistema exibir o resumo da aula. |
-| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Selecionar indicadores e gráficos ou reorganizar elementos no dashboard. |
-| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Caso a visualização não atenda às necessidades, o usuário retorna à personalização e realiza novos ajustes. |
+| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Analisar o estado atual; Decidir como prosseguir |
+| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | Manter conduta da aula; Interpretar alterações do grupo |
+| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | Carregar os indicadores do grupo |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Sistema carrega o estado geral do grupo -> Observar indicador geral do grupo -> Consultar indicadores especificos de engajamento, tedio , confusão e frustração -> Concluir Visualização|
+| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Escolher como conduzir a aula após entender os impactos de uma ação na aula |
 
 ---
-## HTA — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
+## HTA — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
@@ -546,7 +542,7 @@ flowchart TB
 
 ---
 
-## GOMS — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
+## GOMS — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
@@ -623,7 +619,7 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 
 ---
 
-## CTT — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
+## CTT — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
@@ -695,13 +691,13 @@ No diagrama, as tarefas abstratas têm borda tracejada, as de usuário são lara
 
 ---
 
-## HTA — T07 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
+## HTA — T04 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
 
 ### Descrição da tarefa
 
-A tarefa T07 é modelada pelas três técnicas desta entrega: o HTA mostra como ela se divide em subtarefas, o GOMS mostra os métodos alternativos para cumprir cada meta e o CTT mostra as relações temporais entre o que o participante faz e o que o sistema faz.
+A tarefa T04 é modelada pelas três técnicas desta entrega: o HTA mostra como ela se divide em subtarefas, o GOMS mostra os métodos alternativos para cumprir cada meta e o CTT mostra as relações temporais entre o que o participante faz e o que o sistema faz.
 
 A persona de referência é **P05 — Bruno D. Roger**, aluno de graduação em disciplinas EAD. Bruno é persona secundária: não usa o Semáforo Cognitivo nem o Dashboard, mas, como registrado na Entrega 3 (contexto de uso, linha “Papéis/permissões/governança”), tem uma interação própria com o MindFlow por meio das informações de transparência e de participação. Essa é a parte da interface que responde à H03 e às RC04, RC05 e RC09 da Entrega 2.
 
@@ -836,7 +832,7 @@ flowchart LR
 
 ---
 
-## GOMS — T07 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
+## GOMS — T04 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
 
@@ -973,13 +969,13 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 
 ---
 
-## CTT — T07 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
+## CTT — T04 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
 
 ### Descrição
 
-O CTT modela a mesma tarefa T07 do HTA e do GOMS, agora pelas relações temporais entre o que Bruno (P05) faz e o que o MindFlow faz do lado do participante. Não modela o processamento dos sinais, que é funcionamento interno do algoritmo: as tarefas de sistema aqui são apenas as que Bruno percebe, como exibir o aviso e mostrar o estado da participação.
+O CTT modela a mesma tarefa T04 do HTA e do GOMS, agora pelas relações temporais entre o que Bruno (P05) faz e o que o MindFlow faz do lado do participante. Não modela o processamento dos sinais, que é funcionamento interno do algoritmo: as tarefas de sistema aqui são apenas as que Bruno percebe, como exibir o aviso e mostrar o estado da participação.
 
 A correspondência com o HTA é a seguinte: a tarefa 1 do CTT reúne as subtarefas 1 a 4 do HTA (perceber, entender, tirar dúvida e decidir), a tarefa 2.3 corresponde à subtarefa 5 (ajustar a participação) e a tarefa 4 corresponde à subtarefa 6 (conferir depois).
 
@@ -1102,7 +1098,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## HTA — T10 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
+## HTA — T05 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5
 
@@ -1194,7 +1190,7 @@ flowchart TB
 
 Versão renderizada: [`hta_t10.png`](../assets/05_tarefas/hta_t10.png) / [`hta_t10.svg`](../assets/05_tarefas/hta_t10.svg). Fonte editável: [`hta_t10.mmd`](../assets/05_tarefas/hta_t10.mmd).
 
-*Figura T10-HTA — HTA da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir". Fonte: elaboração do autor a partir do Cenário C01.*
+*Figura T05-HTA — HTA da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir". Fonte: elaboração do autor a partir do Cenário C01.*
 
 ### Decomposição e planos
 
@@ -1235,7 +1231,7 @@ Versão renderizada: [`hta_t10.png`](../assets/05_tarefas/hta_t10.png) / [`hta_t
 
 ---
 
-## GOMS — T10 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
+## GOMS — T05 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5
 
@@ -1399,7 +1395,7 @@ O modelo GOMS descreve a mesma tarefa do HTA T10, com os mesmos seis objetivos, 
 
 ---
 
-## CTT — T10 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
+## CTT — T05 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5
 
@@ -1413,9 +1409,9 @@ Depois da reunião, combinar o próximo passo (4.1), anotar as percepções (4.2
 
 ### Diagrama
 
-![CTT T10 — Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir](../assets/05_tarefas/ctt_t10.png)
+![CTT T05 — Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir](../assets/05_tarefas/ctt_t10.png)
 
-*Figura T10-CTT — CTT da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir", na notação ConcurTaskTrees. Fonte editável em SVG: [`ctt_t10.svg`](../assets/05_tarefas/ctt_t10.svg). Elaboração do autor a partir do Cenário C01, do HTA T10 e do GOMS T10.*
+*Figura T05-CTT — CTT da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir", na notação ConcurTaskTrees. Fonte editável em SVG: [`ctt_t10.svg`](../assets/05_tarefas/ctt_t10.svg). Elaboração do autor a partir do Cenário C01, do HTA T05 e do GOMS T05.*
 
 ### Legenda e relações temporais usadas
 
