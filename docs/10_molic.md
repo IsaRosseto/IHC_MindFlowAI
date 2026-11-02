@@ -40,24 +40,41 @@ flowchart TD
     CONSULTAR("`**Consultar resumo da reunião**
     Ver identificação da reunião {
     d: título, data }
-    Examinar estados cognitivos {
-    d: engajamento, tédio, confusão, frustração }
+
+    Consultar disponibilidade da análise {
+    d: disponibilidade de dados }
+
+    Examinar indicadores disponíveis
+    (precond: dados disponíveis para o indicador) {
+    d: indicador cognitivo, valor, escala }
+
+    Compreender os indicadores {
+    d: significado dos indicadores,
+    caráter estimado dos resultados }
+
     Consultar visualização atual {
-    d: indicadores exibidos }`")
+    d: seleção de indicadores aplicada }`")
 
     PERSONALIZAR("`**Personalizar visualização**
     Consultar opções de personalização {
-    d: indicadores disponíveis }
+    d: indicadores cognitivos disponíveis }
+
     Definir informações do resumo {
-    d+u: indicadores selecionados para exibição }`")
+    d+u: seleção de indicadores
+    (valor inicial: configuração vigente) }`")
 
     SALVAR[" "]
 
     CONFERIR("`**Conferir resumo personalizado**
-    Examinar resultado da personalização {
-    d: indicadores exibidos, dados dos indicadores }
     Consultar configuração aplicada {
-    d: seleção de indicadores salva }`")
+    d: seleção de indicadores salva }
+
+    Consultar disponibilidade da análise {
+    d: disponibilidade de dados }
+
+    Examinar resultado da personalização
+    (precond: dados disponíveis para o indicador) {
+    d: indicador cognitivo, valor, escala }`")
 
     FIM(((" ")))
 
