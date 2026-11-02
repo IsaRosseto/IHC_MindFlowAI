@@ -33,24 +33,75 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ### Diagrama
 
-![MoLIC M01](../assets/10_molic/molic_m01.svg)
+``` mermaid
+flowchart TD
+    INICIO((" "))
 
-**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+    CONSULTAR("`**Consultar resumo da reunião**
+    Ver identificação da reunião {
+    d: título, data }
+    Examinar estados cognitivos {
+    d: engajamento, tédio, confusão, frustração }
+    Consultar visualização atual {
+    d: indicadores exibidos }`")
+
+    PERSONALIZAR("`**Personalizar visualização**
+    Consultar opções de personalização {
+    d: indicadores disponíveis }
+    Definir informações do resumo {
+    d+u: indicadores selecionados para exibição }`")
+
+    SALVAR[" "]
+
+    CONFERIR("`**Conferir resumo personalizado**
+    Examinar resultado da personalização {
+    d: indicadores exibidos, dados dos indicadores }
+    Consultar configuração aplicada {
+    d: seleção de indicadores salva }`")
+
+    FIM(((" ")))
+
+    INICIO -->|"u: abrir resumo da reunião; gco: Personalizar visualização do resumo"| CONSULTAR
+
+    CONSULTAR -->|"u: personalizar visualização"| PERSONALIZAR
+
+    PERSONALIZAR -->|"u: salvar alterações"| SALVAR
+
+    SALVAR -->|"d: configuração salva e aplicada"| CONFERIR
+
+    SALVAR -.->|"[SR] d: não foi possível salvar; seleções preservadas"| PERSONALIZAR
+
+    PERSONALIZAR -.->|"u: cancelar alterações"| CONSULTAR
+
+    CONFERIR -->|"u: editar novamente"| PERSONALIZAR
+
+    CONFERIR -->|"gcc: Personalizar visualização do resumo"| FIM
+
+    classDef processo fill:#000000,stroke:#000000;
+    classDef abertura fill:#000000,stroke:#000000;
+    class SALVAR processo;
+    class INICIO abertura;
+```
+
 
 ### Leitura do diagrama
 
-Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
-
 #### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+1. O docente abre o resumo da reunião. O marcador `gco: Personalizar visualização do resumo` identifica a abertura da conversa relacionada a esse objetivo.
+2. Na cena **Consultar resumo da reunião**, o sistema apresenta o título, a data, os estados cognitivos e os indicadores atualmente exibidos.
+3. Ao solicitar `u: personalizar visualização`, o docente acessa a cena **Personalizar visualização**, consulta os indicadores disponíveis e define quais deseja exibir. Essa seleção é representada por `d+u: indicadores selecionados para exibição`.
+4. O docente solicita `u: salvar alterações`, iniciando o processo de salvamento pelo sistema.
+5. Quando o salvamento é concluído, o sistema comunica `d: configuração salva e aplicada` e apresenta a cena **Conferir resumo personalizado**. O docente examina os indicadores exibidos, seus dados e a configuração salva.
+6. Após a conferência, o marcador `gcc: Personalizar visualização do resumo` indica o encerramento da conversa sobre esse objetivo.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+| Cancelamento da personalização | Na cena **Personalizar visualização**. | Após solicitar `u: cancelar alterações`, o docente retorna ao resumo com a configuração anterior. | As alterações não salvas são descartadas, sem confirmação, e o docente pode continuar consultando o resumo. |
+| Falha no salvamento | No processo do sistema, após `u: salvar alterações`. | O sistema comunica `[SR] d: não foi possível salvar; seleções preservadas`. | O docente retorna à personalização com suas seleções preservadas e pode tentar salvar novamente, modificar a seleção ou cancelar. |
+| Necessidade de novos ajustes | Na cena **Conferir resumo personalizado**. | Ao examinar o resultado, o docente identifica a necessidade de modificar a configuração e solicita `u: editar novamente`. | Retorna à personalização, ajusta os indicadores e realiza um novo salvamento antes de concluir a conferência. |
 
 ### Checklist específico de modelagem
 
@@ -75,7 +126,7 @@ Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupt
 
 | Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
 |---|---|---|---|
-| O01 | M01 | {{...}} | {{...}} |
+| O01 | M01 | O diagrama contempla consulta, seleção de indicadores, salvamento, conferência e recuperação de falha. Não há duplicidades identificadas neste recorte. Falta um encerramento explícito para quem decide sair sem salvar. | Manter o M01 para a personalização do resumo, com cancelamento direto e preservação das seleções em caso de falha. Registrar a saída sem salvar como lacuna desta versão. |
 
 ### Preparação para o Figma
 
