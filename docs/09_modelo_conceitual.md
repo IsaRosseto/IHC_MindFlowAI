@@ -84,25 +84,39 @@ Em turmas maiores, acompanhar individualmente os participantes se torna ainda ma
 
 ## 3. Mapa de objetivos
 
-
 ```mermaid
 flowchart TD
-    GERAL["Compreender os estados da turma para apoiar a condução e a revisão das aulas"]
-
-    O02["O02 — Interpretar os estados da turma durante a aula"]
-    O03["O03 — Analisar os resultados de uma aula concluída"]
+    GERAL["Analisar os estados da turma para apoiar decisões pedagógicas"]
 
     O04["O04 — Decidir se deve manter ou adaptar a condução da aula"]
-    O01["O01 — Personalizar a visualização do resumo da reunião"]
-    O05["O05 — Avaliar se a visualização atende às necessidades de análise"]
+    O03["O03 — Analisar os resultados de uma aula concluída"]
 
-    GERAL --> O02
+    O02["O02 — Interpretar os estados da turma durante a aula"]
+    O01["O01 — Personalizar a visualização do resumo da reunião"]
+    O05["O05 — Avaliar a adequação da visualização personalizada"]
+
+    GERAL --> O04
     GERAL --> O03
 
-    O02 --> O04
+    O04 --> O02
+
     O03 -->|"quando necessário"| O01
     O01 --> O05
 ```
+
+### Dicionário de objetivos
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
+|---|---|---|---|---|
+| O01 | Personalizar a visualização do resumo da reunião, selecionando os indicadores que deseja exibir. | P01 — Karol | CI01 | Alta |
+| O02 | Interpretar os estados de engajamento, tédio, confusão e frustração durante a aula, considerando o significado dos indicadores, suas escalas e a disponibilidade dos dados. | P01 — Karol | CI01 | Alta |
+| O03 | Analisar os resultados de uma aula concluída, identificando as informações relevantes para sua revisão e considerando os limites das estimativas apresentadas. | P01 — Karol | CI01 | Alta |
+| O04 | Decidir se deve manter ou adaptar a condução da aula, utilizando os indicadores como apoio e considerando os demais sinais observados na videoconferência. | P01 — Karol | CI01 | Alta |
+| O05 | Avaliar se a seleção de indicadores foi aplicada e se a visualização personalizada apresenta as informações necessárias à análise. | P01 — Karol | CI01 | Alta |
+
+O M01 detalha os objetivos O01 e O05 e cobre parte de O03, correspondente à consulta do resumo. Os objetivos O02 e O04 pertencem ao acompanhamento durante a aula.
+
+Título, data, valores, escalas e disponibilidade de dados são signos necessários para alcançar esses objetivos, sendo detalhados no esquema conceitual de signos.
 
 ### Dicionário de objetivos
 
