@@ -86,14 +86,31 @@ Em turmas maiores, acompanhar individualmente os participantes se torna ainda ma
 
 ```mermaid
 flowchart TD
-    GERAL["Analisar os estados da turma para apoiar decisões pedagógicas"]
+    GERAL["`Analisar os estados
+    da turma para apoiar
+    decisões pedagógicas`"]
 
-    O04["O04 — Decidir se deve manter ou adaptar a condução da aula"]
-    O03["O03 — Analisar os resultados de uma aula concluída"]
+    O04["`**O04**
+    Decidir se deve manter
+    ou adaptar a condução
+    da aula`"]
 
-    O02["O02 — Interpretar os estados da turma durante a aula"]
-    O01["O01 — Personalizar a visualização do resumo da reunião"]
-    O05["O05 — Avaliar a adequação da visualização personalizada"]
+    O03["`**O03**
+    Analisar os resultados
+    de uma aula concluída`"]
+
+    O02["`**O02**
+    Interpretar os estados
+    da turma durante a aula`"]
+
+    O01["`**O01**
+    Personalizar a visualização
+    do resumo da reunião`"]
+
+    O05["`**O05**
+    Avaliar a adequação
+    da visualização
+    personalizada`"]
 
     GERAL --> O04
     GERAL --> O03
