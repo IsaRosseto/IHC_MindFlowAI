@@ -475,53 +475,9 @@ A tarefa é considerada concluída quando a professora toma a decisão (seguir o
 
 ### Diagrama
 
-```mermaid
-flowchart TB
+![HTA T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/hta_t03.png)
 
-    T0["0. Perceber se a turma está acompanhando a explicação<br/>e decidir se reforça o conteúdo<br/><b>Plano 0:</b> 1 > repetir (2 > 3, conforme necessário) > 4"]
-
-    T1["1. Explicar o tópico novo<br/><b>Plano 1:</b> 1.1 > 1.2"]
-    T2["2. Observar os sinais da turma<br/><b>Plano 2:</b> 2.1 ou 2.2 ou 2.3, conforme o que estiver disponível"]
-    T3["3. Interpretar os sinais observados<br/><b>Plano 3:</b> 3.1 > 3.2"]
-    T4["4. Decidir como conduzir a aula<br/><b>Plano 4:</b> 4.1 ou 4.2"]
-
-    T0 --> T1
-    T0 --> T2
-    T0 --> T3
-    T0 --> T4
-
-    T11[["1.1 Apresentar o tópico<br/>com a tela compartilhada"]]
-    T12[["1.2 Explicar a estrutura nova<br/>com exemplos"]]
-
-    T1 --> T11
-    T1 --> T12
-
-    T21[["2.1 Olhar a grade de vídeo<br/>das câmeras ligadas"]]
-    T22[["2.2 Verificar o chat em busca<br/>de mensagens ou reações"]]
-    T23[["2.3 Perguntar verbalmente<br/>se a turma entendeu"]]
-
-    T2 --> T21
-    T2 --> T22
-    T2 --> T23
-
-    T31[["3.1 Comparar os sinais recebidos com o que<br/>se espera de uma turma que entendeu"]]
-    T32[["3.2 Avaliar o quanto confia<br/>nesse julgamento"]]
-
-    T3 --> T31
-    T3 --> T32
-
-    T41[["4.1 Seguir o plano de aula<br/>sem alterações"]]
-    T42[["4.2 Parar para reforçar o conteúdo<br/>com um exemplo extra"]]
-
-    T4 --> T41
-    T4 --> T42
-
-    classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
-    classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
-
-    class T0,T1,T2,T3,T4 objetivo;
-    class T11,T12,T21,T22,T23,T31,T32,T41,T42 operacao;
-```
+*Figura T03-HTA — HTA da tarefa T03, com os planos de cada objetivo. As caixas com borda grossa e traço embaixo são operações (ponto de parada da decomposição). Fonte editável em SVG: [`hta_t03.svg`](../assets/05_tarefas/hta_t03.svg). Elaboração da autora a partir do Cenário C05.*
 
 ### Decomposição e planos
 
@@ -655,7 +611,7 @@ Em 2, Camila compara os sinais com o que espera de uma turma que entendeu e depo
 
 ![CTT T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/ctt_t03.png)
 
-*Figura T03-CTT — CTT da tarefa T03 na notação ConcurTaskTrees, com os tipos de tarefa identificados (abstrata, usuário, interação e sistema). Fonte editável em SVG: [`ctt_t03.svg`](../assets/05_tarefas/ctt_t03.svg). Elaboração da autora a partir do Cenário C05, do HTA T03 e do GOMS T03.*
+*Figura T03-CTT — CTT da tarefa T03 na notação ConcurTaskTrees. Cada tarefa traz o ícone e o nome do tipo (abstrata, usuário, interação ou sistema); os símbolos e operadores estão explicados na legenda abaixo. Fonte editável em SVG: [`ctt_t03.svg`](../assets/05_tarefas/ctt_t03.svg). Elaboração da autora a partir do Cenário C05, do HTA T03 e do GOMS T03.*
 
 Expressão temporal equivalente ao diagrama:
 
