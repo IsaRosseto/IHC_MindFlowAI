@@ -539,14 +539,13 @@ flowchart TB
 - As subtarefas são necessárias e suficientes? Sim. Explicar, observar, interpretar e decidir cobrem o ciclo completo descrito no cenário.
 - Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. O Plano 0 usa ordem e repetição, e os Planos 2 e 4 usam alternativa (“ou”).
 - A decomposição parou em nível útil para projeto de interação? Sim. Parou em ações observáveis (olhar a grade, verificar o chat, perguntar), sem descer a detalhes de tela.
+- Quem executa cada parte? O HTA descreve apenas as metas e operações da **professora (usuária)**. Os **alunos** participam respondendo (2.3) e a **plataforma de videoconferência** (aplicativo + servidor do Google Meet) transmite a tela, exibe as câmeras e o chat; essas tarefas de sistema e de interação estão identificadas no CTT T03, logo abaixo.
 
 ---
 
 ## GOMS — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
-
-## GOMS — Perceber a compreensão da turma e decidir se reforça o conteúdo
 
 ### GOAL 0: Perceber, durante a aula, se a turma está compreendendo uma explicação nova e decidir se reforça o conteúdo
 
@@ -565,14 +564,22 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 1.A.3:** observar as expressões visíveis nas miniaturas;
 - **OP. 1.A.4:** retornar a atenção ao conteúdo compartilhado.
 
-#### METHOD 1.B: Perguntar diretamente à turma
+#### METHOD 1.B: Verificar o chat
 
-**SEL. RULE:** utilizar quando as câmeras estiverem desligadas ou quando a grade de vídeo não permitir concluir se a turma acompanhou.
+**SEL. RULE:** utilizar quando a turma costuma se manifestar por escrito ou quando a professora não quer interromper a explicação para perguntar.
 
-- **OP. 1.B.1:** interromper brevemente a explicação;
-- **OP. 1.B.2:** perguntar à turma se entenderam;
-- **OP. 1.B.3:** aguardar as respostas;
-- **OP. 1.B.4:** avaliar o tom e a convicção das respostas recebidas.
+- **OP. 1.B.1:** direcionar o olhar para o painel de chat da videochamada;
+- **OP. 1.B.2:** procurar mensagens ou reações recentes sobre o tópico;
+- **OP. 1.B.3:** retornar a atenção ao conteúdo compartilhado.
+
+#### METHOD 1.C: Perguntar diretamente à turma
+
+**SEL. RULE:** utilizar quando as câmeras estiverem desligadas, o chat estiver vazio ou quando os outros métodos não permitirem concluir se a turma acompanhou.
+
+- **OP. 1.C.1:** interromper brevemente a explicação;
+- **OP. 1.C.2:** perguntar à turma se entenderam;
+- **OP. 1.C.3:** aguardar as respostas;
+- **OP. 1.C.4:** avaliar o tom e a convicção das respostas recebidas.
 
 ---
 
@@ -615,7 +622,11 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 3.B.3:** perguntar novamente se ficou claro;
 - **OP. 3.B.4:** retomar o plano de aula a partir desse ponto.
 
-> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+### Síntese do modelo GOMS
+
+- O Goal 1 tem três métodos alternativos (grade, chat e pergunta), escolhidos conforme o que está disponível no momento; nenhum deles é confiável sozinho, o que leva ao Method 2.B de confirmação adicional.
+- A operação 2.A.2 (avaliar o quanto confia no julgamento) é puramente cognitiva e não tem nenhum apoio externo hoje; é o ponto ligado à hipótese H02.
+- O Method 3.B tem custo de tempo maior que o 3.A, o que explica por que a professora tende a seguir em frente quando os sinais são ambíguos (Cenário C05).
 
 ---
 
@@ -625,69 +636,66 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 
 ### Descrição
 
-O modelo CTT representa a mesma situação sob a perspectiva das relações temporais entre as tarefas. A tarefa raiz (**Perceber se a turma entendeu e decidir se reforça o conteúdo**) é abstrata e se decompõe em quatro tarefas: **Explicar o tópico novo** (interação, com a tela compartilhada), **Observar os sinais da turma** (abstrata), **Interpretar os sinais observados** (tarefa de usuário, puramente cognitiva) e **Decidir como conduzir a aula** (abstrata).
+O modelo CTT representa a mesma tarefa do HTA T03 e do GOMS T03 sob a perspectiva das relações temporais, na notação ConcurTaskTrees vista em aula. Cada tarefa está identificada pelo **tipo**, ou seja, por **quem a executa**:
 
-Explicar e observar acontecem ao mesmo tempo, e não uma depois da outra (concorrência): a professora observa a turma enquanto fala. A observação é repetida durante a explicação e, para cada rodada, a professora escolhe um canal: olhar a grade de vídeo, ler o chat ou perguntar à turma. Só depois de observar é que ela consegue interpretar os sinais (habilitação), e só depois de interpretar consegue decidir.
+- **Usuário** (pessoa): Camila pensa, interpreta ou decide, sem agir sobre a videochamada;
+- **Interação** (pessoa + computador): Camila age sobre a videochamada ou fala com a turma por meio dela;
+- **Sistema** (computador): a plataforma de videoconferência (Google Meet, considerando o aplicativo da professora, o **servidor** da plataforma e o aplicativo dos alunos) executa algo sem ação de Camila, como transmitir a tela, exibir as câmeras, entregar as mensagens do chat e transmitir o áudio das respostas;
+- **Abstrata** (nuvem): agrupa subtarefas de tipos diferentes.
 
-A decisão é uma escolha entre seguir o plano de aula e reforçar o conteúdo. Reforçar se decompõe em duas tarefas de interação em sequência: dar um exemplo extra e, depois dele, perguntar se ficou claro.
+O sistema modelado é a **plataforma de videoconferência que Camila já usa hoje**, e não o MindFlow: como o Cenário C05 (Entrega 4) descreve a prática atual, o modelo não antecipa a solução. As tarefas de sistema mostram justamente onde a plataforma atual limita a percepção da professora (grade reduzida, chat que depende de o aluno escrever, respostas verbais rápidas).
+
+A tarefa raiz (**0. Perceber se a turma está acompanhando a explicação nova e decidir se reforça**) é abstrata e se decompõe em três tarefas em sequência (`>>`): **1. Explicar o tópico observando a turma**, **2. Interpretar os sinais observados** e **3. Decidir como conduzir a aula**.
+
+Dentro de 1, explicar (1.1) e observar (1.2) acontecem ao mesmo tempo (`|||`): Camila observa a turma enquanto fala. Para explicar, ela compartilha a tela (interação), a plataforma transmite a tela e reduz a grade de vídeo a miniaturas (sistema) e só então ela explica a estrutura com exemplos (interação). A observação se repete (`*`) e, a cada rodada, é uma escolha (`[ ]`) entre três canais. Em todos eles há passagem de informação (`[ ]>>`) entre o que o sistema exibe ou transmite e o que Camila interpreta: a plataforma exibe as miniaturas e Camila lê as expressões visíveis; a plataforma exibe o chat e Camila lê as mensagens; Camila pergunta "entenderam?", a plataforma transmite as respostas e ela avalia o tom e a convicção.
+
+Em 2, Camila compara os sinais com o que espera de uma turma que entendeu e depois avalia o quanto confia nesse julgamento (duas tarefas de usuário, ligadas à hipótese H02). Em 3, escolhe entre seguir o plano e reforçar o conteúdo; reforçar é a sequência dar um exemplo extra `>>` perguntar se ficou claro `>>` retomar o plano.
 
 ### Diagrama
 
-```mermaid
-flowchart LR
+![CTT T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/ctt_t03.png)
 
-    subgraph C0["<b>0. Perceber se a turma entendeu e decidir se reforça o conteúdo</b>"]
-        direction LR
+*Figura T03-CTT — CTT da tarefa T03 na notação ConcurTaskTrees, com os tipos de tarefa identificados (abstrata, usuário, interação e sistema). Fonte editável em SVG: [`ctt_t03.svg`](../assets/05_tarefas/ctt_t03.svg). Elaboração da autora a partir do Cenário C05, do HTA T03 e do GOMS T03.*
 
-        C1[["<b>1. Explicar o tópico novo</b><br/>com a tela<br/>compartilhada"]]
+Expressão temporal equivalente ao diagrama:
 
-        subgraph C2["<b>2. Observar os sinais da turma *</b>"]
-            direction TB
-            C21[["2.1 Olhar a grade de vídeo"]]
-            C22[["2.2 Ler o chat"]]
-            C23[["2.3 Perguntar à turma"]]
-            C21 -- "[ ]" --- C22
-            C22 -- "[ ]" --- C23
-        end
-
-        C3("<b>3. Interpretar os<br/>sinais observados</b>")
-
-        subgraph C4["<b>4. Decidir como conduzir a aula</b>"]
-            direction TB
-            C41("4.1 Seguir o plano de aula")
-            subgraph C42["4.2 Reforçar o conteúdo na hora"]
-                direction TB
-                C421[["4.2.1 Dar um exemplo extra"]]
-                C422[["4.2.2 Perguntar se ficou claro"]]
-                C421 -- "&gt;&gt;" --> C422
-            end
-            C41 -- "[ ]" --- C42
-        end
-
-        C1 -- "|||" --- C2
-        C2 -- "&gt;&gt;" --> C3
-        C3 -- "&gt;&gt;" --> C4
-    end
-
-    classDef interacao fill:#e8f6ec,stroke:#2f855a,stroke-width:2px,color:#111;
-    classDef usuario fill:#fff6e5,stroke:#b7791f,stroke-width:2px,color:#111;
-    classDef abstrata fill:#eef2ff,stroke:#4f5fbf,stroke-width:2px,stroke-dasharray:6 4,color:#111;
-
-    class C1,C21,C22,C23,C421,C422 interacao;
-    class C3,C41 usuario;
-    class C0,C2,C4,C42 abstrata;
+```text
+0     = 1 >> 2 >> 3
+1     = 1.1 ||| 1.2*
+1.1   = 1.1.1 []>> 1.1.2 >> 1.1.3
+1.2   = 1.2.1 [] 1.2.2 [] 1.2.3          (uma escolha a cada repetição)
+1.2.1 = 1.2.1.1 []>> 1.2.1.2
+1.2.2 = 1.2.2.1 []>> 1.2.2.2
+1.2.3 = 1.2.3.1 []>> 1.2.3.2 []>> 1.2.3.3
+2     = 2.1 >> 2.2
+3     = 3.1 [] 3.2
+3.2   = 3.2.1 >> 3.2.2 >> 3.2.3
 ```
+
+Correspondência com o HTA T03: a tarefa 1.1 do CTT corresponde ao objetivo 1 do HTA (explicar); 1.2 ao objetivo 2 (observar), com 1.2.1, 1.2.2 e 1.2.3 equivalentes a 2.1, 2.2 e 2.3; a tarefa 2 do CTT corresponde ao objetivo 3 (interpretar) e a tarefa 3 ao objetivo 4 (decidir). O CTT acrescenta as tarefas de sistema, que o HTA não representa, e agrupa explicar e observar em uma tarefa abstrata (1) para mostrar que acontecem ao mesmo tempo.
 
 ### Legenda e relações temporais usadas
 
-| Operador/relação | Significado no diagrama | Exemplo no modelo |
+| Símbolo/operador | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `\|\|\|` (concorrência) | As tarefas acontecem ao mesmo tempo, sem ordem fixa entre si | Explicar o tópico novo e Observar os sinais da turma |
-| `>>` (habilitação) | A segunda tarefa só começa depois que a primeira termina | Observar → Interpretar → Decidir; Dar um exemplo extra → Perguntar se ficou claro |
-| `[]` (escolha) | Apenas uma das alternativas é executada a cada vez | Olhar a grade de vídeo, Ler o chat ou Perguntar à turma; Seguir o plano ou Reforçar o conteúdo |
-| `*` (repetição) | A tarefa é repetida enquanto for necessária | Observar os sinais da turma durante toda a explicação |
+| Nuvem (azul) | Tarefa **abstrata**: agrupa subtarefas de tipos diferentes | 0; 1 Explicar o tópico observando a turma; 1.1 Explicar o tópico novo; 1.2 Observar os sinais; 1.2.1 Olhar a grade; 1.2.2 Ler o chat; 1.2.3 Perguntar à turma; 2 Interpretar; 3 Decidir; 3.2 Reforçar |
+| Pessoa (laranja) | Tarefa do **usuário**: atividade cognitiva de Camila, sem agir sobre o sistema | 1.2.1.2 Ler as expressões visíveis; 1.2.2.2 Ler as mensagens; 1.2.3.3 Avaliar tom e convicção; 2.1 Comparar com uma turma que entendeu; 2.2 Avaliar quanto confia no julgamento |
+| Pessoa + computador (verde) | Tarefa de **interação**: Camila age sobre a videochamada | 1.1.1 Compartilhar a tela; 1.1.3 Explicar a estrutura com exemplos; 1.2.3.1 Perguntar "entenderam?"; 3.1 Seguir o plano; 3.2.1 Dar um exemplo extra; 3.2.2 Perguntar se ficou claro; 3.2.3 Retomar o plano |
+| Computador (vermelho) | Tarefa do **sistema**: a plataforma de videoconferência (aplicativo + servidor) executa sem ação de Camila | 1.1.2 Transmitir a tela e reduzir a grade de vídeo; 1.2.1.1 Exibir miniaturas das câmeras ligadas; 1.2.2.1 Exibir mensagens e reações; 1.2.3.2 Transmitir as respostas dos alunos |
+| `>>` (habilitação) | A segunda tarefa só começa depois que a primeira termina | 1 → 2 → 3; Transmitir a tela → Explicar a estrutura; Dar um exemplo extra → Perguntar se ficou claro → Retomar o plano |
+| `[]>>` (habilitação com passagem de informação) | A segunda tarefa começa depois da primeira e usa a informação produzida por ela | Exibir miniaturas `[]>>` Ler as expressões; Exibir mensagens `[]>>` Ler as mensagens; Perguntar `[]>>` Transmitir as respostas `[]>>` Avaliar tom e convicção |
+| `[]` (escolha) | Apenas uma das alternativas é executada a cada vez | Olhar a grade `[]` Ler o chat `[]` Perguntar à turma; Seguir o plano `[]` Reforçar o conteúdo |
+| `\|\|\|` (concorrência) | As tarefas acontecem ao mesmo tempo, sem ordem fixa | Explicar o tópico novo `\|\|\|` Observar os sinais da turma |
+| `*` (repetição) | A tarefa é repetida enquanto for necessária | 1.2* Observar os sinais da turma durante toda a explicação |
 
-No diagrama, as tarefas abstratas têm borda tracejada, as de usuário são laranja e as de interação são verdes; as subtarefas ficam dentro da caixa da tarefa-pai e o operador temporal aparece sobre a linha que liga duas tarefas irmãs. As tarefas de **usuário** (Interpretar os sinais, Seguir o plano) são ações cognitivas ou de decisão da professora, sem interação direta com a videochamada. Tarefas de **interação** (explicar com a tela compartilhada, olhar a grade, ler o chat, perguntar) são ações da professora sobre a videochamada. Tarefas **abstratas** agrupam subtarefas. Não há tarefas de sistema porque esta modelagem descreve a prática atual, sem antecipar a solução.
+No diagrama, cada tarefa traz o ícone, a cor e também o nome do tipo escrito abaixo do rótulo, para que a identificação não dependa só da cor. O ponto crítico aparece nas passagens de informação `[]>>` de 1.2: tudo o que Camila consegue interpretar depende do que a plataforma exibe ou transmite (miniaturas pequenas, câmeras desligadas, chat vazio, "sim" rápido), e essa observação concorre (`|||`) com a explicação. É esse trecho que o Semáforo Cognitivo pretende apoiar no futuro, o que continua como hipótese (H01 e H02).
+
+### Síntese das três modelagens da tarefa T03
+
+- HTA, GOMS e CTT convergem no mesmo gargalo: observar a turma acontece **ao mesmo tempo** que explicar com a tela compartilhada, e os canais disponíveis hoje (grade reduzida, chat, pergunta verbal) entregam sinais fracos, como descrito no Cenário C05.
+- A avaliação da confiança no próprio julgamento aparece nos três modelos (HTA 3.2, GOMS OP. 2.A.2, CTT 2.2) e não tem nenhum apoio na prática atual, o que mantém H02 como hipótese a investigar.
+- A decisão de reforçar tem custo de tempo (HTA 4, GOMS Goal 3, CTT 3) e por isso tende a ser adiada; a utilidade de um sinal durante a aula para antecipar essa decisão segue como hipótese (H01), a validar com professoras reais.
+- Para o protótipo e o teste de usabilidade, as tarefas candidatas deste recorte são perceber o estado da turma durante o compartilhamento de tela (CTT 1.2) e decidir se reforça ou segue (CTT 3).
 
 ---
 

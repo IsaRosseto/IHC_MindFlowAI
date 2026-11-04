@@ -69,7 +69,7 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 **Base de evidências:** proto-persona construída a partir das hipóteses e do usuário definido na Entrega 1; ainda sem entrevista ou observação com usuários reais  
 **Hipóteses da Entrega 1 relacionadas:** H01 e H02; inclui a hipótese nova sobre turmas pequenas
 
-<img src="https://github.com/user-attachments/assets/7c55de54-a37e-44a8-a060-c40d44d79be6" width="300" alt="Persona P02 — Camila Duarte">
+<img src="../assets/03_personas/persona_camila.png" width="300" alt="Persona P02 — Camila Duarte">
 
 | Campo | Descrição |
 |---|---|
@@ -208,7 +208,13 @@ Apesar de compartilharem o objetivo geral de acompanhar melhor a reação do gru
 
 Por isso, uma interface projetada pensando apenas em uma dessas personas poderia não atender completamente às necessidades das demais.
 
-A **P02 — Camila Duarte** será utilizada como persona de referência principal para o mapa de empatia e para a jornada desta entrega, por representar de forma clara o uso do MindFlow durante uma aula on-line. Essa escolha não elimina as demais personas primárias, que continuam sendo consideradas nas decisões de design e nas próximas etapas do projeto.
+A **P02 — Camila Duarte** foi usada como persona de referência **apenas para o mapa de empatia e a jornada desta entrega**, porque a atividade pede um mapa e uma jornada por equipe e o caso dela (aula on-line com tela compartilhada) é o mais próximo da situação concreta da Entrega 1. Isso **não** faz de Camila a representação de uso de todo o projeto: o contexto de uso consolidado (seção 3) considera as quatro personas primárias, e a tabela abaixo registra onde a jornada de Camila **não** vale para as demais.
+
+| Persona | O que muda em relação à jornada de Camila | Consequência para o design |
+|---|---|---|
+| P01 — Karol (EAD, Filosofia) | Turma maior e mais heterogênea, aula expositiva, mais alunos com câmera desligada | O indicador agregado precisa lidar com poucos participantes contribuindo para o sinal em turmas grandes |
+| P03 — Nathanael (treinamento corporativo) | Participantes são funcionários, há hierarquia e avaliação de desempenho; a revisão pós-sessão pesa mais que o ao vivo | O resultado não pode ser lido como avaliação individual; comparação entre turmas de treinamento ganha importância |
+| P04 — Manoel (comercial B2B) | Reunião curta com clientes externos, tela compartilhada o tempo todo, alto custo de interromper | Indicador ainda mais discreto; transparência e privacidade com pessoas de fora da organização |
 
 **P05 — Bruno D. Roger** é classificado como **persona secundária**. Ele não utiliza o Semáforo Cognitivo nem o Dashboard, mas possui interação própria com o MindFlow por meio das informações de transparência e participação. Suas necessidades influenciam principalmente decisões relacionadas à privacidade, clareza sobre o processamento dos dados e controle do participante.
 
@@ -219,7 +225,9 @@ A **P02 — Camila Duarte** será utilizada como persona de referência principa
 **Justificativa:** Camila foi escolhida como referência por representar diretamente o comunicador definido na Entrega 1 em uma situação concreta de aula on-line. Sua atenção dividida entre explicação, compartilhamento de tela e observação dos alunos permite explorar a hipótese H01. O recorte de turma pequena também introduz uma questão relevante para validação: se um indicador agregado continua útil quando o grupo possui poucos participantes.
 
 
-<img src="https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/03_personas/mapa_empatia_camila.png" width="590" alt="Mapa de empatia da persona P02 — Camila Duarte">
+<img src="../assets/03_personas/mapa_empatia_camila.png" width="590" alt="Mapa de empatia da persona P02 — Camila Duarte, com todas as notas marcadas como hipótese [H]">
+
+> Todas as notas do mapa são **hipóteses [H]** da proto-persona, inclusive as suposições psicológicas (o que pensa e sente, dores e necessidades). Nenhuma foi confirmada com professoras reais; a imagem também traz a marcação [H] em cada nota.
 
 **O que vê [H]:** a própria tela de compartilhamento, uma grade pequena de vídeo no canto, alguns alunos com câmera desligada.
 
@@ -227,11 +235,11 @@ A **P02 — Camila Duarte** será utilizada como persona de referência principa
 
 **O que diz e faz [H]:** explica a matéria, faz perguntas pra turma, tenta puxar quem está mais quieto, compartilha exercício na tela.
 
-**O que pensa e sente [H]:** preocupação de estar falando sozinha sem saber se a turma está acompanhando, ansiedade de não ter feedback claro durante a aula.
+**O que pensa e sente [H]:** supõe-se que sinta preocupação de estar falando sozinha sem saber se a turma está acompanhando e ansiedade por não ter feedback claro durante a aula (suposição psicológica a validar em entrevista).
 
-**Dores [H]:** perceber tarde demais que um aluno específico ficou perdido num tópico, não ter como saber se o silêncio da turma é atenção ou desânimo.
+**Dores [H]:** possivelmente perceber tarde demais que parte da turma ficou perdida num tópico e não ter como saber se o silêncio da turma é atenção ou desânimo.
 
-**Ganhos/necessidades [H]:** um sinal rápido e confiável do clima da turma, que não a distraia da própria condução da aula.
+**Ganhos/necessidades [H]:** supõe-se que valorize um sinal rápido do clima da turma que não a distraia da própria condução da aula; se ela confiaria nesse sinal é justamente o que H02 investiga.
 
 
 
@@ -255,17 +263,20 @@ A **P02 — Camila Duarte** será utilizada como persona de referência principa
 
 **Persona:** P02 — Camila Duarte  
 **Objetivo da jornada:** conduzir uma aula de inglês por videoconferência, acompanhar possíveis mudanças no estado geral da turma sem perder o foco da explicação e utilizar as informações obtidas para melhorar aulas futuras.  
-**Início e fim da jornada:** começa antes da interação com o MindFlow, quando Camila prepara a aula e pensa em dificuldades percebidas em encontros anteriores, e termina depois do uso do sistema, quando decide se e como vai adaptar uma próxima aula com base nas informações observadas.
+**Início e fim da jornada:** começa **antes de qualquer contato com o MindFlow**, no momento em que Camila percebe um problema na própria prática e se motiva a buscar apoio, passando pela preparação da aula; termina **depois que ela fecha o Dashboard**, quando aplica no mundo real (plano de aula, material, próxima aula e conversa com a turma) o que decidiu a partir das informações.
+
+> Todas as etapas são **hipóteses [H]** construídas a partir da proto-persona P02 e do Cenário C05; nenhuma foi observada com professoras reais. Nas etapas em que o MindFlow aparece, o texto descreve o que se **espera** investigar com H01 (utilidade de um sinal durante a aula) e H02 (confiança no sinal), e não um resultado já confirmado.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | Antes da aula, Camila prepara o conteúdo e relembra pontos em que os alunos tiveram dificuldade em encontros anteriores | Planejar uma aula clara e tentar evitar que as mesmas dúvidas se repitam | Quer preparar uma aula melhor, mas nem sempre sabe quais momentos realmente foram mais difíceis para a turma | O feedback que recebe normalmente é limitado e pode aparecer somente durante exercícios ou em aulas posteriores | O MindFlow pode apoiar a preparação futura ao permitir consultar informações de sessões anteriores sem substituir a percepção da professora | H |
-| 2 | Pouco antes da aula, abre a videoconferência e prepara as ferramentas que vai utilizar | Deixar a aula pronta sem gastar muito tempo com configurações | Quer começar a aula sem precisar aprender ou configurar várias coisas | Possui pouco tempo entre aulas e uma ferramenta complexa pode atrapalhar sua rotina | Permitir ativação rápida e configurações simples, deixando informações mais avançadas como opcionais | H |
-| 3 | Começa a aula, compartilha a tela e explica um novo conteúdo | Ensinar o conteúdo com clareza e manter o ritmo da aula | Focada na explicação e dividindo a atenção entre slides, chat e participantes | Não consegue acompanhar continuamente as câmeras e reações dos alunos enquanto apresenta | O Semáforo Cognitivo deve permanecer visível de forma discreta e permitir leitura rápida sem disputar atenção com a aula | H |
-| 4 | Durante a explicação, o MindFlow apresenta uma mudança no indicador, sugerindo possível aumento de confusão no grupo | Perceber que pode existir alguma dificuldade naquele momento | Fica atenta ao sinal, mas ainda não sabe se ele representa corretamente o que está acontecendo | Pode confiar demais em uma inferência errada ou ignorar um alerta que seria útil | Mostrar a inferência de forma clara e, quando necessário, indicar qualidade ou confiança do sinal para apoiar a interpretação | H |
-| 5 | Camila decide confirmar o sinal fazendo uma pergunta, retomando um exemplo ou observando a resposta da turma | Verificar se a dificuldade indicada pelo sistema também aparece na interação com os alunos | Usa o indicador como apoio, mas combina essa informação com sua própria percepção da aula | Pode modificar a explicação sem necessidade ou interpretar uma reação pontual como dificuldade geral | O sistema não deve determinar automaticamente qual ação deve ser tomada; deve apoiar a decisão do comunicador | H |
-| 6 | Depois da aula, Camila abre o Dashboard e revisa os principais momentos da sessão | Entender em quais partes da aula ocorreram mudanças nos indicadores | Curiosa para comparar sua percepção com o que foi registrado pelo sistema | Pode não ter tempo ou interesse em analisar um relatório longo e cheio de métricas | Apresentar primeiro um resumo simples e uma linha do tempo, permitindo abrir mais detalhes somente quando necessário | H |
-| 7 | Ao preparar uma aula futura, Camila utiliza o que observou no Dashboard junto com sua própria experiência para decidir se vai revisar um conteúdo, trocar um exemplo ou manter a aula como estava | Melhorar as próximas aulas com base em diferentes fontes de informação | Avalia se os dados realmente fazem sentido dentro do contexto que conhece da turma | O sistema pode apontar um momento como relevante, mas isso não significa que Camila precise obrigatoriamente alterar seu planejamento | Permitir que os resultados sirvam como apoio à reflexão e comparação entre sessões, sem transformar as inferências em recomendações obrigatórias | H |
+| 1 — Motivação | Ao corrigir os exercícios de casa, Camila nota que boa parte da turma errou a estrutura explicada na aula anterior e precisa refazer o planejamento. Comenta o problema com uma colega da escola de idiomas, que menciona ferramentas de apoio para aulas on-line | Entender por que não percebeu a dificuldade na hora e evitar que isso se repita | Frustração por ter “falado sozinha” sem perceber; curiosidade, mas também desconfiança em relação a uma ferramenta que analisa a câmera dos alunos | Só descobre a dificuldade dias depois; não sabe se uma ferramenta nova vale o tempo de aprender nem como os alunos reagiriam | Explicar, antes do primeiro uso, para que serve o MindFlow, o que ele **não** faz (avaliar alunos individualmente) e como os alunos são informados | H |
+| 2 — Preparação da aula | No intervalo entre turmas, Camila prepara a aula seguinte: escolhe os exemplos da estrutura nova, separa um exemplo de reserva e decide em que momento vai checar a compreensão | Planejar uma aula clara e prever onde a turma pode ter dificuldade | Quer se preparar melhor, mas tem pouco tempo e não sabe quais trechos foram realmente difíceis nas aulas anteriores | O feedback que recebe é limitado e aparece tarde, no exercício corrigido | Permitir consultar rapidamente sessões anteriores (sem relatório longo) e, se for útil, marcar trechos da aula que ela quer acompanhar com mais atenção | H |
+| 3 — Antes de começar | Pouco antes da aula, abre a videoconferência, prepara a tela que vai compartilhar e decide se ativa o MindFlow naquela turma; avisa os alunos de que a análise estará ativa | Deixar a aula pronta sem gastar tempo com configurações | Quer começar sem precisar aprender várias coisas; preocupa-se com o que os alunos vão pensar | Pouco tempo entre aulas; uma ferramenta complexa ou difícil de explicar aos alunos atrapalha a rotina | Ativação rápida, controle claro de ligar/desligar e um aviso padrão que ela possa mostrar aos alunos | H |
+| 4 — Explicação | Começa a aula, compartilha a tela e explica a estrutura nova | Ensinar o conteúdo com clareza e manter o ritmo | Focada na explicação, dividindo a atenção entre slides, chat e participantes | Não consegue acompanhar continuamente as câmeras enquanto apresenta | Manter o Semáforo Cognitivo discreto e legível durante o compartilhamento de tela, sem disputar atenção com a aula | H |
+| 5 — Sinal durante a aula | O indicador muda e sugere possível aumento de confusão no grupo. **Não se sabe ainda** se Camila notaria essa mudança enquanto explica (H01) nem se o sinal corresponderia ao que de fato acontece com a turma (H02) | Perceber que **pode** existir alguma dificuldade naquele momento | Atenta, mas em dúvida sobre o quanto confiar no sinal | Pode confiar demais em uma inferência errada, ignorar um alerta útil ou nem perceber a mudança | Apresentar a inferência como estimativa, com indicação simples de qualidade/confiança; testar com usuárias se o sinal é percebido e compreendido | H (H01, H02 não validadas) |
+| 6 — Verificação e decisão | Camila confirma por conta própria: faz uma pergunta, pede que um aluno forme uma frase ou usa o exemplo de reserva; depois decide se reforça ou segue | Verificar se a dificuldade sugerida também aparece na interação com os alunos | Usa o indicador como uma pista entre outras, combinada com sua percepção | Pode alterar a aula sem necessidade ou interpretar uma reação pontual como dificuldade geral | O sistema não determina qual ação tomar; a decisão continua com a professora | H |
+| 7 — Revisão no Dashboard | Depois da aula, abre o Dashboard e revisa os principais momentos da sessão | Entender em quais trechos houve mudanças nos indicadores | Curiosa para comparar sua percepção com o que foi registrado | Pouco tempo e pouco interesse em relatórios longos | Resumo simples e linha do tempo primeiro, com detalhes só sob demanda | H |
+| 8 — Depois de fechar o Dashboard | Camila anota no plano de aula os trechos que vai retomar, ajusta os exemplos da estrutura, prepara um exercício curto de revisão para o começo da próxima aula e, na aula seguinte, conversa com a turma sobre o ponto difícil e confere no exercício se houve melhora | Transformar o que observou em mudanças concretas no ensino | Sente que tem mais elementos para decidir, mas avalia se os dados fazem sentido para o que conhece da turma | O sistema pode destacar um momento que ela não considera relevante; o tempo para replanejar continua curto | Permitir exportar ou anotar rapidamente os trechos relevantes e comparar sessões depois, sem transformar as inferências em recomendações obrigatórias | H |
 
 ## Síntese
 
