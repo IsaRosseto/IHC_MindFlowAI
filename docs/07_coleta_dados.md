@@ -402,8 +402,6 @@ Ao final, os resultados serão relacionados às hipóteses **H01, H02 e H03**, p
 
 ## Síntese
 
-> Estado em 05/11/2026: A01/I01 (Kayky), A02/I02 (Isabella) e A03/I03 (Gustavo) estão prontos. **Faltam as soluções de Rafael e Matheus** (Parte A e um instrumento cada, com técnicas diferentes das já usadas — por exemplo, observação de aulas on-line ou análise de documentos/planos de ensino). Os dados ainda **não foram coletados**.
-
 O conjunto de técnicas pretende reduzir três lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
 
 1. **Se o problema do comunicador existe na prática:** se professores e instrutores realmente deixam de perceber dificuldades do grupo durante a sessão, que sinais usam hoje e como decidem reforçar ou seguir (I01 em escala; I02 em profundidade, a partir de aulas reais).
