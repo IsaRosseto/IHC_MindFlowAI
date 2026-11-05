@@ -1360,7 +1360,32 @@ A legenda do diagrama também apresenta os operadores `[ ]>>`, `|[ ]|` e `|=|`, 
 
 ## Síntese da equipe
 
-Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
+As cinco tarefas cobrem três momentos do uso do MindFlow: **durante a sessão**, do lado do comunicador (T03 — Camila; T05 — Manoel); **durante a sessão**, do lado do participante (T04 — Bruno); e **depois da sessão** (T01 — personalizar a visualização de uma aula; T02 — interpretar os indicadores e decidir como adaptar a condução).
+
+**Problemas de interação que apareceram nas modelagens**
+
+- **Atenção dividida:** em T03 e T05, observar o grupo acontece ao mesmo tempo que explicar com a tela compartilhada (`|||` nos CTTs). Os canais atuais (grade reduzida, chat, pergunta verbal) entregam sinais fracos e competem com a fala.
+- **Julgamento sem apoio:** T02, T03 e T05 têm uma etapa explícita de avaliar o quanto o comunicador confia no próprio julgamento, e nenhuma ferramenta atual apoia essa etapa (H02).
+- **Decisão adiada:** reforçar ou reexplicar tem custo de tempo e de constrangimento, então a decisão tende a ser adiada; a dificuldade só é percebida depois (exercício corrigido, follow-up).
+- **Participante sem informação:** em T04, Bruno não sabe o que é processado, se está contribuindo para a análise nem se isso pode pesar contra ele (H03).
+- **Localizar e entender resultados:** em T01 e T02, o comunicador precisa encontrar a aula, entender os indicadores e organizar o que quer ver antes de tirar qualquer conclusão.
+
+**Oportunidades e requisitos derivados**
+
+| Requisito | Origem nas modelagens | Ligação |
+|---|---|---|
+| Indicador do grupo discreto e legível durante o compartilhamento de tela, sem exigir troca de janela | T03 (CTT tarefa 2), T05 (CTT 2.1.2) | R01, F01, H01 |
+| Indicar que algo merece atenção sem prescrever a ação; a decisão continua com o comunicador | T02 (GOMS Goal 3), T03 (CTT tarefa 4), T05 (CTT 2.4) | R02, RC03 |
+| Comunicar confiança/qualidade da inferência de forma simples | T02, T03 (CTT 3.2), T05 (CTT 2.3) | F04, H02 |
+| Resumo e linha do tempo da sessão, com detalhes sob demanda | T01, T02, T05 (objetivo 6) | R03, F02, F03 |
+| Personalizar a visualização dos resultados de uma aula | T01 | R05, F06, H06 |
+| Aviso de análise ativa, explicação do que é processado, escolha de como participar e resumo de transparência | T04 | R04, F08, H03 |
+
+**Tarefas que vão para o protótipo e para o teste de usabilidade**
+
+- **Protótipo (Entrega 6) e teste (Entregas 8 e 14):** T01 — localizar uma aula concluída, consultar o resumo e personalizar a visualização. É o fluxo das metas MU01–MU03 da Entrega 8.
+- **Protótipo, ainda pendente:** o indicador durante a sessão (T03/T05) e a interface do participante (T04). O protótipo em papel cobre apenas a configuração da extensão; essas telas devem entrar no Figma (Entrega 11) para que as tarefas centrais de tempo real e de transparência também possam ser avaliadas.
+- **Em aberto:** se o recorte comercial (T05) compartilha as mesmas tarefas dos contextos de ensino (dúvidas ?02 e ?03); as modelagens mostram a mesma estrutura (perceber > interpretar > decidir), mas com custos e eventos diferentes.
 
 ## Checklist
 

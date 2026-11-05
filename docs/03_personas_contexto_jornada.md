@@ -37,7 +37,7 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 **Base de evidências:** proto-persona baseada na Entrega 1; ainda sem entrevista ou observação com usuários reais  
 **Hipóteses da Entrega 1 relacionadas:** H01 e H02
 
-<img src="https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/03_personas/Karol.png" width="300" alt="Persona P01 — Karol">
+<img src="../assets/03_personas/Karol.png" width="300" alt="Persona P01 — Karol">
 
 | Campo | Descrição |
 |---|---|
@@ -102,7 +102,7 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 **Hipóteses da Entrega 1 relacionadas:** H01, H02 e H03
 
 
-<img src="https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/03_personas/persona_nathanael.png" width="300" alt="Persona P03 — Nathanael Lima">
+<img src="../assets/03_personas/persona_nathanael.png" width="300" alt="Persona P03 — Nathanael Lima">
 
 | Campo | Descrição |
 |---|---|
@@ -164,16 +164,16 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 ### Persona P05 — Bruno D. Roger
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso - 22.123.016-2  
-**Tipo:** secundária  
+**Tipo:** secundária — usuário da **interface de transparência e participação** (não do Semáforo nem do Dashboard)  
 **Base de evidências:** proto-persona a validar. A gente já tinha percebido lá na Entrega 1 que o aluno que participa da chamada é afetado pelo sistema mas não chega a usar a interface, então essa persona vem daí  
 **Hipóteses da Entrega 1 relacionadas:** H03
 
-<img width="450" alt="Gemini_Generated_Image_nocb3hnocb3hnocb" src="https://github.com/user-attachments/assets/1ea7d2ce-5920-4bab-874f-091bec03ca7a" />
+<img width="450" alt="Persona P05 — Bruno D. Roger" src="https://github.com/user-attachments/assets/1ea7d2ce-5920-4bab-874f-091bec03ca7a" />
 
 | Campo | Descrição |
 |---|---|
 | Faixa etária / contexto relevante | 20 anos, aluno de graduação que assiste aula por videoconferência como parte de uma disciplina EAD |
-| Ocupação/papel | Participante da chamada, ele que fornece os dados captados pela webcam, mas quem usa a tela do MindFlow é o professor, não ele |
+| Ocupação/papel | Participante da chamada: fornece os dados captados pela webcam e usa a parte do MindFlow voltada ao participante (aviso de análise ativa, informações sobre o que é processado, controle da própria participação e resumo de transparência após a aula). O Semáforo e o Dashboard são só do professor |
 | Conhecimento do domínio | Conhecimento baixo ou médio do conteúdo da matéria, afinal ele tá ali pra aprender |
 | Experiência tecnológica | Usa Zoom, Meet e vídeo chamada o tempo todo no celular, mas nunca ouviu falar de um sistema que analisa expressão facial durante aula |
 | Objetivos | Acompanhar a aula, entender o conteúdo e conseguir tirar dúvida quando precisa |
@@ -190,6 +190,8 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 - Confirma que o resultado do sistema tem que ficar agregado, sem apontar aluno específico, pra não virar avaliação individual
 - Ajuda a justificar o processamento local no próprio dispositivo, não só pela LGPD, mas também pra diminuir a sensação de estar sendo vigiado
 - Levanta uma dúvida pra investigar depois, se desligar a câmera pode prejudicar o aluno de alguma forma
+
+> **Decisão conceitual da equipe sobre P05:** no início, Bruno foi descrito como alguém que não usa a interface, o que o tornaria um *stakeholder afetado*, e não uma persona. A equipe decidiu **dar a Bruno uma interação real no escopo**: ele passa a ser usuário da interface de transparência e participação do MindFlow (aviso de análise ativa ao entrar na aula, explicação do que é e do que não é processado, escolha de como participar, indicação de que está ou não contribuindo para a análise e resumo de transparência depois da aula). Por isso ele permanece como **persona secundária**: usa uma parte do sistema, mas não a interface principal do comunicador. Essa interação foi modelada na tarefa **T04** (Entrega 5) e ligada à necessidade **R04** e ao padrão **F08** da matriz de rastreabilidade. As formas de consentimento e recusa continuam como hipótese (H03).
 
 
 ### Síntese das personas
@@ -216,7 +218,7 @@ A **P02 — Camila Duarte** foi usada como persona de referência **apenas para 
 | P03 — Nathanael (treinamento corporativo) | Participantes são funcionários, há hierarquia e avaliação de desempenho; a revisão pós-sessão pesa mais que o ao vivo | O resultado não pode ser lido como avaliação individual; comparação entre turmas de treinamento ganha importância |
 | P04 — Manoel (comercial B2B) | Reunião curta com clientes externos, tela compartilhada o tempo todo, alto custo de interromper | Indicador ainda mais discreto; transparência e privacidade com pessoas de fora da organização |
 
-**P05 — Bruno D. Roger** é classificado como **persona secundária**. Ele não utiliza o Semáforo Cognitivo nem o Dashboard, mas possui interação própria com o MindFlow por meio das informações de transparência e participação. Suas necessidades influenciam principalmente decisões relacionadas à privacidade, clareza sobre o processamento dos dados e controle do participante.
+**P05 — Bruno D. Roger** é classificado como **persona secundária**, por decisão explícita da equipe (ver decisão conceitual na persona P05). Ele não utiliza o Semáforo Cognitivo nem o Dashboard, mas é usuário da interface de transparência e participação do MindFlow (tarefa T04). Suas necessidades influenciam principalmente decisões relacionadas à privacidade, clareza sobre o processamento dos dados e controle do participante.
 
 
 ## 2. Mapa de empatia — equipe
@@ -292,13 +294,13 @@ As próximas entregas devem contemplar:
 
 ## Checklist
 
-- [x] Existe pelo menos uma persona por integrante ]]
+- [x] Existe pelo menos uma persona por integrante (cinco personas: P01–P05).
 - [x] As personas existentes não são apenas diferenças demográficas superficiais.
-- [x] Está claro que as quatro personas são proto-personas e que seus dados precisam ser validados.
+- [x] Está claro que as **cinco** personas (quatro primárias, P01–P04, e uma secundária, P05) são proto-personas e que seus dados precisam ser validados.
 - [x] As personas não transformam as hipóteses da Entrega 1 em fatos comprovados.
 - [x] Objetivos e dores têm consequência para o design.
 - [x] O contexto de uso está coerente com a Entrega 1.
 - [x] O TCC já possui interface prevista; portanto, o item destinado a TCCs sem interface original não se aplica.
 - [x] Os papéis existentes foram diferenciados por contexto, objetivos e tarefas.
 - [x] A jornada possui etapas, dores e oportunidades e não é apenas um wireflow.
-- [x] Os IDs das personas ainda não foram adicionados à matriz de rastreabilidade.
+- [x] Os IDs das personas foram adicionados à matriz de rastreabilidade (seção 3 de `RASTREABILIDADE.md`, necessidades R01–R05).

@@ -163,10 +163,10 @@ Realize uma simulação com uma pessoa que não participou da elaboração dessa
 
 ## Checklist
 
-- [ ] O protótipo cobre tarefas relevantes da Entrega 5.
-- [ ] Cada tela/estado pode ser justificado por uma tarefa, decisão ou informação necessária.
-- [ ] O projeto não criou dashboard/CRUD/login apenas para parecer “completo”.
-- [ ] Telas/estados estão numerados e navegáveis na documentação.
-- [ ] Há pelo menos uma simulação/walkthrough documentado.
-- [ ] Críticas não foram apenas listadas: geraram decisão de revisão.
-- [ ] O protótipo continua em baixa fidelidade; detalhes visuais não mascaram problemas de fluxo.
+- [ ] O protótipo cobre tarefas relevantes da Entrega 5 — cobre T01 e T02 (pós-sessão e personalização); T03/T05 (indicador durante a sessão) aparecem só na configuração da extensão e T04 (participante) ainda não tem tela.
+- [x] Cada tela/estado pode ser justificado por uma tarefa, decisão ou informação necessária (T01 e T02; Suporte justificado pelo walkthrough).
+- [x] O projeto não criou dashboard/CRUD/login apenas para parecer “completo” — os dashboards estão ligados a T01/T02 e à necessidade R03; a personalização segue como hipótese (H06).
+- [x] Telas/estados estão numerados e navegáveis na documentação (P01–P07 e fluxos 1 a 4).
+- [x] Há pelo menos uma simulação/walkthrough documentado (seção 4).
+- [x] Críticas não foram apenas listadas: geraram decisão de revisão (seção 5).
+- [ ] O protótipo continua em baixa fidelidade — as telas apresentadas são digitais e com acabamento visual próximo do final; a equipe deve registrar esse desvio ou anexar os esboços em papel usados antes.
