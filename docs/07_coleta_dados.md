@@ -465,30 +465,119 @@ Ao final, os resultados serão relacionados às hipóteses **H01, H02 e H03**, p
 5. **Uso no design:** os resultados alimentam a revisão da persona P05, do Cenário C03 (as hipóteses de refinamento Q1 a Q7 passam a fatos ou são reescritas), da tarefa T04 (manter ou remover as opções marcadas como [H]) e dos requisitos da interface de transparência (R04/F08). O resultado será registrado em `RASTREABILIDADE.md`.
 6. **Limitações a relatar:** amostra pequena e por conveniência, efeito de conformidade em grupo (participantes acompanharem a opinião dominante), possível constrangimento em falar de desconforto diante de colegas e influência dos cartões, que descrevem uma solução. Por isso, o Bloco 2 (experiência atual) é analisado separadamente do Bloco 3.
 
+
+### Instrumento I04 — Teste de usabilidade
+
+**Autor(a):** Rafael Dias — 22.222.039-4  
+**Técnica:** Teste de usabilidade moderado com protótipo.  
+**Objetivo:** Verificar se os docentes conseguem consultar o resumo de uma aula, compreender os indicadores apresentados e personalizar a visualização sem dificuldades.  
+**Público:** Professores e docentes que realizam aulas on-line por videoconferência. Meta: 5 participantes.
+
+**Por que teste de usabilidade:** a técnica permite observar como os usuários interagem com o MindFlow AI e identificar dificuldades de navegação, compreensão dos indicadores e utilização das funcionalidades. Diferentemente das entrevistas e questionários, o teste avalia a execução prática das tarefas.
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** selecionar 5 docentes com experiência em aulas on-line e disponibilizar um protótipo do MindFlow AI com dados fictícios.
+2. **Apresentação:** explicar o objetivo do teste, informar que a participação é voluntária e solicitar o consentimento.
+3. **Execução:** apresentar as três tarefas abaixo, uma de cada vez, sem ensinar como realizá-las.
+4. **Observação:** registrar se o participante conseguiu concluir cada tarefa, quais dificuldades encontrou e se precisou de ajuda.
+5. **Encerramento:** fazer as perguntas finais e agradecer pela participação.
+6. **Armazenamento:** identificar os participantes por códigos e manter os registros apenas para fins acadêmicos, com acesso restrito.
+
+#### Instrumento
+
+**Texto de abertura**
+
+> Estamos realizando um teste para avaliar a facilidade de utilização do MindFlow AI. Você deverá realizar algumas tarefas em um protótipo do sistema.
+>
+> Não estamos avaliando seu desempenho, mas a facilidade de uso da interface. Sua participação é voluntária, e você pode interrompê-la quando desejar.
+>
+> Os resultados serão utilizados apenas para fins acadêmicos, sem identificação dos participantes.
+>
+> Você concorda em participar? [sim/não]
+
+**Tarefa 1 — Consultar o resumo de uma aula**
+> Imagine que você deseja revisar uma aula que já terminou. Encontre essa reunião no sistema e abra seu resumo.
+**Observar:**
+- Se encontra a reunião facilmente;
+- Se consegue acessar o resumo;
+- Se compreende os indicadores apresentados.
+
+**Tarefa 2 — Personalizar a visualização**
+> Imagine que você deseja modificar as informações exibidas no resumo. Encontre a opção de edição e realize uma alteração na visualização.
+**Observar:**
+- Se encontra a opção de editar;
+- Se compreende as opções disponíveis;
+- Se consegue realizar a alteração.
+
+**Tarefa 3 — Salvar a personalização**
+> Após modificar o resumo, salve suas alterações e confira se a visualização foi atualizada.
+**Observar:**
+- Se encontra o botão de salvar;
+- Se compreende a confirmação do salvamento;
+- Se identifica que as alterações foram mantidas.
+
+#### Perguntas finais
+
+1. Você achou fácil encontrar o resumo da aula?
+2. Os indicadores apresentados foram claros?
+3. Foi fácil encontrar e utilizar a opção de personalização?
+4. Qual foi a maior dificuldade encontrada?
+5. O que você melhoraria na interface?
+
+#### Ficha de registro
+
+| Campo | Registro |
+|---|---|
+| Código do participante | U__ |
+| Data | |
+| Experiência com aulas on-line | |
+| Tarefa 1 — Consultar resumo | Sucesso / Com ajuda / Não concluiu |
+| Tarefa 2 — Personalizar | Sucesso / Com ajuda / Não concluiu |
+| Tarefa 3 — Salvar | Sucesso / Com ajuda / Não concluiu |
+| Principais dificuldades | |
+| Sugestões do participante | |
+
+#### Como os dados serão analisados
+
+1. **Conclusão das tarefas:** verificar quantos participantes conseguiram realizar cada atividade sem ajuda, com ajuda ou não conseguiram concluí-la.
+2. **Dificuldades encontradas:** agrupar os problemas observados em navegação, interpretação dos indicadores e personalização da visualização.
+3. **Avaliação das hipóteses:**
+   - **H01:** investigar se o resumo apresenta informações consideradas úteis pelos docentes, como complemento à análise do uso em tempo real.
+   - **H02:** identificar dificuldades na interpretação dos indicadores e na compreensão das classificações da IA.
+   - **H03:** registrar eventuais preocupações espontâneas relacionadas à privacidade dos estudantes.
+4. **Melhorias no design:** utilizar os resultados para ajustar a organização das telas, os indicadores apresentados e os controles de personalização.
+5. **Limitações:** por envolver uma amostra pequena e um protótipo, os resultados servirão para identificar problemas de usabilidade, sem representar todos os possíveis usuários do MindFlow AI.
+Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar futuras melhorias na interface.
+
+
 ## Síntese
 
-O conjunto de técnicas pretende reduzir três lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
+O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
 
 1. **Se o problema do comunicador existe na prática:** se professores e instrutores realmente deixam de perceber dificuldades do grupo durante a sessão, que sinais usam hoje e como decidem reforçar ou seguir (I01 em escala; I02 em profundidade, a partir de aulas reais).
 2. **Se o tipo de apoio imaginado faz sentido:** utilidade de um sinal durante a sessão, interesse por informação de confiança e o que de fato seria consultado depois da aula, sem pressupor dashboard, filtros ou relatórios (I01 e I02).
 3. **Como o participante reage à análise da própria imagem:** conforto, regras percebidas, o que precisa saber e controlar, e se a agregação protege em turmas pequenas (I03, com apoio da A01).
+4. **Se a interface proposta é fácil de utilizar:** verificar se docentes conseguem localizar uma reunião concluída, interpretar os indicadores, personalizar o resumo e salvar as alterações sem dificuldades, identificando problemas de navegação e compreensão (I04, por meio de teste de usabilidade).
 
 | Técnica | Quem responde | Hipóteses/lacunas investigadas |
 |---|---|---|
 | I01 — Questionário (Kayky) | Comunicadores, em maior número | H01, H02, H03 (visão do comunicador), necessidades do Dashboard |
 | I02 — Entrevista com incidente crítico (Isabella) | Professores, prioritariamente de idiomas com turmas pequenas | H01, H02, H05, ?02, ?04; questões Q1–Q7 do C05 |
 | I03 — Grupo focal (Gustavo) | Participantes de aulas e treinamentos on-line | H03, H05, ?04; questões Q1–Q7 do C03 |
+| I04 — Teste de usabilidade (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | H01, H02 e H03 (complementar); usabilidade do resumo, interpretação dos indicadores e personalização da visualização |
 
 **O que se espera concluir após a análise dos dados:**
 
-- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). Decide se o Semáforo continua como recorte principal.
-- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. Decide a forma de comunicar incerteza.
-- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04).
+- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). O I04 complementará essa análise verificando se o resumo pós-aula apresenta informações úteis e acessíveis aos docentes. Decide se o Semáforo continua como recorte principal e quais informações devem ser priorizadas no resumo.
+- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. O I04 permitirá identificar dificuldades na compreensão dos indicadores e de suas classificações. Decide a forma de comunicar incerteza e melhorar a clareza das informações apresentadas.
+- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04). O I04 poderá contribuir de forma complementar, caso sejam identificadas preocupações com privacidade durante o teste.
 - **H05** (turmas pequenas) deverá ficar **sustentada ou refutada**, a partir da visão de professores (I02) e de participantes (I03).
-- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles.
+- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 também contribuirá para avaliar a compreensão desses rótulos na interface.
+- **Usabilidade do resumo e da personalização (I04):** deverá ser verificado se os docentes conseguem localizar uma reunião concluída, compreender os indicadores, personalizar a visualização e salvar as alterações sem dificuldades. Os problemas identificados orientarão melhorias na navegação, organização das informações e controles de edição.
 - **H04** e **?01** não dependem desta coleta (foram tratadas na Entrega 2).
 
-Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários e tarefas afetados serão revisados.
+Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas e elementos da interface afetados serão revisados.
 
 ## Checklist
 
