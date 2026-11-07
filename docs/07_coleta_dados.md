@@ -165,6 +165,71 @@ Critério de exclusão: menores de 18 anos e alunos que nunca participaram de au
 - **Minimização:** são registrados apenas curso/contexto em categoria ampla e faixa de experiência com aulas on-line. Não são coletados nome completo, RA, idade exata ou turma.
 - **Gravação, anonimização e descarte:** somente áudio e somente se **todos** do grupo autorizarem; caso contrário, apenas anotações. Cada participante recebe um código (G1-P1, G1-P2...). O áudio é apagado após a transcrição revisada, as transcrições ao fim da disciplina, e no repositório entram só trechos anonimizados e a síntese.
 
+
+
+### A04 — Rafael Dias
+
+**Autor(a):** Rafael Dias — 22.222.039-4
+
+**Foco desta solução:** o uso **após a aula** do MindFlow AI pelo docente EAD para revisar o resumo da reunião, interpretar os indicadores agregados, identificar momentos críticos e definir ajustes para aulas futuras. A A04 complementa as soluções anteriores ao investigar o valor do **dashboard histórico** e das **opções de personalização da visualização**.
+
+A proposta está relacionada à tarefa de configurar o acompanhamento após uma aula, permitindo investigar se as necessidades de análise e personalização previstas no projeto correspondem às práticas reais dos docentes.
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Quais indicadores o docente considera mais úteis após a aula (engajamento, confusão, frustração, tédio e evolução ao longo do tempo) | H01 | Permite compreender quais informações são relevantes para a análise pós-sessão, sem pressupor que todos os indicadores tenham a mesma importância | Definir os indicadores principais do resumo e do dashboard histórico |
+| Como o docente costuma avaliar uma aula após seu encerramento e quais ferramentas utiliza atualmente | H01 | Verifica se a revisão pós-aula já faz parte da rotina docente e quais necessidades não são atendidas pelas ferramentas existentes | Decidir se o dashboard histórico complementa práticas existentes e quais funcionalidades devem ser priorizadas |
+| Em que nível de detalhe o docente deseja revisar a aula (resumo geral, intervalos de tempo ou momentos específicos) | H01 / H02 | Ajuda a compreender se um panorama geral é suficiente ou se existe necessidade de investigar acontecimentos específicos | Definir a granularidade da linha do tempo, dos gráficos e dos filtros |
+| Como o docente identifica momentos críticos durante uma aula e quais evidências considera necessárias para interpretar esses acontecimentos | H02 | Permite entender quais informações tornam as classificações da IA compreensíveis e confiáveis | Definir se o sistema deve apresentar explicações, indicadores de incerteza e marcadores temporais |
+| Que decisões o docente toma após identificar aumento de confusão, frustração ou queda de engajamento | H01 | Investiga se a análise posterior contribui para decisões pedagógicas concretas ou se os indicadores possuem apenas valor informativo | Definir funcionalidades de apoio à reflexão pedagógica e ao planejamento de aulas futuras |
+| Se o docente considera útil comparar resultados de diferentes aulas, turmas ou períodos | H01 | Permite investigar se a comparação histórica representa uma necessidade real, em vez de presumir sua utilidade | Definir necessidade de comparações entre reuniões e filtros por período |
+| Quais informações o docente gostaria de manter, ocultar ou reorganizar ao consultar o resumo de uma reunião | H01 / R03 | Investiga a necessidade de personalização prevista nas tarefas de IHC e verifica quais opções seriam utilizadas na prática | Definir o escopo da edição e personalização do resumo e do dashboard |
+| Se o docente precisa registrar observações ou destacar acontecimentos específicos durante a análise | H01 | Permite compreender se a interpretação dos indicadores precisa ser associada a registros qualitativos do próprio docente | Definir necessidade de anotações, marcações e registros associados aos gráficos |
+| Se o docente precisa exportar, compartilhar ou consultar posteriormente os resultados de uma aula | H01 | Verifica se a atividade de análise termina na consulta individual ou continua em processos de acompanhamento pedagógico | Definir necessidade de relatórios, exportação e compartilhamento |
+| Como o docente interpreta os termos engajamento, tédio, confusão e frustração e quais considera mais claros | H02 | Permite verificar se o vocabulário técnico utilizado pelo sistema corresponde à linguagem e à compreensão do usuário | Refinar rótulos, descrições, legendas e explicações dos indicadores |
+| Quais cuidados o docente considera necessários para evitar exposição individual dos estudantes | H03 | A análise histórica pode gerar riscos de identificação e utilização inadequada das informações | Definir nível de agregação, anonimização, transparência e regras de acesso aos resultados |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Docentes do ensino superior ou EAD | Conduzir aulas síncronas por videoconferência e possuir experiência com avaliação ou revisão de atividades após as aulas | Corresponde diretamente à persona P01, docente EAD, principal público da análise pós-sessão |
+| Professores que utilizam dashboards ou relatórios educacionais | Ter experiência na consulta de indicadores de aprendizagem, participação ou desempenho de turmas | Permite compreender expectativas sobre apresentação de informações, filtros, gráficos e comparações |
+| Docentes que não utilizam dashboards educacionais | Conduzir aulas on-line e realizar algum tipo de reflexão ou avaliação posterior, mesmo sem ferramentas específicas | Permite investigar se a ausência de dashboards decorre de falta de necessidade, dificuldade de uso ou desconhecimento das ferramentas |
+| Instrutores corporativos ou facilitadores de treinamentos on-line | Conduzir treinamentos síncronos por videoconferência e revisar seus resultados após as sessões | Representa um público secundário e permite verificar se as necessidades de análise posterior também aparecem fora do contexto acadêmico |
+
+**Critério de exclusão:** pessoas que nunca conduziram sessões síncronas por videoconferência ou que não possuem experiência com acompanhamento, reflexão ou avaliação de atividades realizadas após essas sessões.
+
+**Limitação da amostra:** o acesso aos participantes tende a ocorrer por conveniência, principalmente entre docentes próximos à instituição e profissionais familiarizados com tecnologias educacionais. Essa característica pode favorecer respostas de pessoas com maior experiência em ferramentas digitais.
+
+Para reduzir essa limitação, recomenda-se incluir docentes com diferentes níveis de familiaridade tecnológica e experiências variadas com análise de resultados educacionais.
+
+As conclusões deverão considerar o perfil efetivamente alcançado, sem generalizar os resultados para todos os professores ou instrutores.
+
+#### Aspectos éticos
+
+- **Participação voluntária:** os participantes devem receber explicações claras sobre o objetivo da pesquisa, os dados coletados e sua utilização exclusivamente acadêmica. A participação poderá ser interrompida a qualquer momento, sem justificativa ou consequência.
+
+- **Consentimento informado:** antes da coleta, deve ser apresentado o termo de consentimento previsto no projeto, esclarecendo os procedimentos da pesquisa, a finalidade das respostas e as condições de armazenamento das informações.
+
+- **Privacidade dos estudantes:** como a investigação envolve relatos sobre aulas e indicadores de comportamento, os participantes devem ser orientados a não mencionar nomes de estudantes, turmas identificáveis ou informações que permitam reconhecer indivíduos.
+
+- **Proteção dos docentes:** as respostas não devem ser utilizadas para avaliar ou comparar o desempenho profissional dos participantes. A pesquisa busca compreender necessidades de interação e não julgar práticas pedagógicas.
+
+- **Interpretação dos indicadores:** os estados afetivo-cognitivos estimados pelo MindFlow AI não devem ser tratados como diagnósticos, avaliações definitivas ou medidas individuais de aprendizagem. Os indicadores representam estimativas que precisam ser interpretadas considerando o contexto da aula.
+
+- **Minimização dos dados:** devem ser coletadas somente informações necessárias para compreender as necessidades dos usuários. Dados como nome completo, instituição, idade exata e identificação dos estudantes não são necessários para a análise.
+
+- **Anonimização e armazenamento:** os participantes devem ser identificados por códigos, como R01, R02 e R03. As respostas devem permanecer em ambiente com acesso restrito à equipe responsável pelo estudo.
+
+- **Gravações:** qualquer gravação de áudio deverá ocorrer somente com autorização específica. Caso o participante não autorize, a coleta poderá ser realizada exclusivamente por anotações.
+
+- **Descarte das informações:** gravações devem ser excluídas após a transcrição e conferência. Os registros individuais deverão ser descartados ao final da disciplina ou quando deixarem de ser necessários, mantendo-se apenas resultados agregados e anonimizados.
+
+- **Uso responsável dos resultados:** as descobertas deverão apoiar decisões de design relacionadas à compreensão, personalização e utilização dos indicadores, sem incentivar mecanismos de vigilância ou avaliação punitiva de estudantes e docentes.
+
 > Repita A04, A05...
 
 ## Parte B — ferramentas de coleta
