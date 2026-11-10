@@ -50,7 +50,7 @@ As interfaces de alertas durante a sessão e de participação na análise perma
 
 ## 3. Telas e estados
 
-O protótipo do MindFlow AI é composto por sete telas principais, que permitem ao usuário consultar reuniões, visualizar resultados, personalizar dashboards, configurar a extensão e acessar o suporte.
+As sete telas apresentadas nesta seção correspondem à V0 do protótipo, utilizada na exploração formativa com a participante. Essa versão permite consultar reuniões, visualizar resultados, personalizar dashboards, configurar a extensão e acessar o suporte. As alterações realizadas posteriormente estão descritas na seção 5.
 
 | Tela | Nome | Descrição | Controles e navegação |
 |---|---|---|---|
@@ -116,7 +116,7 @@ Apresenta uma visão consolidada dos resultados e indicadores das reuniões, fac
 
 #### P05 – Edição do Dashboard Geral
 
-Permite modificar a organização e a apresentação dos indicadores do Dashboard Geral, destacando a personalização como um dos principais diferenciais do MindFlow AI.
+Permite modificar a organização e a apresentação dos indicadores do Dashboard Geral, explorando a personalização como uma alternativa de design cuja necessidade permanece em investigação (H06).
 
 ![P05 - Edição do Dashboard Geral](../assets/06_prototipos/editar%20geral.png)
 
@@ -143,7 +143,8 @@ A sessão formativa foi realizada presencialmente na faculdade com Beatriz Manai
 
 Inicialmente, a equipe apresentou a finalidade do MindFlow AI e seu objetivo. Em seguida, a participante explorou livremente a interface. Durante a navegação, fez perguntas sobre a finalidade de elementos e funcionalidades, e a equipe respondeu às dúvidas conforme surgiam.
 
-A sessão teve caráter exploratório, sem um roteiro estruturado de tarefas descrito no registro disponível. Não foram registrados o percurso completo, os tempos de execução ou as conclusões de tarefas sem ajuda. Também não foi detalhado o mecanismo utilizado 
+A sessão teve caráter exploratório, sem um roteiro estruturado de tarefas descrito no registro disponível. Não foram registrados o percurso completo, os tempos de execução ou as conclusões de tarefas sem ajuda. Também não foi detalhado o mecanismo utilizado para representar as transições de tela e as respostas do sistema.
+Os achados abaixo correspondem aos comentários relatados e às dúvidas surgidas durante a exploração. As explicações fornecidas pela equipe devem ser consideradas na interpretação dos resultados, pois a compreensão após uma explicação não demonstra que a interface era compreensível de forma independente.
 Os achados abaixo correspondem aos comentários relatados e às dúvidas surgidas durante a exploração. As explicações fornecidas ppara representar as transições de tela e as respostas do sistema.
 ela equipe devem ser consideradas na interpretação dos resultados, pois a compreensão após uma explicação não demonstra que a interface era compreensível de forma independente.
 
@@ -159,18 +160,42 @@ ela equipe devem ser consideradas na interpretação dos resultados, pois a comp
 
 ## 5. Alterações após a simulação
 
-Conforme o relato da equipe, as melhorias planejadas após a sessão foram aplicadas ao protótipo. Para distinguir as etapas, a versão apresentada à participante é denominada V0, e a versão revisada após o feedback é denominada V1.
+Após a exploração formativa com Beatriz Manaia, a equipe revisou o protótipo com base nas dúvidas e sugestões relatadas. As telas da seção 3 correspondem à versão avaliada (V0), enquanto os registros apresentados abaixo mostram a versão revisada (V1).
 
-As alterações buscaram melhorar a compreensão das informações, a localização das funcionalidades e o apoio à análise dos resultados após a aula. Seus efeitos ainda precisam ser verificados em uma nova avaliação.
+As alterações buscaram facilitar a compreensão das informações, destacar as ações disponíveis e oferecer ajuda durante a navegação. Seus efeitos ainda precisam ser verificados em uma nova avaliação com usuários.
 
 | Antes | Problema | Depois | Justificativa |
 |---|---|---|---|
-| Alguns cards apresentavam indicadores sem explicações complementares suficientes. | A participante precisava perguntar à equipe sobre o significado e a finalidade de determinados elementos. | Foram acrescentadas informações complementares no suporte e explicações resumidas ao passar o mouse sobre os cards. | Apoiar a compreensão dos indicadores durante a utilização, reduzindo a necessidade de explicações externas. |
-| Os componentes utilizavam cores muito semelhantes. | A participante percebeu pouca diferenciação visual na interface. | As cores dos cards foram revisadas para diferenciar melhor as informações, respeitando o tema visual escolhido. | Explorar uma hierarquia visual mais clara. A adequação das cores e do contraste ainda deve ser avaliada. |
-| Algumas ações principais estavam pouco destacadas. | As funcionalidades não eram facilmente percebidas. | A disposição e o destaque dos botões foram reformulados. | Facilitar a localização das ações necessárias ao objetivo do usuário. |
-| A ajuda estava concentrada em uma aba específica. | A participante sugeriu consultar orientações sem precisar abandonar a tela atual. | Foi acrescentado suporte em formato de pop-up nas diferentes abas. | Disponibilizar ajuda durante a execução da atividade e preservar o contexto da navegação. |
-| As opções de edição das visualizações tinham pouco destaque. | A possibilidade de modificar a apresentação dos resultados não estava clara. | Os controles de personalização e a apresentação das opções do dashboard foram reorganizados e destacados. | Tornar as possibilidades da interface mais compreensíveis. A necessidade de personalização permanece como hipótese em investigação (H06). |
-| Não havia possibilidade de registrar anotações após a aula. | O usuário não dispunha desse recurso para registrar acontecimentos relevantes e consultá-los posteriormente. | Foi acrescentada a possibilidade de registrar anotações após a aula, no contexto da análise do gráfico temporal. | Apoiar a memória do docente e a contextualização dos resultados durante a revisão da sessão. |
+| Os cards utilizavam cores muito semelhantes. | A participante percebeu pouca diferenciação visual entre os componentes. | As cores dos cards foram revisadas, diferenciando melhor os indicadores dentro do tema visual escolhido. | Explorar uma hierarquia visual mais clara. A adequação das cores e do contraste ainda deve ser avaliada. |
+| Algumas funções principais estavam pouco destacadas. | A participante relatou dificuldade para perceber determinadas ações disponíveis. | A disposição e o destaque dos botões foram reformulados, incluindo o botão “Personalizar agora”. | Facilitar a localização das funcionalidades relacionadas à organização das visualizações. |
+| O acesso à ajuda estava concentrado na aba Suporte. | A participante sugeriu consultar orientações durante a navegação, sem abandonar a tela atual. | Foi acrescentado um botão flutuante de ajuda, disponível durante a navegação. | Tornar o acesso ao suporte mais perceptível e próximo do contexto de utilização. |
+| Alguns cards não explicavam suficientemente o significado das informações apresentadas. | A participante precisou perguntar à equipe sobre a finalidade de elementos da interface. | Foram acrescentados ícones informativos e explicações exibidas ao passar o mouse sobre os cards. | Apoiar a interpretação dos indicadores e reduzir a dependência de explicações externas. |
+| A possibilidade de personalizar os dashboards estava pouco evidente. | A participante sugeriu destacar a funcionalidade de modificar a apresentação dos resultados. | Foi incluída uma área de destaque com orientação sobre a personalização e acesso direto ao botão “Personalizar agora”. | Comunicar as possibilidades de edição da interface. A necessidade da personalização permanece como hipótese em investigação (H06). |
+| Não havia possibilidade de registrar anotações após a aula. | Faltava um recurso para registrar acontecimentos relevantes e consultá-los durante a revisão. | Foi acrescentada a possibilidade de inserir anotações após a aula, no contexto da análise do gráfico temporal. | Apoiar a memória do docente e a contextualização dos resultados. Esse recurso foi informado pela equipe, mas não está ilustrado nos prints apresentados nesta seção. |
+
+**V1 — Dashboard Geral: diferenciação visual e destaque da personalização**
+
+A visualização revisada apresenta cores distintas nos cards e uma área de destaque para a personalização, com orientação sobre sua finalidade e acesso direto à edição.
+
+![V1 — Dashboard Geral com cores revisadas e botão de personalização em destaque](../assets/06_prototipos/bot%C3%A3o%20editar.png)
+
+*Figura 8 — P04 na V1: cores dos cards revisadas e botão “Personalizar agora” em destaque. A V0 correspondente está apresentada na seção 3.*
+
+**V1 — Acesso à ajuda durante a navegação**
+
+O botão flutuante “Ajuda” oferece um ponto de acesso ao suporte na própria tela. O registro demonstra a presença do controle; o conteúdo da ajuda não está aberto neste print.
+
+![V1 — Minhas Reuniões com botão flutuante de ajuda](../assets/06_prototipos/but%20ajuda.png)
+
+*Figura 9 — P01 na V1: botão de ajuda disponível no canto inferior direito durante a navegação.*
+
+**V1 — Explicações dos cards**
+
+O registro apresenta a explicação aberta do card “Mudanças para revisar”, demonstrando como o usuário pode consultar informações complementares sobre o indicador.
+
+![V1 — Explicação complementar do card Mudanças para revisar](../assets/06_prototipos/explica%C3%A7%C3%B5es.png)
+
+*Figura 10 — P04 na V1: explicação contextual exibida junto ao card, sem necessidade de sair do dashboard.*
 
 ## Checklist
 
