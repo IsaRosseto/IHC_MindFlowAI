@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4470" height="2320" viewBox="0 0 4470 2320" role="img" aria-labelledby="title desc">
+<title id="title">CTT T01 — Personalizar a visualização dos resultados de uma aula concluída</title>
+<desc id="desc">Árvore CTT com tarefas abstratas aninhadas. Os nós 2, 3.3 e 3.6 são abstratos porque possuem filhos. A personalização é opcional e repetível; a escolha ocorre entre focos de indicadores.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="80" y="70" font-family="DejaVu Sans, sans-serif" font-size="42" font-weight="bold" text-anchor="start" fill="#172033">
+<tspan x="80" dy="0">CTT · T01 · MindFlow AI</tspan>
+</text>
+<text x="80" y="118" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="normal" text-anchor="start" fill="#475569">
+<tspan x="80" dy="0">Motivação: revisar uma aula concluída e organizar os resultados conforme a necessidade de análise.</tspan>
+</text>
+<path d="M2142,274 C2101,262 2108,210 2152,208 C2154,161 2215,151 2243,187 C2282,164 2320,202 2304,235 C2354,257 2325,307 2283,298 C2259,331 2219,314 2201,298 C2172,320 2138,303 2142,274 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="2220" y="344" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="2220" dy="0">0. Personalizar a visualização dos resultados</tspan>
+<tspan x="2220" dy="34">de uma aula concluída no MindFlow AI</tspan>
+</text>
+<path d="M612,674 C571,662 578,610 622,608 C624,561 685,551 713,587 C752,564 790,602 774,635 C824,657 795,707 753,698 C729,731 689,714 671,698 C642,720 608,703 612,674 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="690" y="744" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="690" dy="0">1. Localizar e abrir</tspan>
+<tspan x="690" dy="34">o resumo da aula</tspan>
+</text>
+<path d="M1582,674 C1541,662 1548,610 1592,608 C1594,561 1655,551 1683,587 C1722,564 1760,602 1744,635 C1794,657 1765,707 1723,698 C1699,731 1659,714 1641,698 C1612,720 1578,703 1582,674 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="1660" y="744" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="1660" dy="0">2. Analisar resumo e</tspan>
+<tspan x="1660" dy="34">definir necessidades</tspan>
+</text>
+<path d="M2982,674 C2941,662 2948,610 2992,608 C2994,561 3055,551 3083,587 C3122,564 3160,602 3144,635 C3194,657 3165,707 3123,698 C3099,731 3059,714 3041,698 C3012,720 2978,703 2982,674 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="3060" y="744" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="3060" dy="0">[3. Personalizar e avaliar]*</tspan>
+</text>
+<circle cx="4250" cy="616" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M4217,690 V653 Q4250,631 4283,653 V690" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="4217" y1="690" x2="4283" y2="690" stroke="#23344b" stroke-width="3"/>
+<text x="4250" y="744" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="4250" dy="0">4. Concluir</tspan>
+<tspan x="4250" dy="34">a visualização</tspan>
+</text>
+<circle cx="117" cy="1104" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M92,1165 V1132 Q117,1118 142,1132 V1165" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="180" y="1100" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="214" y1="1149" x2="214" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="196" y1="1164" x2="232" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="153" y1="1130" x2="172" y2="1130" stroke="#23344b" stroke-width="2.5"/>
+<path d="M166,1124 L172,1130 L166,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M159,1124 L153,1130 L159,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="160" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="160" dy="0">1.1 Acessar</tspan>
+<tspan x="160" dy="34">Minhas Reuniões</tspan>
+</text>
+<rect x="381" y="1090" width="88" height="58" rx="4" fill="#f2eefe" stroke="#23344b" stroke-width="3"/>
+<line x1="425" y1="1148" x2="425" y2="1171" stroke="#23344b" stroke-width="3"/>
+<line x1="396" y1="1171" x2="454" y2="1171" stroke="#23344b" stroke-width="3"/>
+<text x="425" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="425" dy="0">1.2 Carregar</tspan>
+<tspan x="425" dy="34">as reuniões</tspan>
+</text>
+<circle cx="690" cy="1096" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M657,1170 V1133 Q690,1111 723,1133 V1170" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="657" y1="1170" x2="723" y2="1170" stroke="#23344b" stroke-width="3"/>
+<text x="690" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="690" dy="0">1.3 Identificar</tspan>
+<tspan x="690" dy="34">a aula desejada</tspan>
+</text>
+<circle cx="912" cy="1104" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M887,1165 V1132 Q912,1118 937,1132 V1165" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="975" y="1100" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="1009" y1="1149" x2="1009" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="991" y1="1164" x2="1027" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="948" y1="1130" x2="967" y2="1130" stroke="#23344b" stroke-width="2.5"/>
+<path d="M961,1124 L967,1130 L961,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M954,1124 L948,1130 L954,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="955" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="955" dy="0">1.4 Selecionar</tspan>
+<tspan x="955" dy="34">Ver Resumo</tspan>
+</text>
+<rect x="1176" y="1090" width="88" height="58" rx="4" fill="#f2eefe" stroke="#23344b" stroke-width="3"/>
+<line x1="1220" y1="1148" x2="1220" y2="1171" stroke="#23344b" stroke-width="3"/>
+<line x1="1191" y1="1171" x2="1249" y2="1171" stroke="#23344b" stroke-width="3"/>
+<text x="1220" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="1220" dy="0">1.5 Exibir o</tspan>
+<tspan x="1220" dy="34">resumo da aula</tspan>
+</text>
+<circle cx="1450" cy="1096" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M1417,1170 V1133 Q1450,1111 1483,1133 V1170" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="1417" y1="1170" x2="1483" y2="1170" stroke="#23344b" stroke-width="3"/>
+<text x="1450" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="1450" dy="0">2.1 Examinar</tspan>
+<tspan x="1450" dy="34">indicadores</tspan>
+<tspan x="1450" dy="34">e gráficos</tspan>
+</text>
+<circle cx="1715" cy="1096" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M1682,1170 V1133 Q1715,1111 1748,1133 V1170" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="1682" y1="1170" x2="1748" y2="1170" stroke="#23344b" stroke-width="3"/>
+<text x="1715" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="1715" dy="0">2.2 Identificar</tspan>
+<tspan x="1715" dy="34">informações</tspan>
+<tspan x="1715" dy="34">relevantes</tspan>
+</text>
+<circle cx="1980" cy="1096" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M1947,1170 V1133 Q1980,1111 2013,1133 V1170" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="1947" y1="1170" x2="2013" y2="1170" stroke="#23344b" stroke-width="3"/>
+<text x="1980" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="1980" dy="0">2.3 Definir ajustes</tspan>
+<tspan x="1980" dy="34">necessários</tspan>
+</text>
+<circle cx="2222" cy="1104" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M2197,1165 V1132 Q2222,1118 2247,1132 V1165" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="2285" y="1100" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="2319" y1="1149" x2="2319" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="2301" y1="1164" x2="2337" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="2258" y1="1130" x2="2277" y2="1130" stroke="#23344b" stroke-width="2.5"/>
+<path d="M2271,1124 L2277,1130 L2271,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M2264,1124 L2258,1130 L2264,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="2265" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="2265" dy="0">3.1 Selecionar</tspan>
+<tspan x="2265" dy="34">Nova Visualização</tspan>
+</text>
+<rect x="2556" y="1090" width="88" height="58" rx="4" fill="#f2eefe" stroke="#23344b" stroke-width="3"/>
+<line x1="2600" y1="1148" x2="2600" y2="1171" stroke="#23344b" stroke-width="3"/>
+<line x1="2571" y1="1171" x2="2629" y2="1171" stroke="#23344b" stroke-width="3"/>
+<text x="2600" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="2600" dy="0">3.2 Apresentar</tspan>
+<tspan x="2600" dy="34">modelos disponíveis</tspan>
+</text>
+<path d="M2857,1154 C2816,1142 2823,1090 2867,1088 C2869,1041 2930,1031 2958,1067 C2997,1044 3035,1082 3019,1115 C3069,1137 3040,1187 2998,1178 C2974,1211 2934,1194 2916,1178 C2887,1200 2853,1183 2857,1154 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="2935" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="2935" dy="0">3.3 Selecionar foco</tspan>
+<tspan x="2935" dy="34">da visualização</tspan>
+</text>
+<circle cx="3227" cy="1104" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M3202,1165 V1132 Q3227,1118 3252,1132 V1165" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="3290" y="1100" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="3324" y1="1149" x2="3324" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="3306" y1="1164" x2="3342" y2="1164" stroke="#23344b" stroke-width="3"/>
+<line x1="3263" y1="1130" x2="3282" y2="1130" stroke="#23344b" stroke-width="2.5"/>
+<path d="M3276,1124 L3282,1130 L3276,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M3269,1124 L3263,1130 L3269,1136" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="3270" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="3270" dy="0">3.4 Organizar</tspan>
+<tspan x="3270" dy="34">e confirmar</tspan>
+<tspan x="3270" dy="34">as alterações</tspan>
+</text>
+<rect x="3561" y="1090" width="88" height="58" rx="4" fill="#f2eefe" stroke="#23344b" stroke-width="3"/>
+<line x1="3605" y1="1148" x2="3605" y2="1171" stroke="#23344b" stroke-width="3"/>
+<line x1="3576" y1="1171" x2="3634" y2="1171" stroke="#23344b" stroke-width="3"/>
+<text x="3605" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="3605" dy="0">3.5 Atualizar</tspan>
+<tspan x="3605" dy="34">a visualização</tspan>
+</text>
+<path d="M3972,1154 C3931,1142 3938,1090 3982,1088 C3984,1041 4045,1031 4073,1067 C4112,1044 4150,1082 4134,1115 C4184,1137 4155,1187 4113,1178 C4089,1211 4049,1194 4031,1178 C4002,1200 3968,1183 3972,1154 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="4050" y="1224" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="4050" dy="0">3.6 Analisar</tspan>
+<tspan x="4050" dy="34">visualização resultante</tspan>
+</text>
+<circle cx="2732" cy="1664" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M2707,1725 V1692 Q2732,1678 2757,1692 V1725" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="2795" y="1660" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="2829" y1="1709" x2="2829" y2="1724" stroke="#23344b" stroke-width="3"/>
+<line x1="2811" y1="1724" x2="2847" y2="1724" stroke="#23344b" stroke-width="3"/>
+<line x1="2768" y1="1690" x2="2787" y2="1690" stroke="#23344b" stroke-width="2.5"/>
+<path d="M2781,1684 L2787,1690 L2781,1696" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M2774,1684 L2768,1690 L2774,1696" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="2775" y="1784" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="2775" dy="0">3.3.1 Priorizar</tspan>
+<tspan x="2775" dy="34">engajamento</tspan>
+</text>
+<circle cx="3062" cy="1664" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M3037,1725 V1692 Q3062,1678 3087,1692 V1725" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="3125" y="1660" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="3159" y1="1709" x2="3159" y2="1724" stroke="#23344b" stroke-width="3"/>
+<line x1="3141" y1="1724" x2="3177" y2="1724" stroke="#23344b" stroke-width="3"/>
+<line x1="3098" y1="1690" x2="3117" y2="1690" stroke="#23344b" stroke-width="2.5"/>
+<path d="M3111,1684 L3117,1690 L3111,1696" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M3104,1684 L3098,1690 L3104,1696" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="3105" y="1784" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="3105" dy="0">3.3.2 Priorizar</tspan>
+<tspan x="3105" dy="34">tédio, confusão</tspan>
+<tspan x="3105" dy="34">e frustração</tspan>
+</text>
+<circle cx="3650" cy="1656" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M3617,1730 V1693 Q3650,1671 3683,1693 V1730" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="3617" y1="1730" x2="3683" y2="1730" stroke="#23344b" stroke-width="3"/>
+<text x="3650" y="1784" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="3650" dy="0">3.6.1 Examinar</tspan>
+<tspan x="3650" dy="34">indicadores e gráficos</tspan>
+</text>
+<circle cx="3970" cy="1656" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M3937,1730 V1693 Q3970,1671 4003,1693 V1730" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="3937" y1="1730" x2="4003" y2="1730" stroke="#23344b" stroke-width="3"/>
+<text x="3970" y="1784" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="3970" dy="0">3.6.2 Avaliar</tspan>
+<tspan x="3970" dy="34">organização visual</tspan>
+</text>
+<circle cx="4290" cy="1656" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M4257,1730 V1693 Q4290,1671 4323,1693 V1730" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="4257" y1="1730" x2="4323" y2="1730" stroke="#23344b" stroke-width="3"/>
+<text x="4290" y="1784" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="normal" text-anchor="middle" fill="#172033">
+<tspan x="4290" dy="0">3.6.3 Verificar se</tspan>
+<tspan x="4290" dy="34">atende às necessidades</tspan>
+</text>
+<line x1="2220" y1="392" x2="690" y2="566" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="2220" y1="392" x2="1660" y2="566" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="2220" y1="392" x2="3060" y2="566" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="2220" y1="392" x2="4250" y2="566" stroke="#99a6b6" stroke-width="2.2"/>
+<text x="1175.0" y="658" font-family="DejaVu Sans, sans-serif" font-size="33" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="1175.0" dy="0">[]&gt;&gt;</tspan>
+</text>
+<text x="2360.0" y="658" font-family="DejaVu Sans, sans-serif" font-size="33" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="2360.0" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="3655.0" y="658" font-family="DejaVu Sans, sans-serif" font-size="33" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="3655.0" dy="0">&gt;&gt;</tspan>
+</text>
+<line x1="690" y1="792" x2="160" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="690" y1="792" x2="425" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="690" y1="792" x2="690" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="690" y1="792" x2="955" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="690" y1="792" x2="1220" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<text x="292.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="292.5" dy="0">[]&gt;&gt;</tspan>
+</text>
+<text x="557.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="557.5" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="822.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="822.5" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="1087.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="1087.5" dy="0">[]&gt;&gt;</tspan>
+</text>
+<line x1="1660" y1="792" x2="1450" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="1660" y1="792" x2="1715" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="1660" y1="792" x2="1980" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<text x="1582.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="1582.5" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="1847.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="1847.5" dy="0">&gt;&gt;</tspan>
+</text>
+<line x1="3060" y1="758" x2="2265" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="3060" y1="758" x2="2600" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="3060" y1="758" x2="2935" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="3060" y1="758" x2="3270" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="3060" y1="758" x2="3605" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="3060" y1="758" x2="4050" y2="1046" stroke="#99a6b6" stroke-width="2.2"/>
+<text x="2432.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="2432.5" dy="0">[]&gt;&gt;</tspan>
+</text>
+<text x="2767.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="2767.5" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="3102.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="3102.5" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="3437.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="3437.5" dy="0">[]&gt;&gt;</tspan>
+</text>
+<text x="3827.5" y="1138" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="3827.5" dy="0">[]&gt;&gt;</tspan>
+</text>
+<line x1="2935" y1="1272" x2="2775" y2="1606" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="2935" y1="1272" x2="3105" y2="1606" stroke="#99a6b6" stroke-width="2.2"/>
+<text x="2940.0" y="1698" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="2940.0" dy="0">[]</tspan>
+</text>
+<line x1="4050" y1="1272" x2="3650" y2="1606" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="4050" y1="1272" x2="3970" y2="1606" stroke="#99a6b6" stroke-width="2.2"/>
+<line x1="4050" y1="1272" x2="4290" y2="1606" stroke="#99a6b6" stroke-width="2.2"/>
+<text x="3810.0" y="1698" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="3810.0" dy="0">&gt;&gt;</tspan>
+</text>
+<text x="4130.0" y="1698" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#172033">
+<tspan x="4130.0" dy="0">&gt;&gt;</tspan>
+</text>
+<line x1="80" y1="1950" x2="4390" y2="1950" stroke="#cbd5e1" stroke-width="2"/>
+<text x="80" y="2005" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" text-anchor="start" fill="#172033">
+<tspan x="80" dy="0">TIPOS DE TAREFA</tspan>
+</text>
+<path d="M109.3,2115.6 C82.64999999999999,2107.8 87.2,2074.0 115.8,2072.7 C117.1,2042.15 156.75,2035.65 174.95,2059.05 C200.3,2044.1 225.0,2068.8 214.6,2090.25 C247.10000000000002,2104.55 228.25,2137.05 200.95,2131.2 C185.35,2152.65 159.35,2141.6 147.65,2131.2 C128.8,2145.5 106.69999999999999,2134.45 109.3,2115.6 Z" fill="#eef3fa" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<text x="305" y="2110" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="normal" text-anchor="start" fill="#172033">
+<tspan x="305" dy="0">Abstrata</tspan>
+</text>
+<circle cx="790" cy="2066" r="20" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M757,2140 V2103 Q790,2081 823,2103 V2140" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<line x1="757" y1="2140" x2="823" y2="2140" stroke="#23344b" stroke-width="3"/>
+<text x="935" y="2110" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="normal" text-anchor="start" fill="#172033">
+<tspan x="935" dy="0">Usuário</tspan>
+</text>
+<rect x="1356" y="2060" width="88" height="58" rx="4" fill="#f2eefe" stroke="#23344b" stroke-width="3"/>
+<line x1="1400" y1="2118" x2="1400" y2="2141" stroke="#23344b" stroke-width="3"/>
+<line x1="1371" y1="2141" x2="1429" y2="2141" stroke="#23344b" stroke-width="3"/>
+<text x="1545" y="2110" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="normal" text-anchor="start" fill="#172033">
+<tspan x="1545" dy="0">Sistema</tspan>
+</text>
+<circle cx="1937" cy="2074" r="15" fill="none" stroke="#23344b" stroke-width="3"/>
+<path d="M1912,2135 V2102 Q1937,2088 1962,2102 V2135" fill="none" stroke="#23344b" stroke-width="3" stroke-linejoin="round"/>
+<rect x="2000" y="2070" width="68" height="49" rx="3" fill="#edf8f0" stroke="#23344b" stroke-width="3"/>
+<line x1="2034" y1="2119" x2="2034" y2="2134" stroke="#23344b" stroke-width="3"/>
+<line x1="2016" y1="2134" x2="2052" y2="2134" stroke="#23344b" stroke-width="3"/>
+<line x1="1973" y1="2100" x2="1992" y2="2100" stroke="#23344b" stroke-width="2.5"/>
+<path d="M1986,2094 L1992,2100 L1986,2106" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M1979,2094 L1973,2100 L1979,2106" fill="none" stroke="#23344b" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="2125" y="2110" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="normal" text-anchor="start" fill="#172033">
+<tspan x="2125" dy="0">Interação usuário–PC</tspan>
+</text>
+<text x="2670" y="2035" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="normal" text-anchor="start" fill="#172033">
+<tspan x="2670" dy="0">&gt;&gt; Habilitação    ·    []&gt;&gt; Passagem de informação</tspan>
+<tspan x="2670" dy="49">[] Escolha entre tarefas    ·    [T] Tarefa opcional</tspan>
+<tspan x="2670" dy="49">T* Repetição: refazer edição e avaliação, se necessário</tspan>
+</text>
+<text x="80" y="2255" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="normal" text-anchor="start" fill="#475569">
+<tspan x="80" dy="0">A tarefa 3 é opcional e repetível. Se não houver ajustes, concluir após a tarefa 2. A escolha [] ocorre apenas entre 3.3.1 e 3.3.2.</tspan>
+</text>
+</svg>
