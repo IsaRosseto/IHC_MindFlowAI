@@ -48,37 +48,40 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 #### Que dados coletar?
 
+#### Que dados coletar?
+
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| Como o comunicador percebe atualmente se o público está engajado, confuso, entediado ou frustrado durante uma videoconferência | H01 | Permite compreender quais sinais e estratégias já são usados e se existe realmente dificuldade em acompanhar o estado do grupo durante a sessão | Definir se o Semáforo Cognitivo em tempo real é necessário e quais informações deve apresentar |
-| Em quais momentos da sessão o comunicador sente maior necessidade de receber informações sobre o estado do público | H01 | Ajuda a entender quando o feedback seria útil e quando poderia gerar distração | Definir frequência de atualização, destaque visual e momento de exibição dos indicadores |
-| Quais ações o comunicador tomaria ao perceber aumento de confusão, tédio, frustração ou queda de engajamento | H01 | Permite verificar se os dados gerados pelo sistema podem apoiar decisões reais durante a apresentação | Definir quais estados devem receber maior destaque e se o sistema deve apresentar sugestões de ação |
-| Preferência entre informação em tempo real e análise após o término da sessão | H01 | Permite identificar qual dos dois momentos possui maior valor para o usuário | Priorizar o Semáforo em tempo real, o Dashboard histórico ou ambos |
-| Nível de compreensão e interesse do comunicador sobre a confiança das classificações realizadas pela IA | H02 | É necessário verificar se apresentar a confiança melhora a interpretação ou apenas aumenta a carga cognitiva | Definir se a confiança será exibida e se aparecerá como percentual, faixa ou indicador simplificado |
-| Forma considerada mais clara para indicar que uma classificação da IA possui incerteza | H02 | Diferentes formas de representação podem gerar interpretações distintas | Definir a representação visual da confiança ou incerteza do modelo |
-| Grau de conforto dos participantes com o processamento de imagem da webcam para identificação de estados afetivo-cognitivos | H03 | O funcionamento do sistema pode ser percebido como invasivo ou gerar resistência ao uso | Definir requisitos de consentimento, transparência e controle do participante |
-| Quais informações os participantes gostariam de receber antes de autorizar o uso da câmera para análise | H03 | Permite identificar quais explicações são necessárias para garantir uma decisão consciente | Definir o conteúdo da tela ou aviso de consentimento e transparência |
-| Grau de aceitação do uso de dados agregados do grupo em comparação com resultados individuais | H03 | Informações individuais apresentam maior risco de exposição, vigilância e constrangimento | Definir se os resultados serão exclusivamente agregados ou se haverá algum nível de detalhamento individual |
-| Quais informações do Dashboard são consideradas úteis após uma sessão | H01 / H02 | Permite evitar a inclusão de gráficos, filtros e métricas que não apoiem nenhuma tarefa real | Definir KPIs, gráficos, histórico, filtros e nível de detalhamento do Dashboard |
+| Perfil principal e frequência de condução de atividades por videoconferência | ?02 / ?03 | Caracterizar quem respondeu e evitar tratar contextos diferentes como equivalentes | Delimitar o público prioritário e as variações de contexto a investigar |
+| Sinais e estratégias atualmente utilizados para perceber se o público acompanha o conteúdo, e dificuldade percebida nessa atividade | H01 | Investigar a experiência existente antes de apresentar uma solução | Verificar em quais situações existe necessidade de apoio ao comunicador |
+| Efeito esperado de um indicador automático sobre a tomada de decisão e a atenção | H01 | Investigar tanto a utilidade percebida quanto a possibilidade de distração | Explorar se, quando e como apresentar um indicador durante a sessão |
+| Momentos em que informações sobre o grupo seriam úteis e ações que o comunicador consideraria tomar | H01 | Relacionar a informação a situações e decisões, e não apenas a uma preferência visual | Priorizar momentos de apresentação da informação, preservando a decisão com o comunicador |
+| Informações que o comunicador consultaria após a sessão, incluindo a possibilidade de não consultar nenhuma | R03 / ?03 | Verificar necessidades pós-sessão sem pressupor dashboard, relatório ou exportação | Definir conteúdo essencial do resumo e necessidade de detalhamento |
+| Necessidade atual de selecionar ou reorganizar informações ao revisar registros e relatórios | H06 | Investigar uma necessidade anterior à proposta de personalização do MindFlow | Definir se opções de personalização merecem investigação adicional e quais problemas devem resolver |
+| Importância atribuída à informação de confiança e preferência de representação | H02 | Investigar interesse e compreensão declarados, sem confundi-los com eficácia demonstrada | Explorar alternativas de apresentação da incerteza em testes posteriores |
+| Conforto do próprio comunicador ao imaginar-se no papel de participante de uma análise de imagens | H03, visão do respondente | Conhecer a percepção pessoal dos comunicadores, sem atribuí-la aos estudantes ou ao público em geral | Levantar questões para aprofundar na coleta com participantes da análise |
+| Informações desejadas antes de autorizar uma análise e preferência sobre agregação dos resultados | H03 | Identificar preocupações e necessidades de transparência | Orientar alternativas de aviso, explicação, controle e apresentação agregada |
+| Benefícios percebidos, preocupações e motivos para evitar a ferramenta | H01 / H02 / H03 / H06 | Registrar críticas, dúvidas e necessidades não previstas nas alternativas | Revisar prioridades, conteúdo e propostas de interação |
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| Professores e docentes que realizam aulas on-line | Ter experiência conduzindo aulas por videoconferência, preferencialmente de forma recorrente | Representam diretamente parte do público prioritário do MindFlow |
-| Instrutores e facilitadores de treinamentos on-line | Conduzir apresentações, cursos ou treinamentos por videoconferência | Representam usuários com necessidades semelhantes às personas definidas no projeto |
-| Palestrantes ou outros comunicadores que utilizam videoconferência | Ter experiência conduzindo sessões para grupos remotamente | Permitem verificar se as necessidades identificadas também aparecem fora do contexto estritamente educacional |
-| Participantes de aulas, palestras ou treinamentos on-line | Ter participado de sessões por videoconferência com uso de câmera | São afetados pelo processamento das imagens e são relevantes principalmente para investigar privacidade, transparência e aceitação relacionadas à H03 |
+| Professores e docentes | Já ter conduzido aulas síncronas por videoconferência | Público prioritário ligado a P01 e P02 |
+| Instrutores e facilitadores | Já ter conduzido cursos ou treinamentos por videoconferência | Perfil de contraste para investigar semelhanças e diferenças em relação ao ensino |
+| Palestrantes e apresentadores | Já ter conduzido apresentações remotas para grupos | Perfil de contraste para investigar variações de atividade e linguagem |
+| Comunicadores que conduzem reuniões de trabalho | Já ter conduzido reuniões por videoconferência | Perfil de contraste; sua inclusão não pressupõe que compartilhe as necessidades dos docentes |
 
 #### Aspectos éticos
 
-A participação deve ser **voluntária**, com consentimento claro sobre o objetivo da pesquisa e sobre quais dados serão coletados. Devem ser solicitadas apenas as informações necessárias, evitando dados pessoais sem relação com o estudo.
-
-As respostas devem ser preferencialmente **anônimas ou pseudonimizadas**, e qualquer gravação deve ocorrer somente com autorização do participante.
-
-Como o MindFlow envolve análise de imagens da webcam e inferência de estados afetivo-cognitivos, é necessário considerar riscos de **privacidade, sensação de vigilância e interpretações incorretas**. Os resultados não devem ser tratados como diagnósticos ou avaliações definitivas sobre os participantes.
-
-Os dados coletados devem ter acesso restrito, ser utilizados apenas para o projeto e descartados quando não forem mais necessários.
+- **Consentimento:** apresentar o [termo de consentimento do I01](../instrumentos/termo-consentimento.md) antes das perguntas. Quem não aceitar não acessará o questionário.
+- **Voluntariedade:** a pessoa poderá interromper antes do envio e deixar questões opcionais sem resposta. Somente o aceite e a pergunta inicial de elegibilidade serão obrigatórios.
+- **Dados coletados:** respostas de alternativas, respostas abertas e registro do aceite. Não haverá captura ou processamento de imagem, áudio, vídeo ou tela nesta coleta.
+- **Privacidade:** não solicitar nome, e-mail, identificação de estudantes ou instituição de trabalho. Conferir a configuração do Forms antes da aplicação e ajustar o termo se houver alguma identificação obrigatória imposta pelo ambiente institucional.
+- **Respostas abertas:** orientar a não identificar terceiros; remover informações identificáveis antes de qualquer divulgação.
+- **Acesso e descarte:** acesso restrito à equipe. Descartar os registros individuais ao término da disciplina, preservando sínteses e trechos anonimizados. Não enviar respostas individuais ao GitHub.
+- **Interpretação:** tratar estados afetivo-cognitivos como estimativas na descrição da ferramenta. Não utilizar respostas para avaliação profissional ou punitiva.
+- **Limites da retirada:** esclarecer que, após o envio sem identificação nominal, pode não ser possível localizar uma resposta individual para excluí-la.
 
 ### A02 — Isabella Rosseto
 
@@ -230,7 +233,6 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 
 - **Uso responsável dos resultados:** as descobertas deverão apoiar decisões de design relacionadas à compreensão, personalização e utilização dos indicadores, sem incentivar mecanismos de vigilância ou avaliação punitiva de estudantes e docentes.
 
-> Repita A04, A05...
 
 ## Parte B — ferramentas de coleta
 
