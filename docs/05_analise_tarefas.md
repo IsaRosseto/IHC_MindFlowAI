@@ -29,7 +29,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI | P01 / C02 — docente analisando uma aula já finalizada e personalizando a apresentação dos resultados | Média frequência / Alta criticidade | Kayky Pires de Paula — 22.222.040-2 || T02 | Identificar e interpretar momentos relevantes nos indicadores de uma sessão concluída | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
+| T01 | Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI | P01 / C02 — docente analisando uma aula já finalizada e personalizando a apresentação dos resultados | Média frequência / Alta criticidade | Kayky Pires de Paula — 22.222.040-2 || T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
 | T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
 | T04 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
 | T05 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
@@ -363,10 +363,10 @@ flowchart TB
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+- O objetivo 0 representa uma meta do usuário? Sim, a percepção do estado do grupo durante a aula é uma meta para o usuário.
+- As subtarefas são necessárias e suficientes? Sim, elas refletem as ações reais do usuário.
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim
+- A decomposição parou em nível útil para projeto de interação? Sim
 
 ---
 
@@ -377,67 +377,65 @@ flowchart TB
 
 ## GOAL 0: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
-**METHOD 0.A:** Analisar o estado atual dos participantes, avaliar a relevância da situação e decidir como prosseguir.
-
-- **OP. 0.A.1:** analisar o estado atual dos participantes (GOAL 1);
-- **OP. 0.A.2:** avaliar a relevância da situação (GOAL 2);
-- **OP. 0.A.3:** decidir como prosseguir com a aula (GOAL 3);
-- **OP. 0.A.4:** repetir o processo enquanto a aula estiver em andamento.
+- **OP. 0.1:** analisar o estado atual dos participantes (GOAL 1);
+- **OP. 0.2:** avaliar a relevância da situação (GOAL 2);
+- **OP. 0.3:** decidir como prosseguir com a aula (GOAL 3);
+- **OP. 0.4:** repetir o processo enquanto a aula estiver em andamento.
 
 ---
 
 ## GOAL 1: Analisar o estado atual dos participantes
 
-### GOAL 1.A: Observar o indicador geral do estado do grupo
+### GOAL 1.1: Observar o indicador geral do estado do grupo
 
-- **OP. 1.A.1:** direcionar a atenção para o indicador geral;
-- **OP. 1.A.2:** observar o estado predominante apresentado;
-- **OP. 1.A.3:** verificar o valor associado ao estado;
-- **OP. 1.A.4:** interpretar a informação apresentada.
+- **OP. 1.1.1:** direcionar a atenção para o indicador geral;
+- **OP. 1.1.2:** observar o estado predominante apresentado;
+- **OP. 1.1.3:** verificar o valor associado ao estado;
+- **OP. 1.1.4:** interpretar a informação apresentada.
 
-### GOAL 1.B: Consultar os indicadores específicos
+### GOAL 1.2: Consultar os indicadores específicos
 
-- **OP. 1.B.1:** direcionar a atenção para os indicadores específicos;
-- **OP. 1.B.2:** observar os valores de engajamento, tédio, confusão e frustração;
-- **OP. 1.B.3:** comparar os valores apresentados;
-- **OP. 1.B.4:** identificar os estados mais relevantes naquele momento.
+- **OP. 1.2.1:** direcionar a atenção para os indicadores específicos;
+- **OP. 1.2.2:** observar os valores de engajamento, tédio, confusão e frustração;
+- **OP. 1.2.3:** comparar os valores apresentados;
+- **OP. 1.2.4:** identificar os estados mais relevantes naquele momento.
 
 ---
 
 ## GOAL 2: Avaliar a relevância da situação
 
-### GOAL 2.A: Interpretar a alteração observada
+### GOAL 2.1: Interpretar a alteração observada
 
-- **OP. 2.A.1:** identificar os estados que merecem atenção;
-- **OP. 2.A.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
-- **OP. 2.A.3:** interpretar o significado dos estados observados no contexto da aula.
+- **OP. 2.1.1:** identificar os estados que merecem atenção;
+- **OP. 2.1.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
+- **OP. 2.1.3:** interpretar o significado dos estados observados no contexto da aula.
 
 ### GOAL 2.B: Avaliar a necessidade de intervenção
 
-- **OP. 2.B.1:** considerar a relevância dos indicadores observados;
-- **OP. 2.B.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
-- **OP. 2.B.3:** determinar se a situação justifica uma intervenção pedagógica.
+- **OP. 2.2.1:** considerar a relevância dos indicadores observados;
+- **OP. 2.2.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
+- **OP. 2.2.3:** determinar se a situação justifica uma intervenção pedagógica.
 
 ---
 
 ## GOAL 3: Decidir como prosseguir com a aula
 
-### METHOD 3.A: Manter a condução atual
+### METHOD 3.1: Manter a condução atual
 
 **SEL. RULE:** utilizar quando os indicadores não demonstrarem uma situação que justifique adaptação da aula.
 
-- **OP. 3.A.1:** decidir manter a estratégia pedagógica atual;
-- **OP. 3.A.2:** continuar a condução da aula sem alterações;
-- **OP. 3.A.3:** acompanhar os próximos indicadores apresentados pelo sistema.
+- **OP. 3.1.1:** decidir manter a estratégia pedagógica atual;
+- **OP. 3.1.2:** continuar a condução da aula sem alterações;
+- **OP. 3.1.3:** acompanhar os próximos indicadores apresentados pelo sistema.
 
-### METHOD 3.B: Definir uma adaptação na condução da aula
+### METHOD 3.2: Definir uma adaptação na condução da aula
 
 **SEL. RULE:** utilizar quando os indicadores e o contexto da aula demonstrarem necessidade de intervenção.
 
-- **OP. 3.B.1:** identificar o estado que motivou a necessidade de adaptação;
-- **OP. 3.B.2:** considerar possíveis mudanças na estratégia pedagógica;
-- **OP. 3.B.3:** selecionar a adaptação mais adequada ao contexto;
-- **OP. 3.B.4:** aplicar a adaptação durante a aula;
+- **OP. 3.2.1:** identificar o estado que motivou a necessidade de adaptação;
+- **OP. 3.2.2:** considerar possíveis mudanças na estratégia pedagógica;
+- **OP. 3.2.3:** selecionar a adaptação mais adequada ao contexto;
+- **OP. 3.2.4:** aplicar a adaptação durante a aula;
 - **OP. 3.B.5:** acompanhar os próximos indicadores para observar a resposta dos participantes.
 
 ---
