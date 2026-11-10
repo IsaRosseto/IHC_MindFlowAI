@@ -1,6 +1,6 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
-**Data:** {{dd/mm/aaaa}}  
+**Data:** {{20/10/2026}}  
 **Status:** 🟨 em andamento
 
 ## Objetivo da atividade
@@ -42,9 +42,9 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 > **Responsabilidade:** solução individual por integrante.
 
-### A01 — {{autor}}
+### A01 — Kayky Pires
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
 #### Que dados coletar?
 
