@@ -29,8 +29,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Configurar o acompanhamento de uma aula no MindFlow AI  | P01 / C01 — docente revisando uma aula on-line já finalizada | Média frequência / Alta criticidade | Kayky Pires de Paula - 22.222.040-2 |
-| T02 | Identificar e interpretar momentos relevantes nos indicadores de uma sessão concluída | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
+| T01 | Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI | P01 / C02 — docente analisando uma aula já finalizada e personalizando a apresentação dos resultados | Média frequência / Alta criticidade | Kayky Pires de Paula — 22.222.040-2 || T02 | Identificar e interpretar momentos relevantes nos indicadores de uma sessão concluída | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
 | T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
 | T04 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
 | T05 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
@@ -39,7 +38,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ---
 
-## HTA — T01 Configurar o acompanhamento de uma aula concluída no MindFlow AI
+## HTA — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
@@ -59,66 +58,85 @@ A tarefa é concluída quando o usuário finaliza a personalização e verifica 
 ```mermaid
 flowchart TB
 
-    T0["0. Personalizar a visualização dos resultados de uma aula concluída<br/><b>Plano 0:</b> 1 > 2 > 3 > 4 > 5"]
+    T0["`0. Personalizar a visualização dos resultados de uma aula concluída
+    **Plano 0:** 1 > 2 > 3; executar 4 se houver necessidade de alteração; depois 5.
+    Se necessário, repetir 4 > 5.`"]
 
-    T1["1. Localizar a aula concluída<br/><b>Plano 1:</b> 1.1 > 1.2 > 1.3"]
-    T2["2. Consultar o resumo da aula<br/><b>Plano 2:</b> 2.1 > 2.2"]
-    T3["3. Definir as necessidades de personalização<br/><b>Plano 3:</b> 3.1 > 3.2"]
-    T4["4. Personalizar a visualização<br/><b>Plano 4:</b> 4.1 > 4.2 > 4.3"]
-    T5["5. Finalizar e avaliar a visualização<br/><b>Plano 5:</b> 5.1 > 5.2; se necessário, retornar a 4"]
+    T1["`1. Localizar a aula concluída
+    **Plano 1:** 1.1 > 1.2 > 1.3`"]
 
-    T0 --> T1
-    T0 --> T2
-    T0 --> T3
-    T0 --> T4
-    T0 --> T5
+    T2["`2. Consultar o resumo da aula
+    **Plano 2:** 2.1 > 2.2`"]
 
-    T11[["1.1 Acessar Minhas Reuniões"]]
-    T12[["1.2 Identificar a aula desejada"]]
-    T13[["1.3 Selecionar Ver Resumo"]]
+    T3["`3. Definir necessidades de personalização
+    **Plano 3:** 3.1 > 3.2`"]
 
-    T1 --> T11
-    T1 --> T12
-    T1 --> T13
+    T4["`4. Personalizar a visualização
+    **Plano 4:** 4.1 > 4.2 > 4.3 > 4.4`"]
 
-    T21[["2.1 Examinar os indicadores disponíveis"]]
-    T22[["2.2 Examinar os gráficos apresentados"]]
+    T5["`5. Avaliar e concluir a visualização
+    **Plano 5:** 5.1 > 5.2, se adequada.
+    Caso contrário, retornar a 4 e repetir a avaliação.`"]
 
-    T2 --> T21
-    T2 --> T22
+    T0 --- T1
+    T0 --- T2
+    T0 --- T3
+    T0 --- T4
+    T0 --- T5
 
-    T31[["3.1 Identificar informações relevantes para análise"]]
-    T32[["3.2 Decidir quais elementos deseja modificar"]]
+    T11["1.1 Acessar Minhas Reuniões"]
+    T12["1.2 Identificar a aula desejada"]
+    T13["1.3 Selecionar Ver Resumo"]
 
-    T3 --> T31
-    T3 --> T32
+    T1 --- T11
+    T1 --- T12
+    T1 --- T13
 
-    T41[["4.1 Selecionar Nova Visualização"]]
-    T42["4.2 Escolher os indicadores e gráficos desejados<br/><b>Plano 4.2:</b> 4.2.1 / 4.2.2"]
-    T43[["4.3 Organizar os elementos da visualização"]]
+    T21["2.1 Examinar os indicadores disponíveis"]
+    T22["2.2 Examinar os gráficos apresentados"]
 
-    T4 --> T41
-    T4 --> T42
-    T4 --> T43
+    T2 --- T21
+    T2 --- T22
 
-    T421[["4.2.1 Priorizar indicadores de engajamento"]]
-    T422[["4.2.2 Priorizar indicadores de tédio, confusão e frustração"]]
+    T31["3.1 Identificar informações relevantes para análise"]
+    T32["3.2 Definir quais elementos manter ou modificar"]
 
-    T42 --> T421
-    T42 --> T422
+    T3 --- T31
+    T3 --- T32
 
-    T51[["5.1 Concluir a edição da visualização"]]
-    T52[["5.2 Verificar se a organização atende às necessidades"]]
+    T41["4.1 Selecionar Nova Visualização"]
 
-    T5 --> T51
-    T5 --> T52
+    T42["`4.2 Escolher indicadores e gráficos desejados
+    **Plano 4.2:** 4.2.1 / 4.2.2`"]
 
-    classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
-    classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
+    T43["4.3 Organizar os elementos selecionados"]
+    T44["4.4 Confirmar as alterações"]
+
+    T4 --- T41
+    T4 --- T42
+    T4 --- T43
+    T4 --- T44
+
+    T421["4.2.1 Priorizar indicadores de engajamento"]
+    T422["4.2.2 Priorizar tédio, confusão e frustração"]
+
+    T42 --- T421
+    T42 --- T422
+
+    T51["5.1 Avaliar a visualização resultante"]
+    T52["5.2 Concluir a visualização"]
+
+    T5 --- T51
+    T5 --- T52
+
+    classDef objetivo fill:#ffffff,stroke:#333333,stroke-width:1.5px,color:#111111;
+    classDef operacao fill:#eeeeee,stroke:#333333,stroke-width:2px,color:#111111;
 
     class T0,T1,T2,T3,T4,T5,T42 objetivo;
-    class T11,T12,T13,T21,T22,T31,T32,T41,T421,T422,T43,T51,T52 operacao;
+    class T11,T12,T13,T21,T22,T31,T32,T41,T421,T422,T43,T44,T51,T52 operacao;
 ```
+
+*As linhas representam a decomposição hierárquica. A sequência, a escolha e as condições de repetição são definidas pelos planos. No Plano 4.2, a escolha representa o foco inicial da análise, sem impedir a combinação posterior de indicadores.*
 
 ### Decomposição e planos
 
@@ -241,10 +259,9 @@ A regra de seleção representa o foco inicial da análise. Não impede a combin
 
 ---
 
-## CTT — T01 Configurar o acompanhamento de uma aula no MindFlow AI
+## CTT — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{Kayky Pires - 22.222.040-2}}
-
 
 ### Descrição
 
@@ -257,7 +274,7 @@ Em seguida, analisa a visualização resultante. A personalização e a avaliaç
 
 ### Diagrama
 
-https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_t01_corrigido.svg
+![CTT T01 — Personalizar a visualização dos resultados de uma aula concluída](../assets/05_tarefas/ctt_t01_corrigido.svg)
 
 ### Legenda e relações temporais usadas
 
