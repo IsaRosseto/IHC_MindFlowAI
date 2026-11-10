@@ -48,8 +48,6 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 #### Que dados coletar?
 
-#### Que dados coletar?
-
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
 | Perfil principal e frequência de condução de atividades por videoconferência | ?02 / ?03 | Caracterizar quem respondeu e evitar tratar contextos diferentes como equivalentes | Delimitar o público prioritário e as variações de contexto a investigar |
@@ -247,12 +245,21 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 
 #### Procedimento padronizado de aplicação
 
-1. Preparar o questionário em uma plataforma de formulários on-line.
-2. Apresentar, no início do formulário, o objetivo da pesquisa e informar que a participação é voluntária.
-3. Solicitar o consentimento do participante antes do início das perguntas.
-4. Aplicar o questionário sem solicitar dados pessoais desnecessários.
-5. Encerrar agradecendo a participação e informando que os dados serão utilizados apenas para fins acadêmicos.
-6. Armazenar as respostas de forma restrita à equipe do projeto e analisar os resultados de forma agregada e anônima.
+1. **Preparação:** configurar o formulário com o consentimento e as perguntas documentadas neste instrumento. Conferir se o registro de nome ou e-mail está desativado ou se corresponde às condições informadas no termo.
+
+2. **Piloto:** realizar um preenchimento para verificar clareza, duração, alternativas e condições de navegação. Registrar eventuais ajustes antes da aplicação com o público definido.
+
+3. **Recrutamento:** convidar pessoas com experiência na condução de atividades por videoconferência, priorizando docentes e incluindo outros comunicadores como perfis de contraste. Registrar os canais e o período de divulgação.
+
+4. **Consentimento:** apresentar o [termo de consentimento do I01](../instrumentos/termo-consentimento.md) antes das perguntas. Se a pessoa não concordar em participar, encerrar o formulário.
+
+5. **Elegibilidade:** apresentar a pergunta inicial sobre a experiência de condução. Se a pessoa nunca tiver conduzido uma atividade por videoconferência, agradecer e encerrar o preenchimento.
+
+6. **Aplicação:** apresentar as perguntas na ordem documentada, sem orientar quais respostas escolher. Diferenciar questões de escolha única, seleção múltipla e resposta aberta. Apenas o consentimento e a identificação da elegibilidade serão obrigatórios.
+
+7. **Encerramento:** agradecer e informar que as respostas serão utilizadas para fins acadêmicos. Manter disponível o contato da equipe indicado no termo.
+
+8. **Registro e armazenamento:** registrar o número de respostas elegíveis e os perfis alcançados, separando eventuais respostas do piloto. Manter os registros individuais com acesso restrito à equipe e seguir o descarte previsto no termo.
 
 #### Instrumento
 
@@ -260,11 +267,27 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 
 #### Como os dados serão analisados
 
-As questões fechadas serão analisadas por meio da **distribuição e frequência das respostas**, identificando padrões de percepção, necessidades e preferências dos participantes.
+1. **Organização da base:** separar as respostas do piloto das respostas da aplicação. Considerar na análise somente os registros de pessoas que aceitaram participar e atendem ao critério de experiência de condução. Registrar respostas ausentes por pergunta e remover informações identificáveis eventualmente mencionadas nos campos abertos.
 
-As respostas abertas serão analisadas por **codificação temática**, agrupando conteúdos semelhantes em categorias como utilidade do feedback em tempo real, confiança na IA, privacidade e informações desejadas no dashboard.
+2. **Caracterização dos respondentes:** utilizar Q1 e Q2 para descrever o perfil principal e a frequência de condução de atividades por videoconferência. Comparações entre perfis serão exploratórias e deverão informar a quantidade de respondentes de cada grupo.
 
-Ao final, os resultados serão relacionados às hipóteses **H01, H02 e H03**, permitindo verificar se elas foram sustentadas, refutadas ou precisam ser refinadas.
+3. **Perguntas fechadas:** apresentar contagens e proporções de cada alternativa, utilizando como referência o número de respostas válidas da pergunta. Nas questões de seleção múltipla, informar que a soma das proporções pode ultrapassar 100%. Respostas ausentes serão apresentadas separadamente.
+
+4. **Perguntas abertas:** analisar Q15 e Q16 por codificação temática, agrupando conteúdos relacionados a benefícios, distração, confiança, privacidade, revisão pós-sessão e organização da informação. Preservar críticas e opiniões divergentes, utilizando apenas trechos sem identificação pessoal.
+
+5. **Relação com as hipóteses e necessidades:**
+   - **H01 — Q3 a Q7:** investigar sinais utilizados atualmente, dificuldade percebida, utilidade esperada, possíveis distrações e ações consideradas pelo comunicador.
+   - **H02 — Q10 e Q11:** identificar a importância atribuída à informação de incerteza e as preferências de apresentação.
+   - **H03 — Q12 a Q14:** investigar o conforto pessoal dos comunicadores ao imaginar-se como participantes, suas necessidades de informação e preferências sobre agregação.
+   - **H06 — Q9:** investigar se existe uma necessidade atual de selecionar ou reorganizar informações durante a revisão de registros e relatórios.
+   - **R03 e ?03 — Q6 e Q8:** identificar momentos de consulta e informações consideradas relevantes após a sessão.
+   - As respostas abertas poderão complementar essas relações ou revelar necessidades não previstas.
+
+6. **Interpretação:** distinguir relatos sobre práticas atuais de opiniões sobre uma ferramenta hipotética. Interesse declarado não comprova utilidade real ou ausência de distração. Preferência por um formato não demonstra sua compreensão, e a opinião dos comunicadores não substitui a coleta com alunos e demais participantes prevista em I03. As evidências serão confrontadas com os outros instrumentos antes de sustentar, contrariar ou refinar as hipóteses.
+
+7. **Uso no design:** relacionar os achados às decisões sobre apresentação dos indicadores, explicações, ajuda, revisão pós-sessão e personalização. Registrar a origem da evidência, a interpretação e a decisão em `RASTREABILIDADE.md`, mantendo explícitas as questões ainda abertas.
+
+8. **Limitações:** considerar a amostra por conveniência, o autorrelato e a influência da descrição da ferramenta. Os resultados não serão generalizados para todos os comunicadores. Caso sejam aplicadas versões diferentes do questionário, elas serão identificadas e analisadas separadamente.
 
 ### Instrumento I02 — Entrevista semiestruturada com técnica de incidente crítico
 
