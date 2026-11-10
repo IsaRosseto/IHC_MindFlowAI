@@ -35,7 +35,7 @@ Foram exploradas as seguintes famílias de interface:
 - **Dashboard:** visualização dos resultados de uma reunião e de informações consolidadas.
 - **Configuração/personalização:** exploração da organização dos indicadores e das configurações da extensão.
 
-O protótipo também contempla uma área de suporte. A ajuda contextual em pop-up é uma proposta de revisão decorrente do feedback recebido.
+A V0 contempla uma aba de suporte. Na V1, foi acrescentado um botão flutuante de ajuda, conforme os registros da seção 5.
 
 As interfaces de alertas durante a sessão e de participação na análise permanecem pendentes de prototipação.
 
@@ -139,14 +139,13 @@ Apresenta informações de ajuda e orientações para auxiliar o usuário na uti
 *Figura 7 – Tela de Suporte.*
 ## 4. Simulação / walkthrough
 
-A sessão formativa foi realizada presencialmente na faculdade com Beatriz Manaia, colega da equipe que não participou da elaboração das telas. Sua participação foi utilizada para identificar dúvidas e oportunidades de melhoria, sem substituir a avaliação posterior com os participantes finais do projeto. A data da sessão ainda precisa ser registrada.
+A sessão formativa foi realizada presencialmente na faculdade com Beatriz Manaia, colega da equipe que não participou da elaboração das telas. Sua participação foi utilizada para identificar dúvidas e oportunidades de melhoria, sem substituir a avaliação posterior com os participantes finais do projeto. Data da entrevista 14/10.
 
 Inicialmente, a equipe apresentou a finalidade do MindFlow AI e seu objetivo. Em seguida, a participante explorou livremente a interface. Durante a navegação, fez perguntas sobre a finalidade de elementos e funcionalidades, e a equipe respondeu às dúvidas conforme surgiam.
 
 A sessão teve caráter exploratório, sem um roteiro estruturado de tarefas descrito no registro disponível. Não foram registrados o percurso completo, os tempos de execução ou as conclusões de tarefas sem ajuda. Também não foi detalhado o mecanismo utilizado para representar as transições de tela e as respostas do sistema.
 Os achados abaixo correspondem aos comentários relatados e às dúvidas surgidas durante a exploração. As explicações fornecidas pela equipe devem ser consideradas na interpretação dos resultados, pois a compreensão após uma explicação não demonstra que a interface era compreensível de forma independente.
-Os achados abaixo correspondem aos comentários relatados e às dúvidas surgidas durante a exploração. As explicações fornecidas ppara representar as transições de tela e as respostas do sistema.
-ela equipe devem ser consideradas na interpretação dos resultados, pois a compreensão após uma explicação não demonstra que a interface era compreensível de forma independente.
+
 
 | Observação | Tela/ação | Evidência | Consequência para o design |
 |---|---|---|---|
