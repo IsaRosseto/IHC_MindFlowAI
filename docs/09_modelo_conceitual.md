@@ -28,9 +28,9 @@ Dashboards, relatórios, filtros e CRUDs devem aparecer no modelo conceitual por
 ### CI01 — Acompanhar os estados da turma e revisar os resultados da aula
 
 **Autor(a):** Kayky Pires — 22.222.040-2  
-**Origem:** cenário problema C01 — Dificuldade em perceber o estado dos participantes durante uma aula on-line.
+**Origem:** cenário problema C02 — Dificuldade de Karol em perceber se a turma está acompanhando a aula on-line.
 
-Durante uma aula por videoconferência, o professor precisa apresentar o conteúdo e, ao mesmo tempo, perceber como os alunos estão reagindo. Para isso, observa câmeras, chat, perguntas e reações da plataforma.
+Karol, professora de Filosofia na modalidade EAD, precisa apresentar o conteúdo durante a videoconferência e, ao mesmo tempo, perceber como os alunos estão reagindo.
 
 O professor tende a considerar principalmente a participação no chat, as perguntas realizadas e as expressões visíveis dos alunos como sinais de acompanhamento da aula.
 
@@ -135,15 +135,6 @@ O M01 detalha os objetivos O01 e O05 e cobre parte de O03, correspondente à con
 
 Título, data, valores, escalas e disponibilidade de dados são signos necessários para alcançar esses objetivos, sendo detalhados no esquema conceitual de signos.
 
-### Dicionário de objetivos
-
-| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
-|---|---|---|---|---|
-| O01 | Personalizar a visualização do resumo da reunião, selecionando os indicadores que deseja exibir. | P01 — Karol | CI01 | Alta |
-| O02 | Interpretar os indicadores de engajamento, tédio, confusão e frustração durante a aula, considerando seu significado e os dados disponíveis. | P01 — Karol | CI01 | Alta |
-| O03 | Analisar os resultados de uma aula concluída, identificando as informações relevantes para sua revisão. | P01 — Karol | CI01 | Alta |
-| O04 | Decidir se deve manter ou adaptar a condução da aula, considerando os indicadores e os demais sinais observados. | P01 — Karol | CI01 | Alta |
-| O05 | Avaliar se os indicadores apresentados na visualização personalizada atendem às suas necessidades de análise. | P01 — Karol | CI01 | Alta |
 
 ## 4. Esquema conceitual de signos
 
@@ -165,7 +156,6 @@ Título, data, valores, escalas e disponibilidade de dados são signos necessár
 - A escala dos valores deve ser explicitada na interface. Não se pressupõe que todos os indicadores sejam apresentados em porcentagem.
 - A ausência de dados deve ser diferenciada de um valor zero ou de uma estimativa de baixo engajamento.
 - O símbolo `—` indica que não existe um valor padrão fixo.
-- O cancelamento permanece direto, sem confirmação de descarte, conforme a versão adotada do M01.
 
 ## Síntese
 
