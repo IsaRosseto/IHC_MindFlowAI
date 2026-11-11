@@ -229,6 +229,52 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 - **Uso responsável dos resultados:** as descobertas deverão apoiar decisões de design relacionadas à compreensão, personalização e utilização dos indicadores, sem incentivar mecanismos de vigilância ou avaliação punitiva de estudantes e docentes.
 
 
+### A05 — Matheus Ferreira de Freitas
+
+**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5
+
+**Foco desta solução:** o comunicador **comercial** (persona P04, Cenário C01 e tarefa T05): o vendedor B2B que apresenta uma proposta por videochamada, com a tela compartilhada, para clientes de outra empresa. A A01 investiga o comunicador em geral e a A02, o professor em aula; a A05 verifica se o recorte comercial, que não consta como situação concreta na Entrega 1 e foi construído sem contato com vendedores reais, acontece de fato e como acontece em reuniões reais. É isso que decide se ele continua no escopo do projeto (dúvidas ?02 e ?03).
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Se o vendedor B2B realmente apresenta propostas por videochamada com a tela compartilhada durante quase toda a reunião e com que frequência fica em dúvida sobre a reação dos clientes | ?02 / ?03 / H01 | P04 e C01 foram construídos sem contato com vendedores reais; se a situação for rara, o recorte comercial perde prioridade | Manter o contexto comercial como variação do produto ou concentrar o projeto no ensino on-line |
+| Pressões e recursos de cada reunião: quem define o tempo, um ou dois monitores, vendedor sozinho ou com um colega, e em que trechos da pauta a observação dos clientes é mais difícil | C01 (Q1) | Define as condições em que um apoio à percepção teria de funcionar; hoje são hipóteses de refinamento | Momento e posição do indicador durante o compartilhamento; se precisa funcionar em uma única tela |
+| Quem participa do lado do cliente (papéis), de quem depende a decisão e se a reação de uma pessoa específica pesa mais do que a do grupo | C01 (Q2) / H05 | Reuniões comerciais têm poucos participantes, e o que importa pode ser a reação do decisor, que um agregado do grupo não mostra | Se um indicador agregado faz sentido em grupos de 2 a 6 pessoas e o que ele não deve pretender mostrar (reação individual) |
+| Objetivos que competem com a leitura da reação (identificar objeções, garantir o próximo passo, cumprir a pauta) e o que o vendedor precisa saber ao sair da reunião | C01 (Q3) | Separa a necessidade de "ler a reação" das outras coisas que ocupam a atenção do vendedor durante a fala | Quanta atenção o indicador pode exigir e o que precisa constar de um resumo da reunião |
+| Sinais usados hoje para perceber a reação (rostos na grade reduzida, resposta às pílulas de dúvida, perguntas, chat, silêncio) e ações usadas para provocar reação, com seu custo em tempo e constrangimento | C01 (Q5) / H01 | A T05 modela quatro canais (operações 3.1 a 3.4) a partir de hipóteses; é preciso saber quais são usados, quais são evitados e por quê | Que tipo de sinal o sistema deve complementar, e não substituir; vocabulário dos rótulos |
+| Critério usado para decidir, no momento, entre seguir, reexplicar, mudar o discurso ou anotar para o follow-up, inclusive quando alguns clientes reagem e outros ficam em silêncio | C01 (Q4) / RC03 | A T05 supõe que a decisão depende de quem reagiu, do tempo restante e da importância do ponto; se o critério for outro, o apoio à decisão muda | Indicar que algo merece atenção sem prescrever a ação; qual informação acompanha o alerta |
+| Acontecimentos que mudam o rumo da reunião (pergunta inesperada, objeção, participante que sai ou desliga a câmera, mensagem no chat, aviso de tempo, falha técnica) e como o vendedor reage a cada um | C01 (Q6) | Os eventos competem com a observação do grupo e definem quando a decisão precisa ser tomada | Quando o indicador deve ficar em segundo plano e como tratar câmeras desligadas e saídas da chamada |
+| Quanto o vendedor confia na própria leitura ao final da reunião e se essa leitura se confirma no retorno do cliente, dias depois | H02 / C01 (Q7) | É a única forma de saber se a leitura estava errada; na T05, a avaliação só acontece no follow-up (operação 6.3) | Se e quando mostrar a confiança da classificação; conteúdo do resumo pós-reunião (R03) |
+| Como o vendedor registra hoje as percepções e o próximo passo (CRM, anotações, e-mail) e o que gostaria de ter percebido durante a reunião | C01 (Q7) / R03 | Mostra se um resumo pós-reunião teria uso real e onde se encaixaria na rotina, sem supor dashboard ou relatório | Necessidade e formato do resumo pós-sessão no contexto comercial |
+| Como o vendedor acha que clientes de outra empresa reagiriam a ter a imagem analisada e o que ele precisaria explicar ou pedir antes da reunião | H03 / F08 | Em reunião comercial os participantes são externos: o consentimento tem custo comercial e pode inviabilizar o uso | Forma de aviso e consentimento para participantes externos; se é necessário um modo sem análise |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Vendedores e executivos de contas B2B | Apresentar propostas a clientes empresariais por videochamada com tela compartilhada, pelo menos uma vez por semana, há pelo menos 6 meses | Corresponde diretamente à persona P04 (Manoel) e ao Cenário C01 |
+| Pré-vendas e consultores técnicos que participam das apresentações | Acompanhar apresentações comerciais apoiando o vendedor (demonstração, dúvidas técnicas) | Ator previsto no C01 (Q1 e Q2) como possível apoio na observação dos clientes; verifica se alguém mais observa o grupo |
+| Vendedores que alternam reuniões presenciais e on-line (contraste) | Conduzir apresentações comerciais nos dois formatos | Permite separar o que é próprio da videochamada (grade reduzida, câmeras desligadas) do que é próprio da venda |
+| Gestores comerciais que acompanham follow-ups (contraste, opcional) | Acompanhar o resultado das propostas e os registros no CRM | Ligado a R03: mostra o que é registrado hoje depois da reunião e para quem |
+
+**Critério de exclusão:** vendedores que atendem apenas consumidores finais (B2C) ou que não apresentam por videochamada. Ninguém do lado do cliente será contatado: as reuniões não são observadas nem gravadas.
+
+**Limitação da amostra:** o acesso será por conveniência, por contatos profissionais da equipe, provavelmente concentrados em empresas de tecnologia e serviços. O setor será registrado em categoria ampla, e os resultados não serão generalizados para todo vendedor B2B. Se não houver vendedores suficientes, serão aceitos como participantes proxy profissionais que apresentam propostas internas a outras áreas por videochamada, com a diferença registrada junto aos resultados.
+
+#### Aspectos éticos
+
+- **Dados envolvidos neste projeto:** relatos do próprio vendedor sobre reuniões com clientes de outras empresas. O maior risco não recai sobre quem participa, e sim sobre terceiros: clientes, empresas, propostas e valores. Esta coleta não observa nem grava reuniões, não acessa CRM ou e-mails e não usa câmera nem classificação de estados.
+- **Confidencialidade comercial:** o diário pede apenas categorias amplas (tipo de produto, parte da proposta em que houve dúvida) e nunca nomes de clientes, empresas, valores ou conteúdo da proposta. O texto de abertura orienta isso, o participante é lembrado de não registrar nada que o contrato com o cliente ou a política da empresa proíba, e qualquer dado que escape é removido antes do armazenamento.
+- **Voluntariedade e relação com o empregador:** a participação é individual e não passa pela empresa do vendedor; nenhum registro é compartilhado com gestores. Registrar reuniões difíceis não é avaliação de desempenho, e o participante pode deixar de registrar qualquer reunião ou sair do estudo a qualquer momento, sem justificativa.
+- **Consentimento:** o texto de abertura do I05 é lido na conversa inicial, e o aceite é registrado por escrito antes do primeiro registro, seguindo o [modelo de termo de consentimento](../instrumentos/termo_consentimento_modelo.md). Cada registro é voluntário: qualquer item pode ficar em branco.
+- **Minimização:** o perfil é registrado por faixas (tempo em vendas, reuniões por semana); não são coletados nome completo, empresa, cargo exato ou dados de clientes. O contato serve só para combinar o período e enviar lembretes, e é descartado ao final.
+- **Carga sobre o participante:** cada registro leva até 10 minutos, o período é de duas semanas e são registradas no máximo oito reuniões; os lembretes são espaçados e não cobram registros.
+- **Armazenamento, anonimização e descarte:** cada participante recebe um código (D01, D02...) e cada reunião registrada, um número (D01-R1, D01-R2...). Os registros são copiados para a pasta de acesso restrito da equipe e apagados do canal de envio; os registros individuais são descartados ao fim da disciplina, e no repositório entram só a síntese e trechos anonimizados.
+- **Interpretação e uso dos resultados:** os relatos servem para decisões de design e para confirmar, refutar ou refinar hipóteses; não serão usados para avaliar vendedores ou empresas. Os estados afetivo-cognitivos do MindFlow são tratados como estimativas na descrição do sistema, apresentada ao participante só no registro de encerramento.
+- **Limites da retirada:** o participante pode pedir a exclusão dos seus registros pelo código até o fim da disciplina; depois da síntese, os trechos já não permitem identificá-lo.
+
 ## Parte B — ferramentas de coleta
 
 > Cada integrante deve preparar uma técnica/instrumento completo. As técnicas devem ser diferentes entre si e **questionário deve estar entre as técnicas escolhidas**, conforme o enunciado da disciplina.
@@ -564,6 +610,109 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar futuras melhorias na interface.
 
 
+### Instrumento I05 — Diário de reuniões comerciais (diário de atividades)
+
+**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
+**Técnica:** diário de atividades (estudo de campo): durante duas semanas, o vendedor preenche um registro curto e padronizado logo após cada reunião comercial on-line e, quando chega o retorno do cliente, um registro de follow-up da mesma reunião.  
+**Objetivo:** verificar se a situação do Cenário C01 acontece na prática com vendedores B2B reais e registrar, em reuniões reais e perto do momento em que acontecem, quais sinais o vendedor usa para perceber a reação dos clientes, quando fica em dúvida, o que decide e o que descobre depois no follow-up. Responde às questões Q1 a Q7 do C01, investiga ?02, ?03, H01, H02, H05 e H03 (visão do comunicador diante de clientes externos) e confere as operações 3 a 6 da T05.  
+**Público:** perfis definidos na A05, prioritariamente vendedores e executivos de contas B2B. Meta: 3 a 5 participantes, cada um com 3 a 8 reuniões registradas, totalizando pelo menos 10 reuniões.
+
+**Por que diário e não entrevista ou observação:** reuniões comerciais com clientes de outra empresa dificilmente podem ser observadas ou gravadas (confidencialidade e clientes que não consentiram), e uma entrevista depende da memória de reuniões antigas. O diário registra cada reunião real logo depois que ela termina, sem a presença da equipe, e inclui a comparação com o retorno do cliente dias depois, que é onde a tarefa T05 mostra que a leitura errada aparece (operação 6.3). É uma técnica diferente das demais da equipe: acompanha várias reuniões ao longo do tempo, em vez de uma opinião (I01), um relato de memória (I02), uma discussão em grupo (I03) ou um protótipo (I04).
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** recrutar pelos critérios da A05 (contatos profissionais da equipe e indicações), confirmar que o participante apresenta propostas por videochamada e fazer uma conversa inicial de 15 minutos, por videochamada, para explicar o diário, preencher a ficha de perfil e combinar o período de duas semanas e o canal de envio (formulário on-line ou mensagem). Atribuir o código do participante (D01, D02...). Fazer um registro piloto com o primeiro participante e ajustar o texto dos itens antes dos demais.
+2. **Apresentação e consentimento:** ler o texto de abertura sem alterações, perguntar se há dúvidas, deixar explícito o que não deve ser registrado (nomes, empresas, valores, conteúdo da proposta) e registrar o aceite por escrito antes do primeiro registro.
+3. **Aplicação:** depois de cada reunião comercial on-line do período, o participante preenche o registro por reunião, de preferência no mesmo dia e em até 10 minutos. A equipe envia um lembrete a cada dois ou três dias, não comenta o conteúdo dos registros e não apresenta o MindFlow nem sugere soluções antes do registro de encerramento, para não induzir os relatos. Registros podem ser pulados sem justificativa.
+4. **Encerramento:** ao fim das duas semanas, o participante preenche o registro de follow-up de cada reunião que já teve retorno do cliente (ou informa que ainda não houve) e o registro de encerramento. Uma conversa final de 15 minutos, opcional, esclarece registros incompletos, agradece e informa como os dados serão usados.
+5. **Armazenamento e anonimização:** no dia do recebimento, copiar cada registro para a pasta de acesso restrito da equipe com o código do participante e o número da reunião (D01-R1...), apagar as mensagens do canal de envio, remover qualquer nome, empresa ou valor que tenha escapado e descartar os registros individuais ao fim da disciplina.
+
+#### Instrumento
+
+**Texto de abertura (ler na íntegra na conversa inicial e enviar por escrito)**
+
+> Obrigado(a) por aceitar participar. Sou estudante da FEI e, na disciplina de Interação Humano-Computador, estamos estudando como vendedores acompanham a reação dos clientes em reuniões por videochamada. Não estamos avaliando você nem seus resultados de venda: queremos entender a situação e as dificuldades que ela traz. Durante duas semanas, pedimos que você preencha um registro curto, de até 10 minutos, depois de cada reunião comercial on-line que fizer, e um registro rápido quando o cliente der retorno. Você pode pular qualquer item, deixar de registrar qualquer reunião ou sair do estudo a qualquer momento, sem explicar o motivo. Por favor, não registre nomes de pessoas ou empresas, valores nem o conteúdo das propostas; use só categorias gerais, como "parte de preço" ou "parte técnica". Seus registros serão identificados apenas por um código, não serão compartilhados com sua empresa e serão apagados ao fim da disciplina. Você concorda em participar? [registrar aceite por escrito]
+
+**Ficha de perfil (uma vez, na conversa inicial; registrar por faixa)**
+
+1. Há quanto tempo você trabalha com vendas para empresas? (menos de 1 ano / 1 a 3 anos / mais de 3 anos)
+2. Que tipo de produto ou serviço você vende, em termos gerais? (software ou tecnologia / serviços / equipamentos ou insumos / outro)
+3. Quantas reuniões comerciais por videochamada você faz por semana, em média? (1 / 2 a 4 / 5 ou mais)
+4. Que plataforma usa com mais frequência e quem costuma escolhê-la: você ou o cliente?
+5. Você costuma apresentar sozinho(a) ou com um colega (pré-vendas, gestor)?
+6. Você usa um ou mais monitores nas reuniões?
+7. Você também faz apresentações comerciais presenciais? (sim / não)
+
+**Registro por reunião (preencher logo após cada reunião comercial on-line)**
+
+Código da reunião: D__-R__ · Data: ___ · Duração aproximada: ___
+
+1. Quem definiu o tempo da reunião? (você / o cliente / combinado) Faltou tempo? (sim / não) [Q1]
+2. Quantas pessoas participaram do lado do cliente e com que papéis (decisor, responsável técnico, comprador, não sei)? Quantas estavam com a câmera ligada? (nenhuma / algumas / a maioria / todas) [Q2]
+3. Você compartilhou a tela? Por quanto da reunião? (quase toda / cerca de metade / pouco) Onde ficava a imagem dos clientes enquanto compartilhava? [Q1]
+4. Qual era o objetivo principal desta reunião (apresentar a proposta / tirar dúvidas / negociar condições / fechar / outro) e o que você precisava saber ao final dela? [Q3]
+5. Em algum momento você ficou em dúvida se os clientes tinham entendido ou se interessado? Em que parte da apresentação (ex.: funcionamento, implantação, preço, condições)? Descreva em poucas linhas, sem nomes. [Q1, Q4]
+6. O que você olhou, ouviu ou leu para perceber a reação deles? (marque todos: rostos na grade de vídeo / resposta a uma pergunta sua / perguntas espontâneas / mensagens no chat / tom de voz / o silêncio / a reação de uma pessoa específica / outro) [Q5]
+7. Você fez algo para provocar uma reação? (pergunta curta / chamar alguém pelo nome / pedir que descrevessem como fazem hoje / parar o compartilhamento para ver a grade / oferecer demonstração / nada) O que aconteceu em seguida? [Q5]
+8. Quem reagiu (por papel) e isso pesou na sua leitura? Alguém importante ficou em silêncio? [Q2, Q4]
+9. O que você decidiu naquele momento (seguir em frente / reexplicar / mudar o discurso / anotar para retomar depois) e o que pesou na decisão (tempo / importância do ponto / quem reagiu / não constranger o cliente / outro)? [Q4]
+10. Algum acontecimento mudou o rumo da reunião (pergunta inesperada, objeção, participante que saiu ou desligou a câmera, mensagem no chat, aviso de tempo, problema técnico)? O que você fez? [Q6]
+11. Ao terminar, quanto você confiava na sua leitura da reação dos clientes? (1 = nada, 5 = totalmente) O que teria dado mais certeza? [H02]
+12. Qual foi o próximo passo combinado e como você registrou suas percepções da reunião? (CRM / anotações / e-mail para o cliente / só de memória / não registrou) [Q7]
+13. Houve algo que você gostaria de ter percebido durante a reunião e não conseguiu? (opcional)
+
+**Registro de follow-up (preencher quando o cliente der retorno sobre a reunião ou no fim do período)**
+
+Código da reunião: D__-R__ · Dias até o retorno: ___ (ou "ainda sem retorno")
+
+1. O retorno do cliente confirmou a leitura que você fez na reunião? (sim / em parte / não)
+2. Algum ponto que parecia claro ou aceito voltou como dúvida ou objeção? Em que parte da proposta (categoria geral)? [Q7]
+3. Olhando para trás, havia algum sinal na reunião que você poderia ter percebido? Qual?
+
+**Registro de encerramento (uma vez, ao fim das duas semanas)**
+
+> Ler ou enviar: "Agora vamos descrever uma ideia ainda em estudo. Não há resposta certa, e comentários negativos ajudam tanto quanto os positivos. Imagine um programa que, durante a reunião, mostra a você um sinal resumido do estado geral dos clientes, por exemplo se o grupo parece atento ou confuso, estimado a partir das câmeras deles. Ele não mostra resultados individuais."
+
+1. Pensando nas reuniões que você registrou, em quais delas algo assim teria ajudado, se é que ajudaria? Em quais teria atrapalhado? [H01]
+2. Se o sinal dissesse que os clientes estão confusos, mas você achasse que estão acompanhando, o que faria? O que precisaria saber sobre o sinal para confiar nele? [H02]
+3. Nas suas reuniões, o que importa é a reação do grupo ou a de uma pessoa específica? Um resumo do grupo faria sentido com 2 ou 3 clientes na chamada? [H05, Q2]
+4. Como você acha que os clientes reagiriam a saber que a imagem deles está sendo analisada? O que você teria de explicar ou pedir antes da reunião, e faria isso? [H03]
+5. Você usaria algo assim nas suas reuniões? Em que condições não usaria?
+6. Há algo sobre acompanhar os clientes em reuniões on-line que não perguntamos e que você acha importante?
+
+**Ficha de registro da equipe (preencher ao receber cada registro)**
+
+| Campo | Registro |
+|---|---|
+| Código do participante e da reunião | D__-R__ |
+| Data de recebimento e canal | |
+| Registro completo? Itens em branco | |
+| Dado identificável removido? | sim / não (qual categoria) |
+| Situação do C01 presente? (tela compartilhada quase toda a reunião, dúvida sobre a reação, sinais fracos) | sim / em parte / não |
+| Sinais e ações usados (itens 6 e 7) | |
+| Decisão e critério (item 9) | |
+| Confiança declarada (item 11) e resultado do follow-up | |
+| Trechos marcantes (citação literal, anonimizada) | |
+| Observações (o que surpreendeu, dúvida para a conversa final) | |
+
+#### Como os dados serão analisados
+
+1. **Organização da base:** reunir os registros por participante e por reunião (D01-R1, D01-R2...), separar o piloto e considerar apenas registros de participantes que aceitaram e atendem aos critérios da A05. Registrar os itens em branco, contar quantas reuniões foram registradas por participante e quantas receberam follow-up, e remover qualquer dado identificável antes da análise.
+2. **Caracterização dos participantes e das reuniões:** usar a ficha de perfil e os itens 1 a 4 para descrever os perfis, a duração, quem define o tempo, o tamanho e a composição do grupo do cliente, a proporção de câmeras ligadas e de reuniões com a tela compartilhada quase o tempo todo. Comparações entre perfis serão exploratórias e informarão o número de reuniões de cada grupo.
+3. **Itens fechados:** apresentar contagens e proporções por reunião, e não por pessoa, tomando como referência o número de registros válidos de cada item. Nos itens de múltipla escolha (6 e 7), a soma das proporções pode ultrapassar 100%. A confiança declarada (item 11) será cruzada com o resultado do follow-up (confirmou / em parte / não).
+4. **Itens abertos:** codificar os itens 5, 7, 8, 9, 10 e 13, o registro de follow-up e o registro de encerramento por temas definidos a partir das hipóteses (sinais usados, momento da dúvida, critério de decisão, custo de insistir, eventos, registro pós-reunião, clientes externos) e por temas novos que surgirem. A codificação será feita por dois integrantes, com divergências discutidas até consenso, preservando relatos contrários e usando apenas trechos sem identificação.
+5. **Relação com as hipóteses, as questões do C01 e a T05:**
+   - **?02 e ?03 — itens 3, 5 e 6:** em quantas reuniões a situação do C01 aparece (tela compartilhada quase toda a reunião, dúvida sobre a reação, sinais fracos). Se for frequente, o recorte comercial permanece como contexto a atender; se for raro, sai do escopo prioritário.
+   - **H01 — itens 5, 6, 11 e 13 e encerramento 1:** se a dúvida sobre a reação é frequente, em que trechos ocorre e se o vendedor identifica reuniões em que um sinal no momento teria mudado a decisão.
+   - **H02 — item 11 e follow-up 1 a 3:** relação entre a confiança declarada e o acerto da leitura confirmado pelo cliente; leituras feitas com alta confiança e desmentidas depois são o caso mais importante para a exibição de incerteza.
+   - **H03 (visão do comunicador diante de clientes externos) — encerramento 4 e 5:** o que o vendedor precisaria explicar ou pedir e se aceitaria fazê-lo.
+   - **H05 — item 2 e encerramento 3:** se um indicador agregado faz sentido em grupos de 2 a 6 clientes.
+   - **Q1 a Q7 do C01:** cada item do registro está marcado com a questão que responde; as hipóteses de refinamento do cenário serão confirmadas, refutadas ou reescritas uma a uma.
+   - **T05:** os itens 6, 7, 8, 9 e 12 e o follow-up verificam as operações 3.1 a 3.4, 4.1, 4.3, 5.1 a 5.3 e 6.3 do HTA, os métodos 3.A a 3.D e as regras de seleção do Goal 5 do GOMS e as tarefas 2.1.2, 2.4 e 4.3 do CTT.
+6. **Interpretação:** distinguir a prática real (registros por reunião e follow-up) da opinião sobre uma ferramenta hipotética (registro de encerramento, aplicado por último e analisado à parte). Os registros são autorrelatos feitos de memória, ainda que recente, e é provável que reuniões difíceis sejam registradas com mais frequência do que as tranquilas; isso será considerado ao contar as ocorrências. O follow-up é o único dado que mostra uma leitura errada, e só existe para as reuniões cujo retorno chegou no período.
+7. **Uso no design:** os achados alimentam a decisão sobre manter o recorte comercial no escopo (?02 e ?03), a atualização da persona P04, do Cenário C01 e da tarefa T05, e os requisitos do Semáforo Cognitivo nesse contexto: em que trechos da pauta o sinal importa, o que ele não deve pretender mostrar (reação individual do decisor), como se comporta com câmeras desligadas e o que exige de aviso e consentimento com participantes externos (R01, R02, F01, F04 e F08). O resultado será registrado em `RASTREABILIDADE.md`.
+8. **Limitações:** amostra pequena e por conveniência, período curto, dependência de haver reuniões no período, autorrelato sem observação, ausência de acesso ao conteúdo das reuniões e follow-ups que podem não chegar a tempo. Os resultados não serão generalizados para todos os vendedores B2B, e o setor dos participantes será informado em categoria ampla junto às conclusões.
+
 ## Síntese
 
 O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
@@ -572,6 +721,7 @@ O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que 
 2. **Se o tipo de apoio imaginado faz sentido:** utilidade de um sinal durante a sessão, interesse por informação de confiança e o que de fato seria consultado depois da aula, sem pressupor dashboard, filtros ou relatórios (I01 e I02).
 3. **Como o participante reage à análise da própria imagem:** conforto, regras percebidas, o que precisa saber e controlar, e se a agregação protege em turmas pequenas (I03, com apoio da A01).
 4. **Se a interface proposta é fácil de utilizar:** verificar se docentes conseguem localizar uma reunião concluída, interpretar os indicadores, personalizar o resumo e salvar as alterações sem dificuldades, identificando problemas de navegação e compreensão (I04, por meio de teste de usabilidade).
+5. **Se o recorte comercial faz sentido na prática:** se vendedores B2B vivem a situação do C01 em reuniões reais, que sinais usam, como decidem e o que descobrem no follow-up, sem supor que a reunião comercial tenha as mesmas tarefas da aula (I05, por meio de diário de reuniões ao longo de duas semanas).
 
 | Técnica | Quem responde | Hipóteses/lacunas investigadas |
 |---|---|---|
@@ -579,6 +729,7 @@ O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que 
 | I02 — Entrevista com incidente crítico (Isabella) | Professores, prioritariamente de idiomas com turmas pequenas | H01, H02, H05, ?02, ?04; questões Q1–Q7 do C05 |
 | I03 — Grupo focal (Gustavo) | Participantes de aulas e treinamentos on-line | H03, H05, ?04; questões Q1–Q7 do C03 |
 | I04 — Teste de usabilidade (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | H01, H02 e H03 (complementar); usabilidade do resumo, interpretação dos indicadores e personalização da visualização |
+| I05 — Diário de reuniões comerciais (Matheus) | Vendedores B2B, em reuniões reais ao longo de duas semanas | ?02, ?03, H01, H02, H05 e H03 (visão do comunicador com clientes externos); questões Q1–Q7 do C01; operações 3 a 6 da T05 |
 
 **O que se espera concluir após a análise dos dados:**
 
@@ -588,20 +739,21 @@ O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que 
 - **H05** (turmas pequenas) deverá ficar **sustentada ou refutada**, a partir da visão de professores (I02) e de participantes (I03).
 - **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 também contribuirá para avaliar a compreensão desses rótulos na interface.
 - **Usabilidade do resumo e da personalização (I04):** deverá ser verificado se os docentes conseguem localizar uma reunião concluída, compreender os indicadores, personalizar a visualização e salvar as alterações sem dificuldades. Os problemas identificados orientarão melhorias na navegação, organização das informações e controles de edição.
+- **Recorte comercial (I05):** ?02 e ?03 deverão indicar se a reunião comercial B2B permanece no escopo como contexto a atender ou apenas como variação. Se a situação do C01 se repetir nos registros, H01 e H02 ganham evidência em contexto de clientes externos e a T05 é ajustada; se for rara, o recorte sai do escopo prioritário.
 - **H04** e **?01** não dependem desta coleta (foram tratadas na Entrega 2).
 
 Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas e elementos da interface afetados serão revisados.
 
 ## Checklist
 
-- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas (tabela inicial e Síntese).
-- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados — o TCC já previa interface, mas I02 e I03 verificam se as situações de C05 e C03 acontecem na prática.
-- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade (I02, pergunta 19; I03, perguntas 10 a 12).
-- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação (colunas de hipótese e decisão em A01–A03).
-- [x] Parte A identifica dados e perfis de coleta de forma específica (A01–A03).
-- [x] Aspectos éticos são contextualizados para o projeto (A01–A03).
-- [ ] Há uma técnica completa por integrante e técnicas distintas — três técnicas distintas prontas (questionário, entrevista e grupo focal); faltam as de Rafael e Matheus.
-- [x] Questionário está incluído entre as técnicas (I01).
-- [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral — I02 e I03 têm o conteúdo integral no repositório; I01 tem apenas o link do formulário e precisa da cópia textual.
-- [x] Perguntas evitam indução e coletam apenas dados necessários (I02 e I03 apresentam a ideia do sistema só no fim, com convite a críticas).
-- [x] Está claro como os dados serão analisados e usados no design (seções de análise de I01–I03 e Síntese).
+- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
+- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
+- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
+- [x] Parte A identifica dados e perfis de coleta de forma específica.
+- [x] Aspectos éticos são contextualizados para o projeto.
+- [x] Há uma técnica completa por integrante e técnicas distintas.
+- [x] Questionário está incluído entre as técnicas.
+- [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
+- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Está claro como os dados serão analisados e usados no design.
