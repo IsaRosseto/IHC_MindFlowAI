@@ -50,16 +50,13 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| Perfil principal e frequência de condução de atividades por videoconferência | ?02 / ?03 | Caracterizar quem respondeu e evitar tratar contextos diferentes como equivalentes | Delimitar o público prioritário e as variações de contexto a investigar |
-| Sinais e estratégias atualmente utilizados para perceber se o público acompanha o conteúdo, e dificuldade percebida nessa atividade | H01 | Investigar a experiência existente antes de apresentar uma solução | Verificar em quais situações existe necessidade de apoio ao comunicador |
-| Efeito esperado de um indicador automático sobre a tomada de decisão e a atenção | H01 | Investigar tanto a utilidade percebida quanto a possibilidade de distração | Explorar se, quando e como apresentar um indicador durante a sessão |
-| Momentos em que informações sobre o grupo seriam úteis e ações que o comunicador consideraria tomar | H01 | Relacionar a informação a situações e decisões, e não apenas a uma preferência visual | Priorizar momentos de apresentação da informação, preservando a decisão com o comunicador |
-| Informações que o comunicador consultaria após a sessão, incluindo a possibilidade de não consultar nenhuma | R03 / ?03 | Verificar necessidades pós-sessão sem pressupor dashboard, relatório ou exportação | Definir conteúdo essencial do resumo e necessidade de detalhamento |
-| Necessidade atual de selecionar ou reorganizar informações ao revisar registros e relatórios | H06 | Investigar uma necessidade anterior à proposta de personalização do MindFlow | Definir se opções de personalização merecem investigação adicional e quais problemas devem resolver |
-| Importância atribuída à informação de confiança e preferência de representação | H02 | Investigar interesse e compreensão declarados, sem confundi-los com eficácia demonstrada | Explorar alternativas de apresentação da incerteza em testes posteriores |
-| Conforto do próprio comunicador ao imaginar-se no papel de participante de uma análise de imagens | H03, visão do respondente | Conhecer a percepção pessoal dos comunicadores, sem atribuí-la aos estudantes ou ao público em geral | Levantar questões para aprofundar na coleta com participantes da análise |
-| Informações desejadas antes de autorizar uma análise e preferência sobre agregação dos resultados | H03 | Identificar preocupações e necessidades de transparência | Orientar alternativas de aviso, explicação, controle e apresentação agregada |
-| Benefícios percebidos, preocupações e motivos para evitar a ferramenta | H01 / H02 / H03 / H06 | Registrar críticas, dúvidas e necessidades não previstas nas alternativas | Revisar prioridades, conteúdo e propostas de interação |
+| Perfil e frequência de condução de videoconferências | ?02 / ?03 | As necessidades podem variar entre docentes, instrutores e outros comunicadores. | Definir o público e o contexto prioritários. |
+| Sinais utilizados e dificuldade para acompanhar o público | H01 | Ainda é preciso verificar quais dificuldades ocorrem durante a apresentação. | Definir que apoio o indicador deve oferecer. |
+| Utilidade esperada, distração, momentos de consulta e ações diante dos indicadores | H01 | A informação precisa apoiar decisões sem prejudicar a condução da sessão. | Definir quando e como apresentar os indicadores. |
+| Informações consideradas úteis após a sessão | R03 / ?03 | O docente pode precisar de uma revisão posterior ou não ter essa necessidade. | Selecionar o conteúdo do resumo pós-aula. |
+| Necessidade de escolher ou reorganizar informações | H06 | Uma visualização fixa pode ser suficiente; a personalização precisa ter uma necessidade identificada. | Definir se e quais opções de personalização priorizar. |
+| Importância e formato preferido para comunicar incerteza | H02 | As estimativas podem estar erradas e ser interpretadas como certezas. | Definir explicações e formas de apresentar a confiança. |
+| Conforto, preocupações e informações desejadas antes de autorizar a análise | H03 | O processamento da imagem pode gerar desconforto ou recusa. | Definir avisos, informações de privacidade e controles de participação. |
 
 #### De quem coletar?
 
@@ -245,21 +242,12 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 
 #### Procedimento padronizado de aplicação
 
-1. **Preparação:** configurar o formulário com o consentimento e as perguntas documentadas neste instrumento. Conferir se o registro de nome ou e-mail está desativado ou se corresponde às condições informadas no termo.
+1. **Preparação:** revisar perguntas e configurações, realizar um preenchimento piloto e convidar os perfis da A01 por contatos acadêmicos e profissionais. Registrar o período e os canais de divulgação.
+2. **Apresentação/consentimento:** informar o objetivo e as condições do estudo e apresentar o termo. Sem aceite, encerrar o formulário.
+3. **Aplicação:** confirmar a experiência de condução; caso não exista, encerrar. Apresentar as perguntas na ordem definida, sem orientar respostas, respeitando os tipos e as opções exclusivas. Apenas o aceite e a elegibilidade serão obrigatórios.
+4. **Encerramento:** agradecer, informar o uso acadêmico das respostas e disponibilizar o contato da equipe.
+5. **Armazenamento/anonimização:** separar piloto e aplicação, considerar apenas respostas elegíveis, remover dados identificáveis e manter acesso restrito. Descartar registros individuais ao término da disciplina, conforme o termo.
 
-2. **Piloto:** realizar um preenchimento para verificar clareza, duração, alternativas e condições de navegação. Registrar eventuais ajustes antes da aplicação com o público definido.
-
-3. **Recrutamento:** convidar pessoas com experiência na condução de atividades por videoconferência, priorizando docentes e incluindo outros comunicadores como perfis de contraste. Registrar os canais e o período de divulgação.
-
-4. **Consentimento:** apresentar o [termo de consentimento do I01](../instrumentos/termo-consentimento.md) antes das perguntas. Se a pessoa não concordar em participar, encerrar o formulário.
-
-5. **Elegibilidade:** apresentar a pergunta inicial sobre a experiência de condução. Se a pessoa nunca tiver conduzido uma atividade por videoconferência, agradecer e encerrar o preenchimento.
-
-6. **Aplicação:** apresentar as perguntas na ordem documentada, sem orientar quais respostas escolher. Diferenciar questões de escolha única, seleção múltipla e resposta aberta. Apenas o consentimento e a identificação da elegibilidade serão obrigatórios.
-
-7. **Encerramento:** agradecer e informar que as respostas serão utilizadas para fins acadêmicos. Manter disponível o contato da equipe indicado no termo.
-
-8. **Registro e armazenamento:** registrar o número de respostas elegíveis e os perfis alcançados, separando eventuais respostas do piloto. Manter os registros individuais com acesso restrito à equipe e seguir o descarte previsto no termo.
 
 #### Instrumento
 
