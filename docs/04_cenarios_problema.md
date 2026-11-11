@@ -218,8 +218,9 @@ Essa decisão acontece enquanto ainda precisa manter o ritmo da aula e cumprir o
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso - 22.123.016-2  
 **Persona(s) relacionada(s):** P05 - Bruno D. Roger  
-**Necessidade relacionada:** saber o que é feito com a imagem dele captada pela câmera e sentir que assistir aula não é a mesma coisa que estar sendo vigiado (necessidade registrada na persona P05)  
-**Situação concreta da Entrega 1 relacionada:** seção 2.3, onde o participante da videochamada já tinha sido apontado como alguém que é afetado pela ferramenta mas não usa a interface  
+**Necessidade relacionada:** R04 — saber o que é feito com a imagem dele captada pela câmera e sentir que assistir aula não é a mesma coisa que estar sendo vigiado (necessidade registrada na persona P05)  
+**Origem do cenário:** a Entrega 1 (item 2.3) já apontava o participante da videochamada como alguém afetado pela ferramenta; esse é o ponto de partida **concreto**. A situação específica de Bruno (aluno de graduação EAD, câmera desligada, dúvida sobre a nota de participação) é **construída a partir da proto-persona P05** da Entrega 3 e não foi observada com alunos reais. O cenário é um artefato de análise, não evidência empírica.  
+**Decisão de escopo sobre Bruno:** a equipe decidiu que Bruno **terá uma interação real no escopo**, a interface de transparência e participação do participante (ver decisão conceitual na persona P05, Entrega 3). Ele deixa de ser tratado apenas como stakeholder afetado e passa a ser persona secundária, com a tarefa T04 na Entrega 5. Este cenário de problema continua descrevendo a situação **atual**, sem essa interface.  
 **Hipóteses ainda presentes:** H03
 
 ### 1. Cenário inicial
@@ -228,33 +229,75 @@ Bruno é aluno do segundo ano de Ciência da Computação e tem duas disciplinas
 
 ### 2. Questões de refinamento
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | Por que Bruno decide manter a câmera desligada mesmo sabendo que a professora prefere que esteja ligada? | Revela o conflito real entre privacidade/constrangimento e medo de ser mal avaliado, que é o núcleo do problema | Entrevista com alunos reais de disciplinas EAD |
-| Q2 | Como a professora hoje registra ou lembra quem participou pouco numa aula? | Mostra se já existe algum tipo de registro informal que afeta o aluno, ou se é só impressão subjetiva sem consequência real | Entrevista com professores, observação de uma aula |
-| Q3 | O que Bruno considera "participar o suficiente" pra não se sentir mal avaliado? | Ajuda a entender se a ansiedade dele é proporcional a algum critério real ou só uma sensação sem base concreta | Entrevista com Bruno ou aluno equivalente |
-| Q4 | Além da professora, quem mais poderia saber como Bruno se saiu naquela aula? | Revela o alcance real da exposição, coordenação do curso, colegas, sistema da instituição | Levantamento de política institucional da EAD |
-| Q5 | Existe hoje algum canal pra Bruno perguntar depois como ele foi percebido na aula? | Mostra se a falta de transparência é total ou se já existe algum canal pouco usado | Entrevista com Bruno, checagem da plataforma usada pela instituição |
+Antes de formular as perguntas, o cenário inicial foi separado pelos sete elementos característicos (Barbosa e Silva, 2010) para verificar o que ele **já informa** e o que **ainda falta**. A antiga Q1 ("por que Bruno mantém a câmera desligada") foi substituída: o cenário inicial já respondia isso (quarto bagunçado e medo de se expor num dia em que não entendeu a aula anterior).
+
+| Elemento | O que o cenário inicial já informa | Lacuna que a questão investiga |
+|---|---|---|
+| Ambiente/contexto | Aula EAD de Cálculo pelo Teams, de manhã, em casa, câmera opcional | Quais regras da disciplina e da instituição existem sobre câmera, participação e gravação, e como chegam ao aluno |
+| Atores | Bruno, a professora e três colegas que respondem no chat | Quem mais tem acesso a informações sobre a participação de Bruno (coordenação, monitoria, relatórios da plataforma) |
+| Objetivos | Acompanhar a aula sem se expor e sem ser mal avaliado | O que Bruno considera participar o suficiente e o que ele quer da aula além de não ser mal avaliado |
+| Planejamento | Pesa exposição contra nota de participação e decide ficar calado | Que fatores ele considera, antes e durante a aula, para decidir se liga a câmera ou se manifesta |
+| Ações | Mantém a câmera desligada, tenta responder no chat e chega atrasado | Que outras formas de participar ele usa ou evita (reações, chat privado, microfone, perguntar depois) |
+| Eventos | Pedido da professora para ligar a câmera; pergunta rápida no chat | Outros acontecimentos que mudam a decisão de Bruno durante a aula |
+| Avaliação | Fica sem saber como foi percebido e sem canal para perguntar | Como ele julga depois se foi prejudicado e que informação o tranquilizaria |
+
+Cada questão investiga uma informação **ainda ausente** do cenário inicial. Nenhuma delas foi respondida até o momento: as fontes indicadas são formas futuras de obtenção.
+
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Que regras a disciplina e a instituição definem sobre câmera, nota de participação e gravação das aulas EAD, e onde essas regras são comunicadas ao aluno (plano de ensino, aviso no início, regulamento)? | Mostra se a dúvida de Bruno vem da falta de regra ou da falta de comunicação da regra | Análise de planos de ensino e regulamentos de EAD; entrevista com coordenação |
+| Q2 | Atores | Além da professora, quem tem acesso a informações sobre a participação de Bruno (coordenação, monitores, relatórios de presença e atividade gerados pela própria plataforma)? | Revela o alcance real da exposição, que define o que precisaria ser explicado ao participante | Levantamento da política institucional de EAD e dos relatórios disponíveis na plataforma usada |
+| Q3 | Objetivos | O que Bruno considera "participar o suficiente" e o que ele quer da aula além de não ser mal avaliado (entender o conteúdo, tirar dúvida sem se expor, ser reconhecido pela professora)? | Separa a ansiedade sobre avaliação dos objetivos de aprendizagem, que competem pela atenção dele | Grupo focal ou entrevista com alunos de disciplinas EAD |
+| Q4 | Planejamento | Que fatores Bruno considera, antes e durante a aula, para decidir se liga a câmera ou se manifesta (ambiente de casa, dificuldade do conteúdo, regra da professora, o que os colegas fazem)? | Torna visível o raciocínio que a interface de transparência e participação precisaria respeitar | Grupo focal com alunos, a partir de aulas recentes |
+| Q5 | Ações | Que outras formas de participar Bruno usa ou evita (reações por emoji, chat privado com a professora, abrir o microfone, perguntar depois por e-mail ou fórum) e por quê? | Revela o repertório de participação e o custo de cada forma em exposição | Grupo focal com alunos e observação de aulas EAD, com autorização |
+| Q6 | Eventos | Que acontecimentos durante a aula mudam a decisão de Bruno (ser chamado pelo nome, atividade que vale nota, aviso de que a aula está sendo gravada, colegas ligando a câmera)? | Eventos definem em que momentos a dúvida sobre "como estou sendo percebido" fica mais forte | Grupo focal com alunos |
+| Q7 | Avaliação | Depois da aula, como Bruno julga se foi prejudicado pela baixa participação, que informação o tranquilizaria e por que não usa os canais que já existem (e-mail, atendimento da professora)? | Mostra onde a avaliação atual falha e que tipo de transparência teria valor para o participante | Grupo focal e questionário com alunos |
 
 ### 3. Cenário refinado
 
-Bruno é aluno do segundo ano de Ciência da Computação e tem duas disciplinas EAD nesse semestre. Numa segunda de manhã ele entra na aula de Cálculo pelo Teams um pouco atrasado, ainda terminando o café, e decide deixar a câmera desligada porque o quarto tá bagunçado e ele não quer aparecer assim pros colegas. **[NOVO: Além disso, ele não teve tempo de estudar o conteúdo da aula passada direito, e prefere não se expor justo num dia que sabe que vai entender menos do que o normal (Q1)]**. A professora começa a explicar um assunto novo e, no meio da aula, comenta que gostaria que mais gente ligasse a câmera, porque assim ela consegue perceber se a turma tá acompanhando. **[NOVO: Hoje, quando isso acontece, o que a professora faz é só uma anotação mental, ela não usa nenhuma planilha ou sistema pra registrar quem participou pouco, mas às vezes comenta informalmente com a coordenação quando um aluno some da aula com frequência (Q2)]**. Bruno fica na dúvida se liga ou não a câmera, porque não sabe se isso vai pesar de alguma forma na nota de participação dele. **[NOVO: Pra ele, participar o suficiente seria pelo menos responder uma pergunta por aula ou reagir de alguma forma no chat, mas como isso nunca foi dito claramente por nenhum professor, é só uma régua que ele mesmo criou (Q3)]**. Ele decide manter a câmera desligada e tentar acompanhar calado. Em um momento a professora pede pra alguém responder rápido uma pergunta no chat, Bruno demora pra digitar porque ainda tá processando o que foi perguntado, e três colegas respondem antes dele. **[NOVO: Nenhum outro aluno vê isso diretamente, a única pessoa que teria essa percepção é a própria professora, mas a coordenação do curso pode ficar sabendo de forma indireta se a professora relatar baixa participação recorrente (Q4)]**. Depois da aula ele fica sem saber se a professora reparou que ele participou pouco, se isso ficou só na impressão dela ou se tem algum jeito disso voltar contra ele de algum modo. **[NOVO: Não existe nenhum canal formal pra ele perguntar isso depois, a única forma seria mandar e-mail direto pra professora perguntando como ele está indo, o que ele nunca fez porque acha que ia parecer estranho (Q5)]**, e segue pra próxima aula com a mesma dúvida de sempre.
+> Como ainda não foram realizadas entrevistas ou grupos focais com alunos reais, os trechos acrescentados abaixo são **hipóteses de refinamento**, identificadas pela questão e pelo elemento a que respondem. Eles não devem ser lidos como fatos; quando a investigação for feita, cada hipótese será confirmada, refutada ou reformulada. O texto do cenário inicial foi mantido.
+
+Bruno é aluno do segundo ano de Ciência da Computação e tem duas disciplinas EAD nesse semestre. **[HIPÓTESE DE REFINAMENTO — Q1 / Ambiente-contexto: o plano de ensino pode citar uma "nota de participação" sem explicar como ela é calculada nem se a câmera conta, e a regra sobre câmera pode variar de professor para professor, sendo dita só oralmente na primeira aula, que Bruno perdeu.]** Numa segunda de manhã ele entra na aula de Cálculo pelo Teams um pouco atrasado, ainda terminando o café, e decide deixar a câmera desligada porque o quarto tá bagunçado e ele não quer aparecer assim pros colegas. **[HIPÓTESE DE REFINAMENTO — Q4 / Planejamento: a decisão de ligar a câmera pode depender menos da regra e mais de quantos colegas estão com a câmera ligada e de quanto ele domina o conteúdo do dia; quando se sente inseguro, tende a escolher a opção que o expõe menos.]** A professora começa a explicar um assunto novo e, no meio da aula, comenta que gostaria que mais gente ligasse a câmera, porque assim ela consegue perceber se a turma tá acompanhando. Bruno fica na dúvida se liga ou não, porque não sabe se isso vai pesar de alguma forma na nota de participação dele, mas também não quer ficar exposto justo num dia que ele não entendeu direito o conteúdo da aula passada. **[HIPÓTESE DE REFINAMENTO — Q3 / Objetivos: para Bruno, "participar o suficiente" pode significar interagir ao menos uma vez por aula; ao mesmo tempo, ele quer tirar a dúvida da aula passada, mas sem que os colegas percebam que ele não entendeu.]** Ele decide manter a câmera desligada e tentar acompanhar calado. **[HIPÓTESE DE REFINAMENTO — Q5 / Ações: ele poderia mandar a dúvida no chat privado da professora ou usar uma reação, mas pode evitar o chat privado por achar que chama mais atenção do que uma pergunta aberta, e as reações por não saber se a professora as vê.]** Em um momento a professora pede pra alguém responder rápido uma pergunta no chat, Bruno demora pra digitar porque ainda tá processando o que foi perguntado, e três colegas respondem antes dele. **[HIPÓTESE DE REFINAMENTO — Q6 / Eventos: se a professora começasse a chamar alunos pelo nome ou avisasse que a atividade vale nota, Bruno poderia ligar a câmera às pressas para não parecer ausente, mesmo sem querer se expor.]** **[HIPÓTESE DE REFINAMENTO — Q2 / Atores: além da professora, a própria plataforma pode gerar relatórios de presença e de atividade no chat que a coordenação consegue consultar, sem que Bruno saiba que esses registros existem.]** Depois da aula ele fica sem saber se a professora reparou que ele participou pouco, se isso ficou só na impressão dela ou se tem algum jeito disso voltar contra ele de algum modo, e não tem com quem tirar essa dúvida. **[HIPÓTESE DE REFINAMENTO — Q7 / Avaliação: Bruno só descobriria se foi prejudicado quando sair a nota de participação, semanas depois; saber o que é registrado sobre ele e o que não é já o tranquilizaria, mas ele não pergunta à professora por e-mail por achar que pareceria cobrança ou insegurança.]**
 
 ### 4. Elementos extraídos
 
+Os sete elementos característicos aparecem primeiro; recursos, problemas e consequências foram mantidos como complemento.
+
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | Bruno D. Roger (aluno), a professora da disciplina de Cálculo |
-| Objetivo(s) | Acompanhar a aula e não ser mal interpretado por participar pouco ou manter a câmera desligada |
-| Contexto | Aula EAD de graduação, câmera opcional, ambiente doméstico da manhã, plataforma Teams |
-| Recursos/informações | Chat da plataforma, câmera, percepção subjetiva e informal da professora |
-| Ações | Decidir ligar ou não a câmera, acompanhar a aula calado, responder devagar no chat |
-| Problemas/rupturas | Bruno não sabe se sua baixa participação vai ser interpretada contra ele, e não existe nenhum canal claro pra saber como ele foi percebido depois |
-| Consequências | Ansiedade durante a aula, incerteza que persiste depois dela, e possível tendência de evitar interação por medo de se expor |
+| Ambiente/contexto | Aula EAD de graduação pelo Teams, de manhã, em casa, câmera opcional; hipoteticamente, nota de participação sem critério claro e regra sobre câmera comunicada só oralmente (Q1) |
+| Atores | Bruno (aluno), a professora de Cálculo e os colegas; hipoteticamente, a coordenação com acesso a relatórios da plataforma (Q2) |
+| Objetivos | Acompanhar a aula sem se expor e sem ser mal avaliado; hipoteticamente, tirar a dúvida da aula anterior sem que os colegas percebam (Q3) |
+| Planejamento | Pesar exposição contra nota de participação e decidir ficar calado; hipoteticamente, guiado por quantos colegas estão com câmera e por quanto domina o conteúdo (Q4) |
+| Ações | Manter a câmera desligada, acompanhar calado, tentar responder no chat; hipoteticamente, evitar chat privado e reações (Q5) |
+| Eventos | Pedido para ligar a câmera; pergunta rápida no chat; hipoteticamente, ser chamado pelo nome ou atividade que vale nota (Q6) |
+| Avaliação | Não sabe como foi percebido nem com quem tirar a dúvida; hipoteticamente, só descobre na nota de participação, semanas depois (Q7) |
+| Recursos/informações (complemento) | Chat da plataforma, câmera, percepção subjetiva e informal da professora, plano de ensino |
+| Problemas/rupturas (complemento) | Bruno não sabe se sua baixa participação vai ser interpretada contra ele, e não existe nenhum canal claro pra saber como ele foi percebido depois |
+| Consequências (complemento) | Ansiedade durante a aula, incerteza que persiste depois dela e possível tendência de evitar interação por medo de se expor |
 
 ### 5. Implicações para as próximas entregas
 
-Precisa validar com alunos reais de disciplinas EAD se essa ansiedade sobre "como estou sendo percebido" é algo comum ou só uma impressão de Bruno. Também vale investigar com professores se realmente existe algum registro informal de participação que pode afetar o aluno, mesmo sem virar nota oficial. Isso tem relação direta com H03, porque reforça que qualquer ferramenta que classifique o comportamento da turma precisa pensar em transparência pro lado do participante, não só em utilidade pro lado do comunicador. Ainda não é hora de desenhar como essa transparência apareceria numa tela, isso fica pras próximas entregas.
+**Quais tarefas merecem análise?** Formuladas a partir do objetivo do participante:
+
+- Entender, ao entrar na aula, o que acontece com a própria imagem e com a própria participação.
+- Decidir como participar (câmera, chat, microfone) considerando exposição e possíveis consequências (planejamento).
+- Mudar a forma de participar durante a aula quando algo acontece (eventos).
+- Conferir depois se algo foi registrado sobre ele (avaliação).
+
+Essas tarefas foram modeladas na **T04** da Entrega 5 (HTA, GOMS e CTT), já considerando a decisão de dar a Bruno uma interação real no escopo.
+
+**Quais informações precisam ser coletadas?**
+
+- Regras de câmera, participação e gravação e como chegam ao aluno (Q1).
+- Quem tem acesso a dados de participação, inclusive relatórios da plataforma (Q2).
+- O que o aluno considera participar o suficiente e o que quer da aula (Q3).
+- Fatores que pesam na decisão de ligar a câmera ou se manifestar (Q4), relacionados a H03.
+- Repertório de formas de participação e seu custo em exposição (Q5).
+- Eventos que mudam a decisão durante a aula (Q6).
+- Como o aluno avalia depois se foi prejudicado e que transparência o tranquilizaria (Q7), relacionado a H03.
+
+Essas informações serão buscadas pelo grupo focal com alunos (instrumento I03, Entrega 7).
 
 ## Cenário C04 — Dificuldade em identificar a compreenção e aprendizado durante treinamento online.
 
@@ -324,8 +367,8 @@ Quais tarefas merecem análise? Quais informações precisam ser coletadas? **N�
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Persona(s) relacionada(s):** P02 — Camila Duarte  
 **Necessidade relacionada:** R01, R02 — receber um sinal do estado geral da turma em tempo real, sem precisar checar cada rosto enquanto fala e compartilha a tela (necessidade registrada na persona P02)  
-**Situação concreta da Entrega 1 relacionada:** itens 4.4 e 4.5, estendidos ao recorte de turma pequena (5 a 15 alunos) introduzido na Entrega 3 como hipótese nova a validar  
-**Hipóteses ainda presentes:** H01, H02
+**Origem do cenário:** aprofunda a **situação concreta** registrada na Entrega 1 (itens 4.4 e 4.5: aula por videoconferência, silêncio ambíguo do grupo e atenção dividida durante o compartilhamento de tela). O recorte de **turma pequena (5 a 15 alunos)** e o contexto de **aula de idioma** não vêm da Entrega 1: foram introduzidos pela proto-persona P02 na Entrega 3 e continuam sendo **hipótese nova a validar**. O cenário é um artefato de análise construído a partir dessas fontes, e não uma evidência empírica: nenhuma professora real foi entrevistada ou observada até o momento.  
+**Hipóteses ainda presentes:** H01 (utilidade de um sinal durante a própria aula), H02 (quanto confiar em um sinal incompleto) e a hipótese nova sobre turmas pequenas (Entrega 3)
 
 ### 1. Cenário inicial
 
@@ -337,59 +380,93 @@ Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa part
 
 ### 2. Questões de refinamento
 
-| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
-|---|---|---|---|
-| Q1 | O que leva Camila a interpretar aquele silêncio como "provavelmente entenderam" em vez de dúvida, no momento da aula? | Revela o critério informal que ela usa hoje pra decidir se segue em frente ou reforça o conteúdo | Entrevista com Camila ou professora de idiomas equivalente |
-| Q2 | Mesmo numa turma pequena (5 a 15 alunos), por que ainda é difícil perceber a reação individual de cada aluno enquanto a tela está compartilhada? | Testa se o tamanho pequeno da turma realmente resolveria o problema sozinho, ou se o compartilhamento de tela é a barreira principal | Observação de uma aula com tela compartilhada |
-| Q3 | O que Camila faz hoje, na prática, quando desconfia que alguém não entendeu mas não tem nenhuma confirmação clara? | Mostra a estratégia de contorno já usada, antes de qualquer ferramenta nova | Entrevista semiestruturada com Camila |
-| Q4 | Quanto tempo, em média, passa entre o momento em que a dificuldade acontece na aula e o momento em que Camila descobre que ela existiu? | Dimensiona o atraso real entre o problema e a percepção dele, que é o núcleo da situação | Entrevista com Camila, comparando com o cronograma real das aulas |
-| Q5 | Como o pouco tempo disponível entre uma aula e outra influencia a chance de Camila revisar o conteúdo antes do próximo encontro? | Relaciona a restrição de tempo já registrada na persona P02 com a consequência prática do atraso na percepção | Entrevista com Camila sobre a rotina entre aulas |
+Antes de formular as perguntas, o cenário inicial foi separado pelos sete elementos característicos (Barbosa e Silva, 2010) para verificar o que ele **já informa** e o que **ainda falta**. As questões só investigam as lacunas: por isso, as antigas Q2 ("por que é difícil perceber a reação com a tela compartilhada") e Q3 ("o que Camila faz quando desconfia que alguém não entendeu") foram substituídas, já que o cenário inicial já mostrava a grade reduzida, as câmeras desligadas e a pergunta "entenderam?".
+
+| Elemento | O que o cenário inicial já informa | Lacuna que a questão investiga |
+|---|---|---|
+| Ambiente/contexto | Aula pelo Google Meet, tela compartilhada, grade de vídeo reduzida, metade das câmeras desligadas, tempo curto | Condições físicas e técnicas da aula (monitor, local, interrupções) e quem define plataforma e duração |
+| Atores | Camila e uma turma de oito alunos | Quem são os alunos (perfil, nível, motivo da câmera desligada) e se alguém além de Camila acompanha o resultado da turma |
+| Objetivos | Ensinar a estrutura nova e cumprir os tópicos previstos | O que Camila considera uma aula bem-sucedida e o que prevalece quando cumprir o plano e garantir compreensão entram em conflito |
+| Planejamento | Decide seguir em frente porque o tempo é curto e faltam dois tópicos | Como prepara a introdução de uma estrutura nova e que critério usa, no momento, para seguir ou reforçar |
+| Ações | Compartilha a tela, observa a grade, pergunta "entenderam?" | Alternativas à pergunta que Camila conhece e por que não as usa naquele momento |
+| Eventos | Silêncio maior que o normal; respostas "sim" pouco convictas | Outros acontecimentos durante a aula que interrompem ou mudam a condução |
+| Avaliação | Descobre o problema só na correção do exercício, na aula seguinte | Que sinais ela usa, ainda na aula, para julgar se a decisão funcionou e como registra isso para a próxima aula |
+
+Cada questão investiga uma informação **ainda ausente** do cenário inicial. Nenhuma delas foi respondida até o momento: as fontes indicadas são formas futuras de obtenção.
+
+| # | Elemento | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|---|
+| Q1 | Ambiente/contexto | Em que condições Camila dá a aula (um ou dois monitores, tamanho da tela, cômodo da casa, interrupções domésticas) e quem define a plataforma e a duração da aula: ela, a escola de idiomas ou o aluno particular? | Define as condições reais em que qualquer apoio à percepção da turma teria de funcionar e se Camila tem liberdade para mudar a própria ferramenta | Entrevista com professoras de idiomas e observação de uma aula on-line, com autorização |
+| Q2 | Atores | Quem são os alunos dessas turmas pequenas (adultos ou adolescentes, nível do idioma, se já se conhecem) e por que desligam a câmera? Alguém além de Camila (coordenação da escola, responsáveis, a empresa que paga o curso) acompanha o desempenho da turma? | O motivo da câmera desligada e a presença de terceiros mudam o que pode ser percebido e a sensibilidade do tema privacidade (H03) | Entrevista com professoras e coordenação de escolas de idiomas; questionário curto com alunos |
+| Q3 | Objetivos | Além de cumprir os tópicos previstos, o que Camila considera uma aula bem-sucedida? Quando cumprir o plano e garantir a compreensão entram em conflito, qual pesa mais e por quê? | Separa o objetivo de "perceber a turma" de outros objetivos que competem pela atenção dela, como cumprir o cronograma do curso | Entrevista semiestruturada com professoras de idiomas |
+| Q4 | Planejamento | Ao preparar uma estrutura gramatical nova, Camila prevê momentos de checagem ou exemplos de reserva? No momento da aula, que critério ela usa para interpretar o silêncio e decidir entre seguir e reforçar? | Torna visível o raciocínio que transforma o objetivo em ação, que é o que um apoio à decisão precisaria respeitar | Entrevista com professoras a partir de aulas recentes (técnica de incidentes críticos) e análise de planos de aula |
+| Q5 | Ações | Que alternativas à pergunta "entenderam?" Camila conhece (chamar um aluno pelo nome, pedir um exemplo, usar o chat ou uma enquete rápida) e por que não as usou naquele momento? | Revela o repertório de estratégias e o custo de cada uma em tempo, ritmo e constrangimento dos alunos | Entrevista com professoras e observação de aulas |
+| Q6 | Eventos | Que acontecimentos durante a aula interferem na observação e na decisão (aluno que entra atrasado, queda de conexão, mensagem no chat, interrupção em casa, aluno que liga a câmera para perguntar) e como Camila reage a cada um? | Eventos competem com a observação da turma e definem quando a decisão precisa ser tomada | Observação de aulas e entrevista com professoras |
+| Q7 | Avaliação | Que sinais Camila considera, ainda na aula, como confirmação de que a turma entendeu? Ela registra de alguma forma os pontos duvidosos para retomar depois, e quanto tempo tem entre as aulas para revisar o que não ficou claro? | Mostra como ela julga a própria decisão e onde essa avaliação falha, o que explica a descoberta tardia do problema | Entrevista com professoras e análise de anotações/planos de aula, com autorização |
 
 ### 3. Cenário refinado
 
-Camila dá aula particular de inglês para uma turma de oito alunos, pelo Google Meet. Na metade da aula, ela compartilha a tela com um exercício de conversação e, ao mesmo tempo, tenta acompanhar a grade de vídeo reduzida que fica num cantinho da tela. Metade da turma está com a câmera desligada.
+> Como ainda não foram realizadas entrevistas ou observações com professoras reais, os trechos acrescentados abaixo são **hipóteses de refinamento**, identificadas pela questão e pelo elemento a que respondem. Eles não devem ser lidos como fatos sobre usuários reais; quando a investigação for feita, cada hipótese será confirmada, refutada ou reformulada. O texto do cenário inicial foi mantido.
 
-**[NOVO: Mesmo pra quem está com a câmera ligada, a tela compartilhada reduz o vídeo de todo mundo a miniaturas pequenas, então Camila não consegue de fato ler a expressão de cada aluno enquanto explica. O problema não é só o tamanho da turma, é dividir atenção entre explicar, compartilhar e observar ao mesmo tempo (Q2)]**.
+Camila dá aula particular de inglês para uma turma de oito alunos, pelo Google Meet. **[HIPÓTESE DE REFINAMENTO — Q1 / Ambiente-contexto: a aula pode acontecer no quarto que Camila usa como escritório, com um único notebook e sem segundo monitor; a plataforma e a duração de 60 minutos podem ter sido definidas pela escola de idiomas, e não por ela.]** **[HIPÓTESE DE REFINAMENTO — Q2 / Atores: os alunos podem ser adultos que fazem o curso depois do trabalho, com nível intermediário, e que desligam a câmera por cansaço, conexão fraca ou vergonha de errar a pronúncia; a coordenação da escola pode acompanhar a evolução da turma pelas notas dos exercícios.]** Na metade da aula, ela compartilha a tela com um exercício de conversação e, ao mesmo tempo, tenta acompanhar a grade de vídeo reduzida que fica num cantinho da tela. Metade da turma está com a câmera desligada.
 
-Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal. Nota um silêncio maior que o de costume, mas não sabe se é porque estão concentrados ouvindo ou porque não entenderam. **[NOVO: Na falta de outro sinal, ela usa o silêncio "calmo" e a ausência de perguntas como indício de que entenderam, um critério que ela mesma reconhece como frágil, mas é o único que tem disponível na hora (Q1)]**. Pergunta "entenderam?" e alguns alunos respondem "sim" rapidamente, sem muita convicção. Como o tempo de aula é curto e o plano prevê ainda mais dois tópicos, ela segue em frente.
+**[HIPÓTESE DE REFINAMENTO — Q3 / Objetivos: para Camila, uma aula bem-sucedida pode ser aquela em que os alunos conseguem usar a estrutura nova numa frase própria, e não apenas aquela em que todos os tópicos foram cumpridos; mesmo assim, o cronograma do curso pode pressioná-la a priorizar o plano.]**
 
-**[NOVO: Quando desconfia de algum aluno específico, hoje ela só tem como recurso perguntar diretamente pra pessoa ou esperar a próxima atividade prática pra ver se ele erra, mas fazer isso toda vez atrasa a aula e pode constranger quem realmente não entendeu (Q3)]**.
+Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal. **[HIPÓTESE DE REFINAMENTO — Q4 / Planejamento: ao preparar a aula, ela pode ter separado um exemplo de reserva, mas sem definir em que momento faria a checagem; no momento da aula, o critério acaba sendo informal: silêncio "calmo" e ausência de perguntas são lidos como compreensão.]** Nota um silêncio maior que o de costume, mas não sabe se é porque estão concentrados ouvindo ou porque não entenderam. **[HIPÓTESE DE REFINAMENTO — Q6 / Eventos: nesse momento, um aluno pode entrar atrasado e pedir para repetir o que perdeu, ou a conexão de alguém pode cair, o que desvia a atenção de Camila justamente quando ela deveria observar a reação à estrutura nova.]** Pergunta "entenderam?" e alguns alunos respondem "sim" rapidamente, sem muita convicção. **[HIPÓTESE DE REFINAMENTO — Q5 / Ações: ela conhece alternativas, como pedir que um aluno forme uma frase com a estrutura ou abrir uma enquete rápida, mas pode evitá-las com alunos adultos para não expor quem errar e para não quebrar o ritmo da aula.]** Como o tempo de aula é curto e o plano prevê ainda mais dois tópicos, ela segue em frente.
 
-Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa parte da turma errou justamente os exemplos que usavam aquela estrutura nova. **[NOVO: Entre o momento em que a dificuldade realmente aconteceu e o momento em que ela descobre isso, se passam de três a sete dias, o intervalo até a próxima aula daquela turma (Q4)]**. Acaba gastando parte da aula seguinte revisando um conteúdo que já devia ter sido reforçado no momento em que a dificuldade apareceu. **[NOVO: Como o intervalo entre as aulas já é curto e dividido entre preparar material novo e revisar o anterior, esse retrabalho de última hora reduz ainda mais o tempo que ela teria pra planejar a aula seguinte com calma (Q5)]**.
+Só na aula seguinte, ao corrigir o exercício de casa, ela percebe que boa parte da turma errou justamente os exemplos que usavam aquela estrutura nova. **[HIPÓTESE DE REFINAMENTO — Q7 / Avaliação: durante a aula, Camila pode considerar um "sim" coletivo ou um aceno visível como confirmação suficiente, sem registrar o ponto como duvidoso; com poucos dias entre as aulas, divididos entre várias turmas, ela só reavalia a decisão quando corrige o exercício.]** Acaba gastando parte da aula seguinte revisando um conteúdo que já devia ter sido reforçado no momento em que a dificuldade apareceu.
 
 ### 4. Elementos extraídos
 
+Os sete elementos característicos aparecem primeiro; recursos, problemas e consequências foram mantidos como complemento.
+
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | Camila, professora de inglês, e os alunos da turma pequena |
-| Objetivo(s) | Perceber, ainda durante a aula, se a turma está acompanhando uma estrutura nova, pra poder reforçar o conteúdo na hora certa |
-| Contexto | Aula particular de inglês por videoconferência (Google Meet), turma pequena de 5 a 15 alunos, com tela compartilhada na maior parte do tempo |
-| Recursos/informações | Grade de vídeo reduzida, câmeras parcialmente desligadas, respostas verbais rápidas e pouco convictas, exercício de casa corrigido na aula seguinte |
-| Ações | Compartilhar tela, explicar o conteúdo, checar a grade de vídeo, perguntar "entenderam?", seguir o plano de aula, corrigir exercício na aula seguinte |
-| Problemas/rupturas | Silêncio ambíguo, atenção dividida entre explicar e observar, resposta verbal pouco confiável, dificuldade só descoberta dias depois |
-| Consequências | Retrabalho na aula seguinte, tempo de preparação reduzido, estrutura gramatical não reforçada no momento em que fazia mais diferença |
+| Ambiente/contexto | Aula particular de inglês pelo Google Meet, turma de oito alunos, tela compartilhada e grade de vídeo reduzida; hipoteticamente, um único notebook em casa e duração definida pela escola (Q1) |
+| Atores | Camila, professora de inglês, e os alunos da turma pequena; hipoteticamente, alunos adultos que desligam a câmera por cansaço ou vergonha e uma coordenação que acompanha as notas (Q2) |
+| Objetivos | Perceber, ainda durante a aula, se a turma acompanha a estrutura nova e cumprir os tópicos previstos; hipoteticamente, garantir que os alunos usem a estrutura em frases próprias (Q3) |
+| Planejamento | Decidir entre seguir o plano e reforçar o conteúdo com base em sinais incompletos; hipoteticamente, com um exemplo de reserva preparado, mas sem momento de checagem definido e com critério informal para o silêncio (Q4) |
+| Ações | Compartilhar a tela, explicar, olhar a grade, perguntar "entenderam?", seguir o plano, corrigir o exercício na aula seguinte; hipoteticamente, evitar alternativas que exponham alunos adultos (Q5) |
+| Eventos | Silêncio maior que o normal; respostas pouco convictas; hipoteticamente, aluno atrasado, queda de conexão ou mensagem no chat no momento crítico (Q6) |
+| Avaliação | Descobre a dificuldade só na correção do exercício; hipoteticamente, aceita um "sim" coletivo como confirmação e não registra o ponto duvidoso (Q7) |
+| Recursos/informações (complemento) | Grade de vídeo reduzida, câmeras parcialmente desligadas, respostas verbais rápidas e pouco convictas, chat, exercício de casa corrigido na aula seguinte |
+| Problemas/rupturas (complemento) | Silêncio ambíguo, atenção dividida entre explicar e observar, resposta verbal pouco confiável, dificuldade só descoberta dias depois |
+| Consequências (complemento) | Retrabalho na aula seguinte, tempo de preparação reduzido, estrutura gramatical não reforçada no momento em que fazia mais diferença |
 
 ### 5. Implicações para as próximas entregas
 
-**Quais tarefas merecem análise?**
+**Quais tarefas merecem análise?** Formuladas a partir do objetivo humano, e não de uma funcionalidade:
+
 - Perceber, durante a explicação de um tópico novo, se a turma está acompanhando.
-- Decidir, com base em sinais incompletos, se reforça o conteúdo na hora ou segue o plano.
+- Interpretar silêncio e respostas pouco convictas, decidindo o quanto confiar nelas.
+- Decidir, com pouco tempo e sem expor os alunos, se reforça o conteúdo na hora ou segue o plano (planejamento).
+- Verificar, ainda na aula, se a decisão tomada funcionou (avaliação).
 - Revisar, numa aula posterior, o que não ficou claro na aula anterior.
 
+Na Entrega 5, a modelagem da tarefa T03 incluiu os passos de interpretação, avaliação da confiança e decisão, e não apenas as ações observáveis.
+
 **Quais informações precisam ser coletadas?**
-- Que critérios professores de turma pequena usam hoje pra interpretar silêncio como compreensão ou dúvida.
-- Se a divisão de atenção entre compartilhar tela e observar a turma é, de fato, o gargalo principal, mais do que o tamanho da turma em si (ligado à hipótese nova sobre turmas pequenas, registrada na Entrega 3).
-- Qual é, na prática, o intervalo entre o momento da dificuldade e o momento em que o professor descobre que ela existiu, e o quanto isso poderia ser antecipado (relacionado a H01).
-- Como um sinal de confiança baixa ou alta nessa percepção mudaria a decisão do professor de parar ou seguir em frente (relacionado a H02).
+
+- Condições físicas e técnicas da aula e quem define plataforma e duração (Q1).
+- Perfil dos alunos, motivos da câmera desligada e terceiros que acompanham o desempenho (Q2).
+- Critérios de sucesso da aula e prioridade entre cumprir o plano e garantir compreensão (Q3).
+- Preparação da introdução de conteúdo novo e critério usado para seguir ou reforçar (Q4), relacionado a H01.
+- Repertório de alternativas à pergunta "entenderam?" e seu custo (Q5).
+- Eventos que interferem na observação e na decisão (Q6).
+- Sinais usados como confirmação e forma de registro para a aula seguinte (Q7), relacionado a H02.
+- Se o recorte de turma pequena muda de fato o problema ou se a barreira principal é a tela compartilhada (hipótese nova da Entrega 3).
 
 ## Checklist
 
+> Estado real em 05/11/2026. C01, C02, C03 e C05 foram refinados pelos sete elementos característicos; **C04 ainda não foi revisado** conforme o feedback da Entrega 4.
+
 - [x] Há um cenário completo por integrante.
 - [x] Cada cenário tem título, ator, objetivo, contexto e problema.
-- [x] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
-- [x] O texto descreve a situação atual, sem antecipar a solução.
-- [ ] Para TCC sem interface original, o cenário descreve uma prática humana plausível relacionada à contribuição técnica, e não “a falta de uma tela”.
-- [x] Questões de refinamento acrescentam informação nova.
-- [x] O refinamento mostra claramente o que foi adicionado/alterado.
+- [x] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação, distinguindo situação concreta de hipótese (C01, C02, C03 e C05; C04 ainda cita H01 como "situação concreta").
+- [ ] O texto descreve a situação atual, sem antecipar a solução — C04 ainda menciona "resultado do modelo" nas consequências.
+- [x] Para TCC sem interface original, o cenário descreve uma prática humana plausível — não se aplica: o TCC já previa interface.
+- [ ] Os cenários cobrem os sete elementos (ambiente/contexto, atores, objetivos, planejamento, ações, eventos e avaliação), com ao menos uma questão por elemento — feito em C01, C02, C03 e C05; pendente em C04.
+- [ ] Questões de refinamento acrescentam informação nova — C04 ainda tem Q2 e Q3 respondidas no cenário inicial.
+- [x] Respostas que dependem de investigação futura aparecem como hipóteses de refinamento, identificadas pela questão que as originou (C01, C02, C03 e C05).
 - [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
-- [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+- [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade, como artefato de análise e não como evidência empírica.

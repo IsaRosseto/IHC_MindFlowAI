@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** 30/10/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 Concluida  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -29,18 +29,16 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | Revisar uma sessão concluída para identificar momentos relevantes e avaliar a apresentação | P01 / C01 — docente revisando uma aula on-line já finalizada | Média frequência / Alta criticidade | Kayky Pires de Paula - 22.222.040-2 |
-| T02 | Identificar e interpretar momentos relevantes nos indicadores de uma sessão concluída | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
-| T03 | Analisar uma sessão concluída enquanto consulta, compara e interpreta diferentes informações da apresentação | P01 / C01 — docente revisando indicadores e registros de uma aula on-line já realizada | Média frequência / Alta criticidade | {{nome — matrícula}} |
-| T04 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
-| T07 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
-| T10 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
+| T01 | Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI | P01 / C02 — docente analisando uma aula já finalizada e personalizando a apresentação dos resultados | Média frequência / Alta criticidade | Kayky Pires de Paula — 22.222.040-2 || T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
+| T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
+| T04 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
+| T05 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---
 
-## HTA — T01 Configurar o acompanhamento de uma aula concluída no MindFlow AI
+## HTA — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
@@ -60,91 +58,111 @@ A tarefa é concluída quando o usuário finaliza a personalização e verifica 
 ```mermaid
 flowchart TB
 
-    T0["0. Personalizar a visualização dos resultados de uma aula concluída<br/><b>Plano 0:</b> 1 > 2 > 3 > 4 > 5"]
+    T0["`0. Personalizar a visualização dos resultados de uma aula concluída
+    **Plano 0:** 1 > 2 > 3; executar 4 se houver necessidade de alteração; depois 5.
+    Se necessário, repetir 4 > 5.`"]
 
-    T1["1. Localizar a aula concluída<br/><b>Plano 1:</b> 1.1 > 1.2 > 1.3"]
-    T2["2. Consultar o resumo da aula<br/><b>Plano 2:</b> 2.1 > 2.2"]
-    T3["3. Definir as necessidades de personalização<br/><b>Plano 3:</b> 3.1 > 3.2"]
-    T4["4. Personalizar a visualização<br/><b>Plano 4:</b> 4.1 > 4.2 > 4.3"]
-    T5["5. Finalizar e avaliar a visualização<br/><b>Plano 5:</b> 5.1 > 5.2; se necessário, retornar a 4"]
+    T1["`1. Localizar a aula concluída
+    **Plano 1:** 1.1 > 1.2 > 1.3`"]
 
-    T0 --> T1
-    T0 --> T2
-    T0 --> T3
-    T0 --> T4
-    T0 --> T5
+    T2["`2. Consultar o resumo da aula
+    **Plano 2:** 2.1 > 2.2`"]
 
-    T11[["1.1 Acessar Minhas Reuniões"]]
-    T12[["1.2 Identificar a aula desejada"]]
-    T13[["1.3 Selecionar Ver Resumo"]]
+    T3["`3. Definir necessidades de personalização
+    **Plano 3:** 3.1 > 3.2`"]
 
-    T1 --> T11
-    T1 --> T12
-    T1 --> T13
+    T4["`4. Personalizar a visualização
+    **Plano 4:** 4.1 > 4.2 > 4.3 > 4.4`"]
 
-    T21[["2.1 Examinar os indicadores disponíveis"]]
-    T22[["2.2 Examinar os gráficos apresentados"]]
+    T5["`5. Avaliar e concluir a visualização
+    **Plano 5:** 5.1 > 5.2, se adequada.
+    Caso contrário, retornar a 4 e repetir a avaliação.`"]
 
-    T2 --> T21
-    T2 --> T22
+    T0 --- T1
+    T0 --- T2
+    T0 --- T3
+    T0 --- T4
+    T0 --- T5
 
-    T31[["3.1 Identificar informações relevantes para análise"]]
-    T32[["3.2 Decidir quais elementos deseja modificar"]]
+    T11["1.1 Acessar Minhas Reuniões"]
+    T12["1.2 Identificar a aula desejada"]
+    T13["1.3 Selecionar Ver Resumo"]
 
-    T3 --> T31
-    T3 --> T32
+    T1 --- T11
+    T1 --- T12
+    T1 --- T13
 
-    T41[["4.1 Selecionar Nova Visualização"]]
-    T42["4.2 Escolher os indicadores e gráficos desejados<br/><b>Plano 4.2:</b> 4.2.1 / 4.2.2"]
-    T43[["4.3 Organizar os elementos da visualização"]]
+    T21["2.1 Examinar os indicadores disponíveis"]
+    T22["2.2 Examinar os gráficos apresentados"]
 
-    T4 --> T41
-    T4 --> T42
-    T4 --> T43
+    T2 --- T21
+    T2 --- T22
 
-    T421[["4.2.1 Priorizar indicadores de engajamento"]]
-    T422[["4.2.2 Priorizar indicadores de tédio, confusão e frustração"]]
+    T31["3.1 Identificar informações relevantes para análise"]
+    T32["3.2 Definir quais elementos manter ou modificar"]
 
-    T42 --> T421
-    T42 --> T422
+    T3 --- T31
+    T3 --- T32
 
-    T51[["5.1 Concluir a edição da visualização"]]
-    T52[["5.2 Verificar se a organização atende às necessidades"]]
+    T41["4.1 Selecionar Nova Visualização"]
 
-    T5 --> T51
-    T5 --> T52
+    T42["`4.2 Escolher indicadores e gráficos desejados
+    **Plano 4.2:** 4.2.1 / 4.2.2`"]
 
-    classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
-    classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
+    T43["4.3 Organizar os elementos selecionados"]
+    T44["4.4 Confirmar as alterações"]
+
+    T4 --- T41
+    T4 --- T42
+    T4 --- T43
+    T4 --- T44
+
+    T421["4.2.1 Priorizar indicadores de engajamento"]
+    T422["4.2.2 Priorizar tédio, confusão e frustração"]
+
+    T42 --- T421
+    T42 --- T422
+
+    T51["5.1 Avaliar a visualização resultante"]
+    T52["5.2 Concluir a visualização"]
+
+    T5 --- T51
+    T5 --- T52
+
+    classDef objetivo fill:#ffffff,stroke:#333333,stroke-width:1.5px,color:#111111;
+    classDef operacao fill:#eeeeee,stroke:#333333,stroke-width:2px,color:#111111;
 
     class T0,T1,T2,T3,T4,T5,T42 objetivo;
-    class T11,T12,T13,T21,T22,T31,T32,T41,T421,T422,T43,T51,T52 operacao;
+    class T11,T12,T13,T21,T22,T31,T32,T41,T421,T422,T43,T44,T51,T52 operacao;
 ```
+
+*As linhas representam a decomposição hierárquica. A sequência, a escolha e as condições de repetição são definidas pelos planos. No Plano 4.2, a escolha representa o foco inicial da análise, sem impedir a combinação posterior de indicadores.*
 
 ### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Personalizar a visualização dos resultados de uma aula concluída | 1 > 2 > 3 > 4 > 5. Se necessário, repetir 4 e 5. | O usuário precisa adaptar a apresentação dos resultados conforme suas necessidades de análise. |
-| 1 | Localizar a aula concluída | 1.1 > 1.2 > 1.3 | É necessário facilitar a localização da reunião desejada. |
-| 1.1 | Acessar o histórico de reuniões | Operação inicial. | O histórico deve permitir acesso às reuniões realizadas. |
-| 1.2 | Identificar a aula desejada | Após 1.1. | As reuniões precisam apresentar informações que facilitem sua identificação. |
-| 1.3 | Selecionar a aula para análise | Após 1.2. | O acesso ao resumo da reunião deve ser facilmente identificado. |
-| 2 | Consultar o resumo da aula | 2.1 > 2.2 | O usuário precisa compreender os resultados antes de personalizá-los. |
-| 2.1 | Examinar os indicadores disponíveis | Operação inicial do objetivo 2. | Os indicadores devem apresentar informações claras sobre seu significado. |
-| 2.2 | Examinar os gráficos apresentados | Após 2.1. | Os gráficos devem facilitar a interpretação das informações. |
-| 3 | Definir as necessidades de personalização | 3.1 > 3.2 | O usuário precisa identificar quais informações deseja priorizar. |
-| 3.1 | Identificar informações relevantes | Operação inicial do objetivo 3. | É importante facilitar a identificação dos indicadores relevantes. |
-| 3.2 | Decidir quais elementos deseja modificar | Após 3.1. | As possibilidades de personalização devem estar evidentes. |
-| 4 | Personalizar a visualização | 4.1 > 4.2 > 4.3 | O sistema deve permitir que o usuário organize os resultados conforme suas preferências. |
-| 4.1 | Acessar a opção de personalização | Operação inicial do objetivo 4. | A funcionalidade de personalização deve ser facilmente localizada. |
-| 4.2 | Escolher os indicadores e gráficos desejados | 4.2.1 OU 4.2.2, conforme o objetivo da análise. | Permitir que o usuário priorize diferentes estados cognitivos conforme suas necessidades. |
-| 4.2.1 | Priorizar indicadores de engajamento | Quando o usuário deseja analisar principalmente o nível de engajamento dos participantes. | Destacar informações relacionadas ao engajamento durante a aula. |
-| 4.2.2 | Priorizar indicadores de tédio, confusão e frustração | Quando o usuário deseja identificar momentos de possível dificuldade ou desinteresse. | Destacar informações que auxiliem na identificação de períodos que merecem atenção. |
-| 4.3 | Organizar os elementos selecionados | Após 4.2. | O usuário deve conseguir ajustar a apresentação das informações. |
-| 5 | Finalizar e avaliar a visualização | 5.1 > 5.2. Se necessário, retornar ao objetivo 4. | O usuário precisa verificar se a personalização atende às suas necessidades. |
-| 5.1 | Concluir a personalização | Operação inicial do objetivo 5. | Deve existir uma forma clara de finalizar as alterações. |
-| 5.2 | Avaliar a visualização resultante | Após 5.1. | O usuário deve conseguir identificar se precisa realizar novos ajustes. |
+| 0 | Personalizar a visualização dos resultados de uma aula concluída | **Plano:** 1 > 2 > 3; executar 4 se houver necessidade de alteração; depois 5. Se a avaliação indicar novos ajustes, repetir 4 > 5. | **Input:** aula concluída com resultados disponíveis e necessidade do docente de organizar sua apresentação para análise. **Feedback:** a visualização resultante está apresentada e o docente reconhece que os indicadores e a organização atendem às necessidades definidas. |
+| 1 | Localizar a aula concluída | 1.1 > 1.2 > 1.3 | Facilitar a identificação da reunião que o docente deseja analisar. |
+| 1.1 | Acessar Minhas Reuniões | Primeira operação de 1. | Oferecer acesso identificável ao histórico de sessões. |
+| 1.2 | Identificar a aula desejada | Após 1.1. | Apresentar informações que permitam distinguir as reuniões. |
+| 1.3 | Selecionar Ver Resumo | Após 1.2. | Tornar o acesso ao resumo facilmente localizável. |
+| 2 | Consultar o resumo da aula | 2.1 > 2.2 | Permitir a compreensão inicial dos resultados antes de decidir por alterações. |
+| 2.1 | Examinar os indicadores disponíveis | Primeira operação de 2. | Explicar o significado dos indicadores e evitar apresentá-los como diagnósticos definitivos. |
+| 2.2 | Examinar os gráficos apresentados | Após 2.1. | Facilitar a leitura das informações e de sua organização atual. |
+| 3 | Definir necessidades de personalização | 3.1 > 3.2 | Identificar o que é relevante para a análise e se a visualização exige ajustes. |
+| 3.1 | Identificar informações relevantes para análise | Primeira operação de 3. | Ajudar o docente a reconhecer os indicadores pertinentes ao seu objetivo. |
+| 3.2 | Definir quais elementos manter ou modificar | Após 3.1. | Se não houver necessidade de mudança, prosseguir para 5 sem executar 4. |
+| 4 | Personalizar a visualização | 4.1 > 4.2 > 4.3 > 4.4 | Executar somente quando a visualização precisar de alterações. |
+| 4.1 | Selecionar Nova Visualização | Primeira operação de 4. | Destacar o controle de personalização; no protótipo, também referido como "Nova View". |
+| 4.2 | Escolher indicadores e gráficos desejados | 4.2.1 / 4.2.2, conforme o foco inicial da análise. | Tornar compreensíveis as opções de indicadores e os modelos disponíveis. |
+| 4.2.1 | Priorizar indicadores de engajamento | Escolher quando o foco inicial for examinar as estimativas de engajamento. | Destacar os indicadores e gráficos relacionados a esse foco. |
+| 4.2.2 | Priorizar tédio, confusão e frustração | Escolher quando o foco inicial for examinar estimativas desses estados. | Facilitar a identificação de períodos que mereçam investigação pelo docente. |
+| 4.3 | Organizar os elementos selecionados | Após 4.2. | Permitir uma disposição compatível com a necessidade de análise. |
+| 4.4 | Confirmar as alterações | Após 4.3. | Apresentar uma ação clara para aplicar a configuração. |
+| 5 | Avaliar e concluir a visualização | 5.1 > 5.2, se adequada. Caso contrário, retornar a 4 e repetir a avaliação. | Encerrar apenas quando o docente reconhecer que a visualização atende às necessidades definidas. |
+| 5.1 | Avaliar a visualização resultante | Primeira operação de 5. | Conferir os indicadores apresentados e a organização dos gráficos, com ou sem edição prévia. |
+| 5.2 | Concluir a visualização | Após 5.1, quando não houver necessidade de novos ajustes. | Representa a decisão do docente de encerrar a tarefa; não pressupõe um botão adicional. |
 
 **Verificação do HTA:**
 
@@ -156,126 +174,121 @@ flowchart TB
 
 ---
 
-## GOMS — T02 Configurar o acompanhamento de uma aula concluída no MindFlow AI
+## GOMS — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
-**Autor(a):** {{Kayky Pires - 22.222.040-2}}
+**Autor(a):** Kayky Pires de Paula — 22.222.040-2
 
 ### GOAL 0: Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
+Executar GOAL 1 > GOAL 2. Se houver necessidade de alteração, executar GOAL 3; depois executar GOAL 4. Se a avaliação indicar novos ajustes, repetir GOAL 3 > GOAL 4. Quando a visualização original já for adequada, seguir de GOAL 2 para GOAL 4.
+
+Os métodos aparecem somente quando existem alternativas para alcançar o mesmo objetivo. Nos objetivos com um único procedimento, as operações são apresentadas diretamente.
+
 ---
 
-### GOAL 1: Localizar a aula que deseja analisar
+### GOAL 1: Localizar e abrir o resumo da aula que deseja analisar
 
-#### METHOD 1.A: Selecionar uma reunião identificada diretamente
+#### METHOD 1.A: Acessar uma aula identificada diretamente
 
-**SEL. RULE:** utilizar quando o usuário identifica facilmente a aula desejada na lista de reuniões.
+**SEL. RULE:** utilizar quando a aula desejada estiver identificável na lista apresentada, sem necessidade de percorrer outras reuniões.
 
-- **OP. 1.A.1:** acessar a seção "Minhas Reuniões";
-- **OP. 1.A.2:** identificar a reunião desejada;
-- **OP. 1.A.3:** selecionar a opção "Ver Resumo";
-- **OP. 1.A.4:** visualizar os resultados da reunião.
+- **OP. 1.A.1:** acessar "Minhas Reuniões";
+- **OP. 1.A.2:** identificar a aula desejada pelas informações apresentadas;
+- **OP. 1.A.3:** selecionar "Ver Resumo";
+- **OP. 1.A.4:** verificar se o resumo exibido corresponde à aula que deseja analisar.
 
-#### METHOD 1.B: Procurar uma reunião entre as sessões anteriores
+#### METHOD 1.B: Localizar uma aula percorrendo o histórico
 
-**SEL. RULE:** utilizar quando a reunião desejada não é identificada imediatamente na lista.
+**SEL. RULE:** utilizar quando a aula desejada não for identificada imediatamente entre as reuniões apresentadas.
 
-- **OP. 1.B.1:** acessar a seção "Minhas Reuniões";
-- **OP. 1.B.2:** percorrer a lista de reuniões disponíveis;
-- **OP. 1.B.3:** examinar as informações de identificação das reuniões;
-- **OP. 1.B.4:** localizar a reunião desejada;
-- **OP. 1.B.5:** selecionar a opção "Ver Resumo".
-- **OP. 1.B.5:** conferir se pagina "resumo" foi carregada.
+- **OP. 1.B.1:** acessar "Minhas Reuniões";
+- **OP. 1.B.2:** percorrer a lista de reuniões;
+- **OP. 1.B.3:** examinar as informações de identificação das sessões;
+- **OP. 1.B.4:** localizar a aula desejada;
+- **OP. 1.B.5:** selecionar "Ver Resumo";
+- **OP. 1.B.6:** verificar se o resumo exibido corresponde à aula que deseja analisar.
 
 ---
 
 ### GOAL 2: Identificar as necessidades de personalização
-- **OP. 2.1:** examinar os indicadores exibidos no resumo;
-- **OP. 2.2:** identificar os estados cognitivos apresentados;
-- **OP. 2.3:** avaliar a relevância dos indicadores para a análise;
-- **OP. 2.4:** identificar quais informações deseja manter ou modificar.
+
+- **OP. 2.1:** examinar os indicadores e gráficos apresentados no resumo;
+- **OP. 2.2:** identificar quais estados afetivo-cognitivos são representados;
+- **OP. 2.3:** avaliar a relevância das informações para a análise pretendida;
+- **OP. 2.4:** definir quais elementos deseja manter ou modificar;
+- **OP. 2.5:** verificar se identificou as alterações necessárias ou se a visualização atual já atende ao objetivo de análise.
+
+Se não houver necessidade de mudanças, prosseguir para GOAL 4. Caso contrário, executar GOAL 3.
+
 ---
 
-
-### GOAL 3: Selecionar os indicadores para personalizar a visualização
+### GOAL 3: Personalizar a visualização conforme o foco da análise
 
 #### METHOD 3.A: Priorizar indicadores de engajamento
 
-**SEL. RULE:** utilizar quando o usuário deseja analisar principalmente o nível de engajamento dos participantes durante a aula.
+**SEL. RULE:** utilizar quando o foco inicial da análise for examinar as estimativas de engajamento dos participantes durante a aula.
 
-- **OP. 3.A.1:** acessar a opção "Nova Visualização";
-- **OP. 3.A.2:** examinar os indicadores disponíveis;
-- **OP. 3.A.3:** selecionar os indicadores de engajamento;
-- **OP. 3.A.4:** organizar os gráficos selecionados;
-- **OP. 3.A.5:** confirmar a personalização.
-- **OP. 3.A.6:** analisar personalização.
+- **OP. 3.A.1:** selecionar "Nova Visualização";
+- **OP. 3.A.2:** examinar os modelos e indicadores disponíveis;
+- **OP. 3.A.3:** selecionar modelos e gráficos que destaquem engajamento;
+- **OP. 3.A.4:** organizar os elementos selecionados;
+- **OP. 3.A.5:** confirmar as alterações;
+- **OP. 3.A.6:** verificar se a visualização atualizada apresenta os indicadores de engajamento selecionados e a organização definida.
 
 #### METHOD 3.B: Priorizar indicadores de tédio, confusão e frustração
 
-**SEL. RULE:** utilizar quando o usuário deseja identificar momentos de dificuldade, desinteresse ou frustração dos participantes.
+**SEL. RULE:** utilizar quando o foco inicial da análise for examinar estimativas de tédio, confusão e frustração e localizar períodos que mereçam investigação.
 
-- **OP. 3.B.1:** acessar a opção "Nova Visualização";
-- **OP. 3.B.2:** examinar os indicadores disponíveis;
-- **OP. 3.B.3:** selecionar os indicadores de tédio, confusão e frustração;
-- **OP. 3.B.4:** organizar os gráficos selecionados;
-- **OP. 3.B.5:** confirmar a personalização.
-- **OP. 3.B.6:** analisar personalização.
+- **OP. 3.B.1:** selecionar "Nova Visualização";
+- **OP. 3.B.2:** examinar os modelos e indicadores disponíveis;
+- **OP. 3.B.3:** selecionar modelos e gráficos que destaquem tédio, confusão e frustração;
+- **OP. 3.B.4:** organizar os elementos selecionados;
+- **OP. 3.B.5:** confirmar as alterações;
+- **OP. 3.B.6:** verificar se a visualização atualizada apresenta os indicadores selecionados e a organização definida.
 
-
----
-
-### GOAL 4: Avaliar o resultado da personalização
-
-#### METHOD 4.A: Validar a visualização personalizada
-
-**SEL. RULE:** utilizar quando a organização dos indicadores e gráficos atende às necessidades de análise do usuário.
-
-- **OP. 4.A.1:** examinar a visualização personalizada;
-- **OP. 4.A.2:** verificar a presença dos indicadores desejados;
-- **OP. 4.A.3:** avaliar a clareza e a organização das informações;
-- **OP. 4.A.4:** concluir a personalização.
-- **OP. 4.A.5:** analisar personalização.
-
-#### METHOD 4.B: Revisar a personalização realizada
-
-**SEL. RULE:** utilizar quando a visualização não apresenta as informações desejadas ou sua organização ainda não está adequada.
-
-- **OP. 4.B.1:** examinar a visualização personalizada;
-- **OP. 4.B.2:** identificar os elementos que precisam de ajustes;
-- **OP. 4.B.3:** retornar às opções de personalização;
-- **OP. 4.B.4:** modificar os indicadores ou a organização dos elementos;
-- **OP. 4.B.5:** avaliar novamente a visualização resultante.
+A regra de seleção representa o foco inicial da análise. Não impede a combinação de indicadores nem a realização de ajustes posteriores.
 
 ---
 
-## CTT — T01 Configurar o acompanhamento de uma aula no MindFlow AI
+### GOAL 4: Avaliar a visualização e reconhecer a conclusão da tarefa
+
+- **OP. 4.1:** examinar os indicadores e gráficos da visualização resultante;
+- **OP. 4.2:** comparar as informações apresentadas com as necessidades definidas no GOAL 2;
+- **OP. 4.3:** avaliar se a disposição dos elementos facilita a análise pretendida;
+- **OP. 4.4:** verificar se os indicadores necessários estão presentes e se a organização atende ao objetivo da análise.
+
+---
+
+## CTT — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
 **Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
-
 ### Descrição
 
-O modelo CTT representa a personalização dos resultados de uma aula concluída no MindFlow AI, considerando a sequência das tarefas e suas relações temporais.
+A tarefa é motivada pela necessidade do docente de revisar uma aula concluída e organizar os resultados para sua análise. O CTT representa uma interação projetada com o MindFlow AI, e não uma descrição da prática atual sem a ferramenta.
 
-O usuário acessa "Minhas Reuniões", seleciona a aula desejada e consulta seu resumo. Em seguida, identifica as informações que deseja modificar e utiliza a opção "Nova Visualização" para selecionar indicadores e reorganizar os gráficos.
+O docente acessa "Minhas Reuniões", identifica a aula e seleciona "Ver Resumo". Após o sistema apresentar o resumo, examina os indicadores e define suas necessidades. Se precisar de ajustes, executa a tarefa opcional de personalização, escolhendo o foco inicial em engajamento ou em tédio, confusão e frustração, organizando os elementos e confirmando a configuração.
 
-Após finalizar a edição, verifica se a visualização atende às suas necessidades. Caso contrário, pode retornar à personalização e realizar novos ajustes.
+Em seguida, analisa a visualização resultante. A personalização e a avaliação podem ser repetidas até que a apresentação dos resultados esteja adequada. Se não precisar editar, o docente conclui após examinar o resumo.
+
 
 ### Diagrama
 
-[https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt.png](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/CTT%20Diagrama.png)
+![CTT T01 — Personalizar a visualização dos resultados de uma aula concluída](../assets/05_tarefas/ctt_t01_corrigido.svg)
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Localizar e abrir o resumo da aula; Personalizar e avaliar. |
-| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | IIdentificar a aula desejada; Definir necessidades; Analisar a visualização resultante. |
-| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | ECarregar as reuniões; Exibir o resumo da aula; Atualizar o dashboard. |
-| Pessoa e computador | TTarefa de interação. Representa uma ação do usuário na interface. | Selecionar Ver Resumo; Selecionar indicadores e gráficos desejados; Organizar elementos; Confirmar alterações. |
-| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Localizar a aula → Avaliar o resumo → Personalizar a visualização → Conferir o resultado. |
-| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | Selecionar Ver Resumo → Sistema exibir o resumo da aula. |
-| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Selecionar indicadores e gráficos ou reorganizar elementos no dashboard. |
-| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Caso a visualização não atenda às necessidades, o usuário retorna à personalização e realiza novos ajustes. |
+| Nuvem | Tarefa abstrata que reúne subtarefas. Todo nó decomposto utiliza essa categoria. | 2. Analisar resumo e definir necessidades; 3.3 Selecionar foco da visualização; 3.6 Analisar visualização resultante. |
+| Pessoa | Tarefa do usuário: atividade cognitiva realizada sem uma ação direta sobre os controles da interface. | Identificar a aula desejada; avaliar a organização visual; verificar se a visualização atende às necessidades. |
+| Computador | Tarefa do sistema: resposta perceptível produzida automaticamente pela aplicação. | Carregar as reuniões; exibir o resumo da aula; atualizar a visualização. |
+| Pessoa e computador | Tarefa de interação entre usuário e sistema. | Selecionar Ver Resumo; acessar Nova Visualização; selecionar o foco dos indicadores; organizar e confirmar alterações. |
+| `>>` — Habilitação | A tarefa seguinte fica habilitada após a conclusão da anterior. | Identificar a aula desejada >> Selecionar Ver Resumo. |
+| `[]>>` — Habilitação com passagem de informação | A tarefa seguinte utiliza informações produzidas ou selecionadas na tarefa anterior. | Selecionar Ver Resumo []>> Exibir o resumo da aula. |
+| `[]` — Escolha | Alternativa entre tarefas que cumprem o objetivo da tarefa-pai. | 3.3.1 Priorizar engajamento [] 3.3.2 Priorizar tédio, confusão e frustração. |
+| `[T]` — Opcionalidade | A tarefa pode ser executada ou omitida. Não se confunde com o operador de escolha `[]` entre duas tarefas. | A tarefa 3 pode ser omitida quando a visualização atual já for adequada. |
+| `T*` — Repetição | A tarefa pode ser executada novamente quando necessário. | Repetir a tarefa 3, incluindo edição e avaliação, para realizar novos ajustes antes de concluir. |
 
 ---
 
@@ -350,10 +363,10 @@ flowchart TB
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+- O objetivo 0 representa uma meta do usuário? Sim, a percepção do estado do grupo durante a aula é uma meta para o usuário.
+- As subtarefas são necessárias e suficientes? Sim, elas refletem as ações reais do usuário.
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim
+- A decomposição parou em nível útil para projeto de interação? Sim
 
 ---
 
@@ -364,67 +377,65 @@ flowchart TB
 
 ## GOAL 0: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
-**METHOD 0.A:** Analisar o estado atual dos participantes, avaliar a relevância da situação e decidir como prosseguir.
-
-- **OP. 0.A.1:** analisar o estado atual dos participantes (GOAL 1);
-- **OP. 0.A.2:** avaliar a relevância da situação (GOAL 2);
-- **OP. 0.A.3:** decidir como prosseguir com a aula (GOAL 3);
-- **OP. 0.A.4:** repetir o processo enquanto a aula estiver em andamento.
+- **OP. 0.1:** analisar o estado atual dos participantes (GOAL 1);
+- **OP. 0.2:** avaliar a relevância da situação (GOAL 2);
+- **OP. 0.3:** decidir como prosseguir com a aula (GOAL 3);
+- **OP. 0.4:** repetir o processo enquanto a aula estiver em andamento.
 
 ---
 
 ## GOAL 1: Analisar o estado atual dos participantes
 
-### GOAL 1.A: Observar o indicador geral do estado do grupo
+### GOAL 1.1: Observar o indicador geral do estado do grupo
 
-- **OP. 1.A.1:** direcionar a atenção para o indicador geral;
-- **OP. 1.A.2:** observar o estado predominante apresentado;
-- **OP. 1.A.3:** verificar o valor associado ao estado;
-- **OP. 1.A.4:** interpretar a informação apresentada.
+- **OP. 1.1.1:** direcionar a atenção para o indicador geral;
+- **OP. 1.1.2:** observar o estado predominante apresentado;
+- **OP. 1.1.3:** verificar o valor associado ao estado;
+- **OP. 1.1.4:** interpretar a informação apresentada.
 
-### GOAL 1.B: Consultar os indicadores específicos
+### GOAL 1.2: Consultar os indicadores específicos
 
-- **OP. 1.B.1:** direcionar a atenção para os indicadores específicos;
-- **OP. 1.B.2:** observar os valores de engajamento, tédio, confusão e frustração;
-- **OP. 1.B.3:** comparar os valores apresentados;
-- **OP. 1.B.4:** identificar os estados mais relevantes naquele momento.
+- **OP. 1.2.1:** direcionar a atenção para os indicadores específicos;
+- **OP. 1.2.2:** observar os valores de engajamento, tédio, confusão e frustração;
+- **OP. 1.2.3:** comparar os valores apresentados;
+- **OP. 1.2.4:** identificar os estados mais relevantes naquele momento.
 
 ---
 
 ## GOAL 2: Avaliar a relevância da situação
 
-### GOAL 2.A: Interpretar a alteração observada
+### GOAL 2.1: Interpretar a alteração observada
 
-- **OP. 2.A.1:** identificar os estados que merecem atenção;
-- **OP. 2.A.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
-- **OP. 2.A.3:** interpretar o significado dos estados observados no contexto da aula.
+- **OP. 2.1.1:** identificar os estados que merecem atenção;
+- **OP. 2.1.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
+- **OP. 2.1.3:** interpretar o significado dos estados observados no contexto da aula.
 
 ### GOAL 2.B: Avaliar a necessidade de intervenção
 
-- **OP. 2.B.1:** considerar a relevância dos indicadores observados;
-- **OP. 2.B.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
-- **OP. 2.B.3:** determinar se a situação justifica uma intervenção pedagógica.
+- **OP. 2.2.1:** considerar a relevância dos indicadores observados;
+- **OP. 2.2.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
+- **OP. 2.2.3:** determinar se a situação justifica uma intervenção pedagógica.
 
 ---
 
 ## GOAL 3: Decidir como prosseguir com a aula
 
-### METHOD 3.A: Manter a condução atual
+### METHOD 3.1: Manter a condução atual
 
 **SEL. RULE:** utilizar quando os indicadores não demonstrarem uma situação que justifique adaptação da aula.
 
-- **OP. 3.A.1:** decidir manter a estratégia pedagógica atual;
-- **OP. 3.A.2:** continuar a condução da aula sem alterações;
-- **OP. 3.A.3:** acompanhar os próximos indicadores apresentados pelo sistema.
+- **OP. 3.1.1:** decidir manter a estratégia pedagógica atual;
+- **OP. 3.1.2:** continuar a condução da aula sem alterações;
+- **OP. 3.1.3:** acompanhar os próximos indicadores apresentados pelo sistema.
 
-### METHOD 3.B: Definir uma adaptação na condução da aula
+### METHOD 3.2: Definir uma adaptação na condução da aula
 
 **SEL. RULE:** utilizar quando os indicadores e o contexto da aula demonstrarem necessidade de intervenção.
 
-- **OP. 3.B.1:** identificar o estado que motivou a necessidade de adaptação;
-- **OP. 3.B.2:** considerar possíveis mudanças na estratégia pedagógica;
-- **OP. 3.B.3:** selecionar a adaptação mais adequada ao contexto;
-- **OP. 3.B.4:** aplicar a adaptação durante a aula;
+- **OP. 3.2.1:** identificar o estado que motivou a necessidade de adaptação;
+- **OP. 3.2.2:** considerar possíveis mudanças na estratégia pedagógica;
+- **OP. 3.2.3:** selecionar a adaptação mais adequada ao contexto;
+- **OP. 3.2.4:** aplicar a adaptação durante a aula;
 - **OP. 3.B.5:** acompanhar os próximos indicadores para observar a resposta dos participantes.
 
 ---
@@ -453,17 +464,14 @@ flowchart TB
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Localizar e abrir o resumo da aula; Personalizar e avaliar. |
-| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | IIdentificar a aula desejada; Definir necessidades; Analisar a visualização resultante. |
-| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | ECarregar as reuniões; Exibir o resumo da aula; Atualizar o dashboard. |
-| Pessoa e computador | TTarefa de interação. Representa uma ação do usuário na interface. | Selecionar Ver Resumo; Selecionar indicadores e gráficos desejados; Organizar elementos; Confirmar alterações. |
-| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Localizar a aula → Avaliar o resumo → Personalizar a visualização → Conferir o resultado. |
-| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa é habilitada após a primeira e utiliza as informações produzidas por ela. | Selecionar Ver Resumo → Sistema exibir o resumo da aula. |
-| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Selecionar indicadores e gráficos ou reorganizar elementos no dashboard. |
-| Repetição da verificação | Representa o retorno a uma tarefa anterior quando a configuração precisa ser ajustada. | Caso a visualização não atenda às necessidades, o usuário retorna à personalização e realiza novos ajustes. |
+| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Analisar o estado atual; Decidir como prosseguir |
+| Pessoa | Tarefa do usuário. Representa uma atividade cognitiva, como examinar informações, avaliar ou decidir. | Manter conduta da aula; Interpretar alterações do grupo |
+| Computador | Tarefa do sistema. Representa uma atividade executada automaticamente pelo sistema. | Carregar os indicadores do grupo |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Sistema carrega o estado geral do grupo -> Observar indicador geral do grupo -> Consultar indicadores especificos de engajamento, tedio , confusão e frustração -> Concluir Visualização|
+| `[ ]` — Escolha | Representa tarefas alternativas; ao iniciar uma delas, a outra deixa de estar habilitada naquele momento. | Escolher como conduzir a aula após entender os impactos de uma ação na aula |
 
 ---
-## HTA — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
+## HTA — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
@@ -479,53 +487,7 @@ A tarefa é considerada concluída quando a professora toma a decisão (seguir o
 
 ### Diagrama
 
-```mermaid
-flowchart TB
-
-    T0["0. Perceber se a turma está acompanhando a explicação<br/>e decidir se reforça o conteúdo<br/><b>Plano 0:</b> 1 > repetir (2 > 3, conforme necessário) > 4"]
-
-    T1["1. Explicar o tópico novo<br/><b>Plano 1:</b> 1.1 > 1.2"]
-    T2["2. Observar os sinais da turma<br/><b>Plano 2:</b> 2.1 ou 2.2 ou 2.3, conforme o que estiver disponível"]
-    T3["3. Interpretar os sinais observados<br/><b>Plano 3:</b> 3.1 > 3.2"]
-    T4["4. Decidir como conduzir a aula<br/><b>Plano 4:</b> 4.1 ou 4.2"]
-
-    T0 --> T1
-    T0 --> T2
-    T0 --> T3
-    T0 --> T4
-
-    T11[["1.1 Apresentar o tópico<br/>com a tela compartilhada"]]
-    T12[["1.2 Explicar a estrutura nova<br/>com exemplos"]]
-
-    T1 --> T11
-    T1 --> T12
-
-    T21[["2.1 Olhar a grade de vídeo<br/>das câmeras ligadas"]]
-    T22[["2.2 Verificar o chat em busca<br/>de mensagens ou reações"]]
-    T23[["2.3 Perguntar verbalmente<br/>se a turma entendeu"]]
-
-    T2 --> T21
-    T2 --> T22
-    T2 --> T23
-
-    T31[["3.1 Comparar os sinais recebidos com o que<br/>se espera de uma turma que entendeu"]]
-    T32[["3.2 Avaliar o quanto confia<br/>nesse julgamento"]]
-
-    T3 --> T31
-    T3 --> T32
-
-    T41[["4.1 Seguir o plano de aula<br/>sem alterações"]]
-    T42[["4.2 Parar para reforçar o conteúdo<br/>com um exemplo extra"]]
-
-    T4 --> T41
-    T4 --> T42
-
-    classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
-    classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
-
-    class T0,T1,T2,T3,T4 objetivo;
-    class T11,T12,T21,T22,T23,T31,T32,T41,T42 operacao;
-```
+![HTA T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/hta_t03.png)
 
 ### Decomposição e planos
 
@@ -546,11 +508,9 @@ flowchart TB
 
 ---
 
-## GOMS — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
+## GOMS — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
-
-## GOMS — Perceber a compreensão da turma e decidir se reforça o conteúdo
 
 ### GOAL 0: Perceber, durante a aula, se a turma está compreendendo uma explicação nova e decidir se reforça o conteúdo
 
@@ -569,14 +529,22 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 1.A.3:** observar as expressões visíveis nas miniaturas;
 - **OP. 1.A.4:** retornar a atenção ao conteúdo compartilhado.
 
-#### METHOD 1.B: Perguntar diretamente à turma
+#### METHOD 1.B: Verificar o chat
 
-**SEL. RULE:** utilizar quando as câmeras estiverem desligadas ou quando a grade de vídeo não permitir concluir se a turma acompanhou.
+**SEL. RULE:** utilizar quando a turma costuma se manifestar por escrito ou quando a professora não quer interromper a explicação para perguntar.
 
-- **OP. 1.B.1:** interromper brevemente a explicação;
-- **OP. 1.B.2:** perguntar à turma se entenderam;
-- **OP. 1.B.3:** aguardar as respostas;
-- **OP. 1.B.4:** avaliar o tom e a convicção das respostas recebidas.
+- **OP. 1.B.1:** direcionar o olhar para o painel de chat da videochamada;
+- **OP. 1.B.2:** procurar mensagens ou reações recentes sobre o tópico;
+- **OP. 1.B.3:** retornar a atenção ao conteúdo compartilhado.
+
+#### METHOD 1.C: Perguntar diretamente à turma
+
+**SEL. RULE:** utilizar quando as câmeras estiverem desligadas, o chat estiver vazio ou quando os outros métodos não permitirem concluir se a turma acompanhou.
+
+- **OP. 1.C.1:** interromper brevemente a explicação;
+- **OP. 1.C.2:** perguntar à turma se entenderam;
+- **OP. 1.C.3:** aguardar as respostas;
+- **OP. 1.C.4:** avaliar o tom e a convicção das respostas recebidas.
 
 ---
 
@@ -619,89 +587,47 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 3.B.3:** perguntar novamente se ficou claro;
 - **OP. 3.B.4:** retomar o plano de aula a partir desse ponto.
 
-> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
-
 ---
 
-## CTT — T04 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
+## CTT — T03 Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
 ### Descrição
 
-O modelo CTT representa a mesma situação sob a perspectiva das relações temporais entre as tarefas. A tarefa raiz (**Perceber se a turma entendeu e decidir se reforça o conteúdo**) é abstrata e se decompõe em quatro tarefas: **Explicar o tópico novo** (interação, com a tela compartilhada), **Observar os sinais da turma** (abstrata), **Interpretar os sinais observados** (tarefa de usuário, puramente cognitiva) e **Decidir como conduzir a aula** (abstrata).
+O modelo CTT representa a mesma tarefa do HTA e do GOMS da T03, com a mesma numeração dos objetivos, considerando as relações temporais entre as tarefas e quem executa cada uma: a professora (usuário), a professora agindo na videochamada (interação) ou a plataforma de videoconferência (sistema).
 
-Explicar e observar acontecem ao mesmo tempo, e não uma depois da outra (concorrência): a professora observa a turma enquanto fala. A observação é repetida durante a explicação e, para cada rodada, a professora escolhe um canal: olhar a grade de vídeo, ler o chat ou perguntar à turma. Só depois de observar é que ela consegue interpretar os sinais (habilitação), e só depois de interpretar consegue decidir.
+Camila explica o tópico novo com a tela compartilhada e, ao mesmo tempo, observa a turma, escolhendo a cada momento entre olhar a grade de vídeo, verificar o chat ou perguntar se entenderam. Depois de observar, interpreta os sinais e avalia o quanto confia nesse julgamento.
 
-A decisão é uma escolha entre seguir o plano de aula e reforçar o conteúdo. Reforçar se decompõe em duas tarefas de interação em sequência: dar um exemplo extra e, depois dele, perguntar se ficou claro.
+Por fim, decide entre seguir o plano de aula ou reforçar o conteúdo com um exemplo extra. O modelo descreve a prática atual, sem o MindFlow; por isso o sistema é a plataforma que ela já usa (Google Meet).
 
 ### Diagrama
 
-```mermaid
-flowchart LR
-
-    subgraph C0["<b>0. Perceber se a turma entendeu e decidir se reforça o conteúdo</b>"]
-        direction LR
-
-        C1[["<b>1. Explicar o tópico novo</b><br/>com a tela<br/>compartilhada"]]
-
-        subgraph C2["<b>2. Observar os sinais da turma *</b>"]
-            direction TB
-            C21[["2.1 Olhar a grade de vídeo"]]
-            C22[["2.2 Ler o chat"]]
-            C23[["2.3 Perguntar à turma"]]
-            C21 -- "[ ]" --- C22
-            C22 -- "[ ]" --- C23
-        end
-
-        C3("<b>3. Interpretar os<br/>sinais observados</b>")
-
-        subgraph C4["<b>4. Decidir como conduzir a aula</b>"]
-            direction TB
-            C41("4.1 Seguir o plano de aula")
-            subgraph C42["4.2 Reforçar o conteúdo na hora"]
-                direction TB
-                C421[["4.2.1 Dar um exemplo extra"]]
-                C422[["4.2.2 Perguntar se ficou claro"]]
-                C421 -- "&gt;&gt;" --> C422
-            end
-            C41 -- "[ ]" --- C42
-        end
-
-        C1 -- "|||" --- C2
-        C2 -- "&gt;&gt;" --> C3
-        C3 -- "&gt;&gt;" --> C4
-    end
-
-    classDef interacao fill:#e8f6ec,stroke:#2f855a,stroke-width:2px,color:#111;
-    classDef usuario fill:#fff6e5,stroke:#b7791f,stroke-width:2px,color:#111;
-    classDef abstrata fill:#eef2ff,stroke:#4f5fbf,stroke-width:2px,stroke-dasharray:6 4,color:#111;
-
-    class C1,C21,C22,C23,C421,C422 interacao;
-    class C3,C41 usuario;
-    class C0,C2,C4,C42 abstrata;
-```
+![CTT T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/ctt_t03.png)
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `\|\|\|` (concorrência) | As tarefas acontecem ao mesmo tempo, sem ordem fixa entre si | Explicar o tópico novo e Observar os sinais da turma |
-| `>>` (habilitação) | A segunda tarefa só começa depois que a primeira termina | Observar → Interpretar → Decidir; Dar um exemplo extra → Perguntar se ficou claro |
-| `[]` (escolha) | Apenas uma das alternativas é executada a cada vez | Olhar a grade de vídeo, Ler o chat ou Perguntar à turma; Seguir o plano ou Reforçar o conteúdo |
-| `*` (repetição) | A tarefa é repetida enquanto for necessária | Observar os sinais da turma durante toda a explicação |
-
-No diagrama, as tarefas abstratas têm borda tracejada, as de usuário são laranja e as de interação são verdes; as subtarefas ficam dentro da caixa da tarefa-pai e o operador temporal aparece sobre a linha que liga duas tarefas irmãs. As tarefas de **usuário** (Interpretar os sinais, Seguir o plano) são ações cognitivas ou de decisão da professora, sem interação direta com a videochamada. Tarefas de **interação** (explicar com a tela compartilhada, olhar a grade, ler o chat, perguntar) são ações da professora sobre a videochamada. Tarefas **abstratas** agrupam subtarefas. Não há tarefas de sistema porque esta modelagem descreve a prática atual, sem antecipar a solução.
+| Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Explicar o tópico novo; Observar os sinais da turma; Interpretar os sinais; Decidir como conduzir a aula. |
+| Pessoa | Tarefa do usuário. Atividade cognitiva, como avaliar ou decidir. | Comparar os sinais; Avaliar o quanto confia; Seguir o plano de aula. |
+| Computador | Tarefa do sistema. Executada pela plataforma de videoconferência, sem ação da professora. | Transmitir a tela aos alunos. |
+| Pessoa e computador | Tarefa de interação. Ação da professora na videochamada. | Apresentar com a tela compartilhada; Explicar a estrutura; Olhar a grade; Verificar o chat; Perguntar; Reforçar com um exemplo extra. |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Observar → Interpretar → Decidir; Comparar os sinais → Avaliar a confiança. |
+| `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa utiliza as informações produzidas pela primeira. | Apresentar com a tela compartilhada → Sistema transmitir a tela. |
+| `[ ]` — Escolha | Apenas uma das alternativas é executada naquele momento. | Olhar a grade, verificar o chat ou perguntar; Seguir o plano ou reforçar. |
+| `\|\|\|` — Concorrência | As tarefas acontecem ao mesmo tempo. | Explicar o tópico novo enquanto observa os sinais da turma. |
+| `*` — Repetição | A tarefa se repete enquanto for necessária. | Observar os sinais da turma durante a explicação. |
 
 ---
 
-## HTA — T07 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
+## HTA — T04 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
 
 ### Descrição da tarefa
 
-A tarefa T07 é modelada pelas três técnicas desta entrega: o HTA mostra como ela se divide em subtarefas, o GOMS mostra os métodos alternativos para cumprir cada meta e o CTT mostra as relações temporais entre o que o participante faz e o que o sistema faz.
+A tarefa T04 é modelada pelas três técnicas desta entrega: o HTA mostra como ela se divide em subtarefas, o GOMS mostra os métodos alternativos para cumprir cada meta e o CTT mostra as relações temporais entre o que o participante faz e o que o sistema faz.
 
 A persona de referência é **P05 — Bruno D. Roger**, aluno de graduação em disciplinas EAD. Bruno é persona secundária: não usa o Semáforo Cognitivo nem o Dashboard, mas, como registrado na Entrega 3 (contexto de uso, linha “Papéis/permissões/governança”), tem uma interação própria com o MindFlow por meio das informações de transparência e de participação. Essa é a parte da interface que responde à H03 e às RC04, RC05 e RC09 da Entrega 2.
 
@@ -836,7 +762,7 @@ flowchart LR
 
 ---
 
-## GOMS — T07 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
+## GOMS — T04 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
 
@@ -973,13 +899,13 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 
 ---
 
-## CTT — T07 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
+## CTT — T04 Participar de uma aula com o MindFlow ativo controlando a própria participação na análise
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
 
 ### Descrição
 
-O CTT modela a mesma tarefa T07 do HTA e do GOMS, agora pelas relações temporais entre o que Bruno (P05) faz e o que o MindFlow faz do lado do participante. Não modela o processamento dos sinais, que é funcionamento interno do algoritmo: as tarefas de sistema aqui são apenas as que Bruno percebe, como exibir o aviso e mostrar o estado da participação.
+O CTT modela a mesma tarefa T04 do HTA e do GOMS, agora pelas relações temporais entre o que Bruno (P05) faz e o que o MindFlow faz do lado do participante. Não modela o processamento dos sinais, que é funcionamento interno do algoritmo: as tarefas de sistema aqui são apenas as que Bruno percebe, como exibir o aviso e mostrar o estado da participação.
 
 A correspondência com o HTA é a seguinte: a tarefa 1 do CTT reúne as subtarefas 1 a 4 do HTA (perceber, entender, tirar dúvida e decidir), a tarefa 2.3 corresponde à subtarefa 5 (ajustar a participação) e a tarefa 4 corresponde à subtarefa 6 (conferir depois).
 
@@ -1102,7 +1028,7 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## HTA — T10 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
+## HTA — T05 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5
 
@@ -1194,7 +1120,7 @@ flowchart TB
 
 Versão renderizada: [`hta_t10.png`](../assets/05_tarefas/hta_t10.png) / [`hta_t10.svg`](../assets/05_tarefas/hta_t10.svg). Fonte editável: [`hta_t10.mmd`](../assets/05_tarefas/hta_t10.mmd).
 
-*Figura T10-HTA — HTA da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir". Fonte: elaboração do autor a partir do Cenário C01.*
+*Figura T05-HTA — HTA da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir". Fonte: elaboração do autor a partir do Cenário C01.*
 
 ### Decomposição e planos
 
@@ -1235,7 +1161,7 @@ Versão renderizada: [`hta_t10.png`](../assets/05_tarefas/hta_t10.png) / [`hta_t
 
 ---
 
-## GOMS — T10 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
+## GOMS — T05 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5
 
@@ -1399,7 +1325,7 @@ O modelo GOMS descreve a mesma tarefa do HTA T10, com os mesmos seis objetivos, 
 
 ---
 
-## CTT — T10 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
+## CTT — T05 Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir
 
 **Autor(a):** Matheus Ferreira de Freitas — RA 22.125.085-5
 
@@ -1413,9 +1339,9 @@ Depois da reunião, combinar o próximo passo (4.1), anotar as percepções (4.2
 
 ### Diagrama
 
-![CTT T10 — Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir](../assets/05_tarefas/ctt_t10.png)
+![CTT T05 — Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir](../assets/05_tarefas/ctt_t10.png)
 
-*Figura T10-CTT — CTT da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir", na notação ConcurTaskTrees. Fonte editável em SVG: [`ctt_t10.svg`](../assets/05_tarefas/ctt_t10.svg). Elaboração do autor a partir do Cenário C01, do HTA T10 e do GOMS T10.*
+*Figura T05-CTT — CTT da tarefa "conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir", na notação ConcurTaskTrees. Fonte editável em SVG: [`ctt_t10.svg`](../assets/05_tarefas/ctt_t10.svg). Elaboração do autor a partir do Cenário C01, do HTA T05 e do GOMS T05.*
 
 ### Legenda e relações temporais usadas
 
@@ -1446,7 +1372,32 @@ A legenda do diagrama também apresenta os operadores `[ ]>>`, `|[ ]|` e `|=|`, 
 
 ## Síntese da equipe
 
-Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
+As cinco tarefas cobrem três momentos do uso do MindFlow: **durante a sessão**, do lado do comunicador (T03 — Camila; T05 — Manoel); **durante a sessão**, do lado do participante (T04 — Bruno); e **depois da sessão** (T01 — personalizar a visualização de uma aula; T02 — interpretar os indicadores e decidir como adaptar a condução).
+
+**Problemas de interação que apareceram nas modelagens**
+
+- **Atenção dividida:** em T03 e T05, observar o grupo acontece ao mesmo tempo que explicar com a tela compartilhada (`|||` nos CTTs). Os canais atuais (grade reduzida, chat, pergunta verbal) entregam sinais fracos e competem com a fala.
+- **Julgamento sem apoio:** T02, T03 e T05 têm uma etapa explícita de avaliar o quanto o comunicador confia no próprio julgamento, e nenhuma ferramenta atual apoia essa etapa (H02).
+- **Decisão adiada:** reforçar ou reexplicar tem custo de tempo e de constrangimento, então a decisão tende a ser adiada; a dificuldade só é percebida depois (exercício corrigido, follow-up).
+- **Participante sem informação:** em T04, Bruno não sabe o que é processado, se está contribuindo para a análise nem se isso pode pesar contra ele (H03).
+- **Localizar e entender resultados:** em T01 e T02, o comunicador precisa encontrar a aula, entender os indicadores e organizar o que quer ver antes de tirar qualquer conclusão.
+
+**Oportunidades e requisitos derivados**
+
+| Requisito | Origem nas modelagens | Ligação |
+|---|---|---|
+| Indicador do grupo discreto e legível durante o compartilhamento de tela, sem exigir troca de janela | T03 (CTT tarefa 2), T05 (CTT 2.1.2) | R01, F01, H01 |
+| Indicar que algo merece atenção sem prescrever a ação; a decisão continua com o comunicador | T02 (GOMS Goal 3), T03 (CTT tarefa 4), T05 (CTT 2.4) | R02, RC03 |
+| Comunicar confiança/qualidade da inferência de forma simples | T02, T03 (CTT 3.2), T05 (CTT 2.3) | F04, H02 |
+| Resumo e linha do tempo da sessão, com detalhes sob demanda | T01, T02, T05 (objetivo 6) | R03, F02, F03 |
+| Personalizar a visualização dos resultados de uma aula | T01 | R05, F06, H06 |
+| Aviso de análise ativa, explicação do que é processado, escolha de como participar e resumo de transparência | T04 | R04, F08, H03 |
+
+**Tarefas que vão para o protótipo e para o teste de usabilidade**
+
+- **Protótipo (Entrega 6) e teste (Entregas 8 e 14):** T01 — localizar uma aula concluída, consultar o resumo e personalizar a visualização. É o fluxo das metas MU01–MU03 da Entrega 8.
+- **Protótipo, ainda pendente:** o indicador durante a sessão (T03/T05) e a interface do participante (T04). O protótipo em papel cobre apenas a configuração da extensão; essas telas devem entrar no Figma (Entrega 11) para que as tarefas centrais de tempo real e de transparência também possam ser avaliadas.
+- **Em aberto:** se o recorte comercial (T05) compartilha as mesmas tarefas dos contextos de ensino (dúvidas ?02 e ?03); as modelagens mostram a mesma estrutura (perceber > interpretar > decidir), mas com custos e eventos diferentes.
 
 ## Checklist
 
