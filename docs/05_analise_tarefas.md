@@ -30,7 +30,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
 | T01 | Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI | P01 / C02 — docente analisando uma aula já finalizada e personalizando a apresentação dos resultados | Média frequência / Alta criticidade | Kayky Pires de Paula — 22.222.040-2 || T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
-| T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
+| T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena. Natureza: prática atual, sem o MindFlow | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
 | T04 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
 | T05 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
 
@@ -479,7 +479,7 @@ flowchart TB
 
 A tarefa tem como objetivo permitir que a professora perceba, durante a própria aula, se a turma está acompanhando uma explicação nova e decida, ainda em tempo real, se reforça o conteúdo antes de seguir para o próximo tópico. É a tarefa que, no Cenário C05 (Entrega 4), Camila não consegue realizar bem: ela só descobre a dificuldade da turma na aula seguinte, ao corrigir o exercício de casa.
 
-A tarefa se inicia quando a professora começa a explicar um tópico novo, com a tela compartilhada e a grade de vídeo reduzida num canto da tela. Enquanto explica, ela busca sinais de compreensão: observa as câmeras ligadas, verifica o chat ou pergunta diretamente se a turma entendeu.
+A tarefa se inicia quando a professora identifica, no plano de aula, que chegou a hora de explicar um tópico novo, e começa a explicação com a tela compartilhada e a grade de vídeo reduzida num canto da tela. Enquanto explica, ela busca sinais de compreensão: observa as câmeras ligadas, verifica o chat ou pergunta diretamente se a turma entendeu.
 
 Com base nesses sinais, a professora interpreta se o silêncio e as respostas recebidas indicam compreensão ou dúvida, avaliando também o quanto confia nesse julgamento, que hoje é informal. Em seguida, decide se segue o plano de aula ou se interrompe a sequência para reforçar o conteúdo com um exemplo extra.
 
@@ -491,19 +491,31 @@ A tarefa é considerada concluída quando a professora toma a decisão (seguir o
 
 ### Decomposição e planos
 
-| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
-|---|---|---|---|
-| 0 | Perceber se a turma está acompanhando a explicação e decidir se reforça o conteúdo | 1 > repetir (2 > 3, conforme necessário) > 4 | A tarefa depende de sinais fracos (silêncio, câmeras desligadas); hoje não existe nenhum indicador estruturado, só a leitura informal da professora |
-| 1 | Explicar o tópico novo | 1.1 > 1.2 | Enquanto explica com a tela compartilhada, a professora já está com a atenção ocupada, o que reduz a atenção disponível para observar a turma |
-| 2 | Observar os sinais da turma | 2.1 ou 2.2 ou 2.3, conforme o que estiver disponível | Os três canais (câmera, chat, pergunta verbal) competem com a explicação e nenhum é confiável sozinho: a grade fica reduzida na tela compartilhada e o “sim” verbal costuma ser pouco convicto |
-| 3 | Interpretar os sinais observados | 3.1 > 3.2 | Não há nenhum indicador de confiança nesse julgamento; ele é puramente subjetivo (relacionado à hipótese H02) |
-| 4 | Decidir como conduzir a aula | 4.1 ou 4.2 | Parar para reforçar (4.2) gasta tempo de aula, então só acontece quando a professora tem bastante certeza, o que favorece seguir em frente por excesso de cautela |
+Notação dos planos: `>` sequência, `/` escolha e `+` paralelismo. As condições aparecem por extenso na última coluna.
+
+| ID | Objetivo/operação | Input | Feedback | Plano | Ações, problemas e recomendações |
+|---|---|---|---|---|---|
+| 0 | Perceber se a turma está acompanhando a explicação e decidir se reforça o conteúdo | Momento do plano de aula em que um conteúdo novo será explicado, com a tela compartilhada e a turma conectada | Camila reconhece que decidiu entre seguir ou reforçar e retoma a aula a partir dessa decisão | (1 + 2) > 3 > 4 | 2 se repete enquanto 1 acontece. Se 3 não for conclusiva, Camila volta a 2 antes de decidir. Problema: a tarefa depende de sinais fracos (silêncio, câmeras desligadas) e hoje só existe a leitura informal da professora |
+| 1 | Explicar o tópico novo | — | — | 1.1 > 1.2 > 1.3 | Enquanto explica com a tela compartilhada, a atenção da professora já está ocupada, o que reduz a atenção disponível para observar a turma |
+| 1.1 | Identificar no plano de aula o tópico novo | — | — | — | Atividade fora da videochamada que motiva a tarefa |
+| 1.2 | Apresentar o tópico com a tela compartilhada | — | — | — | A grade de vídeo fica reduzida a miniaturas |
+| 1.3 | Explicar a estrutura nova com exemplos | — | — | — | Ocupa a maior parte da atenção da professora |
+| 2 | Observar os sinais da turma | — | — | 2.1 / 2.2 / 2.3 | Escolha conforme o canal disponível: 2.1 se houver câmeras ligadas, 2.2 se a turma usa o chat, 2.3 se os outros dois não bastarem. Problema: nenhum canal é confiável sozinho e todos competem com a explicação |
+| 2.1 | Olhar a grade de vídeo das câmeras ligadas | — | — | — | Miniaturas pequenas e metade das câmeras desligadas |
+| 2.2 | Verificar o chat em busca de mensagens ou reações | — | — | — | Depende de o aluno escrever |
+| 2.3 | Perguntar verbalmente se a turma entendeu | — | — | — | O “sim” costuma vir rápido e pouco convicto |
+| 3 | Interpretar os sinais observados | — | — | 3.1 > 3.2 | Problema: não há nenhum apoio para avaliar a confiança nesse julgamento (H02) |
+| 3.1 | Comparar os sinais com o que se espera de uma turma que entendeu | — | — | — | Critério informal, baseado na experiência da professora |
+| 3.2 | Avaliar o quanto confia nesse julgamento | — | — | — | Recomendação: investigar com professoras que informação aumentaria essa confiança |
+| 4 | Decidir como conduzir a aula | — | — | 4.1 / 4.2 | 4.1 se a interpretação indicar compreensão; 4.2 se indicar dúvida. Problema: reforçar gasta tempo de aula, então só acontece com bastante certeza, o que favorece seguir em frente |
+| 4.1 | Seguir o plano de aula sem alterações | — | — | — | — |
+| 4.2 | Parar para reforçar o conteúdo com um exemplo extra | — | — | — | Custo de tempo e risco de expor quem não entendeu |
 
 **Verificação do HTA:**
 
 - O objetivo 0 representa uma meta do usuário? Sim. É o objetivo de Camila (persona P02, Cenário C05), e não uma função do sistema.
-- As subtarefas são necessárias e suficientes? Sim. Explicar, observar, interpretar e decidir cobrem o ciclo completo descrito no cenário.
-- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. O Plano 0 usa ordem e repetição, e os Planos 2 e 4 usam alternativa (“ou”).
+- As subtarefas são necessárias e suficientes? Sim. Explicar, observar, interpretar e decidir cobrem o ciclo completo descrito no cenário, começando pela atividade fora da videochamada que motiva a tarefa (1.1).
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. O Plano 0 usa paralelismo (`+`) e sequência (`>`), com a repetição de 2 descrita na tabela; os Planos 2 e 4 usam escolha (`/`).
 - A decomposição parou em nível útil para projeto de interação? Sim. Parou em ações observáveis (olhar a grade, verificar o chat, perguntar), sem descer a detalhes de tela.
 
 ---
@@ -527,7 +539,8 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 1.A.1:** direcionar o olhar para a grade de vídeo reduzida;
 - **OP. 1.A.2:** identificar os alunos com câmera ligada;
 - **OP. 1.A.3:** observar as expressões visíveis nas miniaturas;
-- **OP. 1.A.4:** retornar a atenção ao conteúdo compartilhado.
+- **OP. 1.A.4:** retornar a atenção ao conteúdo compartilhado;
+- **OP. 1.A.5:** verificar se as expressões observadas foram suficientes para indicar compreensão ou dúvida; se não forem, recorrer a outro método.
 
 #### METHOD 1.B: Verificar o chat
 
@@ -535,7 +548,8 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 
 - **OP. 1.B.1:** direcionar o olhar para o painel de chat da videochamada;
 - **OP. 1.B.2:** procurar mensagens ou reações recentes sobre o tópico;
-- **OP. 1.B.3:** retornar a atenção ao conteúdo compartilhado.
+- **OP. 1.B.3:** retornar a atenção ao conteúdo compartilhado;
+- **OP. 1.B.4:** verificar se as mensagens encontradas indicam compreensão ou dúvida; se o chat estiver vazio, recorrer ao Method 1.C.
 
 #### METHOD 1.C: Perguntar diretamente à turma
 
@@ -544,7 +558,8 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 1.C.1:** interromper brevemente a explicação;
 - **OP. 1.C.2:** perguntar à turma se entenderam;
 - **OP. 1.C.3:** aguardar as respostas;
-- **OP. 1.C.4:** avaliar o tom e a convicção das respostas recebidas.
+- **OP. 1.C.4:** avaliar o tom e a convicção das respostas recebidas;
+- **OP. 1.C.5:** verificar se as respostas foram suficientes para formar um julgamento sobre a turma.
 
 ---
 
@@ -576,7 +591,8 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 **SEL. RULE:** utilizar quando a interpretação do Goal 2 indicar que a turma acompanhou o conteúdo.
 
 - **OP. 3.A.1:** concluir a explicação do tópico atual;
-- **OP. 3.A.2:** passar para o próximo tópico previsto no plano.
+- **OP. 3.A.2:** passar para o próximo tópico previsto no plano;
+- **OP. 3.A.3:** confirmar que a aula seguiu para o próximo tópico sem dúvida pendente sobre o anterior.
 
 #### METHOD 3.B: Reforçar o conteúdo na hora
 
@@ -585,7 +601,8 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 - **OP. 3.B.1:** interromper a sequência prevista;
 - **OP. 3.B.2:** apresentar um exemplo adicional da estrutura;
 - **OP. 3.B.3:** perguntar novamente se ficou claro;
-- **OP. 3.B.4:** retomar o plano de aula a partir desse ponto.
+- **OP. 3.B.4:** retomar o plano de aula a partir desse ponto;
+- **OP. 3.B.5:** verificar se as respostas depois do reforço indicaram que a dúvida foi resolvida.
 
 ---
 
@@ -597,7 +614,7 @@ O objetivo principal é, ainda durante a aula, formar um julgamento sobre a comp
 
 O modelo CTT representa a mesma tarefa do HTA e do GOMS da T03, com a mesma numeração dos objetivos, considerando as relações temporais entre as tarefas e quem executa cada uma: a professora (usuário), a professora agindo na videochamada (interação) ou a plataforma de videoconferência (sistema).
 
-Camila explica o tópico novo com a tela compartilhada e, ao mesmo tempo, observa a turma, escolhendo a cada momento entre olhar a grade de vídeo, verificar o chat ou perguntar se entenderam. Depois de observar, interpreta os sinais e avalia o quanto confia nesse julgamento.
+A tarefa começa por uma atividade de Camila fora da videochamada: identificar no plano de aula que chegou a hora de explicar um tópico novo (1.1). Em seguida, ela apresenta o tópico com a tela compartilhada, a plataforma transmite a tela aos alunos e ela explica a estrutura. Ao mesmo tempo, observa a turma, escolhendo a cada momento entre olhar a grade de vídeo, verificar o chat ou perguntar se entenderam. Depois de observar, interpreta os sinais e avalia o quanto confia nesse julgamento.
 
 Por fim, decide entre seguir o plano de aula ou reforçar o conteúdo com um exemplo extra. O modelo descreve a prática atual, sem o MindFlow; por isso o sistema é a plataforma que ela já usa (Google Meet).
 
@@ -610,10 +627,10 @@ Por fim, decide entre seguir o plano de aula ou reforçar o conteúdo com um exe
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
 | Nuvem | Tarefa abstrata. Reúne subtarefas de diferentes categorias. | Explicar o tópico novo; Observar os sinais da turma; Interpretar os sinais; Decidir como conduzir a aula. |
-| Pessoa | Tarefa do usuário. Atividade cognitiva, como avaliar ou decidir. | Comparar os sinais; Avaliar o quanto confia; Seguir o plano de aula. |
+| Pessoa | Tarefa do usuário. Atividade cognitiva, como avaliar ou decidir. | Identificar no plano o tópico novo; Comparar os sinais; Avaliar o quanto confia; Seguir o plano de aula. |
 | Computador | Tarefa do sistema. Executada pela plataforma de videoconferência, sem ação da professora. | Transmitir a tela aos alunos. |
 | Pessoa e computador | Tarefa de interação. Ação da professora na videochamada. | Apresentar com a tela compartilhada; Explicar a estrutura; Olhar a grade; Verificar o chat; Perguntar; Reforçar com um exemplo extra. |
-| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Observar → Interpretar → Decidir; Comparar os sinais → Avaliar a confiança. |
+| `>>` — Habilitação | A segunda tarefa é habilitada após a conclusão da primeira. | Identificar o tópico novo → Apresentar; Observar → Interpretar → Decidir; Comparar os sinais → Avaliar a confiança. |
 | `[ ] >>` — Habilitação com passagem de informação | A segunda tarefa utiliza as informações produzidas pela primeira. | Apresentar com a tela compartilhada → Sistema transmitir a tela. |
 | `[ ]` — Escolha | Apenas uma das alternativas é executada naquele momento. | Olhar a grade, verificar o chat ou perguntar; Seguir o plano ou reforçar. |
 | `\|\|\|` — Concorrência | As tarefas acontecem ao mesmo tempo. | Explicar o tópico novo enquanto observa os sinais da turma. |
