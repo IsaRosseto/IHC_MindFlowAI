@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada
+**Data:** {{20/10/2026}}  
+**Status:** 🟨 em andamento
 
 ## Objetivo da atividade
 
@@ -42,153 +42,718 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 > **Responsabilidade:** solução individual por integrante.
 
-### A01 — Isabella Vieira Silva Rosseto
+### A01 — Kayky Pires
 
-**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
+**Autor(a):** {{Kayky Pires - 22.222.040-2}}
 
 #### Que dados coletar?
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| Como professores de turmas pequenas (aproximadamente 5 a 15 alunos) percebem hoje, durante a aula, se a turma está acompanhando uma explicação nova | H01 / hipótese de turmas pequenas (Entrega 3) | O Cenário C05 assume que a professora só descobre a dificuldade da turma depois da aula. É preciso confirmar se isso realmente acontece e se o tamanho reduzido da turma já resolve o problema sozinho | Definir se o indicador em tempo real é necessário também para turmas pequenas ou se o foco deve ser outro perfil de uso |
-| Quais sinais o professor usa (grade de vídeo, chat, respostas verbais, silêncio) e quanto confia em cada um | H01 | Permite saber quais sinais já são usados e quais são considerados pouco confiáveis, evitando criar um indicador que repita o que o professor já vê | Definir quais informações o indicador precisa trazer e quais seriam redundantes |
-| Quanto tempo se passa entre a dificuldade da turma acontecer e o professor perceber que ela existiu | H01 | Dimensiona o atraso real descrito no Cenário C05 e mostra se existe ganho em perceber a dificuldade ainda durante a aula | Definir a frequência de atualização do indicador e a urgência do alerta |
-| Como o compartilhamento de tela e as câmeras desligadas afetam a capacidade do professor de observar a turma | H01 | Verifica se a atenção dividida entre explicar, compartilhar e observar é o principal obstáculo, como sugerido na tarefa T04 | Definir posição, tamanho e nível de discrição do indicador durante o compartilhamento de tela |
-| Quanta atenção o professor consegue dedicar a uma informação extra enquanto explica, e o que seria considerado distração | H01 | A hipótese H01 depende de o indicador ser discreto; só o professor pode dizer o que atrapalha uma aula em andamento | Definir forma do alerta (visual, sonoro ou ambos), tamanho, cor e frequência de mudança |
-| O que o professor faz ao suspeitar que a turma não entendeu e o que o faz seguir em frente em vez de parar | H01 | Mostra o custo de parar a aula e o nível de certeza que o professor precisa ter para agir | Definir a partir de qual nível de indício o indicador deve chamar atenção e se deve sugerir alguma ação |
-| Como o professor reagiria a uma indicação automática que contradiz o que ele está percebendo da turma | H02 | Permite verificar se o professor confiaria na indicação e que informação o ajudaria a decidir | Definir se a confiança da classificação será exibida e em que formato |
-| Como alunos de turmas pequenas se sentiriam com a análise de sua imagem para estimar o acompanhamento da aula, e se o número reduzido de alunos muda essa percepção | H03 / hipótese de turmas pequenas (Entrega 3) | Em turma pequena, um resultado "do grupo" pode revelar facilmente o comportamento de cada aluno, o que aumenta o risco de exposição | Definir o número mínimo de participantes para exibir resultados agregados e o conteúdo do aviso de transparência |
-| Como o professor revisa a aula depois que ela termina e que informações usaria nessa revisão | H01 / H02 | Evita incluir no Dashboard pós-sessão informações que não apoiem nenhuma decisão real do professor | Definir o conteúdo e o nível de detalhe do Dashboard pós-sessão |
+| Perfil e frequência de condução de videoconferências | ?02 / ?03 | As necessidades podem variar entre docentes, instrutores e outros comunicadores. | Definir o público e o contexto prioritários. |
+| Sinais utilizados e dificuldade para acompanhar o público | H01 | Ainda é preciso verificar quais dificuldades ocorrem durante a apresentação. | Definir que apoio o indicador deve oferecer. |
+| Utilidade esperada, distração, momentos de consulta e ações diante dos indicadores | H01 | A informação precisa apoiar decisões sem prejudicar a condução da sessão. | Definir quando e como apresentar os indicadores. |
+| Informações consideradas úteis após a sessão | R03 / ?03 | O docente pode precisar de uma revisão posterior ou não ter essa necessidade. | Selecionar o conteúdo do resumo pós-aula. |
+| Necessidade de escolher ou reorganizar informações | H06 | Uma visualização fixa pode ser suficiente; a personalização precisa ter uma necessidade identificada. | Definir se e quais opções de personalização priorizar. |
+| Importância e formato preferido para comunicar incerteza | H02 | As estimativas podem estar erradas e ser interpretadas como certezas. | Definir explicações e formas de apresentar a confiança. |
+| Conforto, preocupações e informações desejadas antes de autorizar a análise | H03 | O processamento da imagem pode gerar desconforto ou recusa. | Definir avisos, informações de privacidade e controles de participação. |
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| Professores de idiomas ou de aulas particulares que lecionam on-line para turmas pequenas | Ter mais de 18 anos e conduzir aulas por videoconferência para grupos de aproximadamente 5 a 15 alunos, de forma recorrente | Representam diretamente a persona P02 (Camila Duarte) e o Cenário C05 |
-| Tutores, monitores e professores de reforço ou de cursos livres que atendem pequenos grupos on-line | Ter mais de 18 anos e conduzir sessões on-line com poucos participantes, mesmo fora do ensino de idiomas | Permitem verificar se a dificuldade descrita no Cenário C05 aparece também em outras áreas |
-| Alunos adultos de turmas pequenas on-line | Ter mais de 18 anos e já ter participado de aulas on-line com poucos colegas e uso de câmera | São afetados pelo processamento de imagem e são relevantes para investigar privacidade e transparência em turmas pequenas (H03) |
+| Professores e docentes | Já ter conduzido aulas síncronas por videoconferência | Público prioritário ligado a P01 e P02 |
+| Instrutores e facilitadores | Já ter conduzido cursos ou treinamentos por videoconferência | Perfil de contraste para investigar semelhanças e diferenças em relação ao ensino |
+| Palestrantes e apresentadores | Já ter conduzido apresentações remotas para grupos | Perfil de contraste para investigar variações de atividade e linguagem |
+| Comunicadores que conduzem reuniões de trabalho | Já ter conduzido reuniões por videoconferência | Perfil de contraste; sua inclusão não pressupõe que compartilhe as necessidades dos docentes |
 
 #### Aspectos éticos
 
-A participação deve ser **voluntária**, e o participante deve ser informado, antes de a entrevista começar, sobre o objetivo do estudo, a duração estimada, o fato de poder interromper ou deixar de responder qualquer pergunta a qualquer momento e quais dados serão registrados. O consentimento deve ser obtido de forma explícita e registrado antes de qualquer gravação.
+- **Consentimento:** apresentar o [termo de consentimento do I01](../instrumentos/termo-consentimento.md) antes das perguntas. Quem não aceitar não acessará o questionário.
+- **Voluntariedade:** a pessoa poderá interromper antes do envio e deixar questões opcionais sem resposta. Somente o aceite e a pergunta inicial de elegibilidade serão obrigatórios.
+- **Dados coletados:** respostas de alternativas, respostas abertas e registro do aceite. Não haverá captura ou processamento de imagem, áudio, vídeo ou tela nesta coleta.
+- **Privacidade:** não solicitar nome, e-mail, identificação de estudantes ou instituição de trabalho. Conferir a configuração do Forms antes da aplicação e ajustar o termo se houver alguma identificação obrigatória imposta pelo ambiente institucional.
+- **Respostas abertas:** orientar a não identificar terceiros; remover informações identificáveis antes de qualquer divulgação.
+- **Acesso e descarte:** acesso restrito à equipe. Descartar os registros individuais ao término da disciplina, preservando sínteses e trechos anonimizados. Não enviar respostas individuais ao GitHub.
+- **Interpretação:** tratar estados afetivo-cognitivos como estimativas na descrição da ferramenta. Não utilizar respostas para avaliação profissional ou punitiva.
+- **Limites da retirada:** esclarecer que, após o envio sem identificação nominal, pode não ser possível localizar uma resposta individual para excluí-la.
 
-A coleta deve ser feita apenas com **adultos**, pois turmas pequenas on-line podem incluir menores de idade e o estudo não prevê coletar dados desse público. Ao relatar situações vividas, o professor não deve citar nomes, imagens ou informações que identifiquem seus alunos, e a entrevistadora deve interromper e reorientar caso isso ocorra.
+### A02 — Isabella Rosseto
 
-As respostas devem ser **pseudonimizadas**, com códigos (por exemplo, E01, E02) no lugar de nomes. As gravações, quando autorizadas, devem ser usadas apenas para transcrição ou conferência das anotações e descartadas depois da análise.
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0
 
-Como o MindFlow envolve análise de imagens da webcam e inferência de estados afetivo-cognitivos, as perguntas sobre privacidade podem causar desconforto. O participante deve poder pular essas perguntas, e os resultados não devem ser tratados como diagnósticos ou avaliações definitivas sobre qualquer pessoa. A entrevistadora não deve apresentar o MindFlow como solução pronta, para não induzir aprovação.
+**Foco desta solução:** o momento **durante a aula** em que o comunicador introduz um conteúdo novo com a tela compartilhada e precisa decidir se reforça ou segue (persona P02, Cenário C05 e tarefa T03). A A01 investiga o comunicador de forma ampla; a A02 aprofunda essa decisão e verifica se a situação descrita nas Entregas 3 a 5 acontece de fato, já que foi construída sem contato com usuários reais.
 
-A amostra será de **conveniência**, formada por professores e alunos de acesso próximo à equipe, e será pequena. Por isso, os resultados indicam tendências e não permitem generalizar para todos os professores de turmas pequenas, e essa limitação deve constar na análise.
+#### Que dados coletar?
 
-> Repita A02, A03...
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Se o comunicador realmente deixa de perceber dificuldades da turma durante a aula e com que frequência isso acontece | H01 | O Cenário C05 e a jornada de Camila supõem esse problema; se ele for raro ou pouco relevante, o recorte em tempo real perde força | Manter o Semáforo Cognitivo como recorte principal ou priorizar o pós-sessão |
+| Quais sinais o comunicador usa hoje para perceber se a turma entendeu (rostos, silêncio, chat, respostas, exercícios) e qual considera mais confiável | H01 / H02 | Mostra o que o sistema precisaria complementar, e não substituir, e qual vocabulário o usuário usa para descrever esses sinais | Rótulos dos estados, linguagem da interface e quais estados merecem destaque |
+| Como a tela compartilhada afeta a observação da turma (onde fica a grade de vídeo, quantos monitores usa, quando deixa de olhar os alunos) | H01 / C05 (Q1) | Define o espaço e o momento em que um indicador poderia ser visto sem atrapalhar a explicação | Posição, tamanho e discrição do indicador durante o compartilhamento de tela |
+| Critério usado para decidir entre seguir o plano e reforçar o conteúdo, e o custo percebido de cada opção | H01 / C05 (Q4) | A T03 mostra que a decisão é tomada com sinais fracos e tende a favorecer seguir em frente; é preciso confirmar se isso acontece | Se o sistema deve apenas indicar que algo merece atenção ou também oferecer apoio à decisão (sem prescrever a ação, conforme RC03) |
+| Alternativas que o comunicador já usa ou evita para checar a compreensão (chamar pelo nome, pedir um exemplo, enquete, chat) e por quê | C05 (Q5) | Mostra estratégias atuais e o receio de expor alunos, que pode tornar um sinal agregado mais aceitável | Se o indicador deve ser agregado e discreto, e se precisa conviver com ferramentas já usadas |
+| Quanto o comunicador confiaria em um sinal externo que contradiz sua própria percepção e o que precisaria saber para confiar | H02 | Verifica se mostrar confiança/qualidade da inferência ajuda ou apenas aumenta a carga durante a aula | Exibir ou não a confiança, e de que forma (percentual, faixa, ícone ou só no pós-sessão) |
+| Se o tamanho da turma muda a dificuldade de perceber a compreensão (turma pequena x turma grande) | Hipótese nova sobre turmas pequenas (Entrega 3) | O recorte de 5 a 15 alunos da persona P02 nunca foi verificado; em turma pequena, um indicador agregado pode ser pouco útil ou expor alunos | Número mínimo de participantes para exibir o indicador agregado e como tratar turmas muito pequenas |
+| Percepção do comunicador sobre como os alunos reagiriam a ter a câmera analisada e o que ele se sentiria confortável em explicar a eles | H03 | O comunicador é quem ativa a ferramenta e responde aos alunos; se ele próprio se sentir desconfortável, não a usará | Conteúdo do aviso aos participantes, controle de ativar/desligar (RC07) e materiais de explicação para o comunicador |
+| Como e quando o comunicador descobre depois que a turma não entendeu e o que faz com essa informação | H01 / C05 (Q7) / R03 | Mostra se uma revisão pós-sessão teria utilidade real ou se o exercício corrigido já cumpre esse papel | Necessidade, conteúdo e nível de detalhe do Dashboard pós-sessão |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Professores de idiomas que dão aula on-line para turmas pequenas | Ministrar aulas síncronas por videoconferência para turmas de até 15 alunos, há pelo menos 6 meses, usando compartilhamento de tela | Corresponde diretamente à persona P02 (Camila) e ao Cenário C05 |
+| Professores de outras disciplinas com aulas on-line síncronas (ensino superior, cursos livres ou EAD) | Ministrar aulas síncronas por videoconferência com turmas de tamanhos variados, preferencialmente acima de 15 alunos | Permite comparar com P01 (Karol) e verificar se o problema depende do tamanho da turma |
+| Instrutores de treinamento corporativo on-line (participante de contraste) | Conduzir treinamentos síncronos por videoconferência | Ligado a P03 (Nathanael); serve para verificar se as necessidades da A02 aparecem fora do ensino |
+
+Critério de exclusão: pessoas que nunca conduziram sessões síncronas por videoconferência. Não serão entrevistados alunos menores de idade.
+
+**Limitação da amostra:** o acesso a professores de idiomas pode ser difícil; nesse caso, serão usados professores da própria instituição ou conhecidos da equipe como participantes proxy, por conveniência. Essa limitação será registrada junto aos resultados, que não serão generalizados para todos os comunicadores.
+
+#### Aspectos éticos
+
+- **Dados envolvidos neste projeto:** relatos sobre a própria prática docente e, de forma indireta, sobre alunos e situações de sala de aula. O MindFlow analisa imagens de webcam, mas **esta coleta não usa câmera, imagem ou qualquer classificação de estados**: apenas conversa.
+- **Voluntariedade e relação de poder:** se o entrevistado for professor da própria instituição da equipe, deve ficar claro que recusar ou desistir não traz consequência alguma, inclusive acadêmica. A participação pode ser interrompida a qualquer momento, sem justificativa.
+- **Consentimento:** o objetivo, a duração (cerca de 40 minutos) e o uso dos dados serão lidos no início (texto do roteiro I02), com aceite registrado antes de qualquer pergunta, seguindo o [modelo de termo de consentimento](../instrumentos/termo_consentimento_modelo.md).
+- **Risco de constrangimento:** falar de aulas em que "a turma não entendeu" pode soar como avaliação da didática do professor. O roteiro deixa explícito que se investiga a situação, e não o desempenho dele, e permite pular qualquer pergunta.
+- **Terceiros citados:** o professor pode mencionar alunos. Será pedido que não use nomes; se aparecerem, serão removidos na transcrição. Nenhum dado de aluno será solicitado.
+- **Minimização:** não serão coletados nome completo, instituição, idade exata ou contato além do necessário para agendar. O perfil é registrado por faixas (tempo de docência, tamanho da turma).
+- **Gravação:** somente áudio, e somente com autorização específica. Sem autorização, a entrevista ocorre com anotações. Não haverá gravação de vídeo.
+- **Anonimização, armazenamento e descarte:** cada participante recebe um código (E01, E02...). Áudios e transcrições ficam em pasta de acesso restrito à equipe; os áudios são apagados após a transcrição revisada e as transcrições, ao final da disciplina. No repositório entram apenas trechos anonimizados e a síntese.
+- **Uso dos resultados:** os relatos servem para decisões de design e para confirmar ou refutar hipóteses; não serão usados para avaliar professores ou instituições.
+
+### A03 — Gustavo Bertoluzzi
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2
+
+**Foco desta solução:** o **participante** da videochamada (persona P05, Cenário C03 e tarefa T04). A01 e A02 investigam o comunicador; a A03 investiga quem tem a imagem analisada, principalmente a hipótese H03 e o que a interface de transparência e participação precisa comunicar.
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Como o aluno decide hoje se liga a câmera e se participa (fatores, momentos, regras percebidas) | H03 / C03 (Q4) | Mostra o comportamento atual antes de qualquer análise automática; se a câmera já é pouco usada, o sinal do MindFlow será fraco | Como a interface trata câmeras desligadas e quantos participantes contribuem para o agregado |
+| Que regras e consequências o aluno acredita existir sobre câmera e participação, e de onde tira essa informação | C03 (Q1, Q2) | Separa medo baseado em regra real de medo por falta de informação | Conteúdo do aviso de análise ativa e das informações de transparência |
+| Grau de conforto com a análise automática da própria imagem durante a aula, e o que aumenta ou reduz esse conforto (agregação, processamento local, quem vê o resultado) | H03 | É o núcleo da hipótese: pode tornar o produto inviável ou exigir controles adicionais | Requisitos de consentimento, transparência e controle do participante |
+| O que o aluno precisa saber antes de aceitar participar da análise e em que momento quer saber | H03 / T04 | Define o conteúdo mínimo e o momento do aviso (ao entrar, antes da aula, no plano de ensino) | Texto e momento do aviso; nível de detalhe das informações completas |
+| Se o aluno quer poder pausar ou recusar a análise sem desligar a câmera e se isso mudaria seu comportamento | H03 / T04 (tarefas marcadas como [H]) | T04 supõe essas opções; é preciso saber se são desejadas e se seriam usadas | Manter, alterar ou remover as opções de pausa/recusa |
+| Se o aluno gostaria de conferir depois o que foi processado sobre a aula e o que esperaria ver | C03 (Q7) / T04 (tarefa 4) | Verifica se o resumo de transparência pós-aula tem valor ou é dispensável | Inclusão e conteúdo do resumo de transparência |
+| Como o aluno interpreta resultados agregados da turma e se acredita que eles podem identificá-lo, principalmente em turmas pequenas | H03 / H05 | Agregação é a principal proteção prevista; se não for percebida como proteção, a transparência precisa explicar melhor | Número mínimo de participantes e explicação sobre agregação |
+| Vocabulário que o aluno usa para falar de "estar sendo analisado" (monitorado, avaliado, observado) | ?04 / H03 | Evita termos que aumentem a sensação de vigilância | Rótulos e textos da interface do participante |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Alunos de graduação que assistem aulas síncronas por videoconferência | Maiores de 18 anos, com pelo menos uma disciplina on-line síncrona no último ano | Corresponde diretamente à persona P05 (Bruno) e ao Cenário C03 |
+| Alunos de cursos livres on-line, como idiomas, em turmas pequenas | Maiores de 18 anos, em turmas de até 15 alunos | Liga o participante ao contexto de P02 (Camila) e à hipótese H05 |
+| Participantes de treinamentos corporativos on-line (contraste) | Funcionários que participaram de treinamento síncrono por videoconferência | Liga ao contexto de P03 (Nathanael), em que hierarquia e avaliação de desempenho podem aumentar o desconforto |
+
+Critério de exclusão: menores de 18 anos e alunos que nunca participaram de aula síncrona on-line. Os grupos serão formados por perfil (não misturar alunos com funcionários), para que ninguém se sinta constrangido diante de colegas de outro contexto.
+
+**Limitação da amostra:** o acesso mais fácil é a colegas da própria instituição, o que tende a gerar uma amostra de estudantes de tecnologia, mais familiarizados com IA. Essa limitação será registrada, e os resultados não serão generalizados para todos os participantes de videoconferência.
+
+#### Aspectos éticos
+
+- **Sensibilidade do tema:** a coleta pede que os participantes falem sobre desconforto, vigilância e medo de avaliação. O roteiro não pede que ninguém revele notas, desempenho ou situações pessoais, e qualquer pergunta pode ser pulada.
+- **Grupo focal e confidencialidade:** em grupo, o que um participante diz é ouvido pelos outros. No início, será combinado que nada do que for dito sai do grupo e que exemplos devem ser contados sem nomes de professores, colegas ou disciplinas. Mesmo assim, será informado que a equipe não consegue garantir a confidencialidade entre participantes.
+- **Relação de poder:** os moderadores são estudantes da mesma instituição. Não serão convidados alunos de turmas em que um integrante da equipe seja monitor, e fica explícito que participar ou não, e o que se diz, não tem nenhuma consequência acadêmica.
+- **Sem demonstração com câmera:** a sessão não usa nenhuma análise de imagem. A ideia do MindFlow é apresentada só por descrição e cartões de texto, e as câmeras dos participantes podem ficar desligadas.
+- **Consentimento:** lido no início e registrado individualmente antes da discussão, conforme o [modelo de termo de consentimento](../instrumentos/termo_consentimento_modelo.md), incluindo autorização separada para gravação de áudio.
+- **Minimização:** são registrados apenas curso/contexto em categoria ampla e faixa de experiência com aulas on-line. Não são coletados nome completo, RA, idade exata ou turma.
+- **Gravação, anonimização e descarte:** somente áudio e somente se **todos** do grupo autorizarem; caso contrário, apenas anotações. Cada participante recebe um código (G1-P1, G1-P2...). O áudio é apagado após a transcrição revisada, as transcrições ao fim da disciplina, e no repositório entram só trechos anonimizados e a síntese.
+
+
+
+### A04 — Rafael Dias
+
+**Autor(a):** Rafael Dias — 22.222.039-4
+
+**Foco desta solução:** o uso **após a aula** do MindFlow AI pelo docente EAD para revisar o resumo da reunião, interpretar os indicadores agregados, identificar momentos críticos e definir ajustes para aulas futuras. A A04 complementa as soluções anteriores ao investigar o valor do **dashboard histórico** e das **opções de personalização da visualização**.
+
+A proposta está relacionada à tarefa de configurar o acompanhamento após uma aula, permitindo investigar se as necessidades de análise e personalização previstas no projeto correspondem às práticas reais dos docentes.
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Quais indicadores o docente considera mais úteis após a aula (engajamento, confusão, frustração, tédio e evolução ao longo do tempo) | H01 | Permite compreender quais informações são relevantes para a análise pós-sessão, sem pressupor que todos os indicadores tenham a mesma importância | Definir os indicadores principais do resumo e do dashboard histórico |
+| Como o docente costuma avaliar uma aula após seu encerramento e quais ferramentas utiliza atualmente | H01 | Verifica se a revisão pós-aula já faz parte da rotina docente e quais necessidades não são atendidas pelas ferramentas existentes | Decidir se o dashboard histórico complementa práticas existentes e quais funcionalidades devem ser priorizadas |
+| Em que nível de detalhe o docente deseja revisar a aula (resumo geral, intervalos de tempo ou momentos específicos) | H01 / H02 | Ajuda a compreender se um panorama geral é suficiente ou se existe necessidade de investigar acontecimentos específicos | Definir a granularidade da linha do tempo, dos gráficos e dos filtros |
+| Como o docente identifica momentos críticos durante uma aula e quais evidências considera necessárias para interpretar esses acontecimentos | H02 | Permite entender quais informações tornam as classificações da IA compreensíveis e confiáveis | Definir se o sistema deve apresentar explicações, indicadores de incerteza e marcadores temporais |
+| Que decisões o docente toma após identificar aumento de confusão, frustração ou queda de engajamento | H01 | Investiga se a análise posterior contribui para decisões pedagógicas concretas ou se os indicadores possuem apenas valor informativo | Definir funcionalidades de apoio à reflexão pedagógica e ao planejamento de aulas futuras |
+| Se o docente considera útil comparar resultados de diferentes aulas, turmas ou períodos | H01 | Permite investigar se a comparação histórica representa uma necessidade real, em vez de presumir sua utilidade | Definir necessidade de comparações entre reuniões e filtros por período |
+| Quais informações o docente gostaria de manter, ocultar ou reorganizar ao consultar o resumo de uma reunião | H01 / R03 | Investiga a necessidade de personalização prevista nas tarefas de IHC e verifica quais opções seriam utilizadas na prática | Definir o escopo da edição e personalização do resumo e do dashboard |
+| Se o docente precisa registrar observações ou destacar acontecimentos específicos durante a análise | H01 | Permite compreender se a interpretação dos indicadores precisa ser associada a registros qualitativos do próprio docente | Definir necessidade de anotações, marcações e registros associados aos gráficos |
+| Se o docente precisa exportar, compartilhar ou consultar posteriormente os resultados de uma aula | H01 | Verifica se a atividade de análise termina na consulta individual ou continua em processos de acompanhamento pedagógico | Definir necessidade de relatórios, exportação e compartilhamento |
+| Como o docente interpreta os termos engajamento, tédio, confusão e frustração e quais considera mais claros | H02 | Permite verificar se o vocabulário técnico utilizado pelo sistema corresponde à linguagem e à compreensão do usuário | Refinar rótulos, descrições, legendas e explicações dos indicadores |
+| Quais cuidados o docente considera necessários para evitar exposição individual dos estudantes | H03 | A análise histórica pode gerar riscos de identificação e utilização inadequada das informações | Definir nível de agregação, anonimização, transparência e regras de acesso aos resultados |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Docentes do ensino superior ou EAD | Conduzir aulas síncronas por videoconferência e possuir experiência com avaliação ou revisão de atividades após as aulas | Corresponde diretamente à persona P01, docente EAD, principal público da análise pós-sessão |
+| Professores que utilizam dashboards ou relatórios educacionais | Ter experiência na consulta de indicadores de aprendizagem, participação ou desempenho de turmas | Permite compreender expectativas sobre apresentação de informações, filtros, gráficos e comparações |
+| Docentes que não utilizam dashboards educacionais | Conduzir aulas on-line e realizar algum tipo de reflexão ou avaliação posterior, mesmo sem ferramentas específicas | Permite investigar se a ausência de dashboards decorre de falta de necessidade, dificuldade de uso ou desconhecimento das ferramentas |
+| Instrutores corporativos ou facilitadores de treinamentos on-line | Conduzir treinamentos síncronos por videoconferência e revisar seus resultados após as sessões | Representa um público secundário e permite verificar se as necessidades de análise posterior também aparecem fora do contexto acadêmico |
+
+**Critério de exclusão:** pessoas que nunca conduziram sessões síncronas por videoconferência ou que não possuem experiência com acompanhamento, reflexão ou avaliação de atividades realizadas após essas sessões.
+
+**Limitação da amostra:** o acesso aos participantes tende a ocorrer por conveniência, principalmente entre docentes próximos à instituição e profissionais familiarizados com tecnologias educacionais. Essa característica pode favorecer respostas de pessoas com maior experiência em ferramentas digitais.
+
+Para reduzir essa limitação, recomenda-se incluir docentes com diferentes níveis de familiaridade tecnológica e experiências variadas com análise de resultados educacionais.
+
+As conclusões deverão considerar o perfil efetivamente alcançado, sem generalizar os resultados para todos os professores ou instrutores.
+
+#### Aspectos éticos
+
+- **Participação voluntária:** os participantes devem receber explicações claras sobre o objetivo da pesquisa, os dados coletados e sua utilização exclusivamente acadêmica. A participação poderá ser interrompida a qualquer momento, sem justificativa ou consequência.
+
+- **Consentimento informado:** antes da coleta, deve ser apresentado o termo de consentimento previsto no projeto, esclarecendo os procedimentos da pesquisa, a finalidade das respostas e as condições de armazenamento das informações.
+
+- **Privacidade dos estudantes:** como a investigação envolve relatos sobre aulas e indicadores de comportamento, os participantes devem ser orientados a não mencionar nomes de estudantes, turmas identificáveis ou informações que permitam reconhecer indivíduos.
+
+- **Proteção dos docentes:** as respostas não devem ser utilizadas para avaliar ou comparar o desempenho profissional dos participantes. A pesquisa busca compreender necessidades de interação e não julgar práticas pedagógicas.
+
+- **Interpretação dos indicadores:** os estados afetivo-cognitivos estimados pelo MindFlow AI não devem ser tratados como diagnósticos, avaliações definitivas ou medidas individuais de aprendizagem. Os indicadores representam estimativas que precisam ser interpretadas considerando o contexto da aula.
+
+- **Minimização dos dados:** devem ser coletadas somente informações necessárias para compreender as necessidades dos usuários. Dados como nome completo, instituição, idade exata e identificação dos estudantes não são necessários para a análise.
+
+- **Anonimização e armazenamento:** os participantes devem ser identificados por códigos, como R01, R02 e R03. As respostas devem permanecer em ambiente com acesso restrito à equipe responsável pelo estudo.
+
+- **Gravações:** qualquer gravação de áudio deverá ocorrer somente com autorização específica. Caso o participante não autorize, a coleta poderá ser realizada exclusivamente por anotações.
+
+- **Descarte das informações:** gravações devem ser excluídas após a transcrição e conferência. Os registros individuais deverão ser descartados ao final da disciplina ou quando deixarem de ser necessários, mantendo-se apenas resultados agregados e anonimizados.
+
+- **Uso responsável dos resultados:** as descobertas deverão apoiar decisões de design relacionadas à compreensão, personalização e utilização dos indicadores, sem incentivar mecanismos de vigilância ou avaliação punitiva de estudantes e docentes.
+
+
+### A05 — Matheus Ferreira de Freitas
+
+**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5
+
+**Foco desta solução:** o comunicador **comercial** (persona P04, Cenário C01 e tarefa T05): o vendedor B2B que apresenta uma proposta por videochamada, com a tela compartilhada, para clientes de outra empresa. A A01 investiga o comunicador em geral e a A02, o professor em aula; a A05 verifica se o recorte comercial, que não consta como situação concreta na Entrega 1 e foi construído sem contato com vendedores reais, acontece de fato e como acontece em reuniões reais. É isso que decide se ele continua no escopo do projeto (dúvidas ?02 e ?03).
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Se o vendedor B2B realmente apresenta propostas por videochamada com a tela compartilhada durante quase toda a reunião e com que frequência fica em dúvida sobre a reação dos clientes | ?02 / ?03 / H01 | P04 e C01 foram construídos sem contato com vendedores reais; se a situação for rara, o recorte comercial perde prioridade | Manter o contexto comercial como variação do produto ou concentrar o projeto no ensino on-line |
+| Pressões e recursos de cada reunião: quem define o tempo, um ou dois monitores, vendedor sozinho ou com um colega, e em que trechos da pauta a observação dos clientes é mais difícil | C01 (Q1) | Define as condições em que um apoio à percepção teria de funcionar; hoje são hipóteses de refinamento | Momento e posição do indicador durante o compartilhamento; se precisa funcionar em uma única tela |
+| Quem participa do lado do cliente (papéis), de quem depende a decisão e se a reação de uma pessoa específica pesa mais do que a do grupo | C01 (Q2) / H05 | Reuniões comerciais têm poucos participantes, e o que importa pode ser a reação do decisor, que um agregado do grupo não mostra | Se um indicador agregado faz sentido em grupos de 2 a 6 pessoas e o que ele não deve pretender mostrar (reação individual) |
+| Objetivos que competem com a leitura da reação (identificar objeções, garantir o próximo passo, cumprir a pauta) e o que o vendedor precisa saber ao sair da reunião | C01 (Q3) | Separa a necessidade de "ler a reação" das outras coisas que ocupam a atenção do vendedor durante a fala | Quanta atenção o indicador pode exigir e o que precisa constar de um resumo da reunião |
+| Sinais usados hoje para perceber a reação (rostos na grade reduzida, resposta às pílulas de dúvida, perguntas, chat, silêncio) e ações usadas para provocar reação, com seu custo em tempo e constrangimento | C01 (Q5) / H01 | A T05 modela quatro canais (operações 3.1 a 3.4) a partir de hipóteses; é preciso saber quais são usados, quais são evitados e por quê | Que tipo de sinal o sistema deve complementar, e não substituir; vocabulário dos rótulos |
+| Critério usado para decidir, no momento, entre seguir, reexplicar, mudar o discurso ou anotar para o follow-up, inclusive quando alguns clientes reagem e outros ficam em silêncio | C01 (Q4) / RC03 | A T05 supõe que a decisão depende de quem reagiu, do tempo restante e da importância do ponto; se o critério for outro, o apoio à decisão muda | Indicar que algo merece atenção sem prescrever a ação; qual informação acompanha o alerta |
+| Acontecimentos que mudam o rumo da reunião (pergunta inesperada, objeção, participante que sai ou desliga a câmera, mensagem no chat, aviso de tempo, falha técnica) e como o vendedor reage a cada um | C01 (Q6) | Os eventos competem com a observação do grupo e definem quando a decisão precisa ser tomada | Quando o indicador deve ficar em segundo plano e como tratar câmeras desligadas e saídas da chamada |
+| Quanto o vendedor confia na própria leitura ao final da reunião e se essa leitura se confirma no retorno do cliente, dias depois | H02 / C01 (Q7) | É a única forma de saber se a leitura estava errada; na T05, a avaliação só acontece no follow-up (operação 6.3) | Se e quando mostrar a confiança da classificação; conteúdo do resumo pós-reunião (R03) |
+| Como o vendedor registra hoje as percepções e o próximo passo (CRM, anotações, e-mail) e o que gostaria de ter percebido durante a reunião | C01 (Q7) / R03 | Mostra se um resumo pós-reunião teria uso real e onde se encaixaria na rotina, sem supor dashboard ou relatório | Necessidade e formato do resumo pós-sessão no contexto comercial |
+| Como o vendedor acha que clientes de outra empresa reagiriam a ter a imagem analisada e o que ele precisaria explicar ou pedir antes da reunião | H03 / F08 | Em reunião comercial os participantes são externos: o consentimento tem custo comercial e pode inviabilizar o uso | Forma de aviso e consentimento para participantes externos; se é necessário um modo sem análise |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Vendedores e executivos de contas B2B | Apresentar propostas a clientes empresariais por videochamada com tela compartilhada, pelo menos uma vez por semana, há pelo menos 6 meses | Corresponde diretamente à persona P04 (Manoel) e ao Cenário C01 |
+| Pré-vendas e consultores técnicos que participam das apresentações | Acompanhar apresentações comerciais apoiando o vendedor (demonstração, dúvidas técnicas) | Ator previsto no C01 (Q1 e Q2) como possível apoio na observação dos clientes; verifica se alguém mais observa o grupo |
+| Vendedores que alternam reuniões presenciais e on-line (contraste) | Conduzir apresentações comerciais nos dois formatos | Permite separar o que é próprio da videochamada (grade reduzida, câmeras desligadas) do que é próprio da venda |
+| Gestores comerciais que acompanham follow-ups (contraste, opcional) | Acompanhar o resultado das propostas e os registros no CRM | Ligado a R03: mostra o que é registrado hoje depois da reunião e para quem |
+
+**Critério de exclusão:** vendedores que atendem apenas consumidores finais (B2C) ou que não apresentam por videochamada. Ninguém do lado do cliente será contatado: as reuniões não são observadas nem gravadas.
+
+**Limitação da amostra:** o acesso será por conveniência, por contatos profissionais da equipe, provavelmente concentrados em empresas de tecnologia e serviços. O setor será registrado em categoria ampla, e os resultados não serão generalizados para todo vendedor B2B. Se não houver vendedores suficientes, serão aceitos como participantes proxy profissionais que apresentam propostas internas a outras áreas por videochamada, com a diferença registrada junto aos resultados.
+
+#### Aspectos éticos
+
+- **Dados envolvidos neste projeto:** relatos do próprio vendedor sobre reuniões com clientes de outras empresas. O maior risco não recai sobre quem participa, e sim sobre terceiros: clientes, empresas, propostas e valores. Esta coleta não observa nem grava reuniões, não acessa CRM ou e-mails e não usa câmera nem classificação de estados.
+- **Confidencialidade comercial:** o diário pede apenas categorias amplas (tipo de produto, parte da proposta em que houve dúvida) e nunca nomes de clientes, empresas, valores ou conteúdo da proposta. O texto de abertura orienta isso, o participante é lembrado de não registrar nada que o contrato com o cliente ou a política da empresa proíba, e qualquer dado que escape é removido antes do armazenamento.
+- **Voluntariedade e relação com o empregador:** a participação é individual e não passa pela empresa do vendedor; nenhum registro é compartilhado com gestores. Registrar reuniões difíceis não é avaliação de desempenho, e o participante pode deixar de registrar qualquer reunião ou sair do estudo a qualquer momento, sem justificativa.
+- **Consentimento:** o texto de abertura do I05 é lido na conversa inicial, e o aceite é registrado por escrito antes do primeiro registro, seguindo o [modelo de termo de consentimento](../instrumentos/termo_consentimento_modelo.md). Cada registro é voluntário: qualquer item pode ficar em branco.
+- **Minimização:** o perfil é registrado por faixas (tempo em vendas, reuniões por semana); não são coletados nome completo, empresa, cargo exato ou dados de clientes. O contato serve só para combinar o período e enviar lembretes, e é descartado ao final.
+- **Carga sobre o participante:** cada registro leva até 10 minutos, o período é de duas semanas e são registradas no máximo oito reuniões; os lembretes são espaçados e não cobram registros.
+- **Armazenamento, anonimização e descarte:** cada participante recebe um código (D01, D02...) e cada reunião registrada, um número (D01-R1, D01-R2...). Os registros são copiados para a pasta de acesso restrito da equipe e apagados do canal de envio; os registros individuais são descartados ao fim da disciplina, e no repositório entram só a síntese e trechos anonimizados.
+- **Interpretação e uso dos resultados:** os relatos servem para decisões de design e para confirmar, refutar ou refinar hipóteses; não serão usados para avaliar vendedores ou empresas. Os estados afetivo-cognitivos do MindFlow são tratados como estimativas na descrição do sistema, apresentada ao participante só no registro de encerramento.
+- **Limites da retirada:** o participante pode pedir a exclusão dos seus registros pelo código até o fim da disciplina; depois da síntese, os trechos já não permitem identificá-lo.
 
 ## Parte B — ferramentas de coleta
 
 > Cada integrante deve preparar uma técnica/instrumento completo. As técnicas devem ser diferentes entre si e **questionário deve estar entre as técnicas escolhidas**, conforme o enunciado da disciplina.
 
-### Instrumento I01 — Entrevista semiestruturada
+### Instrumento I01 — Questionário
 
-**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
-**Técnica:** Entrevista semiestruturada individual por videoconferência  
-**Objetivo:** Compreender, a partir de situações reais vividas, como professores de turmas pequenas percebem hoje se a turma está acompanhando uma explicação, em que momento descobrem as dificuldades e que informações consideram úteis, confiáveis e aceitáveis em termos de privacidade, para verificar se o cenário do Cenário C05 faz sentido.  
-**Público:** Professores, tutores e instrutores adultos que conduzem aulas on-line para turmas pequenas (aproximadamente 5 a 15 alunos). Pode ser aplicada, com os blocos 1 e 5 adaptados, a alunos adultos de turmas pequenas.
+**Autor(a):** Kayky Pires — 22.222.040-2  
+**Técnica:** Questionário on-line  
+**Objetivo:** Investigar como comunicadores percebem o estado do público durante videoconferências, quais informações consideram úteis durante e após a sessão e suas percepções sobre confiança da IA e privacidade.  
+**Público:** Professores, instrutores, palestrantes e outros comunicadores que conduzem atividades por videoconferência.
 
 #### Procedimento padronizado de aplicação
 
-1. **Preparação:** convidar o participante informando o tema, a duração estimada (cerca de 30 minutos) e que a participação é voluntária; agendar a entrevista por videoconferência, no horário escolhido por ele, com uma entrevistadora e, se possível, uma pessoa da equipe apenas para anotar; realizar uma entrevista-piloto com alguém próximo à equipe para ajustar clareza das perguntas e tempo.
-2. **Apresentação/consentimento:** ler o texto de abertura e obter o consentimento verbal explícito, inclusive para gravar. Se o participante não autorizar a gravação, registrar apenas anotações.
-3. **Aplicação:** conduzir as perguntas na ordem dos blocos, usando o aprofundamento somente quando a resposta for vaga e pedindo sempre exemplos de situações reais recentes. Não sugerir respostas, não corrigir o participante e não apresentar o MindFlow nem o Semáforo Cognitivo antes de concluir os blocos 2 e 3.
-4. **Encerramento:** perguntar se o participante deseja acrescentar algo, ler o texto de encerramento, agradecer e informar como os dados serão usados.
-5. **Armazenamento/anonimização:** em até 24 horas, organizar as anotações (e a transcrição, quando houver gravação), substituir o nome do participante por um código (E01, E02...), guardar o material em local de acesso restrito à equipe e apagar as gravações depois da análise.
+1. **Preparação:** revisar perguntas e configurações, realizar um preenchimento piloto e convidar os perfis da A01 por contatos acadêmicos e profissionais. Registrar o período e os canais de divulgação.
+2. **Apresentação/consentimento:** informar o objetivo e as condições do estudo e apresentar o termo. Sem aceite, encerrar o formulário.
+3. **Aplicação:** confirmar a experiência de condução; caso não exista, encerrar. Apresentar as perguntas na ordem definida, sem orientar respostas, respeitando os tipos e as opções exclusivas. Apenas o aceite e a elegibilidade serão obrigatórios.
+4. **Encerramento:** agradecer, informar o uso acadêmico das respostas e disponibilizar o contato da equipe.
+5. **Armazenamento/anonimização:** separar piloto e aplicação, considerar apenas respostas elegíveis, remover dados identificáveis e manter acesso restrito. Descartar registros individuais ao término da disciplina, conforme o termo.
+
 
 #### Instrumento
 
-O roteiro tem **20 perguntas em 5 blocos**, aplicadas nesta ordem. A coluna "Aprofundamento" só deve ser usada se a resposta for vaga. A coluna "Hipótese" é de uso interno da equipe e **não** deve ser lida ao participante.
-
-**Texto de abertura (lido pela entrevistadora antes da pergunta 1):**
-
-> Olá, obrigada por participar. Eu faço parte de um grupo de estudantes que está estudando como professores percebem se a turma está acompanhando a aula durante videoconferências. Não existe resposta certa ou errada: o objetivo é entender como as coisas acontecem na prática.
->
-> A conversa dura cerca de 30 minutos. Sua participação é voluntária, você pode deixar de responder qualquer pergunta e pode parar a qualquer momento. Gostaria de gravar a conversa apenas para conferir minhas anotações; a gravação será usada só pela nossa equipe e apagada depois da análise, e seu nome não aparecerá em nenhum resultado. Por favor, não cite nomes nem dados que identifiquem seus alunos.
->
-> Você concorda em participar? Você autoriza a gravação?
-
-**Bloco 1 — Perfil e contexto (aquecimento)**
-
-| # | Pergunta | Aprofundamento | Hipótese |
-|---|---|---|---|
-| 1 | Que tipo de aulas você ministra on-line e há quanto tempo? | — | contexto |
-| 2 | Quantos alunos costuma ter em cada turma e com que frequência vocês se encontram? | — | contexto |
-| 3 | Quais ferramentas de videoconferência você usa? Você costuma compartilhar a tela durante a explicação? | — | contexto |
-| 4 | Os alunos costumam abrir a câmera? Como isso varia entre as aulas? | — | contexto |
-
-**Bloco 2 — Percepção da turma durante a aula**
-
-| # | Pergunta | Aprofundamento | Hipótese |
-|---|---|---|---|
-| 5 | Pense na última vez em que você explicou um conteúdo novo. Como você ficou sabendo se a turma estava acompanhando? | O que você olhava ou ouvia naquele momento? | H01 |
-| 6 | Que sinais da turma você considera mais confiáveis para saber se entenderam? E quais considera menos confiáveis? Por quê? | — | H01 |
-| 7 | Já aconteceu de você achar que a turma tinha entendido e depois perceber que não? Conte como foi. | Quando e como você descobriu? O que mudou na aula seguinte? | H01 |
-| 8 | Enquanto você explica e compartilha a tela, como é acompanhar a turma ao mesmo tempo? | — | H01 |
-| 9 | Quando você desconfia que parte da turma não entendeu, o que costuma fazer? O que pesa na sua decisão de parar para reforçar ou de seguir em frente? | — | H01 |
-| 10 | O fato de a sua turma ter poucos alunos facilita ou dificulta perceber como cada um está? Por quê? | — | H01 (turmas pequenas) |
-
-**Bloco 3 — Informação durante e depois da aula**
-
-| # | Pergunta | Aprofundamento | Hipótese |
-|---|---|---|---|
-| 11 | Existe algum momento da aula em que você sente falta de informações sobre a turma? E algum momento em que qualquer informação extra atrapalharia? | — | H01 |
-| 12 | Se, durante a aula, você pudesse receber alguma informação adicional sobre a turma, em qualquer formato, o que seria útil saber? O que seria inútil ou atrapalharia? | — | H01 |
-| 13 | Depois que a aula termina, você revisa algo para avaliar como ela foi? O quê e como? | — | H01 |
-
-**Bloco 4 — Confiança em informações automáticas**
-
-| # | Pergunta | Aprofundamento | Hipótese |
-|---|---|---|---|
-| 14 | Imagine que uma ferramenta automática indicasse que a turma está com dificuldade, mas o que você está vendo na tela parece diferente. No que você confiaria? Por quê? | — | H02 |
-| 15 | Que informação ajudaria você a decidir se acredita ou não nessa indicação? | — | H02 |
-
-**Bloco 5 — Privacidade e transparência**
-
-| # | Pergunta | Aprofundamento | Hipótese |
-|---|---|---|---|
-| 16 | Como você imagina que seus alunos se sentiriam se soubessem que a imagem da câmera deles poderia ser analisada por um programa para estimar o quanto estão acompanhando a aula? | — | H03 |
-| 17 | O que você acharia aceitável e o que não acharia aceitável nesse tipo de análise? Há diferença entre ver o resultado do grupo e ver o resultado de cada aluno? | — | H03 |
-| 18 | O número de alunos da turma muda algo na sua opinião sobre isso? O quê? | — | H03 (turmas pequenas) |
-| 19 | O que você sentiria necessidade de explicar aos alunos antes de usar algo assim? | — | H03 |
-
-**Fechamento**
-
-| # | Pergunta | Aprofundamento | Hipótese |
-|---|---|---|---|
-| 20 | Há algo importante sobre esse assunto que eu não perguntei? | — | — |
-
-**Texto de encerramento (lido pela entrevistadora):**
-
-> Muito obrigada. Vou organizar as anotações sem identificar você e usar o que conversamos apenas neste trabalho acadêmico.
+[**Link do formulário I01**](https://forms.cloud.microsoft/r/fHf6y8q6ZK)
 
 #### Como os dados serão analisados
 
-As anotações e transcrições serão analisadas por **codificação temática**: cada resposta será associada a categorias como sinais usados para perceber a turma, momento e atraso na descoberta da dificuldade, efeito do compartilhamento de tela e das câmeras desligadas, critérios para parar ou seguir, informações desejadas durante e após a aula, confiança em indicações automáticas e privacidade em turmas pequenas.
+1. **Organização da base:** separar as respostas do piloto das respostas da aplicação. Considerar na análise somente os registros de pessoas que aceitaram participar e atendem ao critério de experiência de condução. Registrar respostas ausentes por pergunta e remover informações identificáveis eventualmente mencionadas nos campos abertos.
 
-As perguntas serão relacionadas às hipóteses: as perguntas 5 a 13 fornecem evidências sobre **H01** e sobre o recorte de turmas pequenas, as perguntas 14 e 15 sobre **H02**, e as perguntas 16 a 19 sobre **H03**. Os relatos serão comparados com o Cenário C05, a persona P02 e a tarefa T04, para verificar se a situação descrita é plausível e o que precisa ser corrigido.
+2. **Caracterização dos respondentes:** utilizar Q1 e Q2 para descrever o perfil principal e a frequência de condução de atividades por videoconferência. Comparações entre perfis serão exploratórias e deverão informar a quantidade de respondentes de cada grupo.
 
-Como a amostra será pequena e de conveniência, a análise considerará a **recorrência dos relatos** entre os participantes e registrará também os casos que contradizem o cenário. Ao final, cada hipótese será classificada como sustentada, refutada ou refinada, e o resultado será registrado em `RASTREABILIDADE.md`.
+3. **Perguntas fechadas:** apresentar contagens e proporções de cada alternativa, utilizando como referência o número de respostas válidas da pergunta. Nas questões de seleção múltipla, informar que a soma das proporções pode ultrapassar 100%. Respostas ausentes serão apresentadas separadamente.
+
+4. **Perguntas abertas:** analisar Q15 e Q16 por codificação temática, agrupando conteúdos relacionados a benefícios, distração, confiança, privacidade, revisão pós-sessão e organização da informação. Preservar críticas e opiniões divergentes, utilizando apenas trechos sem identificação pessoal.
+
+5. **Relação com as hipóteses e necessidades:**
+   - **H01 — Q3 a Q7:** investigar sinais utilizados atualmente, dificuldade percebida, utilidade esperada, possíveis distrações e ações consideradas pelo comunicador.
+   - **H02 — Q10 e Q11:** identificar a importância atribuída à informação de incerteza e as preferências de apresentação.
+   - **H03 — Q12 a Q14:** investigar o conforto pessoal dos comunicadores ao imaginar-se como participantes, suas necessidades de informação e preferências sobre agregação.
+   - **H06 — Q9:** investigar se existe uma necessidade atual de selecionar ou reorganizar informações durante a revisão de registros e relatórios.
+   - **R03 e ?03 — Q6 e Q8:** identificar momentos de consulta e informações consideradas relevantes após a sessão.
+   - As respostas abertas poderão complementar essas relações ou revelar necessidades não previstas.
+
+6. **Interpretação:** distinguir relatos sobre práticas atuais de opiniões sobre uma ferramenta hipotética. Interesse declarado não comprova utilidade real ou ausência de distração. Preferência por um formato não demonstra sua compreensão, e a opinião dos comunicadores não substitui a coleta com alunos e demais participantes prevista em I03. As evidências serão confrontadas com os outros instrumentos antes de sustentar, contrariar ou refinar as hipóteses.
+
+7. **Uso no design:** relacionar os achados às decisões sobre apresentação dos indicadores, explicações, ajuda, revisão pós-sessão e personalização. Registrar a origem da evidência, a interpretação e a decisão em `RASTREABILIDADE.md`, mantendo explícitas as questões ainda abertas.
+
+8. **Limitações:** considerar a amostra por conveniência, o autorrelato e a influência da descrição da ferramenta. Os resultados não serão generalizados para todos os comunicadores. Caso sejam aplicadas versões diferentes do questionário, elas serão identificadas e analisadas separadamente.
+
+### Instrumento I02 — Entrevista semiestruturada com técnica de incidente crítico
+
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Técnica:** entrevista semiestruturada individual, com técnica de incidente crítico (o entrevistado relata uma aula real e recente, em vez de opinar sobre situações hipotéticas)  
+**Objetivo:** verificar se a situação descrita para Camila (P02, C05, T03) acontece com professores reais: como percebem, durante a aula on-line, se a turma acompanha um conteúdo novo, que sinais usam, como decidem entre reforçar e seguir e o que precisariam para confiar em um sinal externo. Responde às questões Q1 a Q7 do Cenário C05 e investiga H01, H02, H03 e a hipótese sobre turmas pequenas.  
+**Público:** perfis definidos na A02 — prioritariamente professores de idiomas com turmas pequenas on-line; professores de outras disciplinas e instrutores corporativos como contraste. Meta: 5 a 8 entrevistas, com pelo menos 3 do perfil principal.
+
+**Por que entrevista e não questionário:** o questionário (I01) mede a distribuição de opiniões em mais pessoas; a entrevista permite reconstruir, passo a passo, uma situação concreta, com os critérios e as dúvidas do professor no momento da decisão, o que um formulário fechado não captura.
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** agendar 40 a 45 minutos por videochamada (ou presencialmente), confirmar o perfil pelos critérios de inclusão da A02 e enviar com antecedência um resumo do objetivo. Atribuir o código do participante (E01, E02...). Preparar a ficha de registro abaixo e testar a gravação de áudio.
+2. **Apresentação e consentimento:** ler o texto de abertura do roteiro sem alterações, perguntar se há dúvidas e registrar o aceite e a autorização (ou não) da gravação de áudio antes de iniciar.
+3. **Aplicação:** seguir os blocos na ordem, fazendo as perguntas principais com as mesmas palavras para todos os participantes. Os aprofundamentos (↳) são usados somente quando a resposta não cobrir o ponto. O entrevistador **não apresenta o MindFlow nem sugere soluções antes do Bloco 6**, para não induzir respostas. Um segundo integrante, quando possível, faz as anotações.
+4. **Encerramento:** fazer as perguntas finais, agradecer, explicar como os dados serão usados e perguntar se o participante deseja receber a síntese dos resultados.
+5. **Armazenamento e anonimização:** no mesmo dia, preencher a ficha de registro, transcrever ou resumir a entrevista removendo nomes de pessoas e instituições, salvar na pasta restrita da equipe com o código do participante e apagar o áudio após a revisão da transcrição.
+
+#### Instrumento
+
+**Texto de abertura (ler na íntegra)**
+
+> Obrigado(a) por aceitar participar. Sou estudante da FEI e, na disciplina de Interação Humano-Computador, estamos estudando como professores acompanham a turma durante aulas on-line. Não estamos avaliando você nem sua forma de dar aula: queremos entender a situação e as dificuldades que ela traz. A conversa dura cerca de 40 minutos. Você pode pular qualquer pergunta ou parar a qualquer momento, sem precisar explicar o motivo. Por favor, não cite nomes de alunos. Seus dados serão identificados apenas por um código, e os trechos usados no trabalho não vão identificar você nem sua instituição. Você autoriza a gravação apenas do áudio, que será apagado depois da transcrição? [registrar sim/não] Você concorda em participar? [registrar aceite]
+
+**Bloco 1 — Perfil (registrar por faixa)**
+
+1. Há quanto tempo você dá aulas on-line síncronas? (menos de 1 ano / 1 a 3 anos / mais de 3 anos)
+2. O que você ensina e para que público, de forma geral?
+3. Quantos alunos costumam participar de cada aula? (até 5 / 6 a 15 / 16 a 40 / mais de 40)
+4. Que plataforma você usa e quem escolheu essa plataforma?
+
+**Bloco 2 — Contexto da aula (Q1, Q2)**
+
+5. Me descreva como é o seu espaço e o seu equipamento quando você dá uma aula on-line.
+   - ↳ Você usa um ou mais monitores? Onde fica a imagem dos alunos quando você compartilha a tela?
+6. Em uma aula típica, quantos alunos ficam com a câmera ligada? Na sua opinião, por que os demais desligam?
+7. Além de você, alguém acompanha o resultado das suas turmas (coordenação, empresa, responsáveis)? De que forma?
+
+**Bloco 3 — Incidente crítico: a última aula com conteúdo novo (Q3, Q4, Q6)**
+
+8. Pense na última vez em que você apresentou um conteúdo novo ou mais difícil em uma aula on-line. Pode me contar como foi, do começo ao fim?
+   - ↳ O que você estava fazendo na tela naquele momento?
+   - ↳ Aconteceu alguma coisa que interrompeu ou mudou o rumo da aula (atraso, conexão, mensagem, interrupção em casa)?
+9. Enquanto explicava, como você tentava saber se a turma estava acompanhando?
+   - ↳ O que você olhava, ouvia ou lia? Em que momentos?
+10. Em algum momento você ficou em dúvida se a turma tinha entendido? O que gerou essa dúvida?
+11. O que você decidiu fazer naquele momento e por quê?
+    - ↳ Que outras opções você considerou? O que pesou na escolha (tempo, plano de aula, os alunos)?
+12. Para você, o que torna uma aula bem-sucedida? Isso mudou o que você fez naquele momento?
+
+**Bloco 4 — Estratégias e sinais (Q5, H02)**
+
+13. Quando você não tem certeza se a turma entendeu, o que costuma fazer?
+    - ↳ Há alguma estratégia que você evita? Por quê?
+14. Dos sinais que você usa, qual você considera mais confiável? E qual costuma enganar?
+15. Já aconteceu de você achar que a turma tinha entendido e depois descobrir que não? Como descobriu e quanto tempo depois?
+16. Já aconteceu o contrário: achar que não tinham entendido, parar para reforçar, e perceber que não era necessário? Como foi?
+
+**Bloco 5 — Depois da aula (Q7, R03)**
+
+17. Depois que a aula termina, como você avalia se aquele conteúdo funcionou?
+    - ↳ Você anota algo para a próxima aula? Onde e como?
+18. Quanto tempo você costuma ter entre uma aula e outra para revisar ou replanejar?
+19. Se você pudesse saber algo sobre a aula depois que ela termina, o que gostaria de saber? Por quê? (não sugerir formatos como gráfico ou relatório)
+
+**Bloco 6 — Reação a um apoio durante a aula (H01, H02, H03 e turma pequena)**
+
+> Ler: "Agora vou descrever uma ideia ainda em estudo. Não há resposta certa: comentários negativos ajudam tanto quanto os positivos. Imagine um programa que, durante a aula, mostra a você um sinal resumido do estado geral da turma, por exemplo se o grupo parece atento ou confuso, estimado a partir das câmeras dos alunos. O programa não mostra resultados individuais."
+
+20. Em que situações algo assim poderia ajudar você, se puder? E em que situações poderia atrapalhar?
+21. Se o sinal indicasse que a turma está confusa, mas você achasse que ela está acompanhando, o que você faria?
+    - ↳ O que você precisaria saber sobre esse sinal para decidir se confia nele?
+22. Pensando no tamanho das suas turmas, um resumo do grupo faria sentido? A partir de quantos alunos?
+23. Como você imagina que seus alunos reagiriam a isso? O que você precisaria explicar a eles antes de usar?
+24. Você usaria algo assim nas suas aulas? Em que condições não usaria?
+
+**Encerramento**
+
+25. Há algo sobre acompanhar a turma em aulas on-line que eu não perguntei e que você acha importante?
+26. Você gostaria de receber a síntese dos resultados? [registrar sim/não]
+
+> Ler: "Muito obrigado(a) pela participação. Suas respostas serão usadas apenas neste trabalho, identificadas por código. Se quiser retirar sua participação, basta nos avisar até o fim da disciplina."
+
+**Ficha de registro (preencher logo após cada entrevista)**
+
+| Campo | Registro |
+|---|---|
+| Código do participante | E__ |
+| Data e duração | |
+| Perfil (faixas do Bloco 1) | |
+| Autorizou gravação de áudio? | sim / não |
+| Situação relatada no incidente crítico (resumo em 3 a 5 linhas, sem nomes) | |
+| Sinais usados para perceber a turma | |
+| Decisão tomada e critério declarado | |
+| Momento em que descobriu se a decisão funcionou | |
+| Reação à ideia do Bloco 6 (pontos positivos, negativos e condições) | |
+| Trechos marcantes (citação literal, anonimizada) | |
+| Observações do entrevistador (o que surpreendeu, dúvidas para a próxima entrevista) | |
+
+#### Como os dados serão analisados
+
+1. **Transcrição e codificação temática:** as transcrições anonimizadas serão codificadas por dois integrantes da equipe, primeiro com códigos definidos a partir das hipóteses (sinais usados, critério de decisão, custo de reforçar, confiança em sinal externo, tamanho da turma, privacidade dos alunos, uso pós-aula) e depois com códigos novos que surgirem das falas. Divergências de codificação serão discutidas até consenso.
+2. **Reconstrução dos incidentes:** cada relato do Bloco 3 será organizado nos sete elementos do cenário (contexto, atores, objetivos, planejamento, ações, eventos, avaliação) e comparado com o Cenário C05 e com a T03, indicando o que se confirmou, o que mudou e o que não apareceu.
+3. **Matriz de hipóteses:** para cada hipótese, será registrado quantos participantes trouxeram evidência a favor, contra ou com nuance, com trechos de apoio:
+   - **H01** é **sustentada** se a maioria relatar dificuldade real de perceber a turma durante a aula e descrever situações em que um sinal no momento teria mudado a decisão; é **refutada** se os relatos mostrarem que o problema é raro ou que o exercício posterior já resolve; é **refinada** se a necessidade aparecer só em certos momentos (conteúdo novo, tela compartilhada).
+   - **H02** é **sustentada** se os participantes disserem que precisariam de alguma indicação de confiança para decidir diante de um sinal contrário à própria percepção; é **refinada** se preferirem essa informação só depois da aula.
+   - **H03** (visão do comunicador) é **sustentada** se os professores anteciparem desconforto dos alunos ou disserem que precisariam explicar o funcionamento antes de usar; a visão dos próprios participantes depende dos demais instrumentos.
+   - **Hipótese sobre turmas pequenas** é **refutada** se professores de turmas pequenas afirmarem que já percebem bem a turma ou que um resumo do grupo não faz sentido nesse tamanho.
+4. **Uso no design:** os achados alimentam a atualização da persona P02, do Cenário C05 (as hipóteses de refinamento Q1 a Q7 passam a fatos ou são reescritas), da T03 e dos requisitos do Semáforo Cognitivo (posição durante o compartilhamento, exibição de confiança, número mínimo de participantes, aviso aos alunos). O resultado será registrado em `RASTREABILIDADE.md`.
+5. **Limitações a relatar:** amostra pequena e por conveniência, possível viés de memória no relato do incidente e influência do Bloco 6, que apresenta uma ideia de solução; por isso, ele vem por último e suas respostas são analisadas separadamente das necessidades relatadas nos Blocos 2 a 5.
+
+### Instrumento I03 — Grupo focal com participantes de aulas on-line
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
+**Técnica:** grupo focal (discussão moderada em grupo, com cartões de texto como estímulo)  
+**Objetivo:** entender como participantes de aulas e treinamentos on-line decidem sobre câmera e participação hoje, quanto conforto têm com a análise automática da própria imagem e o que precisariam saber e controlar para aceitá-la. Responde às questões Q1 a Q7 do Cenário C03 e investiga H03, H05 e o vocabulário do participante (?04).  
+**Público:** perfis definidos na A03. Meta: 2 a 3 grupos de 4 a 6 participantes cada, um grupo por perfil (graduação; cursos livres; treinamento corporativo, se houver acesso).
+
+**Por que grupo focal:** o tema (sentir-se observado, consentimento, privacidade) depende de normas sociais e de como as pessoas se comparam umas com as outras. A discussão em grupo revela concordâncias, divergências e argumentos que não aparecem em respostas individuais. É uma técnica diferente do questionário (I01) e da entrevista com comunicadores (I02), e ouve o outro lado da interação.
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** recrutar os participantes pelos critérios da A03 e formar grupos homogêneos por perfil. Agendar 60 minutos por videochamada, com câmera opcional. Definir um moderador (conduz) e um relator (anota falas, concordâncias e divergências). Preparar os quatro cartões de estímulo abaixo e testar a gravação de áudio. Atribuir códigos aos participantes.
+2. **Apresentação e consentimento:** ler o texto de abertura sem alterações, combinar as regras do grupo, registrar o aceite de cada participante e perguntar se todos autorizam a gravação de áudio. Se alguém não autorizar, a sessão segue só com anotações.
+3. **Aplicação:** seguir os blocos na ordem e com as mesmas perguntas em todos os grupos. O moderador garante que todos falem, não dá opinião, não defende o MindFlow e **só apresenta a ideia do sistema no Bloco 3**, depois de ouvir as experiências atuais. Os cartões são lidos em voz alta e mostrados como texto na tela.
+4. **Encerramento:** fazer a pergunta final, agradecer, relembrar o uso dos dados e o combinado de confidencialidade.
+5. **Armazenamento e anonimização:** no mesmo dia, moderador e relator preenchem a ficha de registro, revisam as anotações e transcrevem o áudio removendo nomes de pessoas, professores, disciplinas e instituições. Os arquivos ficam na pasta restrita da equipe com o código do grupo, e o áudio é apagado após a revisão.
+
+#### Instrumento
+
+**Texto de abertura (ler na íntegra)**
+
+> Obrigado(a) por participar. Somos estudantes da FEI e, na disciplina de Interação Humano-Computador, estamos estudando como é participar de aulas e treinamentos on-line. Não existe resposta certa ou errada, e não estamos avaliando ninguém. Queremos ouvir opiniões diferentes, então sintam-se à vontade para discordar uns dos outros. A conversa dura cerca de 60 minutos e vocês podem deixar a câmera desligada. Por favor, não citem nomes de professores, colegas, disciplinas ou empresas. Combinamos que o que for dito aqui não sai do grupo, mas não conseguimos garantir isso entre os participantes, então compartilhem só o que se sentirem confortáveis. Qualquer pessoa pode não responder ou sair a qualquer momento, sem explicar o motivo. Todos autorizam a gravação apenas do áudio, que será apagado após a transcrição? [registrar a resposta de cada um] Todos concordam em participar? [registrar o aceite de cada um]
+
+**Bloco 1 — Aquecimento (10 min)**
+
+1. Cada um pode contar, em uma frase, que tipo de aula ou treinamento on-line costuma assistir e com que frequência?
+2. Numa aula on-line típica, vocês costumam deixar a câmera ligada ou desligada? Do que isso depende?
+
+**Bloco 2 — Experiência atual com câmera e participação (15 min) — Q1, Q2, Q4, Q5, Q6**
+
+3. Que regras vocês conhecem sobre câmera e participação nas suas aulas ou treinamentos? Onde ficaram sabendo delas?
+   - ↳ Alguma vez ficaram em dúvida se algo contava para a nota ou para a avaliação?
+4. Quando vocês não querem aparecer ou falar, mas querem acompanhar, o que costumam fazer?
+   - ↳ Chat, reações, microfone, perguntar depois: o que usam e o que evitam? Por quê?
+5. Que situações durante a aula fazem vocês mudarem de ideia e ligarem a câmera ou se manifestarem?
+6. Na opinião de vocês, quem fica sabendo de como cada um participou de uma aula on-line? O professor, a coordenação, a plataforma?
+
+**Bloco 3 — Reação à ideia de análise automática (20 min) — H03, H05**
+
+> Ler: "Agora vamos apresentar uma ideia que está sendo estudada. Comentários negativos ajudam tanto quanto os positivos, e não fomos nós que decidimos que ela vai existir." Mostrar um cartão de cada vez e perguntar: "O que vocês acham disso? Quem vê de outro jeito?"
+
+- **Cartão A:** "Durante a aula, um programa estima a partir das câmeras se a turma, de forma geral, parece engajada, entediada, confusa ou frustrada. O professor vê só um resumo do grupo, não o resultado de cada aluno."
+- **Cartão B:** "A análise da imagem acontece no computador de cada aluno; a imagem não é enviada para fora, só números do grupo."
+- **Cartão C:** "Ao entrar na aula, aparece um aviso de que a análise está ativa, com a opção de ler mais sobre o que é e o que não é processado."
+- **Cartão D:** "O aluno pode escolher não participar da análise, mesmo com a câmera ligada, e depois da aula pode ver um resumo do que foi processado."
+
+7. (Cartão A) Como vocês se sentiriam numa aula com isso funcionando? O que mudaria no jeito de vocês participarem?
+8. (Cartão A) Em uma turma pequena, de 5 a 10 pessoas, um "resumo do grupo" ainda protege cada aluno? E numa turma grande?
+9. (Cartão B) Saber disso muda alguma coisa para vocês? Por quê?
+10. (Cartão C) O que vocês gostariam de saber antes de a aula começar? E em que momento: no plano de ensino, ao entrar na aula, antes de ligar a câmera?
+11. (Cartão D) Vocês usariam a opção de não participar? Em que situações? Ter essa opção muda a opinião sobre o Cartão A?
+12. (Cartão D) Depois da aula, vocês teriam interesse em conferir o que foi processado? O que esperariam encontrar?
+13. Que palavra vocês usariam para descrever estar numa aula com isso: acompanhado, observado, avaliado, monitorado, outra? Por quê?
+
+**Bloco 4 — Fechamento (10 min) — Q3, Q7**
+
+14. Para vocês, o que é "participar o suficiente" numa aula on-line?
+15. Hoje, quando ficam em dúvida se foram mal avaliados por participar pouco, o que fazem? O que tranquilizaria vocês?
+16. De tudo o que conversamos, o que seria indispensável para vocês aceitarem uma ferramenta assim? E o que faria vocês recusarem?
+
+> Ler: "Muito obrigado(a). Lembrando: as respostas serão usadas só neste trabalho, identificadas por código, e o que foi dito aqui fica no grupo. Se alguém quiser retirar sua participação, basta nos avisar até o fim da disciplina."
+
+**Ficha de registro (moderador e relator, logo após cada grupo)**
+
+| Campo | Registro |
+|---|---|
+| Código do grupo e perfil | G__ — graduação / curso livre / treinamento corporativo |
+| Data, duração e número de participantes | |
+| Gravação de áudio autorizada por todos? | sim / não |
+| Comportamento atual com câmera e participação (pontos de consenso) | |
+| Regras e consequências percebidas | |
+| Reação ao Cartão A (conforto, desconforto, condições) | |
+| O que mudou com os Cartões B, C e D | |
+| Opinião sobre turmas pequenas | |
+| Palavras usadas para descrever a experiência | |
+| Divergências relevantes dentro do grupo | |
+| Trechos marcantes (citação literal, anonimizada, com código) | |
+| Observações da dinâmica (alguém dominou a conversa, alguém ficou calado, temas evitados) | |
+
+#### Como os dados serão analisados
+
+1. **Codificação temática:** as transcrições ou anotações de cada grupo serão codificadas por dois integrantes da equipe, primeiro com códigos derivados das hipóteses (regras percebidas, estratégias de participação, conforto com a análise, efeito do processamento local, efeito do aviso, desejo de recusar, turma pequena, vocabulário) e depois com códigos novos que surgirem. Divergências serão discutidas até consenso.
+2. **Análise por grupo e entre grupos:** para cada tema, registrar se houve consenso, divergência ou posição isolada dentro do grupo, e comparar os perfis (graduação, curso livre, corporativo). Uma opinião isolada não será tratada como posição do grupo.
+3. **Efeito de cada cartão:** comparar a reação ao Cartão A com a reação depois dos Cartões B, C e D, para saber quais mecanismos (processamento local, aviso, recusa, resumo) realmente reduzem o desconforto e quais são indiferentes.
+4. **Matriz de hipóteses:**
+   - **H03** é **sustentada** se a maioria dos grupos expressar desconforto com o Cartão A que não desaparece com os Cartões B a D; é **refinada** se o desconforto diminuir com transparência e controle (indicando quais mecanismos são indispensáveis); é **refutada** se os grupos se mostrarem indiferentes à análise mesmo sem esses mecanismos.
+   - **H05** é **sustentada** se os participantes considerarem o resumo do grupo protetor também em turmas pequenas, e **refutada** se disserem que, em poucos alunos, o resumo permitiria identificar quem está confuso.
+   - **?04:** o vocabulário levantado orienta os rótulos da interface do participante.
+5. **Uso no design:** os resultados alimentam a revisão da persona P05, do Cenário C03 (as hipóteses de refinamento Q1 a Q7 passam a fatos ou são reescritas), da tarefa T04 (manter ou remover as opções marcadas como [H]) e dos requisitos da interface de transparência (R04/F08). O resultado será registrado em `RASTREABILIDADE.md`.
+6. **Limitações a relatar:** amostra pequena e por conveniência, efeito de conformidade em grupo (participantes acompanharem a opinião dominante), possível constrangimento em falar de desconforto diante de colegas e influência dos cartões, que descrevem uma solução. Por isso, o Bloco 2 (experiência atual) é analisado separadamente do Bloco 3.
+
+
+### Instrumento I04 — Teste de usabilidade
+
+**Autor(a):** Rafael Dias — 22.222.039-4  
+**Técnica:** Teste de usabilidade moderado com protótipo.  
+**Objetivo:** Verificar se os docentes conseguem consultar o resumo de uma aula, compreender os indicadores apresentados e personalizar a visualização sem dificuldades.  
+**Público:** Professores e docentes que realizam aulas on-line por videoconferência. Meta: 5 participantes.
+
+**Por que teste de usabilidade:** a técnica permite observar como os usuários interagem com o MindFlow AI e identificar dificuldades de navegação, compreensão dos indicadores e utilização das funcionalidades. Diferentemente das entrevistas e questionários, o teste avalia a execução prática das tarefas.
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** selecionar 5 docentes com experiência em aulas on-line e disponibilizar um protótipo do MindFlow AI com dados fictícios.
+2. **Apresentação:** explicar o objetivo do teste, informar que a participação é voluntária e solicitar o consentimento.
+3. **Execução:** apresentar as três tarefas abaixo, uma de cada vez, sem ensinar como realizá-las.
+4. **Observação:** registrar se o participante conseguiu concluir cada tarefa, quais dificuldades encontrou e se precisou de ajuda.
+5. **Encerramento:** fazer as perguntas finais e agradecer pela participação.
+6. **Armazenamento:** identificar os participantes por códigos e manter os registros apenas para fins acadêmicos, com acesso restrito.
+
+#### Instrumento
+
+**Texto de abertura**
+
+> Estamos realizando um teste para avaliar a facilidade de utilização do MindFlow AI. Você deverá realizar algumas tarefas em um protótipo do sistema.
+>
+> Não estamos avaliando seu desempenho, mas a facilidade de uso da interface. Sua participação é voluntária, e você pode interrompê-la quando desejar.
+>
+> Os resultados serão utilizados apenas para fins acadêmicos, sem identificação dos participantes.
+>
+> Você concorda em participar? [sim/não]
+
+**Tarefa 1 — Consultar o resumo de uma aula**
+> Imagine que você deseja revisar uma aula que já terminou. Encontre essa reunião no sistema e abra seu resumo.
+**Observar:**
+- Se encontra a reunião facilmente;
+- Se consegue acessar o resumo;
+- Se compreende os indicadores apresentados.
+
+**Tarefa 2 — Personalizar a visualização**
+> Imagine que você deseja modificar as informações exibidas no resumo. Encontre a opção de edição e realize uma alteração na visualização.
+**Observar:**
+- Se encontra a opção de editar;
+- Se compreende as opções disponíveis;
+- Se consegue realizar a alteração.
+
+**Tarefa 3 — Salvar a personalização**
+> Após modificar o resumo, salve suas alterações e confira se a visualização foi atualizada.
+**Observar:**
+- Se encontra o botão de salvar;
+- Se compreende a confirmação do salvamento;
+- Se identifica que as alterações foram mantidas.
+
+#### Perguntas finais
+
+1. Você achou fácil encontrar o resumo da aula?
+2. Os indicadores apresentados foram claros?
+3. Foi fácil encontrar e utilizar a opção de personalização?
+4. Qual foi a maior dificuldade encontrada?
+5. O que você melhoraria na interface?
+
+#### Ficha de registro
+
+| Campo | Registro |
+|---|---|
+| Código do participante | U__ |
+| Data | |
+| Experiência com aulas on-line | |
+| Tarefa 1 — Consultar resumo | Sucesso / Com ajuda / Não concluiu |
+| Tarefa 2 — Personalizar | Sucesso / Com ajuda / Não concluiu |
+| Tarefa 3 — Salvar | Sucesso / Com ajuda / Não concluiu |
+| Principais dificuldades | |
+| Sugestões do participante | |
+
+#### Como os dados serão analisados
+
+1. **Conclusão das tarefas:** verificar quantos participantes conseguiram realizar cada atividade sem ajuda, com ajuda ou não conseguiram concluí-la.
+2. **Dificuldades encontradas:** agrupar os problemas observados em navegação, interpretação dos indicadores e personalização da visualização.
+3. **Avaliação das hipóteses:**
+   - **H01:** investigar se o resumo apresenta informações consideradas úteis pelos docentes, como complemento à análise do uso em tempo real.
+   - **H02:** identificar dificuldades na interpretação dos indicadores e na compreensão das classificações da IA.
+   - **H03:** registrar eventuais preocupações espontâneas relacionadas à privacidade dos estudantes.
+4. **Melhorias no design:** utilizar os resultados para ajustar a organização das telas, os indicadores apresentados e os controles de personalização.
+5. **Limitações:** por envolver uma amostra pequena e um protótipo, os resultados servirão para identificar problemas de usabilidade, sem representar todos os possíveis usuários do MindFlow AI.
+Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar futuras melhorias na interface.
+
+
+### Instrumento I05 — Diário de reuniões comerciais (diário de atividades)
+
+**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
+**Técnica:** diário de atividades (estudo de campo): durante duas semanas, o vendedor preenche um registro curto e padronizado logo após cada reunião comercial on-line e, quando chega o retorno do cliente, um registro de follow-up da mesma reunião.  
+**Objetivo:** verificar se a situação do Cenário C01 acontece na prática com vendedores B2B reais e registrar, em reuniões reais e perto do momento em que acontecem, quais sinais o vendedor usa para perceber a reação dos clientes, quando fica em dúvida, o que decide e o que descobre depois no follow-up. Responde às questões Q1 a Q7 do C01, investiga ?02, ?03, H01, H02, H05 e H03 (visão do comunicador diante de clientes externos) e confere as operações 3 a 6 da T05.  
+**Público:** perfis definidos na A05, prioritariamente vendedores e executivos de contas B2B. Meta: 3 a 5 participantes, cada um com 3 a 8 reuniões registradas, totalizando pelo menos 10 reuniões.
+
+**Por que diário e não entrevista ou observação:** reuniões comerciais com clientes de outra empresa dificilmente podem ser observadas ou gravadas (confidencialidade e clientes que não consentiram), e uma entrevista depende da memória de reuniões antigas. O diário registra cada reunião real logo depois que ela termina, sem a presença da equipe, e inclui a comparação com o retorno do cliente dias depois, que é onde a tarefa T05 mostra que a leitura errada aparece (operação 6.3). É uma técnica diferente das demais da equipe: acompanha várias reuniões ao longo do tempo, em vez de uma opinião (I01), um relato de memória (I02), uma discussão em grupo (I03) ou um protótipo (I04).
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** recrutar pelos critérios da A05 (contatos profissionais da equipe e indicações), confirmar que o participante apresenta propostas por videochamada e fazer uma conversa inicial de 15 minutos, por videochamada, para explicar o diário, preencher a ficha de perfil e combinar o período de duas semanas e o canal de envio (formulário on-line ou mensagem). Atribuir o código do participante (D01, D02...). Fazer um registro piloto com o primeiro participante e ajustar o texto dos itens antes dos demais.
+2. **Apresentação e consentimento:** ler o texto de abertura sem alterações, perguntar se há dúvidas, deixar explícito o que não deve ser registrado (nomes, empresas, valores, conteúdo da proposta) e registrar o aceite por escrito antes do primeiro registro.
+3. **Aplicação:** depois de cada reunião comercial on-line do período, o participante preenche o registro por reunião, de preferência no mesmo dia e em até 10 minutos. A equipe envia um lembrete a cada dois ou três dias, não comenta o conteúdo dos registros e não apresenta o MindFlow nem sugere soluções antes do registro de encerramento, para não induzir os relatos. Registros podem ser pulados sem justificativa.
+4. **Encerramento:** ao fim das duas semanas, o participante preenche o registro de follow-up de cada reunião que já teve retorno do cliente (ou informa que ainda não houve) e o registro de encerramento. Uma conversa final de 15 minutos, opcional, esclarece registros incompletos, agradece e informa como os dados serão usados.
+5. **Armazenamento e anonimização:** no dia do recebimento, copiar cada registro para a pasta de acesso restrito da equipe com o código do participante e o número da reunião (D01-R1...), apagar as mensagens do canal de envio, remover qualquer nome, empresa ou valor que tenha escapado e descartar os registros individuais ao fim da disciplina.
+
+#### Instrumento
+
+**Texto de abertura (ler na íntegra na conversa inicial e enviar por escrito)**
+
+> Obrigado(a) por aceitar participar. Sou estudante da FEI e, na disciplina de Interação Humano-Computador, estamos estudando como vendedores acompanham a reação dos clientes em reuniões por videochamada. Não estamos avaliando você nem seus resultados de venda: queremos entender a situação e as dificuldades que ela traz. Durante duas semanas, pedimos que você preencha um registro curto, de até 10 minutos, depois de cada reunião comercial on-line que fizer, e um registro rápido quando o cliente der retorno. Você pode pular qualquer item, deixar de registrar qualquer reunião ou sair do estudo a qualquer momento, sem explicar o motivo. Por favor, não registre nomes de pessoas ou empresas, valores nem o conteúdo das propostas; use só categorias gerais, como "parte de preço" ou "parte técnica". Seus registros serão identificados apenas por um código, não serão compartilhados com sua empresa e serão apagados ao fim da disciplina. Você concorda em participar? [registrar aceite por escrito]
+
+**Ficha de perfil (uma vez, na conversa inicial; registrar por faixa)**
+
+1. Há quanto tempo você trabalha com vendas para empresas? (menos de 1 ano / 1 a 3 anos / mais de 3 anos)
+2. Que tipo de produto ou serviço você vende, em termos gerais? (software ou tecnologia / serviços / equipamentos ou insumos / outro)
+3. Quantas reuniões comerciais por videochamada você faz por semana, em média? (1 / 2 a 4 / 5 ou mais)
+4. Que plataforma usa com mais frequência e quem costuma escolhê-la: você ou o cliente?
+5. Você costuma apresentar sozinho(a) ou com um colega (pré-vendas, gestor)?
+6. Você usa um ou mais monitores nas reuniões?
+7. Você também faz apresentações comerciais presenciais? (sim / não)
+
+**Registro por reunião (preencher logo após cada reunião comercial on-line)**
+
+Código da reunião: D__-R__ · Data: ___ · Duração aproximada: ___
+
+1. Quem definiu o tempo da reunião? (você / o cliente / combinado) Faltou tempo? (sim / não) [Q1]
+2. Quantas pessoas participaram do lado do cliente e com que papéis (decisor, responsável técnico, comprador, não sei)? Quantas estavam com a câmera ligada? (nenhuma / algumas / a maioria / todas) [Q2]
+3. Você compartilhou a tela? Por quanto da reunião? (quase toda / cerca de metade / pouco) Onde ficava a imagem dos clientes enquanto compartilhava? [Q1]
+4. Qual era o objetivo principal desta reunião (apresentar a proposta / tirar dúvidas / negociar condições / fechar / outro) e o que você precisava saber ao final dela? [Q3]
+5. Em algum momento você ficou em dúvida se os clientes tinham entendido ou se interessado? Em que parte da apresentação (ex.: funcionamento, implantação, preço, condições)? Descreva em poucas linhas, sem nomes. [Q1, Q4]
+6. O que você olhou, ouviu ou leu para perceber a reação deles? (marque todos: rostos na grade de vídeo / resposta a uma pergunta sua / perguntas espontâneas / mensagens no chat / tom de voz / o silêncio / a reação de uma pessoa específica / outro) [Q5]
+7. Você fez algo para provocar uma reação? (pergunta curta / chamar alguém pelo nome / pedir que descrevessem como fazem hoje / parar o compartilhamento para ver a grade / oferecer demonstração / nada) O que aconteceu em seguida? [Q5]
+8. Quem reagiu (por papel) e isso pesou na sua leitura? Alguém importante ficou em silêncio? [Q2, Q4]
+9. O que você decidiu naquele momento (seguir em frente / reexplicar / mudar o discurso / anotar para retomar depois) e o que pesou na decisão (tempo / importância do ponto / quem reagiu / não constranger o cliente / outro)? [Q4]
+10. Algum acontecimento mudou o rumo da reunião (pergunta inesperada, objeção, participante que saiu ou desligou a câmera, mensagem no chat, aviso de tempo, problema técnico)? O que você fez? [Q6]
+11. Ao terminar, quanto você confiava na sua leitura da reação dos clientes? (1 = nada, 5 = totalmente) O que teria dado mais certeza? [H02]
+12. Qual foi o próximo passo combinado e como você registrou suas percepções da reunião? (CRM / anotações / e-mail para o cliente / só de memória / não registrou) [Q7]
+13. Houve algo que você gostaria de ter percebido durante a reunião e não conseguiu? (opcional)
+
+**Registro de follow-up (preencher quando o cliente der retorno sobre a reunião ou no fim do período)**
+
+Código da reunião: D__-R__ · Dias até o retorno: ___ (ou "ainda sem retorno")
+
+1. O retorno do cliente confirmou a leitura que você fez na reunião? (sim / em parte / não)
+2. Algum ponto que parecia claro ou aceito voltou como dúvida ou objeção? Em que parte da proposta (categoria geral)? [Q7]
+3. Olhando para trás, havia algum sinal na reunião que você poderia ter percebido? Qual?
+
+**Registro de encerramento (uma vez, ao fim das duas semanas)**
+
+> Ler ou enviar: "Agora vamos descrever uma ideia ainda em estudo. Não há resposta certa, e comentários negativos ajudam tanto quanto os positivos. Imagine um programa que, durante a reunião, mostra a você um sinal resumido do estado geral dos clientes, por exemplo se o grupo parece atento ou confuso, estimado a partir das câmeras deles. Ele não mostra resultados individuais."
+
+1. Pensando nas reuniões que você registrou, em quais delas algo assim teria ajudado, se é que ajudaria? Em quais teria atrapalhado? [H01]
+2. Se o sinal dissesse que os clientes estão confusos, mas você achasse que estão acompanhando, o que faria? O que precisaria saber sobre o sinal para confiar nele? [H02]
+3. Nas suas reuniões, o que importa é a reação do grupo ou a de uma pessoa específica? Um resumo do grupo faria sentido com 2 ou 3 clientes na chamada? [H05, Q2]
+4. Como você acha que os clientes reagiriam a saber que a imagem deles está sendo analisada? O que você teria de explicar ou pedir antes da reunião, e faria isso? [H03]
+5. Você usaria algo assim nas suas reuniões? Em que condições não usaria?
+6. Há algo sobre acompanhar os clientes em reuniões on-line que não perguntamos e que você acha importante?
+
+**Ficha de registro da equipe (preencher ao receber cada registro)**
+
+| Campo | Registro |
+|---|---|
+| Código do participante e da reunião | D__-R__ |
+| Data de recebimento e canal | |
+| Registro completo? Itens em branco | |
+| Dado identificável removido? | sim / não (qual categoria) |
+| Situação do C01 presente? (tela compartilhada quase toda a reunião, dúvida sobre a reação, sinais fracos) | sim / em parte / não |
+| Sinais e ações usados (itens 6 e 7) | |
+| Decisão e critério (item 9) | |
+| Confiança declarada (item 11) e resultado do follow-up | |
+| Trechos marcantes (citação literal, anonimizada) | |
+| Observações (o que surpreendeu, dúvida para a conversa final) | |
+
+#### Como os dados serão analisados
+
+1. **Organização da base:** reunir os registros por participante e por reunião (D01-R1, D01-R2...), separar o piloto e considerar apenas registros de participantes que aceitaram e atendem aos critérios da A05. Registrar os itens em branco, contar quantas reuniões foram registradas por participante e quantas receberam follow-up, e remover qualquer dado identificável antes da análise.
+2. **Caracterização dos participantes e das reuniões:** usar a ficha de perfil e os itens 1 a 4 para descrever os perfis, a duração, quem define o tempo, o tamanho e a composição do grupo do cliente, a proporção de câmeras ligadas e de reuniões com a tela compartilhada quase o tempo todo. Comparações entre perfis serão exploratórias e informarão o número de reuniões de cada grupo.
+3. **Itens fechados:** apresentar contagens e proporções por reunião, e não por pessoa, tomando como referência o número de registros válidos de cada item. Nos itens de múltipla escolha (6 e 7), a soma das proporções pode ultrapassar 100%. A confiança declarada (item 11) será cruzada com o resultado do follow-up (confirmou / em parte / não).
+4. **Itens abertos:** codificar os itens 5, 7, 8, 9, 10 e 13, o registro de follow-up e o registro de encerramento por temas definidos a partir das hipóteses (sinais usados, momento da dúvida, critério de decisão, custo de insistir, eventos, registro pós-reunião, clientes externos) e por temas novos que surgirem. A codificação será feita por dois integrantes, com divergências discutidas até consenso, preservando relatos contrários e usando apenas trechos sem identificação.
+5. **Relação com as hipóteses, as questões do C01 e a T05:**
+   - **?02 e ?03 — itens 3, 5 e 6:** em quantas reuniões a situação do C01 aparece (tela compartilhada quase toda a reunião, dúvida sobre a reação, sinais fracos). Se for frequente, o recorte comercial permanece como contexto a atender; se for raro, sai do escopo prioritário.
+   - **H01 — itens 5, 6, 11 e 13 e encerramento 1:** se a dúvida sobre a reação é frequente, em que trechos ocorre e se o vendedor identifica reuniões em que um sinal no momento teria mudado a decisão.
+   - **H02 — item 11 e follow-up 1 a 3:** relação entre a confiança declarada e o acerto da leitura confirmado pelo cliente; leituras feitas com alta confiança e desmentidas depois são o caso mais importante para a exibição de incerteza.
+   - **H03 (visão do comunicador diante de clientes externos) — encerramento 4 e 5:** o que o vendedor precisaria explicar ou pedir e se aceitaria fazê-lo.
+   - **H05 — item 2 e encerramento 3:** se um indicador agregado faz sentido em grupos de 2 a 6 clientes.
+   - **Q1 a Q7 do C01:** cada item do registro está marcado com a questão que responde; as hipóteses de refinamento do cenário serão confirmadas, refutadas ou reescritas uma a uma.
+   - **T05:** os itens 6, 7, 8, 9 e 12 e o follow-up verificam as operações 3.1 a 3.4, 4.1, 4.3, 5.1 a 5.3 e 6.3 do HTA, os métodos 3.A a 3.D e as regras de seleção do Goal 5 do GOMS e as tarefas 2.1.2, 2.4 e 4.3 do CTT.
+6. **Interpretação:** distinguir a prática real (registros por reunião e follow-up) da opinião sobre uma ferramenta hipotética (registro de encerramento, aplicado por último e analisado à parte). Os registros são autorrelatos feitos de memória, ainda que recente, e é provável que reuniões difíceis sejam registradas com mais frequência do que as tranquilas; isso será considerado ao contar as ocorrências. O follow-up é o único dado que mostra uma leitura errada, e só existe para as reuniões cujo retorno chegou no período.
+7. **Uso no design:** os achados alimentam a decisão sobre manter o recorte comercial no escopo (?02 e ?03), a atualização da persona P04, do Cenário C01 e da tarefa T05, e os requisitos do Semáforo Cognitivo nesse contexto: em que trechos da pauta o sinal importa, o que ele não deve pretender mostrar (reação individual do decisor), como se comporta com câmeras desligadas e o que exige de aviso e consentimento com participantes externos (R01, R02, F01, F04 e F08). O resultado será registrado em `RASTREABILIDADE.md`.
+8. **Limitações:** amostra pequena e por conveniência, período curto, dependência de haver reuniões no período, autorrelato sem observação, ausência de acesso ao conteúdo das reuniões e follow-ups que podem não chegar a tempo. Os resultados não serão generalizados para todos os vendedores B2B, e o setor dos participantes será informado em categoria ampla junto às conclusões.
 
 ## Síntese
 
-Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas pretende reduzir. Indique explicitamente quais hipóteses da Entrega 1 deverão ficar **sustentadas, refutadas ou refinadas** após a análise dos dados. Quando os dados forem coletados/analisados, atualize o histórico em `RASTREABILIDADE.md`.
+O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
+
+1. **Se o problema do comunicador existe na prática:** se professores e instrutores realmente deixam de perceber dificuldades do grupo durante a sessão, que sinais usam hoje e como decidem reforçar ou seguir (I01 em escala; I02 em profundidade, a partir de aulas reais).
+2. **Se o tipo de apoio imaginado faz sentido:** utilidade de um sinal durante a sessão, interesse por informação de confiança e o que de fato seria consultado depois da aula, sem pressupor dashboard, filtros ou relatórios (I01 e I02).
+3. **Como o participante reage à análise da própria imagem:** conforto, regras percebidas, o que precisa saber e controlar, e se a agregação protege em turmas pequenas (I03, com apoio da A01).
+4. **Se a interface proposta é fácil de utilizar:** verificar se docentes conseguem localizar uma reunião concluída, interpretar os indicadores, personalizar o resumo e salvar as alterações sem dificuldades, identificando problemas de navegação e compreensão (I04, por meio de teste de usabilidade).
+5. **Se o recorte comercial faz sentido na prática:** se vendedores B2B vivem a situação do C01 em reuniões reais, que sinais usam, como decidem e o que descobrem no follow-up, sem supor que a reunião comercial tenha as mesmas tarefas da aula (I05, por meio de diário de reuniões ao longo de duas semanas).
+
+| Técnica | Quem responde | Hipóteses/lacunas investigadas |
+|---|---|---|
+| I01 — Questionário (Kayky) | Comunicadores, em maior número | H01, H02, H03 (visão do comunicador), necessidades do Dashboard |
+| I02 — Entrevista com incidente crítico (Isabella) | Professores, prioritariamente de idiomas com turmas pequenas | H01, H02, H05, ?02, ?04; questões Q1–Q7 do C05 |
+| I03 — Grupo focal (Gustavo) | Participantes de aulas e treinamentos on-line | H03, H05, ?04; questões Q1–Q7 do C03 |
+| I04 — Teste de usabilidade (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | H01, H02 e H03 (complementar); usabilidade do resumo, interpretação dos indicadores e personalização da visualização |
+| I05 — Diário de reuniões comerciais (Matheus) | Vendedores B2B, em reuniões reais ao longo de duas semanas | ?02, ?03, H01, H02, H05 e H03 (visão do comunicador com clientes externos); questões Q1–Q7 do C01; operações 3 a 6 da T05 |
+
+**O que se espera concluir após a análise dos dados:**
+
+- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). O I04 complementará essa análise verificando se o resumo pós-aula apresenta informações úteis e acessíveis aos docentes. Decide se o Semáforo continua como recorte principal e quais informações devem ser priorizadas no resumo.
+- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. O I04 permitirá identificar dificuldades na compreensão dos indicadores e de suas classificações. Decide a forma de comunicar incerteza e melhorar a clareza das informações apresentadas.
+- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04). O I04 poderá contribuir de forma complementar, caso sejam identificadas preocupações com privacidade durante o teste.
+- **H05** (turmas pequenas) deverá ficar **sustentada ou refutada**, a partir da visão de professores (I02) e de participantes (I03).
+- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 também contribuirá para avaliar a compreensão desses rótulos na interface.
+- **Usabilidade do resumo e da personalização (I04):** deverá ser verificado se os docentes conseguem localizar uma reunião concluída, compreender os indicadores, personalizar a visualização e salvar as alterações sem dificuldades. Os problemas identificados orientarão melhorias na navegação, organização das informações e controles de edição.
+- **Recorte comercial (I05):** ?02 e ?03 deverão indicar se a reunião comercial B2B permanece no escopo como contexto a atender ou apenas como variação. Se a situação do C01 se repetir nos registros, H01 e H02 ganham evidência em contexto de clientes externos e a T05 é ajustada; se for rara, o recorte sai do escopo prioritário.
+- **H04** e **?01** não dependem desta coleta (foram tratadas na Entrega 2).
+
+Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas e elementos da interface afetados serão revisados.
 
 ## Checklist
 
-- [ ] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
-- [ ] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [ ] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
-- [ ] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
-- [ ] Parte A identifica dados e perfis de coleta de forma específica.
-- [ ] Aspectos éticos são contextualizados para o projeto.
-- [ ] Há uma técnica completa por integrante e técnicas distintas.
-- [ ] Questionário está incluído entre as técnicas.
+- [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
+- [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
+- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
+- [x] Parte A identifica dados e perfis de coleta de forma específica.
+- [x] Aspectos éticos são contextualizados para o projeto.
+- [x] Há uma técnica completa por integrante e técnicas distintas.
+- [x] Questionário está incluído entre as técnicas.
 - [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [ ] Perguntas evitam indução e coletam apenas dados necessários.
-- [ ] Está claro como os dados serão analisados e usados no design.
+- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Está claro como os dados serão analisados e usados no design.
