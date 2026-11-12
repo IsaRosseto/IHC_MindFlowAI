@@ -37,53 +37,56 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 **Fonte editável:** [`molic_m05.svg`](../assets/10_molic/molic_m05.svg)
 
-| Elemento | Representação no diagrama |
-|---|---|
-| Ponto de abertura | círculo preenchido |
-| Cena (tópico de conversa) | retângulo de cantos arredondados, com o tópico no topo e os diálogos (`d:` / `u:`) abaixo |
-| Processamento do sistema | retângulo preto |
-| Fala de transição | seta contínua com `u:` (fala do usuário) ou `d:` (fala do preposto do designer) |
-| Ruptura e recuperação | seta tracejada |
-| Acesso ubíquo | retângulo cinza, alcançável de qualquer cena |
-| Ponto de encerramento | círculo com centro preenchido |
+Notação de Barbosa e Silva (2010), conforme o material da disciplina:
+
+| Elemento | Representação no diagrama | No M05 |
+|---|---|---|
+| Ponto de abertura | círculo preto, com a fala do usuário e a abertura da conversa sobre a meta (`gco:`) | `u: ativar o acompanhamento` / `gco: Acompanhar o estado da turma` |
+| Cena | retângulo de cantos arredondados; tópico em cima e diálogos embaixo, no formato `diálogo { d: signos }` | cinco cenas, como "Acompanhar o estado da turma" |
+| Cena de alerta ou captura de erro | cena com borda tracejada | "Entender por que não há estimativa" e "Salvar o registro da aula" |
+| Processo do sistema | quadrado preto; o sistema decide o rumo da conversa, e as falas ficam nas saídas | verificar câmeras, atualizar a estimativa, registrar o momento, pausar, salvar o resumo |
+| Fala de transição | seta com `u:` (usuário) ou `d:` (preposto do designer); `precond:` indica a condição | `u: marcar este momento`, `precond: mudança relevante` |
+| Ruptura e recuperação | seta tracejada; `[SR]` marca a fala do preposto que leva à recuperação da ruptura | `[SR] d: sinal insuficiente`, `u: tentar novamente` |
+| Acesso ubíquo | retângulo cinza sem texto, alcançável de qualquer cena; pode ser repetido no diagrama | `u: ajuda`, `u: pausar acompanhamento`, `u: encerrar a aula` |
+| Fechamento da conversa | barra preta com `gcc:` e ponto de encerramento (círculo com centro preenchido) | `gcc: Acompanhar o estado da turma` |
 
 ### Leitura do diagrama
 
-O MoLIC modela a conversa entre Camila e o MindFlow durante a aula. A decisão de reforçar o conteúdo fica fora da conversa: o sistema mostra o estado e a confiança, e Camila decide sozinha o que fazer, como prevê a CI05.
+A meta do M05 é **acompanhar o estado da turma** durante a explicação. A decisão de reforçar o conteúdo fica fora da conversa: o preposto mostra o estado e a confiança da estimativa, e Camila decide o que fazer na aula, como prevê a CI05.
 
 #### Caminho principal
 
-1. **Abertura → Verificar câmeras e iniciar a estimativa local:** Camila diz `u: ativar o acompanhamento da turma`. O sistema verifica quantos alunos estão com câmera ligada e inicia a estimativa no computador de cada participante.
-2. **→ Acompanhar o estado da turma:** com participantes suficientes, o sistema responde `d: acompanhamento ativo`. A cena mostra o estado predominante (cor, ícone e rótulo), os participantes contribuindo, a confiança e há quanto tempo foi atualizado.
-3. **Atualizar a estimativa do grupo:** a cada janela de tempo, o sistema recalcula a estimativa e volta à cena com `d: estado atualizado`.
-4. **→ Examinar a mudança no estado:** quando o estado muda de forma relevante, o sistema avisa `d: mudança relevante`. A cena mostra o estado anterior e o atual, desde quando e a confiança.
-5. **→ Registrar o momento na linha do tempo:** se Camila diz `u: marcar este momento`, o sistema registra o minuto da aula e responde `d: momento marcado`, voltando ao acompanhamento. Se ela diz `u: dispensar o aviso`, volta direto ao acompanhamento.
-6. **→ Encerrar a estimativa e salvar o resumo da aula:** ao fim, `u: encerrar a aula` leva ao processamento que encerra a estimativa e salva o resumo. O sistema responde `d: resumo disponível no Dashboard` e a conversa termina.
+1. **Abertura:** Camila diz `u: ativar o acompanhamento`, o que abre a conversa sobre a meta (`gco: Acompanhar o estado da turma`). O sistema verifica as câmeras.
+2. Com `precond: câmeras suficientes`, o preposto responde `d: acompanhamento ativo` e a conversa vai para a cena **Acompanhar o estado da turma**. Nela, os diálogos "ver estado da turma" (estado predominante, confiança, atualizado há) e "ver base da estimativa" (participantes contribuindo) mostram o estado do grupo.
+3. A cada `precond: nova janela de tempo`, o sistema atualiza a estimativa e volta à cena com `d: estado atualizado`.
+4. Com `precond: mudança relevante`, o preposto diz `d: o estado da turma mudou`, e a conversa vai para **Examinar a mudança no estado** (estado anterior, estado atual, desde quando, confiança e qualidade do sinal).
+5. Camila pode dizer `u: marcar este momento`. O sistema registra o momento e responde `d: momento marcado`, voltando ao acompanhamento. Ou pode dizer `u: dispensar o aviso` e voltar direto.
+6. Pelo acesso ubíquo, `u: encerrar a aula` leva ao processo que salva o resumo. O preposto responde `d: resumo salvo e disponível no Dashboard`, a conversa é fechada (`gcc: Acompanhar o estado da turma`) e chega ao ponto de encerramento.
 
-Caminhos alternativos sem ruptura:
+Caminhos alternativos:
 
-- A partir de **Examinar a mudança no estado**, `u: o que isso significa?` leva à cena **Entender o significado da estimativa**, que explica o estado, o que a estimativa não indica e por que a confiança pode estar baixa. `u: voltar` retorna à mudança.
-- Pelo **acesso ubíquo**, Camila pode, de qualquer cena, `u: abrir ajuda` (mesma cena de significado) ou `u: pausar acompanhamento`. A pausa leva à cena **Acompanhamento pausado**, de onde ela pode `u: retomar o acompanhamento` (volta à verificação de câmeras) ou `u: encerrar a aula`.
+- Em **Examinar a mudança no estado**, `u: o que isso significa?` leva à cena **Entender o significado da estimativa**. Ela também é alcançada pelo acesso ubíquo `u: ajuda`. A volta depende de onde Camila veio: `precond: veio do aviso / u: voltar` retorna à mudança, e `precond: veio da ajuda / u: voltar` retorna ao acompanhamento.
+- Pelo acesso ubíquo, `u: pausar acompanhamento` leva ao processo de pausa. O preposto responde `d: acompanhamento pausado` e `d: participantes avisados`, e a conversa vai para **Acompanhamento pausado**. Dali, `u: retomar o acompanhamento` volta à verificação de câmeras.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| Poucas câmeras ligadas para estimar (abaixo do mínimo) | Processamento "Verificar câmeras e iniciar a estimativa local" | `d: poucas câmeras ligadas para estimar` e a cena "Entender por que não há estimativa", com o motivo, os participantes contribuindo e o mínimo necessário | `u: tentar novamente` (nova verificação) ou `u: continuar sem acompanhamento` (encerra a conversa com o MindFlow; a aula segue como antes) |
-| Sinal insuficiente no meio da aula (câmeras desligadas, luz, conexão) | Processamento "Atualizar a estimativa do grupo" | `d: sinal insuficiente` e a mesma cena de explicação do motivo | As mesmas saídas: tentar novamente ou continuar sem acompanhamento |
-| Estimativa que parece errada para a professora | Cena "Examinar a mudança no estado" | Confiança e qualidade do sinal exibidas junto da mudança | `u: o que isso significa?` para entender a estimativa, ou `u: dispensar o aviso` |
-| Acompanhamento que atrapalha a aula | Qualquer cena | — | Acesso ubíquo: `u: pausar acompanhamento`; depois retomar ou encerrar |
-| Falha ao salvar o resumo da aula | Processamento "Encerrar a estimativa e salvar o resumo da aula" | `d: falha ao salvar` e a cena "Salvar o registro da aula", com o motivo e a informação de que os dados continuam no computador | `u: tentar novamente` (volta ao processamento) ou `u: tentar mais tarde` (encerra sem perder os dados) |
+| Poucas câmeras ligadas para estimar | Processo de verificação de câmeras, ao ativar | `[SR] d: poucas câmeras ligadas para estimar` e a cena de alerta "Entender por que não há estimativa", com o motivo, os participantes contribuindo e o mínimo | `u: tentar novamente` (nova verificação) ou `u: continuar sem acompanhamento` (fecha a conversa; a aula segue sem o MindFlow) |
+| Sinal insuficiente no meio da aula (câmeras desligadas, luz, conexão) | Processo de atualização da estimativa | `[SR] d: sinal insuficiente` e a mesma cena de alerta | As mesmas saídas: tentar novamente ou continuar sem acompanhamento |
+| Estimativa que parece errada para a professora | Cena "Examinar a mudança no estado" | Confiança e qualidade do sinal mostradas junto da mudança | `u: o que isso significa?` ou `u: dispensar o aviso` |
+| Acompanhamento que atrapalha a aula | Qualquer cena | — | Acesso ubíquo `u: pausar acompanhamento`; depois retomar ou encerrar |
+| Falha ao salvar o resumo da aula | Processo de salvar o resumo | `[SR] d: falha ao salvar o resumo` e a cena de alerta "Salvar o registro da aula", informando que os dados continuam no computador | `u: tentar novamente` (volta ao processo) ou `u: tentar mais tarde` (fecha a conversa sem perder os dados) |
 
 ### Checklist específico de modelagem
 
-- [x] Existe **ponto de abertura** coerente com o início do objetivo (ativar o acompanhamento antes ou no início da explicação).
+- [x] Existe **ponto de abertura** coerente com o início do objetivo (`u: ativar o acompanhamento` / `gco: Acompanhar o estado da turma`).
 - [x] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
 - [x] As transições/falas deixam claro o que o usuário ou o sistema comunica.
-- [x] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável (resumo salvo; continuar sem acompanhamento ou tentar mais tarde).
-- [x] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário (a atualização periódica parte do sistema, não de uma fala de Camila).
-- [x] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
-- [x] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis (pausar e ajuda, que Camila pode precisar em qualquer momento da aula).
+- [x] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável (barra `gcc:` alcançada pelo resumo salvo, por continuar sem acompanhamento ou por tentar mais tarde).
+- [x] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário (quadrados pretos; a atualização periódica entra no processo por `precond: nova janela de tempo`, sem fala de Camila).
+- [x] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída (setas tracejadas com `[SR]` e cenas de alerta tracejadas).
+- [x] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis (ajuda, pausar e encerrar a aula, que Camila pode precisar em qualquer momento).
 - [x] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
 - [x] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
 - [x] O diagrama é legível em tamanho normal no GitHub.
