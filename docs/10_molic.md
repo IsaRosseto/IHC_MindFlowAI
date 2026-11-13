@@ -23,102 +23,44 @@ Exemplos de conversas:
 
 Modele também rupturas plausíveis: entrada inválida, falha de processamento, ausência de resultado, permissão insuficiente, filtro sem resultados, conflito de alteração, cancelamento ou necessidade de recuperação.
 
-## M01 — {{nome do cenário/objetivo}}
+## M01 — Consultar e personalizar o resumo de uma aula concluída
 
-**Autor(a):** {{nome — matrícula}}  
-**Cenário de interação de origem:** {{CI01}}  
-**Objetivo(s):** {{O01}}  
-**Tarefa(s) relacionada(s):** {{T01}}  
-**Signos relevantes:** {{...}}
+**Autor(a):** Kayky Pires — 22.222.040-2  
+**Cenário de interação de origem:** CI01 — Acompanhar os estados da turma e revisar os resultados da aula, derivado do cenário de problema C02, relacionado à persona P01 — Karol.  
+**Objetivo(s):** O01 — Personalizar a visualização do resumo da reunião; O05 — Avaliar a adequação da visualização personalizada; cobertura parcial de O03 — Analisar os resultados de uma aula concluída.  
+**Tarefa(s) relacionada(s):** T01 — Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI.  
+**Signos relevantes:** título da reunião, data da reunião, indicador cognitivo, significado do indicador, valor do indicador, escala, disponibilidade de dados, seleção de indicadores e resultado do salvamento.
+
 
 ### Diagrama
 
-``` mermaid
-flowchart TD
-    INICIO((" "))
+![M01 - Consultar e Personalizar o resumo de uma aula concluída](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/10_molic/Molic%20-%20k.png)
 
-    CONSULTAR("`**Consultar resumo da reunião**
-    Ver identificação da reunião {
-    d: título, data }
 
-    Consultar disponibilidade da análise {
-    d: disponibilidade de dados }
-
-    Examinar indicadores disponíveis
-    (precond: dados disponíveis para o indicador) {
-    d: indicador cognitivo, valor, escala }
-
-    Compreender os indicadores {
-    d: significado dos indicadores,
-    caráter estimado dos resultados }
-
-    Consultar visualização atual {
-    d: seleção de indicadores aplicada }`")
-
-    PERSONALIZAR("`**Personalizar visualização**
-    Consultar opções de personalização {
-    d: indicadores cognitivos disponíveis }
-
-    Definir informações do resumo {
-    d+u: seleção de indicadores
-    (valor inicial: configuração vigente) }`")
-
-    SALVAR[" "]
-
-    CONFERIR("`**Conferir resumo personalizado**
-    Consultar configuração aplicada {
-    d: seleção de indicadores salva }
-
-    Consultar disponibilidade da análise {
-    d: disponibilidade de dados }
-
-    Examinar resultado da personalização
-    (precond: dados disponíveis para o indicador) {
-    d: indicador cognitivo, valor, escala }`")
-
-    FIM(((" ")))
-
-    INICIO -->|"u: abrir resumo da reunião; gco: Personalizar visualização do resumo"| CONSULTAR
-
-    CONSULTAR -->|"u: personalizar visualização"| PERSONALIZAR
-
-    PERSONALIZAR -->|"u: salvar alterações"| SALVAR
-
-    SALVAR -->|"d: configuração salva e aplicada"| CONFERIR
-
-    SALVAR -.->|"[SR] d: não foi possível salvar; seleções preservadas"| PERSONALIZAR
-
-    PERSONALIZAR -.->|"u: cancelar alterações"| CONSULTAR
-
-    CONFERIR -->|"u: editar novamente"| PERSONALIZAR
-
-    CONFERIR -->|"gcc: Personalizar visualização do resumo"| FIM
-
-    classDef processo fill:#000000,stroke:#000000;
-    classDef abertura fill:#000000,stroke:#000000;
-    class SALVAR processo;
-    class INICIO abertura;
-```
-
+### Leitura do diagrama
 
 ### Leitura do diagrama
 
 #### Caminho principal
 
-1. O docente abre o resumo da reunião. O marcador `gco: Personalizar visualização do resumo` identifica a abertura da conversa relacionada a esse objetivo.
-2. Na cena **Consultar resumo da reunião**, o sistema apresenta o título, a data, os estados cognitivos e os indicadores atualmente exibidos.
-3. Ao solicitar `u: personalizar visualização`, o docente acessa a cena **Personalizar visualização**, consulta os indicadores disponíveis e define quais deseja exibir. Essa seleção é representada por `d+u: indicadores selecionados para exibição`.
-4. O docente solicita `u: salvar alterações`, iniciando o processo de salvamento pelo sistema.
-5. Quando o salvamento é concluído, o sistema comunica `d: configuração salva e aplicada` e apresenta a cena **Conferir resumo personalizado**. O docente examina os indicadores exibidos, seus dados e a configuração salva.
-6. Após a conferência, o marcador `gcc: Personalizar visualização do resumo` indica o encerramento da conversa sobre esse objetivo.
+1. Karol solicita `u: abrir resumo da reunião`, iniciando a conversa sobre a análise dos resultados da aula (`gco: O03`).
+2. Na cena **Consultar resumo da reunião**, examina o título, a data, os indicadores e a visualização vigente. O sistema comunica o significado dos indicadores, o caráter estimado dos resultados e a disponibilidade de dados.
+3. Ao identificar a necessidade de personalização, solicita `u: personalizar visualização`, abrindo a conversa sobre esse objetivo (`gco: O01`).
+4. Na cena **Personalizar visualização**, consulta as opções disponíveis e modifica a seleção de indicadores (`d+u: seleção de indicadores`). A configuração vigente é utilizada como valor inicial.
+5. Karol solicita `u: salvar alterações`. O sistema realiza o salvamento e, em caso de sucesso, comunica `d: configuração salva e aplicada`. Essa confirmação encerra a conversa sobre a personalização (`gcc: O01`).
+6. Na cena **Conferir resumo personalizado**, inicia a avaliação da visualização (`gco: O05`). Karol confere os indicadores apresentados, a seleção aplicada e o resultado do salvamento.
+7. Quando considera a visualização adequada, solicita `u: voltar a Minhas Reuniões`, encerrando as conversas sobre a avaliação e a análise dos resultados (`gcc: O05, O03`). Esse retorno não representa a saída da aplicação.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| Cancelamento da personalização | Na cena **Personalizar visualização**. | Após solicitar `u: cancelar alterações`, o docente retorna ao resumo com a configuração anterior. | As alterações não salvas são descartadas, sem confirmação, e o docente pode continuar consultando o resumo. |
-| Falha no salvamento | No processo do sistema, após `u: salvar alterações`. | O sistema comunica `[SR] d: não foi possível salvar; seleções preservadas`. | O docente retorna à personalização com suas seleções preservadas e pode tentar salvar novamente, modificar a seleção ou cancelar. |
-| Necessidade de novos ajustes | Na cena **Conferir resumo personalizado**. | Ao examinar o resultado, o docente identifica a necessidade de modificar a configuração e solicita `u: editar novamente`. | Retorna à personalização, ajusta os indicadores e realiza um novo salvamento antes de concluir a conferência. |
+| Consultar sem personalizar | Na cena **Consultar resumo da reunião**. | Karol identifica que a visualização vigente já atende às suas necessidades. | Solicita `u: voltar a Minhas Reuniões`, encerrando a conversa sobre O03 sem iniciar a personalização. |
+| Cancelar sem alterações não salvas | Após solicitar o cancelamento na cena **Personalizar visualização**. | O sistema verifica que não existem alterações pendentes e comunica que a configuração anterior foi mantida. | Retorna diretamente à consulta do resumo e encerra a conversa sobre O01 como abandonada. |
+| Cancelar com alterações não salvas | No processo de verificação do cancelamento e na cena **Confirmar descarte das alterações**. | O sistema comunica `[SP] d: confirmar descarte` e apresenta as consequências de descartar a seleção em edição. | Karol pode solicitar `u: continuar editando`, preservando as alterações, ou `u: descartar alterações`, retornando ao resumo com a configuração anterior e encerrando a conversa sobre O01 como abandonada. |
+| Falha no salvamento | No processo do sistema iniciado por `u: salvar alterações`. | O sistema comunica `[SR] d: não foi possível salvar; seleções preservadas`, sem confirmar a aplicação das alterações. | Retorna à personalização com a seleção preservada. Karol pode tentar salvar novamente, modificar a seleção ou cancelar. |
+| Necessidade de novos ajustes | Na cena **Conferir resumo personalizado**. | Ao examinar o resultado, Karol identifica que a visualização ainda precisa de ajustes. | Solicita `u: editar novamente`, encerrando a avaliação atual (`gcc: O05`) e reabrindo a personalização (`gco: O01`). |
+| Dados indisponíveis | Nas cenas **Consultar resumo da reunião** e **Conferir resumo personalizado**. | O sistema informa a indisponibilidade do resultado, diferenciando ausência de dados de um valor zero. | Karol pode consultar os demais resultados disponíveis e seguir pelos caminhos de personalização ou retorno. A indisponibilidade de um indicador não é apresentada como falha no salvamento. |
 
 ### Checklist específico de modelagem
 
