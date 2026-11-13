@@ -34,33 +34,141 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ### Diagrama
 
-![M01 - Consultar e Personalizar o resumo de uma aula concluída](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/10_molic/Molic%20-%20k.png)
+flowchart TB
+
+    INICIO((" "))
+
+    REUNIOES("`**Selecionar um resumo**
+    Consultar reuniões disponíveis {
+    d: títulos, datas e situações }
+
+    Identificar a reunião desejada {
+    d: acesso ao resumo }`")
+
+    CONSULTAR("`**Consultar e avaliar o resumo**
+    Identificar a reunião {
+    d: título, data }
+
+    Examinar a visualização atual {
+    d: indicadores, gráficos,
+    disponibilidade de dados }
+
+    Compreender as informações {
+    d: significado dos indicadores }`")
+
+    PERSONALIZAR("`**Personalizar visualização**
+    Escolher e organizar os elementos {
+    d+u: seleção, ordem e tamanho dos blocos }
+
+    Identificar a visualização {
+    d+u: nome da visualização }`")
+
+    SALVAR[" "]
+
+    CONFERIR("`**Conferir resumo personalizado**
+    Reconhecer o salvamento {
+    d: nome da visualização,
+    confirmação de salvamento }
+
+    Avaliar o resultado {
+    d: configuração aplicada,
+    indicadores e disponibilidade de dados }`")
+
+    CONFIRMAR("`**Confirmar exclusão da visualização**
+    Identificar a visualização salva {
+    d: nome da visualização }
+
+    Confirmar a intenção {
+    d: Excluir a visualização selecionada? }`")
+
+    EXCLUIR[" "]
+
+    FIM(((" ")))
+
+    INICIO -->|"u: acessar Minhas Reuniões"| REUNIOES
+
+    REUNIOES -->|"`u: selecionar Ver resumo
+    gco: Analisar os resultados de uma aula concluída`"| CONSULTAR
+
+    CONSULTAR -->|"`u: voltar a Minhas Reuniões
+    gcc: Analisar os resultados de uma aula concluída`"| REUNIOES
+
+    CONSULTAR -->|"`visualização atende à necessidade
+    gcc: Analisar os resultados de uma aula concluída`"| FIM
+
+    CONSULTAR -->|"`u: Organizar dashboard
+    gco: Personalizar a visualização do resumo da reunião`"| PERSONALIZAR
+
+    PERSONALIZAR -->|"u: Salvar visualização"| SALVAR
+
+    SALVAR -.->|"`nome não informado
+    [SR] d: Dê um nome para a visualização`"| PERSONALIZAR
+
+    SALVAR -->|"`d: visualização salva na sua conta
+    gcc: Personalizar a visualização do resumo da reunião
+    gco: Avaliar a adequação da visualização personalizada`"| CONFERIR
+
+    PERSONALIZAR -.->|"`u: Cancelar
+    gcc: Personalizar a visualização do resumo da reunião — abandonado`"| CONSULTAR
+
+    CONFERIR -->|"`visualização atende à necessidade
+    gcc: Avaliar a adequação da visualização personalizada
+    gcc: Analisar os resultados de uma aula concluída`"| FIM
+
+    CONFERIR -->|"`u: voltar a Minhas Reuniões
+    gcc: Avaliar a adequação da visualização personalizada
+    gcc: Analisar os resultados de uma aula concluída`"| REUNIOES
+
+    CONFERIR -->|"`u: Organizar dashboard
+    gcc: Avaliar a adequação da visualização personalizada
+    gco: Personalizar a visualização do resumo da reunião`"| PERSONALIZAR
+
+    PERSONALIZAR -->|"`precond: visualização já salva
+    u: Excluir`"| CONFIRMAR
+
+    CONFIRMAR -.->|"u: Cancelar"| PERSONALIZAR
+
+    CONFIRMAR -->|"u: OK"| EXCLUIR
+
+    EXCLUIR -->|"`d: visualização excluída
+    gcc: Personalizar a visualização do resumo da reunião — abandonado`"| CONSULTAR
+
+    classDef cena fill:#ffffff,stroke:#333333,stroke-width:1.5px,color:#111111;
+    classDef processo fill:#000000,stroke:#000000,color:#000000;
+    classDef abertura fill:#000000,stroke:#000000;
+    classDef encerramento fill:#ffffff,stroke:#000000,stroke-width:2px;
+
+    class REUNIOES,CONSULTAR,PERSONALIZAR,CONFERIR,CONFIRMAR cena;
+    class SALVAR,EXCLUIR processo;
+    class INICIO abertura;
+    class FIM encerramento;
 
 
-### Leitura do diagrama
 
 ### Leitura do diagrama
 
 #### Caminho principal
 
-1. Karol solicita `u: abrir resumo da reunião`, iniciando a conversa sobre a análise dos resultados da aula (`gco: O03`).
-2. Na cena **Consultar resumo da reunião**, examina o título, a data, os indicadores e a visualização vigente. O sistema comunica o significado dos indicadores, o caráter estimado dos resultados e a disponibilidade de dados.
-3. Ao identificar a necessidade de personalização, solicita `u: personalizar visualização`, abrindo a conversa sobre esse objetivo (`gco: O01`).
-4. Na cena **Personalizar visualização**, consulta as opções disponíveis e modifica a seleção de indicadores (`d+u: seleção de indicadores`). A configuração vigente é utilizada como valor inicial.
-5. Karol solicita `u: salvar alterações`. O sistema realiza o salvamento e, em caso de sucesso, comunica `d: configuração salva e aplicada`. Essa confirmação encerra a conversa sobre a personalização (`gcc: O01`).
-6. Na cena **Conferir resumo personalizado**, inicia a avaliação da visualização (`gco: O05`). Karol confere os indicadores apresentados, a seleção aplicada e o resultado do salvamento.
-7. Quando considera a visualização adequada, solicita `u: voltar a Minhas Reuniões`, encerrando as conversas sobre a avaliação e a análise dos resultados (`gcc: O05, O03`). Esse retorno não representa a saída da aplicação.
+1. O usuário acessa **Minhas Reuniões**, consulta os títulos, as datas e as situações das reuniões e identifica aquela que deseja analisar.
+2. Ao selecionar **Ver resumo**, inicia a conversa sobre **Analisar os resultados de uma aula concluída**.
+3. Na cena **Consultar e avaliar o resumo**, examina a identificação da reunião, os indicadores, os gráficos, suas explicações e a disponibilidade de dados.
+4. Ao identificar a necessidade de modificar a apresentação, solicita **Organizar dashboard**, iniciando a conversa sobre **Personalizar a visualização do resumo da reunião**.
+5. Na cena **Personalizar visualização**, escolhe os blocos, ajusta sua ordem e seu tamanho e informa o nome da visualização.
+6. O usuário solicita **Salvar visualização**. O processo do sistema verifica o preenchimento do nome e realiza a tentativa de salvamento.
+7. Quando o salvamento é concluído, o sistema comunica **“Visualização salva na sua conta”** e apresenta o resumo com a configuração aplicada. Encerra-se a conversa sobre a personalização e inicia-se a avaliação da visualização personalizada.
+8. Na cena **Conferir resumo personalizado**, o usuário verifica o resultado. Quando considera a visualização adequada, conclui a tarefa. Esse encerramento não exige um botão adicional nem representa sair da aplicação.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| Consultar sem personalizar | Na cena **Consultar resumo da reunião**. | Karol identifica que a visualização vigente já atende às suas necessidades. | Solicita `u: voltar a Minhas Reuniões`, encerrando a conversa sobre O03 sem iniciar a personalização. |
-| Cancelar sem alterações não salvas | Após solicitar o cancelamento na cena **Personalizar visualização**. | O sistema verifica que não existem alterações pendentes e comunica que a configuração anterior foi mantida. | Retorna diretamente à consulta do resumo e encerra a conversa sobre O01 como abandonada. |
-| Cancelar com alterações não salvas | No processo de verificação do cancelamento e na cena **Confirmar descarte das alterações**. | O sistema comunica `[SP] d: confirmar descarte` e apresenta as consequências de descartar a seleção em edição. | Karol pode solicitar `u: continuar editando`, preservando as alterações, ou `u: descartar alterações`, retornando ao resumo com a configuração anterior e encerrando a conversa sobre O01 como abandonada. |
-| Falha no salvamento | No processo do sistema iniciado por `u: salvar alterações`. | O sistema comunica `[SR] d: não foi possível salvar; seleções preservadas`, sem confirmar a aplicação das alterações. | Retorna à personalização com a seleção preservada. Karol pode tentar salvar novamente, modificar a seleção ou cancelar. |
-| Necessidade de novos ajustes | Na cena **Conferir resumo personalizado**. | Ao examinar o resultado, Karol identifica que a visualização ainda precisa de ajustes. | Solicita `u: editar novamente`, encerrando a avaliação atual (`gcc: O05`) e reabrindo a personalização (`gco: O01`). |
-| Dados indisponíveis | Nas cenas **Consultar resumo da reunião** e **Conferir resumo personalizado**. | O sistema informa a indisponibilidade do resultado, diferenciando ausência de dados de um valor zero. | Karol pode consultar os demais resultados disponíveis e seguir pelos caminhos de personalização ou retorno. A indisponibilidade de um indicador não é apresentada como falha no salvamento. |
+| A visualização inicial já atende à necessidade | Na cena **Consultar e avaliar o resumo**. | O usuário reconhece que as informações já estão apresentadas de forma adequada. | Conclui a tarefa sem iniciar a personalização. |
+| Retorno a Minhas Reuniões | Nas cenas **Consultar e avaliar o resumo** e **Conferir resumo personalizado**. | O usuário decide voltar à lista de reuniões. | Solicita o retorno a **Minhas Reuniões** e pode selecionar outro resumo. As conversas abertas sobre a análise e, quando aplicável, a avaliação da visualização são encerradas. |
+| Cancelamento da personalização | Na cena **Personalizar visualização**. | O usuário decide interromper a edição e seleciona **Cancelar**. | Retorna diretamente à consulta do resumo, sem concluir um novo salvamento. Não há confirmação de descarte nesse caminho. |
+| Tentativa de salvar sem nome | No processo do sistema iniciado por **Salvar visualização**. | O sistema comunica **“Dê um nome para a visualização.”** | O editor permanece aberto com os blocos selecionados. O usuário informa o nome e solicita novamente o salvamento. A conferência do resumo personalizado somente é alcançada após o sucesso. |
+| Necessidade de novos ajustes | Na cena **Conferir resumo personalizado**. | O usuário identifica que a configuração aplicada ainda precisa de modificações. | Seleciona **Organizar dashboard**, retorna à personalização e pode ajustar os elementos e salvar novamente. |
+| Exclusão de uma visualização salva | Após abrir novamente o editor de uma visualização já salva e selecionar **Excluir**. | O sistema apresenta o nome da visualização e solicita a confirmação da exclusão. | Ao selecionar **Cancelar**, retorna ao editor sem excluir. Ao selecionar **OK**, o sistema realiza a exclusão e retorna à consulta do resumo. Essa confirmação corresponde à exclusão de uma visualização salva. |
+| Ausência de dados | Nas cenas de consulta e conferência do resumo. | A interface apresenta mensagens como **“Sem leituras para esta reunião”** e **“Sem reações neste intervalo”**. | O usuário pode reconhecer a indisponibilidade, personalizar a apresentação ou retornar às reuniões. Esse estado não representa um erro de salvamento. |
 
 ### Checklist específico de modelagem
 
