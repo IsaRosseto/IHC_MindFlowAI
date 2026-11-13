@@ -34,25 +34,25 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 ## Link do Figma
 
-**Protótipo:** {{URL}}  
+**Protótipo:** [{{MINDFLOW SITE}}](https://mindflowiaa.netlify.app/)  
 **Arquivo editável:** {{URL}}  
 **Última verificação de permissão:** {{dd/mm/aaaa}}
 
 > Teste o link em janela anônima. O avaliador deve conseguir abrir o protótipo sem solicitar permissão.
 
+
 ## Cobertura MoLIC → Figma
 
 | MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
 |---|---|---|---|---|
-| M01 — Consultar resumo da reunião | O03 — Analisar os resultados de uma aula concluída. | F01 — Minhas Reuniões → **Ver resumo** → F02 — Resumo da Reunião. A interface apresenta identificação da reunião, indicadores, gráficos e explicações dos cards. | F02V — Resumo sem dados: apresenta mensagens como “Sem leituras para esta reunião” e “Sem reações neste intervalo”. Estado registrado nas imagens. | Kayky Pires — 22.222.040-2 |
-| M01 — Personalizar visualização | O01 — Personalizar a visualização do resumo da reunião. | F02 → **Organizar dashboard** → F03 — Editor de personalização. Permite nomear a visualização, selecionar blocos, reorganizar e redimensionar os elementos. Apresenta os controles **Cancelar** e **Salvar visualização**. | Os controles estão evidenciados. A confirmação de descarte de alterações não salvas e a recuperação de falha no salvamento ainda precisam ser verificadas e documentadas. | Kayky Pires — 22.222.040-2 |
-| M01 — Conferir resumo personalizado | O05 — Avaliar a adequação da visualização personalizada. | Fluxo previsto: F03 → **Salvar visualização** → F02S — Resumo com a configuração aplicada. A conferência ocorre na própria tela de resumo, com possibilidade de acessar novamente **Organizar dashboard**. | A aplicação da configuração, a mensagem de sucesso e o retorno para novos ajustes ainda precisam de evidência após o salvamento. | Kayky Pires — 22.222.040-2 |
+| M01 — Selecionar, consultar e avaliar o resumo | O03 — Analisar os resultados de uma aula concluída. | F01 — Minhas Reuniões → Ver resumo → F02 — Resumo da Reunião. | F02V documenta o resumo sem leituras e as explicações dos cards. O usuário pode retornar a Minhas Reuniões. | Kayky Pires — 22.222.040-2 |
+| M01 — Personalizar visualização | O01 — Personalizar a visualização do resumo da reunião. | F02 → Organizar dashboard → F03 — Editor de personalização → Salvar visualização. | F03E apresenta a validação do nome não preenchido. O cancelamento retorna diretamente ao resumo. F03C registra a confirmação de exclusão de uma visualização já salva. | Kayky Pires — 22.222.040-2 |
+| M01 — Conferir resumo personalizado | O05 — Avaliar a adequação da visualização personalizada. | Após o salvamento, F02S apresenta a visualização selecionada e a confirmação de sucesso. Organizar dashboard permite acessar novamente o editor F03. | F02S documenta o retorno de sucesso. A reunião utilizada no print permanece sem leituras, independentemente do salvamento da configuração. | Kayky Pires — 22.222.040-2 |
+
 
 ## Catálogo de telas/estados
 
-## Catálogo de telas/estados
-
-### F01 — Minhas Reuniões
+### F01: M01 — Minhas Reuniões
 
 ![F01 — Minhas Reuniões e acesso ao resumo](../assets/11_figma/ver_resumo.png)
 
@@ -60,7 +60,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 **Signos principais:** título, data, duração, quantidade de participantes, situação da reunião e indicador de engajamento.  
 **Origem no MoLIC:** contexto de acesso anterior ao ponto de abertura do M01, correspondente à solicitação `u: abrir resumo da reunião`.
 
-### F02 — Resumo da Reunião: estado sem dados (F02V)
+### F02: M01 — Resumo da Reunião: estado sem dados (F02V)
 
 ![F02V — Resumo sem dados, explicação de card e acesso à personalização](../assets/11_figma/resumo%20inicial%20e%20organizar%20dash.png)
 
@@ -70,7 +70,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 O registro apresenta as mensagens **“Sem reações neste intervalo”** e **“Sem leituras para esta reunião”**, além da explicação aberta do card de participantes. O botão **Organizar dashboard** permite iniciar a personalização.
 
-### F03 — Personalizar visualização
+### F03: M01 — Personalizar visualização
 
 ![F03 — Editor de organização do dashboard](../assets/11_figma/organiza%C3%A7%C3%A3o%20do%20dash.png)
 
@@ -80,7 +80,7 @@ O registro apresenta as mensagens **“Sem reações neste intervalo”** e **�
 
 O editor apresenta caixas de seleção, controles de ordenação e orientações para arrastar e redimensionar os blocos. As ações disponíveis incluem **Cancelar** e **Salvar visualização**.
 
-### F03E — Validação: tentativa de salvar sem nome
+### F03E: M01 — Validação: tentativa de salvar sem nome
 
 ![F03E — Mensagem de validação ao salvar sem nome](../assets/11_figma/erro%20salvar%20sem%20nome.png)
 
@@ -90,7 +90,7 @@ O editor apresenta caixas de seleção, controles de ordenação e orientações
 
 Após a tentativa de salvamento sem nome, o editor permanece aberto com a seleção visível. A recuperação consiste em preencher o nome e solicitar novamente **Salvar visualização**. Esse estado representa um erro de entrada, distinto de uma falha técnica no salvamento.
 
-### F02S — Visualização salva e aplicada
+### F02S: M01 — Visualização salva e aplicada
 
 ![F02S — Resumo após o salvamento da visualização](../assets/11_figma/visualiza%C3%A7%C3%A3o%20salva.png)
 
@@ -100,7 +100,7 @@ Após a tentativa de salvamento sem nome, o editor permanece aberto com a seleç
 
 O editor está fechado, a visualização nomeada aparece selecionada e a mensagem confirma o salvamento. O usuário pode solicitar novos ajustes pelo botão **Organizar dashboard**. A reunião utilizada neste registro permanece sem leituras; salvar a configuração não altera a disponibilidade dos dados.
 
-### F03C — Confirmação de exclusão de uma visualização salva
+### F03C: M01 — Confirmação de exclusão de uma visualização salva
 
 ![F03C — Confirmação antes de excluir uma visualização salva](../assets/11_figma/info%20excluir%20visualiza%C3%A7%C3%A3o.png)
 
@@ -116,10 +116,10 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 | Elemento | Regra adotada | Justificativa |
 |---|---|---|
-| Tipografia | {{...}} | {{legibilidade/contexto}} |
-| Cores | {{...}} | {{hierarquia/contraste/semântica}} |
-| Componentes | {{...}} | {{consistência}} |
-| Feedback | {{...}} | {{status}} |
+| Tipografia | Uso de fonte sem serifa, títulos destacados e hierarquia entre nomes das telas, seções, rótulos e textos explicativos. | Facilitar a identificação das informações e a leitura dos resultados e das opções de personalização. |
+| Cores | Tons de roxo destacam ações principais, como Organizar dashboard e Salvar visualização. A exclusão utiliza vermelho. Os indicadores e gráficos combinam cores com nomes, valores e legendas. | Diferenciar ações e informações, oferecendo identificação textual além da cor. A adequação do contraste ainda precisa ser verificada. |
+| Componentes | Reutilização de menu lateral, cards, botões, campos de texto, seletores e caixas de seleção. O editor mantém os controles Cancelar e Salvar visualização próximos entre si e oferece botões de ordenação além da interação por arraste. | Preservar padrões reconhecíveis durante a navegação e facilitar a localização das ações de personalização. |
+| Feedback | Mensagens textuais comunicam nome não preenchido, salvamento concluído e ausência de leituras. A exclusão de uma visualização salva apresenta uma confirmação. O cancelamento da edição retorna diretamente ao resumo. | Informar o resultado das ações, orientar a correção de entradas e permitir que o usuário confirme uma exclusão antes de realizá-la. |
 
 ## Verificação de acessibilidade básica
 
