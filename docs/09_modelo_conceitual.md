@@ -58,9 +58,48 @@ Em alguns casos, ele interpreta a falta de reação como concordância e só des
 | Resumo salvo ao encerrar, com linha do tempo, momentos marcados, percepções e retorno do cliente no mesmo lugar | A avaliação do que funcionou só acontece dias depois (T05, operação 6.3) e depende de comparar anotações com o e-mail do cliente (C01, Q7) | T05 (HTA 6.2 e 6.3); C01 (Q7); R03 e R05; F02 e F03; RC10 |
 | Ruptura: participantes insuficientes | Em grupos de 2 a 6 clientes, o agregado pode expor uma pessoa ou não ter base | H05; R04; A05 (dado sobre papéis e tamanho do grupo) |
 
+---
+
+### CI04 — Acompanhar a compreensão e o engajamento dos participantes durante o treinamento on-line
+
+**Autor(a):** Rafael Dias — 22.222.039-4  
+**Origem:** cenário problema C04 — Dificuldade em identificar a compreensão e o aprendizado durante treinamento on-line.  
+**Persona relacionada:** P03 — Nathanael Lima.
+
+Nathanael, profissional de Treinamento e Desenvolvimento, conduz capacitações on-line para colaboradores de diferentes áreas e níveis de experiência. Durante o treinamento, precisa apresentar os conteúdos e, ao mesmo tempo, identificar se os participantes estão acompanhando e compreendendo as explicações.
+
+Normalmente, utiliza as câmeras, o chat e as perguntas dos participantes para interpretar suas reações. Entretanto, em ambientes corporativos, o uso da câmera nem sempre é obrigatório e muitos participantes não interagem durante a apresentação.
+
+Em treinamentos com grande número de participantes, essa dificuldade aumenta, pois Nathanael não consegue acompanhar individualmente todas as pessoas. Assim, sua percepção sobre o grupo pode ficar limitada aos participantes que demonstram alguma reação, dificultando a identificação de momentos de confusão, desinteresse ou perda de atenção.
+
+**[ACRÉSCIMO: Durante o treinamento, Nathanael utiliza o MindFlow AI para consultar os indicadores de engajamento, tédio, confusão e frustração do grupo, apresentados de maneira objetiva para não interromper o ritmo da capacitação.]**
+
+**[ACRÉSCIMO: Os indicadores são apresentados como estimativas calculadas a partir dos participantes para os quais existem dados disponíveis. O sistema informa quando não há dados suficientes e comunica que os resultados não representam uma confirmação do aprendizado ou da compreensão do conteúdo.]**
+
+**[ALTERADO: Ao observar possíveis alterações nos indicadores, Nathanael considera também as manifestações no chat, as perguntas e as demais reações disponíveis para decidir se deve manter a explicação, reduzir o ritmo, apresentar outro exemplo ou solicitar uma interação dos participantes.]**
+
+**[ACRÉSCIMO: Após o encerramento do treinamento, Nathanael pode acessar o resumo da sessão e consultar os indicadores registrados ao longo da apresentação, identificando períodos em que houve maior estimativa de confusão, tédio ou redução do engajamento.]**
+
+**[ACRÉSCIMO: Com essas informações, Nathanael consegue revisar os momentos que merecem atenção e avaliar possíveis melhorias no conteúdo e na condução dos próximos treinamentos, sem utilizar os indicadores como avaliação individual dos participantes.]**
+
+Dessa forma, Nathanael passa a contar com informações complementares às interações convencionais da videoconferência, utilizando os resultados como apoio à interpretação do comportamento do grupo e às decisões durante e após o treinamento.
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Inclusão da consulta aos indicadores durante o treinamento. | Permitir que o instrutor acompanhe possíveis sinais de engajamento e dificuldade mesmo quando existem poucas interações no chat. | C04, necessidade R01 e hipótese H01. |
+| Apresentação dos indicadores como estimativas e comunicação da disponibilidade de dados. | Evitar que o instrutor interprete resultados da classificação como confirmação de compreensão ou aprendizado. | Hipótese H02 e necessidade de comunicar as limitações dos resultados técnicos. |
+| Utilização dos indicadores como apoio à tomada de decisão. | Relacionar os resultados à necessidade de adaptar o ritmo, repetir explicações ou solicitar interações. | Objetivos e ações identificados no C04. |
+| Consulta posterior aos resultados do treinamento. | Permitir que o instrutor identifique períodos que merecem revisão e avalie possíveis melhorias nos materiais. | Necessidades e objetivos da persona P03. |
+| Apresentação de informações agregadas do grupo. | Evitar a interpretação dos resultados como avaliação individual dos colaboradores. | Decisões de design da P03 e hipótese H03. |
+| Apresentação objetiva dos indicadores. | Reduzir a sobrecarga de informações durante a capacitação. | Restrições da P03 e problemas identificados no C04. |
+---
+
 ## 2. Design centrado na comunicação
 
-**Nome do cenário:** CI01 — Manoel percebe a reação dos clientes durante a apresentação comercial e decide como prosseguir
+**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
+**Origem:** cenário problema C01 — Dificuldade em interpretar a reação do cliente durante uma apresentação comercial on-line (versão refinada da Entrega 4), tarefa T05 (Entrega 5) e persona P04 — Manoel Gomes
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
 |---|---|---|
@@ -76,9 +115,30 @@ Em alguns casos, ele interpreta a falta de reação como concordância e só des
 | > Falha ao salvar | `D: não foi possível salvar o resumo agora; os dados continuam no seu computador` / `U: tentar novamente` ou `U: tentar mais tarde`. Signos: resumo da reunião. | Recuperar de uma falha sem perder a reunião. |
 | **O07 Revisar a reunião e registrar o retorno do cliente** | `U: abrir o resumo da reunião` / `D: linha do tempo com os momentos marcados e o estado do grupo em cada trecho` / `U: anotar minha percepção neste momento` / dias depois: `U: registrar o retorno do cliente neste momento: "em parte"` / `D: retorno registrado ao lado da leitura feita na reunião`. Signos: resumo da reunião, momento marcado, anotação, retorno do cliente. | Comparar, no mesmo lugar, a leitura feita na reunião com o que o cliente respondeu (T05, operação 6.3; C01, Q7). |
 
-**Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
-
 Decidir se avança, reforça ou reexplica um ponto **não é um tópico de conversa com o sistema**: é uma decisão de Manoel, tomada fora da interface. O sistema oferece o sinal, a confiança e a explicação para apoiar essa decisão, sem prescrever a ação (RC03).
+
+---
+
+**Autor(a):** Rafael Dias — 22.222.039-4  
+**Origem:** cenário problema C04 — Dificuldade em identificar a compreensão e o aprendizado durante treinamento on-line.  
+**Persona relacionada:** P03 — Nathanael Lima.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Acompanhar o estado do grupo durante o treinamento | `U: consultar os indicadores do grupo` / `D: apresentar as estimativas de engajamento, tédio, confusão e frustração`. Signos: indicadores cognitivos, valores dos indicadores. | Permitir que o instrutor acompanhe possíveis alterações no estado do grupo durante a apresentação. |
+| > Compreender os indicadores apresentados | `U: consultar o significado dos indicadores` / `D: explicar o significado de cada estado e informar que os resultados são estimativas`. Signos: descrição dos indicadores, escala dos valores. | Evitar interpretações incorretas sobre o comportamento e a aprendizagem dos participantes. |
+| > Verificar a disponibilidade dos dados | `D: informar a disponibilidade de dados para a análise do grupo`. Signos: disponibilidade de dados, estado da análise. | Permitir que o instrutor reconheça as limitações das informações apresentadas. |
+| Interpretar alterações no estado do grupo | `U: observar os indicadores durante a apresentação` / `D: apresentar os valores atualizados dos estados estimados`. Signos: engajamento, tédio, confusão, frustração e período analisado. | Auxiliar na identificação de possíveis momentos de dificuldade ou perda de atenção. |
+| > Decidir sobre a condução do treinamento | `U: avaliar os indicadores e decidir se deve manter ou adaptar a explicação`. Signos: indicadores apresentados e período atual. | Apoiar a decisão de repetir um conteúdo, modificar o ritmo ou solicitar uma interação, mantendo a decisão sob responsabilidade do instrutor. |
+| Revisar os resultados após o treinamento | `U: consultar os treinamentos concluídos` / `D: apresentar as sessões disponíveis`. Signos: título da reunião, data do treinamento. | Permitir que Nathanael identifique o treinamento que deseja analisar. |
+| > Consultar o resumo do treinamento | `U: abrir o resumo do treinamento` / `D: apresentar os resultados e indicadores registrados durante a sessão`. Signos: identificação da reunião, indicadores cognitivos e valores estimados. | Permitir a revisão dos resultados apresentados ao longo do treinamento. |
+| > Identificar períodos de maior dificuldade | `U: examinar os períodos do treinamento` / `D: apresentar a variação dos indicadores ao longo da sessão`. Signos: período analisado, indicadores e valores. | Auxiliar na identificação de momentos que merecem atenção na revisão dos conteúdos. |
+| > Interpretar ausência de resultados | `D: informar que não existem dados suficientes para determinado período` / `U: consultar os demais períodos disponíveis`. Signos: disponibilidade de dados, período analisado. | Evitar que a ausência de informação seja interpretada como ausência de dificuldades. |
+| Avaliar melhorias para próximos treinamentos | `U: analisar os períodos identificados e decidir quais conteúdos precisam ser revisados`. Signos: período analisado, indicadores cognitivos e resultados do treinamento. | Apoiar a avaliação de melhorias na apresentação e nos materiais utilizados em futuras capacitações. |
+
+---
+
+**Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
 ## 3. Mapa de objetivos
 
@@ -86,7 +146,10 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 ![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos.svg)
 
-### Mapa individual — CI01 (Matheus)
+### Mapa individual 
+
+**Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
+**Origem:** cenário problema C01 — Dificuldade em interpretar a reação do cliente durante uma apresentação comercial on-line (versão refinada da Entrega 4), tarefa T05 (Entrega 5) e persona P04 — Manoel Gomes
 
 ```mermaid
 flowchart TD
@@ -140,7 +203,6 @@ flowchart TD
 
     style DEC stroke-dasharray: 6 4
 ```
-
 *A caixa tracejada é um objetivo de Manoel que acontece fora do sistema: a decisão de avançar, reforçar ou reexplicar continua sendo dele (RC03).*
 
 ### Dicionário de objetivos
@@ -155,40 +217,99 @@ flowchart TD
 | O06 | Encerrar a reunião com o resumo salvo | P04 | CI01 | média |
 | O07 | Revisar a reunião e registrar, no momento marcado, se o retorno do cliente confirmou a leitura feita na reunião | P04 | CI01 | média |
 
+---
+
+**Autor(a):** Rafael Dias — 22.222.039-4  
+**Origem:** cenário problema C04 — Dificuldade em identificar a compreensão e o aprendizado durante treinamento on-line.  
+**Persona relacionada:** P03 — Nathanael Lima.
+
+```mermaid
+flowchart TD
+    GERAL["Acompanhar e analisar os estados do grupo para melhorar a condução dos treinamentos"]
+
+    O06["O06 - Interpretar os estados do grupo durante o treinamento"]
+    O07["O07 - Decidir se deve adaptar a condução do treinamento"]
+    O08["O08 - Analisar os resultados de um treinamento concluído"]
+    O09["O09 - Identificar períodos do treinamento que precisam de atenção"]
+    O10["O10 - Avaliar melhorias para os próximos treinamentos"]
+
+    GERAL --> O07
+    GERAL --> O08
+
+    O07 --> O06
+    O08 --> O09
+    O09 --> O10
+```
+
+### Dicionário de objetivos
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
+|---|---|---|---|---|
+| O06 | Interpretar os estados de engajamento, tédio, confusão e frustração durante o treinamento, considerando o significado dos indicadores e a disponibilidade dos dados. | P03 — Nathanael | CI04 | Alta |
+| O07 | Decidir se deve manter ou adaptar a condução do treinamento, considerando os indicadores e as demais interações dos participantes. | P03 — Nathanael | CI04 | Alta |
+| O08 | Analisar os resultados de um treinamento concluído, consultando os indicadores apresentados durante a sessão. | P03 — Nathanael | CI04 | Alta |
+| O09 | Identificar períodos com possíveis sinais de confusão, tédio ou redução do engajamento que merecem atenção. | P03 — Nathanael | CI04 | Alta |
+| O10 | Avaliar possíveis melhorias nos conteúdos e na condução dos próximos treinamentos com base na análise dos resultados. | P03 — Nathanael | CI04 | Média |
+
+Os objetivos O06 e O07 correspondem ao acompanhamento durante o treinamento. Os objetivos O08, O09 e O10 correspondem à análise posterior da sessão.
+
+---
+
 Os IDs O01 a O07 vêm da CI01. Na consolidação, a equipe junta os objetivos iguais dos outros cenários (ativar o acompanhamento, perceber o estado do grupo e encerrar com o resumo salvo também aparecem para Karol, Camila e Nathanael) e mantém um único ID para cada objetivo.
 
 ## 4. Esquema conceitual de signos
 
-Consolide as informações em **uma tabela única**.
+O esquema conceitual reúne os signos identificados nos cenários CI01 e CI04, considerando as necessidades das personas P04 — Manoel Gomes e P03 — Nathanael Lima.
+
+Os signos compartilhados entre os cenários foram unificados, mantendo a mesma nomenclatura para garantir consistência nas próximas entregas.
 
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
-| Acompanhamento | acompanhamento da reunião | sistema | Indica se a estimativa está ativa, pausada ou desligada na reunião atual. Em reunião com participantes de outra empresa, só fica ativa depois do aviso. | estado: ativo / pausado / desligado | só o comunicador altera; não ativa antes do aviso | desligado | PE: exigir o envio do aviso antes de ativar | RE: pausar ou desligar a qualquer momento (RC07) |
-| Acompanhamento | aviso aos participantes | sistema | Texto padrão com o que é e o que não é processado e como não participar. Em reunião com clientes de outra empresa, é enviado no chat da reunião com o link da página de transparência (ligação com T04). | texto + registro do envio (hora) | obrigatório antes da primeira estimativa | — | PE: a estimativa não começa sem o aviso | — |
-| Acompanhamento | participantes contribuindo | sistema | Quantos participantes com câmera ligada entram na estimativa, sobre o total da chamada ("3 de 4"), sem identificar quem. | número inteiro "n de N" | n ≤ N; sem nomes | — | PP: mostrar junto do estado para o comunicador avaliar a base do sinal | — |
-| Acompanhamento | mínimo de participantes | domínio | Menor número de câmeras para estimar o grupo sem expor uma pessoa. Em reunião comercial o grupo costuma ter de 2 a 6 pessoas (H05). | número inteiro | valor a definir com a coleta da Entrega 7 (I05) | 3 (provisório) | PE: não mostrar estado abaixo do mínimo | RE: explicar o motivo e permitir continuar sem acompanhamento |
-| Estado do grupo | estado predominante | sistema | Estimativa agregada do grupo: acompanhando, possível tédio, possível confusão, possível frustração, sem estimativa. | lista fixa de estados, com cor + ícone + rótulo | nunca só cor (RC08); sempre do grupo, nunca de um cliente (R04) | sem estimativa | PP: usar "possível" para marcar a estimativa; explicação do significado sob demanda | — |
-| Estado do grupo | confiança da estimativa | sistema | Quanto a estimativa é confiável no momento, considerando participantes contribuindo e qualidade do sinal (H02). | faixa: alta / média / baixa | não usar percentual durante a reunião | — | PP: explicar por que está média ou baixa | — |
-| Estado do grupo | atualizado há | sistema | Tempo desde a última atualização da estimativa. | segundos/minutos | — | — | PP: destacar quando a estimativa estiver desatualizada | — |
-| Estado do grupo | mudança de estado | sistema | Aviso discreto quando o estado predominante muda por tempo suficiente, com o estado anterior, desde quando e o momento marcado mais próximo (o trecho da proposta). | estado anterior → estado atual + desde quando + trecho | um aviso por vez (RC06); nunca sugere ação ao comunicador (RC03) | — | PP: não sugerir ação | RE: dispensar o aviso |
-| Estado do grupo | qualidade do sinal | sistema | Motivo de uma estimativa fraca: câmeras desligadas, iluminação, conexão. | texto curto | — | — | — | RE: orientar a continuar a reunião normalmente |
-| Linha do tempo | momento marcado | usuário | Ponto da reunião marcado por Manoel ao soltar uma pílula de dúvida, com rótulo opcional (trecho da proposta, como "condições comerciais"). | minuto da reunião + rótulo | dentro da duração da reunião | rótulo vazio | — | RE: editar ou desmarcar no resumo |
-| Linha do tempo | anotação | usuário | Texto curto ligado a um momento marcado: "retomar no follow-up" durante a reunião, percepções logo depois dela. | texto | ligada a um momento marcado | vazio | — | RE: editar ou apagar no resumo |
-| Linha do tempo | retorno do cliente | usuário | Registrado dias depois no momento marcado: se o retorno do cliente confirmou a leitura feita na reunião. | confirmou / em parte / não / sem retorno | só em momento marcado | sem retorno | PP: mostrar lado a lado com o estado e a anotação do mesmo momento | RE: alterar quando chegar um novo retorno |
-| Linha do tempo | resumo da reunião | sistema | Registro agregado salvo ao encerrar: data, duração, linha do tempo do estado do grupo, momentos marcados, anotações e retornos do cliente; aberto depois no Dashboard. | registro com data, duração e linha do tempo | sem imagem e sem dado individual | — | PE: salvar no computador antes de sincronizar | RE: tentar novamente ou mais tarde |
+| Acompanhamento | acompanhamento da reunião | sistema | Indica se a estimativa está ativa, pausada ou desligada na reunião ou treinamento atual. Em reuniões com participantes externos, só fica ativa depois do aviso. | estado: ativo / pausado / desligado | só o comunicador altera; não ativa antes do aviso obrigatório | desligado | PE: exigir o envio do aviso antes da ativação | RE: permitir pausar ou desligar a qualquer momento (RC07) |
+| Acompanhamento | aviso aos participantes | sistema | Texto padrão informando o que é processado, quais informações não são coletadas e como não participar. Em reuniões com clientes externos, é enviado no chat com o link da página de transparência (T04). | texto + registro do envio (hora) | obrigatório antes da primeira estimativa | — | PE: impedir o início da estimativa antes do aviso | RE: permitir reenviar o aviso caso o envio falhe |
+| Acompanhamento | participantes contribuindo | sistema | Quantidade de participantes com câmera ligada que contribuem para a estimativa em relação ao total da reunião, por exemplo, "3 de 4", sem identificar individualmente os participantes. | número inteiro "n de N" | n ≤ N; sem identificação individual | — | PP: apresentar a quantidade junto aos indicadores para contextualizar os resultados | — |
+| Acompanhamento | mínimo de participantes | domínio | Quantidade mínima de participantes necessária para produzir uma estimativa agregada sem comprometer a privacidade. Aplica-se também a treinamentos com poucos participantes. | número inteiro | valor a validar na coleta da Entrega 7 (I05 e demais instrumentos pertinentes) | 3 (provisório) | PE: impedir a apresentação de estados estimados abaixo do mínimo | RE: explicar o motivo e permitir continuar sem acompanhamento |
+| Estado do grupo | estado predominante | sistema | Estimativa agregada do grupo: acompanhando, possível tédio, possível confusão, possível frustração ou sem estimativa. Permite ao apresentador acompanhar possíveis mudanças durante a sessão. | lista fixa de estados, com cor + ícone + rótulo | nunca utilizar apenas cor (RC08); sempre representar o grupo, nunca um indivíduo (R04) | sem estimativa | PP: utilizar "possível" para comunicar a incerteza e oferecer explicação sob demanda | — |
+| Estado do grupo | confiança da estimativa | sistema | Indica o grau de confiança da estimativa apresentada, considerando a qualidade dos dados disponíveis. Ajuda o apresentador a interpretar os resultados sem tratá-los como certezas. | faixa: alta / média / baixa | não utilizar percentual durante a reunião | — | PP: explicar os motivos de uma confiança média ou baixa | RE: permitir consultar a explicação do indicador |
+| Estado do grupo | atualizado há | sistema | Tempo decorrido desde a última atualização da estimativa, permitindo identificar se o estado apresentado ainda corresponde ao momento atual. | segundos/minutos | deve corresponder à última atualização válida | — | PP: destacar quando a informação estiver desatualizada | — |
+| Estado do grupo | mudança de estado | sistema | Comunica discretamente uma alteração no estado predominante do grupo, indicando o estado anterior, o atual e desde quando ocorreu. Pode ser associada ao trecho da apresentação ou treinamento. | estado anterior → estado atual + desde quando + trecho | um aviso por vez (RC06); não determinar ações ao comunicador (RC03) | — | PP: apresentar a mudança como estimativa, sem prescrever decisões | RE: permitir dispensar o aviso |
+| Estado do grupo | qualidade do sinal | sistema | Explica possíveis limitações da estimativa, como câmeras desligadas, iluminação inadequada ou problemas de conexão. | texto curto | apresentar apenas informações que o sistema consegue identificar | — | PP: informar limitações que podem afetar a interpretação | RE: orientar a continuar a reunião normalmente quando não houver estimativa confiável |
+| Estado do grupo | significado do indicador | domínio | Explica os estados de engajamento, tédio, confusão e frustração. Esclarece que representam estimativas afetivo-cognitivas e não comprovam diretamente a compreensão ou aprendizagem. | texto explicativo | utilizar linguagem compreensível e manter consistência com os indicadores apresentados | — | PP: disponibilizar explicações para evitar interpretações incorretas | RE: permitir consultar novamente o significado dos indicadores |
+| Estado do grupo | disponibilidade de dados | sistema | Informa se existem dados suficientes para estimar o estado do grupo. Considera apenas os participantes que contribuem para a análise, sem identificá-los individualmente. | estado: disponível / insuficiente / indisponível | ausência de dados não pode ser representada como valor zero ou como ausência de dificuldade | indisponível antes da análise | PP: comunicar quando não existem dados suficientes para interpretar o grupo | RE: explicar a indisponibilidade e permitir continuar a reunião sem acompanhamento |
+| Linha do tempo | momento marcado | usuário | Ponto da reunião identificado pelo apresentador para revisão posterior. Pode representar uma pílula de dúvida, um trecho da proposta ou um conteúdo importante do treinamento. | minuto da reunião + rótulo | deve estar dentro da duração da reunião | rótulo vazio | — | RE: permitir editar ou desmarcar o momento no resumo |
+| Linha do tempo | anotação | usuário | Texto associado a um momento marcado, utilizado para registrar dúvidas, percepções ou assuntos que precisam ser retomados posteriormente. | texto | vinculada a um momento marcado | vazio | — | RE: permitir editar ou apagar a anotação |
+| Linha do tempo | retorno do cliente | usuário | Registro posterior indicando se a resposta do cliente confirmou a interpretação realizada durante a reunião comercial. Específico da CI01. | confirmou / em parte / não / sem retorno | somente em momentos marcados | sem retorno | PP: mostrar junto ao estado e à anotação correspondente | RE: permitir atualizar o retorno registrado |
+| Linha do tempo | resumo da reunião | sistema | Registro agregado da sessão concluída, contendo identificação, data, duração, indicadores ao longo do tempo, momentos marcados e anotações. Em reuniões comerciais, também pode conter retornos dos clientes. | registro com data, duração e linha do tempo | não armazenar imagens nem apresentar dados individuais | — | PE: salvar os dados localmente antes da sincronização, conforme o fluxo previsto | RE: permitir tentar salvar novamente ou posteriormente |
+| Linha do tempo | período analisado | sistema | Identifica o intervalo da reunião ou treinamento ao qual os resultados correspondem. Permite relacionar os indicadores aos diferentes momentos da apresentação. | horário ou intervalo de tempo | deve corresponder aos dados efetivamente registrados na sessão | período atual durante o acompanhamento | PP: apresentar a referência temporal junto aos indicadores | RE: permitir consultar outros períodos disponíveis no resumo |
+| Linha do tempo | variação dos indicadores | sistema | Representa as alterações das estimativas de engajamento, tédio, confusão e frustração ao longo da sessão. Ajuda a identificar momentos que merecem revisão após o treinamento. | série temporal ou gráfico | utilizar apenas resultados disponíveis e escalas consistentes | — | PP: identificar os indicadores e períodos apresentados e esclarecer que variações não comprovam aprendizagem | RE: informar períodos sem dados e permitir consultar os demais resultados |
+| Linha do tempo | data da reunião | domínio | Identifica quando ocorreu a reunião ou treinamento, permitindo diferenciar sessões realizadas em momentos distintos. | data | deve corresponder à reunião selecionada | — | PP: apresentar junto à identificação da reunião | RE: permitir retornar à lista e selecionar outra reunião |
+| Linha do tempo | título da reunião | domínio | Nome utilizado para identificar a reunião comercial ou treinamento corporativo que será analisado. | texto | deve corresponder à reunião selecionada | — | PP: apresentar junto à data para evitar confusão entre sessões semelhantes | RE: permitir retornar à lista e selecionar a reunião correta |
 
 ### Regras para os signos
 
-- Use o vocabulário do domínio do usuário.
-- Evite duplicar o mesmo conceito com nomes diferentes.
-- Diferencie informação fornecida pelo usuário, produzida pelo sistema e derivada do domínio.
-- Registre prevenção e recuperação apenas quando fizer sentido; explique as siglas usadas.
+- Os signos utilizam conceitos compreensíveis para as personas, como reunião, treinamento, estado do grupo, indicador, período e resumo.
+- Signos compartilhados entre os cenários CI01 e CI04 foram unificados, evitando duplicações conceituais.
+- Os signos `estado predominante`, `confiança da estimativa`, `participantes contribuindo` e `disponibilidade de dados` são utilizados para comunicar os resultados e suas limitações durante o acompanhamento.
+- Os signos `momento marcado`, `anotação`, `período analisado` e `variação dos indicadores` permitem relacionar os resultados aos acontecimentos da reunião e apoiar a análise posterior.
+- Os signos de origem **usuário** representam informações fornecidas ou registradas pelo apresentador.
+- Os signos de origem **sistema** representam informações produzidas, registradas ou organizadas pelo MindFlow AI.
+- Os signos de origem **domínio** representam conceitos e regras pertencentes ao contexto das reuniões e treinamentos.
+- Os indicadores apresentados são estimativas de estados afetivo-cognitivos e não devem ser interpretados como comprovação de compreensão ou aprendizagem.
+- As informações devem permanecer agregadas, respeitando a privacidade dos participantes e evitando a identificação individual.
+- A ausência de dados deve ser diferenciada de resultados válidos, evitando interpretações equivocadas.
+- O sistema deve comunicar os resultados e suas limitações, mantendo as decisões sobre a condução da reunião ou treinamento sob responsabilidade do apresentador.
 
-**Siglas:** PE = prevenção de erro (impede a situação); PP = prevenção passiva (explica para evitar interpretação errada); RE = recuperação de erro. O símbolo `—` indica que não há valor padrão fixo.
-
+**Siglas:**
+- **PE:** prevenção de erro, mecanismo que impede a ocorrência de uma situação inadequada.
+- **PP:** prevenção passiva, informação ou explicação que ajuda a evitar interpretações incorretas.
+- **RE:** recuperação de erro, ação que permite ao usuário continuar ou corrigir uma situação problemática.
+- **—:** indica que não existe valor padrão fixo ou que o campo não se aplica.
+  
 ## Síntese
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
+
+### Contribuição da CI01 — Matheus
 
 **Contribuição da CI01 (Matheus):** os objetivos O01 a O07, os tópicos da tabela da seção 2 e os signos dos grupos "Acompanhamento", "Estado do grupo" e "Linha do tempo" devem aparecer no diagrama MoLIC da CI01 (Entrega 10). Os pontos que não podem faltar são:
 
@@ -197,6 +318,18 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - a decisão de avançar, reforçar ou reexplicar como algo **fora do sistema**, sem uma fala do sistema que diga a Manoel o que fazer;
 - a **anotação** "retomar no follow-up" feita sem sair da apresentação;
 - o **resumo da reunião** com o **retorno do cliente** registrado no mesmo momento marcado, e a **falha ao salvar** com recuperação.
+
+### Contribuição da CI04 — Rafael
+
+**Contribuição da CI04 (Rafael):** os objetivos O06 a O10 do mapa individual, os tópicos da tabela da seção 2 e os signos dos grupos "Acompanhamento", "Estado do grupo" e "Linha do tempo" devem aparecer no diagrama MoLIC da CI04 (Entrega 10). Os pontos que não podem faltar são:
+
+- o **acompanhamento do estado do grupo durante o treinamento**, apresentando as estimativas de engajamento, tédio, confusão e frustração, junto à quantidade de **participantes contribuindo** e à **disponibilidade de dados**;
+- a possibilidade de **compreender o significado dos indicadores**, consultando a **confiança da estimativa** e a **qualidade do sinal**, para evitar que Nathanael interprete os resultados como uma confirmação do aprendizado dos participantes;
+- a **mudança de estado do grupo** durante a apresentação, permitindo identificar possíveis momentos de confusão, tédio ou perda de engajamento, sem interromper o ritmo do treinamento;
+- a decisão de **manter ou adaptar a condução do treinamento** como uma responsabilidade de Nathanael, tomada **fora do sistema**, sem uma fala que determine se ele deve repetir o conteúdo, modificar o ritmo ou solicitar uma interação;
+- o **resumo da reunião** após o encerramento do treinamento, apresentando o **período analisado** e a **variação dos indicadores** ao longo da sessão, permitindo identificar momentos que merecem revisão;
+- a possibilidade de **avaliar melhorias para os próximos treinamentos**, utilizando os resultados disponíveis como apoio para revisar conteúdos e estratégias de apresentação, sem tratar as estimativas como medidas diretas de aprendizagem;
+- a **ruptura de dados insuficientes ou indisponíveis**, com uma explicação clara sobre a ausência de resultados e a possibilidade de continuar o treinamento normalmente, sem depender do acompanhamento pelo sistema.
 
 ## Checklist
 
