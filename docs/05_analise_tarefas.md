@@ -487,7 +487,7 @@ A tarefa é considerada concluída quando a professora toma a decisão (seguir o
 
 ### Diagrama
 
-![HTA T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/hta_t03.png)
+![HTA T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/05_tarefas/hta_t03.png)
 
 ### Decomposição e planos
 
@@ -620,7 +620,7 @@ Por fim, decide entre seguir o plano de aula ou reforçar o conteúdo com um exe
 
 ### Diagrama
 
-![CTT T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](../assets/05_tarefas/ctt_t03.png)
+![CTT T03 — Perceber se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/05_tarefas/ctt_t03.png)
 
 ### Legenda e relações temporais usadas
 

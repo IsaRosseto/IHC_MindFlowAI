@@ -310,9 +310,9 @@ Os objetivos O06 e O07 correspondem ao acompanhamento durante o treinamento. Os 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Origem:** CI05 (cenário problema C05, tarefa T03), persona P02 — Camila Duarte.
 
-![Mapa de objetivos da CI05](../assets/09_modelo_conceitual/mapa_objetivos_ci05.png)
+![Mapa de objetivos da CI05](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/09_modelo_conceitual/mapa_objetivos_ci05.png)
 
-*Fonte editável: [`mapa_objetivos_ci05.svg`](../assets/09_modelo_conceitual/mapa_objetivos_ci05.svg). A caixa tracejada é um objetivo de Camila que acontece fora do sistema.*
+*Fonte editável: [`mapa_objetivos_ci05.svg`](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/09_modelo_conceitual/mapa_objetivos_ci05.svg). A caixa tracejada é um objetivo de Camila que acontece fora do sistema.*
 
 #### Dicionário de objetivos — CI05
 
