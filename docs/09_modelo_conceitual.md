@@ -96,6 +96,37 @@ Dessa forma, Nathanael passa a contar com informações complementares às inter
 | Apresentação objetiva dos indicadores. | Reduzir a sobrecarga de informações durante a capacitação. | Restrições da P03 e problemas identificados no C04. |
 ---
 
+### CI05 — Camila percebe, ainda na aula, que a turma pode não ter acompanhado a estrutura nova
+
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Origem:** cenário problema C05 (versão refinada da Entrega 4), tarefa T03 (Entrega 5) e persona P02  
+**Objetivos:** O11 a O17 (dicionário na seção 3)
+
+> Os trechos marcados com **[ALTERADO]** ou **[NOVO]** mostram o que mudou em relação ao cenário problema C05. O restante do texto foi mantido. A interação descrita é uma proposta de design: a utilidade do indicador (H01), a forma de mostrar a confiança (H02), o aviso aos alunos (H03) e o uso em turma pequena (H05) continuam como hipóteses a validar com os instrumentos da Entrega 7.
+
+Camila dá aula particular de inglês para uma turma de oito alunos, pelo Google Meet. **[NOVO: Antes de começar, ela ativa o acompanhamento da turma pela extensão do MindFlow. A extensão mostra que 4 de 8 alunos estão com a câmera ligada e contribuindo para a estimativa, e os alunos recebem na chamada o aviso de que o acompanhamento está ativo, com o que é e o que não é processado.]** Na metade da aula, ela compartilha a tela com um exercício de conversação e, ao mesmo tempo, tenta acompanhar a grade de vídeo reduzida que fica num cantinho da tela. **[ALTERADO: Ao lado da grade, fica o Semáforo Cognitivo, um indicador pequeno que continua visível durante o compartilhamento. Ele mostra o estado predominante da turma com cor, ícone e rótulo ("acompanhando", no verde), a confiança da estimativa e há quanto tempo foi atualizado.]** Metade da turma está com a câmera desligada.
+
+Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal. Nota um silêncio maior que o de costume, mas não sabe se é porque estão concentrados ouvindo ou porque não entenderam. **[NOVO: Poucos minutos depois, o indicador muda para "possível confusão", em amarelo, com confiança média e a observação "4 de 8 contribuindo". Camila passa o mouse sobre o indicador e vê desde quando a mudança aconteceu e que a estimativa considera só os alunos com câmera ligada.]** Pergunta "entenderam?" e alguns alunos respondem "sim" rapidamente, sem muita convicção. **[ALTERADO: Antes, a falta de tempo e de outro sinal a levava a seguir em frente. Agora, o indicador e o "sim" pouco convicto apontam na mesma direção. Ela não segue automaticamente o que o sistema mostra: usa o exemplo de reserva que tinha preparado e pede que um aluno forme uma frase com a estrutura. A resposta confirma a dúvida, e ela reforça o conteúdo por mais cinco minutos.]** **[NOVO: Antes de retomar o plano, ela clica em "marcar este momento" para registrar o trecho na linha do tempo da aula e dispensa o aviso. O indicador volta a "acompanhando" alguns minutos depois.]** Como o tempo de aula é curto e o plano prevê ainda mais dois tópicos, ela segue em frente **[ALTERADO: com um dos tópicos encurtado, e não mais sem saber se a turma tinha acompanhado]**.
+
+**[ALTERADO: Ao encerrar a chamada, a extensão avisa que o resumo da aula foi salvo no Dashboard. Na aula seguinte]**, ao corrigir o exercício de casa, ela **[ALTERADO: confere se a turma ainda erra os exemplos com a estrutura nova e compara com o momento que tinha marcado]**. **[ALTERADO: Em vez de gastar parte da aula seguinte revisando um conteúdo que já devia ter sido reforçado, ela usa poucos minutos para retomar só o que ainda apareceu nos erros.]**
+
+**[NOVO — ruptura considerada: em outra aula, só dois alunos ligam a câmera. Ao ativar o acompanhamento, a extensão informa que não há participantes suficientes para estimar o estado da turma e explica o motivo. Camila escolhe continuar a aula sem o acompanhamento, conduzindo como fazia antes.]**
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Ativar o acompanhamento antes da aula, vendo quantos alunos contribuem | Camila precisa saber se o indicador terá base antes de confiar nele; os alunos precisam ser avisados | RC07 (controle de ativação), H03, H05; T04 (aviso ao participante) |
+| Indicador visível durante o compartilhamento de tela, com cor, ícone e rótulo | Na T03, observar a turma concorre com explicar (`\|\|\|` no CTT); a grade reduzida não basta | T03 (CTT tarefa 2), RC08 (não depender só da cor), F01 |
+| Mudança de estado com confiança e número de participantes | A professora precisa avaliar quanto confiar no sinal, etapa que hoje não tem apoio | T03 (HTA 3.2, CTT 3.2), H02, RC02, F04 |
+| Camila confirma a dúvida por conta própria antes de reforçar | O sistema indica que algo merece atenção, mas não decide a ação | RC03; T03 (decisão é tarefa do usuário); C05 (Q4, Q5) |
+| Marcar o momento da aula | Ligar o que aconteceu durante a aula à revisão posterior, sem exigir anotação manual | Jornada de Camila, etapa 8 (Entrega 3); R03; RC10 |
+| Resumo salvo ao encerrar | Permite comparar a percepção da aula com o exercício corrigido depois | C05 (Q7), R03, F02/F03 |
+| Ruptura: poucos alunos com câmera | Em turma pequena, o agregado pode não ter base ou expor alunos | H05; contexto de uso (Entrega 3) |
+| Aviso que some depois de dispensado e indicador que volta ao estado atual | Não acumular alertas antigos na tela | RC06 |
+
+---
+
 ## 2. Design centrado na comunicação
 
 **Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
@@ -135,6 +166,27 @@ Decidir se avança, reforça ou reexplica um ponto **não é um tópico de conve
 | > Identificar períodos de maior dificuldade | `U: examinar os períodos do treinamento` / `D: apresentar a variação dos indicadores ao longo da sessão`. Signos: período analisado, indicadores e valores. | Auxiliar na identificação de momentos que merecem atenção na revisão dos conteúdos. |
 | > Interpretar ausência de resultados | `D: informar que não existem dados suficientes para determinado período` / `U: consultar os demais períodos disponíveis`. Signos: disponibilidade de dados, período analisado. | Evitar que a ausência de informação seja interpretada como ausência de dificuldades. |
 | Avaliar melhorias para próximos treinamentos | `U: analisar os períodos identificados e decidir quais conteúdos precisam ser revisados`. Signos: período analisado, indicadores cognitivos e resultados do treinamento. | Apoiar a avaliação de melhorias na apresentação e nos materiais utilizados em futuras capacitações. |
+
+---
+
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Origem:** CI05 — Camila percebe, ainda na aula, que a turma pode não ter acompanhado a estrutura nova (cenário problema C05, tarefa T03).
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| **O11 Ativar o acompanhamento da turma** | `U: quero acompanhar a turma nesta aula` / `D: o acompanhamento está ativo; 4 de 8 alunos estão contribuindo` | Camila sabe, antes de começar, se o indicador terá base suficiente |
+| > Avisar os participantes | `D: (para os alunos) o acompanhamento da turma está ativo; veja o que é e o que não é processado` | Os alunos não são surpreendidos; ligação com a interface do participante (T04) |
+| > Não há participantes suficientes | `D: não há câmeras ligadas suficientes para estimar o estado da turma (mínimo: 3)` / `U: continuar sem acompanhamento` ou `U: tentar novamente` | Evitar um indicador sem base e explicar o motivo, sem bloquear a aula |
+| **O12 Perceber o estado da turma** | `D: a turma parece estar acompanhando` (verde, ícone e rótulo) / `D: confiança alta; 4 de 8 contribuindo; atualizado há 20 s` | Leitura de relance durante a explicação, sem tirar a atenção da aula |
+| **O13 Examinar uma mudança no estado** | `D: o estado mudou de "acompanhando" para "possível confusão" há 2 min` / `U: o que mudou?` | Chamar a atenção sem prescrever o que fazer (RC03) |
+| > Dispensar o aviso | `U: entendi, pode esconder` / `D: aviso dispensado; o indicador continua mostrando o estado atual` | Não acumular avisos antigos (RC06) |
+| **O14 Entender o significado e a confiança** | `U: o que significa "possível confusão"?` / `D: parte da turma mostra sinais associados a dificuldade; é uma estimativa do grupo, não de cada aluno, e pode errar` / `D: a confiança está média porque só metade da turma está com câmera` | Evitar confiança excessiva na estimativa (H02) e reforçar que o resultado não avalia alunos (H03) |
+| **O15 Marcar o momento para revisar depois** | `U: marcar este momento` / `D: momento marcado aos 23 min na linha do tempo da aula` | Ligar a aula ao Dashboard sem anotação manual (R03) |
+| **O16 Pausar ou retomar o acompanhamento** | `U: pausar o acompanhamento` / `D: acompanhamento pausado; os alunos foram avisados` / `U: retomar` | Dar controle à professora a qualquer momento (RC07) |
+| **O17 Encerrar a aula com o resumo salvo** | `U: encerrar a aula` / `D: resumo salvo; disponível no Dashboard` | Garantir que a aula possa ser revisada depois |
+| > Falha ao salvar | `D: não foi possível salvar o resumo agora; os dados continuam no seu computador` / `U: tentar novamente` ou `U: tentar mais tarde` | Recuperar de uma falha sem perder a aula |
+
+Decidir se reforça o conteúdo **não é um tópico de conversa com o sistema**: é uma decisão de Camila, feita fora da interface. O sistema só oferece o sinal e a explicação para apoiar essa decisão.
 
 ---
 
@@ -255,11 +307,34 @@ Os objetivos O06 e O07 correspondem ao acompanhamento durante o treinamento. Os 
 
 ---
 
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Origem:** CI05 (cenário problema C05, tarefa T03), persona P02 — Camila Duarte.
+
+![Mapa de objetivos da CI05](../assets/09_modelo_conceitual/mapa_objetivos_ci05.png)
+
+*Fonte editável: [`mapa_objetivos_ci05.svg`](../assets/09_modelo_conceitual/mapa_objetivos_ci05.svg). A caixa tracejada é um objetivo de Camila que acontece fora do sistema.*
+
+#### Dicionário de objetivos — CI05
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
+|---|---|---|---|---|
+| O11 | Ativar o acompanhamento da turma | P02 (também P01, P03, P04) | CI05 | alta |
+| O12 | Perceber o estado da turma durante a explicação | P02 (também P01, P03, P04) | CI05 | alta |
+| O13 | Examinar uma mudança no estado da turma | P02 | CI05 | alta |
+| O14 | Entender o significado e a confiança da estimativa | P02 | CI05 | alta |
+| O15 | Marcar um momento da aula para revisar depois | P02 | CI05 | média |
+| O16 | Pausar ou retomar o acompanhamento | P02 | CI05 | média |
+| O17 | Encerrar a aula com o resumo salvo | P02 | CI05 | média |
+
+Os IDs O11 a O17 foram escolhidos para não repetir os IDs já usados na CI01 (O01 a O07) e na CI04 (O06 a O10). Alguns objetivos são equivalentes entre os cenários e devem virar um só na consolidação: O11 corresponde a O01 (ativar o acompanhamento), O12 a O02 e O06 (perceber/interpretar o estado do grupo), O14 a O04 (entender o significado e a confiança), O15 a O03 (marcar o momento) e O17 a O06 da CI01 (encerrar com o resumo salvo).
+
+---
+
 Os IDs O01 a O07 vêm da CI01. Na consolidação, a equipe junta os objetivos iguais dos outros cenários (ativar o acompanhamento, perceber o estado do grupo e encerrar com o resumo salvo também aparecem para Karol, Camila e Nathanael) e mantém um único ID para cada objetivo.
 
 ## 4. Esquema conceitual de signos
 
-O esquema conceitual reúne os signos identificados nos cenários CI01 e CI04, considerando as necessidades das personas P04 — Manoel Gomes e P03 — Nathanael Lima.
+O esquema conceitual reúne os signos identificados nos cenários CI01, CI04 e CI05, considerando as necessidades das personas P04 — Manoel Gomes, P03 — Nathanael Lima e P02 — Camila Duarte.
 
 Os signos compartilhados entre os cenários foram unificados, mantendo a mesma nomenclatura para garantir consistência nas próximas entregas.
 
@@ -284,6 +359,8 @@ Os signos compartilhados entre os cenários foram unificados, mantendo a mesma n
 | Linha do tempo | variação dos indicadores | sistema | Representa as alterações das estimativas de engajamento, tédio, confusão e frustração ao longo da sessão. Ajuda a identificar momentos que merecem revisão após o treinamento. | série temporal ou gráfico | utilizar apenas resultados disponíveis e escalas consistentes | — | PP: identificar os indicadores e períodos apresentados e esclarecer que variações não comprovam aprendizagem | RE: informar períodos sem dados e permitir consultar os demais resultados |
 | Linha do tempo | data da reunião | domínio | Identifica quando ocorreu a reunião ou treinamento, permitindo diferenciar sessões realizadas em momentos distintos. | data | deve corresponder à reunião selecionada | — | PP: apresentar junto à identificação da reunião | RE: permitir retornar à lista e selecionar outra reunião |
 | Linha do tempo | título da reunião | domínio | Nome utilizado para identificar a reunião comercial ou treinamento corporativo que será analisado. | texto | deve corresponder à reunião selecionada | — | PP: apresentar junto à data para evitar confusão entre sessões semelhantes | RE: permitir retornar à lista e selecionar a reunião correta |
+
+**Signos da CI05 (Isabella):** a CI05 usa os mesmos signos desta tabela, sem criar novos: acompanhamento, aviso aos participantes, participantes contribuindo, mínimo de participantes, estado predominante, confiança da estimativa, atualizado há, mudança de estado, qualidade do sinal, significado do indicador, momento marcado e resumo. No contexto de aula, "reunião" corresponde a "aula" e "grupo" a "turma"; o rótulo exibido muda, mas o conceito é o mesmo. A pausa do acompanhamento é um dos valores do signo "acompanhamento" (ativo, pausado ou desligado).
 
 ### Regras para os signos
 
@@ -330,6 +407,16 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - o **resumo da reunião** após o encerramento do treinamento, apresentando o **período analisado** e a **variação dos indicadores** ao longo da sessão, permitindo identificar momentos que merecem revisão;
 - a possibilidade de **avaliar melhorias para os próximos treinamentos**, utilizando os resultados disponíveis como apoio para revisar conteúdos e estratégias de apresentação, sem tratar as estimativas como medidas diretas de aprendizagem;
 - a **ruptura de dados insuficientes ou indisponíveis**, com uma explicação clara sobre a ausência de resultados e a possibilidade de continuar o treinamento normalmente, sem depender do acompanhamento pelo sistema.
+
+### Contribuição da CI05 — Isabella
+
+**Contribuição da CI05 (Isabella):** os objetivos O11 a O17, os tópicos da tabela da seção 2 e os signos do grupo "Acompanhamento", "Estado da turma", "Linha do tempo" e "Transparência" devem aparecer no MoLIC M05 (Entrega 10). Os pontos que não podem faltar são:
+
+- a ruptura de **participantes insuficientes** ao ativar e durante a aula, com saída para continuar sem acompanhamento;
+- a **confiança da estimativa** junto do estado, com uma cena para entender o significado e o motivo da confiança;
+- o **acesso ubíquo** para pausar e para abrir a ajuda;
+- a **falha ao salvar** o resumo, com recuperação;
+- a decisão de reforçar como algo **fora do sistema**, sem uma fala do sistema que diga à professora o que fazer.
 
 ## Checklist
 

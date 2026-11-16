@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1020" viewBox="0 0 1640 1020" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111827"/></marker></defs>
+<rect width="1640" height="1020" fill="#fff"/>
+<circle cx="170" cy="40" r="14" fill="#111827"/>
+<rect x="156.0" y="186.0" width="28" height="28" fill="#111827"/>
+<rect x="370.0" y="132.5" width="380" height="135" rx="14" fill="#fff" stroke="#111827" stroke-width="1.8"/>
+<text x="560" y="153.5" font-size="14.5" font-weight="normal" fill="#111827" text-anchor="middle" xml:space="preserve">Acompanhar o estado da turma</text>
+<line x1="370.0" y1="162.5" x2="750.0" y2="162.5" stroke="#111827" stroke-width="1.2"/>
+<text x="382.0" y="182.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver estado da turma {</text>
+<text x="382.0" y="199.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: estado predominante (cor, ícone, rótulo),</text>
+<text x="382.0" y="216.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">        confiança da estimativa, atualizado há }</text>
+<text x="382.0" y="233.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver base da estimativa {</text>
+<text x="382.0" y="250.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: participantes contribuindo (n de N) }</text>
+<rect x="30.0" y="411.0" width="320" height="118" rx="14" fill="#fff" stroke="#111827" stroke-width="1.8" stroke-dasharray="8 5"/>
+<text x="190" y="432.0" font-size="14.5" font-weight="normal" fill="#111827" text-anchor="middle" xml:space="preserve">Entender por que não há estimativa</text>
+<line x1="30.0" y1="441.0" x2="350.0" y2="441.0" stroke="#111827" stroke-width="1.2" stroke-dasharray="8 5"/>
+<text x="42.0" y="461.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver motivo {</text>
+<text x="42.0" y="478.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: motivo (câmeras, luz, conexão) }</text>
+<text x="42.0" y="495.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver base da estimativa {</text>
+<text x="42.0" y="512.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: participantes contribuindo, mínimo }</text>
+<rect x="546.0" y="456.0" width="28" height="28" fill="#111827"/>
+<rect x="980.0" y="402.5" width="340" height="135" rx="14" fill="#fff" stroke="#111827" stroke-width="1.8"/>
+<text x="1150" y="423.5" font-size="14.5" font-weight="normal" fill="#111827" text-anchor="middle" xml:space="preserve">Examinar a mudança no estado</text>
+<line x1="980.0" y1="432.5" x2="1320.0" y2="432.5" stroke="#111827" stroke-width="1.2"/>
+<text x="992.0" y="452.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver mudança {</text>
+<text x="992.0" y="469.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: estado anterior, estado atual,</text>
+<text x="992.0" y="486.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">        desde quando }</text>
+<text x="992.0" y="503.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver confiança {</text>
+<text x="992.0" y="520.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: confiança, qualidade do sinal }</text>
+<rect x="1065.0" y="20.0" width="170" height="40" rx="20" fill="#c4c4c4" stroke="#555" stroke-width="1.6"/>
+<rect x="980.0" y="141.0" width="340" height="118" rx="14" fill="#fff" stroke="#111827" stroke-width="1.8"/>
+<text x="1150" y="162.0" font-size="14.5" font-weight="normal" fill="#111827" text-anchor="middle" xml:space="preserve">Entender o significado da estimativa</text>
+<line x1="980.0" y1="171.0" x2="1320.0" y2="171.0" stroke="#111827" stroke-width="1.2"/>
+<text x="992.0" y="191.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver significado {</text>
+<text x="992.0" y="208.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: o que o estado significa,</text>
+<text x="992.0" y="225.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">        o que a estimativa não indica }</text>
+<text x="992.0" y="242.0" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver confiança { d: motivo da confiança }</text>
+<rect x="1395.0" y="20.0" width="170" height="40" rx="20" fill="#c4c4c4" stroke="#555" stroke-width="1.6"/>
+<rect x="1466.0" y="186.0" width="28" height="28" fill="#111827"/>
+<rect x="1365.0" y="419.5" width="230" height="101" rx="14" fill="#fff" stroke="#111827" stroke-width="1.8"/>
+<text x="1480" y="440.5" font-size="14.5" font-weight="normal" fill="#111827" text-anchor="middle" xml:space="preserve">Acompanhamento pausado</text>
+<line x1="1365.0" y1="449.5" x2="1595.0" y2="449.5" stroke="#111827" stroke-width="1.2"/>
+<text x="1377.0" y="469.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver pausa {</text>
+<text x="1377.0" y="486.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: pausado desde,</text>
+<text x="1377.0" y="503.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">        aviso aos participantes }</text>
+<rect x="1136.0" y="666.0" width="28" height="28" fill="#111827"/>
+<rect x="475.0" y="620.0" width="170" height="40" rx="20" fill="#c4c4c4" stroke="#555" stroke-width="1.6"/>
+<rect x="546.0" y="746.0" width="28" height="28" fill="#111827"/>
+<rect x="755.0" y="749.5" width="330" height="101" rx="14" fill="#fff" stroke="#111827" stroke-width="1.8" stroke-dasharray="8 5"/>
+<text x="920" y="770.5" font-size="14.5" font-weight="normal" fill="#111827" text-anchor="middle" xml:space="preserve">Salvar o registro da aula</text>
+<line x1="755.0" y1="779.5" x2="1085.0" y2="779.5" stroke="#111827" stroke-width="1.2" stroke-dasharray="8 5"/>
+<text x="767.0" y="799.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">ver falha {</text>
+<text x="767.0" y="816.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">    d: motivo da falha,</text>
+<text x="767.0" y="833.5" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">        dados mantidos no computador }</text>
+<rect x="420" y="877" width="280" height="6" fill="#111827"/>
+<circle cx="560" cy="965" r="14" fill="#fff" stroke="#111827" stroke-width="2"/><circle cx="560" cy="965" r="8" fill="#111827"/>
+<polyline points="170,54.0 170,186.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="178" y="85" width="229.1" height="35" fill="#fff"/>
+<text x="182" y="98" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: ativar o acompanhamento</text>
+<text x="182" y="114" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">gco: Acompanhar o estado da turma</text>
+<polyline points="184.0,200 370.0,200" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="188" y="127" width="162.1" height="51" fill="#fff"/>
+<text x="192" y="140" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">precond: câmeras</text>
+<text x="192" y="156" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">suficientes</text>
+<text x="192" y="172" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">d: acompanhamento ativo</text>
+<polyline points="164,214.0 164,411.0" fill="none" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<rect x="0.5999999999999943" y="287" width="155.4" height="35" fill="#fff"/>
+<text x="152" y="300" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">[SR] d: poucas câmeras</text>
+<text x="152" y="316" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">ligadas para estimar</text>
+<polyline points="216,411.0 216,300 178,300 178,214" fill="none" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<text x="224" y="330" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: tentar novamente</text>
+<polyline points="520,267.5 520,456" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="407.5" y="332" width="108.5" height="35" fill="#fff"/>
+<text x="512" y="345" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">precond: nova</text>
+<text x="512" y="361" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">janela de tempo</text>
+<polyline points="600,456 600,267.5" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="604" y="332" width="75.0" height="35" fill="#fff"/>
+<text x="608" y="345" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">d: estado</text>
+<text x="608" y="361" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">atualizado</text>
+<polyline points="574.0,470 980.0,470" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="766" y="427" width="182.20000000000002" height="35" fill="#fff"/>
+<text x="770" y="440" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">precond: mudança relevante</text>
+<text x="770" y="456" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">d: o estado da turma mudou</text>
+<polyline points="546.0,470 350.0,470" fill="none" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<rect x="368" y="445" width="182.20000000000002" height="19" fill="#fff"/>
+<text x="372" y="458" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">[SR] d: sinal insuficiente</text>
+<polyline points="1080,402.5 1080,259.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="980.9" y="317" width="95.10000000000001" height="35" fill="#fff"/>
+<text x="1072" y="330" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">u: o que isso</text>
+<text x="1072" y="346" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">significa?</text>
+<polyline points="1220,259.0 1220,402.5" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1224" y="317" width="155.4" height="35" fill="#fff"/>
+<text x="1228" y="330" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">precond: veio do aviso</text>
+<text x="1228" y="346" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: voltar</text>
+<polyline points="980.0,200 750.0,200" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="761" y="159" width="155.4" height="35" fill="#fff"/>
+<text x="765" y="172" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">precond: veio da ajuda</text>
+<text x="765" y="188" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: voltar</text>
+<polyline points="1150,60.0 1150,141.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1156" y="77" width="61.6" height="19" fill="#fff"/>
+<text x="1160" y="90" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: ajuda</text>
+<polyline points="1150,537.5 1150,666.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1156" y="587" width="155.4" height="19" fill="#fff"/>
+<text x="1160" y="600" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: marcar este momento</text>
+<polyline points="1136.0,680 690,680 690,267.5" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="796" y="657" width="128.60000000000002" height="19" fill="#fff"/>
+<text x="800" y="670" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">d: momento marcado</text>
+<polyline points="980.0,510 725,510 725,267.5" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="756" y="512" width="142.0" height="19" fill="#fff"/>
+<text x="760" y="525" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: dispensar o aviso</text>
+<polyline points="1480,60.0 1480,186.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1305.2" y="77" width="168.8" height="19" fill="#fff"/>
+<text x="1470" y="90" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">u: pausar acompanhamento</text>
+<polyline points="1480,214.0 1480,419.5" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1298.5" y="287" width="175.5" height="35" fill="#fff"/>
+<text x="1470" y="300" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">d: acompanhamento pausado</text>
+<text x="1470" y="316" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">d: participantes avisados</text>
+<polyline points="1480,520.5 1480,985 30,985 30,206 156,206" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="1096" y="967" width="188.9" height="19" fill="#fff"/>
+<text x="1100" y="980" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: retomar o acompanhamento</text>
+<polyline points="560,660.0 560,746.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="566" y="677" width="128.60000000000002" height="19" fill="#fff"/>
+<text x="570" y="690" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: encerrar a aula</text>
+<polyline points="560,774.0 560,877" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="391.9" y="809" width="162.1" height="35" fill="#fff"/>
+<text x="550" y="822" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">d: resumo salvo e</text>
+<text x="550" y="838" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="end" xml:space="preserve">disponível no Dashboard</text>
+<polyline points="574.0,760 755.0,760" fill="none" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<rect x="596" y="717" width="115.2" height="35" fill="#fff"/>
+<text x="600" y="730" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">[SR] d: falha ao</text>
+<text x="600" y="746" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">salvar o resumo</text>
+<polyline points="755.0,820 620,820 620,768 574,768" fill="none" stroke="#111827" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<rect x="626" y="829" width="135.3" height="19" fill="#fff"/>
+<text x="630" y="842" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: tentar novamente</text>
+<polyline points="920,850.5 920,880 703,880" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="926" y="892" width="142.0" height="19" fill="#fff"/>
+<text x="930" y="905" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: tentar mais tarde</text>
+<polyline points="80,529.0 80,880 417,880" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="86" y="847" width="215.70000000000002" height="19" fill="#fff"/>
+<text x="90" y="860" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">u: continuar sem acompanhamento</text>
+<polyline points="560,883 560,950.0" fill="none" stroke="#111827" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="566" y="912" width="229.1" height="19" fill="#fff"/>
+<text x="570" y="925" font-size="12.5" font-weight="normal" fill="#111827" text-anchor="start" xml:space="preserve">gcc: Acompanhar o estado da turma</text>
+</svg>
