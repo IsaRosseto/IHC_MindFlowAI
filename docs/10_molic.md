@@ -27,7 +27,7 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Cenário de interação de origem:** CI05 (Entrega 9)  
-**Objetivo(s):** O01 a O07  
+**Objetivo(s):** O11 a O17 (Entrega 9, CI05)  
 **Tarefa(s) relacionada(s):** T03  
 **Signos relevantes:** acompanhamento da turma, participantes contribuindo, mínimo de participantes, estado predominante, confiança da estimativa, atualizado há, mudança de estado, qualidade do sinal, momento marcado, resumo da aula, aviso aos participantes
 
@@ -101,13 +101,13 @@ Caminhos alternativos:
 
 | Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
 |---|---|---|---|
-| O01 Ativar o acompanhamento da turma | M05 | Deve se repetir nos MoLICs de Karol, Nathanael e Manoel | Manter um único objetivo na consolidação |
-| O02 Perceber o estado da turma | M05 | Mesmo objetivo do comunicador nos outros cenários durante a sessão | Manter um único objetivo na consolidação |
-| O03 Examinar uma mudança no estado | M05 | — | Manter |
-| O04 Entender o significado e a confiança | M05 | Pode se sobrepor à ajuda contextual do Dashboard (F07) | Usar o mesmo texto de explicação nos dois lugares |
-| O05 Marcar um momento para revisar depois | M05 | Liga com a revisão de aula concluída (T01/T02) | Conferir no MoLIC do Dashboard se o momento marcado aparece |
-| O06 Pausar ou retomar o acompanhamento | M05 | Liga com a interface do participante (T04): o aviso muda quando pausa | Conferir no MoLIC do participante |
-| O07 Encerrar a aula com o resumo salvo | M05 | — | Manter |
+| O11 Ativar o acompanhamento da turma | M05 | Deve se repetir nos MoLICs de Karol, Nathanael e Manoel | Manter um único objetivo na consolidação |
+| O12 Perceber o estado da turma | M05 | Mesmo objetivo do comunicador nos outros cenários durante a sessão | Manter um único objetivo na consolidação |
+| O13 Examinar uma mudança no estado | M05 | — | Manter |
+| O14 Entender o significado e a confiança | M05 | Pode se sobrepor à ajuda contextual do Dashboard (F07) | Usar o mesmo texto de explicação nos dois lugares |
+| O15 Marcar um momento para revisar depois | M05 | Liga com a revisão de aula concluída (T01/T02) | Conferir no MoLIC do Dashboard se o momento marcado aparece |
+| O16 Pausar ou retomar o acompanhamento | M05 | Liga com a interface do participante (T04): o aviso muda quando pausa | Conferir no MoLIC do participante |
+| O17 Encerrar a aula com o resumo salvo | M05 | — | Manter |
 
 ### Preparação para o Figma
 

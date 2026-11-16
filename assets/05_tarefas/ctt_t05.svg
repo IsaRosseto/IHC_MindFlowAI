@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6000" height="2900" viewBox="0 0 6000 2900" xmlns:c2pa="http://c2pa.org/manifest">
+<rect width="6000" height="2900" fill="#fff"/>
+<text x="120.0" y="70.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="30" text-anchor="start" font-weight="bold" fill="#000">CTT | MINDFLOW AI | T05</text>
+<text x="120.0" y="120.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" fill="#000">Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo como prosseguir</text>
+<text x="120.0" y="160.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="start" fill="#333">Autor: Matheus Ferreira de Freitas | Persona P04 (Manoel Gomes) | Cenário C01 | Prática atual, sem o MindFlow</text>
+<text x="140.0" y="290.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">TIPOS DE TAREFA</text>
+<path d="M167.8,392.8 C150.8,392.8 148.2,370.7 162.7,367.3 C155.9,350.3 178.0,342.7 189.1,353.7 C195.0,335.0 223.1,335.0 228.1,352.0 C245.1,344.4 256.2,363.1 245.1,370.7 C260.4,375.8 254.5,392.8 237.5,392.8 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="280.0" y="385.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="start" fill="#000">Abstrata</text>
+<circle cx="195.0" cy="451.9" r="11.9" fill="#000"/>
+<path d="M171.2,501.2 L171.2,479.1 C171.2,467.2 186.5,467.2 195.0,467.2 C203.5,467.2 218.8,467.2 218.8,479.1 L218.8,501.2 Z" fill="#000"/>
+<text x="280.0" y="490.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="start" fill="#000">Usuário</text>
+<circle cx="531.1" cy="349.2" r="7.4" fill="#000"/>
+<path d="M516.3,379.7 L516.3,366.0 C516.3,358.7 525.8,358.7 531.1,358.7 C536.4,358.7 545.9,358.7 545.9,366.0 L545.9,379.7 Z" fill="#000"/>
+<line x1="548.1" y1="360.5" x2="561.7" y2="360.5" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="563.1" y="340.1" width="37.9" height="26.9" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="566.8" y="343.8" width="30.6" height="18.4" fill="#000"/>
+<line x1="582.1" y1="367.0" x2="582.1" y2="371.9" stroke="#000" stroke-width="3"/>
+<line x1="571.1" y1="372.5" x2="593.1" y2="372.5" stroke="#000" stroke-width="3"/>
+<text x="650.0" y="385.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="start" fill="#000">Interação</text>
+<rect x="533.6" y="445.0" width="52.7" height="37.4" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="538.8" y="450.1" width="42.5" height="25.5" fill="#000"/>
+<line x1="560.0" y1="482.4" x2="560.0" y2="489.2" stroke="#000" stroke-width="3"/>
+<line x1="544.7" y1="490.0" x2="575.3" y2="490.0" stroke="#000" stroke-width="3"/>
+<text x="650.0" y="490.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="start" fill="#000">Sistema (plataforma de videoconferência)</text>
+<text x="140.0" y="580.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="start" fill="#000">T*  Repetição</text>
+<text x="430.0" y="580.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="18" text-anchor="start" fill="#333">Operadores entre tarefas irmãs, da esquerda para a direita</text>
+<text x="4700.0" y="290.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">REGRA DE CONCLUSÃO</text>
+<text x="4700.0" y="335.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">A reunião termina quando 4 (Encerrar e registrar) é concluída.</text>
+<text x="4700.0" y="367.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">O ciclo de blocos 2* é desativado por 3 ([&gt;) quando o tempo acaba.</text>
+<text x="4700.0" y="399.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">Dentro de um bloco, explicar e observar (2.1) é suspenso por uma</text>
+<text x="4700.0" y="431.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">pergunta ou objeção do cliente (2.2) e retomado em seguida (|&gt;).</text>
+<text x="4700.0" y="463.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">A plataforma passa a transmitir a tela e o áudio (1.3) assim que Manoel inicia o compartilhamento (1.2 [ ]&gt;&gt; 1.3).</text>
+<text x="4700.0" y="495.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">4.3 acontece dias depois, quando chega o retorno do cliente.</text>
+<path d="M2888.0,398.0 C2868.0,398.0 2865.0,372.0 2882.0,368.0 C2874.0,348.0 2900.0,339.0 2913.0,352.0 C2920.0,330.0 2953.0,330.0 2959.0,350.0 C2979.0,341.0 2992.0,363.0 2979.0,372.0 C2997.0,378.0 2990.0,398.0 2970.0,398.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="2920.0" y="426.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">0</text>
+<text x="2920.0" y="452.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Conduzir a apresentação</text>
+<text x="2920.0" y="476.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">comercial percebendo a</text>
+<text x="2920.0" y="500.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">reação dos clientes e</text>
+<text x="2920.0" y="524.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">decidindo como prosseguir</text>
+<line x1="2920.0" y1="550.0" x2="720.0" y2="874.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2920.0" y1="550.0" x2="2787.5" y2="874.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2920.0" y1="550.0" x2="4520.0" y2="874.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2920.0" y1="550.0" x2="5120.0" y2="874.0" stroke="#000" stroke-width="2.5"/>
+<line x1="788.0" y1="910.0" x2="1713.8" y2="910.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1793.8" y1="910.0" x2="2719.5" y2="910.0" stroke="#000" stroke-width="2.5"/>
+<text x="1753.8" y="921.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<line x1="2855.5" y1="910.0" x2="3613.8" y2="910.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3693.8" y1="910.0" x2="4452.0" y2="910.0" stroke="#000" stroke-width="2.5"/>
+<text x="3653.8" y="921.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[&gt;</text>
+<line x1="4588.0" y1="910.0" x2="4780.0" y2="910.0" stroke="#000" stroke-width="2.5"/>
+<line x1="4860.0" y1="910.0" x2="5052.0" y2="910.0" stroke="#000" stroke-width="2.5"/>
+<text x="4820.0" y="921.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<path d="M688.0,948.0 C668.0,948.0 665.0,922.0 682.0,918.0 C674.0,898.0 700.0,889.0 713.0,902.0 C720.0,880.0 753.0,880.0 759.0,900.0 C779.0,891.0 792.0,913.0 779.0,922.0 C797.0,928.0 790.0,948.0 770.0,948.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="720.0" y="976.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">1</text>
+<text x="720.0" y="1002.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Preparar a reunião</text>
+<line x1="720.0" y1="1028.0" x2="420.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="720.0" y1="1028.0" x2="720.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="720.0" y1="1028.0" x2="1020.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="488.0" y1="1430.0" x2="530.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="610.0" y1="1430.0" x2="652.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="570.0" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<line x1="788.0" y1="1430.0" x2="830.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="910.0" y1="1430.0" x2="952.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="870.0" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[ ]&gt;&gt;</text>
+<circle cx="420.0" cy="1414.0" r="14.0" fill="#000"/>
+<path d="M392.0,1472.0 L392.0,1446.0 C392.0,1432.0 410.0,1432.0 420.0,1432.0 C430.0,1432.0 448.0,1432.0 448.0,1446.0 L448.0,1472.0 Z" fill="#000"/>
+<text x="420.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">1.1</text>
+<text x="420.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Confirmar quem participa</text>
+<text x="420.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">do lado do cliente</text>
+<circle cx="686.0" cy="1416.7" r="8.7" fill="#000"/>
+<path d="M668.6,1452.6 L668.6,1436.5 C668.6,1427.8 679.8,1427.8 686.0,1427.8 C692.2,1427.8 703.4,1427.8 703.4,1436.5 L703.4,1452.6 Z" fill="#000"/>
+<line x1="706.0" y1="1430.0" x2="722.0" y2="1430.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="723.7" y="1406.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="728.0" y="1410.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="746.0" y1="1437.7" x2="746.0" y2="1443.4" stroke="#000" stroke-width="3"/>
+<line x1="733.0" y1="1444.2" x2="759.0" y2="1444.2" stroke="#000" stroke-width="3"/>
+<text x="720.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">1.2</text>
+<text x="720.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Iniciar a chamada e o</text>
+<text x="720.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">compartilhamento de tela</text>
+<rect x="989.0" y="1400.0" width="62.0" height="44.0" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="995.0" y="1406.0" width="50.0" height="30.0" fill="#000"/>
+<line x1="1020.0" y1="1444.0" x2="1020.0" y2="1452.0" stroke="#000" stroke-width="3"/>
+<line x1="1002.0" y1="1453.0" x2="1038.0" y2="1453.0" stroke="#000" stroke-width="3"/>
+<text x="1020.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">1.3</text>
+<text x="1020.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Transmitir a tela e o</text>
+<text x="1020.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">áudio aos clientes</text>
+<path d="M2755.5,948.0 C2735.5,948.0 2732.5,922.0 2749.5,918.0 C2741.5,898.0 2767.5,889.0 2780.5,902.0 C2787.5,880.0 2820.5,880.0 2826.5,900.0 C2846.5,891.0 2859.5,913.0 2846.5,922.0 C2864.5,928.0 2857.5,948.0 2837.5,948.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="2787.5" y="976.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2*</text>
+<text x="2787.5" y="1002.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Apresentar um bloco da</text>
+<text x="2787.5" y="1026.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">proposta</text>
+<text x="2787.5" y="1054.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="16" text-anchor="middle" font-style="italic" fill="#333">Ciclo repetido a cada bloco da proposta</text>
+<line x1="2787.5" y1="1076.0" x2="1735.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2787.5" y1="1076.0" x2="2940.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2787.5" y1="1076.0" x2="3240.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2787.5" y1="1076.0" x2="3840.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1803.0" y1="1430.0" x2="2297.5" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2377.5" y1="1430.0" x2="2872.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="2337.5" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">|&gt;</text>
+<line x1="3008.0" y1="1430.0" x2="3050.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3130.0" y1="1430.0" x2="3172.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="3090.0" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<line x1="3308.0" y1="1430.0" x2="3500.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3580.0" y1="1430.0" x2="3772.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="3540.0" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<path d="M1703.0,1468.0 C1683.0,1468.0 1680.0,1442.0 1697.0,1438.0 C1689.0,1418.0 1715.0,1409.0 1728.0,1422.0 C1735.0,1400.0 1768.0,1400.0 1774.0,1420.0 C1794.0,1411.0 1807.0,1433.0 1794.0,1442.0 C1812.0,1448.0 1805.0,1468.0 1785.0,1468.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="1735.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1</text>
+<text x="1735.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Explicar o bloco</text>
+<text x="1735.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">observando a reação</text>
+<line x1="1735.0" y1="1572.0" x2="1360.0" y2="1884.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1735.0" y1="1572.0" x2="2110.0" y2="1884.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1428.0" y1="1920.0" x2="1695.0" y2="1920.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1775.0" y1="1920.0" x2="2042.0" y2="1920.0" stroke="#000" stroke-width="2.5"/>
+<text x="1735.0" y="1931.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">|||</text>
+<circle cx="1326.0" cy="1906.7" r="8.7" fill="#000"/>
+<path d="M1308.6,1942.6 L1308.6,1926.5 C1308.6,1917.8 1319.8,1917.8 1326.0,1917.8 C1332.2,1917.8 1343.4,1917.8 1343.4,1926.5 L1343.4,1942.6 Z" fill="#000"/>
+<line x1="1346.0" y1="1920.0" x2="1362.0" y2="1920.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="1363.7" y="1896.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="1368.0" y="1900.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="1386.0" y1="1927.7" x2="1386.0" y2="1933.4" stroke="#000" stroke-width="3"/>
+<line x1="1373.0" y1="1934.2" x2="1399.0" y2="1934.2" stroke="#000" stroke-width="3"/>
+<text x="1360.0" y="1986.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1.1</text>
+<text x="1360.0" y="2012.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Explicar o bloco e soltar</text>
+<text x="1360.0" y="2036.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">a pílula de dúvida</text>
+<path d="M2078.0,1958.0 C2058.0,1958.0 2055.0,1932.0 2072.0,1928.0 C2064.0,1908.0 2090.0,1899.0 2103.0,1912.0 C2110.0,1890.0 2143.0,1890.0 2149.0,1910.0 C2169.0,1901.0 2182.0,1923.0 2169.0,1932.0 C2187.0,1938.0 2180.0,1958.0 2160.0,1958.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="2110.0" y="1986.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1.2*</text>
+<text x="2110.0" y="2012.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Perceber a reação dos</text>
+<text x="2110.0" y="2036.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">clientes</text>
+<line x1="2110.0" y1="2062.0" x2="1660.0" y2="2334.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2110.0" y1="2062.0" x2="1960.0" y2="2334.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2110.0" y1="2062.0" x2="2260.0" y2="2334.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2110.0" y1="2062.0" x2="2560.0" y2="2334.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1728.0" y1="2370.0" x2="1770.0" y2="2370.0" stroke="#000" stroke-width="2.5"/>
+<line x1="1850.0" y1="2370.0" x2="1892.0" y2="2370.0" stroke="#000" stroke-width="2.5"/>
+<text x="1810.0" y="2381.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[ ]</text>
+<line x1="2028.0" y1="2370.0" x2="2070.0" y2="2370.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2150.0" y1="2370.0" x2="2192.0" y2="2370.0" stroke="#000" stroke-width="2.5"/>
+<text x="2110.0" y="2381.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[ ]</text>
+<line x1="2328.0" y1="2370.0" x2="2370.0" y2="2370.0" stroke="#000" stroke-width="2.5"/>
+<line x1="2450.0" y1="2370.0" x2="2492.0" y2="2370.0" stroke="#000" stroke-width="2.5"/>
+<text x="2410.0" y="2381.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[ ]</text>
+<circle cx="1626.0" cy="2356.7" r="8.7" fill="#000"/>
+<path d="M1608.6,2392.6 L1608.6,2376.5 C1608.6,2367.8 1619.8,2367.8 1626.0,2367.8 C1632.2,2367.8 1643.4,2367.8 1643.4,2376.5 L1643.4,2392.6 Z" fill="#000"/>
+<line x1="1646.0" y1="2370.0" x2="1662.0" y2="2370.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="1663.7" y="2346.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="1668.0" y="2350.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="1686.0" y1="2377.7" x2="1686.0" y2="2383.4" stroke="#000" stroke-width="3"/>
+<line x1="1673.0" y1="2384.2" x2="1699.0" y2="2384.2" stroke="#000" stroke-width="3"/>
+<text x="1660.0" y="2436.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1.2.1</text>
+<text x="1660.0" y="2462.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Espiar a grade de vídeo</text>
+<circle cx="1926.0" cy="2356.7" r="8.7" fill="#000"/>
+<path d="M1908.6,2392.6 L1908.6,2376.5 C1908.6,2367.8 1919.8,2367.8 1926.0,2367.8 C1932.2,2367.8 1943.4,2367.8 1943.4,2376.5 L1943.4,2392.6 Z" fill="#000"/>
+<line x1="1946.0" y1="2370.0" x2="1962.0" y2="2370.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="1963.7" y="2346.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="1968.0" y="2350.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="1986.0" y1="2377.7" x2="1986.0" y2="2383.4" stroke="#000" stroke-width="3"/>
+<line x1="1973.0" y1="2384.2" x2="1999.0" y2="2384.2" stroke="#000" stroke-width="3"/>
+<text x="1960.0" y="2436.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1.2.2</text>
+<text x="1960.0" y="2462.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Ouvir respostas e</text>
+<text x="1960.0" y="2486.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">perguntas</text>
+<circle cx="2226.0" cy="2356.7" r="8.7" fill="#000"/>
+<path d="M2208.6,2392.6 L2208.6,2376.5 C2208.6,2367.8 2219.8,2367.8 2226.0,2367.8 C2232.2,2367.8 2243.4,2367.8 2243.4,2376.5 L2243.4,2392.6 Z" fill="#000"/>
+<line x1="2246.0" y1="2370.0" x2="2262.0" y2="2370.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="2263.7" y="2346.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="2268.0" y="2350.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="2286.0" y1="2377.7" x2="2286.0" y2="2383.4" stroke="#000" stroke-width="3"/>
+<line x1="2273.0" y1="2384.2" x2="2299.0" y2="2384.2" stroke="#000" stroke-width="3"/>
+<text x="2260.0" y="2436.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1.2.3</text>
+<text x="2260.0" y="2462.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Ler o chat</text>
+<circle cx="2526.0" cy="2356.7" r="8.7" fill="#000"/>
+<path d="M2508.6,2392.6 L2508.6,2376.5 C2508.6,2367.8 2519.8,2367.8 2526.0,2367.8 C2532.2,2367.8 2543.4,2367.8 2543.4,2376.5 L2543.4,2392.6 Z" fill="#000"/>
+<line x1="2546.0" y1="2370.0" x2="2562.0" y2="2370.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="2563.7" y="2346.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="2568.0" y="2350.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="2586.0" y1="2377.7" x2="2586.0" y2="2383.4" stroke="#000" stroke-width="3"/>
+<line x1="2573.0" y1="2384.2" x2="2599.0" y2="2384.2" stroke="#000" stroke-width="3"/>
+<text x="2560.0" y="2436.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.1.2.4</text>
+<text x="2560.0" y="2462.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Chamar alguém pelo nome</text>
+<circle cx="2906.0" cy="1416.7" r="8.7" fill="#000"/>
+<path d="M2888.6,1452.6 L2888.6,1436.5 C2888.6,1427.8 2899.8,1427.8 2906.0,1427.8 C2912.2,1427.8 2923.4,1427.8 2923.4,1436.5 L2923.4,1452.6 Z" fill="#000"/>
+<line x1="2926.0" y1="1430.0" x2="2942.0" y2="1430.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="2943.7" y="1406.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="2948.0" y="1410.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="2966.0" y1="1437.7" x2="2966.0" y2="1443.4" stroke="#000" stroke-width="3"/>
+<line x1="2953.0" y1="1444.2" x2="2979.0" y2="1444.2" stroke="#000" stroke-width="3"/>
+<text x="2940.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.2</text>
+<text x="2940.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Responder a pergunta ou</text>
+<text x="2940.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">objeção do cliente</text>
+<circle cx="3240.0" cy="1414.0" r="14.0" fill="#000"/>
+<path d="M3212.0,1472.0 L3212.0,1446.0 C3212.0,1432.0 3230.0,1432.0 3240.0,1432.0 C3250.0,1432.0 3268.0,1432.0 3268.0,1446.0 L3268.0,1472.0 Z" fill="#000"/>
+<text x="3240.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.3</text>
+<text x="3240.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Interpretar os sinais e</text>
+<text x="3240.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">quanto confiar neles</text>
+<path d="M3808.0,1468.0 C3788.0,1468.0 3785.0,1442.0 3802.0,1438.0 C3794.0,1418.0 3820.0,1409.0 3833.0,1422.0 C3840.0,1400.0 3873.0,1400.0 3879.0,1420.0 C3899.0,1411.0 3912.0,1433.0 3899.0,1442.0 C3917.0,1448.0 3910.0,1468.0 3890.0,1468.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="3840.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.4</text>
+<text x="3840.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Decidir como prosseguir</text>
+<line x1="3840.0" y1="1548.0" x2="3540.0" y2="1884.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3840.0" y1="1548.0" x2="3840.0" y2="1884.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3840.0" y1="1548.0" x2="4140.0" y2="1884.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3608.0" y1="1920.0" x2="3650.0" y2="1920.0" stroke="#000" stroke-width="2.5"/>
+<line x1="3730.0" y1="1920.0" x2="3772.0" y2="1920.0" stroke="#000" stroke-width="2.5"/>
+<text x="3690.0" y="1931.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[ ]</text>
+<line x1="3908.0" y1="1920.0" x2="3950.0" y2="1920.0" stroke="#000" stroke-width="2.5"/>
+<line x1="4030.0" y1="1920.0" x2="4072.0" y2="1920.0" stroke="#000" stroke-width="2.5"/>
+<text x="3990.0" y="1931.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">[ ]</text>
+<circle cx="3540.0" cy="1904.0" r="14.0" fill="#000"/>
+<path d="M3512.0,1962.0 L3512.0,1936.0 C3512.0,1922.0 3530.0,1922.0 3540.0,1922.0 C3550.0,1922.0 3568.0,1922.0 3568.0,1936.0 L3568.0,1962.0 Z" fill="#000"/>
+<text x="3540.0" y="1986.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.4.1</text>
+<text x="3540.0" y="2012.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Avançar para o próximo</text>
+<text x="3540.0" y="2036.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">bloco</text>
+<circle cx="3806.0" cy="1906.7" r="8.7" fill="#000"/>
+<path d="M3788.6,1942.6 L3788.6,1926.5 C3788.6,1917.8 3799.8,1917.8 3806.0,1917.8 C3812.2,1917.8 3823.4,1917.8 3823.4,1926.5 L3823.4,1942.6 Z" fill="#000"/>
+<line x1="3826.0" y1="1920.0" x2="3842.0" y2="1920.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="3843.7" y="1896.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="3848.0" y="1900.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="3866.0" y1="1927.7" x2="3866.0" y2="1933.4" stroke="#000" stroke-width="3"/>
+<line x1="3853.0" y1="1934.2" x2="3879.0" y2="1934.2" stroke="#000" stroke-width="3"/>
+<text x="3840.0" y="1986.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.4.2</text>
+<text x="3840.0" y="2012.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Reforçar ou reexplicar o</text>
+<text x="3840.0" y="2036.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">ponto</text>
+<circle cx="4140.0" cy="1904.0" r="14.0" fill="#000"/>
+<path d="M4112.0,1962.0 L4112.0,1936.0 C4112.0,1922.0 4130.0,1922.0 4140.0,1922.0 C4150.0,1922.0 4168.0,1922.0 4168.0,1936.0 L4168.0,1962.0 Z" fill="#000"/>
+<text x="4140.0" y="1986.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">2.4.3</text>
+<text x="4140.0" y="2012.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Anotar o ponto para o</text>
+<text x="4140.0" y="2036.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">follow-up</text>
+<circle cx="4486.0" cy="896.7" r="8.7" fill="#000"/>
+<path d="M4468.6,932.6 L4468.6,916.5 C4468.6,907.8 4479.8,907.8 4486.0,907.8 C4492.2,907.8 4503.4,907.8 4503.4,916.5 L4503.4,932.6 Z" fill="#000"/>
+<line x1="4506.0" y1="910.0" x2="4522.0" y2="910.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="4523.7" y="886.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="4528.0" y="890.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="4546.0" y1="917.7" x2="4546.0" y2="923.4" stroke="#000" stroke-width="3"/>
+<line x1="4533.0" y1="924.2" x2="4559.0" y2="924.2" stroke="#000" stroke-width="3"/>
+<text x="4520.0" y="976.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">3</text>
+<text x="4520.0" y="1002.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Fechar com os pontos</text>
+<text x="4520.0" y="1026.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">essenciais quando o tempo</text>
+<text x="4520.0" y="1050.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">está acabando</text>
+<path d="M5088.0,948.0 C5068.0,948.0 5065.0,922.0 5082.0,918.0 C5074.0,898.0 5100.0,889.0 5113.0,902.0 C5120.0,880.0 5153.0,880.0 5159.0,900.0 C5179.0,891.0 5192.0,913.0 5179.0,922.0 C5197.0,928.0 5190.0,948.0 5170.0,948.0 Z" fill="#fff" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+<text x="5120.0" y="976.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">4</text>
+<text x="5120.0" y="1002.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Encerrar e registrar a</text>
+<text x="5120.0" y="1026.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">reunião</text>
+<line x1="5120.0" y1="1052.0" x2="4820.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="5120.0" y1="1052.0" x2="5120.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="5120.0" y1="1052.0" x2="5420.0" y2="1394.0" stroke="#000" stroke-width="2.5"/>
+<line x1="4888.0" y1="1430.0" x2="4930.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="5010.0" y1="1430.0" x2="5052.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="4970.0" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<line x1="5188.0" y1="1430.0" x2="5230.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<line x1="5310.0" y1="1430.0" x2="5352.0" y2="1430.0" stroke="#000" stroke-width="2.5"/>
+<text x="5270.0" y="1441.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#000">&gt;&gt;</text>
+<circle cx="4786.0" cy="1416.7" r="8.7" fill="#000"/>
+<path d="M4768.6,1452.6 L4768.6,1436.5 C4768.6,1427.8 4779.8,1427.8 4786.0,1427.8 C4792.2,1427.8 4803.4,1427.8 4803.4,1436.5 L4803.4,1452.6 Z" fill="#000"/>
+<line x1="4806.0" y1="1430.0" x2="4822.0" y2="1430.0" stroke="#000" stroke-width="3" stroke-dasharray="6 5"/>
+<rect x="4823.7" y="1406.0" width="44.6" height="31.7" rx="3" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="4828.0" y="1410.3" width="36.0" height="21.6" fill="#000"/>
+<line x1="4846.0" y1="1437.7" x2="4846.0" y2="1443.4" stroke="#000" stroke-width="3"/>
+<line x1="4833.0" y1="1444.2" x2="4859.0" y2="1444.2" stroke="#000" stroke-width="3"/>
+<text x="4820.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">4.1</text>
+<text x="4820.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Combinar o próximo passo</text>
+<circle cx="5120.0" cy="1414.0" r="14.0" fill="#000"/>
+<path d="M5092.0,1472.0 L5092.0,1446.0 C5092.0,1432.0 5110.0,1432.0 5120.0,1432.0 C5130.0,1432.0 5148.0,1432.0 5148.0,1446.0 L5148.0,1472.0 Z" fill="#000"/>
+<text x="5120.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">4.2</text>
+<text x="5120.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Anotar percepções e pontos</text>
+<text x="5120.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">de dúvida</text>
+<circle cx="5420.0" cy="1414.0" r="14.0" fill="#000"/>
+<path d="M5392.0,1472.0 L5392.0,1446.0 C5392.0,1432.0 5410.0,1432.0 5420.0,1432.0 C5430.0,1432.0 5448.0,1432.0 5448.0,1446.0 L5448.0,1472.0 Z" fill="#000"/>
+<text x="5420.0" y="1496.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#000">4.3</text>
+<text x="5420.0" y="1522.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">Comparar com o retorno do</text>
+<text x="5420.0" y="1546.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="20" text-anchor="middle" fill="#000">cliente (dias depois)</text>
+<text x="3130.0" y="2330.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">OPERADORES CTT</text>
+<text x="3130.0" y="2380.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">&gt;&gt;</text>
+<text x="3240.0" y="2380.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Ativação (habilitação)</text>
+<text x="3130.0" y="2420.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">[ ]&gt;&gt;</text>
+<text x="3240.0" y="2420.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Ativação com passagem de informação</text>
+<text x="3130.0" y="2460.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">[ ]</text>
+<text x="3240.0" y="2460.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Escolha</text>
+<text x="3130.0" y="2500.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">|||</text>
+<text x="3240.0" y="2500.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Concorrência</text>
+<text x="4330.0" y="2380.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">|[ ]|</text>
+<text x="4440.0" y="2380.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Concorrência e comunicação (não usado)</text>
+<text x="4330.0" y="2420.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">|=|</text>
+<text x="4440.0" y="2420.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Independência (não usado)</text>
+<text x="4330.0" y="2460.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">[&gt;</text>
+<text x="4440.0" y="2460.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Desativação</text>
+<text x="4330.0" y="2500.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="22" text-anchor="start" font-weight="bold" fill="#000">|&gt;</text>
+<text x="4440.0" y="2500.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#333">Suspensão/retomada</text>
+<line x1="120.0" y1="2700.0" x2="5880.0" y2="2700.0" stroke="#000" stroke-width="1.5"/>
+<text x="120.0" y="2745.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">Leitura temporal: 1 &gt;&gt; ( 2* [&gt; 3 ) &gt;&gt; 4. Dentro de 1: 1.1 &gt;&gt; 1.2 [ ]&gt;&gt; 1.3. Dentro de 2: ( 2.1 |&gt; 2.2 ) &gt;&gt; 2.3 &gt;&gt; 2.4. Dentro de 2.1: 2.1.1 ||| 2.1.2*. Em 2.1.2: 2.1.2.1 [ ] 2.1.2.2 [ ] 2.1.2.3 [ ] 2.1.2.4. Em 2.4: 2.4.1 [ ] 2.4.2 [ ] 2.4.3. Em 4: 4.1 &gt;&gt; 4.2 &gt;&gt; 4.3.</text>
+<text x="120.0" y="2785.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">A tarefa de sistema 1.3 representa o processamento da plataforma de videoconferência (transmitir a tela e o áudio aos clientes) na prática atual, sem o MindFlow: é o que torna a grade de vídeo reduzida e condiciona todo o ciclo de blocos.</text>
+<text x="120.0" y="2825.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="19" text-anchor="start" fill="#000">Base: HTA T05 e GOMS T05 de docs/05_analise_tarefas.md. Notação: ConcurTaskTrees (Paternò), conforme Barbosa e Silva (2010). A legenda inclui operadores não usados neste modelo.</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmZWVlNjY5ZC1hOTdiLTQyYzUtYjg5Yy1iNmIyOTJiZDMzZGUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaIkll8i8bnnoCGPUvLUJvjcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmMjljMzkwZi0xOWZhLTQ2NGQtYTc3Mi04OTkwOTgyZDIwYzFscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoeyUI8F0xmXknQz4yqCz1jQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggMP+jZGv1m6f5nMIE6+4zo9R1RrfFqJdGOkKH0kbkOf6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMN/f87uqz3/BniG+yXXvtwAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIClOrD9+kwaIa1Mzo8e7YqEgb+M2l19h/gkiUs4eq2bSZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GZeAZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmZlZWU2NjlkLWE5N2ItNDJjNS1iODljLWI2YjI5MmJkMzNkZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmY1MDUxODMxLWQxMjMtNDg3Yy05MDYzLTdkZTE1NTZjNTEyNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAw/6Nka/Wbp/mcwgTr7jOj1HVGt8Wol0Y6QofSRuQ5/qJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg7JQfyDvRbzZorUD/LrJyWznpXhs50GjlX4T2mCjhpymiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggaALQ7T9Jw/nzAuV/IdD4Br5JlUT8hAC5/W3XV/Ohtgp0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQBhYxBu6stWl00UPvZJr18CS/6C1nEszqtYt8bMd6WnYAWMKDwhHsj3Yn0XhXIjk/Nm2ddviqNIxUj/hLXmkTXM=</c2pa:manifest></metadata></svg>
