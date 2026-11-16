@@ -310,9 +310,38 @@ Os objetivos O06 e O07 correspondem ao acompanhamento durante o treinamento. Os 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Origem:** CI05 (cenário problema C05, tarefa T03), persona P02 — Camila Duarte.
 
-![Mapa de objetivos da CI05](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/09_modelo_conceitual/mapa_objetivos_ci05.png)
+```mermaid
+flowchart TD
+    G["<b>Conduzir a aula de inglês percebendo se a turma<br/>acompanha o conteúdo novo</b><br/>(P02 — Camila, CI05)"]
+    D1["<b>Durante a aula</b><br/>(Semáforo Cognitivo)"]
+    D2["<b>Ao fim da aula</b>"]
+    DEC["<b>Decidir se reforça o conteúdo</b><br/>fora do sistema: decisão da professora"]
+    O11["<b>O11</b><br/>Ativar o acompanhamento"]
+    O12["<b>O12</b><br/>Perceber o estado da turma"]
+    O16["<b>O16</b><br/>Pausar ou retomar<br/>o acompanhamento"]
+    O13["<b>O13</b><br/>Examinar uma<br/>mudança no estado"]
+    O14["<b>O14</b><br/>Entender o significado<br/>e a confiança"]
+    O15["<b>O15</b><br/>Marcar o momento<br/>para revisar depois"]
+    O17["<b>O17</b><br/>Encerrar a aula com<br/>o resumo salvo"]
 
-*Fonte editável: [`mapa_objetivos_ci05.svg`](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/09_modelo_conceitual/mapa_objetivos_ci05.svg). A caixa tracejada é um objetivo de Camila que acontece fora do sistema.*
+    G --> D1
+    G --> D2
+    G --> DEC
+    D1 --> O11
+    D1 --> O12
+    D1 --> O16
+    O12 --> O13
+    O12 --> O14
+    O13 --> O15
+    D2 --> O17
+
+    style DEC stroke-dasharray: 6 4
+    style G fill:#eef2ff
+    style D1 fill:#f3f4f6
+    style D2 fill:#f3f4f6
+```
+
+*A caixa tracejada é um objetivo de Camila que acontece fora do sistema. Versão em imagem: [PNG](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/09_modelo_conceitual/mapa_objetivos_ci05.png) · [SVG editável](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/09_modelo_conceitual/mapa_objetivos_ci05.svg).*
 
 #### Dicionário de objetivos — CI05
 
