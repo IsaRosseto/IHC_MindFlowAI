@@ -33,9 +33,9 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ### Diagrama
 
-![MoLIC M05](../assets/10_molic/molic_m05.png)
+![MoLIC M05](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/10_molic/molic_m05.png)
 
-**Fonte editável:** [`molic_m05.svg`](../assets/10_molic/molic_m05.svg)
+**Fonte editável:** [`molic_m05.svg`](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/10_molic/molic_m05.svg)
 
 Notação de Barbosa e Silva (2010), conforme o material da disciplina:
 

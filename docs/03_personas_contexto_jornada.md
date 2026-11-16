@@ -69,7 +69,7 @@ O recorte principal é o **Semáforo Cognitivo em tempo real**. O **Dashboard p�
 **Base de evidências:** proto-persona construída a partir das hipóteses e do usuário definido na Entrega 1; ainda sem entrevista ou observação com usuários reais  
 **Hipóteses da Entrega 1 relacionadas:** H01 e H02; inclui a hipótese nova sobre turmas pequenas
 
-<img src="../assets/03_personas/persona_camila.png" width="300" alt="Persona P02 — Camila Duarte">
+<img src="https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/03_personas/persona_camila.png" width="300" alt="Persona P02 — Camila Duarte">
 
 | Campo | Descrição |
 |---|---|
@@ -227,7 +227,7 @@ A **P02 — Camila Duarte** foi usada como persona de referência **apenas para 
 **Justificativa:** Camila foi escolhida como referência por representar diretamente o comunicador definido na Entrega 1 em uma situação concreta de aula on-line. Sua atenção dividida entre explicação, compartilhamento de tela e observação dos alunos permite explorar a hipótese H01. O recorte de turma pequena também introduz uma questão relevante para validação: se um indicador agregado continua útil quando o grupo possui poucos participantes.
 
 
-<img src="../assets/03_personas/mapa_empatia_camila.png" width="590" alt="Mapa de empatia da persona P02 — Camila Duarte, com todas as notas marcadas como hipótese [H]">
+<img src="https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/03_personas/mapa_empatia_camila.png" width="590" alt="Mapa de empatia da persona P02 — Camila Duarte, com todas as notas marcadas como hipótese [H]">
 
 > Todas as notas do mapa são **hipóteses [H]** da proto-persona, inclusive as suposições psicológicas (o que pensa e sente, dores e necessidades). Nenhuma foi confirmada com professoras reais; a imagem também traz a marcação [H] em cada nota.
 
