@@ -33,9 +33,62 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ### Diagrama
 
-![MoLIC M05](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/10_molic/molic_m05.png)
+```mermaid
+flowchart TD
+    A((" ")):::abertura
+    P1[" "]:::proc
+    S1("<b>Acompanhar o estado da turma</b><br/>――――――――――――――――<br/>ver estado da turma {<br/>d: estado predominante (cor, ícone, rótulo),<br/>confiança da estimativa, atualizado há }<br/>ver base da estimativa {<br/>d: participantes contribuindo (n de N) }"):::cena
+    S4("<b>Entender por que não há estimativa</b><br/>――――――――――――――――<br/>ver motivo {<br/>d: motivo (câmeras, luz, conexão) }<br/>ver base da estimativa {<br/>d: participantes contribuindo, mínimo }"):::alerta
+    P2[" "]:::proc
+    S2("<b>Examinar a mudança no estado</b><br/>――――――――――――――――<br/>ver mudança {<br/>d: estado anterior, estado atual, desde quando }<br/>ver confiança {<br/>d: confiança, qualidade do sinal }"):::cena
+    UA(["acesso ubíquo"]):::ubiquo
+    S3("<b>Entender o significado da estimativa</b><br/>――――――――――――――――<br/>ver significado {<br/>d: o que o estado significa,<br/>o que a estimativa não indica }<br/>ver confiança { d: motivo da confiança }"):::cena
+    P3[" "]:::proc
+    UB(["acesso ubíquo"]):::ubiquo
+    P4[" "]:::proc
+    S5("<b>Acompanhamento pausado</b><br/>――――――――――――――――<br/>ver pausa {<br/>d: pausado desde, aviso aos participantes }"):::cena
+    UC(["acesso ubíquo"]):::ubiquo
+    P5[" "]:::proc
+    S6("<b>Salvar o registro da aula</b><br/>――――――――――――――――<br/>ver falha {<br/>d: motivo da falha,<br/>dados mantidos no computador }"):::alerta
+    BAR["gcc gcc gcc gcc gcc gcc gcc gcc gcc gcc"]:::barra
+    E(((" "))):::fim
 
-**Fonte editável:** [`molic_m05.svg`](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/10_molic/molic_m05.svg)
+    A -->|"u: ativar o acompanhamento<br/>gco: Acompanhar o estado da turma"| P1
+    P1 -->|"precond: câmeras suficientes<br/>d: acompanhamento ativo"| S1
+    P1 -.->|"[SR] d: poucas câmeras ligadas para estimar"| S4
+    S4 -.->|"u: tentar novamente"| P1
+    S1 -->|"precond: nova janela de tempo"| P2
+    P2 -->|"d: estado atualizado"| S1
+    P2 -->|"precond: mudança relevante<br/>d: o estado da turma mudou"| S2
+    P2 -.->|"[SR] d: sinal insuficiente"| S4
+    S2 -->|"u: o que isso significa?"| S3
+    S3 -->|"precond: veio do aviso<br/>u: voltar"| S2
+    S3 -->|"precond: veio da ajuda<br/>u: voltar"| S1
+    UA -->|"u: ajuda"| S3
+    S2 -->|"u: marcar este momento"| P3
+    P3 -->|"d: momento marcado"| S1
+    S2 -->|"u: dispensar o aviso"| S1
+    UB -->|"u: pausar acompanhamento"| P4
+    P4 -->|"d: acompanhamento pausado<br/>d: participantes avisados"| S5
+    S5 -->|"u: retomar o acompanhamento"| P1
+    UC -->|"u: encerrar a aula"| P5
+    P5 -->|"d: resumo salvo e disponível no Dashboard"| BAR
+    P5 -.->|"[SR] d: falha ao salvar o resumo"| S6
+    S6 -.->|"u: tentar novamente"| P5
+    S6 -->|"u: tentar mais tarde"| BAR
+    S4 -->|"u: continuar sem acompanhamento"| BAR
+    BAR -->|"gcc: Acompanhar o estado da turma"| E
+
+    classDef abertura fill:#111111,stroke:#111111
+    classDef fim fill:#111111,stroke:#111111,stroke-width:3px
+    classDef proc fill:#111111,stroke:#111111,color:#111111
+    classDef cena fill:#ffffff,stroke:#111111,stroke-width:1.5px,color:#111111
+    classDef alerta fill:#ffffff,stroke:#111111,stroke-width:1.5px,stroke-dasharray:6 4,color:#111111
+    classDef ubiquo fill:#c4c4c4,stroke:#555555,color:#c4c4c4
+    classDef barra fill:#111111,stroke:#111111,color:#111111,font-size:6px
+```
+
+**Versão em imagem** (mesmo diagrama, com posicionamento fixo): [PNG](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/10_molic/molic_m05.png) · [SVG editável](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/10_molic/molic_m05.svg)
 
 Notação de Barbosa e Silva (2010), conforme o material da disciplina:
 
@@ -44,7 +97,7 @@ Notação de Barbosa e Silva (2010), conforme o material da disciplina:
 | Ponto de abertura | círculo preto, com a fala do usuário e a abertura da conversa sobre a meta (`gco:`) | `u: ativar o acompanhamento` / `gco: Acompanhar o estado da turma` |
 | Cena | retângulo de cantos arredondados; tópico em cima e diálogos embaixo, no formato `diálogo { d: signos }` | cinco cenas, como "Acompanhar o estado da turma" |
 | Cena de alerta ou captura de erro | cena com borda tracejada | "Entender por que não há estimativa" e "Salvar o registro da aula" |
-| Processo do sistema | quadrado preto; o sistema decide o rumo da conversa, e as falas ficam nas saídas | verificar câmeras, atualizar a estimativa, registrar o momento, pausar, salvar o resumo |
+| Processo do sistema | retângulo preto pequeno, sem texto; o sistema decide o rumo da conversa, e as falas ficam nas saídas | verificar câmeras, atualizar a estimativa, registrar o momento, pausar, salvar o resumo |
 | Fala de transição | seta com `u:` (usuário) ou `d:` (preposto do designer); `precond:` indica a condição | `u: marcar este momento`, `precond: mudança relevante` |
 | Ruptura e recuperação | seta tracejada; `[SR]` marca a fala do preposto que leva à recuperação da ruptura | `[SR] d: sinal insuficiente`, `u: tentar novamente` |
 | Acesso ubíquo | retângulo cinza sem texto, alcançável de qualquer cena; pode ser repetido no diagrama | `u: ajuda`, `u: pausar acompanhamento`, `u: encerrar a aula` |
