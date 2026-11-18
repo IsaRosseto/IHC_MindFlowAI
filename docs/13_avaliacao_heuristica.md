@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{18/11/2026}}  
+**Status:** ⬜ iniciada  
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
@@ -46,11 +46,11 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 
 | Item | Definição |
 |---|---|
-| Versão avaliada | {{link/commit/data}} |
-| Telas/estados | {{lista completa}} |
-| Fluxos | {{M01/M02...}} |
-| Dispositivo/viewport | {{...}} |
-| Avaliadores | {{nomes}} |
+| Versão avaliada | MindFlow AI 2.0, conforme identificação da equipe, disponível em [mindflowiaa.netlify.app](https://mindflowiaa.netlify.app/). Inspeção em 18/11/2026; commit não informado. |
+| Telas/estados | Página inicial; Minhas reuniões; resumo com dados de demonstração e resumo sem leituras; edição do resumo e do dashboard geral; erro de nome vazio; visualização salva selecionada; confirmação de exclusão cancelada; dashboard geral; comparação normal e sem seleção; configuração/prévia da extensão; suporte. |
+| Fluxos | M01: consulta e personalização do resumo pós-aula, incluindo validação e retorno. Também foram percorridos dashboard geral/comparação, configuração da extensão e suporte, descritos pelo nome para não criar códigos MoLIC não documentados. |
+| Dispositivo/viewport | Navegador Chrome em computador, ambiente remoto, janela de 1363 × 936 pixels. A inspeção não cobre todas as resoluções nem comprova conformidade de acessibilidade. |
+| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. Os demais integrantes acrescentarão seus próprios registros após a inspeção individual. |
 
 ## 3. Procedimento individual
 
@@ -76,28 +76,31 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 ---
 
-## Avaliador A01 — {{nome}}
+## Avaliador A01 — Kayky Pires
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
-| H2 | {{...}} | sim/não |  |  |
-| H3 | {{...}} | sim/não |  |  |
-| H4 | {{...}} | sim/não |  |  |
-| H5 | {{...}} | sim/não |  |  |
-| H6 | {{...}} | sim/não |  |  |
-| H7 | {{...}} | sim/não |  |  |
-| H8 | {{...}} | sim/não |  |  |
-| H9 | {{...}} | sim/não |  |  |
-| H10 | {{...}} | sim/não |  |  |
+| H1 | Lista de reuniões, resumo sem leituras, gráfico geral, comparação e exportação. | Sim. | V01. | — |
+| H2 | Lista, tabela de leituras, explicações dos indicadores e suporte. | Sim. | V02. | — |
+| H3 | Edição do resumo, cancelamento e confirmação de exclusão de visualização salva. | Não observada no recorte. | — | BP01: cancelar a edição restaurou o estado anterior; cancelar a confirmação manteve a visualização. |
+| H4 | Textos de Minhas reuniões e da configuração/prévia da extensão, comparados ao suporte ampliado da versão 2.0 informado pela equipe. | Sim. | V03. | — |
+| H5 | Tentativas de salvar sem nome no resumo e no dashboard geral; confirmação de exclusão. | Não observada no recorte. | — | BP02: nome vazio gera validação e a exclusão de uma visualização salva exige confirmação. |
+| H6 | Seletores de visualização, opções de blocos e preferências da extensão. | Não observada no recorte. | — | BP03: nomes e seleções ficam visíveis, incluindo a visualização ativa. |
+| H7 | Lista extensa de reuniões e controles de organização dos dashboards. | Sim. | V04. | — |
+| H8 | Organização visual do resumo, cards, gráficos, edição e prévia da extensão. | Não observada no recorte. | — | BP04: títulos, agrupamentos e rótulos textuais distinguem indicadores e ações. |
+| H9 | Mensagens de nome vazio e comparação sem seleção suficiente. | Não observada no recorte. | — | BP05: mensagens descrevem o que falta para prosseguir. |
+| H10 | Botão de ajuda, central de suporte, explicações de indicadores e preferências da extensão. | Não observada no recorte definido. | — | BP06: a central explica intensidade, parcela do grupo e confiança, além da personalização. |
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+| V01 | H1 | Resumo sem leituras e gráfico de engajamento por reunião no dashboard geral. | A mesma reunião apresenta “—” e zero janelas no resumo, mas aparece como 0% no gráfico geral e na seleção para comparação. O docente pode interpretar ausência de dados como baixo engajamento. | **[INSERIR PRINT V01a: resumo sem leituras, com “—” e zero janelas.] [INSERIR PRINT V01b: a mesma reunião com 0% no gráfico geral.]** | 3 | O problema reaparece para reuniões sem leituras e persiste enquanto forem representadas como zero. O impacto é alto: pode orientar uma interpretação incorreta dos resultados, embora não bloqueie a navegação. | Diferenciar valor zero de informação indisponível em todas as telas. Usar “Sem dados” ou “—”, com explicação, sem representar ausência como 0%. Conferir também a apresentação na comparação e exportação. |
+| V02 | H2 | Minhas reuniões e tabela “Leituras do intervalo” no resumo. | São exibidos nomes internos como “Supabase” e “v_timeline_sessao”, sem necessidade para a análise docente. Esses termos exigem conhecimento técnico que não faz parte da tarefa. | **[INSERIR PRINT V02a: “Dados carregados do Supabase” na lista.] [INSERIR PRINT V02b: “dados de v_timeline_sessao” na tabela.]** | 2 | Os termos aparecem em telas de consulta recorrente e permanecem durante a leitura. Não impedem a tarefa, mas acrescentam esforço de interpretação e podem gerar dúvidas sobre a origem dos dados. | Utilizar linguagem da atividade, como “Reuniões disponíveis” e “Leituras do período selecionado”. Manter detalhes internos em documentação técnica. |
+| V03 | H4 | Orientações de Minhas reuniões e da configuração/prévia da extensão. | A versão 2.0 possui funcionamento ampliado para outros sites de reunião, conforme informado pela equipe, mas as orientações ainda citam somente Google Meet, como em “Como ficará no Meet”. Isso comunica um alcance mais restrito que o informado para a versão. | **[INSERIR PRINT V03: textos que mencionam apenas Google Meet na lista ou na configuração da extensão.]** | 2 | A orientação desatualizada aparece no acesso à configuração e pode levar o docente a supor incompatibilidade com outra plataforma. O funcionamento não foi bloqueado nesta inspeção, mas a dúvida permanece até o texto ser atualizado. | Atualizar as instruções para a plataforma selecionada ou usar “plataforma de reunião”. Informar os sites efetivamente suportados pela versão, sem listar compatibilidades ainda não verificadas. |
+| V04 | H7 | Histórico de Minhas reuniões com muitos registros. | A lista extensa não apresenta busca por título ou filtros por data e situação. Para localizar uma reunião antiga, o docente precisa percorrer os registros visualmente. | **[INSERIR PRINT V04: lista extensa com o cabeçalho e os controles disponíveis, evidenciando a ausência de busca/filtros.]** | 2 | A dificuldade tende a aumentar conforme o histórico cresce e se repete a cada procura. A reunião pode ser encontrada pela rolagem, mas o caminho exige mais esforço, principalmente com títulos semelhantes. | Disponibilizar busca por título e filtros de período e situação, mantendo a seleção atual visível e oferecendo opção para limpar os filtros. |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
@@ -105,7 +108,12 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| {{H4}} | {{...}} | {{print}} | {{...}} |
+| H3 | BP01 — Cancelar a edição restaurou a visualização anterior. Cancelar a confirmação de exclusão manteve a visualização salva. | **[INSERIR PRINT BP01: editor com Cancelar ou confirmação de exclusão com a opção de cancelar.]** | Oferece saída da operação e mantém o controle com o usuário. Cancelar a edição e confirmar uma exclusão são comportamentos distintos. |
+| H5 | BP02 — Salvar sem nome exibiu validação; excluir uma visualização salva apresentou confirmação com seu nome. | **[INSERIR PRINT BP02: confirmação de exclusão de uma visualização salva. A mensagem de nome vazio pode ser reutilizada de BP05.]** | A validação evita uma configuração sem identificação e a confirmação reduz exclusões acidentais. Foi verificado o cancelamento, sem executar a exclusão definitiva. |
+| H6 | BP03 — A visualização ativa aparece no seletor; blocos e preferências apresentam opções e seleções visíveis. | **[INSERIR PRINT BP03: seletor com uma visualização personalizada selecionada ou lista de blocos marcados.]** | Permite reconhecer a configuração atual e as possibilidades disponíveis sem memorizar uma sequência de comandos. |
+| H8 | BP04 — O resumo utiliza títulos, cards agrupados, legendas e rótulos para separar indicadores e ações. | **[INSERIR PRINT BP04: visão do resumo com títulos, cards e legenda do gráfico.]** | A hierarquia visual ajuda a localizar e distinguir informações. Esta observação não representa uma medição de contraste ou certificação de acessibilidade. |
+| H9 | BP05 — A tentativa de salvar sem nome exibiu “Dê um nome para a visualização”; a comparação sem seleção pediu pelo menos duas reuniões. | **[INSERIR PRINT BP05: mensagem de nome obrigatório ou orientação da comparação sem seleção.]** | As mensagens apontam a condição que falta e indicam como prosseguir, sem depender de códigos técnicos. |
+| H10 | BP06 — A central de ajuda explica os indicadores, seus limites e como personalizar a visualização. | **[INSERIR PRINT BP06: central com a explicação sobre parcela do grupo, intensidade e confiança.]** | Oferece explicações ligadas às dúvidas da tarefa, incluindo que confiança não equivale à precisão comprovada da IA. |
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 
@@ -115,14 +123,26 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
-| HC01 | V01(A01), V04(A02) | H1 | {{...}} | {{...}} | alta | {{...}} |
+| A definir na consolidação. | Aguardando registros A02–A05. | — | Agrupar problemas repetidos após as análises individuais. | — | A definir. | A definir pela equipe. |
+
 
 ## 8. Síntese e plano de melhoria
 
-- Quantidade de problemas por heurística e severidade.
-- Problemas críticos/graves que bloqueiam teste ou release.
-- Padrões recorrentes entre telas.
-- Correções que serão feitas antes/para a avaliação com usuários.
+A análise A01 registrou **quatro violações**: uma em H1, uma em H2, uma em H4 e uma em H7. A distribuição proposta é de **um problema de severidade 3** e **três de severidade 2**. Não foram atribuídos graus 0, 1 ou 4 aos achados registrados. H3, H5, H6, H8, H9 e H10 possuem exemplos de boa prática no recorte examinado.
+
+O problema prioritário é **V01**, porque representar ausência de leituras como 0% pode induzir interpretação incorreta. Recomenda-se corrigi-lo antes de apresentar os resultados aos docentes. Não foi identificado um bloqueio de navegação de severidade 4 nas condições examinadas.
+
+Os padrões recorrentes são comunicação inconsistente da disponibilidade de dados, exposição de termos internos e orientações ainda restritas ao Meet. O histórico extenso também evidencia uma oportunidade de melhorar a localização de reuniões.
+
+O plano proposto é:
+
+1. **Alta prioridade — V01:** distinguir “Sem dados” de 0% no gráfico, seleção e demais representações.
+2. **Baixa prioridade — V02 e V03:** revisar o vocabulário e atualizar os textos sobre plataformas.
+3. **Baixa prioridade — V04:** acrescentar busca e filtros para o histórico.
+4. **Antes de fechar a avaliação:** anexar prints, revisar o registro A01 e complementar os estados ainda não verificados.
+5. **Após as análises individuais:** consolidar achados, definir responsáveis e prazos de correção e atualizar esta síntese com os números da equipe.
+
+As melhorias são recomendações; este documento não afirma que já foram implementadas. As contagens acima são de A01, não da avaliação completa da equipe.
 
 ## Checklist
 
