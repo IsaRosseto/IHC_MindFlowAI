@@ -525,64 +525,85 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 6. **Limitações a relatar:** amostra pequena e por conveniência, efeito de conformidade em grupo (participantes acompanharem a opinião dominante), possível constrangimento em falar de desconforto diante de colegas e influência dos cartões, que descrevem uma solução. Por isso, o Bloco 2 (experiência atual) é analisado separadamente do Bloco 3.
 
 
-### Instrumento I04 — Teste de usabilidade
+### Instrumento I04 — Classificação de Cartões (Card Sorting)
 
 **Autor(a):** Rafael Dias — 22.222.039-4  
-**Técnica:** Teste de usabilidade moderado com protótipo.  
-**Objetivo:** Verificar se os docentes conseguem consultar o resumo de uma aula, compreender os indicadores apresentados e personalizar a visualização sem dificuldades.  
+**Técnica:** Classificação de Cartões (Card Sorting aberto).  
+**Objetivo:** Investigar como docentes organizam e relacionam informações utilizadas no acompanhamento de aulas on-line, identificando quais dados consideram relacionados e quais termos utilizam para agrupá-los.  
 **Público:** Professores e docentes que realizam aulas on-line por videoconferência. Meta: 5 participantes.
 
-**Por que teste de usabilidade:** a técnica permite observar como os usuários interagem com o MindFlow AI e identificar dificuldades de navegação, compreensão dos indicadores e utilização das funcionalidades. Diferentemente das entrevistas e questionários, o teste avalia a execução prática das tarefas.
+**Por que classificação de cartões:** a técnica permite compreender como os usuários organizam mentalmente diferentes informações, sem apresentar uma estrutura pronta. Diferentemente dos questionários, entrevistas e grupos focais, os participantes realizam uma atividade prática de organização, contribuindo para identificar necessidades de informação e possíveis agrupamentos para a interface.
 
 #### Procedimento padronizado de aplicação
 
-1. **Preparação:** selecionar 5 docentes com experiência em aulas on-line e disponibilizar um protótipo do MindFlow AI com dados fictícios.
-2. **Apresentação:** explicar o objetivo do teste, informar que a participação é voluntária e solicitar o consentimento.
-3. **Execução:** apresentar as três tarefas abaixo, uma de cada vez, sem ensinar como realizá-las.
-4. **Observação:** registrar se o participante conseguiu concluir cada tarefa, quais dificuldades encontrou e se precisou de ajuda.
-5. **Encerramento:** fazer as perguntas finais e agradecer pela participação.
-6. **Armazenamento:** identificar os participantes por códigos e manter os registros apenas para fins acadêmicos, com acesso restrito.
+1. **Preparação:** selecionar 5 docentes com experiência em aulas on-line e preparar os cartões com informações relacionadas ao acompanhamento das aulas.
+2. **Apresentação:** explicar o objetivo da atividade, informar que a participação é voluntária e solicitar o consentimento.
+3. **Execução:** entregar os cartões individualmente e solicitar que o participante organize as informações em grupos que façam sentido para sua rotina.
+4. **Nomeação:** pedir que o participante atribua um nome a cada grupo criado, sem sugerir categorias.
+5. **Observação:** registrar os agrupamentos, nomes escolhidos e eventuais dificuldades. Não interferir na organização.
+6. **Encerramento:** agradecer pela participação e registrar brevemente quais cartões o participante não utiliza ou considera pouco relevantes.
+7. **Armazenamento:** identificar os participantes por códigos e manter os registros apenas para fins acadêmicos, com acesso restrito.
 
 #### Instrumento
 
 **Texto de abertura**
 
-> Estamos realizando um teste para avaliar a facilidade de utilização do MindFlow AI. Você deverá realizar algumas tarefas em um protótipo do sistema.
+> Estamos realizando uma pesquisa acadêmica para compreender como professores organizam informações relacionadas ao acompanhamento de aulas on-line.
 >
-> Não estamos avaliando seu desempenho, mas a facilidade de uso da interface. Sua participação é voluntária, e você pode interrompê-la quando desejar.
+> Você receberá cartões com diferentes tipos de informações e deverá organizá-los em grupos que façam sentido para você.
 >
-> Os resultados serão utilizados apenas para fins acadêmicos, sem identificação dos participantes.
+> Não existem respostas certas ou erradas. Queremos compreender sua forma de organizar essas informações.
+>
+> Sua participação é voluntária e você pode interrompê-la quando desejar. Os resultados serão utilizados apenas para fins acadêmicos, sem identificação dos participantes.
 >
 > Você concorda em participar? [sim/não]
 
-**Tarefa 1 — Consultar o resumo de uma aula**
-> Imagine que você deseja revisar uma aula que já terminou. Encontre essa reunião no sistema e abra seu resumo.
+**Cartões utilizados na atividade**
+
+| Código | Informação |
+|---|---|
+| C01 | Participação dos alunos |
+| C02 | Presença dos alunos |
+| C03 | Dúvidas apresentadas durante a aula |
+| C04 | Conteúdos com maior dificuldade |
+| C05 | Resultados de exercícios |
+| C06 | Atividades realizadas |
+| C07 | Anotações do professor |
+| C08 | Conteúdos abordados |
+| C09 | Planejamento da próxima aula |
+| C10 | Evolução da turma ao longo das aulas |
+| C11 | Momentos de maior interação |
+| C12 | Feedback dos alunos |
+
+**Atividade 1 — Organização dos cartões**
+
+> Observe os cartões apresentados e organize-os em grupos de informações que, na sua opinião, possuem alguma relação.
+>
+> Você pode criar quantos grupos desejar, sem precisar utilizar todos os cartões.
+
 **Observar:**
-- Se encontra a reunião facilmente;
-- Se consegue acessar o resumo;
-- Se compreende os indicadores apresentados.
+- Quais cartões são colocados juntos;
+- Quais informações ficam separadas;
+- Se existem cartões difíceis de classificar;
+- Se o participante deixa algum cartão de fora.
 
-**Tarefa 2 — Personalizar a visualização**
-> Imagine que você deseja modificar as informações exibidas no resumo. Encontre a opção de edição e realize uma alteração na visualização.
+**Atividade 2 — Nomeação dos grupos**
+
+> Agora, atribua um nome a cada grupo criado, utilizando palavras que representem as informações presentes nele.
+
 **Observar:**
-- Se encontra a opção de editar;
-- Se compreende as opções disponíveis;
-- Se consegue realizar a alteração.
+- Quais nomes são utilizados;
+- Se os nomes representam claramente os cartões;
+- Se existem semelhanças entre os nomes escolhidos pelos participantes.
 
-**Tarefa 3 — Salvar a personalização**
-> Após modificar o resumo, salve suas alterações e confira se a visualização foi atualizada.
+**Atividade 3 — Identificação de informações pouco utilizadas**
+
+> Entre os cartões apresentados, existe alguma informação que você normalmente não utiliza para acompanhar ou avaliar suas aulas? Se houver, indique quais.
+
 **Observar:**
-- Se encontra o botão de salvar;
-- Se compreende a confirmação do salvamento;
-- Se identifica que as alterações foram mantidas.
-
-#### Perguntas finais
-
-1. Você achou fácil encontrar o resumo da aula?
-2. Os indicadores apresentados foram claros?
-3. Foi fácil encontrar e utilizar a opção de personalização?
-4. Qual foi a maior dificuldade encontrada?
-5. O que você melhoraria na interface?
+- Quais informações são apontadas como pouco utilizadas;
+- Se existem diferenças entre os participantes;
+- Se alguma informação importante para a rotina docente não foi representada nos cartões.
 
 #### Ficha de registro
 
@@ -591,23 +612,32 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 | Código do participante | U__ |
 | Data | |
 | Experiência com aulas on-line | |
-| Tarefa 1 — Consultar resumo | Sucesso / Com ajuda / Não concluiu |
-| Tarefa 2 — Personalizar | Sucesso / Com ajuda / Não concluiu |
-| Tarefa 3 — Salvar | Sucesso / Com ajuda / Não concluiu |
-| Principais dificuldades | |
-| Sugestões do participante | |
+| Quantidade de grupos criados | |
+| Cartões de cada grupo | |
+| Nomes atribuídos aos grupos | |
+| Cartões não classificados | |
+| Informações pouco utilizadas | |
+| Dificuldades observadas | |
+| Observações adicionais | |
 
 #### Como os dados serão analisados
 
-1. **Conclusão das tarefas:** verificar quantos participantes conseguiram realizar cada atividade sem ajuda, com ajuda ou não conseguiram concluí-la.
-2. **Dificuldades encontradas:** agrupar os problemas observados em navegação, interpretação dos indicadores e personalização da visualização.
-3. **Avaliação das hipóteses:**
-   - **H01:** investigar se o resumo apresenta informações consideradas úteis pelos docentes, como complemento à análise do uso em tempo real.
-   - **H02:** identificar dificuldades na interpretação dos indicadores e na compreensão das classificações da IA.
-   - **H03:** registrar eventuais preocupações espontâneas relacionadas à privacidade dos estudantes.
-4. **Melhorias no design:** utilizar os resultados para ajustar a organização das telas, os indicadores apresentados e os controles de personalização.
-5. **Limitações:** por envolver uma amostra pequena e um protótipo, os resultados servirão para identificar problemas de usabilidade, sem representar todos os possíveis usuários do MindFlow AI.
-Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar futuras melhorias na interface.
+1. **Agrupamentos:** comparar como os participantes organizaram os cartões, identificando quais informações foram frequentemente colocadas juntas.
+
+2. **Nomes dos grupos:** analisar os termos escolhidos pelos docentes, identificando padrões de linguagem e diferenças na interpretação das informações.
+
+3. **Informações pouco utilizadas:** registrar quais cartões foram considerados menos relevantes para a rotina dos participantes, sem concluir que essas informações são desnecessárias apenas por terem sido pouco selecionadas.
+
+4. **Relação com as hipóteses e necessidades:**
+   - **R03:** identificar como os docentes relacionam informações utilizadas no acompanhamento e na revisão das aulas.
+   - **H06:** investigar se diferentes formas de organizar as informações sugerem a necessidade de oferecer opções de personalização.
+   - **?03:** contribuir para compreender diferenças na organização das informações entre docentes com experiências distintas.
+
+5. **Uso no design:** utilizar os agrupamentos e nomes mais recorrentes como referência para organizar as informações e definir categorias compreensíveis na interface, sem presumir que os docentes necessitam de um dashboard.
+
+6. **Limitações:** a amostra será pequena e selecionada por conveniência. Além disso, a organização dos cartões representa relações percebidas entre informações, mas não comprova que os participantes realmente utilizam esses dados ou que desejam funcionalidades específicas.
+
+Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar a revisão dos requisitos de informação e organização da interface.
 
 
 ### Instrumento I05 — Diário de reuniões comerciais (diário de atividades)
@@ -715,45 +745,60 @@ Código da reunião: D__-R__ · Dias até o retorno: ___ (ou "ainda sem retorno"
 
 ## Síntese
 
-O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
+O conjunto de técnicas pretende reduzir cinco lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
 
 1. **Se o problema do comunicador existe na prática:** se professores e instrutores realmente deixam de perceber dificuldades do grupo durante a sessão, que sinais usam hoje e como decidem reforçar ou seguir (I01 em escala; I02 em profundidade, a partir de aulas reais).
+
 2. **Se o tipo de apoio imaginado faz sentido:** utilidade de um sinal durante a sessão, interesse por informação de confiança e o que de fato seria consultado depois da aula, sem pressupor dashboard, filtros ou relatórios (I01 e I02).
+
 3. **Como o participante reage à análise da própria imagem:** conforto, regras percebidas, o que precisa saber e controlar, e se a agregação protege em turmas pequenas (I03, com apoio da A01).
-4. **Se a interface proposta é fácil de utilizar:** verificar se docentes conseguem localizar uma reunião concluída, interpretar os indicadores, personalizar o resumo e salvar as alterações sem dificuldades, identificando problemas de navegação e compreensão (I04, por meio de teste de usabilidade).
+
+4. **Como os docentes organizam informações sobre suas aulas:** identificar quais informações são consideradas relacionadas, como são agrupadas e quais termos os professores utilizam para nomeá-las, sem pressupor uma estrutura de interface ou funcionalidade específica (I04, por meio de classificação de cartões).
+
 5. **Se o recorte comercial faz sentido na prática:** se vendedores B2B vivem a situação do C01 em reuniões reais, que sinais usam, como decidem e o que descobrem no follow-up, sem supor que a reunião comercial tenha as mesmas tarefas da aula (I05, por meio de diário de reuniões ao longo de duas semanas).
 
 | Técnica | Quem responde | Hipóteses/lacunas investigadas |
 |---|---|---|
-| I01 — Questionário (Kayky) | Comunicadores, em maior número | H01, H02, H03 (visão do comunicador), necessidades do Dashboard |
+| I01 — Questionário (Kayky) | Comunicadores, em maior número | H01, H02, H03 (visão do comunicador), H06 e necessidades do acompanhamento pós-sessão |
 | I02 — Entrevista com incidente crítico (Isabella) | Professores, prioritariamente de idiomas com turmas pequenas | H01, H02, H05, ?02, ?04; questões Q1–Q7 do C05 |
 | I03 — Grupo focal (Gustavo) | Participantes de aulas e treinamentos on-line | H03, H05, ?04; questões Q1–Q7 do C03 |
-| I04 — Teste de usabilidade (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | H01, H02 e H03 (complementar); usabilidade do resumo, interpretação dos indicadores e personalização da visualização |
+| I04 — Classificação de Cartões (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | R03, H06 e ?03; organização das informações pós-aula, agrupamentos e vocabulário dos docentes |
 | I05 — Diário de reuniões comerciais (Matheus) | Vendedores B2B, em reuniões reais ao longo de duas semanas | ?02, ?03, H01, H02, H05 e H03 (visão do comunicador com clientes externos); questões Q1–Q7 do C01; operações 3 a 6 da T05 |
 
 **O que se espera concluir após a análise dos dados:**
 
-- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). O I04 complementará essa análise verificando se o resumo pós-aula apresenta informações úteis e acessíveis aos docentes. Decide se o Semáforo continua como recorte principal e quais informações devem ser priorizadas no resumo.
-- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. O I04 permitirá identificar dificuldades na compreensão dos indicadores e de suas classificações. Decide a forma de comunicar incerteza e melhorar a clareza das informações apresentadas.
-- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04). O I04 poderá contribuir de forma complementar, caso sejam identificadas preocupações com privacidade durante o teste.
+- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). Decide se o Semáforo continua como recorte principal.
+
+- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. Decide a forma de comunicar incerteza.
+
+- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04).
+
 - **H05** (turmas pequenas) deverá ficar **sustentada ou refutada**, a partir da visão de professores (I02) e de participantes (I03).
-- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 também contribuirá para avaliar a compreensão desses rótulos na interface.
-- **Usabilidade do resumo e da personalização (I04):** deverá ser verificado se os docentes conseguem localizar uma reunião concluída, compreender os indicadores, personalizar a visualização e salvar as alterações sem dificuldades. Os problemas identificados orientarão melhorias na navegação, organização das informações e controles de edição.
+
+- **H06** (necessidade de personalização) deverá ser **sustentada, refutada ou refinada** a partir das respostas do I01 e dos agrupamentos realizados no I04. O I04 permitirá identificar diferenças na organização das informações entre os docentes, contribuindo para avaliar possíveis necessidades de personalização. Entretanto, diferenças nos agrupamentos não comprovam, isoladamente, que os usuários desejam personalizar a interface.
+
+- **R03 — Acompanhamento pós-aula (I04):** espera-se identificar como os docentes relacionam informações sobre participação, dificuldades, atividades e planejamento das aulas. Os agrupamentos poderão orientar a organização das informações apresentadas após uma sessão.
+
+- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 contribuirá especificamente para compreender a organização e o vocabulário utilizados por docentes no acompanhamento pós-aula.
+
+- **Organização das informações (I04):** espera-se identificar quais cartões são frequentemente agrupados, quais categorias são criadas pelos participantes e quais informações são consideradas pouco utilizadas. Esses resultados poderão orientar melhorias na arquitetura da informação e na apresentação dos dados, sem pressupor a necessidade de um dashboard.
+
 - **Recorte comercial (I05):** ?02 e ?03 deverão indicar se a reunião comercial B2B permanece no escopo como contexto a atender ou apenas como variação. Se a situação do C01 se repetir nos registros, H01 e H02 ganham evidência em contexto de clientes externos e a T05 é ajustada; se for rara, o recorte sai do escopo prioritário.
+
 - **H04** e **?01** não dependem desta coleta (foram tratadas na Entrega 2).
 
-Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas e elementos da interface afetados serão revisados.
+Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas, requisitos e elementos da interface afetados serão revisados.
 
 ## Checklist
 
 - [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
 - [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Perguntas e atividades não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam as necessidades dos usuários.
 - [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
 - [x] Parte A identifica dados e perfis de coleta de forma específica.
 - [x] Aspectos éticos são contextualizados para o projeto.
 - [x] Há uma técnica completa por integrante e técnicas distintas.
 - [x] Questionário está incluído entre as técnicas.
 - [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Perguntas e atividades evitam indução e coletam apenas dados necessários.
 - [x] Está claro como os dados serão analisados e usados no design.
