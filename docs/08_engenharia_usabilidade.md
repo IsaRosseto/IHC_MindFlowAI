@@ -1,98 +1,122 @@
 # Entrega 8 — Ciclo de vida e engenharia de usabilidade
 
 **Data:** 25/10/2026  
-**Status:** 🟨 iniciada
+**Status:** 🟩 Concluída
 **Responsabilidade:** 1 solução por equipe
+
 
 ## Objetivo da atividade
 
-Transformar o conhecimento acumulado sobre usuários, tarefas, plataforma e contexto em princípios e **metas de usabilidade verificáveis**, mantendo o caráter iterativo do projeto.
+Transformar o conhecimento sobre usuários, tarefas, plataforma e contexto em princípios e metas de usabilidade verificáveis, organizando a evolução do MindFlow AI pelo Ciclo de Vida de Engenharia de Usabilidade.
 
 ## Delimitação do sistema interativo
 
-Antes das características da plataforma, separe:
-
 | Camada | O que pertence ao projeto | O que será avaliado em IHC |
 |---|---|---|
-| contribuição técnica do TCC | Modelo temporal de IA que estima engajamento, tédio, confusão e frustração a partir de sinais visuais, processados localmente em Python. | desempenho técnico não é substituído pelo teste de IHC |
-| camada de interação da disciplina | Semáforo em tempo real, consulta de reuniões, interpretação de indicadores, personalização de dashboards, configuração da extensão e suporte. Esta avaliação detalha a personalização dos resultados de uma aula concluída. | compreensão, eficácia, eficiência, satisfação, erros, acessibilidade etc. |
-| integrações/dados simulados | Avaliação planejada no sistema integrado: extensão, Python, histórico e site, utilizando uma aula previamente registrada. Não se prevê simulação do processamento nessa tarefa. | Avaliar telas, carregamento, confirmação e falha. Qualquer simulação necessária será declarada no roteiro e ao participante. O teste de interação não comprova a precisão do modelo. |
+| Contribuição técnica do TCC | Modelo temporal de IA que estima engajamento, tédio, confusão e frustração a partir de sinais visuais, com processamento local. | A avaliação de interação não comprova a precisão ou a validade científica das inferências. |
+| Camada de interação da disciplina | Semáforo durante a sessão, consulta de reuniões e resultados, personalização, configuração da extensão e suporte. | Compreensão dos indicadores, leitura durante a apresentação, eficácia, eficiência, erros, satisfação e acessibilidade. |
+| Integrações e dados de avaliação | Site, extensão, serviço Python e histórico. Na avaliação pós-sessão, poderão ser utilizados registros previamente preparados ou reuniões de demonstração. Para o tempo real, são propostos estímulos controlados, sem necessidade de processar imagens dos participantes do teste. | Identificar no plano a versão, a origem dos dados e quais estados são simulados ou integrados. Uma mensagem exibida em um estímulo controlado permite avaliar sua interpretação, mas não demonstra o desempenho do modelo em uma aula real. |
 
-Em um protótipo de disciplina, é aceitável simular processamento ou resultados quando a implementação técnica não estiver integrada, desde que isso seja declarado e a simulação seja suficiente para avaliar a interação.
+
 
 ## 1. Características da plataforma
 
 | Característica | Descrição | Consequência para IHC |
 |---|---|---|
-| Software | Site acessado por navegador, integrado à extensão e ao serviço Python local. | Manter linguagem consistente e informar a disponibilidade dos componentes. |
-| Hardware/dispositivos | Notebook ou desktop, webcam e internet; recursos compartilhados com a videoconferência. | Manter indicadores legíveis sem encobrir o conteúdo da aula. |
-| Capacidades | Consultar reuniões e gráficos, personalizar dashboards e extensão e acessar suporte. | Destacar **Ver Resumo** e **Nova Visualização**, explicar indicadores e permitir conferir as alterações. |
-| Restrições | Inferências sujeitas a erro e limitações de captura e desempenho. A compatibilidade da extensão será conferida antes do teste. | Distinguir ausência de dados de valores baixos e comunicar os limites das inferências. |
-| Conectividade/latência | Análise local; autenticação e sincronização do histórico dependem de serviços remotos. | Diferenciar falhas locais de falhas de sincronização e permitir nova tentativa sem perder ajustes. |
-| Segurança/privacidade | Processamento visual local e histórico numérico, sem depender da persistência de vídeo bruto. | Explicar finalidade e processamento, restringir acesso e priorizar resultados agregados. |
-| Volume de dados/histórico | Novas aulas ampliam o histórico e a quantidade de registros temporais. | Identificar sessões por título e data e oferecer resumo com detalhes sob demanda. |
-| Tempo de processamento | Preparação, consulta e confirmação têm tempos variáveis, ainda sem máximo comprovado nesta entrega. | Mostrar carregamento, confirmação e erro; distinguir informações antigas de atualizações recentes. |
-| Papéis/permissões | O comunicador utiliza os painéis; participantes precisam de informações sobre o processamento. | Separar as interfaces de análise e transparência e impedir acesso a reuniões não autorizadas. |
+| Software | Site acessado por navegador, integrado à extensão e ao serviço Python local. | Utilizar linguagem consistente e informar a disponibilidade de cada componente. |
+| Hardware/dispositivos | Notebook ou desktop e internet. A webcam participa da captura durante a videoconferência; a consulta de um histórico preparado não depende de nova captura. | Manter indicadores legíveis durante a apresentação e permitir revisão posterior sem exigir nova videoconferência. |
+| Capacidades | Consultar reuniões e gráficos, escolher e organizar blocos de informação, salvar visualizações, configurar a extensão e acessar suporte. | Manter evidentes as ações Ver resumo, Organizar dashboard e Salvar visualização, explicar os indicadores e permitir conferir a configuração aplicada. |
+| Restrições | Inferências sujeitas a erro e limitações de captura, iluminação e desempenho. A cobertura de compatibilidade da extensão por navegador, versão e sistema operacional ainda não está consolidada. | Distinguir dados indisponíveis de estimativas baixas. Tratar a compatibilidade não verificada como lacuna, registrando a configuração efetivamente utilizada em cada avaliação. |
+| Conectividade/latência | O processamento visual é local; autenticação e sincronização do histórico dependem de serviços remotos. | Diferenciar espera, indisponibilidade e falha. Especificar recuperação sem perda de ajustes quando pertinente e verificar o que está implementado. |
+| Segurança/privacidade | O projeto propõe processamento local e histórico de resultados, com acesso por conta. Essas escolhas não demonstram, isoladamente, conformidade legal ou ausência de risco de identificação. | Explicar finalidade, processamento, acesso e retenção; verificar as condições de uso dos dados em cada contexto. |
+| Volume de dados/histórico | Novas sessões ampliam a lista de reuniões e os registros temporais disponíveis. | Identificar sessões por título e data e apresentar detalhes sob demanda. |
+| Tempo de processamento | Carregamento e sincronização podem variar; não há um limite máximo de resposta comprovado nesta entrega. | Comunicar espera e resultado das ações. Registrar esperas na avaliação e evitar apresentar informações antigas como atuais. |
+| Papéis/permissões | O comunicador consulta os resultados; os participantes precisam compreender o tratamento de seus dados. | Distinguir análise do comunicador e transparência para participantes. Definir e verificar as restrições de acesso às reuniões. |
 
 ## 2. Princípios gerais do projeto
 
-Inclua apenas normas, leis, padrões e princípios realmente relevantes, explicando **como** afetam o projeto. Não transforme esta seção em lista de links.
+### Princípios direcionados ao negócio
 
 | Princípio/norma | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
 |---|---|---|---|
-| Contexto de uso | Karol divide a atenção entre aula e ferramentas e possui familiaridade tecnológica baixa a média. | Priorizar leitura rápida durante a aula e personalização posterior, com linguagem compreensível. | [Entrega 1](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/docs/01_conhecendo_o_problema.md) / [Entrega 3](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/docs/03_personas_contexto_jornada.md) |
-| LGPD, se aplicável | Sinais visuais e informações de contas e sessões exigem avaliar finalidade e base legal. | Definir a base legal aplicável, informar o tratamento e limitar coleta, retenção e acesso. Processamento local não comprova conformidade. | [LGPD — arts. 6º, 7º, 11 e 46](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) |
-| Acessibilidade | Gráficos e controles precisam atender diferentes condições visuais e formas de interação. | Associar cores a textos, assegurar contraste, teclado e foco visível e oferecer explicações acessíveis pelo foco. | [WCAG 2.2 — critérios 1.4.1, 1.4.3, 1.4.13, 2.1.1 e 2.4.7](https://www.w3.org/TR/WCAG22/) |
-| Visibilidade, controle e recuperação de erros | O usuário precisa reconhecer estados e efeitos da edição. | Informar análise ativa, ausência de dados e falhas; confirmar alterações e permitir retornar à edição. | [Heurísticas de Nielsen — visibilidade, controle e recuperação de erros](https://www.nngroup.com/articles/ten-usability-heuristics/) |
+| Proteção de dados pessoais — LGPD, conforme o tratamento realizado | O tratamento de imagens, contas e registros exige examinar finalidade, necessidade, transparência, segurança e fundamento legal no contexto de implantação. | Definir os dados necessários, as responsabilidades, os acessos e a retenção; informar o tratamento. Processamento local não comprova conformidade. A definição da base legal e das responsabilidades permanece sujeita à verificação no contexto real. | [LGPD — texto atualizado, especialmente arts. 6º, 7º, 11 e 46](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html) |
+
+
+### Princípios direcionados à interface
+
+| Princípio/norma | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
+|---|---|---|---|
+| Acessibilidade | Indicadores, gráficos e controles precisam atender diferentes condições visuais e formas de interação. | Associar cores a textos, verificar contraste, navegação por teclado e foco visível; disponibilizar explicações acessíveis e alternativas às ações de arraste. Esses requisitos ainda precisam ser inspecionados no produto. | [WCAG 2.2 — critérios 1.4.1, 1.4.3, 1.4.13, 2.1.1, 2.4.7 e 2.5.7](https://www.w3.org/TR/WCAG22/) |
+| Visibilidade do estado e recuperação de erros | O usuário precisa compreender disponibilidade da análise, validação de entrada e resultado do salvamento. | Diferenciar carregamento, ausência de dados, validação e sucesso. Na personalização, explicar o nome não preenchido e permitir corrigi-lo; confirmar a exclusão de uma visualização salva. | [Heurísticas de Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/) |
+| Controle, reconhecimento e consistência | O docente precisa reconhecer opções e consequências sem memorizar procedimentos extensos. | Manter nomes e comportamentos consistentes, seleções visíveis, retorno ao resumo e cancelamento da edição. O cancelamento direto e a confirmação de exclusão são ações distintas. | [Heurísticas de Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/) |
+| Redução da carga visual e leitura contextual | P01/P02 representam o contexto de atenção dividida entre explicação, apresentação e acompanhamento do público. Essa condição é uma entrada da análise que justifica o princípio. | Priorizar informação resumida durante a sessão e explicações sob demanda. Apresentar as classificações como estimativas e comunicar indisponibilidade, sem prescrever a decisão pedagógica. A adequação da solução depende de avaliação com docentes. | [Entregas 3](03_personas_contexto_jornada.md), [4](04_cenarios_problema.md) e [5](05_analise_tarefas.md); [design minimalista e reconhecimento — Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/) |
 
 ## 3. Metas de usabilidade
-
-Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem dizer o que será medido, em qual tarefa, com qual população e qual limite será considerado aceitável.
 
 ### 3.1 Metas qualitativas
 
 | Meta | Para quem/tarefa | Evidência desejada | Justificativa |
 |---|---|---|---|
-| Compreender indicadores e limites | Docente consultando o resumo. | Explicar as estimativas e distinguir ausência de dados de valores baixos. | Evitar conclusões definitivas sobre os alunos. |
-| Personalizar com autonomia | Docente escolhendo e organizando elementos. | Localizar a edição, selecionar, confirmar e avaliar sem ajuda. | Permitir priorizar engajamento ou sinais de tédio, confusão e frustração. |
-| Reconhecer estados do sistema | Comunicador utilizando a integração. | Identificar carregamento, confirmação e falha e explicar como prosseguir. | Reduzir dúvidas sobre funcionamento e alterações. |
-| Encontrar explicações | Docente com dúvidas sobre os cards. | Consultar ajuda, explicar um indicador e retornar à tarefa. | Atender às dificuldades registradas na simulação da Entrega 6. |
+| MQ01 — Compreender indicadores e limites | Docentes de aulas on-line: T02/P01/C02 durante a sessão e T01/P01/C02 na consulta posterior; R01/R02/R03, H02 e ?04. | Explicar o significado do indicador, reconhecer seu caráter estimado e distinguir ausência de dados de um resultado baixo. | Reduzir interpretações indevidas sobre alunos e sobre a certeza das classificações. |
+| MQ02 — Personalizar com autonomia | Docentes de aulas on-line: T01/P01/C02, R05 e H06. | Localizar a edição, escolher e organizar blocos, nomear, salvar e conferir a configuração sem ajuda do moderador. | Avaliar a qualidade da personalização enquanto sua necessidade continua em investigação. |
+| MQ03 — Reconhecer estados do sistema | Docentes: T02 no acompanhamento e T01 na revisão; R01/R03/R05. | Identificar espera, indisponibilidade, erro de entrada e sucesso, explicando como prosseguir em cada caso. | Evitar confundir falta de informação, resultado estimado e falha de uma ação. |
+| MQ04 — Encontrar explicações | Docentes: T01 e T02, com dúvidas sobre os indicadores; H02 e ?04. | Localizar uma explicação, interpretar o termo e retornar à atividade sem depender da equipe. | Responder às dúvidas observadas no walkthrough da Entrega 6. |
+| MQ05 — Consultar o Semáforo com atenção dividida | Docentes: T02/P01/C02 e contexto de T03/P02/C05; R01/R02 e H01. | Perceber uma mudança, interpretar a informação e retomar a explicação; registrar interrupções, erros e relatos de distração. | Avaliar o recorte principal nas condições de uso que motivaram o projeto. T03 descreve a prática docente atual; o apoio do MindFlow será avaliado como proposta de interação. |
 
 ### 3.2 Metas quantitativas
 
+
 | ID | Dimensão | Métrica | Tarefa/escopo | Meta | Como medir | Justificativa |
 |---|---|---|---|---|---|---|
-| MU01 | eficácia | taxa de conclusão correta sem ajuda | Personalização da aula, do histórico à confirmação. | ≥ 80% | Teste observado: conclusões corretas sem ajuda ÷ participantes que iniciam × 100. Conferir aula, elementos e organização. | Verificar autonomia no fluxo completo. |
-| MU02 | eficiência | tempo mediano das conclusões corretas sem ajuda | Mesmo fluxo de MU01. | ≤ 3 minutos | Cronometrar após a leitura do enunciado até a confirmação correta, incluindo esperas. Registrar falhas e pedidos de ajuda. | Evitar esforço excessivo na revisão da aula. |
-| MU03 | satisfação | média da satisfação pós-tarefa, de 1 a 5 | Personalização, incluindo tentativas sem conclusão. | ≥ 4/5 | Perguntar: “Quão satisfeito você ficou ao realizar esta tarefa?”, de 1 — muito insatisfeito a 5 — muito satisfeito, com justificativa breve. | Considerar a percepção do usuário. |
+| MU01 | Eficácia | Taxa de conclusão correta sem ajuda | Docentes; T01/P01/C02, R05 e H06: localizar a reunião, personalizar, nomear, salvar e conferir. | ≥ 80% | Conclusões corretas sem ajuda ÷ participantes que iniciaram × 100. Sucesso exige reunião correta, nome, seleção e organização solicitadas e reconhecimento da configuração salva. | Limiar inicial para sinalizar autonomia da maioria dos participantes, mantendo falhas individuais visíveis. Não confirma a necessidade da funcionalidade. |
+| MU02 | Eficiência | Tempo mediano das conclusões corretas sem ajuda | Mesma população e mesmo fluxo completo de MU01. | ≤ 3 minutos | Iniciar após a leitura do enunciado e encerrar quando o participante reconhecer o salvamento e conferir a configuração aplicada, incluindo esperas. | Limite inicial para um fluxo delimitado de revisão com poucas operações. Sua adequação será verificada no piloto, sem alegar benchmark externo. |
+| MU03 | Satisfação | Média da satisfação pós-tarefa, de 1 a 5 | Docentes; T01/P01/C02; incluir também tentativas não concluídas. | ≥ 4/5 | Perguntar “Quão satisfeito você ficou ao realizar esta tarefa?”, de 1 — muito insatisfeito a 5 — muito satisfeito, com justificativa breve. Informar respostas válidas e ausentes. | Quatro representa uma avaliação positiva na escala adotada. É uma meta inicial de projeto, não uma escala padronizada nem evidência de utilidade da personalização. |
+| MU04 | Compreensão e prevenção de erros | Percentual de participantes que interpretam corretamente todas as situações controladas do Semáforo | Docentes; T02/P01/C02, contexto de T03/P02/C05; R01/R02, H01/H02 e ?04. | ≥ 80% | Apresentar quatro situações padronizadas: estado estável, mudança de estado, incerteza e dados indisponíveis. Considerar sucesso quando todas forem explicadas corretamente sem ajuda, conforme rubrica definida antes da aplicação. | Limiar inicial que prioriza compreensão e evita compensar um erro importante de interpretação com acertos em outras situações. Não mede a precisão da IA. |
+| MU05 | Eficiência de leitura | Tempo mediano de interpretação correta de uma mudança do Semáforo | Docentes; T02 e contexto de T03, em breve atividade de explicação com o mesmo roteiro e estímulos para todos. | ≤ 5 segundos | Medir da apresentação da mudança até a interpretação verbal correta. Calcular a mediana apenas das interpretações corretas sem ajuda e registrar separadamente erros, não respostas e interrupções da explicação. | Proposta inicial de leitura breve diante da atenção dividida. O piloto verificará sua viabilidade; atingir cinco segundos não demonstra, isoladamente, ausência de distração. |
 
-Serão registrados tamanho da amostra, conclusões e falhas. MU01 e MU02 serão analisadas juntas: rapidez não compensará conclusão insuficiente. Sem conclusões corretas sem ajuda, MU02 não será calculável. O teste-piloto verificará o roteiro e as metas; revisões serão justificadas antes da avaliação principal.
+Para MU01–MU05:
+
+- registrar versão da interface, população efetiva, tamanho da amostra, instruções, resultados por participante, pedidos de ajuda, erros e abandonos;
+- separar participantes e dados do piloto daqueles da aplicação principal;
+- não classificar conclusão com orientação do moderador como conclusão sem ajuda;
+- apresentar MU01/MU02 e MU04/MU05 em conjunto: rapidez não compensa uma interpretação ou conclusão incorreta;
+- quando não houver conclusões/interpretações corretas sem ajuda, informar que a mediana correspondente não é calculável;
+- registrar intervenções, pausas e comentários sobre atenção: tempo e acerto não comprovam, sozinhos, ausência de distração ou benefício pedagógico;
+- identificar estímulos simulados e estados ainda não implementados. A Entrega 12 deverá preparar esses materiais e fixar a rubrica antes da aplicação;
+- tratar os resultados como evidências contextuais de usabilidade. Eles não confirmam automaticamente H01, H02 ou H06 e não substituem a investigação de necessidades da Entrega 7.
 
 ### 3.3 Priorização das metas (se exigida na disciplina)
 
-Se o professor solicitar porcentagens que somem 100%, trate-as como **peso de prioridade**, não como métrica de usabilidade.
-
 | Meta | Peso de prioridade | Justificativa |
 |---|---:|---|
-| MU01 | 45% | Concluir corretamente e com autonomia é a prioridade do fluxo. |
-| MU02 | 30% | O tempo precisa ser compatível com a rotina do docente. |
-| MU03 | 25% | A satisfação complementa os dados de conclusão e tempo. |
+| Baixa taxa de erros | 30% | Interpretar ausência de dados como baixo engajamento, confundir estimativa com certeza ou selecionar a reunião errada pode orientar uma análise inadequada. Prioriza-se prevenir e recuperar erros de interação e interpretação; a taxa de erro do modelo é uma medida técnica separada. |
+| Eficiência | 25% | Durante a aula, o docente divide atenção entre conteúdo e participantes. A leitura do Semáforo deve ser breve, e a revisão posterior deve evitar operações desnecessárias. |
+| Facilidade de aprendizado | 20% | Indicadores afetivo-cognitivos, agregação e incerteza exigem explicações compreensíveis. P01 representa familiaridade tecnológica baixa a média, ainda a investigar com pessoas reais. |
+| Facilidade de memorização | 15% | O uso ocorre entre aulas, e configurações podem ser menos frequentes. Nomes consistentes, reconhecimento de opções e ajuda contextual devem permitir retomar o uso após um intervalo. |
+| Satisfação positiva do usuário | 10% | A experiência deve ser confortável e compreensível, inclusive quanto à percepção de monitoramento. A satisfação complementa a observação de erros e atenção e não substitui a voz dos participantes investigada em H03. |
 | **Total** | **100%** | |
+
 
 ## 4. Como o ciclo será iterado
 
-Explique que artefatos serão revisitados após protótipos e avaliações.
 
-Após protótipos e avaliações, a equipe comparará resultados e metas, registrando problemas de navegação, compreensão, acessibilidade e execução.
+| Etapa do ciclo | Aplicação ao MindFlow e artefatos relacionados | Como a avaliação realimenta o projeto |
+|---|---|---|
+| Análise de requisitos | Entregas 1 e 2: problema, hipóteses e referências; Entregas 3 a 5: perfis, contexto, cenários e tarefas; Entrega 7: investigação com pessoas; seções 1, 2 e 3 desta entrega: plataforma, princípios e metas. | Evidências sobre necessidades podem alterar o perfil prioritário, os cenários e as tarefas. Personas e modelos anteriores continuam sendo artefatos de análise, sem confirmar hipóteses por sua existência. |
+| Nível 1 — Projeto essencial | Examinar como o apoio proposto altera o trabalho docente, formular o modelo conceitual da Entrega 9 e explorar protótipos iniciais, como os da Entrega 6. | Dúvidas sobre utilidade, vocabulário ou organização podem exigir reformular a proposta de interação e retornar aos requisitos. O protótipo digital da Entrega 6 não comprova que tenha existido uma etapa anterior em papel. |
+| Nível 2 — Padrões de telas e diálogos | Relacionar conversas, falas e signos das Entregas 9 e 10 aos padrões de navegação e componentes documentados na Entrega 11. | Problemas de consistência e localização de ações levam à revisão de diálogos, nomes, hierarquia visual e componentes, seguida de nova avaliação. |
+| Nível 3 — Projeto detalhado | Refinar estados e caminhos: resumo sem dados, validação de nome, salvamento, cancelamento, exclusão e retorno à tarefa; preparar os estados do acompanhamento em tempo real. | O planejamento da Entrega 12 e as avaliações das Entregas 13–14 devem verificar critérios definidos e indicar ajustes específicos em controles, mensagens, acessibilidade e recuperação. |
+| Instalação/uso | Disponibilização e acompanhamento do uso da versão avaliada, quando houver adoção real. A publicação do site, por si só, não comprova adoção pelo público prioritário. | Registrar feedback de uso autorizado, limitações e novas necessidades; iniciar nova iteração quando surgirem problemas ou mudanças de contexto. |
 
-Conforme as evidências, serão revisitados:
 
-- **Personas, contexto e cenários:** atualizar hipóteses conforme a coleta da Entrega 7 e os testes.
-- **HTA, GOMS e CTT:** revisar etapas, alternativas e relações temporais e alinhar os títulos à tarefa descrita, pois o recorte individual ainda contém títulos de configuração do acompanhamento para modelos de personalização pós-aula.
-- **Modelo conceitual e protótipos:** ajustar termos, botões, explicações, estados e confirmação das alterações.
-- **Metas e plano de avaliação:** revisar procedimentos e justificar alterações, preservando os valores anteriores.
+A próxima iteração seguirá estas decisões:
 
-Cada problema será associado à tarefa, à tela, à evidência e à mudança proposta. A matriz deverá relacionar o fluxo de personalização às personas, aos cenários, aos modelos e às metas MU01–MU03, preservando o histórico das decisões. As tarefas afetadas serão avaliadas novamente, e os resultados das Entregas 12–14 alimentarão a rastreabilidade para verificar se houve melhoria.
+1. **Investigar necessidades:** aplicar os instrumentos permitidos da Entrega 7 após sua revisão e piloto. O teste de usabilidade será planejado como avaliação posterior, sem substituir a coleta de necessidades.
+2. **Preparar a avaliação:** na Entrega 12, selecionar tarefas, identificar versões, preparar dados/estímulos, definir rubricas, responsáveis e procedimentos para verificar as metas desta revisão. Registrar o que será integrado ou simulado.
+3. **Avaliar e comparar:** usar inspeção e observação de usuários nas entregas posteriores, relacionando cada problema à tarefa, à meta, ao estado da interface e à evidência obtida.
+4. **Retornar à etapa pertinente:** dificuldades de interpretação podem modificar signos e explicações; dificuldades de edição podem modificar controles e mensagens; evidências de ausência de necessidade podem simplificar ou retirar a personalização, mantendo a consulta de resultados útil sem ela.
+5. **Reavaliar:** submeter as tarefas afetadas à nova avaliação, comparando versões sob condições equivalentes. Metas não serão relaxadas depois da aplicação principal apenas para declarar sucesso.
+
 
 ## Checklist
 
