@@ -137,7 +137,7 @@ Estados necessários a partir do M05:
 - usar rótulos genéricos (“Tela 1”, “Processo 2”) sem tópico de conversa;
 - criar no Figma fluxos que não existem no MoLIC;
 - diagrama sem legenda/fonte editável e com texto ilegível.
-
+---
 ## M04 — Acompanhar os estados do grupo durante o treinamento on-line
 
 **Autor(a):** Rafael Dias — 22.222.039-4  
@@ -325,7 +325,7 @@ O objetivo O10 corresponde à avaliação realizada por Nathanael a partir das i
 
 **Observação:** os identificadores O06 e O07 utilizados neste mapa individual precisam ser revisados na consolidação, pois também aparecem no mapa de Matheus com significados diferentes.
 
-
+---
 ## M05 — Acompanhar o estado da turma durante a explicação
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
