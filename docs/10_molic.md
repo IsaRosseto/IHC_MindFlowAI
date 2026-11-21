@@ -10,108 +10,55 @@
 ### Diagrama
 
 ```mermaid
+
 flowchart TD
     A((" ")):::abertura
 
-    S0("<b>Preparar acompanhamento do grupo</b><br/>――――――――――――――――<br/>ver acompanhamento {<br/>d: análise ainda não iniciada }<br/>iniciar análise {<br/>u: iniciar análise do grupo }"):::cena
+    S0("<b>Iniciar acompanhamento</b><br/>──────────────<br/>ver análise {<br/>d: acompanhamento desligado }"):::cena
 
     P1[" "]:::proc
 
-    S1("<b>Acompanhar indicadores do grupo</b><br/>――――――――――――――――<br/>ver resumo dos estados {<br/>d: maior indicador e seu valor,<br/>menor indicador e seu valor }<br/>ver referência da análise {<br/>d: participantes contribuindo,<br/>atualizado há }"):::cena
+    S1("<b>Acompanhar estado do grupo</b><br/>──────────────<br/>ver indicadores {<br/>d: maior estado e valor,<br/>menor estado e valor }<br/>ver disponibilidade {<br/>d: participantes contribuindo,<br/>atualizado há }"):::cena
 
-    S2("<b>Examinar a evolução dos estados</b><br/>――――――――――――――――<br/>ver gráfico de linhas {<br/>d: engajamento, tédio,<br/>confusão e frustração }<br/>ver tempo {<br/>d: período analisado }"):::cena
+    S2("<b>Examinar todos os estados</b><br/>──────────────<br/>ver evolução {<br/>d: gráfico de linhas com<br/>engajamento, tédio,<br/>confusão e frustração }"):::cena
 
     P2[" "]:::proc
 
-    S3("<b>Compreender os indicadores</b><br/>――――――――――――――――<br/>ver significado {<br/>d: significado dos estados,<br/>limites da estimativa }<br/>ver qualidade {<br/>d: confiança da estimativa,<br/>qualidade do sinal }"):::cena
+    S3("<b>Entender ausência de resultados</b><br/>──────────────<br/>ver problema {<br/>d: dados insuficientes<br/>ou análise indisponível }"):::alerta
 
-    S4("<b>Entender indisponibilidade da análise</b><br/>――――――――――――――――<br/>ver motivo {<br/>d: dados insuficientes<br/>ou falha na obtenção dos resultados }<br/>ver contexto {<br/>d: disponibilidade de dados,<br/>participantes contribuindo }"):::alerta
-
-    P3[" "]:::proc
-
-    S5("<b>Consultar resultados do treinamento</b><br/>――――――――――――――――<br/>ver resumo {<br/>d: identificação da reunião,<br/>períodos e variação dos indicadores }"):::cena
-
-    S6("<b>Examinar um período do treinamento</b><br/>――――――――――――――――<br/>ver intervalo {<br/>d: período analisado,<br/>valores dos estados disponíveis }"):::cena
-
-    S7("<b>Entender ausência de dados no período</b><br/>――――――――――――――――<br/>ver indisponibilidade {<br/>d: não há resultados suficientes<br/>para este intervalo }"):::alerta
-
-    S8("<b>Entender falha ao abrir o resumo</b><br/>――――――――――――――――<br/>ver problema {<br/>d: resumo indisponível no momento }"):::alerta
-
-    UB(["acesso ubíquo"]):::ubiquo
-    UC(["acesso ubíquo"]):::ubiquo
-
-    BAR["gcc gcc gcc gcc gcc gcc gcc gcc gcc gcc"]:::barra
+    BAR["gcc gcc gcc gcc gcc"]:::barra
     E(((" "))):::fim
 
-    A -->|"gco: Acompanhar os estados do grupo"| S0
-
+    A -->|"gco: Acompanhar estado do grupo"| S0
     S0 -->|"u: iniciar análise"| P1
 
-    P1 -->|"precond: dados suficientes<br/>d: análise iniciada"| S1
-
-    P1 -.->|"[SR] d: não foi possível obter uma estimativa"| S4
-
-    S4 -.->|"u: tentar novamente"| P1
-
-    S4 -->|"u: continuar treinamento sem análise"| BAR
+    P1 -->|"d: análise iniciada"| S1
+    P1 -.->|"[SR] d: análise indisponível"| S3
 
     S1 -->|"u: expandir pop-up"| S2
-
     S2 -->|"u: recolher pop-up"| S1
 
-    S1 -->|"u: consultar significado"| S3
-
-    S2 -->|"u: consultar significado"| S3
-
-    S3 -->|"precond: veio da visão compacta<br/>u: voltar"| S1
-
-    S3 -->|"precond: veio do gráfico<br/>u: voltar"| S2
-
     S1 -->|"precond: nova atualização"| P2
-
     S2 -->|"precond: nova atualização"| P2
 
-    P2 -->|"precond: visualização compacta<br/>d: indicadores atualizados"| S1
+    P2 -->|"d: indicadores atualizados"| S1
+    P2 -.->|"[SR] d: dados insuficientes"| S3
 
-    P2 -->|"precond: visualização expandida<br/>d: gráfico atualizado"| S2
+    S3 -.->|"u: tentar novamente"| P1
+    S3 -->|"u: continuar sem análise"| BAR
 
-    P2 -.->|"[SR] d: estimativa indisponível"| S4
+    S1 -->|"u: encerrar acompanhamento"| BAR
+    S2 -->|"u: encerrar acompanhamento"| BAR
 
-    S4 -->|"u: voltar ao pop-up sem resultado"| S0
-
-    UB -->|"u: encerrar acompanhamento"| BAR
-
-    UC -->|"u: consultar treinamento concluído"| P3
-
-    P3 -->|"precond: resumo disponível<br/>d: resumo apresentado"| S5
-
-    P3 -.->|"[SR] d: não foi possível abrir o resumo"| S8
-
-    S8 -.->|"u: tentar novamente"| P3
-
-    S8 -->|"u: voltar"| BAR
-
-    S5 -->|"u: selecionar período"| S6
-
-    S6 -->|"u: voltar ao resumo"| S5
-
-    S6 -.->|"[SR] d: período sem dados suficientes"| S7
-
-    S7 -->|"u: escolher outro período"| S5
-
-    S7 -->|"u: voltar ao resumo"| S5
-
-    S5 -->|"u: encerrar consulta"| BAR
-
-    BAR -->|"gcc: Acompanhar os estados do grupo"| E
+    BAR -->|"gcc: Acompanhar estado do grupo"| E
 
     classDef abertura fill:#111111,stroke:#111111
     classDef fim fill:#111111,stroke:#111111,stroke-width:3px
     classDef proc fill:#111111,stroke:#111111,color:#111111
     classDef cena fill:#ffffff,stroke:#111111,stroke-width:1.5px,color:#111111
     classDef alerta fill:#ffffff,stroke:#111111,stroke-width:1.5px,stroke-dasharray:6 4,color:#111111
-    classDef ubiquo fill:#c4c4c4,stroke:#555555,color:#c4c4c4
     classDef barra fill:#111111,stroke:#111111,color:#111111,font-size:6px
+
 ```
 
 > **Nota de modelagem:** os acessos ubíquos representam ações disponíveis durante o acompanhamento. O acesso ao resumo ocorre apenas quando o treinamento já foi concluído. A ajuda contextual e as mensagens de recuperação são propostas de interação que ainda precisam ser validadas no protótipo.
