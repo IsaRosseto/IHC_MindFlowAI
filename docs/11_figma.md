@@ -229,46 +229,23 @@ A interface deve considerar critérios pertinentes da WCAG para melhorar a acess
 | Compreensão dos resultados | Apresentar nomes, valores e contexto das estimativas. | Parcialmente contemplado nas interfaces fornecidas. |
 
 **Observação:** as imagens demonstram a organização visual da extensão, mas não comprovam, isoladamente, conformidade com os critérios de acessibilidade. A navegação e os estados de foco deverão ser verificados no protótipo.
-
----
-
-## Relação com as entregas anteriores
-
-### Entrega 9 — Modelo conceitual
-
-A interface responde à necessidade de Nathanael de acompanhar o estado do grupo durante treinamentos on-line, especialmente quando existe pouca interação dos participantes.
-
-Os indicadores de engajamento, tédio, confusão e frustração são apresentados para complementar as informações observadas durante a videoconferência.
-
-### Entrega 10 — MoLIC M04
-
-O protótipo materializa as principais conversas definidas no diagrama:
-
-1. **Iniciar acompanhamento:** o usuário solicita o início da análise.
-2. **Acompanhar estado do grupo:** o sistema apresenta os resultados no pop-up compacto.
-3. **Examinar todos os estados:** o usuário expande o pop-up e consulta o gráfico de linhas.
-4. **Retornar à visualização compacta:** o usuário recolhe o pop-up.
-5. **Recuperar uma ruptura:** o sistema informa quando não existem dados suficientes e oferece alternativas.
-
-A decisão de modificar o ritmo ou repetir o conteúdo permanece sob responsabilidade do instrutor, fora do sistema.
-
 ---
 
 ## Checklist
 
 - [ ] Link do Figma está acessível.
 - [ ] Há screenshots representativos no repositório.
-- [x] As duas interfaces principais do acompanhamento foram identificadas.
-- [x] O fluxo principal do MoLIC M04 foi mapeado para as telas.
+- [ ] As duas interfaces principais do acompanhamento foram identificadas.
+- [ ] O fluxo principal do MoLIC M04 foi mapeado para as telas.
 - [ ] Os estados de carregamento, erro e recuperação foram prototipados no Figma.
-- [x] A terminologia dos indicadores está relacionada à Entrega 9.
-- [x] A navegação entre pop-up compacto e expandido foi definida.
+- [ ] A terminologia dos indicadores está relacionada à Entrega 9.
+- [ ] A navegação entre pop-up compacto e expandido foi definida.
 - [ ] Os fluxos críticos estão clicáveis do início ao fim no Figma.
 - [ ] O protótipo está pronto para inspeção e testes sem links mortos.
-- [x] Os indicadores e o gráfico possuem justificativa relacionada ao objetivo do usuário.
-- [x] Os estados de processamento, indisponibilidade e recuperação foram considerados.
-- [x] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
-- [x] Os estados propostos foram diferenciados das interfaces já apresentadas.
+- [ ] Os indicadores e o gráfico possuem justificativa relacionada ao objetivo do usuário.
+- [ ] Os estados de processamento, indisponibilidade e recuperação foram considerados.
+- [ ] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
+- [ ] Os estados propostos foram diferenciados das interfaces já apresentadas.
 - [ ] A acessibilidade básica foi verificada no protótipo navegável.
 - [ ] A cobertura dos demais diagramas MoLIC da equipe foi consolidada.
 
