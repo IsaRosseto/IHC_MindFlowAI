@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Status:** ⬜ Iniciada 
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
