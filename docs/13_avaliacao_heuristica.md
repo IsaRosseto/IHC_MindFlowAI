@@ -144,7 +144,6 @@ As recomendações apresentadas não indicam correções já implementadas. Os a
 **Data:** 25/11/2026  
 **Foco da inspeção:** percorri o sistema pela tarefa da Camila (P02, T03, M05): acompanhar a turma pelo pop-up da extensão durante a aula e, depois, consultar e organizar o resumo da reunião.  
 **Estados especiais examinados:** pop-up compacto e expandido (ao vivo); reunião em andamento; reunião sem leituras (estado vazio); erro ao salvar sem nome; confirmação de exclusão de reunião e de visualização; seleção de intervalo no gráfico; central de ajuda; mensagem de falha de carregamento na página inicial.  
-**Base da inspeção:** usei os prints das telas internas da versão 2.0 capturados pela equipe entre 18/11 e 22/11/2026 (pastas `assets/11_figma` e `assets/13_heuristica`), a página pública acessada em 25/11/2026 e os textos de mensagens e ajuda do próprio site. Não fiz login no sistema; os itens que dependem de interação estão marcados para conferência antes da consolidação.
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
