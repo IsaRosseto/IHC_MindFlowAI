@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** 30/10/2026  
-**Status:** 🟩 Concluida  
+**Status:** 🟩 concluída  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -40,7 +40,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 ## HTA — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
-**Autor(a):** {{Kayky Pires - 22.222.040-2}}
+**Autor(a):** Kayky Pires - 22.222.040-2
 
 ### Descrição da tarefa
 
@@ -261,7 +261,7 @@ A regra de seleção representa o foco inicial da análise. Não impede a combin
 
 ## CTT — T01 Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI
 
-**Autor(a):** {{Kayky Pires - 22.222.040-2}}
+**Autor(a):** Kayky Pires - 22.222.040-2
 
 ### Descrição
 

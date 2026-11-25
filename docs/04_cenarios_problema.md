@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
-**Data:** {{30/08/2026}}  
-**Status:** ✅ Concluido 
+**Data:** 30/08/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -301,9 +301,9 @@ Essas informações serão buscadas pelo grupo focal com alunos (instrumento I03
 
 ## Cenário C04 — Dificuldade em identificar a compreenção e aprendizado durante treinamento online.
 
-**Autor(a):** {{Rafael Dias - 22.222.039-4}}  
+**Autor(a):** Rafael Dias - 22.222.039-4  
 **Persona(s) relacionada(s):** P03 - Nathanael  
-**Necessidade relacionada:** {{R01,R02}}  
+**Necessidade relacionada:** R01, R02  
 **Situação concreta da Entrega 1 relacionada:** H01 - Tem necessidade de identificar como os grupos estão se sentindo durante os treinamentos.
 **Hipóteses ainda presentes:** H01
 

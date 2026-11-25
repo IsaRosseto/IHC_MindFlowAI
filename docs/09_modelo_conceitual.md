@@ -1,7 +1,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** 🟨 em andamento  
+**Data:** 25/11/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -59,6 +59,79 @@ Em alguns casos, ele interpreta a falta de reação como concordância e só des
 | Ruptura: participantes insuficientes | Em grupos de 2 a 6 clientes, o agregado pode expor uma pessoa ou não ter base | H05; R04; A05 (dado sobre papéis e tamanho do grupo) |
 
 ---
+
+### CI02 — Bruno entende o que acontece com a própria imagem e escolhe como participar da aula
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
+**Origem:** cenário problema C03 — Aluno que não sabe como está sendo percebido numa aula online (Entrega 4), tarefa T04 (Entrega 5) e persona P05 — Bruno D. Roger  
+**Objetivos:** O18 a O23 (dicionário na seção 3)
+
+> Os trechos marcados com **[ACRÉSCIMO: ...]** e **[ALTERADO: ...]** mostram o que mudou em relação ao cenário problema C03; o restante do texto foi mantido. Bruno é persona secundária: não usa o Semáforo Cognitivo nem o Dashboard, só a interface de transparência e participação (F08). A interação descrita é uma proposta de design. A opção de ligar a câmera sem participar da análise, a pausa só da análise e o resumo de transparência continuam como hipóteses (H03; tarefas marcadas com [H] na T04), a verificar com o grupo focal I03 (Entrega 7).
+
+Bruno é aluno do segundo ano de Ciência da Computação e tem duas disciplinas EAD nesse semestre. Numa segunda de manhã ele entra na aula de Cálculo pelo Teams um pouco atrasado, ainda terminando o café, e decide deixar a câmera desligada porque o quarto tá bagunçado e ele não quer aparecer assim pros colegas. **[ACRÉSCIMO: Como a aula já começou, ele fecha o aviso de entrada sem ler. Ao lado dos controles da chamada continua um indicador pequeno do MindFlow: "análise da turma ativa · você: não participando". Bruno clica no indicador e o aviso abre de novo, em poucas linhas e sem termos de IA: o que a webcam capta (sinais do rosto, da postura e do olhar, processados no próprio computador dele), o que a professora recebe (só um estado geral da turma, nunca o de um aluno) e o que não é feito com os dados (o vídeo não é guardado e não existe resultado individual).]**
+
+A professora começa a explicar um assunto novo e, no meio da aula, comenta que gostaria que mais gente ligasse a câmera, porque assim ela consegue perceber se a turma tá acompanhando. Bruno fica na dúvida se liga ou não, porque não sabe se isso vai pesar de alguma forma na nota de participação dele, mas também não quer ficar exposto justo num dia que ele não entendeu direito o conteúdo da aula passada. **[ACRÉSCIMO: Ele abre as informações completas a partir do aviso. Elas estão organizadas por perguntas com as palavras de um aluno, e ele lê "Isso conta na minha nota?": o MindFlow não gera nenhum resultado por aluno, então não há nada dele para entrar na nota; as regras de participação continuam sendo as da disciplina. Logo abaixo aparece o contato para dúvidas sobre os dados.]** **[ALTERADO: Antes ele decidia no escuro. Agora sabe o que acontece com a imagem e que a professora vê só a turma, mas a decisão continua sendo dele, e o sistema não recomenda nenhuma opção. Ele mantém a câmera desligada, porque o que o incomoda hoje é o quarto, e não a análise, e o indicador confirma "você: não participando".]**
+
+Em um momento a professora pede pra alguém responder rápido uma pergunta no chat, Bruno demora pra digitar porque ainda tá processando o que foi perguntado, e três colegas respondem antes dele. **[ACRÉSCIMO: Mais tarde, a professora avisa que a próxima atividade vale participação, e Bruno decide ligar a câmera para não parecer ausente. Ao ligar, o MindFlow pergunta se ele quer participar da análise. Como ainda está inseguro com o conteúdo, ele escolhe "câmera ligada, sem participar da análise", e o indicador mostra "você: câmera ligada · análise pausada". Ele aparece para a turma sem que a imagem dele entre na estimativa. Quando a professora pausa o acompanhamento para uma atividade em grupo, o indicador mostra "análise da turma pausada pela professora", sem que Bruno precise fazer nada. Dez minutos depois, já mais seguro, ele retoma a própria participação pelo mesmo indicador, sem mexer na câmera, e o indicador volta para "você: participando".]**
+
+Depois da aula ele fica sem saber se a professora reparou que ele participou pouco, se isso ficou só na impressão dela ou se tem algum jeito disso voltar contra ele de algum modo, e não tem com quem tirar essa dúvida. **[ALTERADO: Quando a professora encerra a aula, o indicador avisa que a análise terminou junto com a aula. Depois, Bruno abre o resumo de transparência da aula, que só ele vê: por quanto tempo a imagem dele contribuiu para a estimativa da turma, que o vídeo não foi guardado e que nenhum resultado individual foi gerado ou enviado. O que a professora achou da participação dele continua sendo impressão dela, mas Bruno sabe que o MindFlow não registrou nada sobre ele. Se ainda tiver dúvida, já sabe a quem perguntar.]**
+
+**[ACRÉSCIMO — ruptura considerada: em outra aula, Bruno assiste pelo celular, que não consegue fazer o processamento no próprio aparelho. Ao entrar, o indicador informa "este aparelho não faz a análise: sua imagem não será analisada, mesmo com a câmera ligada". Bruno segue a aula normalmente, e a professora continua vendo só o número de participantes que contribuem, sem saber quem está fora.]**
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Indicador pequeno e permanente que reabre o aviso a qualquer momento | Bruno entra atrasado e pode fechar o aviso de entrada sem ler; o aviso não pode existir só na entrada | C03 (entrada atrasada); T04 (HTA 1.2; GOMS METHOD 1.B); RC04 |
+| Aviso em três blocos curtos: o que é captado, o que a professora recebe e o que não é feito com os dados | São as três dúvidas de Bruno no C03; dizer o que **não** acontece responde ao medo dele de forma mais direta | T04 (HTA 2.1, 2.2 e 2.3); P05 (decisões de design); H03; RC04; página de transparência do Education Insights (Entrega 2) |
+| Informações completas organizadas por perguntas do aluno, com o contato para dúvidas | As dúvidas são concretas ("isso conta na nota?") e hoje não existe canal para perguntar | T04 (HTA 3.2 e 3.3); C03 (Q1, Q2 e Q7) |
+| A escolha de como participar é de Bruno, e o sistema não recomenda nenhuma opção | A relação de poder entre professora e aluno pode deixá-lo sem jeito de recusar | T04 (HTA 4 e 4.1); Entrega 3 (contexto de uso, ambiente social/organizacional); RC05 |
+| Câmera ligada sem participar da análise e pausa só da análise **[H]** | Separa aparecer para a turma de ser analisado; sem isso, a única forma de não ser analisado é desligar a câmera, que é o conflito do C03 | T04 (HTA 4.3 e 5.3; GOMS METHODS 2.B e 4.B); H03; A03 (dado sobre pausar ou recusar sem desligar a câmera) |
+| Indicador da própria participação: participando, câmera ligada com análise pausada, não participando | Sem confirmação, Bruno não sabe se a escolha foi aplicada | T04 (HTA 4.5 e 5.4; CTT 2.2) |
+| Pausa feita pela professora aparece no indicador do aluno | O acompanhamento pausado pela comunicadora precisa chegar aos participantes | CI05 (O16); RC07; RC09 |
+| A análise termina junto com a aula, e o resumo de transparência só é visto por Bruno | Responde à última ruptura do C03: depois da aula, ele não sabe se algo pode voltar contra ele | T04 (HTA 6; CTT 3 `[>` e tarefa 4); C03 (Q7); RC09 |
+| Ruptura: aparelho que não faz o processamento local | Bruno também assiste pelo celular; a análise não pode acontecer fora do aparelho dele | P05 (ambiente típico de uso); T04 (HTA 4.5); R04 |
+
+---
+
+### CI03 — Acompanhar os estados da turma e revisar os resultados da aula
+
+**Autor(a):** Kayky Pires — 22.222.040-2  
+**Origem:** cenário problema C02 — Dificuldade de Karol em perceber se a turma está acompanhando a aula on-line.
+
+Karol, professora de Filosofia na modalidade EAD, precisa apresentar o conteúdo durante a videoconferência e, ao mesmo tempo, perceber como os alunos estão reagindo.
+
+O professor tende a considerar principalmente a participação no chat, as perguntas realizadas e as expressões visíveis dos alunos como sinais de acompanhamento da aula.
+
+Porém, muitos participantes permanecem em silêncio, apresentam poucas reações ou mantêm a câmera desligada. Essa dificuldade aumenta principalmente durante momentos em que o professor está explicando conteúdos mais complexos ou precisa dividir sua atenção entre apresentação, chat e participantes.
+
+Quando os sinais são pouco claros ou contraditórios, o professor pode ter dificuldade para identificar se a turma está concentrada, desinteressada, confusa ou com dificuldade para acompanhar o conteúdo.
+
+**[ACRÉSCIMO: O professor consulta os indicadores de engajamento, tédio, confusão e frustração apresentados pelo MindFlow AI, considerando os participantes para os quais existem dados disponíveis. Os indicadores são comunicados como estimativas que complementam os sinais observados na videoconferência.]**
+
+Nesses momentos, o professor costuma fazer perguntas diretamente à turma, solicitar alguma interação ou repetir parte da explicação para tentar confirmar se o conteúdo foi compreendido.
+
+Em turmas maiores, acompanhar individualmente os participantes se torna ainda mais difícil, aumentando a quantidade de informações que o professor precisa observar simultaneamente.
+
+**[ALTERADO: Com o apoio dos indicadores e dos demais sinais observados, o professor avalia se deve continuar a explicação, reduzir o ritmo, repetir um conteúdo ou alterar a dinâmica da aula. A decisão permanece sob sua responsabilidade.]**
+
+**[ACRÉSCIMO: Após o encerramento da aula, o professor acessa suas reuniões, identifica a aula pelo título e pela data e consulta o resumo. Examina os indicadores apresentados e identifica quais informações deseja destacar em sua análise.]**
+
+**[ACRÉSCIMO: Para modificar a apresentação do resumo, o professor acessa a personalização, consulta os indicadores disponíveis e seleciona aqueles que deseja exibir. Ao salvar, recebe a confirmação de que a configuração foi salva e aplicada. Em seguida, confere o resumo personalizado e pode retornar à edição para realizar novos ajustes.]**
+
+**[ACRÉSCIMO: Se cancelar a personalização, o professor retorna à consulta sem aplicar as alterações. Se ocorrer uma falha no salvamento, o sistema informa o problema e preserva as seleções para permitir uma nova tentativa.]**
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Inclusão da consulta aos indicadores durante a aula. | Descrever como a solução pode complementar os sinais utilizados pelo professor para interpretar o estado da turma. | C01 e hipótese H01, relacionada à utilidade de um indicador discreto do estado do grupo em tempo real. |
+| Comunicação dos indicadores como estimativas, considerando a disponibilidade de dados. | Evitar que os resultados sejam interpretados como certezas ou como informações disponíveis para todos os participantes. | Proposta de comunicação derivada do funcionamento da classificação, a validar no protótipo. |
+| Uso dos indicadores como apoio à decisão do professor. | Relacionar as informações apresentadas à necessidade de manter ou adaptar a condução da aula. | Objetivo e consequências descritos no C01. |
+| Extensão do cenário para a revisão após a aula. | Contemplar a consulta e a personalização dos resultados de uma aula concluída, ampliando o contexto original do C01. | T01 — Configurar o acompanhamento de uma aula concluída no MindFlow AI. |
+| Seleção dos indicadores exibidos no resumo. | Permitir que o docente adapte a visualização às suas necessidades de análise. | T01 e cena Personalizar visualização do M01. |
+| Inclusão de feedback de salvamento, cancelamento e recuperação de falha. | Informar o resultado das ações e permitir que o docente ajuste ou retome a personalização. | Caminho principal e alternativas do M01. |
+
 
 ### CI04 — Acompanhar a compreensão e o engajamento dos participantes durante o treinamento on-line
 
@@ -150,6 +223,28 @@ Decidir se avança, reforça ou reexplica um ponto **não é um tópico de conve
 
 ---
 
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
+**Origem:** CI02 — Bruno entende o que acontece com a própria imagem e escolhe como participar da aula (cenário problema C03, tarefa T04), persona P05 — Bruno D. Roger.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| **O18 Entender o que acontece com a própria imagem nesta aula** | `D: a análise da turma está ativa nesta aula` / `D: a webcam capta sinais do rosto, da postura e do olhar, processados no seu computador` / `D: a professora recebe só o estado geral da turma, nunca o de um aluno` / `D: o vídeo não é guardado e não existe resultado individual`. Signos: análise da turma, aviso aos participantes. | Bruno sabe, em poucos segundos e sem termos de IA, o que acontece com a imagem dele antes de decidir como participar (RC04, H03). |
+| > Reabrir o aviso com a aula em andamento | `U: o que é isso?` (clica no indicador) / `D: (o mesmo aviso, de novo)`. Signos: análise da turma, participação na análise. | Quem entra atrasado ou fecha o aviso sem ler não perde a informação (T04, HTA 1.2). |
+| **O19 Tirar uma dúvida específica sobre os dados** | `U: ler mais` / `D: perguntas e respostas com as palavras do aluno` / `U: isso conta na minha nota?` / `D: o MindFlow não gera resultado por aluno; as regras de participação são as da disciplina`. Signos: informações completas. | Responder às dúvidas concretas do C03 sem exigir que Bruno pergunte à professora. |
+| > Não encontrar a resposta | `D: não achou sua resposta? fale com: (contato para dúvidas sobre os dados)`. Signos: contato para dúvidas. | Dar um canal claro, que hoje não existe (C03, Q7; T04, HTA 3.3). |
+| **O20 Escolher como participar da aula** | `D: como você quer participar? participar com câmera / câmera ligada, sem participar da análise [H] / câmera desligada` / `D: em todas as opções, a professora vê só a turma` / `U: (escolhe uma opção)` / `D: você: participando` ou `D: você: câmera ligada · análise pausada` ou `D: você: não participando`. Signos: participação na análise. | A decisão é de Bruno, e nenhuma opção é apresentada como a certa (T04, HTA 4). |
+| **O21 Conferir se está contribuindo para a análise agora** | `U: (olha o indicador)` / `D: você: participando · análise da turma ativa`. Signos: participação na análise, análise da turma. | Confirmar de relance que a escolha foi aplicada, sem tirar a atenção da aula (T04, CTT 2.1 `\|\|\|` 2.2). |
+| **O22 Mudar a participação durante a aula** | `U: pausar minha participação` / `D: análise pausada; sua câmera continua como estava` / `U: retomar minha participação` / `D: você: participando`. Signos: participação na análise. | Parar de ser analisado sem sumir da turma, sempre que a situação mudar (T04, HTA 5.3) [H]. |
+| > Mudar a câmera na plataforma | `U: (desliga ou religa a câmera no Teams)` / `D: câmera religada; sua participação continua pausada, como você deixou`. Signos: participação na análise. | Deixar claro se a análise acompanha a câmera ou mantém a escolha anterior (T04, HTA 5.2). |
+| > Pausa feita pela professora | `D: análise da turma pausada pela professora` / `D: análise da turma retomada`. Signos: análise da turma. | Bruno sabe que, enquanto estiver pausada, a imagem dele não é analisada, mesmo com a câmera ligada (ligação com O16 da CI05; RC07). |
+| > Aparelho sem processamento local | `D: este aparelho não faz a análise; sua imagem não será analisada, mesmo com a câmera ligada`. Signos: participação na análise. | Não deixar Bruno achar que está participando quando não está, nem bloquear a aula (R04). |
+| **O23 Conferir depois da aula o que foi processado** | `D: a análise terminou junto com a aula` / `U: abrir o resumo de transparência da aula` / `D: sua imagem contribuiu para a estimativa da turma por 32 min; o vídeo não foi guardado; nenhum resultado individual foi gerado ou enviado`. Signos: resumo de transparência. | Confirmar que nada foi registrado sobre ele, que é a informação que tranquiliza Bruno no C03 (Q7) [H]. |
+| > Aula em que ele não participou da análise | `D: nesta aula sua imagem não foi analisada (câmera desligada o tempo todo)`. Signos: resumo de transparência, participação na análise. | O resumo vazio também precisa explicar o motivo, e não aparecer como erro. |
+
+Decidir se liga a câmera ou se participa da análise **não é um tópico de conversa com o sistema** no sentido de uma recomendação: Bruno pesa o próprio conforto e a aula (T04, HTA 4.1) fora da interface. O sistema informa o que acontece em cada opção e confirma a escolha, sem sugerir qual é a melhor. A estimativa da turma não aparece em nenhuma fala para Bruno: o Semáforo e o Dashboard são só da professora (RC09).
+
+---
+
 **Autor(a):** Rafael Dias — 22.222.039-4  
 **Origem:** cenário problema C04 — Dificuldade em identificar a compreensão e o aprendizado durante treinamento on-line.  
 **Persona relacionada:** P03 — Nathanael Lima.
@@ -188,6 +283,22 @@ Decidir se avança, reforça ou reexplica um ponto **não é um tópico de conve
 
 Decidir se reforça o conteúdo **não é um tópico de conversa com o sistema**: é uma decisão de Camila, feita fora da interface. O sistema só oferece o sinal e a explicação para apoiar essa decisão.
 
+**Nome do cenário:** CI03 — Acompanhar os estados da turma e revisar os resultados da aula.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Acompanhar os estados da turma durante a aula | `U: consultar os indicadores da turma` / `D: apresentar estimativas dos estados cognitivos`. Signos: engajamento, tédio, confusão e frustração. | Complementar os sinais observados na videoconferência e apoiar a decisão do docente sobre a condução da aula. |
+| > Compreender os indicadores | `D: explicar o significado dos indicadores e sua relação com os dados disponíveis`. Signos: significado dos estados e disponibilidade de dados. | Permitir a interpretação das informações sem apresentar as estimativas como certezas sobre os participantes. |
+| Revisar os resultados após a aula | `U: consultar uma aula concluída` / `D: apresentar as reuniões disponíveis`. Signos: título e data da reunião. | Permitir que o docente identifique a aula que deseja analisar. |
+| > Consultar o resumo da reunião | `U: abrir resumo da reunião` / `D: apresentar a identificação da reunião e seus indicadores`. Signos: título, data, estados cognitivos e indicadores exibidos. | Permitir que o docente examine os resultados e identifique suas necessidades de personalização. |
+| > Personalizar a visualização | `U: personalizar visualização` / `D: apresentar os indicadores disponíveis` / `U: selecionar os indicadores desejados`. Signos: indicadores disponíveis e seleção de indicadores para exibição. | Adequar as informações apresentadas às necessidades de análise do docente. |
+| > Salvar a personalização | `U: salvar alterações` / `D: configuração salva e aplicada`. Signos: configuração selecionada e situação do salvamento. | Confirmar que as alterações foram salvas e aplicadas ao resumo. |
+| > Recuperar uma falha no salvamento | `D: não foi possível salvar; seleções preservadas` / `U: tentar salvar novamente, modificar a seleção ou cancelar`. Signos: mensagem de falha e seleção preservada. | Comunicar o problema e permitir a continuidade da tarefa sem refazer toda a seleção. |
+| > Cancelar a personalização | `U: cancelar alterações` / `D: apresentar o resumo com a configuração anterior`. Signos: configuração anterior e indicadores exibidos. | Permitir o retorno à consulta sem aplicar as alterações não salvas. |
+| > Conferir o resumo personalizado | `D: apresentar o resumo personalizado e a configuração aplicada`. Signos: indicadores exibidos, dados dos indicadores e seleção salva. | Permitir que o docente verifique se a visualização atende às suas necessidades. |
+| > Revisar a personalização | `U: editar novamente` / `D: apresentar as opções de personalização`. Signos: indicadores disponíveis e seleção de indicadores. | Permitir novos ajustes quando o resultado ainda não atender às necessidades de análise. |
+
+
 ---
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
@@ -196,7 +307,7 @@ Decidir se reforça o conteúdo **não é um tópico de conversa com o sistema**
 
 Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
 
-![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos.svg)
+O mapa consolidado fica no fim desta seção, depois dos mapas individuais.
 
 ### Mapa individual 
 
@@ -268,6 +379,109 @@ flowchart TD
 | O05 | Anotar um ponto para retomar no follow-up, sem interromper a reunião | P04 | CI01 | média |
 | O06 | Encerrar a reunião com o resumo salvo | P04 | CI01 | média |
 | O07 | Revisar a reunião e registrar, no momento marcado, se o retorno do cliente confirmou a leitura feita na reunião | P04 | CI01 | média |
+
+---
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
+**Origem:** CI02 (cenário problema C03, tarefa T04), persona P05 — Bruno D. Roger.
+
+```mermaid
+flowchart TD
+    G["<b>Participar da aula sabendo o que acontece<br/>com a própria imagem e decidindo como participar</b><br/>(P05 — Bruno, CI02)"]
+    D1["<b>Ao entrar e durante a aula</b><br/>(interface do participante)"]
+    D2["<b>Depois da aula</b>"]
+    DEC["<b>Pesar o próprio conforto e a aula</b><br/>fora do sistema: decisão do aluno"]
+    O18["<b>O18</b><br/>Entender o que acontece<br/>com a própria imagem"]
+    O19["<b>O19</b><br/>Tirar uma dúvida<br/>específica sobre os dados"]
+    O20["<b>O20</b><br/>Escolher como<br/>participar da aula"]
+    O21["<b>O21</b><br/>Conferir se está<br/>contribuindo agora"]
+    O22["<b>O22</b><br/>Mudar a participação<br/>durante a aula"]
+    O23["<b>O23</b><br/>Conferir o que<br/>foi processado"]
+
+    G --> D1
+    G --> D2
+    G --> DEC
+    D1 --> O18
+    O18 -->|"se ainda tiver dúvida"| O19
+    DEC -.->|"orienta"| O20
+    O18 --> O20
+    O20 --> O21
+    D1 --> O22
+    O22 --> O21
+    D2 --> O23
+    O23 -.->|"se ainda tiver dúvida"| O19
+
+    style DEC stroke-dasharray: 6 4
+    style G fill:#eef2ff
+    style D1 fill:#f3f4f6
+    style D2 fill:#f3f4f6
+```
+
+*A caixa tracejada é um objetivo de Bruno que acontece fora do sistema: a decisão de ligar a câmera e de participar da análise é dele, e o sistema não recomenda nenhuma opção. O22 pode acontecer várias vezes, sempre que a situação mudar (T04, Plano 5).*
+
+#### Dicionário de objetivos — CI02
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
+|---|---|---|---|---|
+| O18 | Entender o que acontece com a própria imagem nesta aula: o que é captado, o que a professora recebe e o que não é feito com os dados | P05 | CI02 | alta |
+| O19 | Tirar uma dúvida específica sobre os dados e saber a quem perguntar quando a resposta não bastar | P05 | CI02 | média |
+| O20 | Escolher como participar da aula (participar com câmera, câmera ligada sem participar da análise [H] ou câmera desligada) | P05 | CI02 | alta |
+| O21 | Conferir se está contribuindo para a análise naquele momento | P05 | CI02 | alta |
+| O22 | Mudar a participação durante a aula, pela câmera ou pausando só a análise [H] | P05 | CI02 | alta |
+| O23 | Conferir depois da aula o que foi processado e que nada foi registrado sobre ele [H] | P05 | CI02 | média |
+
+Os IDs O18 a O23 continuam a numeração depois de O17 (CI05). Eles não se fundem com os objetivos dos comunicadores, porque o ator é outro: Bruno é participante, não usa o Semáforo nem o Dashboard. Há duas ligações a manter na consolidação: o aviso de O18 é o mesmo **aviso aos participantes** gerado quando o comunicador ativa o acompanhamento (O01 e O11), e a pausa feita pelo comunicador (O16) aparece para o participante como estado da **análise da turma**, sem se confundir com a pausa da própria participação (O22).
+
+---
+**Autor(a):** Kayky Pires — 22.222.040-2   
+**Origem:** cenário problema C02 — Dificuldade de Karol em perceber se a turma está acompanhando a aula on-line. 
+**Persona relacionada:** P02 — Karol.
+```mermaid
+flowchart TD
+    GERAL["`Analisar os estados
+    da turma para apoiar
+    decisões pedagógicas`"]
+
+    O04["`**O04**
+    Decidir se deve manter
+    ou adaptar a condução
+    da aula`"]
+
+    O03["`**O03**
+    Analisar os resultados
+    de uma aula concluída`"]
+
+    O02["`**O02**
+    Interpretar os estados
+    da turma durante a aula`"]
+
+    O01["`**O01**
+    Personalizar a visualização
+    do resumo da reunião`"]
+
+    O05["`**O05**
+    Avaliar a adequação
+    da visualização
+    personalizada`"]
+
+    GERAL --> O04
+    GERAL --> O03
+
+    O04 --> O02
+
+    O03 -->|"quando necessário"| O01
+    O01 --> O05
+```
+
+### Dicionário de objetivos
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
+|---|---|---|---|---|
+| O01 | Personalizar a visualização do resumo da reunião, selecionando os indicadores que deseja exibir. | P01 — Karol | CI01 | Alta |
+| O02 | Interpretar os estados de engajamento, tédio, confusão e frustração durante a aula, considerando o significado dos indicadores, suas escalas e a disponibilidade dos dados. | P01 — Karol | CI01 | Alta |
+| O03 | Analisar os resultados de uma aula concluída, identificando as informações relevantes para sua revisão e considerando os limites das estimativas apresentadas. | P01 — Karol | CI01 | Alta |
+| O04 | Decidir se deve manter ou adaptar a condução da aula, utilizando os indicadores como apoio e considerando os demais sinais observados na videoconferência. | P01 — Karol | CI01 | Alta |
+| O05 | Avaliar se a seleção de indicadores foi aplicada e se a visualização personalizada apresenta as informações necessárias à análise. | P01 — Karol | CI01 | Alta |
 
 ---
 
@@ -361,9 +575,97 @@ Os IDs O11 a O17 foram escolhidos para não repetir os IDs já usados na CI01 (O
 
 Os IDs O01 a O07 vêm da CI01. Na consolidação, a equipe junta os objetivos iguais dos outros cenários (ativar o acompanhamento, perceber o estado do grupo e encerrar com o resumo salvo também aparecem para Karol, Camila e Nathanael) e mantém um único ID para cada objetivo.
 
+### Mapa consolidado da equipe
+
+Os mapas individuais usaram IDs que se repetem (por exemplo, O01 aparece na CI01 e na CI03, e O06/O07 na CI01 e na CI04). Para não alterar os mapas de cada integrante, a consolidação usa IDs próprios, **OC01 a OC15**, e a tabela abaixo indica de quais objetivos individuais cada um veio. Objetivos com o mesmo sentido em cenários diferentes viraram um só.
+
+```mermaid
+flowchart TD
+    G["<b>Conduzir sessões on-line percebendo o estado do grupo<br/>e melhorar as próximas</b><br/>(comunicador: P01, P02, P03, P04)"]
+    GP["<b>Participar de uma sessão sabendo o que acontece<br/>com a própria imagem</b><br/>(participante: P05)"]
+
+    D1["<b>Durante a sessão</b>"]
+    D2["<b>Depois da sessão</b>"]
+
+    OC01["<b>OC01</b><br/>Ativar o acompanhamento,<br/>com aviso aos participantes"]
+    OC02["<b>OC02</b><br/>Perceber o estado do grupo"]
+    OC03["<b>OC03</b><br/>Examinar uma mudança<br/>no estado do grupo"]
+    OC04["<b>OC04</b><br/>Entender o significado<br/>e a confiança da estimativa"]
+    OC05["<b>OC05</b><br/>Decidir como conduzir<br/>(fora do sistema)"]
+    OC06["<b>OC06</b><br/>Marcar ou anotar um momento"]
+    OC07["<b>OC07</b><br/>Pausar ou retomar<br/>o acompanhamento"]
+    OC08["<b>OC08</b><br/>Encerrar a sessão<br/>com o resumo salvo"]
+
+    OC09["<b>OC09</b><br/>Analisar os resultados<br/>de uma sessão concluída"]
+    OC10["<b>OC10</b><br/>Identificar períodos que<br/>merecem atenção"]
+    OC11["<b>OC11</b><br/>Personalizar a visualização<br/>do resumo"]
+    OC12["<b>OC12</b><br/>Avaliar o que mudar<br/>nas próximas sessões"]
+
+    OC13["<b>OC13</b><br/>Entender o que acontece<br/>com a própria imagem"]
+    OC14["<b>OC14</b><br/>Escolher e mudar<br/>como participar"]
+    OC15["<b>OC15</b><br/>Conferir a própria participação,<br/>durante e depois"]
+
+    G --> D1
+    G --> D2
+    D1 --> OC01
+    D1 --> OC02
+    D1 --> OC07
+    D1 --> OC08
+    OC02 --> OC03
+    OC03 --> OC04
+    OC03 --> OC05
+    OC03 --> OC06
+    D2 --> OC09
+    OC09 --> OC10
+    OC09 --> OC11
+    OC10 --> OC12
+
+    GP --> OC13
+    GP --> OC14
+    GP --> OC15
+    OC01 -.->|"o mesmo aviso"| OC13
+
+    style OC05 stroke-dasharray: 6 4
+    style G fill:#eef2ff
+    style GP fill:#eef2ff
+    style D1 fill:#f3f4f6
+    style D2 fill:#f3f4f6
+```
+
+*A caixa tracejada (OC05) é uma decisão do comunicador que acontece fora do sistema: o MindFlow mostra o estado e a confiança, mas não diz o que fazer (RC03). A seta tracejada indica que o aviso mostrado ao ativar o acompanhamento (OC01) é o mesmo que o participante lê (OC13).*
+
+### Dicionário consolidado de objetivos
+
+| ID | Objetivo consolidado | Persona(s) | Cenário(s) | IDs individuais de origem | MoLIC | Prioridade |
+|---|---|---|---|---|---|---|
+| OC01 | Ativar o acompanhamento da sessão, com o aviso enviado aos participantes antes da primeira estimativa | P01, P02, P03, P04 | CI01, CI05 | O01 (CI01), O11 (CI05) | M01, M05 | alta |
+| OC02 | Perceber o estado do grupo durante a sessão, de relance e com a tela compartilhada | P01, P02, P03, P04 | CI01, CI03, CI04, CI05 | O02 (CI01), O02 (CI03), O06 (CI04), O12 (CI05) | M01, M04, M05 | alta |
+| OC03 | Examinar uma mudança no estado do grupo | P02, P04 | CI01, CI05 | O04 (CI01), O13 (CI05) | M01, M05 | alta |
+| OC04 | Entender o significado do estado e quanto confiar na estimativa | P01, P02, P03, P04 | CI01, CI03, CI04, CI05 | O04 (CI01, parte da confiança), O14 (CI05); presente na leitura de O02 (CI03) e O06 (CI04) | M01, M04, M05 | alta |
+| OC05 | Decidir se mantém, reforça ou adapta a condução (fora do sistema) | P01, P02, P03, P04 | CI01, CI03, CI04, CI05 | O04 (CI03), O07 (CI04); decisão fora do sistema em CI01 e CI05 | — (não é conversa com o sistema) | alta |
+| OC06 | Marcar ou anotar um momento da sessão para revisar depois | P02, P04 | CI01, CI05 | O03 e O05 (CI01), O15 (CI05) | M01, M05 | média |
+| OC07 | Pausar ou retomar o acompanhamento da sessão | P02 | CI05 | O16 (CI05) | M05 | média |
+| OC08 | Encerrar a sessão com o resumo salvo | P02, P04 | CI01, CI05 | O06 (CI01), O17 (CI05) | M01, M05 | média |
+| OC09 | Analisar os resultados de uma sessão concluída | P01, P03, P04 | CI01, CI03, CI04 | O07 (CI01, revisar a reunião), O03 (CI03), O08 (CI04) | M01, M03, M04 | alta |
+| OC10 | Identificar períodos da sessão que merecem atenção | P03 | CI04 | O09 (CI04) | M04 | alta |
+| OC11 | Personalizar a visualização do resumo e conferir se ela atende | P01 | CI03 | O01 e O05 (CI03) | M03 | média |
+| OC12 | Avaliar o que mudar nas próximas sessões, inclusive comparando com o retorno do cliente | P03, P04 | CI01, CI04 | O07 (CI01, retorno do cliente), O10 (CI04) | M01, M04 | média |
+| OC13 | Entender o que acontece com a própria imagem e tirar dúvidas sobre os dados | P05 | CI02 | O18, O19 (CI02) | M02 | alta |
+| OC14 | Escolher e mudar a forma de participar da análise | P05 | CI02 | O20, O22 (CI02) | M02 | alta |
+| OC15 | Conferir se está contribuindo agora e o que foi processado depois da aula | P05 | CI02 | O21, O23 (CI02) | M02 | média |
+
+**Decisões da consolidação:**
+
+- Os IDs individuais foram mantidos em cada mapa e no MoLIC de cada integrante; os IDs **OC** passam a ser os usados pela equipe na Entrega 11 em diante.
+- O dicionário da CI03 indica "CI01" na coluna de cenário; os objetivos dele pertencem à **CI03** e foram registrados assim aqui.
+- OC07 (pausar a análise da turma inteira, pelo comunicador) e OC14 (pausar só a própria participação, pelo participante) **não são o mesmo objetivo** e ficam separados, como já registrado no MoLIC M02.
+- OC05 aparece no mapa para mostrar a ligação entre perceber e agir, mas não tem cena no MoLIC, porque a decisão é do comunicador.
+- A personalização (OC11) continua dependendo da hipótese H06, ainda não validada com usuários.
+
+
 ## 4. Esquema conceitual de signos
 
-O esquema conceitual reúne os signos identificados nos cenários CI01, CI04 e CI05, considerando as necessidades das personas P04 — Manoel Gomes, P03 — Nathanael Lima e P02 — Camila Duarte.
+O esquema conceitual reúne os signos identificados nos cenários CI01, CI02, CI04 e CI05, considerando as necessidades das personas P04 — Manoel Gomes, P05 — Bruno D. Roger, P03 — Nathanael Lima e P02 — Camila Duarte.
 
 Os signos compartilhados entre os cenários foram unificados, mantendo a mesma nomenclatura para garantir consistência nas próximas entregas.
 
@@ -388,8 +690,15 @@ Os signos compartilhados entre os cenários foram unificados, mantendo a mesma n
 | Linha do tempo | variação dos indicadores | sistema | Representa as alterações das estimativas de engajamento, tédio, confusão e frustração ao longo da sessão. Ajuda a identificar momentos que merecem revisão após o treinamento. | série temporal ou gráfico | utilizar apenas resultados disponíveis e escalas consistentes | — | PP: identificar os indicadores e períodos apresentados e esclarecer que variações não comprovam aprendizagem | RE: informar períodos sem dados e permitir consultar os demais resultados |
 | Linha do tempo | data da reunião | domínio | Identifica quando ocorreu a reunião ou treinamento, permitindo diferenciar sessões realizadas em momentos distintos. | data | deve corresponder à reunião selecionada | — | PP: apresentar junto à identificação da reunião | RE: permitir retornar à lista e selecionar outra reunião |
 | Linha do tempo | título da reunião | domínio | Nome utilizado para identificar a reunião comercial ou treinamento corporativo que será analisado. | texto | deve corresponder à reunião selecionada | — | PP: apresentar junto à data para evitar confusão entre sessões semelhantes | RE: permitir retornar à lista e selecionar a reunião correta |
+| Transparência | análise da turma | sistema | Estado do acompanhamento visto pelo participante, num indicador pequeno e permanente que também reabre o aviso. É o mesmo signo "acompanhamento", com rótulo do ponto de vista de quem é analisado. Específico da CI02. | estado: ativa / pausada pela professora / encerrada | só o comunicador altera; o participante apenas vê | — (só aparece quando o comunicador ativa) | PP: manter o indicador visível durante toda a aula e reabrir o aviso com um clique | RE: permitir reabrir o aviso a qualquer momento |
+| Transparência | participação na análise | usuário | Escolha do participante sobre a própria imagem, separada de ligar ou desligar a câmera. Específico da CI02. | estado: participando / câmera ligada com análise pausada [H] / não participando | só o próprio participante altera; nunca é mostrada ao comunicador individualmente, só entra na contagem de participantes contribuindo | não participando até o participante escolher | PE: não começar a analisar a imagem sem uma escolha do participante; PP: confirmar no indicador cada mudança | RE: permitir mudar a escolha a qualquer momento da aula |
+| Transparência | informações completas | domínio | Perguntas e respostas sobre os dados, escritas com as palavras do aluno ("isso conta na minha nota?", "a professora vê o meu rosto?"). Específico da CI02. | lista de perguntas e respostas | não usar termos técnicos de IA (RC04); dizer também o que não é feito com os dados | — | PP: organizar por dúvida do participante, e não por função do sistema | RE: indicar o contato para dúvidas quando a resposta não bastar |
+| Transparência | contato para dúvidas | domínio | Pessoa ou canal indicado para perguntas sobre os dados da análise. Específico da CI02. | texto (nome do canal e forma de contato) | definido pela instituição ou pelo comunicador | — | PP: mostrar junto às informações completas e ao resumo de transparência | — |
+| Transparência | resumo de transparência | sistema | Resumo, visto só pelo próprio participante, do que aconteceu com a imagem dele na aula: por quanto tempo contribuiu para a estimativa da turma e o que não foi guardado. Específico da CI02 [H]. | tempo de contribuição + lista do que não foi guardado | nunca mostra a estimativa da turma nem resultado individual (RC09); fica no aparelho do participante | — | PP: explicar o motivo quando a imagem não foi analisada na aula | RE: indicar o contato para dúvidas |
 
 **Signos da CI05 (Isabella):** a CI05 usa os mesmos signos desta tabela, sem criar novos: acompanhamento, aviso aos participantes, participantes contribuindo, mínimo de participantes, estado predominante, confiança da estimativa, atualizado há, mudança de estado, qualidade do sinal, significado do indicador, momento marcado e resumo. No contexto de aula, "reunião" corresponde a "aula" e "grupo" a "turma"; o rótulo exibido muda, mas o conceito é o mesmo. A pausa do acompanhamento é um dos valores do signo "acompanhamento" (ativo, pausado ou desligado).
+
+**Signos da CI02 (Gustavo):** a CI02 reusa **aviso aos participantes** e **participantes contribuindo** e acrescenta o grupo **Transparência** (análise da turma, participação na análise, informações completas, contato para dúvidas e resumo de transparência), que é o lado do participante. "Análise da turma" não é um conceito novo: é o signo "acompanhamento" visto por quem é analisado, com os mesmos valores. A **participação na análise** de cada pessoa nunca chega ao comunicador individualmente; ela só muda o número em "participantes contribuindo" (R04). Nenhum signo do grupo Estado do grupo aparece para o participante.
 
 ### Regras para os signos
 
@@ -425,6 +734,19 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - a **anotação** "retomar no follow-up" feita sem sair da apresentação;
 - o **resumo da reunião** com o **retorno do cliente** registrado no mesmo momento marcado, e a **falha ao salvar** com recuperação.
 
+
+### Contribuição da CI02 — Gustavo
+
+**Contribuição da CI02 (Gustavo):** os objetivos O18 a O23, os tópicos da tabela da seção 2 e os signos do grupo "Transparência", junto com "aviso aos participantes" e "participantes contribuindo", devem aparecer no MoLIC M02 (Entrega 10), que é a conversa do participante. Os pontos que não podem faltar são:
+
+- o **aviso de análise ativa** ao entrar e a forma de **reabri-lo pelo indicador** com a aula em andamento;
+- as **informações completas** organizadas por perguntas do aluno, com o **contato para dúvidas** quando a resposta não bastar;
+- a **escolha da participação** com as três opções, sem nenhuma fala do sistema que recomende uma delas, e o indicador confirmando a escolha;
+- a **pausa só da análise** sem desligar a câmera e o que acontece quando a câmera é desligada ou religada na plataforma;
+- a **pausa feita pela professora** chegando ao participante como estado da análise da turma;
+- o **encerramento da análise junto com a aula** e o **resumo de transparência**, inclusive quando a imagem não foi analisada;
+- a ruptura do **aparelho sem processamento local**, com saída para seguir a aula sem participar da análise.
+
 ### Contribuição da CI04 — Rafael
 
 **Contribuição da CI04 (Rafael):** os objetivos O06 a O10 do mapa individual, os tópicos da tabela da seção 2 e os signos dos grupos "Acompanhamento", "Estado do grupo" e "Linha do tempo" devem aparecer no diagrama MoLIC da CI04 (Entrega 10). Os pontos que não podem faltar são:
@@ -452,7 +774,7 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - [ ] Cenários de interação mostram alterações em relação aos cenários de problema.
 - [ ] Cada solução individual identifica autor e cenário de origem.
 - [ ] Tópicos/falas/signos são coerentes com objetivos do usuário.
-- [ ] Mapas individuais foram consolidados.
+- [x] Mapas individuais foram consolidados (mapa e dicionário consolidados, OC01 a OC15).
 - [ ] O esquema de signos está em uma tabela única e sem duplicações conceituais.
 - [ ] Nomes de objetivos/signos serão reutilizados na Entrega 10.
 - [ ] Em TCC técnico, signos representam conceitos do domínio compreensíveis ao usuário, não apenas variáveis/estruturas internas.

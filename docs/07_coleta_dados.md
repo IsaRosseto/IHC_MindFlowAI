@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
-**Data:** {{20/10/2026}}  
-**Status:** 🟩 Concluída
+**Data:** 20/10/2026  
+**Status:** 🟩 concluída  
 
 ## Objetivo da atividade
 
@@ -44,7 +44,7 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 ### A01 — Kayky Pires
 
-**Autor(a):** {{Kayky Pires - 22.222.040-2}}
+**Autor(a):** Kayky Pires - 22.222.040-2
 
 #### Que dados coletar?
 
