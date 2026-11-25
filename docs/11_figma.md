@@ -14,70 +14,16 @@ A interface apresenta os indicadores de engajamento, tédio, confusão e frustra
 
 ## Link do protótipo
 
-**Protótipo navegável:** a equipe materializou a interface diretamente no sistema publicado, versão 2.0: [mindflowiaa.netlify.app](https://mindflowiaa.netlify.app/). As telas do site e da extensão estão documentadas abaixo por prints.
-**Arquivo editável do Figma:** não há link de Figma registrado pela equipe no repositório; os estados marcados como "proposto" ainda precisam ser desenhados.
+**Protótipo:** conforme combinado com o professor, a entrega usa o **protótipo já implementado** no lugar de telas desenhadas no Figma. Ele está publicado em [mindflowiaa.netlify.app](https://mindflowiaa.netlify.app/) (versão 2.0: site e extensão) e documentado abaixo por prints.  
 **Última verificação de acesso:** 25/11/2026 — a página pública abre sem login; as telas internas exigem conta.
 
-## Cobertura MoLIC → Figma
+## Cobertura MoLIC → protótipo
 
+As telas abaixo são as do protótipo implementado (sistema publicado, versão 2.0). Os fluxos estão na ordem dos MoLICs, de M01 a M05.
 
----
-O fluxo M04 corresponde ao acompanhamento dos estados do grupo durante um treinamento on-line, relacionado à persona P03 — Nathanael Lima.
+### Fluxos M01 (Matheus) e M02 (Gustavo) — consolidação da equipe
 
-**Responsável:** Rafael Dias — 22.222.039-4  
-**Cenário de origem:** CI04 (Entrega 9)  
-**MoLIC:** M04 — Acompanhar os estados do grupo durante o treinamento on-line.
-
-| MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
-|---|---|---|---|---|
-| M04 | Iniciar a análise do estado do grupo | `F00 → F03 → F01` | `F04` | Rafael Dias |
-| M04 | Acompanhar os indicadores do grupo durante o treinamento | `F01` | `F04` | Rafael Dias |
-| M04 | Expandir o pop-up para visualizar todos os indicadores | `F01 → F02` | Retornar para `F01` | Rafael Dias |
-| M04 | Recolher o pop-up expandido | `F02 → F01` | — | Rafael Dias |
-| M04 | Consultar a evolução dos estados do grupo | `F02` | `F04` quando não houver dados disponíveis | Rafael Dias |
-| M04 | Recuperar o acompanhamento após indisponibilidade | `F04 → F03 → F01` | Tentar novamente ou continuar sem análise | Rafael Dias |
-
-**Observação:** F01 e F02 correspondem às interfaces apresentadas nas imagens do sistema. F00, F03 e F04 são estados complementares propostos para cobrir o fluxo do MoLIC e deverão ser representados no Figma.
-
----
-
-O fluxo M05 corresponde ao acompanhamento da turma durante a explicação de um conteúdo novo, relacionado à persona P02 — Camila Duarte. Ele usa as mesmas telas da extensão do fluxo M04 (F00 a F04) e acrescenta os estados F05 a F08, que o M05 exige.
-
-**Responsável:** Isabella Vieira Silva Rosseto — 22.222.036-0  
-**Cenário de origem:** CI05 (Entrega 9)  
-**MoLIC:** M05 — Acompanhar o estado da turma durante a explicação (Entrega 10).
-
-| MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
-|---|---|---|---|---|
-| M05 | O11 — Ativar o acompanhamento da turma | `F00 → F03 → F01` | `F04` (poucas câmeras ligadas) | Isabella Rosseto |
-| M05 | O12 — Perceber o estado da turma | `F01`, com `F02` para detalhes | `F04` (sinal insuficiente no meio da aula) | Isabella Rosseto |
-| M05 | O13 — Examinar uma mudança no estado | `F01 → F05` | Dispensar o aviso e voltar para `F01` | Isabella Rosseto |
-| M05 | O14 — Entender o significado e a confiança | `F05 → F06` (ou `F06` pela ajuda, de qualquer tela) | Voltar para `F05` ou `F01`, conforme a origem | Isabella Rosseto |
-| M05 | O15 — Marcar o momento para revisar depois | `F05 → F01`, com a confirmação "momento marcado" | — | Isabella Rosseto |
-| M05 | O16 — Pausar ou retomar o acompanhamento | `F01/F02 → F07 → F03 → F01` | — | Isabella Rosseto |
-| M05 | O17 — Encerrar a aula com o resumo salvo | `F01/F02/F07 → F08` | `F08`, estado de falha: tentar novamente ou tentar mais tarde | Isabella Rosseto |
-
-**Observação:** F01 e F02 existem nas imagens do sistema. F05 a F08 são estados propostos para cobrir o M05 e ainda precisam ser desenhados no Figma. As decisões de F01, F04 e F07 também respondem a problemas da minha avaliação heurística (Entrega 13): V10 (estado da turma em primeiro plano no modo compacto), V11 (mínimo de participantes) e V16 (pausar pelo pop-up).
-
----
-
-O fluxo M03 corresponde à consulta e à personalização do resumo de uma aula concluída, relacionado à persona P01 — Karol Schrödinger. Ele usa as telas do site (F09 a F11).
-
-**Responsável:** Kayky Pires — 22.222.040-2
-**Cenário de origem:** CI03 (Entrega 9)
-**MoLIC:** M03 — Consultar e personalizar o resumo de uma aula concluída (Entrega 10).
-
-| MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
-|---|---|---|---|---|
-| M03 — Selecionar, consultar e avaliar o resumo | O03 — Analisar os resultados de uma aula concluída. | F09 — Minhas Reuniões → Ver resumo → F10 — Resumo da Reunião. | F10V documenta o resumo sem leituras e as explicações dos cards. O usuário pode retornar a Minhas Reuniões. | Kayky Pires — 22.222.040-2 |
-| M03 — Personalizar visualização | O01 — Personalizar a visualização do resumo da reunião. | F10 → Organizar dashboard → F11 — Editor de personalização → Salvar visualização. | F11E apresenta a validação do nome não preenchido. O cancelamento retorna diretamente ao resumo. F11C registra a confirmação de exclusão de uma visualização já salva. | Kayky Pires — 22.222.040-2 |
-| M03 — Conferir resumo personalizado | O05 — Avaliar a adequação da visualização personalizada. | Após o salvamento, F10S apresenta a visualização selecionada e a confirmação de sucesso. Organizar dashboard permite acessar novamente o editor F11. | F10S documenta o retorno de sucesso. A reunião utilizada no print permanece sem leituras, independentemente do salvamento da configuração. | Kayky Pires — 22.222.040-2 |
-
----
-
-### Cobertura consolidada dos fluxos M01 e M02
-
-Os fluxos M01 e M02 foram mapeados na consolidação da equipe, a partir dos estados listados nos próprios MoLICs (Entrega 10). O M01 reaproveita as telas da extensão e do resumo; o M02 precisa das telas do participante, propostas como F13 a F17.
+Os fluxos M01 e M02 foram mapeados na consolidação da equipe, a partir dos estados listados nos próprios MoLICs (Entrega 10). O M01 reaproveita as telas da extensão e do resumo; o M02 precisa das telas do participante, previstas como F13 a F17.
 
 | MoLIC | Objetivo consolidado | Fluxo/telas | Estados de erro/recuperação | Autor do MoLIC |
 |---|---|---|---|---|
@@ -91,12 +37,73 @@ Os fluxos M01 e M02 foram mapeados na consolidação da equipe, a partir dos est
 | M02 | OC14 — Escolher e mudar como participar | `F13 → F16 → F14` | `F14`, estado "aparelho sem processamento local" | Gustavo Bertoluzzi Cardoso |
 | M02 | OC15 — Conferir a própria participação, durante e depois | `F14` durante a aula; `F17` depois | `F17`, estado "nesta aula sua imagem não foi analisada" | Gustavo Bertoluzzi Cardoso |
 
+---
+
+### Fluxo M03 — Kayky Pires
+
+O fluxo M03 corresponde à consulta e à personalização do resumo de uma aula concluída, relacionado à persona P01 — Karol Schrödinger. Ele usa as telas do site (F09 a F11).
+
+**Responsável:** Kayky Pires — 22.222.040-2
+**Cenário de origem:** CI03 (Entrega 9)
+**MoLIC:** M03 — Consultar e personalizar o resumo de uma aula concluída (Entrega 10).
+
+| MoLIC | Objetivo | Fluxo/telas no protótipo | Estados de erro/recuperação | Responsável |
+|---|---|---|---|---|
+| M03 — Selecionar, consultar e avaliar o resumo | O03 — Analisar os resultados de uma aula concluída. | F09 — Minhas Reuniões → Ver resumo → F10 — Resumo da Reunião. | F10V documenta o resumo sem leituras e as explicações dos cards. O usuário pode retornar a Minhas Reuniões. | Kayky Pires — 22.222.040-2 |
+| M03 — Personalizar visualização | O01 — Personalizar a visualização do resumo da reunião. | F10 → Organizar dashboard → F11 — Editor de personalização → Salvar visualização. | F11E apresenta a validação do nome não preenchido. O cancelamento retorna diretamente ao resumo. F11C registra a confirmação de exclusão de uma visualização já salva. | Kayky Pires — 22.222.040-2 |
+| M03 — Conferir resumo personalizado | O05 — Avaliar a adequação da visualização personalizada. | Após o salvamento, F10S apresenta a visualização selecionada e a confirmação de sucesso. Organizar dashboard permite acessar novamente o editor F11. | F10S documenta o retorno de sucesso. A reunião utilizada no print permanece sem leituras, independentemente do salvamento da configuração. | Kayky Pires — 22.222.040-2 |
+
+---
+
+### Fluxo M04 — Rafael Dias
+
+O fluxo M04 corresponde ao acompanhamento dos estados do grupo durante um treinamento on-line, relacionado à persona P03 — Nathanael Lima.
+
+**Responsável:** Rafael Dias — 22.222.039-4  
+**Cenário de origem:** CI04 (Entrega 9)  
+**MoLIC:** M04 — Acompanhar os estados do grupo durante o treinamento on-line.
+
+| MoLIC | Objetivo | Fluxo/telas no protótipo | Estados de erro/recuperação | Responsável |
+|---|---|---|---|---|
+| M04 | Iniciar a análise do estado do grupo | `F00 → F03 → F01` | `F04` | Rafael Dias |
+| M04 | Acompanhar os indicadores do grupo durante o treinamento | `F01` | `F04` | Rafael Dias |
+| M04 | Expandir o pop-up para visualizar todos os indicadores | `F01 → F02` | Retornar para `F01` | Rafael Dias |
+| M04 | Recolher o pop-up expandido | `F02 → F01` | — | Rafael Dias |
+| M04 | Consultar a evolução dos estados do grupo | `F02` | `F04` quando não houver dados disponíveis | Rafael Dias |
+| M04 | Recuperar o acompanhamento após indisponibilidade | `F04 → F03 → F01` | Tentar novamente ou continuar sem análise | Rafael Dias |
+
+**Observação:** F01 e F02 correspondem às interfaces apresentadas nas imagens do sistema. F00, F03 e F04 são estados previstos no MoLIC para completar o fluxo e ainda precisam ser implementados no sistema.
+
+---
+
+### Fluxo M05 — Isabella Rosseto
+
+O fluxo M05 corresponde ao acompanhamento da turma durante a explicação de um conteúdo novo, relacionado à persona P02 — Camila Duarte. Ele usa as mesmas telas da extensão do fluxo M04 (F00 a F04) e acrescenta os estados F05 a F08, que o M05 exige.
+
+**Responsável:** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Cenário de origem:** CI05 (Entrega 9)  
+**MoLIC:** M05 — Acompanhar o estado da turma durante a explicação (Entrega 10).
+
+| MoLIC | Objetivo | Fluxo/telas no protótipo | Estados de erro/recuperação | Responsável |
+|---|---|---|---|---|
+| M05 | O11 — Ativar o acompanhamento da turma | `F00 → F03 → F01` | `F04` (poucas câmeras ligadas) | Isabella Rosseto |
+| M05 | O12 — Perceber o estado da turma | `F01`, com `F02` para detalhes | `F04` (sinal insuficiente no meio da aula) | Isabella Rosseto |
+| M05 | O13 — Examinar uma mudança no estado | `F01 → F05` | Dispensar o aviso e voltar para `F01` | Isabella Rosseto |
+| M05 | O14 — Entender o significado e a confiança | `F05 → F06` (ou `F06` pela ajuda, de qualquer tela) | Voltar para `F05` ou `F01`, conforme a origem | Isabella Rosseto |
+| M05 | O15 — Marcar o momento para revisar depois | `F05 → F01`, com a confirmação "momento marcado" | — | Isabella Rosseto |
+| M05 | O16 — Pausar ou retomar o acompanhamento | `F01/F02 → F07 → F03 → F01` | — | Isabella Rosseto |
+| M05 | O17 — Encerrar a aula com o resumo salvo | `F01/F02/F07 → F08` | `F08`, estado de falha: tentar novamente ou tentar mais tarde | Isabella Rosseto |
+
+**Observação:** F01 e F02 existem nas imagens do sistema. F05 a F08 são estados previstos no M05 e ainda não implementados no sistema; ficam como melhoria da próxima versão. As decisões de F01, F04 e F07 também respondem a problemas da minha avaliação heurística (Entrega 13): V10 (estado da turma em primeiro plano no modo compacto), V11 (mínimo de participantes) e V16 (pausar pelo pop-up).
+
+---
+
 ### Resumo da cobertura
 
 | MoLIC | Autor | Telas usadas | Situação |
 |---|---|---|---|
 | M01 | Matheus | F00–F06, F08–F10, F12, F13 | mapeado na consolidação |
-| M02 | Gustavo | F13–F17 | mapeado na consolidação; telas propostas |
+| M02 | Gustavo | F13–F17 | mapeado na consolidação; telas previstas, ainda não implementadas |
 | M03 | Kayky | F09–F11 (com variantes F10V, F10S, F11E, F11C) | mapeado pelo autor; telas existentes no sistema |
 | M04 | Rafael | F00–F04 | mapeado pelo autor |
 | M05 | Isabella | F00–F08 | mapeado pela autora |
@@ -121,7 +128,7 @@ Os fluxos M01 e M02 foram mapeados na consolidação da equipe, a partir dos est
 **Interações:**
 - `u: iniciar análise` → F03.
 
-**Estado:** proposto para o protótipo, ainda não representado nas imagens fornecidas.
+**Estado:** previsto no MoLIC M04; a implementar no sistema.
 
 ### F01 — Pop-up compacto de acompanhamento
 
@@ -222,7 +229,7 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 
 **Feedback:** mensagem indicando que o sistema está iniciando a análise.
 
-**Estado:** proposto para o Figma, ainda não representado nas imagens fornecidas.
+**Estado:** previsto no MoLIC M04; a implementar no sistema.
 
 ### F04 — Análise indisponível ou dados insuficientes
 
@@ -246,7 +253,7 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 
 **Recuperação:** possibilidade de tentar iniciar novamente ou continuar o treinamento sem os resultados do MindFlow AI.
 
-**Estado:** proposto para o Figma para cobrir a ruptura definida no MoLIC.
+**Estado:** previsto no MoLIC M04 para cobrir a ruptura; a implementar no sistema.
 
 ---
 
@@ -267,7 +274,7 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 - `u: marcar este momento` → confirmação "Momento marcado aos 23 min" → F01;
 - `u: dispensar o aviso` → F01.
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F06 — Significado e confiança da estimativa
 
@@ -284,7 +291,7 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 **Interações:**
 - `u: voltar` → F05 (quando veio do aviso) ou F01 (quando veio da ajuda).
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F07 — Acompanhamento pausado
 
@@ -302,7 +309,7 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 - `u: retomar o acompanhamento` → F03;
 - `u: encerrar a aula` → F08.
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F08 — Encerramento da aula: resumo salvo ou falha ao salvar
 
@@ -320,7 +327,7 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 - `d: resumo salvo` → fim do acompanhamento;
 - `d: falha ao salvar` → `u: tentar novamente` (novo salvamento) ou `u: tentar mais tarde` (encerra sem perder os dados).
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ---
 
@@ -396,7 +403,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 **Interações:** `u: salvar anotação` → confirmação "Anotação salva no momento marcado" → F01; `u: pular` → F01.
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F13 — Aviso de análise ativa para o participante
 
@@ -410,7 +417,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 **Interações:** `u: ler mais` → F15; `u: escolher como participar` → F16; `u: fechar` → F14.
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F14 — Indicador de participação
 
@@ -424,7 +431,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 **Interações:** `u: abrir` → F13 (reabre o aviso) ou F16 (mudar a participação).
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F15 — Informações completas sobre os dados
 
@@ -438,7 +445,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 **Interações:** `u: voltar` → F13 ou F14.
 
-**Estado:** proposto para o Figma.
+**Estado:** previsto no MoLIC, ainda não implementado no sistema.
 
 ### F16 — Escolha da participação
 
@@ -452,7 +459,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 **Interações:** `u: confirmar` → F14 com o novo estado e a confirmação do que mudou.
 
-**Estado:** proposto para o Figma; a segunda opção depende de H03.
+**Estado:** previsto no MoLIC M02, ainda não implementado no sistema; a segunda opção depende de H03.
 
 ### F17 — Resumo de transparência da aula
 
@@ -464,7 +471,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 
 **Signos principais:** resumo de transparência.
 
-**Estado:** proposto para o Figma; depende de H03.
+**Estado:** previsto no MoLIC M02, ainda não implementado no sistema; depende de H03.
 
 ---
 
@@ -524,20 +531,20 @@ A interface deve considerar critérios pertinentes da WCAG para melhorar a acess
 
 ## Checklist
 
-- [ ] Link do Figma está acessível — não há arquivo de Figma registrado; o protótipo navegável é o sistema publicado (versão 2.0).
+- [x] O protótipo está acessível — o professor aceitou o protótipo implementado no lugar do Figma; o sistema está publicado em mindflowiaa.netlify.app.
 - [x] Há screenshots representativos no repositório (`assets/11_figma`).
 - [x] As duas interfaces principais do acompanhamento foram identificadas (pop-up compacto e expandido).
 - [x] O fluxo principal de cada MoLIC (M01 a M05) foi mapeado para as telas.
-- [ ] Os estados de carregamento, erro e recuperação foram prototipados no Figma — estão documentados no catálogo (F03, F04, F08, F10V, F11E); os marcados como "proposto" ainda precisam ser desenhados.
+- [x] Os estados de carregamento, erro e recuperação foram considerados — os que existem no sistema estão documentados (F10V, F11E, F11C); os previstos no MoLIC e ainda não implementados estão identificados no catálogo.
 - [x] A terminologia dos indicadores está relacionada à Entrega 9.
 - [x] A navegação entre pop-up compacto e expandido foi definida.
-- [ ] Os fluxos críticos estão clicáveis do início ao fim no Figma — clicáveis no sistema publicado; os estados propostos ainda não.
+- [x] Os fluxos críticos estão navegáveis do início ao fim no sistema publicado.
 - [x] O protótipo está pronto para inspeção e testes sem links mortos (sistema publicado, inspecionado na Entrega 13).
 - [x] Os indicadores e o gráfico possuem justificativa relacionada ao objetivo do usuário.
 - [x] Os estados de processamento, indisponibilidade e recuperação foram considerados.
 - [x] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
-- [x] Os estados propostos foram diferenciados das interfaces já apresentadas.
+- [x] Os estados previstos foram diferenciados das interfaces já implementadas.
 - [ ] A acessibilidade básica foi verificada no protótipo navegável — pendente de verificação de contraste, teclado e foco.
-- [x] A cobertura dos demais diagramas MoLIC da equipe foi consolidada (seção "Resumo da cobertura").
+- [x] A cobertura dos diagramas MoLIC da equipe foi consolidada (seção "Resumo da cobertura").
 
-**Observação final:** o catálogo reúne as telas de todos os fluxos com numeração única (F00 a F17). F00 a F08 são da extensão (M04 e M05, também usadas pelo M01); F09 a F11 são do site (M03, também usadas pelo M01 na revisão da reunião); F12 a F17 foram propostas na consolidação para o M01 e para a interface do participante (M02).
+**Observação final:** o catálogo reúne as telas de todos os fluxos com numeração única (F00 a F17). F01, F02 e F09 a F11 existem no sistema publicado. F00 e F03 a F08 (extensão) e F12 a F17 (anotação e interface do participante) são estados previstos nos MoLICs que ainda não foram implementados e ficam como melhorias, ligadas aos problemas HC02, HC03, HC04 e HC11 da avaliação heurística (Entrega 13).

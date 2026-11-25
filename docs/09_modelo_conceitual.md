@@ -202,6 +202,8 @@ Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal.
 
 ## 2. Design centrado na comunicação
 
+### CI01 — Matheus Ferreira de Freitas
+
 **Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
 **Origem:** cenário problema C01 — Dificuldade em interpretar a reação do cliente durante uma apresentação comercial on-line (versão refinada da Entrega 4), tarefa T05 (Entrega 5) e persona P04 — Manoel Gomes
 
@@ -222,6 +224,8 @@ Ela introduz uma estrutura gramatical nova, um pouco mais complexa que o normal.
 Decidir se avança, reforça ou reexplica um ponto **não é um tópico de conversa com o sistema**: é uma decisão de Manoel, tomada fora da interface. O sistema oferece o sinal, a confiança e a explicação para apoiar essa decisão, sem prescrever a ação (RC03).
 
 ---
+
+### CI02 — Gustavo Bertoluzzi Cardoso
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
 **Origem:** CI02 — Bruno entende o que acontece com a própria imagem e escolhe como participar da aula (cenário problema C03, tarefa T04), persona P05 — Bruno D. Roger.
@@ -245,6 +249,27 @@ Decidir se liga a câmera ou se participa da análise **não é um tópico de co
 
 ---
 
+### CI03 — Kayky Pires
+
+**Nome do cenário:** CI03 — Acompanhar os estados da turma e revisar os resultados da aula.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Acompanhar os estados da turma durante a aula | `U: consultar os indicadores da turma` / `D: apresentar estimativas dos estados cognitivos`. Signos: engajamento, tédio, confusão e frustração. | Complementar os sinais observados na videoconferência e apoiar a decisão do docente sobre a condução da aula. |
+| > Compreender os indicadores | `D: explicar o significado dos indicadores e sua relação com os dados disponíveis`. Signos: significado dos estados e disponibilidade de dados. | Permitir a interpretação das informações sem apresentar as estimativas como certezas sobre os participantes. |
+| Revisar os resultados após a aula | `U: consultar uma aula concluída` / `D: apresentar as reuniões disponíveis`. Signos: título e data da reunião. | Permitir que o docente identifique a aula que deseja analisar. |
+| > Consultar o resumo da reunião | `U: abrir resumo da reunião` / `D: apresentar a identificação da reunião e seus indicadores`. Signos: título, data, estados cognitivos e indicadores exibidos. | Permitir que o docente examine os resultados e identifique suas necessidades de personalização. |
+| > Personalizar a visualização | `U: personalizar visualização` / `D: apresentar os indicadores disponíveis` / `U: selecionar os indicadores desejados`. Signos: indicadores disponíveis e seleção de indicadores para exibição. | Adequar as informações apresentadas às necessidades de análise do docente. |
+| > Salvar a personalização | `U: salvar alterações` / `D: configuração salva e aplicada`. Signos: configuração selecionada e situação do salvamento. | Confirmar que as alterações foram salvas e aplicadas ao resumo. |
+| > Recuperar uma falha no salvamento | `D: não foi possível salvar; seleções preservadas` / `U: tentar salvar novamente, modificar a seleção ou cancelar`. Signos: mensagem de falha e seleção preservada. | Comunicar o problema e permitir a continuidade da tarefa sem refazer toda a seleção. |
+| > Cancelar a personalização | `U: cancelar alterações` / `D: apresentar o resumo com a configuração anterior`. Signos: configuração anterior e indicadores exibidos. | Permitir o retorno à consulta sem aplicar as alterações não salvas. |
+| > Conferir o resumo personalizado | `D: apresentar o resumo personalizado e a configuração aplicada`. Signos: indicadores exibidos, dados dos indicadores e seleção salva. | Permitir que o docente verifique se a visualização atende às suas necessidades. |
+| > Revisar a personalização | `U: editar novamente` / `D: apresentar as opções de personalização`. Signos: indicadores disponíveis e seleção de indicadores. | Permitir novos ajustes quando o resultado ainda não atender às necessidades de análise. |
+
+---
+
+### CI04 — Rafael Dias
+
 **Autor(a):** Rafael Dias — 22.222.039-4  
 **Origem:** cenário problema C04 — Dificuldade em identificar a compreensão e o aprendizado durante treinamento on-line.  
 **Persona relacionada:** P03 — Nathanael Lima.
@@ -263,6 +288,8 @@ Decidir se liga a câmera ou se participa da análise **não é um tópico de co
 | Avaliar melhorias para próximos treinamentos | `U: analisar os períodos identificados e decidir quais conteúdos precisam ser revisados`. Signos: período analisado, indicadores cognitivos e resultados do treinamento. | Apoiar a avaliação de melhorias na apresentação e nos materiais utilizados em futuras capacitações. |
 
 ---
+
+### CI05 — Isabella Rosseto
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Origem:** CI05 — Camila percebe, ainda na aula, que a turma pode não ter acompanhado a estrutura nova (cenário problema C05, tarefa T03).
@@ -283,22 +310,6 @@ Decidir se liga a câmera ou se participa da análise **não é um tópico de co
 
 Decidir se reforça o conteúdo **não é um tópico de conversa com o sistema**: é uma decisão de Camila, feita fora da interface. O sistema só oferece o sinal e a explicação para apoiar essa decisão.
 
-**Nome do cenário:** CI03 — Acompanhar os estados da turma e revisar os resultados da aula.
-
-| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
-|---|---|---|
-| Acompanhar os estados da turma durante a aula | `U: consultar os indicadores da turma` / `D: apresentar estimativas dos estados cognitivos`. Signos: engajamento, tédio, confusão e frustração. | Complementar os sinais observados na videoconferência e apoiar a decisão do docente sobre a condução da aula. |
-| > Compreender os indicadores | `D: explicar o significado dos indicadores e sua relação com os dados disponíveis`. Signos: significado dos estados e disponibilidade de dados. | Permitir a interpretação das informações sem apresentar as estimativas como certezas sobre os participantes. |
-| Revisar os resultados após a aula | `U: consultar uma aula concluída` / `D: apresentar as reuniões disponíveis`. Signos: título e data da reunião. | Permitir que o docente identifique a aula que deseja analisar. |
-| > Consultar o resumo da reunião | `U: abrir resumo da reunião` / `D: apresentar a identificação da reunião e seus indicadores`. Signos: título, data, estados cognitivos e indicadores exibidos. | Permitir que o docente examine os resultados e identifique suas necessidades de personalização. |
-| > Personalizar a visualização | `U: personalizar visualização` / `D: apresentar os indicadores disponíveis` / `U: selecionar os indicadores desejados`. Signos: indicadores disponíveis e seleção de indicadores para exibição. | Adequar as informações apresentadas às necessidades de análise do docente. |
-| > Salvar a personalização | `U: salvar alterações` / `D: configuração salva e aplicada`. Signos: configuração selecionada e situação do salvamento. | Confirmar que as alterações foram salvas e aplicadas ao resumo. |
-| > Recuperar uma falha no salvamento | `D: não foi possível salvar; seleções preservadas` / `U: tentar salvar novamente, modificar a seleção ou cancelar`. Signos: mensagem de falha e seleção preservada. | Comunicar o problema e permitir a continuidade da tarefa sem refazer toda a seleção. |
-| > Cancelar a personalização | `U: cancelar alterações` / `D: apresentar o resumo com a configuração anterior`. Signos: configuração anterior e indicadores exibidos. | Permitir o retorno à consulta sem aplicar as alterações não salvas. |
-| > Conferir o resumo personalizado | `D: apresentar o resumo personalizado e a configuração aplicada`. Signos: indicadores exibidos, dados dos indicadores e seleção salva. | Permitir que o docente verifique se a visualização atende às suas necessidades. |
-| > Revisar a personalização | `U: editar novamente` / `D: apresentar as opções de personalização`. Signos: indicadores disponíveis e seleção de indicadores. | Permitir novos ajustes quando o resultado ainda não atender às necessidades de análise. |
-
-
 ---
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
@@ -309,7 +320,7 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 O mapa consolidado fica no fim desta seção, depois dos mapas individuais.
 
-### Mapa individual 
+### Mapa individual — CI01 (Matheus Ferreira de Freitas)
 
 **Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
 **Origem:** cenário problema C01 — Dificuldade em interpretar a reação do cliente durante uma apresentação comercial on-line (versão refinada da Entrega 4), tarefa T05 (Entrega 5) e persona P04 — Manoel Gomes
@@ -368,8 +379,7 @@ flowchart TD
 ```
 *A caixa tracejada é um objetivo de Manoel que acontece fora do sistema: a decisão de avançar, reforçar ou reexplicar continua sendo dele (RC03).*
 
-### Dicionário de objetivos
-
+#### Dicionário de objetivos — CI01
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
 | O01 | Ativar o acompanhamento em uma reunião com participantes de outra empresa, com o aviso enviado antes da primeira estimativa | P04 (também P01, P02 e P03) | CI01 | alta |
@@ -380,7 +390,11 @@ flowchart TD
 | O06 | Encerrar a reunião com o resumo salvo | P04 | CI01 | média |
 | O07 | Revisar a reunião e registrar, no momento marcado, se o retorno do cliente confirmou a leitura feita na reunião | P04 | CI01 | média |
 
+Os IDs O01 a O07 vêm da CI01. Na consolidação, a equipe junta os objetivos iguais dos outros cenários (ativar o acompanhamento, perceber o estado do grupo e encerrar com o resumo salvo também aparecem para Karol, Camila e Nathanael) e mantém um único ID para cada objetivo.
+
 ---
+
+### Mapa individual — CI02 (Gustavo Bertoluzzi Cardoso)
 
 **Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
 **Origem:** CI02 (cenário problema C03, tarefa T04), persona P05 — Bruno D. Roger.
@@ -433,9 +447,12 @@ flowchart TD
 Os IDs O18 a O23 continuam a numeração depois de O17 (CI05). Eles não se fundem com os objetivos dos comunicadores, porque o ator é outro: Bruno é participante, não usa o Semáforo nem o Dashboard. Há duas ligações a manter na consolidação: o aviso de O18 é o mesmo **aviso aos participantes** gerado quando o comunicador ativa o acompanhamento (O01 e O11), e a pausa feita pelo comunicador (O16) aparece para o participante como estado da **análise da turma**, sem se confundir com a pausa da própria participação (O22).
 
 ---
+
+### Mapa individual — CI03 (Kayky Pires)
+
 **Autor(a):** Kayky Pires — 22.222.040-2   
 **Origem:** cenário problema C02 — Dificuldade de Karol em perceber se a turma está acompanhando a aula on-line. 
-**Persona relacionada:** P02 — Karol.
+**Persona relacionada:** P01 — Karol.
 ```mermaid
 flowchart TD
     GERAL["`Analisar os estados
@@ -473,8 +490,7 @@ flowchart TD
     O01 --> O05
 ```
 
-### Dicionário de objetivos
-
+#### Dicionário de objetivos — CI03
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
 | O01 | Personalizar a visualização do resumo da reunião, selecionando os indicadores que deseja exibir. | P01 — Karol | CI01 | Alta |
@@ -484,6 +500,8 @@ flowchart TD
 | O05 | Avaliar se a seleção de indicadores foi aplicada e se a visualização personalizada apresenta as informações necessárias à análise. | P01 — Karol | CI01 | Alta |
 
 ---
+
+### Mapa individual — CI04 (Rafael Dias)
 
 **Autor(a):** Rafael Dias — 22.222.039-4  
 **Origem:** cenário problema C04 — Dificuldade em identificar a compreensão e o aprendizado durante treinamento on-line.  
@@ -507,8 +525,7 @@ flowchart TD
     O09 --> O10
 ```
 
-### Dicionário de objetivos
-
+#### Dicionário de objetivos — CI04
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
 | O06 | Interpretar os estados de engajamento, tédio, confusão e frustração durante o treinamento, considerando o significado dos indicadores e a disponibilidade dos dados. | P03 — Nathanael | CI04 | Alta |
@@ -520,6 +537,8 @@ flowchart TD
 Os objetivos O06 e O07 correspondem ao acompanhamento durante o treinamento. Os objetivos O08, O09 e O10 correspondem à análise posterior da sessão.
 
 ---
+
+### Mapa individual — CI05 (Isabella Rosseto)
 
 **Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
 **Origem:** CI05 (cenário problema C05, tarefa T03), persona P02 — Camila Duarte.
@@ -572,8 +591,6 @@ flowchart TD
 Os IDs O11 a O17 foram escolhidos para não repetir os IDs já usados na CI01 (O01 a O07) e na CI04 (O06 a O10). Alguns objetivos são equivalentes entre os cenários e devem virar um só na consolidação: O11 corresponde a O01 (ativar o acompanhamento), O12 a O02 e O06 (perceber/interpretar o estado do grupo), O14 a O04 (entender o significado e a confiança), O15 a O03 (marcar o momento) e O17 a O06 da CI01 (encerrar com o resumo salvo).
 
 ---
-
-Os IDs O01 a O07 vêm da CI01. Na consolidação, a equipe junta os objetivos iguais dos outros cenários (ativar o acompanhamento, perceber o estado do grupo e encerrar com o resumo salvo também aparecem para Karol, Camila e Nathanael) e mantém um único ID para cada objetivo.
 
 ### Mapa consolidado da equipe
 
