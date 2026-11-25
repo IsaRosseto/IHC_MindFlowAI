@@ -42,6 +42,26 @@ O fluxo M04 corresponde ao acompanhamento dos estados do grupo durante um treina
 
 ---
 
+O fluxo M05 corresponde ao acompanhamento da turma durante a explicação de um conteúdo novo, relacionado à persona P02 — Camila Duarte. Ele usa as mesmas telas da extensão do fluxo M04 (F00 a F04) e acrescenta os estados F05 a F08, que o M05 exige.
+
+**Responsável:** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Cenário de origem:** CI05 (Entrega 9)  
+**MoLIC:** M05 — Acompanhar o estado da turma durante a explicação (Entrega 10).
+
+| MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
+|---|---|---|---|---|
+| M05 | O11 — Ativar o acompanhamento da turma | `F00 → F03 → F01` | `F04` (poucas câmeras ligadas) | Isabella Rosseto |
+| M05 | O12 — Perceber o estado da turma | `F01`, com `F02` para detalhes | `F04` (sinal insuficiente no meio da aula) | Isabella Rosseto |
+| M05 | O13 — Examinar uma mudança no estado | `F01 → F05` | Dispensar o aviso e voltar para `F01` | Isabella Rosseto |
+| M05 | O14 — Entender o significado e a confiança | `F05 → F06` (ou `F06` pela ajuda, de qualquer tela) | Voltar para `F05` ou `F01`, conforme a origem | Isabella Rosseto |
+| M05 | O15 — Marcar o momento para revisar depois | `F05 → F01`, com a confirmação "momento marcado" | — | Isabella Rosseto |
+| M05 | O16 — Pausar ou retomar o acompanhamento | `F01/F02 → F07 → F03 → F01` | — | Isabella Rosseto |
+| M05 | O17 — Encerrar a aula com o resumo salvo | `F01/F02/F07 → F08` | `F08`, estado de falha: tentar novamente ou tentar mais tarde | Isabella Rosseto |
+
+**Observação:** F01 e F02 existem nas imagens do sistema. F05 a F08 são estados propostos para cobrir o M05 e ainda precisam ser desenhados no Figma. As decisões de F01, F04 e F07 também respondem a problemas da minha avaliação heurística (Entrega 13): V10 (estado da turma em primeiro plano no modo compacto), V11 (mínimo de participantes) e V16 (pausar pelo pop-up).
+
+---
+
 ## Catálogo de telas/estados
 
 ### F00 — Acompanhamento não iniciado
@@ -189,6 +209,80 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 
 ---
 
+### F05 — Aviso de mudança no estado da turma
+
+**Responsável:** Isabella Rosseto (M05)
+
+**Objetivo do usuário:** perceber que o estado da turma mudou sem tirar a atenção da explicação.
+
+**Descrição:** aviso discreto dentro do pop-up compacto, que aparece quando o estado predominante muda por tempo suficiente. Mostra o estado anterior, o atual, desde quando e a confiança. Não sugere o que a professora deve fazer (RC03), e aparece um aviso por vez, sem acumular avisos antigos (RC06).
+
+**Signos principais:** mudança de estado; estado predominante; confiança da estimativa; participantes contribuindo.
+
+**Origem no MoLIC:** M05 — cena "Examinar a mudança no estado".
+
+**Interações:**
+- `u: o que isso significa?` → F06;
+- `u: marcar este momento` → confirmação "Momento marcado aos 23 min" → F01;
+- `u: dispensar o aviso` → F01.
+
+**Estado:** proposto para o Figma.
+
+### F06 — Significado e confiança da estimativa
+
+**Responsável:** Isabella Rosseto (M05)
+
+**Objetivo do usuário:** entender o que o estado significa e quanto confiar nele.
+
+**Descrição:** painel curto, aberto a partir do aviso ou pela ajuda, que explica o estado em linguagem simples ("parte da turma mostra sinais associados a dificuldade"), o que a estimativa não indica (não avalia alunos individualmente) e por que a confiança está alta, média ou baixa.
+
+**Signos principais:** significado do indicador; confiança da estimativa; qualidade do sinal.
+
+**Origem no MoLIC:** M05 — cena "Entender o significado da estimativa"; acesso ubíquo `u: ajuda`.
+
+**Interações:**
+- `u: voltar` → F05 (quando veio do aviso) ou F01 (quando veio da ajuda).
+
+**Estado:** proposto para o Figma.
+
+### F07 — Acompanhamento pausado
+
+**Responsável:** Isabella Rosseto (M05)
+
+**Objetivo do usuário:** interromper o acompanhamento rapidamente, sem sair da videochamada.
+
+**Descrição:** o pop-up mostra que o acompanhamento está pausado desde determinado horário e que os participantes foram avisados. O botão "Pausar acompanhamento" fica visível em F01 e F02.
+
+**Signos principais:** acompanhamento (ativo, pausado ou desligado); aviso aos participantes.
+
+**Origem no MoLIC:** M05 — acesso ubíquo `u: pausar acompanhamento` e cena "Acompanhamento pausado".
+
+**Interações:**
+- `u: retomar o acompanhamento` → F03;
+- `u: encerrar a aula` → F08.
+
+**Estado:** proposto para o Figma.
+
+### F08 — Encerramento da aula: resumo salvo ou falha ao salvar
+
+**Responsável:** Isabella Rosseto (M05)
+
+**Objetivo do usuário:** saber que a aula ficou registrada para revisar depois.
+
+**Descrição:** ao encerrar, o pop-up confirma "Resumo salvo — disponível no Dashboard". Se o salvamento falhar, mostra o motivo, informa que os dados continuam no computador e oferece duas saídas.
+
+**Signos principais:** resumo da aula; momento marcado.
+
+**Origem no MoLIC:** M05 — processo de encerramento, fechamento da conversa (`gcc`) e cena de alerta "Salvar o registro da aula".
+
+**Interações:**
+- `d: resumo salvo` → fim do acompanhamento;
+- `d: falha ao salvar` → `u: tentar novamente` (novo salvamento) ou `u: tentar mais tarde` (encerra sem perder os dados).
+
+**Estado:** proposto para o Figma.
+
+---
+
 ## Sistema visual e consistência
 
 O sistema visual segue a identidade apresentada nas interfaces da extensão MindFlow AI, priorizando uma visualização compacta e objetiva para utilização durante videoconferências.
@@ -248,6 +342,6 @@ A interface deve considerar critérios pertinentes da WCAG para melhorar a acess
 - [ ] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
 - [ ] Os estados propostos foram diferenciados das interfaces já apresentadas.
 - [ ] A acessibilidade básica foi verificada no protótipo navegável.
-- [ ] A cobertura dos demais diagramas MoLIC da equipe foi consolidada.
+- [ ] A cobertura dos demais diagramas MoLIC da equipe foi consolidada (M04 e M05 mapeados; faltam M01, M02 e M03).
 
 **Observação final:** esta documentação representa a contribuição individual de Rafael para a Entrega 11. A conclusão da entrega depende da integração dos demais fluxos da equipe, da criação dos estados complementares no Figma e da validação dos links de acesso.
