@@ -50,7 +50,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Telas/estados | Página inicial; Minhas reuniões; resumo com dados de demonstração e resumo sem leituras; edição do resumo e do dashboard geral; erro de nome vazio; visualização salva selecionada; confirmação de exclusão cancelada; dashboard geral; comparação normal e sem seleção; configuração/prévia da extensão; suporte. |
 | Fluxos | M01: consulta e personalização do resumo pós-aula, incluindo validação e retorno. Também foram percorridos dashboard geral/comparação, configuração da extensão e suporte, descritos pelo nome para não criar códigos MoLIC não documentados. |
 | Dispositivo/viewport | Navegador Chrome em computador, ambiente remoto, janela de 1363 × 936 pixels. A inspeção não cobre todas as resoluções nem comprova conformidade de acessibilidade. |
-| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. A02 — Rafael Dias. A03 — Isabella Rosseto: inspeção a partir da tarefa T03 (pop-up durante a aula e resumo pós-aula), com base nos prints da versão 2.0 e na página pública. Os demais integrantes acrescentarão seus próprios registros após a inspeção individual. |
+| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. A02 — Rafael Dias. A03 — Isabella Rosseto: inspeção a partir da tarefa T03 (pop-up durante a aula e resumo pós-aula), com base nos prints da versão 2.0 e na página pública. A04 — Gustavo Bertoluzzi: inspeção pela ótica da privacidade e da transparência (P05, C03, T04), com base nos prints da versão 2.0. Os demais integrantes acrescentarão seus próprios registros após a inspeção individual. |
 
 ## 3. Procedimento individual
 
@@ -288,6 +288,112 @@ Plano de melhoria proposto:
 3. **Baixa prioridade:** V12 (significado da seta) e V14 (padronizar a confirmação de exclusão).
 
 Na consolidação, V09 se aproxima de V06 (Rafael), porque ambos tratam de termos técnicos, mas em telas diferentes. As recomendações são propostas e ainda não foram implementadas.
+
+---
+
+## Avaliador A04 — Gustavo Bertoluzzi
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
+**Versão:** MindFlow AI 2.0 (site e extensão)  
+**Data:** 25/11/2026  
+**Foco da inspeção:** percorri o sistema pela ótica da privacidade e da transparência, que vem da persona P05 (Bruno), do cenário C03 e da tarefa T04. Como o Bruno não tem tela própria na versão 2.0, avaliei como o sistema comunica ao docente, e por meio dele aos participantes, o que é processado, quem entra na estimativa e o que é guardado. Também conferi se o resultado continua agregado em todas as telas (R04).  
+**Estados especiais examinados:** pop-up compacto e expandido com uma fonte analisada e uma ignorada; página "Extensão" (preferências do painel, prévia "Como ficará no Meet" e quadro de privacidade); Minhas reuniões com reunião em andamento e reunião sem leituras; tabela "Leituras do intervalo"; cards do dashboard geral com a explicação do alerta; central de ajuda.  
+**Limitação:** a inspeção foi feita sobre os prints da versão 2.0 guardados no repositório (pastas `assets/06_prototipos`, `assets/11_figma` e `assets/13_heuristica`), sem interação ao vivo com o sistema. O fluxo de início do acompanhamento na extensão não aparece nos prints, então os achados sobre o aviso aos participantes (V18) precisam ser confirmados nesse fluxo antes da consolidação.
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| H | Heurística | Fluxos/telas examinados | Violação? | IDs das violações | Boas práticas observadas |
+|---:|---|---|---|---|---|
+| 1 | Visibilidade do status do sistema | Pop-up compacto e expandido; prévia "Como ficará no Meet"; Minhas reuniões | sim | V18, V21 | BP23 |
+| 2 | Compatibilidade sistema–mundo real | Minhas reuniões; card "Participantes analisados"; descrições das preferências da extensão | sim | V22 | BP24 |
+| 3 | Controle e liberdade do usuário | Preferências da extensão | não | — | BP25 |
+| 4 | Consistência e padrões | Mensagens de privacidade do pop-up, da página "Extensão" e do quadro de privacidade; nomes das quatro reações em todas as telas | sim | V19 | BP26 |
+| 5 | Prevenção de erros | Pop-up expandido (fonte do apresentador) | não | — | BP27 |
+| 6 | Reconhecimento em vez de memorização | Página "Extensão" com prévia em tempo real | não | — | BP28 |
+| 7 | Flexibilidade e eficiência de uso | Exibição fixa ou ao passar o mouse para cada informação da extensão | não | — | BP29 |
+| 8 | Estética e design minimalista | Pop-up expandido, lista "Fontes anônimas detectadas" | sim | V20 | BP30 |
+| 9 | Reconhecer, diagnosticar e recuperar erros | Erro ao salvar visualização sem nome | não | — | BP31 |
+| 10 | Ajuda e documentação | Ícones (i) do dashboard geral; central de ajuda | não | — | BP32 |
+
+### 5. Análise por heurística
+
+**H1 — Visibilidade do status do sistema.** *Atende:* o pop-up mostra junto do estado a base da estimativa ("Confiança: 33% · 1 fonte(s)") e separa fontes analisadas e ignoradas (BP23). *Viola:* nas telas examinadas, só o docente sabe que a análise está ativa; nada indica isso a quem tem a imagem analisada (V18). A prévia permite esconder a confiança do estado, que aparece sozinho como "Engajamento alto" (V21).
+
+**H2 — Compatibilidade entre o sistema e o mundo real.** *Atende:* as preferências da extensão são descritas pelo efeito, e não pela implementação ("Mostra se o engajamento subiu, caiu ou ficou estável") (BP24). *Viola:* "45 participantes" e "Participantes analisados: 45" somam participações de várias reuniões como se fossem pessoas, e "analisados" é justamente o termo que reforça a sensação de vigilância (V22).
+
+**H3 — Controle e liberdade do usuário.** *Atende:* a página "Extensão" tem "Restaurar padrão", que desfaz as mudanças de preferência (BP25). *Viola:* não encontrei violação no recorte. A falta de pausa no pop-up, que também seria H3, já foi registrada por Isabella (V16).
+
+**H4 — Consistência e padrões.** *Atende:* as quatro reações aparecem com os mesmos nomes e na mesma ordem no pop-up, na prévia, na tabela de leituras e no gráfico (BP26). *Viola:* as mensagens de privacidade mudam de tela para tela e prometem coisas diferentes (V19).
+
+**H5 — Prevenção de erros.** *Atende:* o pop-up reconhece a imagem do próprio apresentador ("APRESENTADOR DETECTADO") e a deixa fora da estimativa ("1 ignorada(s)"), o que evita que o rosto do docente distorça o estado do grupo (BP27). *Viola:* não encontrei violação nova. A estimativa com uma única fonte, que também é um problema de privacidade, já está registrada em V11 (Isabella).
+
+**H6 — Reconhecimento em vez de memorização.** *Atende:* a prévia "Como ficará no Meet" mostra na hora o efeito de cada escolha, sem que o docente precise lembrar o que cada opção faz (BP28). *Viola:* não encontrei violação.
+
+**H7 — Flexibilidade e eficiência de uso.** *Atende:* cada informação da extensão pode ficar fixa ou aparecer só ao passar o mouse, o que deixa o docente regular quanta informação vê durante a aula (BP29). *Viola:* não encontrei violação.
+
+**H8 — Estética e design minimalista.** *Atende:* a prévia compacta mostra só o estado, o número de fontes e as quatro reações (BP30). *Viola:* o pop-up expandido lista cada fonte separadamente, com estados técnicos, informação que o docente não precisa e que vai contra a ideia de mostrar só o grupo (V20).
+
+**H9 — Reconhecer, diagnosticar e recuperar-se de erros.** *Atende:* ao tentar salvar uma visualização sem nome, a mensagem diz o que falta ("Dê um nome para a visualização.") (BP31). *Viola:* não encontrei violação nova; a posição dessa mensagem já está em V15 (Isabella).
+
+**H10 — Ajuda e documentação.** *Atende:* os ícones (i) do dashboard geral explicam a regra do alerta no próprio card e dizem que "o alerta apenas marca uma mudança que vale revisar" (BP32). *Viola:* não encontrei violação na ajuda do docente. Falta ajuda para o participante, mas registrei isso como parte de V18, porque o problema é a ausência de qualquer comunicação com ele.
+
+### 6. Declaração de violações
+
+Registrei apenas problemas reais. Escala de severidade de 0 a 4 (seção 3).
+
+| ID | H | Tela/estado | Ação/condição | Problema | Consequência | Evidência | Severidade | Justificativa | Recomendação |
+|---|---|---|---|---|---|---|---:|---|---|
+| V18 | H1 | Pop-up da extensão; prévia "Como ficará no Meet"; Minhas reuniões | A reunião é analisada com participantes de câmera ligada | Toda a indicação de que a análise está ativa fica no painel do docente. A prévia "Como ficará no Meet" mostra só o que o docente vê, e "Minhas reuniões" diz que as reuniões são iniciadas pela extensão e aparecem automaticamente. Nas telas examinadas, não há aviso aos participantes nem lembrete para o docente avisá-los | O participante não sabe que a imagem dele está sendo analisada nem o que acontece com ela, que é exatamente a situação do C03; o docente pode iniciar a análise sem ter avisado ninguém | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png); [página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png); [Minhas reuniões](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/Captura%20de%20tela%202026-11-22%20204016.png) | 3 | Acontece em toda reunião analisada e atinge todos os participantes, não só o usuário da tela; contraria RC04, RC09 e R04 e é o centro da H03. Não dei 4 porque não bloqueia a tarefa do docente e porque o fluxo de início ainda precisa ser conferido (ver limitação) | Antes da primeira estimativa, exigir o envio de um aviso aos participantes (no chat ou num indicador da chamada) com o que é captado, o que o docente recebe e o que não é feito com os dados, como previsto na CI01, na CI02 e no MoLIC M02; na prévia, mostrar também o que o participante vê |
+| V19 | H4 | Pop-up expandido; página "Extensão"; quadro de privacidade da página "Extensão" | Docente lê as mensagens de privacidade para entender, ou explicar aos participantes, o que é guardado | Cada tela diz uma coisa: "Nenhum nome de participante é coletado" (pop-up), "Nenhum nome de participante é salvo" (Extensão) e "As preferências salvas aqui não incluem vídeo, nome ou reação individual" (quadro de privacidade). "Coletado" e "salvo" não são a mesma promessa, e nenhuma delas diz onde a imagem é processada nem se o vídeo é guardado durante a análise | O docente não consegue dar ao participante uma resposta segura sobre o que acontece com a imagem dele | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png), rodapé; [página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png), subtítulo e quadro "Privacidade" | 2 | Aparece sempre que o assunto é privacidade, mas não impede nenhuma tarefa do docente; o impacto é na confiança e na explicação aos participantes | Escrever uma única mensagem de privacidade e repeti-la igual em todas as telas, dizendo o que é captado, onde é processado, o que é guardado e o que não é |
+| V20 | H8 | Pop-up expandido, "Fontes anônimas detectadas" | Docente abre o pop-up expandido durante a aula | O pop-up lista cada vídeo separadamente com estados técnicos ("Fonte 02 · APRESENTADOR DETECTADO", "Fonte 03 · IA ATIVA · 13.9 fps reais"). O docente não precisa dessa lista para a tarefa, e com poucas pessoas na chamada cada "fonte" corresponde a alguém que ele pode reconhecer | Informação de baixa utilidade compete com o estado do grupo e mostra a análise pessoa por pessoa, o oposto da agregação prometida (R04) | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png) | 2 | Fica no modo expandido, que não é o de uso contínuo, mas aparece em toda aula em que ele é aberto. Os termos técnicos já estão em V09; aqui o problema é a lista individual | Trocar a lista pela contagem "1 de 2 vídeos contribuindo · 1 ignorado (apresentador)", sem itens por fonte, e deixar os estados técnicos numa área de diagnóstico |
+| V21 | H1 | Página "Extensão", opção "Confiança do resultado"; prévia "Como ficará no Meet" | Docente configura o painel e deixa a confiança como "Ao passar o mouse" | Na prévia, o estado aparece como "Engajamento alto · 3 fontes", sem nenhuma indicação de incerteza; a confiança só aparece se o docente passar o mouse | O docente lê de relance uma estimativa como se fosse certeza, que é o risco da H02 | [Página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png), opção "Confiança do resultado" e prévia | 2 | Depende da configuração, mas, quando acontece, vale para todas as aulas seguintes; o print não mostra se essa é a configuração padrão, o que precisa ser conferido | Manter sempre visível uma indicação curta de confiança (por exemplo, "confiança baixa") junto do estado, permitindo esconder só o detalhe numérico |
+| V22 | H2 | Minhas reuniões, cabeçalho; dashboard geral, card "Participantes analisados" | Docente lê os totais gerais | "45 participantes" aparece ao lado de "43% engajamento médio", e o card "Participantes analisados: 45" explica, em letra menor, que é a "Soma das reuniões". A mesma pessoa que esteve em várias aulas conta várias vezes, e "analisados" é um termo de vigilância | O docente pode achar que analisou 45 pessoas diferentes; se repetir o termo para os alunos, aumenta o desconforto que a H03 prevê | [Minhas reuniões](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/Captura%20de%20tela%202026-11-22%20204016.png); [dashboard geral](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/explica%C3%A7%C3%B5es.png) | 1 | O card do dashboard já explica a soma, e o número não muda nenhuma decisão de condução da aula | Usar "participações somadas" ou "vídeos que contribuíram", e evitar "analisados" nos textos vistos pelo docente e pelos participantes |
+
+**Qualidade do relato:** V18 e V21 dependem de telas que não estão nos prints (início do acompanhamento e configuração padrão da extensão). Antes da consolidação, é preciso conferir no sistema se existe algum aviso aos participantes ao iniciar a análise (V18) e qual é o valor padrão da opção "Confiança do resultado" (V21).
+
+### 6.1 Boas práticas observadas
+
+| ID | H | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|---|
+| BP23 | H1 | O pop-up mostra a base da estimativa junto do estado ("Confiança: 33% · 1 fonte(s)") e quantas fontes foram analisadas e ignoradas | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png) | O docente vê em que se apoia o estado exibido, e não só o resultado |
+| BP24 | H2 | As preferências da extensão são descritas pelo efeito: "Mostra se o engajamento subiu, caiu ou ficou estável", "Exibe engajamento, tédio, confusão e frustração" | [Página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png) | O docente escolhe pelo que vai ver na aula, sem precisar saber como o sistema funciona |
+| BP25 | H3 | "Restaurar padrão" na página Extensão | [Página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png) | O docente pode experimentar configurações e voltar ao início sem refazer tudo |
+| BP26 | H4 | Engajamento, tédio, confusão e frustração aparecem com os mesmos nomes e na mesma ordem no pop-up, na prévia, na tabela de leituras e no gráfico | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png); [Leituras do intervalo](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/timeline.png); [gráfico](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/graf.png) | O que o docente aprende ao vivo vale para o resumo depois da aula (as cores, por outro lado, mudam; ver V17) |
+| BP27 | H5 | A imagem do apresentador é reconhecida e deixada fora da estimativa ("APRESENTADOR DETECTADO", "1 ignorada(s)") | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png) | Evita que o rosto do próprio docente seja somado ao estado do grupo |
+| BP28 | H6 | A prévia "Como ficará no Meet" muda na hora conforme as escolhas | [Página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png) | O docente vê o resultado da configuração em vez de ter que imaginar ou lembrar |
+| BP29 | H7 | Cada informação pode ficar fixa ou aparecer só ao passar o mouse | [Página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png) | Quem quer só uma olhada e quem quer detalhes usam o mesmo painel |
+| BP30 | H8 | A prévia compacta mostra só o estado, o número de fontes e as quatro reações | [Página Extensão](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/extensao.png), prévia | Pouca informação competindo com a aula, no modo usado durante a explicação |
+| BP31 | H9 | "Dê um nome para a visualização." ao tentar salvar sem nome | [Erro ao salvar sem nome](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/erro%20salvar%20sem%20nome.png) | A mensagem diz o que falta, em linguagem simples |
+| BP32 | H10 | Os ícones (i) do dashboard geral explicam a regra do alerta no próprio card e dizem que "o alerta apenas marca uma mudança que vale revisar" | [Dashboard geral](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/06_prototipos/explica%C3%A7%C3%B5es.png) | A ajuda aparece onde a dúvida surge e deixa claro que o alerta não manda o docente fazer nada |
+
+### Síntese individual — Gustavo Bertoluzzi
+
+Analisei as **10 heurísticas**. Encontrei **cinco violações** (V18 a V22) em quatro delas: H1, H2, H4 e H8. Registrei também **dez boas práticas** (BP23 a BP32), uma por heurística.
+
+| Severidade | Achados | Heurísticas |
+|---:|---|---|
+| 3 | V18 | H1 |
+| 2 | V19, V20, V21 | H4, H8, H1 |
+| 1 | V22 | H2 |
+
+O padrão que se repete é que **a privacidade é tratada como texto solto, e não como parte da interação**:
+
+- o participante não recebe nenhuma informação sobre a análise (V18);
+- as mensagens de privacidade não são as mesmas de uma tela para outra (V19);
+- o pop-up mostra a análise vídeo por vídeo, mesmo prometendo um resultado do grupo (V20);
+- o vocabulário de "participantes analisados" reforça a ideia de vigilância (V22).
+
+Também há um ponto ligado à H02: a confiança pode sumir da leitura de relance (V21).
+
+Pontos fortes a manter: a fonte do apresentador fica fora da estimativa (BP27), a prévia em tempo real (BP28), a base da estimativa junto do estado (BP23) e a explicação do alerta no próprio card (BP32).
+
+Plano de melhoria proposto:
+
+1. **Antes do teste com usuários (alta prioridade):** V18. O teste da Entrega 12 processa a imagem de pessoas na chamada, então o aviso aos participantes precisa existir ou ser feito pelo moderador, com o mesmo conteúdo, até a interface tê-lo.
+2. **Prioridade média:** V19 (uma única mensagem de privacidade), V20 (trocar a lista por fonte pela contagem) e V21 (confiança sempre visível de forma resumida).
+3. **Baixa prioridade:** V22 (trocar "participantes analisados").
+
+Na consolidação, V20 se aproxima de V09 (Isabella), porque as duas tratam do conteúdo técnico do pop-up expandido, e V18 e V20 se ligam a V11 (Isabella), porque todas tratam da privacidade quando há poucas fontes. As recomendações são propostas e ainda não foram implementadas.
 
 ---
 > Repita a seção para A02, A03... um avaliador por integrante.

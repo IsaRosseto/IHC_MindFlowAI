@@ -94,6 +94,29 @@ Instrumentos redigidos no [protocolo de avaliação](../instrumentos/protocolo_a
 - **Achados:** agrupar dúvidas e erros por tema, relacionando tarefa, tela/estado e evidência. Distinguir falas literais de paráfrases. Na inspeção, priorizar por severidade 0–4, considerando frequência, impacto e persistência, conforme Entrega 13.
 - **Apresentação:** separar piloto e aplicação final, identificar simulações e limitações da amostra de conveniência. Não inferir precisão da IA, benefício pedagógico ou memorização após intervalo. Registros individuais ficam restritos até o término da disciplina; publicar apenas síntese anonimizada, conforme Entrega 7.
 
+## G. Participantes cujas imagens são processadas e interface do participante
+
+**Contribuição de:** Gustavo Bertoluzzi Cardoso — 22.123.016-2 (persona P05, cenário C03, tarefa T04, CI02 e MoLIC M02)
+
+### G.1 O que fica fora desta etapa e por quê
+
+A tarefa T04 (participar da aula controlando a própria participação) **não entra** nas tarefas UT01 a UT03. A versão 2.0 não tem interface para o participante: nas telas inspecionadas, a indicação de que a análise está ativa fica só no painel do docente (Entrega 13, V18). Não há o que testar com alunos agora sem inventar uma tela que não existe. Por isso, as perguntas abaixo ficam **planejadas, mas não aplicadas** nesta etapa. Elas serão usadas quando os estados do M02 estiverem no protótipo (Entrega 11).
+
+| ID | Pergunta | Método | Métrica/evidência | Critério esperado |
+|---|---|---|---|---|
+| QA08 | O participante entende, só pelo aviso, o que é captado, o que o comunicador recebe e o que não é feito com os dados? | Teste com protótipo dos estados do M02, com alunos do perfil P05 (critérios da A03, Entrega 7), e pergunta de compreensão logo depois do aviso | Respostas corretas às três perguntas: "o que a câmera capta?", "o que a professora vê?", "o vídeo é guardado?" | Todos acertam as três sem ajuda; um erro sobre "o que a professora vê" conta como falha, porque é o medo central do C03 |
+| QA09 | O participante consegue escolher, e depois mudar, a forma de participar e reconhecer o próprio estado no indicador? | Mesmo teste, com uma tarefa neutra ("participe desta aula do jeito que preferir; depois de alguns minutos, a situação muda e você quer continuar aparecendo, mas sem ser analisado") | Conclusão, ajudas e leitura correta do indicador depois de cada mudança | Todos concluem sem ajuda e leem corretamente o estado depois de cada mudança; se a opção "câmera ligada sem análise" não existir no protótipo (H03), a segunda parte é registrada como não aplicada |
+
+### G.2 Cuidados com quem aparece na câmera em UT02
+
+UT02 processa a imagem de quem está na chamada, mesmo que essas pessoas não sejam avaliadas. Para que o teste não reproduza o problema que o C03 descreve, proponho os pontos abaixo, a confirmar pela equipe antes do piloto. Eles complementam a etapa **D — Decide how to deal with ethical issues**:
+
+- só têm a câmera analisada as pessoas de apoio que assinaram o consentimento antes da sessão; quem entrar sem consentimento fica com a câmera desligada ou a análise é pausada;
+- antes de iniciar o acompanhamento, o moderador lê para todos um aviso padronizado, com o mesmo conteúdo previsto no M02: o que a câmera capta, que o docente vê só o estado do grupo, que o vídeo não é guardado e que nenhum resultado individual é registrado. Enquanto a interface não tiver esse aviso (V18), ele é feito pelo moderador;
+- o docente avaliado pode deixar a própria câmera desligada sem perder a tarefa, como já previsto em C;
+- não se anota nenhuma reação atribuída a uma pessoa de apoio; o registro de UT02 trata só da interpretação feita pelo docente;
+- com menos de três pessoas de câmera ligada, o caso é tratado como "indisponibilidade", e não como estimativa do grupo, para não expor uma pessoa (mínimo provisório da Entrega 9; H05).
+
 ## Checklist
 
 - [ ] As seis etapas DECIDE foram contextualizadas, não apenas expandidas por sigla.

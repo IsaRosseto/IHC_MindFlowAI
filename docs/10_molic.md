@@ -101,6 +101,147 @@ Notas sobre o checklist do M01: as duas aberturas correspondem ao início dos ob
 
 > Repita M01, M02... para os demais integrantes.
 
+## M02 — Participar da aula sabendo o que acontece com a própria imagem e conferir depois o que foi processado
+
+**Autor(a):** Gustavo Bertoluzzi Cardoso — 22.123.016-2  
+**Cenário de interação de origem:** CI02 — Bruno entende o que acontece com a própria imagem e escolhe como participar da aula (Entrega 9), derivado do cenário de problema C03 — Aluno que não sabe como está sendo percebido numa aula online, relacionado à persona P05 — Bruno D. Roger.  
+**Objetivo(s):** O18 — Entender o que acontece com a própria imagem nesta aula; O19 — Tirar uma dúvida específica sobre os dados; O20 — Escolher como participar da aula; O21 — Conferir se está contribuindo para a análise agora; O22 — Mudar a participação durante a aula; O23 — Conferir depois da aula o que foi processado (Entrega 9, CI02).  
+**Tarefa(s) relacionada(s):** T04 — Participar de uma aula com o MindFlow ativo controlando a própria participação na análise (Entrega 5).  
+**Signos relevantes:** aviso aos participantes, análise da turma, participação na análise, informações completas, contato para dúvidas, resumo de transparência
+
+### Diagrama
+
+```mermaid
+flowchart TD
+    A((" ")):::abertura
+    P1[" "]:::proc
+    S1("<b>Entender o aviso de análise ativa</b><br/>――――――――――――――――<br/>ver aviso {<br/>d: o que a webcam capta,<br/>o que a professora recebe,<br/>o que não é feito com os dados }"):::cena
+    S2("<b>Consultar as informações completas</b><br/>――――――――――――――――<br/>ver perguntas {<br/>d: perguntas e respostas<br/>com as palavras do aluno }<br/>ver contato {<br/>d: contato para dúvidas }"):::cena
+    S3("<b>Escolher como participar</b><br/>――――――――――――――――<br/>ver opções {<br/>d: participar com câmera,<br/>câmera ligada sem participar da análise [H],<br/>câmera desligada }<br/>ver o que a professora recebe {<br/>d: só a turma, em todas as opções }"):::cena
+    P2[" "]:::proc
+    S5("<b>Entender por que você não está participando</b><br/>――――――――――――――――<br/>ver motivo {<br/>d: aparelho sem processamento local;<br/>imagem não analisada,<br/>mesmo com a câmera ligada }"):::alerta
+    S4("<b>Acompanhar a aula com a própria participação</b><br/>――――――――――――――――<br/>ver participação {<br/>d: participação na análise<br/>(participando / análise pausada / não participando) }<br/>ver análise da turma {<br/>d: ativa / pausada pela professora }"):::cena
+    UA(["acesso ubíquo"]):::ubiquo
+    P3[" "]:::proc
+    P4[" "]:::proc
+    UB(["acesso ubíquo"]):::ubiquo
+    P5[" "]:::proc
+    BAR["gcc gcc gcc gcc gcc gcc gcc gcc gcc gcc"]:::barra
+    E(((" "))):::fim
+
+    A2((" ")):::abertura
+    P6[" "]:::proc
+    S6("<b>Conferir o que foi processado na aula</b><br/>――――――――――――――――<br/>ver contribuição {<br/>d: tempo em que a imagem contribuiu<br/>para a estimativa da turma }<br/>ver o que não foi guardado {<br/>d: vídeo não guardado,<br/>nenhum resultado individual }"):::cena
+    S7("<b>Entender por que não há o que conferir</b><br/>――――――――――――――――<br/>ver motivo {<br/>d: câmera desligada, participação pausada,<br/>aparelho sem análise ou<br/>acompanhamento não ativado }"):::alerta
+    BAR2["gcc gcc gcc gcc gcc gcc gcc gcc gcc gcc"]:::barra
+    E2(((" "))):::fim
+
+    A -->|"u: entrar na aula<br/>gco: Participar da aula sabendo o que<br/>acontece com a própria imagem"| P1
+    P1 -->|"precond: acompanhamento ativado pela professora<br/>d: a análise da turma está ativa"| S1
+    S1 -->|"u: ler mais"| S2
+    S2 -->|"precond: veio do aviso<br/>u: voltar"| S1
+    S1 -->|"u: escolher como participar"| S3
+    S1 -->|"u: fechar o aviso"| S4
+    S3 -->|"u: participar com câmera<br/>ou u: câmera ligada, sem participar da análise [H]<br/>ou u: manter a câmera desligada"| P2
+    P2 -->|"d: participação aplicada"| S4
+    P2 -.->|"[SR] d: este aparelho não faz a análise"| S5
+    S5 -.->|"u: seguir a aula"| S4
+    UA -->|"u: o que é isso? (indicador)"| S1
+    S4 -->|"u: mudar como participo"| S3
+    S4 -->|"u: pausar ou retomar minha participação [H]"| P3
+    S4 -->|"precond: câmera desligada ou<br/>religada na plataforma"| P3
+    P3 -->|"d: participação atualizada<br/>(a câmera continua como estava /<br/>a análise segue a escolha anterior)"| S4
+    S4 -->|"precond: professora pausou ou<br/>retomou o acompanhamento"| P4
+    P4 -->|"d: análise da turma pausada<br/>pela professora / retomada"| S4
+    S4 -->|"precond: professora encerrou a aula"| P5
+    UB -->|"u: sair da aula"| P5
+    P5 -->|"d: a análise terminou junto com a aula"| BAR
+    BAR -->|"gcc: Participar da aula sabendo o que<br/>acontece com a própria imagem"| E
+
+    A2 -->|"u: abrir o resumo de transparência da aula [H]<br/>gco: Conferir o que foi processado na aula"| P6
+    P6 -->|"precond: imagem analisada em algum momento<br/>d: resumo pronto"| S6
+    P6 -.->|"[SR] d: nesta aula sua imagem<br/>não foi analisada"| S7
+    S6 -->|"u: ainda tenho dúvida"| S2
+    S2 -->|"precond: veio do resumo<br/>u: voltar"| S6
+    S6 -->|"u: concluir"| BAR2
+    S7 -->|"u: concluir"| BAR2
+    BAR2 -->|"gcc: Conferir o que foi processado na aula"| E2
+
+    classDef abertura fill:#111111,stroke:#111111
+    classDef fim fill:#111111,stroke:#111111,stroke-width:3px
+    classDef proc fill:#111111,stroke:#111111,color:#111111
+    classDef cena fill:#ffffff,stroke:#111111,stroke-width:1.5px,color:#111111
+    classDef alerta fill:#ffffff,stroke:#111111,stroke-width:1.5px,stroke-dasharray:6 4,color:#111111
+    classDef ubiquo fill:#c4c4c4,stroke:#555555,color:#c4c4c4
+    classDef barra fill:#111111,stroke:#111111,color:#111111,font-size:6px
+```
+
+Notação de Barbosa e Silva (2010), conforme o material da disciplina, na mesma representação usada no M01 e no M05:
+
+| Elemento | Representação no diagrama | No M02 |
+|---|---|---|
+| Ponto de abertura | círculo preto, com a fala do usuário e a abertura da conversa sobre a meta (`gco:`) | `u: entrar na aula` / `gco: Participar da aula sabendo o que acontece com a própria imagem`; segunda abertura, depois da aula: `u: abrir o resumo de transparência da aula` / `gco: Conferir o que foi processado na aula` |
+| Cena | retângulo de cantos arredondados; tópico em cima e diálogos embaixo, no formato `diálogo { d: signos }` | cinco cenas, como "Entender o aviso de análise ativa" e "Escolher como participar" |
+| Cena de alerta ou captura de erro | cena com borda tracejada | "Entender por que você não está participando" e "Entender por que não há o que conferir" |
+| Processo do sistema | retângulo preto pequeno, sem texto; o sistema decide o rumo da conversa, e as falas ficam nas saídas | verificar se o acompanhamento está ativo, aplicar a participação, atualizar a participação, aplicar a pausa da professora, encerrar a análise e montar o resumo |
+| Fala de transição | seta com `u:` (usuário) ou `d:` (preposto do designer); `precond:` indica a condição | `u: escolher como participar`, `precond: câmera desligada ou religada na plataforma`, `precond: professora encerrou a aula` |
+| Ruptura e recuperação | seta tracejada; `[SR]` marca a fala do preposto que leva à recuperação da ruptura | `[SR] d: este aparelho não faz a análise`, `[SR] d: nesta aula sua imagem não foi analisada` |
+| Acesso ubíquo | retângulo cinza sem texto, alcançável de qualquer cena; pode ser repetido no diagrama | `u: o que é isso? (indicador)` e `u: sair da aula` |
+| Fechamento da conversa | barra preta com `gcc:` e ponto de encerramento (círculo com centro preenchido) | `gcc: Participar da aula sabendo o que acontece com a própria imagem` e `gcc: Conferir o que foi processado na aula` |
+
+### Leitura do diagrama
+
+O M02 é a conversa do **participante**, e não do comunicador. Bruno nunca vê o estado da turma nem o Semáforo (RC09): o preposto fala com ele só sobre o que acontece com a imagem dele e sobre a escolha de como participar. O M02 cobre os seis objetivos da CI02 em duas conversas. A primeira acontece **durante a aula** (O18 a O22): Bruno entende o aviso, tira dúvidas, escolhe como participar, confere o indicador e muda a participação quando a situação muda. A segunda acontece **depois da aula** (O23): Bruno abre o resumo de transparência. A decisão de ligar a câmera e de participar da análise fica fora da conversa: o preposto mostra o que acontece em cada opção, e nenhuma fala `d:` diz a Bruno qual escolher.
+
+#### Caminho principal
+
+1. **Abertura:** Bruno diz `u: entrar na aula`, o que abre a conversa sobre a meta (`gco: Participar da aula sabendo o que acontece com a própria imagem`). O sistema verifica se a professora ativou o acompanhamento.
+2. Com `precond: acompanhamento ativado pela professora`, o preposto diz `d: a análise da turma está ativa` e a conversa vai para a cena **Entender o aviso de análise ativa**: o que a webcam capta, o que a professora recebe e o que não é feito com os dados (O18).
+3. Com `u: escolher como participar`, a conversa vai para **Escolher como participar**, com as três opções e a informação de que, em todas elas, a professora recebe só a turma. Bruno escolhe uma opção (O20), o sistema aplica a escolha e responde `d: participação aplicada`.
+4. A conversa chega a **Acompanhar a aula com a própria participação**, com o indicador da participação na análise e o estado da análise da turma (O21). Bruno acompanha a explicação, e o indicador fica sempre visível.
+5. Com `precond: professora encerrou a aula`, o sistema encerra a análise e diz `d: a análise terminou junto com a aula`. A conversa é fechada (`gcc: Participar da aula sabendo o que acontece com a própria imagem`).
+6. **Segunda conversa (O23):** depois da aula, Bruno diz `u: abrir o resumo de transparência da aula` (`gco: Conferir o que foi processado na aula`). Com `precond: imagem analisada em algum momento`, o preposto diz `d: resumo pronto` e a conversa vai para **Conferir o que foi processado na aula**: por quanto tempo a imagem contribuiu para a estimativa da turma e o que não foi guardado. Com `u: concluir`, a conversa é fechada (`gcc: Conferir o que foi processado na aula`).
+
+Caminhos alternativos:
+
+- Em **Entender o aviso de análise ativa**, `u: ler mais` leva a **Consultar as informações completas**, com as perguntas e respostas e o contato para dúvidas (O19). `precond: veio do aviso / u: voltar` retorna ao aviso. Na segunda conversa, `u: ainda tenho dúvida` leva à mesma cena, e `precond: veio do resumo / u: voltar` retorna ao resumo.
+- Em **Entender o aviso de análise ativa**, `u: fechar o aviso` leva direto ao acompanhamento. Se Bruno ainda não escolheu, o indicador mostra "não participando", que é o valor padrão do signo, e a imagem dele não é analisada.
+- O acesso ubíquo `u: o que é isso? (indicador)` reabre o aviso em qualquer momento da aula, para quem entrou atrasado ou fechou o aviso sem ler (T04, HTA 1.2).
+- Em **Acompanhar a aula com a própria participação**, `u: mudar como participo` volta para a escolha. `u: pausar ou retomar minha participação [H]` muda só a análise, e o preposto confirma que a câmera continua como estava (O22).
+- Quando Bruno desliga ou religa a câmera no Teams, a ação acontece fora do MindFlow. Por isso, ela entra no processo como `precond: câmera desligada ou religada na plataforma`, sem fala inventada. O preposto informa como ficou a participação (por exemplo, câmera religada com a análise ainda pausada, como ele deixou).
+- Com `precond: professora pausou ou retomou o acompanhamento`, o preposto diz `d: análise da turma pausada pela professora` ou `d: retomada`, e a conversa volta ao acompanhamento sem Bruno fazer nada (ligação com O16 do M05).
+- O acesso ubíquo `u: sair da aula` também encerra a análise e fecha a primeira conversa.
+
+#### Alternativas e rupturas
+
+| Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
+|---|---|---|---|
+| Bruno entra atrasado ou fecha o aviso sem ler | Cena "Entender o aviso de análise ativa" | O indicador continua visível, mostrando "não participando" até ele escolher | Acesso ubíquo `u: o que é isso? (indicador)`, que reabre o aviso a qualquer momento |
+| A dúvida não é respondida pelo aviso nem pelas perguntas | Cena "Consultar as informações completas" | O contato para dúvidas aparece na própria cena | Bruno usa o contato fora do sistema; `u: voltar` retorna ao aviso ou ao resumo |
+| Aparelho sem processamento local (por exemplo, o celular) **[H]** | Processo que aplica a participação, depois da escolha | `[SR] d: este aparelho não faz a análise` e a cena de alerta "Entender por que você não está participando" | `u: seguir a aula`: Bruno continua a aula com a participação "não participando", e a professora vê só o número de participantes contribuindo, sem saber quem está fora (R04) |
+| Bruno desliga ou religa a câmera na plataforma | Cena "Acompanhar a aula com a própria participação" | `d: participação atualizada`, dizendo se a análise acompanhou a câmera ou manteve a escolha anterior | Se não era o que queria, `u: mudar como participo` ou `u: pausar ou retomar minha participação` |
+| A professora pausa o acompanhamento | Cena "Acompanhar a aula com a própria participação" | `d: análise da turma pausada pela professora` no indicador | Nenhuma ação é necessária; quando ela retoma, o indicador volta ao estado anterior da participação de Bruno |
+| A aula termina com a análise ainda ativa | Processo de encerramento | `d: a análise terminou junto com a aula` | A análise não continua depois da aula (T04, CTT 3 `[>`); a conversa é fechada |
+| Resumo de uma aula em que a imagem não foi analisada | Processo que monta o resumo | `[SR] d: nesta aula sua imagem não foi analisada` e a cena de alerta "Entender por que não há o que conferir", com o motivo | `u: concluir`; o resumo vazio é explicado, e não aparece como erro |
+| A opção "câmera ligada sem participar da análise" não se confirmar no grupo focal I03 (H03) | Cena "Escolher como participar" e processo de atualização | — | Decisão de projeto, não de interação: sem essa opção, saem do diagrama a segunda escolha e a fala `u: pausar ou retomar minha participação`, e a única forma de não ser analisado volta a ser desligar a câmera |
+
+### Checklist específico de modelagem
+
+- [x] Existe **ponto de abertura** coerente com o início do objetivo.
+- [x] As **cenas de conversa** representam tópicos/assuntos, não nomes de páginas apenas.
+- [x] As transições/falas deixam claro o que o usuário ou o sistema comunica.
+- [x] Há **ponto(s) de encerramento** para objetivos concluídos/abandonados quando aplicável.
+- [x] Processamentos do sistema estão representados conforme a notação adotada em aula, sem “inventar” fala do usuário.
+- [x] Rupturas (breakdowns) relevantes têm feedback e caminho de recuperação, não becos sem saída.
+- [x] Acessos ubíquos/atalhos só aparecem quando semanticamente justificáveis.
+- [x] O diagrama cobre caminhos alternativos importantes, e não apenas o “happy path”.
+- [x] Nomes de objetivos, tópicos e signos são coerentes com a Entrega 9.
+- [x] O diagrama é legível em tamanho normal no GitHub.
+- [x] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo.
+- [x] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes.
+
+Notas sobre o checklist do M02: as duas aberturas correspondem ao início de O18 (entrar na aula) e de O23 (abrir o resumo depois da aula); os encerramentos são alcançados pelo fim da aula, por `u: sair da aula` e por `u: concluir`; mudar a câmera na plataforma, pausar pela professora e encerrar a aula entram nos processos por `precond:`, porque são ações feitas fora da interface de Bruno; os acessos ubíquos são só reabrir o aviso pelo indicador e sair da aula, que Bruno pode precisar em qualquer momento; a análise da imagem aparece como um único processamento, sem detalhar o modelo; e o resumo de transparência (histórico do participante) tem ruptura própria para a aula em que a imagem não foi analisada. As falas marcadas com **[H]** dependem da H03 e seguem as tarefas [H] da T04.
+
 ## Consolidação da equipe
 
 ### Cobertura dos objetivos
@@ -114,6 +255,12 @@ Notas sobre o checklist do M01: as duas aberturas correspondem ao início dos ob
 | O15 Marcar um momento para revisar depois | M05 | Liga com a revisão de aula concluída (T01/T02) | Conferir no MoLIC do Dashboard se o momento marcado aparece |
 | O16 Pausar ou retomar o acompanhamento | M05 | Liga com a interface do participante (T04): o aviso muda quando pausa | Conferir no MoLIC do participante |
 | O17 Encerrar a aula com o resumo salvo | M05 | — | Manter |
+| O18 Entender o que acontece com a própria imagem nesta aula | M02 | O aviso é o mesmo gerado quando o comunicador ativa o acompanhamento (O01, O11) | Manter; usar o mesmo texto de aviso no M01, no M02 e no M05 |
+| O19 Tirar uma dúvida específica sobre os dados | M02 | — | Manter |
+| O20 Escolher como participar da aula | M02 | A opção de câmera ligada sem análise depende da H03 | Manter como [H] até o resultado do I03 |
+| O21 Conferir se está contribuindo para a análise agora | M02 | A escolha individual só aparece para o comunicador como número em "participantes contribuindo" | Manter |
+| O22 Mudar a participação durante a aula | M02 | Não é a mesma pausa de O16: O16 pausa a análise da turma inteira, e O22 pausa só a participação de quem pediu | Manter os dois, com rótulos diferentes ("pausada pela professora" × "sua participação pausada") |
+| O23 Conferir depois da aula o que foi processado | M02 | Não se confunde com o resumo da aula do Dashboard (O17), que é só do comunicador | Manter como [H] até o resultado do I03 |
 
 ### Preparação para o Figma
 
@@ -129,6 +276,16 @@ Estados necessários a partir do M05:
 - acompanhamento pausado, com retomar e encerrar;
 - confirmação de resumo salvo e aviso de falha ao salvar, com tentar novamente / tentar mais tarde;
 - aviso exibido aos alunos quando o acompanhamento é ativado ou pausado (ligação com o MoLIC do participante).
+
+Estados necessários a partir do M02 (interface do participante):
+
+- aviso de análise ativa ao entrar na aula, com os três blocos (o que a webcam capta, o que a professora recebe, o que não é feito com os dados) e as ações "ler mais", "escolher como participar" e "fechar";
+- indicador pequeno e permanente ao lado dos controles da chamada, nos estados "participando", "câmera ligada · análise pausada", "não participando", "análise da turma pausada pela professora" e "análise encerrada", que reabre o aviso com um clique;
+- informações completas em perguntas e respostas, com o contato para dúvidas;
+- escolha da participação com as três opções, sem nenhuma pré-selecionada, e a frase de que a professora vê só a turma em todas elas;
+- confirmação depois de mudar a câmera na plataforma, dizendo se a análise acompanhou ou manteve a escolha anterior;
+- aviso de aparelho sem processamento local, com "seguir a aula";
+- resumo de transparência da aula e o estado "nesta aula sua imagem não foi analisada", com o motivo.
 
 ## Erros frequentes a evitar
 
