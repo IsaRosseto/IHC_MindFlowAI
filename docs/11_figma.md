@@ -1,7 +1,7 @@
 # Entrega 11 — Protótipo no Figma
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** 🟨 em andamento  
+**Data:** 25/11/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 protótipo integrado por equipe, com identificação dos responsáveis por fluxo.
 
 ## Objetivo da atividade
@@ -12,13 +12,11 @@ O protótipo do MindFlow AI representa a interação do instrutor corporativo co
 
 A interface apresenta os indicadores de engajamento, tédio, confusão e frustração. O instrutor pode visualizar os resultados resumidos ou expandir o pop-up para acompanhar a evolução dos indicadores em um gráfico de linhas.
 
-## Link do Figma
+## Link do protótipo
 
-**Protótipo:** https://mindflowiaa.netlify.app/
-**Arquivo editável:** {{URL_DO_FIGMA}}  
-**Última verificação de permissão:** {{dd/mm/aaaa}}
-
-> Os links serão preenchidos após a disponibilização do protótipo no Figma. O acesso deverá ser testado em janela anônima para garantir que o avaliador consiga visualizar as telas sem solicitar permissão.
+**Protótipo navegável:** a equipe materializou a interface diretamente no sistema publicado, versão 2.0: [mindflowiaa.netlify.app](https://mindflowiaa.netlify.app/). As telas do site e da extensão estão documentadas abaixo por prints.
+**Arquivo editável do Figma:** não há link de Figma registrado pela equipe no repositório; os estados marcados como "proposto" ainda precisam ser desenhados.
+**Última verificação de acesso:** 25/11/2026 — a página pública abre sem login; as telas internas exigem conta.
 
 ## Cobertura MoLIC → Figma
 
@@ -60,6 +58,48 @@ O fluxo M05 corresponde ao acompanhamento da turma durante a explicação de um 
 | M05 | O17 — Encerrar a aula com o resumo salvo | `F01/F02/F07 → F08` | `F08`, estado de falha: tentar novamente ou tentar mais tarde | Isabella Rosseto |
 
 **Observação:** F01 e F02 existem nas imagens do sistema. F05 a F08 são estados propostos para cobrir o M05 e ainda precisam ser desenhados no Figma. As decisões de F01, F04 e F07 também respondem a problemas da minha avaliação heurística (Entrega 13): V10 (estado da turma em primeiro plano no modo compacto), V11 (mínimo de participantes) e V16 (pausar pelo pop-up).
+
+---
+
+O fluxo M03 corresponde à consulta e à personalização do resumo de uma aula concluída, relacionado à persona P01 — Karol Schrödinger. Ele usa as telas do site (F09 a F11).
+
+**Responsável:** Kayky Pires — 22.222.040-2
+**Cenário de origem:** CI03 (Entrega 9)
+**MoLIC:** M03 — Consultar e personalizar o resumo de uma aula concluída (Entrega 10).
+
+| MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
+|---|---|---|---|---|
+| M03 — Selecionar, consultar e avaliar o resumo | O03 — Analisar os resultados de uma aula concluída. | F09 — Minhas Reuniões → Ver resumo → F10 — Resumo da Reunião. | F10V documenta o resumo sem leituras e as explicações dos cards. O usuário pode retornar a Minhas Reuniões. | Kayky Pires — 22.222.040-2 |
+| M03 — Personalizar visualização | O01 — Personalizar a visualização do resumo da reunião. | F10 → Organizar dashboard → F11 — Editor de personalização → Salvar visualização. | F11E apresenta a validação do nome não preenchido. O cancelamento retorna diretamente ao resumo. F11C registra a confirmação de exclusão de uma visualização já salva. | Kayky Pires — 22.222.040-2 |
+| M03 — Conferir resumo personalizado | O05 — Avaliar a adequação da visualização personalizada. | Após o salvamento, F10S apresenta a visualização selecionada e a confirmação de sucesso. Organizar dashboard permite acessar novamente o editor F11. | F10S documenta o retorno de sucesso. A reunião utilizada no print permanece sem leituras, independentemente do salvamento da configuração. | Kayky Pires — 22.222.040-2 |
+
+---
+
+### Cobertura consolidada dos fluxos M01 e M02
+
+Os fluxos M01 e M02 foram mapeados na consolidação da equipe, a partir dos estados listados nos próprios MoLICs (Entrega 10). O M01 reaproveita as telas da extensão e do resumo; o M02 precisa das telas do participante, propostas como F13 a F17.
+
+| MoLIC | Objetivo consolidado | Fluxo/telas | Estados de erro/recuperação | Autor do MoLIC |
+|---|---|---|---|---|
+| M01 | OC01 — Ativar o acompanhamento com aviso a participantes de outra empresa | `F00 → F03 → F01`; os participantes recebem `F13` | `F04` (poucas câmeras) | Matheus Ferreira de Freitas |
+| M01 | OC02 — Perceber o estado do grupo enquanto apresenta | `F01`, com `F02` para detalhes | `F04` (sinal insuficiente) | Matheus Ferreira de Freitas |
+| M01 | OC03/OC04 — Verificar a reação depois da pílula de dúvida e quanto confiar nela | `F01 → F05 → F06` | Dispensar o aviso e voltar para `F01` | Matheus Ferreira de Freitas |
+| M01 | OC06 — Marcar o momento e anotar um ponto para o follow-up | `F05 → F12 → F01` | — | Matheus Ferreira de Freitas |
+| M01 | OC08 — Encerrar a reunião com o resumo salvo | `F01/F02 → F08` | `F08`, falha ao salvar | Matheus Ferreira de Freitas |
+| M01 | OC09/OC12 — Revisar a reunião e registrar o retorno do cliente | `F09 → F10`, com os momentos marcados na linha do tempo | `F10V` (sem leituras) | Matheus Ferreira de Freitas |
+| M02 | OC13 — Entender o que acontece com a própria imagem | `F13 → F15` | — | Gustavo Bertoluzzi Cardoso |
+| M02 | OC14 — Escolher e mudar como participar | `F13 → F16 → F14` | `F14`, estado "aparelho sem processamento local" | Gustavo Bertoluzzi Cardoso |
+| M02 | OC15 — Conferir a própria participação, durante e depois | `F14` durante a aula; `F17` depois | `F17`, estado "nesta aula sua imagem não foi analisada" | Gustavo Bertoluzzi Cardoso |
+
+### Resumo da cobertura
+
+| MoLIC | Autor | Telas usadas | Situação |
+|---|---|---|---|
+| M01 | Matheus | F00–F06, F08–F10, F12, F13 | mapeado na consolidação |
+| M02 | Gustavo | F13–F17 | mapeado na consolidação; telas propostas |
+| M03 | Kayky | F09–F11 (com variantes F10V, F10S, F11E, F11C) | mapeado pelo autor; telas existentes no sistema |
+| M04 | Rafael | F00–F04 | mapeado pelo autor |
+| M05 | Isabella | F00–F08 | mapeado pela autora |
 
 ---
 
@@ -284,6 +324,152 @@ O gráfico permite observar a evolução dos quatro estados ao longo do período
 
 ---
 
+### F09: M03 — Minhas Reuniões
+
+![F09 — Minhas Reuniões e acesso ao resumo](../assets/11_figma/ver%20resumo.png)
+
+**Objetivo do usuário:** localizar uma reunião concluída e acessar seus resultados pelo botão **Ver resumo**.  
+**Signos principais:** título, data, duração, quantidade de participantes, situação da reunião e indicador de engajamento.  
+**Origem no MoLIC:** contexto de acesso anterior ao ponto de abertura do M03, correspondente à solicitação `u: abrir resumo da reunião`.
+
+### F10: M03 — Resumo da Reunião: estado sem dados (F10V)
+
+![F10V — Resumo sem dados, explicação de card e acesso à personalização](../assets/11_figma/resumo%20inicial%20e%20organizar%20dash.png)
+
+**Objetivo do usuário:** consultar os resultados da reunião, compreender os indicadores e identificar a possibilidade de personalizar sua apresentação.  
+**Signos principais:** título e data da reunião, participantes, indicadores, explicações dos cards, disponibilidade de dados e visualização selecionada.  
+**Origem no MoLIC:** M03 — cena **Consultar resumo da reunião**, relacionada a O03.
+
+O registro apresenta as mensagens **“Sem reações neste intervalo”** e **“Sem leituras para esta reunião”**, além da explicação aberta do card de participantes. O botão **Organizar dashboard** permite iniciar a personalização.
+
+### F11: M03 — Personalizar visualização
+
+![F11 — Editor de organização do dashboard](../assets/11_figma/organiza%C3%A7%C3%A3o%20do%20dash.png)
+
+**Objetivo do usuário:** escolher os blocos apresentados no resumo, definir sua organização e atribuir um nome à visualização.  
+**Signos principais:** nome da visualização, blocos disponíveis, seleção de blocos e ordem de apresentação.  
+**Origem no MoLIC:** M03 — cena **Personalizar visualização**, relacionada a O01.
+
+O editor apresenta caixas de seleção, controles de ordenação e orientações para arrastar e redimensionar os blocos. As ações disponíveis incluem **Cancelar** e **Salvar visualização**.
+
+### F11E: M03 — Validação: tentativa de salvar sem nome
+
+![F11E — Mensagem de validação ao salvar sem nome](../assets/11_figma/erro%20salvar%20sem%20nome.png)
+
+**Objetivo do usuário:** identificar o dado necessário para concluir o salvamento e corrigir a entrada.  
+**Signos principais:** nome da visualização, seleção de blocos e mensagem **“Dê um nome para a visualização.”**  
+**Origem no MoLIC:** detalhamento da validação associada à cena **Personalizar visualização** e à solicitação `u: salvar alterações`, a incorporar na revisão do M03.
+
+Após a tentativa de salvamento sem nome, o editor permanece aberto com a seleção visível. A recuperação consiste em preencher o nome e solicitar novamente **Salvar visualização**. Esse estado representa um erro de entrada, distinto de uma falha técnica no salvamento.
+
+### F10S: M03 — Visualização salva e aplicada
+
+![F10S — Resumo após o salvamento da visualização](../assets/11_figma/visualiza%C3%A7%C3%A3o%20salva.png)
+
+**Objetivo do usuário:** reconhecer que a visualização foi salva e conferir a configuração apresentada no resumo.  
+**Signos principais:** nome da visualização selecionada, blocos apresentados e mensagem **“Visualização ‘dsa’ salva na sua conta.”**  
+**Origem no MoLIC:** M03 — retorno de sucesso do processo de salvamento e cena **Conferir resumo personalizado**, relacionada a O01 e O05.
+
+O editor está fechado, a visualização nomeada aparece selecionada e a mensagem confirma o salvamento. O usuário pode solicitar novos ajustes pelo botão **Organizar dashboard**. A reunião utilizada neste registro permanece sem leituras; salvar a configuração não altera a disponibilidade dos dados.
+
+### F11C: M03 — Confirmação de exclusão de uma visualização salva
+
+![F11C — Confirmação antes de excluir uma visualização salva](../assets/11_figma/info%20excluir%20visualiza%C3%A7%C3%A3o.png)
+
+**Objetivo do usuário:** confirmar ou cancelar a exclusão de uma visualização salva.  
+**Signos principais:** nome da visualização, mensagem **“Excluir a visualização ‘dsa’?”** e opções **OK** e **Cancelar**.  
+**Origem no MoLIC:** ação adicional de gerenciamento de visualizações, cuja conversa de exclusão ainda precisa ser incorporada ao modelo de interação.
+
+A confirmação é apresentada antes da exclusão. O registro evidencia a solicitação de confirmação, mas não apresenta o resultado após sua aceitação.
+
+---
+
+### F12 — Anotar um momento marcado
+
+**Origem:** M01 (consolidação da equipe)
+
+**Objetivo do usuário:** registrar, sem sair da apresentação, um ponto para retomar depois (por exemplo, no follow-up com o cliente).
+
+**Descrição:** campo curto que se abre depois de "marcar este momento" (F05), com o minuto da sessão já preenchido e um texto opcional.
+
+**Signos principais:** momento marcado; anotação.
+
+**Interações:** `u: salvar anotação` → confirmação "Anotação salva no momento marcado" → F01; `u: pular` → F01.
+
+**Estado:** proposto para o Figma.
+
+### F13 — Aviso de análise ativa para o participante
+
+**Origem:** M02 (consolidação da equipe)
+
+**Objetivo do usuário:** saber, ao entrar na aula, que a análise está ativa e o que ela faz.
+
+**Descrição:** aviso com três blocos — o que a webcam capta, o que o comunicador recebe e o que não é feito com os dados — e as ações "ler mais", "escolher como participar" e "fechar". O texto é o mesmo enviado quando o comunicador ativa o acompanhamento (OC01).
+
+**Signos principais:** aviso aos participantes; análise da turma.
+
+**Interações:** `u: ler mais` → F15; `u: escolher como participar` → F16; `u: fechar` → F14.
+
+**Estado:** proposto para o Figma.
+
+### F14 — Indicador de participação
+
+**Origem:** M02 (consolidação da equipe)
+
+**Objetivo do usuário:** conferir, a qualquer momento, se está contribuindo para a análise.
+
+**Descrição:** indicador pequeno e permanente ao lado dos controles da chamada, nos estados "participando", "câmera ligada · análise pausada", "não participando", "análise da turma pausada pela professora", "análise encerrada" e "aparelho sem processamento local".
+
+**Signos principais:** participação na análise; análise da turma.
+
+**Interações:** `u: abrir` → F13 (reabre o aviso) ou F16 (mudar a participação).
+
+**Estado:** proposto para o Figma.
+
+### F15 — Informações completas sobre os dados
+
+**Origem:** M02 (consolidação da equipe)
+
+**Objetivo do usuário:** tirar uma dúvida específica sobre os dados.
+
+**Descrição:** perguntas e respostas curtas e o contato para dúvidas que não forem respondidas.
+
+**Signos principais:** informações completas; contato para dúvidas.
+
+**Interações:** `u: voltar` → F13 ou F14.
+
+**Estado:** proposto para o Figma.
+
+### F16 — Escolha da participação
+
+**Origem:** M02 (consolidação da equipe)
+
+**Objetivo do usuário:** escolher como participar da análise.
+
+**Descrição:** três opções sem nenhuma pré-selecionada — participar com câmera, câmera ligada sem participar da análise [H] e câmera desligada — com a frase de que o comunicador vê só o resultado da turma em todas elas.
+
+**Signos principais:** participação na análise.
+
+**Interações:** `u: confirmar` → F14 com o novo estado e a confirmação do que mudou.
+
+**Estado:** proposto para o Figma; a segunda opção depende de H03.
+
+### F17 — Resumo de transparência da aula
+
+**Origem:** M02 (consolidação da equipe)
+
+**Objetivo do usuário:** conferir depois da aula o que foi processado e que nada foi registrado sobre ele.
+
+**Descrição:** resumo do que foi e do que não foi processado na aula. Quando a imagem não foi analisada, mostra o estado "nesta aula sua imagem não foi analisada" e o motivo.
+
+**Signos principais:** resumo de transparência.
+
+**Estado:** proposto para o Figma; depende de H03.
+
+---
+
+> Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.
+
 ## Sistema visual e consistência
 
 O sistema visual segue a identidade apresentada nas interfaces da extensão MindFlow AI, priorizando uma visualização compacta e objetiva para utilização durante videoconferências.
@@ -308,80 +494,7 @@ O sistema visual segue a identidade apresentada nas interfaces da extensão Mind
 - A ausência de dados não deve ser apresentada como um indicador com valor zero.
 - Os indicadores são estimativas do estado do grupo, não avaliações individuais de aprendizagem.
 
----
-
-## Cobertura MoLIC → Figma
-
-| MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
-|---|---|---|---|---|
-| m03 — Selecionar, consultar e avaliar o resumo | O03 — Analisar os resultados de uma aula concluída. | F01 — Minhas Reuniões → Ver resumo → F02 — Resumo da Reunião. | F02V documenta o resumo sem leituras e as explicações dos cards. O usuário pode retornar a Minhas Reuniões. | Kayky Pires — 22.222.040-2 |
-| m03 — Personalizar visualização | O01 — Personalizar a visualização do resumo da reunião. | F02 → Organizar dashboard → F03 — Editor de personalização → Salvar visualização. | F03E apresenta a validação do nome não preenchido. O cancelamento retorna diretamente ao resumo. F03C registra a confirmação de exclusão de uma visualização já salva. | Kayky Pires — 22.222.040-2 |
-| m03 — Conferir resumo personalizado | O05 — Avaliar a adequação da visualização personalizada. | Após o salvamento, F02S apresenta a visualização selecionada e a confirmação de sucesso. Organizar dashboard permite acessar novamente o editor F03. | F02S documenta o retorno de sucesso. A reunião utilizada no print permanece sem leituras, independentemente do salvamento da configuração. | Kayky Pires — 22.222.040-2 |
-
-
-## Catálogo de telas/estados
-
-### F01: m03 — Minhas Reuniões
-
-![F01 — Minhas Reuniões e acesso ao resumo](../assets/11_figma/ver_resumo.png)
-
-**Objetivo do usuário:** localizar uma reunião concluída e acessar seus resultados pelo botão **Ver resumo**.  
-**Signos principais:** título, data, duração, quantidade de participantes, situação da reunião e indicador de engajamento.  
-**Origem no MoLIC:** contexto de acesso anterior ao ponto de abertura do m03, correspondente à solicitação `u: abrir resumo da reunião`.
-
-### F02: m03 — Resumo da Reunião: estado sem dados (F02V)
-
-![F02V — Resumo sem dados, explicação de card e acesso à personalização](../assets/11_figma/resumo%20inicial%20e%20organizar%20dash.png)
-
-**Objetivo do usuário:** consultar os resultados da reunião, compreender os indicadores e identificar a possibilidade de personalizar sua apresentação.  
-**Signos principais:** título e data da reunião, participantes, indicadores, explicações dos cards, disponibilidade de dados e visualização selecionada.  
-**Origem no MoLIC:** m03 — cena **Consultar resumo da reunião**, relacionada a O03.
-
-O registro apresenta as mensagens **“Sem reações neste intervalo”** e **“Sem leituras para esta reunião”**, além da explicação aberta do card de participantes. O botão **Organizar dashboard** permite iniciar a personalização.
-
-### F03: m03 — Personalizar visualização
-
-![F03 — Editor de organização do dashboard](../assets/11_figma/organiza%C3%A7%C3%A3o%20do%20dash.png)
-
-**Objetivo do usuário:** escolher os blocos apresentados no resumo, definir sua organização e atribuir um nome à visualização.  
-**Signos principais:** nome da visualização, blocos disponíveis, seleção de blocos e ordem de apresentação.  
-**Origem no MoLIC:** m03 — cena **Personalizar visualização**, relacionada a O01.
-
-O editor apresenta caixas de seleção, controles de ordenação e orientações para arrastar e redimensionar os blocos. As ações disponíveis incluem **Cancelar** e **Salvar visualização**.
-
-### F03E: m03 — Validação: tentativa de salvar sem nome
-
-![F03E — Mensagem de validação ao salvar sem nome](../assets/11_figma/erro%20salvar%20sem%20nome.png)
-
-**Objetivo do usuário:** identificar o dado necessário para concluir o salvamento e corrigir a entrada.  
-**Signos principais:** nome da visualização, seleção de blocos e mensagem **“Dê um nome para a visualização.”**  
-**Origem no MoLIC:** detalhamento da validação associada à cena **Personalizar visualização** e à solicitação `u: salvar alterações`, a incorporar na revisão do m03.
-
-Após a tentativa de salvamento sem nome, o editor permanece aberto com a seleção visível. A recuperação consiste em preencher o nome e solicitar novamente **Salvar visualização**. Esse estado representa um erro de entrada, distinto de uma falha técnica no salvamento.
-
-### F02S: m03 — Visualização salva e aplicada
-
-![F02S — Resumo após o salvamento da visualização](../assets/11_figma/visualiza%C3%A7%C3%A3o%20salva.png)
-
-**Objetivo do usuário:** reconhecer que a visualização foi salva e conferir a configuração apresentada no resumo.  
-**Signos principais:** nome da visualização selecionada, blocos apresentados e mensagem **“Visualização ‘dsa’ salva na sua conta.”**  
-**Origem no MoLIC:** m03 — retorno de sucesso do processo de salvamento e cena **Conferir resumo personalizado**, relacionada a O01 e O05.
-
-O editor está fechado, a visualização nomeada aparece selecionada e a mensagem confirma o salvamento. O usuário pode solicitar novos ajustes pelo botão **Organizar dashboard**. A reunião utilizada neste registro permanece sem leituras; salvar a configuração não altera a disponibilidade dos dados.
-
-### F03C: m03 — Confirmação de exclusão de uma visualização salva
-
-![F03C — Confirmação antes de excluir uma visualização salva](../assets/11_figma/info%20excluir%20visualiza%C3%A7%C3%A3o.png)
-
-**Objetivo do usuário:** confirmar ou cancelar a exclusão de uma visualização salva.  
-**Signos principais:** nome da visualização, mensagem **“Excluir a visualização ‘dsa’?”** e opções **OK** e **Cancelar**.  
-**Origem no MoLIC:** ação adicional de gerenciamento de visualizações, cuja conversa de exclusão ainda precisa ser incorporada ao modelo de interação.
-
-A confirmação é apresentada antes da exclusão. O registro evidencia a solicitação de confirmação, mas não apresenta o resultado após sua aceitação.
-
-> Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.
-
-## Sistema visual e consistência
+### Sistema visual do site (resumo e dashboard) — M03
 
 | Elemento | Regra adotada | Justificativa |
 |---|---|---|
@@ -389,6 +502,7 @@ A confirmação é apresentada antes da exclusão. O registro evidencia a solici
 | Cores | Tons de roxo destacam ações principais, como Organizar dashboard e Salvar visualização. A exclusão utiliza vermelho. Os indicadores e gráficos combinam cores com nomes, valores e legendas. | Diferenciar ações e informações, oferecendo identificação textual além da cor. A adequação do contraste ainda precisa ser verificada. |
 | Componentes | Reutilização de menu lateral, cards, botões, campos de texto, seletores e caixas de seleção. O editor mantém os controles Cancelar e Salvar visualização próximos entre si e oferece botões de ordenação além da interação por arraste. | Preservar padrões reconhecíveis durante a navegação e facilitar a localização das ações de personalização. |
 | Feedback | Mensagens textuais comunicam nome não preenchido, salvamento concluído e ausência de leituras. A exclusão de uma visualização salva apresenta uma confirmação. O cancelamento da edição retorna diretamente ao resumo. | Informar o resultado das ações, orientar a correção de entradas e permitir que o usuário confirme uma exclusão antes de realizá-la. |
+
 ---
 
 ## Verificação de acessibilidade básica
@@ -410,20 +524,20 @@ A interface deve considerar critérios pertinentes da WCAG para melhorar a acess
 
 ## Checklist
 
-- [ ] Link do Figma está acessível.
-- [ ] Há screenshots representativos no repositório.
-- [ ] As duas interfaces principais do acompanhamento foram identificadas.
-- [ ] O fluxo principal do MoLIC M04 foi mapeado para as telas.
-- [ ] Os estados de carregamento, erro e recuperação foram prototipados no Figma.
-- [ ] A terminologia dos indicadores está relacionada à Entrega 9.
-- [ ] A navegação entre pop-up compacto e expandido foi definida.
-- [ ] Os fluxos críticos estão clicáveis do início ao fim no Figma.
-- [ ] O protótipo está pronto para inspeção e testes sem links mortos.
-- [ ] Os indicadores e o gráfico possuem justificativa relacionada ao objetivo do usuário.
-- [ ] Os estados de processamento, indisponibilidade e recuperação foram considerados.
-- [ ] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
-- [ ] Os estados propostos foram diferenciados das interfaces já apresentadas.
-- [ ] A acessibilidade básica foi verificada no protótipo navegável.
-- [ ] A cobertura dos demais diagramas MoLIC da equipe foi consolidada (M04 e M05 mapeados; faltam M01, M02 e M03).
+- [ ] Link do Figma está acessível — não há arquivo de Figma registrado; o protótipo navegável é o sistema publicado (versão 2.0).
+- [x] Há screenshots representativos no repositório (`assets/11_figma`).
+- [x] As duas interfaces principais do acompanhamento foram identificadas (pop-up compacto e expandido).
+- [x] O fluxo principal de cada MoLIC (M01 a M05) foi mapeado para as telas.
+- [ ] Os estados de carregamento, erro e recuperação foram prototipados no Figma — estão documentados no catálogo (F03, F04, F08, F10V, F11E); os marcados como "proposto" ainda precisam ser desenhados.
+- [x] A terminologia dos indicadores está relacionada à Entrega 9.
+- [x] A navegação entre pop-up compacto e expandido foi definida.
+- [ ] Os fluxos críticos estão clicáveis do início ao fim no Figma — clicáveis no sistema publicado; os estados propostos ainda não.
+- [x] O protótipo está pronto para inspeção e testes sem links mortos (sistema publicado, inspecionado na Entrega 13).
+- [x] Os indicadores e o gráfico possuem justificativa relacionada ao objetivo do usuário.
+- [x] Os estados de processamento, indisponibilidade e recuperação foram considerados.
+- [x] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
+- [x] Os estados propostos foram diferenciados das interfaces já apresentadas.
+- [ ] A acessibilidade básica foi verificada no protótipo navegável — pendente de verificação de contraste, teclado e foco.
+- [x] A cobertura dos demais diagramas MoLIC da equipe foi consolidada (seção "Resumo da cobertura").
 
-**Observação final:** esta documentação representa a contribuição individual de Rafael para a Entrega 11. A conclusão da entrega depende da integração dos demais fluxos da equipe, da criação dos estados complementares no Figma e da validação dos links de acesso.
+**Observação final:** o catálogo reúne as telas de todos os fluxos com numeração única (F00 a F17). F00 a F08 são da extensão (M04 e M05, também usadas pelo M01); F09 a F11 são do site (M03, também usadas pelo M01 na revisão da reunião); F12 a F17 foram propostas na consolidação para o M01 e para a interface do participante (M02).

@@ -1,7 +1,7 @@
 # Entrega 10 — MoLIC
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** 🟨 em andamento  
+**Data:** 25/11/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -242,58 +242,6 @@ Caminhos alternativos:
 
 Notas sobre o checklist do M02: as duas aberturas correspondem ao início de O18 (entrar na aula) e de O23 (abrir o resumo depois da aula); os encerramentos são alcançados pelo fim da aula, por `u: sair da aula` e por `u: concluir`; mudar a câmera na plataforma, pausar pela professora e encerrar a aula entram nos processos por `precond:`, porque são ações feitas fora da interface de Bruno; os acessos ubíquos são só reabrir o aviso pelo indicador e sair da aula, que Bruno pode precisar em qualquer momento; a análise da imagem aparece como um único processamento, sem detalhar o modelo; e o resumo de transparência (histórico do participante) tem ruptura própria para a aula em que a imagem não foi analisada. As falas marcadas com **[H]** dependem da H03 e seguem as tarefas [H] da T04.
 
-## Consolidação da equipe
-
-### Cobertura dos objetivos
-
-| Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
-|---|---|---|---|
-| O11 Ativar o acompanhamento da turma | M05 | Deve se repetir nos MoLICs de Karol, Nathanael e Manoel | Manter um único objetivo na consolidação |
-| O12 Perceber o estado da turma | M05 | Mesmo objetivo do comunicador nos outros cenários durante a sessão | Manter um único objetivo na consolidação |
-| O13 Examinar uma mudança no estado | M05 | — | Manter |
-| O14 Entender o significado e a confiança | M05 | Pode se sobrepor à ajuda contextual do Dashboard (F07) | Usar o mesmo texto de explicação nos dois lugares |
-| O15 Marcar um momento para revisar depois | M05 | Liga com a revisão de aula concluída (T01/T02) | Conferir no MoLIC do Dashboard se o momento marcado aparece |
-| O16 Pausar ou retomar o acompanhamento | M05 | Liga com a interface do participante (T04): o aviso muda quando pausa | Conferir no MoLIC do participante |
-| O17 Encerrar a aula com o resumo salvo | M05 | — | Manter |
-| O18 Entender o que acontece com a própria imagem nesta aula | M02 | O aviso é o mesmo gerado quando o comunicador ativa o acompanhamento (O01, O11) | Manter; usar o mesmo texto de aviso no M01, no M02 e no M05 |
-| O19 Tirar uma dúvida específica sobre os dados | M02 | — | Manter |
-| O20 Escolher como participar da aula | M02 | A opção de câmera ligada sem análise depende da H03 | Manter como [H] até o resultado do I03 |
-| O21 Conferir se está contribuindo para a análise agora | M02 | A escolha individual só aparece para o comunicador como número em "participantes contribuindo" | Manter |
-| O22 Mudar a participação durante a aula | M02 | Não é a mesma pausa de O16: O16 pausa a análise da turma inteira, e O22 pausa só a participação de quem pediu | Manter os dois, com rótulos diferentes ("pausada pela professora" × "sua participação pausada") |
-| O23 Conferir depois da aula o que foi processado | M02 | Não se confunde com o resumo da aula do Dashboard (O17), que é só do comunicador | Manter como [H] até o resultado do I03 |
-
-### Preparação para o Figma
-
-Estados necessários a partir do M05:
-
-- extensão com o acompanhamento desligado e o botão para ativar;
-- verificação de câmeras em andamento;
-- aviso de "não há participantes suficientes", com motivo, número de participantes, mínimo e as opções tentar novamente / continuar sem acompanhamento;
-- Semáforo Cognitivo compacto durante o compartilhamento de tela, nos estados acompanhando, possível tédio, possível confusão, possível frustração e sem estimativa (cor + ícone + rótulo), com confiança, participantes contribuindo e "atualizado há";
-- aviso de mudança de estado, com estado anterior e atual, desde quando, e as ações "o que isso significa?", "marcar este momento" e "dispensar";
-- explicação do significado e da confiança da estimativa;
-- confirmação de "momento marcado";
-- acompanhamento pausado, com retomar e encerrar;
-- confirmação de resumo salvo e aviso de falha ao salvar, com tentar novamente / tentar mais tarde;
-- aviso exibido aos alunos quando o acompanhamento é ativado ou pausado (ligação com o MoLIC do participante).
-
-Estados necessários a partir do M02 (interface do participante):
-
-- aviso de análise ativa ao entrar na aula, com os três blocos (o que a webcam capta, o que a professora recebe, o que não é feito com os dados) e as ações "ler mais", "escolher como participar" e "fechar";
-- indicador pequeno e permanente ao lado dos controles da chamada, nos estados "participando", "câmera ligada · análise pausada", "não participando", "análise da turma pausada pela professora" e "análise encerrada", que reabre o aviso com um clique;
-- informações completas em perguntas e respostas, com o contato para dúvidas;
-- escolha da participação com as três opções, sem nenhuma pré-selecionada, e a frase de que a professora vê só a turma em todas elas;
-- confirmação depois de mudar a câmera na plataforma, dizendo se a análise acompanhou ou manteve a escolha anterior;
-- aviso de aparelho sem processamento local, com "seguir a aula";
-- resumo de transparência da aula e o estado "nesta aula sua imagem não foi analisada", com o motivo.
-
-## Erros frequentes a evitar
-
-- desenhar apenas caixas com nomes de telas e setas de navegação;
-- não modelar falhas, cancelamento, volta ou recuperação;
-- usar rótulos genéricos (“Tela 1”, “Processo 2”) sem tópico de conversa;
-- criar no Figma fluxos que não existem no MoLIC;
-- diagrama sem legenda/fonte editável e com texto ilegível.
 ---
 
 ## M03 — Consultar e personalizar o resumo de uma aula concluída
@@ -757,4 +705,82 @@ Caminhos alternativos:
 - [x] O MoLIC representa a conversa usuário–sistema, não o fluxo interno do algoritmo (a estimativa aparece como um único processamento, sem detalhar o modelo).
 - [x] Processamento, filtros, administração, relatórios e históricos incluem retornos/rupturas quando relevantes (falha ao salvar o resumo).
 
+---
 
+## Consolidação da equipe
+
+### Cobertura dos objetivos consolidados
+
+Os IDs OC01 a OC15 são os do mapa consolidado da Entrega 9; a coluna "IDs individuais" mostra de onde cada um veio.
+
+| Objetivo consolidado | IDs individuais | MoLIC que cobre | Lacunas/duplicidades | Decisão |
+|---|---|---|---|---|
+| OC01 Ativar o acompanhamento, com aviso aos participantes | O01 (CI01), O11 (CI05) | M01, M05 (M04 cobre o início da análise) | O aviso ao ativar é o mesmo que o participante lê no M02 | Usar um único texto de aviso no M01, M02, M04 e M05 |
+| OC02 Perceber o estado do grupo | O02 (CI01), O02 (CI03), O06 (CI04), O12 (CI05) | M01, M04, M05 | Mesmo objetivo em três contextos (comercial, treinamento, aula) | Uma única cena "Acompanhar o estado do grupo", com o rótulo ajustado ao contexto ("turma", "grupo", "clientes") |
+| OC03 Examinar uma mudança no estado | O04 (CI01), O13 (CI05) | M01, M05 | No M04 a mudança aparece só como atualização do gráfico | Adotar no M04 o mesmo aviso de mudança do M01/M05 |
+| OC04 Entender o significado e a confiança | O04 (CI01), O14 (CI05) | M01, M04, M05 | Sobrepõe-se à ajuda contextual do Dashboard (F07 da E6) | Usar o mesmo texto de explicação na extensão e no site |
+| OC05 Decidir como conduzir | O04 (CI03), O07 (CI04) | — | Decisão fora do sistema em todos os cenários | Não modelar como cena; o sistema não sugere ação (RC03) |
+| OC06 Marcar ou anotar um momento | O03, O05 (CI01), O15 (CI05) | M01, M05 | O M01 tem anotação com texto; o M05 só marca o minuto | Uma única cena "Marcar momento", com anotação opcional |
+| OC07 Pausar ou retomar o acompanhamento | O16 (CI05) | M05 | Diferente da pausa individual do participante (OC14) | Manter as duas, com rótulos diferentes ("análise da turma pausada" × "sua participação pausada") |
+| OC08 Encerrar a sessão com o resumo salvo | O06 (CI01), O17 (CI05) | M01, M05 | — | Manter a ruptura "falha ao salvar" com recuperação nos dois |
+| OC09 Analisar os resultados de uma sessão concluída | O07 (CI01), O03 (CI03), O08 (CI04) | M01, M03, M04 | O M03 cobre de forma parcial (foco na personalização) | Manter o M03 como fluxo principal do resumo pós-aula |
+| OC10 Identificar períodos que merecem atenção | O09 (CI04) | M04 | — | Manter |
+| OC11 Personalizar a visualização do resumo | O01, O05 (CI03) | M03 | A exclusão de visualização salva não está no MoLIC | Incluir a conversa de exclusão na revisão do M03; necessidade ainda é hipótese (H06) |
+| OC12 Avaliar o que mudar nas próximas sessões | O07 (CI01), O10 (CI04) | M01, M04 | — | Manter como decisão do comunicador apoiada pelo resumo |
+| OC13 Entender o que acontece com a própria imagem | O18, O19 (CI02) | M02 | — | Manter |
+| OC14 Escolher e mudar como participar | O20, O22 (CI02) | M02 | "Câmera ligada sem análise" depende de H03 | Manter como [H] até o resultado do I03 |
+| OC15 Conferir a própria participação | O21, O23 (CI02) | M02 | O resumo de transparência não é o resumo da aula (OC08) | Manter separado; resumo de transparência como [H] |
+
+### Observações por objetivo individual
+
+| Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
+|---|---|---|---|
+| Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
+| O11 Ativar o acompanhamento da turma | M05 | Deve se repetir nos MoLICs de Karol, Nathanael e Manoel | Manter um único objetivo na consolidação |
+| O12 Perceber o estado da turma | M05 | Mesmo objetivo do comunicador nos outros cenários durante a sessão | Manter um único objetivo na consolidação |
+| O13 Examinar uma mudança no estado | M05 | — | Manter |
+| O14 Entender o significado e a confiança | M05 | Pode se sobrepor à ajuda contextual do Dashboard (F07) | Usar o mesmo texto de explicação nos dois lugares |
+| O15 Marcar um momento para revisar depois | M05 | Liga com a revisão de aula concluída (T01/T02) | Conferir no MoLIC do Dashboard se o momento marcado aparece |
+| O16 Pausar ou retomar o acompanhamento | M05 | Liga com a interface do participante (T04): o aviso muda quando pausa | Conferir no MoLIC do participante |
+| O17 Encerrar a aula com o resumo salvo | M05 | — | Manter |
+| O18 Entender o que acontece com a própria imagem nesta aula | M02 | O aviso é o mesmo gerado quando o comunicador ativa o acompanhamento (O01, O11) | Manter; usar o mesmo texto de aviso no M01, no M02 e no M05 |
+| O19 Tirar uma dúvida específica sobre os dados | M02 | — | Manter |
+| O20 Escolher como participar da aula | M02 | A opção de câmera ligada sem análise depende da H03 | Manter como [H] até o resultado do I03 |
+| O21 Conferir se está contribuindo para a análise agora | M02 | A escolha individual só aparece para o comunicador como número em "participantes contribuindo" | Manter |
+| O22 Mudar a participação durante a aula | M02 | Não é a mesma pausa de O16: O16 pausa a análise da turma inteira, e O22 pausa só a participação de quem pediu | Manter os dois, com rótulos diferentes ("pausada pela professora" × "sua participação pausada") |
+| O23 Conferir depois da aula o que foi processado | M02 | Não se confunde com o resumo da aula do Dashboard (O17), que é só do comunicador | Manter como [H] até o resultado do I03 |
+
+### Preparação para o Figma (consolidada)
+
+Os estados do M01, do M03 e do M04 estão na seção de preparação de cada MoLIC. Abaixo ficam os do M05 e do M02. A lista unificada de telas, com os IDs F00 a F17, está na Entrega 11.
+
+Estados necessários a partir do M05:
+
+- extensão com o acompanhamento desligado e o botão para ativar;
+- verificação de câmeras em andamento;
+- aviso de "não há participantes suficientes", com motivo, número de participantes, mínimo e as opções tentar novamente / continuar sem acompanhamento;
+- Semáforo Cognitivo compacto durante o compartilhamento de tela, nos estados acompanhando, possível tédio, possível confusão, possível frustração e sem estimativa (cor + ícone + rótulo), com confiança, participantes contribuindo e "atualizado há";
+- aviso de mudança de estado, com estado anterior e atual, desde quando, e as ações "o que isso significa?", "marcar este momento" e "dispensar";
+- explicação do significado e da confiança da estimativa;
+- confirmação de "momento marcado";
+- acompanhamento pausado, com retomar e encerrar;
+- confirmação de resumo salvo e aviso de falha ao salvar, com tentar novamente / tentar mais tarde;
+- aviso exibido aos alunos quando o acompanhamento é ativado ou pausado (ligação com o MoLIC do participante).
+
+Estados necessários a partir do M02 (interface do participante):
+
+- aviso de análise ativa ao entrar na aula, com os três blocos (o que a webcam capta, o que a professora recebe, o que não é feito com os dados) e as ações "ler mais", "escolher como participar" e "fechar";
+- indicador pequeno e permanente ao lado dos controles da chamada, nos estados "participando", "câmera ligada · análise pausada", "não participando", "análise da turma pausada pela professora" e "análise encerrada", que reabre o aviso com um clique;
+- informações completas em perguntas e respostas, com o contato para dúvidas;
+- escolha da participação com as três opções, sem nenhuma pré-selecionada, e a frase de que a professora vê só a turma em todas elas;
+- confirmação depois de mudar a câmera na plataforma, dizendo se a análise acompanhou ou manteve a escolha anterior;
+- aviso de aparelho sem processamento local, com "seguir a aula";
+- resumo de transparência da aula e o estado "nesta aula sua imagem não foi analisada", com o motivo.
+
+## Erros frequentes a evitar
+
+- desenhar apenas caixas com nomes de telas e setas de navegação;
+- não modelar falhas, cancelamento, volta ou recuperação;
+- usar rótulos genéricos (“Tela 1”, “Processo 2”) sem tópico de conversa;
+- criar no Figma fluxos que não existem no MoLIC;
+- diagrama sem legenda/fonte editável e com texto ilegível.

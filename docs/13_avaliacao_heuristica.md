@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** 🟨 em andamento
+**Data:** 25/11/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
@@ -50,7 +50,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Telas/estados | Página inicial; Minhas reuniões; resumo com dados de demonstração e resumo sem leituras; edição do resumo e do dashboard geral; erro de nome vazio; visualização salva selecionada; confirmação de exclusão cancelada; dashboard geral; comparação normal e sem seleção; configuração/prévia da extensão; suporte. |
 | Fluxos | M01: consulta e personalização do resumo pós-aula, incluindo validação e retorno. Também foram percorridos dashboard geral/comparação, configuração da extensão e suporte, descritos pelo nome para não criar códigos MoLIC não documentados. |
 | Dispositivo/viewport | Navegador Chrome em computador, ambiente remoto, janela de 1363 × 936 pixels. A inspeção não cobre todas as resoluções nem comprova conformidade de acessibilidade. |
-| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. A02 — Rafael Dias. A03 — Isabella Rosseto: inspeção a partir da tarefa T03 (pop-up durante a aula e resumo pós-aula), com base nos prints da versão 2.0 e na página pública. A04 — Gustavo Bertoluzzi: inspeção pela ótica da privacidade e da transparência (P05, C03, T04), com base nos prints da versão 2.0. Os demais integrantes acrescentarão seus próprios registros após a inspeção individual. |
+| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. A02 — Rafael Dias. A03 — Isabella Rosseto: inspeção a partir da tarefa T03 (pop-up durante a aula e resumo pós-aula), com base nos prints da versão 2.0 e na página pública. A04 — Gustavo Bertoluzzi: inspeção pela ótica da privacidade e da transparência (P05, C03, T04), com base nos prints da versão 2.0. A04 — Gustavo Bertoluzzi. |
 
 ## 3. Procedimento individual
 
@@ -396,32 +396,77 @@ Plano de melhoria proposto:
 Na consolidação, V20 se aproxima de V09 (Isabella), porque as duas tratam do conteúdo técnico do pop-up expandido, e V18 e V20 se ligam a V11 (Isabella), porque todas tratam da privacidade quando há poucas fontes. As recomendações são propostas e ainda não foram implementadas.
 
 ---
-> Repita a seção para A02, A03... um avaliador por integrante.
----
+
 ## 7. Consolidação da equipe
 
-Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes devem ser consolidados, preservando quem os encontrou.
+Foram consolidados os **22 achados** dos avaliadores A01 (Kayky, V01–V04), A02 (Rafael, V05–V08), A03 (Isabella, V09–V17) e A04 (Gustavo, V18–V22). Achados iguais ou muito parecidos viraram um só, preservando quem os encontrou. A severidade final é a maior atribuída entre os avaliadores, conferida pela equipe; a prioridade segue a severidade (3 = alta, 2 = média, 1 = baixa).
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
-| HC01 | V01(A01), V04(A02) | H1 | {{...}} | {{...}} | alta | {{...}} |
+| HC01 | V01 (A01), V13 (A03) | H1 | Reuniões sem leituras aparecem com "—", "0%", "0 alertas" ou "0 verdes · 0 amarelas · 0 vermelhas", sem dizer que não houve análise; ausência de dados é lida como valor zero. Uma reunião antiga continua "Em andamento" | 3 | alta | Equipe — site (resumo, lista e dashboard geral) |
+| HC02 | V11 (A03), V21 (A04) | H5 | O pop-up mostra o estado do grupo mesmo com uma única fonte e com confiança baixa, e a confiança pode ficar escondida até passar o mouse; a estimativa fraca parece certa e, com poucas pessoas, deixa de ser agregada | 3 | alta | Equipe — extensão (pop-up e configuração) |
+| HC03 | V10 (A03), V20 (A04) | H8 | O pop-up prioriza informações secundárias: no modo compacto, a conta e "Sincronizar" ocupam mais espaço que o estado da turma; no expandido, a lista de fontes com estados técnicos ocupa a área de leitura | 3 | alta | Equipe — extensão (pop-up) |
+| HC04 | V18 (A04) | H1 | O participante não vê, nas telas examinadas, nenhuma indicação de que a análise está ativa; tudo fica no painel do comunicador | 3 | alta | Equipe — extensão (interface do participante, F13–F17 da E11) |
+| HC05 | V08 (A02) | H6 | Porcentagens com significados diferentes (intensidade estimada, parcela de fontes, confiança) aparecem lado a lado, e a diferença está explicada só na central de ajuda | 3 | alta | Equipe — site (resumo e dashboard) |
+| HC06 | V02 (A01), V06 (A02), V09 (A03), V22 (A04) | H2 | Termos internos ou técnicos aparecem para o comunicador: "Supabase", "Python conectado", "fps", "v_timeline_sessao", "janelas", "fontes", "leituras" e "participantes analisados" (que soma a mesma pessoa várias vezes) | 2 | média | Equipe — site e extensão |
+| HC07 | V03 (A01), V07 (A02), V19 (A04) | H4 | Textos e rótulos diferentes para a mesma coisa: orientações que citam só o Google Meet, vários nomes para "personalizar" e "coletado" × "salvo" nas mensagens de privacidade | 2 | média | Equipe — site e extensão |
+| HC08 | V17 (A03) | H4 | As cores dos indicadores mudam entre o pop-up e o gráfico do resumo (tédio vermelho × azul; frustração roxa × vermelha) | 2 | média | Equipe — extensão e site |
+| HC09 | V04 (A01) | H7 | O histórico de reuniões não tem busca nem filtro por data ou situação | 2 | média | Equipe — site (Minhas reuniões) |
+| HC10 | V05 (A02) | H1 | A página inicial mostra números de exemplo sem indicar que são dados de demonstração | 2 | média | Equipe — site (página inicial) |
+| HC11 | V16 (A03) | H3 | O pop-up não oferece forma rápida de pausar o acompanhamento durante a aula | 2 | média | Equipe — extensão (pop-up, F07 da E11) |
+| HC12 | V15 (A03) | H9 | O aviso "Dê um nome para a visualização" aparece longe do campo de nome, que não é destacado | 2 | média | Equipe — site (personalização) |
+| HC13 | V14 (A03) | H4 | As duas exclusões usam confirmações diferentes (janela do sistema × diálogo do navegador) | 1 | baixa | Equipe — site (personalização) |
+| HC14 | V12 (A03) | H6 | A seta em "Confusão alto →" não é explicada | 1 | baixa | Equipe — extensão (pop-up) |
 
 ## 8. Síntese e plano de melhoria
 
-- Quantidade de problemas por heurística e severidade.
-- Problemas críticos/graves que bloqueiam teste ou release.
-- Padrões recorrentes entre telas.
-- Correções que serão feitas antes/para a avaliação com usuários.
+**Quantidade de problemas por heurística e severidade (após a consolidação):**
+
+| Heurística | Sev. 3 | Sev. 2 | Sev. 1 | Total |
+|---|---:|---:|---:|---:|
+| H1 — Visibilidade do status | 2 (HC01, HC04) | 1 (HC10) | — | 3 |
+| H2 — Mundo real | — | 1 (HC06) | — | 1 |
+| H3 — Controle e liberdade | — | 1 (HC11) | — | 1 |
+| H4 — Consistência | — | 2 (HC07, HC08) | 1 (HC13) | 3 |
+| H5 — Prevenção de erros | 1 (HC02) | — | — | 1 |
+| H6 — Reconhecimento | 1 (HC05) | — | 1 (HC14) | 2 |
+| H7 — Flexibilidade | — | 1 (HC09) | — | 1 |
+| H8 — Minimalismo | 1 (HC03) | — | — | 1 |
+| H9 — Recuperação de erros | — | 1 (HC12) | — | 1 |
+| H10 — Ajuda | — | — | — | 0 |
+| **Total** | **5** | **7** | **2** | **14** |
+
+Nenhum problema recebeu severidade 4. H10 não teve violação em nenhuma avaliação; a central de ajuda e as explicações junto ao gráfico foram citadas como boas práticas por todos os avaliadores.
+
+**Problemas graves que precisam ser resolvidos antes do teste com usuários (Entrega 14):** HC01, HC02, HC03, HC04 e HC05. Eles afetam diretamente a leitura do estado do grupo (tarefas UT01 e UT02 da Entrega 12) e a transparência para os participantes (H03).
+
+**Padrões recorrentes entre telas:**
+
+- **Linguagem do sistema no lugar da linguagem do comunicador** (HC06, HC07): aparece no site e na extensão e foi apontada pelos quatro avaliadores.
+- **Estimativa apresentada com mais certeza do que tem** (HC01, HC02, HC05): ausência de dados lida como zero, base pequena tratada como grupo e porcentagens confundidas.
+- **Pop-up pensado para configuração, e não para a leitura de relance durante a aula** (HC03, HC11, HC14).
+- **Participante sem informação dentro da chamada** (HC04), ligado às telas F13 a F17 propostas na Entrega 11.
+
+**Correções planejadas antes ou para a avaliação com usuários:**
+
+1. Diferenciar "sem dados" de "zero" em todo o site e encerrar reuniões que ficaram abertas (HC01).
+2. Definir um mínimo de participantes, mostrar a confiança sempre em texto e trocar o estado por "sem estimativa" abaixo do mínimo (HC02).
+3. Reorganizar o pop-up: estado, confiança e participantes contribuindo em primeiro plano; conta, sincronização e fontes no modo expandido ou em diagnóstico (HC03), com o botão de pausa (HC11).
+4. Criar o aviso e o indicador para o participante (HC04, telas F13 e F14).
+5. Rotular cada porcentagem com o que ela mede (HC05).
+6. Depois do teste: padronizar termos, cores e confirmações (HC06–HC08, HC13), adicionar busca no histórico (HC09), marcar os dados de demonstração (HC10), aproximar o aviso do campo (HC12) e explicar a seta (HC14).
+
+**Limitações:** as inspeções usaram a versão 2.0 publicada e prints das telas internas; parte dos achados de interação (V15, V16) precisa ser confirmada no sistema. A avaliação do integrante Matheus (A05) não foi registrada neste documento até a consolidação.
 
 ## Checklist
 
-- [ ] Cada integrante fez uma inspeção completa e identificada.
-- [ ] Todas as telas/estados relevantes foram examinados.
-- [ ] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
-- [ ] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
-- [ ] H1–H10 aparecem na matriz de cobertura de cada avaliador.
-- [ ] Parte de violações contém apenas violações, sem “forçar” exemplos.
-- [ ] Todo problema tem print/localização e contexto.
-- [ ] Severidade possui justificativa, não apenas número.
-- [ ] Recomendação resolve a causa ou reduz o impacto.
-- [ ] Achados duplicados foram consolidados ao final.
+- [ ] Cada integrante fez uma inspeção completa e identificada — A01 a A04 registradas; falta a A05 (Matheus).
+- [x] Todas as telas/estados relevantes foram examinados (lista, resumo, personalização, dashboard geral, extensão, pop-up, ajuda, página inicial).
+- [x] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
+- [x] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
+- [x] H1–H10 aparecem na matriz de cobertura de cada avaliador.
+- [x] Parte de violações contém apenas violações, sem “forçar” exemplos.
+- [x] Todo problema tem print/localização e contexto.
+- [x] Severidade possui justificativa, não apenas número.
+- [x] Recomendação resolve a causa ou reduz o impacto.
+- [x] Achados duplicados foram consolidados ao final (seção 7, HC01 a HC14).

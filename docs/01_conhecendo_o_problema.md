@@ -3,7 +3,7 @@
 
 **Data:** 13/08/2026
 
-**Status:** ✅ CONCLUÍDO
+**Status:** 🟩 concluída  
 
 **Responsabilidade:** 1 solução consolidada por equipe
 

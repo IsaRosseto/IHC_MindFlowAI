@@ -1,7 +1,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** 🟨 em andamento  
+**Data:** 25/11/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -307,7 +307,7 @@ Decidir se reforça o conteúdo **não é um tópico de conversa com o sistema**
 
 Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
 
-![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos.svg)
+O mapa consolidado fica no fim desta seção, depois dos mapas individuais.
 
 ### Mapa individual 
 
@@ -575,6 +575,94 @@ Os IDs O11 a O17 foram escolhidos para não repetir os IDs já usados na CI01 (O
 
 Os IDs O01 a O07 vêm da CI01. Na consolidação, a equipe junta os objetivos iguais dos outros cenários (ativar o acompanhamento, perceber o estado do grupo e encerrar com o resumo salvo também aparecem para Karol, Camila e Nathanael) e mantém um único ID para cada objetivo.
 
+### Mapa consolidado da equipe
+
+Os mapas individuais usaram IDs que se repetem (por exemplo, O01 aparece na CI01 e na CI03, e O06/O07 na CI01 e na CI04). Para não alterar os mapas de cada integrante, a consolidação usa IDs próprios, **OC01 a OC15**, e a tabela abaixo indica de quais objetivos individuais cada um veio. Objetivos com o mesmo sentido em cenários diferentes viraram um só.
+
+```mermaid
+flowchart TD
+    G["<b>Conduzir sessões on-line percebendo o estado do grupo<br/>e melhorar as próximas</b><br/>(comunicador: P01, P02, P03, P04)"]
+    GP["<b>Participar de uma sessão sabendo o que acontece<br/>com a própria imagem</b><br/>(participante: P05)"]
+
+    D1["<b>Durante a sessão</b>"]
+    D2["<b>Depois da sessão</b>"]
+
+    OC01["<b>OC01</b><br/>Ativar o acompanhamento,<br/>com aviso aos participantes"]
+    OC02["<b>OC02</b><br/>Perceber o estado do grupo"]
+    OC03["<b>OC03</b><br/>Examinar uma mudança<br/>no estado do grupo"]
+    OC04["<b>OC04</b><br/>Entender o significado<br/>e a confiança da estimativa"]
+    OC05["<b>OC05</b><br/>Decidir como conduzir<br/>(fora do sistema)"]
+    OC06["<b>OC06</b><br/>Marcar ou anotar um momento"]
+    OC07["<b>OC07</b><br/>Pausar ou retomar<br/>o acompanhamento"]
+    OC08["<b>OC08</b><br/>Encerrar a sessão<br/>com o resumo salvo"]
+
+    OC09["<b>OC09</b><br/>Analisar os resultados<br/>de uma sessão concluída"]
+    OC10["<b>OC10</b><br/>Identificar períodos que<br/>merecem atenção"]
+    OC11["<b>OC11</b><br/>Personalizar a visualização<br/>do resumo"]
+    OC12["<b>OC12</b><br/>Avaliar o que mudar<br/>nas próximas sessões"]
+
+    OC13["<b>OC13</b><br/>Entender o que acontece<br/>com a própria imagem"]
+    OC14["<b>OC14</b><br/>Escolher e mudar<br/>como participar"]
+    OC15["<b>OC15</b><br/>Conferir a própria participação,<br/>durante e depois"]
+
+    G --> D1
+    G --> D2
+    D1 --> OC01
+    D1 --> OC02
+    D1 --> OC07
+    D1 --> OC08
+    OC02 --> OC03
+    OC03 --> OC04
+    OC03 --> OC05
+    OC03 --> OC06
+    D2 --> OC09
+    OC09 --> OC10
+    OC09 --> OC11
+    OC10 --> OC12
+
+    GP --> OC13
+    GP --> OC14
+    GP --> OC15
+    OC01 -.->|"o mesmo aviso"| OC13
+
+    style OC05 stroke-dasharray: 6 4
+    style G fill:#eef2ff
+    style GP fill:#eef2ff
+    style D1 fill:#f3f4f6
+    style D2 fill:#f3f4f6
+```
+
+*A caixa tracejada (OC05) é uma decisão do comunicador que acontece fora do sistema: o MindFlow mostra o estado e a confiança, mas não diz o que fazer (RC03). A seta tracejada indica que o aviso mostrado ao ativar o acompanhamento (OC01) é o mesmo que o participante lê (OC13).*
+
+### Dicionário consolidado de objetivos
+
+| ID | Objetivo consolidado | Persona(s) | Cenário(s) | IDs individuais de origem | MoLIC | Prioridade |
+|---|---|---|---|---|---|---|
+| OC01 | Ativar o acompanhamento da sessão, com o aviso enviado aos participantes antes da primeira estimativa | P01, P02, P03, P04 | CI01, CI05 | O01 (CI01), O11 (CI05) | M01, M05 | alta |
+| OC02 | Perceber o estado do grupo durante a sessão, de relance e com a tela compartilhada | P01, P02, P03, P04 | CI01, CI03, CI04, CI05 | O02 (CI01), O02 (CI03), O06 (CI04), O12 (CI05) | M01, M04, M05 | alta |
+| OC03 | Examinar uma mudança no estado do grupo | P02, P04 | CI01, CI05 | O04 (CI01), O13 (CI05) | M01, M05 | alta |
+| OC04 | Entender o significado do estado e quanto confiar na estimativa | P01, P02, P03, P04 | CI01, CI03, CI04, CI05 | O04 (CI01, parte da confiança), O14 (CI05); presente na leitura de O02 (CI03) e O06 (CI04) | M01, M04, M05 | alta |
+| OC05 | Decidir se mantém, reforça ou adapta a condução (fora do sistema) | P01, P02, P03, P04 | CI01, CI03, CI04, CI05 | O04 (CI03), O07 (CI04); decisão fora do sistema em CI01 e CI05 | — (não é conversa com o sistema) | alta |
+| OC06 | Marcar ou anotar um momento da sessão para revisar depois | P02, P04 | CI01, CI05 | O03 e O05 (CI01), O15 (CI05) | M01, M05 | média |
+| OC07 | Pausar ou retomar o acompanhamento da sessão | P02 | CI05 | O16 (CI05) | M05 | média |
+| OC08 | Encerrar a sessão com o resumo salvo | P02, P04 | CI01, CI05 | O06 (CI01), O17 (CI05) | M01, M05 | média |
+| OC09 | Analisar os resultados de uma sessão concluída | P01, P03, P04 | CI01, CI03, CI04 | O07 (CI01, revisar a reunião), O03 (CI03), O08 (CI04) | M01, M03, M04 | alta |
+| OC10 | Identificar períodos da sessão que merecem atenção | P03 | CI04 | O09 (CI04) | M04 | alta |
+| OC11 | Personalizar a visualização do resumo e conferir se ela atende | P01 | CI03 | O01 e O05 (CI03) | M03 | média |
+| OC12 | Avaliar o que mudar nas próximas sessões, inclusive comparando com o retorno do cliente | P03, P04 | CI01, CI04 | O07 (CI01, retorno do cliente), O10 (CI04) | M01, M04 | média |
+| OC13 | Entender o que acontece com a própria imagem e tirar dúvidas sobre os dados | P05 | CI02 | O18, O19 (CI02) | M02 | alta |
+| OC14 | Escolher e mudar a forma de participar da análise | P05 | CI02 | O20, O22 (CI02) | M02 | alta |
+| OC15 | Conferir se está contribuindo agora e o que foi processado depois da aula | P05 | CI02 | O21, O23 (CI02) | M02 | média |
+
+**Decisões da consolidação:**
+
+- Os IDs individuais foram mantidos em cada mapa e no MoLIC de cada integrante; os IDs **OC** passam a ser os usados pela equipe na Entrega 11 em diante.
+- O dicionário da CI03 indica "CI01" na coluna de cenário; os objetivos dele pertencem à **CI03** e foram registrados assim aqui.
+- OC07 (pausar a análise da turma inteira, pelo comunicador) e OC14 (pausar só a própria participação, pelo participante) **não são o mesmo objetivo** e ficam separados, como já registrado no MoLIC M02.
+- OC05 aparece no mapa para mostrar a ligação entre perceber e agir, mas não tem cena no MoLIC, porque a decisão é do comunicador.
+- A personalização (OC11) continua dependendo da hipótese H06, ainda não validada com usuários.
+
+
 ## 4. Esquema conceitual de signos
 
 O esquema conceitual reúne os signos identificados nos cenários CI01, CI02, CI04 e CI05, considerando as necessidades das personas P04 — Manoel Gomes, P05 — Bruno D. Roger, P03 — Nathanael Lima e P02 — Camila Duarte.
@@ -659,6 +747,8 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - o **encerramento da análise junto com a aula** e o **resumo de transparência**, inclusive quando a imagem não foi analisada;
 - a ruptura do **aparelho sem processamento local**, com saída para seguir a aula sem participar da análise.
 
+### Contribuição da CI04 — Rafael
+
 **Contribuição da CI04 (Rafael):** os objetivos O06 a O10 do mapa individual, os tópicos da tabela da seção 2 e os signos dos grupos "Acompanhamento", "Estado do grupo" e "Linha do tempo" devem aparecer no diagrama MoLIC da CI04 (Entrega 10). Os pontos que não podem faltar são:
 
 - o **acompanhamento do estado do grupo durante o treinamento**, apresentando as estimativas de engajamento, tédio, confusão e frustração, junto à quantidade de **participantes contribuindo** e à **disponibilidade de dados**;
@@ -684,7 +774,7 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 - [ ] Cenários de interação mostram alterações em relação aos cenários de problema.
 - [ ] Cada solução individual identifica autor e cenário de origem.
 - [ ] Tópicos/falas/signos são coerentes com objetivos do usuário.
-- [ ] Mapas individuais foram consolidados.
+- [x] Mapas individuais foram consolidados (mapa e dicionário consolidados, OC01 a OC15).
 - [ ] O esquema de signos está em uma tabela única e sem duplicações conceituais.
 - [ ] Nomes de objetivos/signos serão reutilizados na Entrega 10.
 - [ ] Em TCC técnico, signos representam conceitos do domínio compreensíveis ao usuário, não apenas variáveis/estruturas internas.
