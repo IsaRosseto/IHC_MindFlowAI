@@ -50,7 +50,7 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 | Telas/estados | Página inicial; Minhas reuniões; resumo com dados de demonstração e resumo sem leituras; edição do resumo e do dashboard geral; erro de nome vazio; visualização salva selecionada; confirmação de exclusão cancelada; dashboard geral; comparação normal e sem seleção; configuração/prévia da extensão; suporte. |
 | Fluxos | M01: consulta e personalização do resumo pós-aula, incluindo validação e retorno. Também foram percorridos dashboard geral/comparação, configuração da extensão e suporte, descritos pelo nome para não criar códigos MoLIC não documentados. |
 | Dispositivo/viewport | Navegador Chrome em computador, ambiente remoto, janela de 1363 × 936 pixels. A inspeção não cobre todas as resoluções nem comprova conformidade de acessibilidade. |
-| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. Os demais integrantes acrescentarão seus próprios registros após a inspeção individual. |
+| Avaliadores | A01 — Kayky Pires: registro elaborado com apoio de inspeção assistida e sujeito à revisão do avaliador. A02 — Rafael Dias. A03 — Isabella Rosseto: inspeção a partir da tarefa T03 (pop-up durante a aula e resumo pós-aula), com base nos prints da versão 2.0 e na página pública. Os demais integrantes acrescentarão seus próprios registros após a inspeção individual. |
 
 ## 3. Procedimento individual
 
@@ -134,6 +134,72 @@ O plano de melhoria proposto é:
 5. **Antes da consolidação:** verificar visualmente os achados, anexar as evidências e revisar as severidades, quando necessário.
 
 As recomendações apresentadas não indicam correções já implementadas. Os achados devem ser confirmados durante a inspeção individual antes de serem considerados resultados definitivos da equipe.
+
+---
+
+## Avaliador A03 — Isabella Rosseto
+
+**Autor(a):** Isabella Vieira Silva Rosseto — 22.222.036-0  
+**Foco da inspeção:** percorri o sistema pela tarefa da Camila (P02, T03, M05): acompanhar a turma pelo pop-up da extensão durante a aula e, depois, consultar e organizar o resumo da reunião.  
+**Base da inspeção:** versão 2.0 do MindFlow AI. Usei os prints das telas internas capturados pela equipe entre 18/11 e 22/11/2026 (pastas `assets/11_figma` e `assets/13_heuristica`), a página pública acessada em 25/11/2026 e os textos de mensagens e ajuda do próprio site. Não fiz login no sistema; por isso, os achados que dependem de interação (por exemplo, se o aviso de erro some sozinho) estão marcados para conferência antes da consolidação.
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | Minhas reuniões; resumo de reunião sem leituras; cards de indicadores | Sim | V13 | — |
+| H2 | Pop-up expandido da extensão; Minhas reuniões; tabela "Leituras do intervalo" | Sim | V09 | — |
+| H3 | Pop-up compacto e expandido durante a aula; configuração da extensão | Sim | V16 | — |
+| H4 | Exclusão de reunião e exclusão de visualização salva | Sim | V14 | — |
+| H5 | Pop-up com estimativa baseada em uma única fonte | Sim | V11 | — |
+| H6 | Pop-up compacto e expandido (rótulo do estado) | Sim | V12 | — |
+| H7 | Pop-up compacto/expandido; seleção de intervalo no gráfico | Não | — | BP13 |
+| H8 | Pop-up compacto durante a aula | Sim | V10 | — |
+| H9 | Salvar visualização sem nome | Sim | V15 | — |
+| H10 | Gráfico "Evolução da reunião"; central de ajuda | Não | — | BP14 |
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V09 | H2 | Pop-up expandido da extensão; Minhas reuniões; tabela "Leituras do intervalo" | A interface mostra termos da implementação, que não fazem parte do vocabulário de uma professora: "Python conectado · modelo carregado · alvo 30 fps", "Histórico Supabase: desativado no Python", "IA ATIVA · 13.9 fps reais", "Dados carregados do Supabase" e "dados de v_timeline_sessao". O código da reunião também aparece repetido no cabeçalho do pop-up ("mxc-cswp-ocwmxc-cswp-ocw"). | [Pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png), rodapé e cabeçalho; [Minhas reuniões](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/Captura%20de%20tela%202026-11-22%20204016.png), abaixo de "Reuniões recentes"; [Leituras do intervalo](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/timeline.png) | 2 | Aparece em várias telas, inclusive no pop-up usado durante a aula, mas não impede nenhuma tarefa. O impacto é de compreensão e de confiança: a professora não sabe se precisa fazer algo quando lê "Supabase desativado". | Mostrar essas informações só em uma área de diagnóstico para quem configura o sistema. Para a professora, trocar por mensagens de estado no vocabulário dela, por exemplo "Acompanhamento funcionando" ou "O histórico desta aula não está sendo salvo". |
+| V10 | H8 | Pop-up compacto durante a aula | No modo compacto, a área "Conta conectada" com o e-mail e o botão "Sincronizar" ocupa mais espaço do que o estado da turma, que aparece só na parte de baixo, parcialmente visível. A informação que a professora precisa ver de relance fica em segundo plano. | [Pop-up compacto](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f01_popup_compacto.png) | 3 | O modo compacto é o que fica na tela enquanto a professora explica com a tela compartilhada (T03), então o problema aparece em toda aula. Esconder o estado da turma enfraquece justamente o uso principal do Semáforo (H01). | No modo compacto, mostrar primeiro o estado da turma, a confiança e os participantes contribuindo. Mover a conta e a sincronização para o modo expandido ou para um ícone pequeno. |
+| V11 | H5 | Pop-up compacto e expandido com uma única fonte | O pop-up mostra "Confusão alto" para o grupo mesmo com "1 fonte(s)" e confiança de 30% a 33%. Não há nenhum aviso de que a base é insuficiente. Com uma única fonte, o "estado do grupo" é, na prática, o estado de uma pessoa. | [Pop-up compacto](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f01_popup_compacto.png) e [pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png) | 3 | Leva a um erro de interpretação com consequência real: a professora pode mudar a aula por causa de uma estimativa fraca, e o resultado deixa de ser agregado, o que entra em conflito com a privacidade dos alunos (H03, H05). Acontece sempre que poucas câmeras estão ligadas, situação comum em turmas pequenas. | Definir um mínimo de participantes (por exemplo, 3) e, abaixo dele, mostrar "Sem estimativa — poucas câmeras ligadas" em vez do estado. Quando a confiança estiver baixa, mostrar isso em texto junto do estado, e não só como número. |
+| V12 | H6 | Pop-up compacto e expandido, rótulo do estado | O estado aparece como "Confusão alto →". A seta não tem explicação na tela: a professora precisa lembrar ou descobrir se ela indica tendência, mudança recente ou um link. A cor amarela também não diz, sozinha, se é um alerta. | [Pop-up compacto](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f01_popup_compacto.png) | 1 | Problema pequeno e cosmético: não impede a leitura do estado, mas gera dúvida na primeira vez que aparece. | Trocar a seta por um texto curto ("estável", "subindo", "caindo") ou explicar o símbolo ao passar o mouse. |
+| V13 | H1 | Minhas reuniões; resumo de uma reunião sem leituras | Reuniões sem dados mostram "—", "0 participantes", "0 verdes · 0 amarelas · 0 vermelhas" e "Alertas: 0", sem dizer por que não há leituras. Isso pode ser lido como "não houve problema" quando, na verdade, não houve análise. Na mesma lista, uma reunião de 19/10 continua "Em andamento", "sem duração", sem forma de encerrá-la pela lista. | [Minhas reuniões](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/Captura%20de%20tela%202026-11-22%20204016.png), reunião "Sua reunião está pronta" e "Meet: eth-yedb-rxw"; [resumo sem leituras](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/erro%20salvar%20sem%20nome.png), cards de indicadores | 3 | Confundir ausência de dados com valor zero leva a uma conclusão errada sobre a aula, exatamente o que a meta da Entrega 8 pede para evitar. Aparece em todas as reuniões curtas ou sem câmeras. A reunião "em andamento" antiga deixa dúvida sobre o estado real do sistema. | Separar visualmente "sem dados" de "zero": por exemplo, "Nenhuma leitura registrada nesta reunião — as câmeras estavam desligadas ou a análise não foi iniciada". Encerrar ou marcar como "interrompida" a reunião que ficou aberta, com uma ação para resolver. |
+| V14 | H4 | Exclusão de reunião e exclusão de visualização salva | Excluir uma reunião abre uma janela do próprio sistema, com título, consequência e botão vermelho. Excluir uma visualização salva usa o diálogo padrão do navegador ("mindflowiaa.netlify.app diz", OK/Cancelar), com outra aparência e sem explicar a consequência. | [Excluir reunião](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/excluir.png) e [excluir visualização](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/info%20excluir%20visualiza%C3%A7%C3%A3o.png) | 1 | As duas ações funcionam e pedem confirmação; a diferença é de padrão visual e de clareza, com baixo impacto. | Usar o mesmo modelo de janela de confirmação nas duas exclusões, dizendo o que será removido ("A visualização 'dsa' será excluída; os dados da reunião continuam salvos"). |
+| V15 | H9 | Organizar dashboard, salvar visualização sem nome | Ao salvar sem nome, a mensagem "Dê um nome para a visualização." aparece na parte de baixo da tela, longe do campo "Nome da visualização", que fica no topo e não é destacado. | [Erro ao salvar sem nome](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/erro%20salvar%20sem%20nome.png) | 2 | A mensagem diz o que fazer, mas a professora precisa procurar o campo. Atrapalha pouco e só nessa situação. A confirmar na interação: se o aviso desaparece sozinho, o impacto aumenta. | Mostrar a mensagem logo abaixo do campo, destacar a borda do campo e colocar o cursor nele. |
+| V16 | H3 | Pop-up compacto e expandido durante a aula | Nos prints do pop-up não aparece nenhum controle para pausar ou parar o acompanhamento. Pelo que vi, iniciar e encerrar ficam na página "Extensão" do site, fora da videochamada. Durante a aula, a professora não tem uma saída rápida se o acompanhamento atrapalhar. | [Pop-up compacto](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f01_popup_compacto.png) e [pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png); botões "Iniciar análise" e "Encerrar reunião" no texto da página do site | 2 | A professora não fica presa (ela pode fechar o pop-up ou ir ao site), mas a saída é lenta justamente no momento em que ela está apresentando. A confirmar no pop-up real se existe um controle fora da área capturada. | Colocar no pop-up um botão "Pausar acompanhamento", com aviso aos participantes, como previsto em RC07 e no MoLIC M05. |
+
+**Qualidade do relato:** V15 e V16 dependem de interação que não consegui repetir sem login. Antes da consolidação, é preciso conferir no sistema se o aviso de V15 desaparece sozinho e se o pop-up tem algum controle de pausa fora da área capturada (V16).
+
+### 6. Boas práticas — heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| H7 | BP13 — O pop-up tem dois modos: compacto, para acompanhar de relance, e expandido, com os quatro indicadores e o gráfico dos últimos cinco minutos. No resumo, o botão "Reunião inteira" volta ao intervalo completo depois de selecionar um trecho. | [Pop-up compacto](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f01_popup_compacto.png), [pop-up expandido](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/11_figma/f02_popup_expandido.png) | A mesma informação atende quem quer só uma olhada durante a aula e quem quer detalhes, sem obrigar todo mundo ao caminho mais longo. |
+| H10 | BP14 — O gráfico "Evolução da reunião" explica na própria tela como ler os dados: "As linhas mostram a intensidade estimada de cada indicador, não a porcentagem de pessoas". A central de ajuda complementa com "Como ler o gráfico" e "Qual é exatamente a regra do alerta?". | [Gráfico](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/graf.png), [central de ajuda](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/13_heuristica/suporte.png) | A ajuda aparece no lugar onde a dúvida surge, e não só em uma página separada, e é escrita para a tarefa de interpretar o resultado. |
+
+### Síntese individual — Isabella Rosseto
+
+Registrei **oito violações** (V09 a V16), uma em cada heurística H1, H2, H3, H4, H5, H6, H8 e H9. H7 e H10 não tiveram violação e receberam exemplos de boa prática (BP13 e BP14).
+
+| Severidade | Achados |
+|---:|---|
+| 3 | V10, V11, V13 |
+| 2 | V09, V15, V16 |
+| 1 | V12, V14 |
+
+O padrão que mais se repete é o **uso durante a aula**. O pop-up, que deveria ser lido de relance enquanto a professora explica, mostra informações de conta e de implementação na frente do estado da turma (V09, V10). Ele também apresenta como "estado do grupo" uma estimativa feita com uma única fonte (V11) e não oferece um jeito rápido de pausar (V16). Depois da aula, o problema mais sério é confundir ausência de dados com valor zero (V13).
+
+Plano de melhoria proposto:
+
+1. **Antes do teste com usuários (alta prioridade):** V11 (mínimo de participantes e aviso de base insuficiente), V10 (estado da turma em primeiro plano no modo compacto) e V13 (diferenciar "sem dados" de "zero"). Os três afetam diretamente as tarefas UT01 e UT02 da Entrega 12.
+2. **Prioridade média:** V16 (pausar pelo pop-up), V09 (tirar termos técnicos da visão da professora) e V15 (mensagem junto do campo).
+3. **Baixa prioridade:** V12 (significado da seta) e V14 (padronizar a confirmação de exclusão).
+
+Na consolidação, V09 se aproxima de V06 (Rafael), porque ambos tratam de termos técnicos, mas em telas diferentes. As recomendações acima são propostas e ainda não foram implementadas.
+
 ---
 > Repita a seção para A02, A03... um avaliador por integrante.
 ---
