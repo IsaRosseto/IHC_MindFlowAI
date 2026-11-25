@@ -246,7 +246,7 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 | Sinais usados hoje para perceber a reação (rostos na grade reduzida, resposta às pílulas de dúvida, perguntas, chat, silêncio) e ações usadas para provocar reação, com seu custo em tempo e constrangimento | C01 (Q5) / H01 | A T05 modela quatro canais (operações 3.1 a 3.4) a partir de hipóteses; é preciso saber quais são usados, quais são evitados e por quê | Que tipo de sinal o sistema deve complementar, e não substituir; vocabulário dos rótulos |
 | Critério usado para decidir, no momento, entre seguir, reexplicar, mudar o discurso ou anotar para o follow-up, inclusive quando alguns clientes reagem e outros ficam em silêncio | C01 (Q4) / RC03 | A T05 supõe que a decisão depende de quem reagiu, do tempo restante e da importância do ponto; se o critério for outro, o apoio à decisão muda | Indicar que algo merece atenção sem prescrever a ação; qual informação acompanha o alerta |
 | Acontecimentos que mudam o rumo da reunião (pergunta inesperada, objeção, participante que sai ou desliga a câmera, mensagem no chat, aviso de tempo, falha técnica) e como o vendedor reage a cada um | C01 (Q6) | Os eventos competem com a observação do grupo e definem quando a decisão precisa ser tomada | Quando o indicador deve ficar em segundo plano e como tratar câmeras desligadas e saídas da chamada |
-| Quanto o vendedor confia na própria leitura ao final da reunião e se essa leitura se confirma no retorno do cliente, dias depois | H02 / C01 (Q7) | É a única forma de saber se a leitura estava errada; na T05, a avaliação só acontece no follow-up (operação 6.3) | Se e quando mostrar a confiança da classificação; conteúdo do resumo pós-reunião (R03) |
+| Quanto o vendedor confia na própria leitura ao final da reunião e como ele reavalia essa leitura quando chega o retorno do cliente, dias depois | H02 / C01 (Q7) | É a evidência complementar disponível sobre a interpretação do vendedor; na T05, a reavaliação só acontece no follow-up (operação 6.3). O retorno do cliente não mede o estado dele na reunião: pode depender de preço, aprovação interna, prazo ou concorrência | Se e quando mostrar a confiança da classificação; conteúdo do resumo pós-reunião (R03) |
 | Como o vendedor registra hoje as percepções e o próximo passo (CRM, anotações, e-mail) e o que gostaria de ter percebido durante a reunião | C01 (Q7) / R03 | Mostra se um resumo pós-reunião teria uso real e onde se encaixaria na rotina, sem supor dashboard ou relatório | Necessidade e formato do resumo pós-sessão no contexto comercial |
 | Como o vendedor acha que clientes de outra empresa reagiriam a ter a imagem analisada e o que ele precisaria explicar ou pedir antes da reunião | H03 / F08 | Em reunião comercial os participantes são externos: o consentimento tem custo comercial e pode inviabilizar o uso | Forma de aviso e consentimento para participantes externos; se é necessário um modo sem análise |
 
@@ -525,64 +525,85 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 6. **Limitações a relatar:** amostra pequena e por conveniência, efeito de conformidade em grupo (participantes acompanharem a opinião dominante), possível constrangimento em falar de desconforto diante de colegas e influência dos cartões, que descrevem uma solução. Por isso, o Bloco 2 (experiência atual) é analisado separadamente do Bloco 3.
 
 
-### Instrumento I04 — Teste de usabilidade
+### Instrumento I04 — Classificação de Cartões (Card Sorting)
 
 **Autor(a):** Rafael Dias — 22.222.039-4  
-**Técnica:** Teste de usabilidade moderado com protótipo.  
-**Objetivo:** Verificar se os docentes conseguem consultar o resumo de uma aula, compreender os indicadores apresentados e personalizar a visualização sem dificuldades.  
+**Técnica:** Classificação de Cartões (Card Sorting aberto).  
+**Objetivo:** Investigar como docentes organizam e relacionam informações utilizadas no acompanhamento de aulas on-line, identificando quais dados consideram relacionados e quais termos utilizam para agrupá-los.  
 **Público:** Professores e docentes que realizam aulas on-line por videoconferência. Meta: 5 participantes.
 
-**Por que teste de usabilidade:** a técnica permite observar como os usuários interagem com o MindFlow AI e identificar dificuldades de navegação, compreensão dos indicadores e utilização das funcionalidades. Diferentemente das entrevistas e questionários, o teste avalia a execução prática das tarefas.
+**Por que classificação de cartões:** a técnica permite compreender como os usuários organizam mentalmente diferentes informações, sem apresentar uma estrutura pronta. Diferentemente dos questionários, entrevistas e grupos focais, os participantes realizam uma atividade prática de organização, contribuindo para identificar necessidades de informação e possíveis agrupamentos para a interface.
 
 #### Procedimento padronizado de aplicação
 
-1. **Preparação:** selecionar 5 docentes com experiência em aulas on-line e disponibilizar um protótipo do MindFlow AI com dados fictícios.
-2. **Apresentação:** explicar o objetivo do teste, informar que a participação é voluntária e solicitar o consentimento.
-3. **Execução:** apresentar as três tarefas abaixo, uma de cada vez, sem ensinar como realizá-las.
-4. **Observação:** registrar se o participante conseguiu concluir cada tarefa, quais dificuldades encontrou e se precisou de ajuda.
-5. **Encerramento:** fazer as perguntas finais e agradecer pela participação.
-6. **Armazenamento:** identificar os participantes por códigos e manter os registros apenas para fins acadêmicos, com acesso restrito.
+1. **Preparação:** selecionar 5 docentes com experiência em aulas on-line e preparar os cartões com informações relacionadas ao acompanhamento das aulas.
+2. **Apresentação:** explicar o objetivo da atividade, informar que a participação é voluntária e solicitar o consentimento.
+3. **Execução:** entregar os cartões individualmente e solicitar que o participante organize as informações em grupos que façam sentido para sua rotina.
+4. **Nomeação:** pedir que o participante atribua um nome a cada grupo criado, sem sugerir categorias.
+5. **Observação:** registrar os agrupamentos, nomes escolhidos e eventuais dificuldades. Não interferir na organização.
+6. **Encerramento:** agradecer pela participação e registrar brevemente quais cartões o participante não utiliza ou considera pouco relevantes.
+7. **Armazenamento:** identificar os participantes por códigos e manter os registros apenas para fins acadêmicos, com acesso restrito.
 
 #### Instrumento
 
 **Texto de abertura**
 
-> Estamos realizando um teste para avaliar a facilidade de utilização do MindFlow AI. Você deverá realizar algumas tarefas em um protótipo do sistema.
+> Estamos realizando uma pesquisa acadêmica para compreender como professores organizam informações relacionadas ao acompanhamento de aulas on-line.
 >
-> Não estamos avaliando seu desempenho, mas a facilidade de uso da interface. Sua participação é voluntária, e você pode interrompê-la quando desejar.
+> Você receberá cartões com diferentes tipos de informações e deverá organizá-los em grupos que façam sentido para você.
 >
-> Os resultados serão utilizados apenas para fins acadêmicos, sem identificação dos participantes.
+> Não existem respostas certas ou erradas. Queremos compreender sua forma de organizar essas informações.
+>
+> Sua participação é voluntária e você pode interrompê-la quando desejar. Os resultados serão utilizados apenas para fins acadêmicos, sem identificação dos participantes.
 >
 > Você concorda em participar? [sim/não]
 
-**Tarefa 1 — Consultar o resumo de uma aula**
-> Imagine que você deseja revisar uma aula que já terminou. Encontre essa reunião no sistema e abra seu resumo.
+**Cartões utilizados na atividade**
+
+| Código | Informação |
+|---|---|
+| C01 | Participação dos alunos |
+| C02 | Presença dos alunos |
+| C03 | Dúvidas apresentadas durante a aula |
+| C04 | Conteúdos com maior dificuldade |
+| C05 | Resultados de exercícios |
+| C06 | Atividades realizadas |
+| C07 | Anotações do professor |
+| C08 | Conteúdos abordados |
+| C09 | Planejamento da próxima aula |
+| C10 | Evolução da turma ao longo das aulas |
+| C11 | Momentos de maior interação |
+| C12 | Feedback dos alunos |
+
+**Atividade 1 — Organização dos cartões**
+
+> Observe os cartões apresentados e organize-os em grupos de informações que, na sua opinião, possuem alguma relação.
+>
+> Você pode criar quantos grupos desejar, sem precisar utilizar todos os cartões.
+
 **Observar:**
-- Se encontra a reunião facilmente;
-- Se consegue acessar o resumo;
-- Se compreende os indicadores apresentados.
+- Quais cartões são colocados juntos;
+- Quais informações ficam separadas;
+- Se existem cartões difíceis de classificar;
+- Se o participante deixa algum cartão de fora.
 
-**Tarefa 2 — Personalizar a visualização**
-> Imagine que você deseja modificar as informações exibidas no resumo. Encontre a opção de edição e realize uma alteração na visualização.
+**Atividade 2 — Nomeação dos grupos**
+
+> Agora, atribua um nome a cada grupo criado, utilizando palavras que representem as informações presentes nele.
+
 **Observar:**
-- Se encontra a opção de editar;
-- Se compreende as opções disponíveis;
-- Se consegue realizar a alteração.
+- Quais nomes são utilizados;
+- Se os nomes representam claramente os cartões;
+- Se existem semelhanças entre os nomes escolhidos pelos participantes.
 
-**Tarefa 3 — Salvar a personalização**
-> Após modificar o resumo, salve suas alterações e confira se a visualização foi atualizada.
+**Atividade 3 — Identificação de informações pouco utilizadas**
+
+> Entre os cartões apresentados, existe alguma informação que você normalmente não utiliza para acompanhar ou avaliar suas aulas? Se houver, indique quais.
+
 **Observar:**
-- Se encontra o botão de salvar;
-- Se compreende a confirmação do salvamento;
-- Se identifica que as alterações foram mantidas.
-
-#### Perguntas finais
-
-1. Você achou fácil encontrar o resumo da aula?
-2. Os indicadores apresentados foram claros?
-3. Foi fácil encontrar e utilizar a opção de personalização?
-4. Qual foi a maior dificuldade encontrada?
-5. O que você melhoraria na interface?
+- Quais informações são apontadas como pouco utilizadas;
+- Se existem diferenças entre os participantes;
+- Se alguma informação importante para a rotina docente não foi representada nos cartões.
 
 #### Ficha de registro
 
@@ -591,37 +612,46 @@ As conclusões deverão considerar o perfil efetivamente alcançado, sem general
 | Código do participante | U__ |
 | Data | |
 | Experiência com aulas on-line | |
-| Tarefa 1 — Consultar resumo | Sucesso / Com ajuda / Não concluiu |
-| Tarefa 2 — Personalizar | Sucesso / Com ajuda / Não concluiu |
-| Tarefa 3 — Salvar | Sucesso / Com ajuda / Não concluiu |
-| Principais dificuldades | |
-| Sugestões do participante | |
+| Quantidade de grupos criados | |
+| Cartões de cada grupo | |
+| Nomes atribuídos aos grupos | |
+| Cartões não classificados | |
+| Informações pouco utilizadas | |
+| Dificuldades observadas | |
+| Observações adicionais | |
 
 #### Como os dados serão analisados
 
-1. **Conclusão das tarefas:** verificar quantos participantes conseguiram realizar cada atividade sem ajuda, com ajuda ou não conseguiram concluí-la.
-2. **Dificuldades encontradas:** agrupar os problemas observados em navegação, interpretação dos indicadores e personalização da visualização.
-3. **Avaliação das hipóteses:**
-   - **H01:** investigar se o resumo apresenta informações consideradas úteis pelos docentes, como complemento à análise do uso em tempo real.
-   - **H02:** identificar dificuldades na interpretação dos indicadores e na compreensão das classificações da IA.
-   - **H03:** registrar eventuais preocupações espontâneas relacionadas à privacidade dos estudantes.
-4. **Melhorias no design:** utilizar os resultados para ajustar a organização das telas, os indicadores apresentados e os controles de personalização.
-5. **Limitações:** por envolver uma amostra pequena e um protótipo, os resultados servirão para identificar problemas de usabilidade, sem representar todos os possíveis usuários do MindFlow AI.
-Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar futuras melhorias na interface.
+1. **Agrupamentos:** comparar como os participantes organizaram os cartões, identificando quais informações foram frequentemente colocadas juntas.
+
+2. **Nomes dos grupos:** analisar os termos escolhidos pelos docentes, identificando padrões de linguagem e diferenças na interpretação das informações.
+
+3. **Informações pouco utilizadas:** registrar quais cartões foram considerados menos relevantes para a rotina dos participantes, sem concluir que essas informações são desnecessárias apenas por terem sido pouco selecionadas.
+
+4. **Relação com as hipóteses e necessidades:**
+   - **R03:** identificar como os docentes relacionam informações utilizadas no acompanhamento e na revisão das aulas.
+   - **H06:** investigar se diferentes formas de organizar as informações sugerem a necessidade de oferecer opções de personalização.
+   - **?03:** contribuir para compreender diferenças na organização das informações entre docentes com experiências distintas.
+
+5. **Uso no design:** utilizar os agrupamentos e nomes mais recorrentes como referência para organizar as informações e definir categorias compreensíveis na interface, sem presumir que os docentes necessitam de um dashboard.
+
+6. **Limitações:** a amostra será pequena e selecionada por conveniência. Além disso, a organização dos cartões representa relações percebidas entre informações, mas não comprova que os participantes realmente utilizam esses dados ou que desejam funcionalidades específicas.
+
+Os resultados serão registrados em `RASTREABILIDADE.md` para apoiar a revisão dos requisitos de informação e organização da interface.
 
 
-### Instrumento I05 — Diário de reuniões comerciais (diário de atividades)
+### Instrumento I05 — Estudo de Campo - diário de atividades (diário de reuniões comerciais)
 
 **Autor(a):** Matheus Ferreira de Freitas — 22.125.085-5  
-**Técnica:** diário de atividades (estudo de campo): durante duas semanas, o vendedor preenche um registro curto e padronizado logo após cada reunião comercial on-line e, quando chega o retorno do cliente, um registro de follow-up da mesma reunião.  
+**Técnica:** Estudo de Campo - diário de atividades: durante duas semanas, o vendedor preenche um registro curto e padronizado logo após cada reunião comercial on-line e, quando chega o retorno do cliente, um registro de follow-up da mesma reunião.  
 **Objetivo:** verificar se a situação do Cenário C01 acontece na prática com vendedores B2B reais e registrar, em reuniões reais e perto do momento em que acontecem, quais sinais o vendedor usa para perceber a reação dos clientes, quando fica em dúvida, o que decide e o que descobre depois no follow-up. Responde às questões Q1 a Q7 do C01, investiga ?02, ?03, H01, H02, H05 e H03 (visão do comunicador diante de clientes externos) e confere as operações 3 a 6 da T05.  
 **Público:** perfis definidos na A05, prioritariamente vendedores e executivos de contas B2B. Meta: 3 a 5 participantes, cada um com 3 a 8 reuniões registradas, totalizando pelo menos 10 reuniões.
 
-**Por que diário e não entrevista ou observação:** reuniões comerciais com clientes de outra empresa dificilmente podem ser observadas ou gravadas (confidencialidade e clientes que não consentiram), e uma entrevista depende da memória de reuniões antigas. O diário registra cada reunião real logo depois que ela termina, sem a presença da equipe, e inclui a comparação com o retorno do cliente dias depois, que é onde a tarefa T05 mostra que a leitura errada aparece (operação 6.3). É uma técnica diferente das demais da equipe: acompanha várias reuniões ao longo do tempo, em vez de uma opinião (I01), um relato de memória (I02), uma discussão em grupo (I03) ou um protótipo (I04).
+**Por que diário e não entrevista ou observação:** reuniões comerciais com clientes de outra empresa dificilmente podem ser observadas ou gravadas (confidencialidade e clientes que não consentiram), e uma entrevista depende da memória de reuniões antigas. O diário registra cada reunião real logo depois que ela termina, sem a presença da equipe, e inclui a comparação com o retorno do cliente dias depois, que é o momento em que, na tarefa T05, Manoel reavalia a leitura feita na reunião (operação 6.3). É uma técnica diferente das demais da equipe: acompanha várias reuniões ao longo do tempo, em vez de uma opinião (I01), um relato de memória (I02), uma discussão em grupo (I03) ou um protótipo (I04).
 
 #### Procedimento padronizado de aplicação
 
-1. **Preparação:** recrutar pelos critérios da A05 (contatos profissionais da equipe e indicações), confirmar que o participante apresenta propostas por videochamada e fazer uma conversa inicial de 15 minutos, por videochamada, para explicar o diário, preencher a ficha de perfil e combinar o período de duas semanas e o canal de envio (formulário on-line ou mensagem). Atribuir o código do participante (D01, D02...). Fazer um registro piloto com o primeiro participante e ajustar o texto dos itens antes dos demais.
+1. **Preparação:** recrutar pelos critérios da A05 (contatos profissionais da equipe e indicações), confirmar que o participante apresenta propostas por videochamada e fazer uma conversa inicial de 15 minutos, por videochamada, para explicar o diário, preencher a ficha de perfil e combinar o período de duas semanas e o canal de envio (formulário on-line ou mensagem). Atribuir o código do participante (D01, D02...). Fazer um registro piloto com o primeiro participante e ajustar o texto dos itens antes dos demais, identificando a versão piloto e a versão aplicada do instrumento (data e motivo de cada mudança).
 2. **Apresentação e consentimento:** ler o texto de abertura sem alterações, perguntar se há dúvidas, deixar explícito o que não deve ser registrado (nomes, empresas, valores, conteúdo da proposta) e registrar o aceite por escrito antes do primeiro registro.
 3. **Aplicação:** depois de cada reunião comercial on-line do período, o participante preenche o registro por reunião, de preferência no mesmo dia e em até 10 minutos. A equipe envia um lembrete a cada dois ou três dias, não comenta o conteúdo dos registros e não apresenta o MindFlow nem sugere soluções antes do registro de encerramento, para não induzir os relatos. Registros podem ser pulados sem justificativa.
 4. **Encerramento:** ao fim das duas semanas, o participante preenche o registro de follow-up de cada reunião que já teve retorno do cliente (ou informa que ainda não houve) e o registro de encerramento. Uma conversa final de 15 minutos, opcional, esclarece registros incompletos, agradece e informa como os dados serão usados.
@@ -699,61 +729,76 @@ Código da reunião: D__-R__ · Dias até o retorno: ___ (ou "ainda sem retorno"
 
 1. **Organização da base:** reunir os registros por participante e por reunião (D01-R1, D01-R2...), separar o piloto e considerar apenas registros de participantes que aceitaram e atendem aos critérios da A05. Registrar os itens em branco, contar quantas reuniões foram registradas por participante e quantas receberam follow-up, e remover qualquer dado identificável antes da análise.
 2. **Caracterização dos participantes e das reuniões:** usar a ficha de perfil e os itens 1 a 4 para descrever os perfis, a duração, quem define o tempo, o tamanho e a composição do grupo do cliente, a proporção de câmeras ligadas e de reuniões com a tela compartilhada quase o tempo todo. Comparações entre perfis serão exploratórias e informarão o número de reuniões de cada grupo.
-3. **Itens fechados:** apresentar contagens e proporções por reunião, e não por pessoa, tomando como referência o número de registros válidos de cada item. Nos itens de múltipla escolha (6 e 7), a soma das proporções pode ultrapassar 100%. A confiança declarada (item 11) será cruzada com o resultado do follow-up (confirmou / em parte / não).
+3. **Itens fechados:** apresentar contagens e proporções por reunião, e não por pessoa, tomando como referência o número de registros válidos de cada item. Nos itens de múltipla escolha (6 e 7), a soma das proporções pode ultrapassar 100%. A confiança declarada (item 11) será cruzada com o registro de follow-up (confirmou / em parte / não), tratado como evidência complementar sobre a interpretação do vendedor.
 4. **Itens abertos:** codificar os itens 5, 7, 8, 9, 10 e 13, o registro de follow-up e o registro de encerramento por temas definidos a partir das hipóteses (sinais usados, momento da dúvida, critério de decisão, custo de insistir, eventos, registro pós-reunião, clientes externos) e por temas novos que surgirem. A codificação será feita por dois integrantes, com divergências discutidas até consenso, preservando relatos contrários e usando apenas trechos sem identificação.
 5. **Relação com as hipóteses, as questões do C01 e a T05:**
    - **?02 e ?03 — itens 3, 5 e 6:** em quantas reuniões a situação do C01 aparece (tela compartilhada quase toda a reunião, dúvida sobre a reação, sinais fracos). Se for frequente, o recorte comercial permanece como contexto a atender; se for raro, sai do escopo prioritário.
    - **H01 — itens 5, 6, 11 e 13 e encerramento 1:** se a dúvida sobre a reação é frequente, em que trechos ocorre e se o vendedor identifica reuniões em que um sinal no momento teria mudado a decisão.
-   - **H02 — item 11 e follow-up 1 a 3:** relação entre a confiança declarada e o acerto da leitura confirmado pelo cliente; leituras feitas com alta confiança e desmentidas depois são o caso mais importante para a exibição de incerteza.
-   - **H03 (visão do comunicador diante de clientes externos) — encerramento 4 e 5:** o que o vendedor precisaria explicar ou pedir e se aceitaria fazê-lo.
+   - **H02 — item 11 e follow-up 1 a 3:** relação entre a confiança declarada na reunião e a reavaliação feita depois do retorno do cliente. O follow-up não prova que a leitura estava certa ou errada: é evidência complementar sobre a interpretação do vendedor, e não uma medida do estado do cliente, porque o retorno pode depender de preço, aprovação interna, prazo ou concorrência. Os casos de alta confiança seguidos de reavaliação são os mais importantes para a exibição de incerteza.
+   - **H03 (visão do comunicador diante de clientes externos) — encerramento 4 e 5:** o que o vendedor precisaria explicar ou pedir e se aceitaria fazê-lo. É evidência indireta, pela voz do comunicador; a evidência principal para H03 vem do I03, em que os participantes falam por si.
    - **H05 — item 2 e encerramento 3:** se um indicador agregado faz sentido em grupos de 2 a 6 clientes.
    - **Q1 a Q7 do C01:** cada item do registro está marcado com a questão que responde; as hipóteses de refinamento do cenário serão confirmadas, refutadas ou reescritas uma a uma.
    - **T05:** os itens 6, 7, 8, 9 e 12 e o follow-up verificam as operações 3.1 a 3.4, 4.1, 4.3, 5.1 a 5.3 e 6.3 do HTA, os métodos 3.A a 3.D e as regras de seleção do Goal 5 do GOMS e as tarefas 2.1.2, 2.4 e 4.3 do CTT.
-6. **Interpretação:** distinguir a prática real (registros por reunião e follow-up) da opinião sobre uma ferramenta hipotética (registro de encerramento, aplicado por último e analisado à parte). Os registros são autorrelatos feitos de memória, ainda que recente, e é provável que reuniões difíceis sejam registradas com mais frequência do que as tranquilas; isso será considerado ao contar as ocorrências. O follow-up é o único dado que mostra uma leitura errada, e só existe para as reuniões cujo retorno chegou no período.
+6. **Interpretação:** distinguir a prática real (registros por reunião e follow-up) da opinião sobre uma ferramenta hipotética (registro de encerramento, aplicado por último e analisado à parte). Os registros são autorrelatos feitos de memória, ainda que recente, e é provável que reuniões difíceis sejam registradas com mais frequência do que as tranquilas; isso será considerado ao contar as ocorrências. O follow-up não prova que a leitura estava certa ou errada: é evidência complementar sobre a interpretação do vendedor, e só existe para as reuniões cujo retorno chegou no período.
 7. **Uso no design:** os achados alimentam a decisão sobre manter o recorte comercial no escopo (?02 e ?03), a atualização da persona P04, do Cenário C01 e da tarefa T05, e os requisitos do Semáforo Cognitivo nesse contexto: em que trechos da pauta o sinal importa, o que ele não deve pretender mostrar (reação individual do decisor), como se comporta com câmeras desligadas e o que exige de aviso e consentimento com participantes externos (R01, R02, F01, F04 e F08). O resultado será registrado em `RASTREABILIDADE.md`.
 8. **Limitações:** amostra pequena e por conveniência, período curto, dependência de haver reuniões no período, autorrelato sem observação, ausência de acesso ao conteúdo das reuniões e follow-ups que podem não chegar a tempo. Os resultados não serão generalizados para todos os vendedores B2B, e o setor dos participantes será informado em categoria ampla junto às conclusões.
 
 ## Síntese
 
-O conjunto de técnicas pretende reduzir quatro lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
+O conjunto de técnicas pretende reduzir cinco lacunas sobre os usuários, que até aqui só foram tratadas com evidência secundária (Entrega 2) e com artefatos de análise (personas, cenários e modelos de tarefa, Entregas 3 a 5):
 
 1. **Se o problema do comunicador existe na prática:** se professores e instrutores realmente deixam de perceber dificuldades do grupo durante a sessão, que sinais usam hoje e como decidem reforçar ou seguir (I01 em escala; I02 em profundidade, a partir de aulas reais).
+
 2. **Se o tipo de apoio imaginado faz sentido:** utilidade de um sinal durante a sessão, interesse por informação de confiança e o que de fato seria consultado depois da aula, sem pressupor dashboard, filtros ou relatórios (I01 e I02).
+
 3. **Como o participante reage à análise da própria imagem:** conforto, regras percebidas, o que precisa saber e controlar, e se a agregação protege em turmas pequenas (I03, com apoio da A01).
-4. **Se a interface proposta é fácil de utilizar:** verificar se docentes conseguem localizar uma reunião concluída, interpretar os indicadores, personalizar o resumo e salvar as alterações sem dificuldades, identificando problemas de navegação e compreensão (I04, por meio de teste de usabilidade).
-5. **Se o recorte comercial faz sentido na prática:** se vendedores B2B vivem a situação do C01 em reuniões reais, que sinais usam, como decidem e o que descobrem no follow-up, sem supor que a reunião comercial tenha as mesmas tarefas da aula (I05, por meio de diário de reuniões ao longo de duas semanas).
+
+4. **Como os docentes organizam informações sobre suas aulas:** identificar quais informações são consideradas relacionadas, como são agrupadas e quais termos os professores utilizam para nomeá-las, sem pressupor uma estrutura de interface ou funcionalidade específica (I04, por meio de classificação de cartões).
+
+5. **Se o recorte comercial faz sentido na prática:** se vendedores B2B vivem a situação do C01 em reuniões reais, que sinais usam, como decidem e o que descobrem no follow-up, sem supor que a reunião comercial tenha as mesmas tarefas da aula (I05, por meio de estudo de campo com diário de atividades ao longo de duas semanas).
 
 | Técnica | Quem responde | Hipóteses/lacunas investigadas |
 |---|---|---|
-| I01 — Questionário (Kayky) | Comunicadores, em maior número | H01, H02, H03 (visão do comunicador), necessidades do Dashboard |
+| I01 — Questionário (Kayky) | Comunicadores, em maior número | H01, H02, H03 (visão do comunicador), H06 e necessidades do acompanhamento pós-sessão |
 | I02 — Entrevista com incidente crítico (Isabella) | Professores, prioritariamente de idiomas com turmas pequenas | H01, H02, H05, ?02, ?04; questões Q1–Q7 do C05 |
 | I03 — Grupo focal (Gustavo) | Participantes de aulas e treinamentos on-line | H03, H05, ?04; questões Q1–Q7 do C03 |
-| I04 — Teste de usabilidade (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | H01, H02 e H03 (complementar); usabilidade do resumo, interpretação dos indicadores e personalização da visualização |
-| I05 — Diário de reuniões comerciais (Matheus) | Vendedores B2B, em reuniões reais ao longo de duas semanas | ?02, ?03, H01, H02, H05 e H03 (visão do comunicador com clientes externos); questões Q1–Q7 do C01; operações 3 a 6 da T05 |
+| I04 — Classificação de Cartões (Rafael Dias) | Docentes que realizam aulas on-line por videoconferência | R03, H06 e ?03; organização das informações pós-aula, agrupamentos e vocabulário dos docentes |
+| I05 — Estudo de Campo - diário de atividades (Matheus) | Vendedores B2B, em reuniões reais ao longo de duas semanas | ?02, ?03, H01, H02, H05 e H03 (visão do comunicador com clientes externos); questões Q1–Q7 do C01; operações 3 a 6 da T05 |
 
 **O que se espera concluir após a análise dos dados:**
 
-- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). O I04 complementará essa análise verificando se o resumo pós-aula apresenta informações úteis e acessíveis aos docentes. Decide se o Semáforo continua como recorte principal e quais informações devem ser priorizadas no resumo.
-- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. O I04 permitirá identificar dificuldades na compreensão dos indicadores e de suas classificações. Decide a forma de comunicar incerteza e melhorar a clareza das informações apresentadas.
-- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04). O I04 poderá contribuir de forma complementar, caso sejam identificadas preocupações com privacidade durante o teste.
+- **H01** deverá ficar **sustentada, refutada ou refinada** quanto à utilidade de um sinal durante a sessão; o resultado mais provável a testar é o refinamento para momentos específicos (conteúdo novo com a tela compartilhada). Decide se o Semáforo continua como recorte principal.
+
+- **H02** deverá ficar **sustentada ou refinada** quanto a mostrar a confiança durante a sessão ou só depois dela. Decide a forma de comunicar incerteza.
+
+- **H03** deverá ficar **sustentada, refinada ou refutada**, incluindo quais mecanismos (processamento local, aviso, recusa, resumo) são indispensáveis. Decide o escopo da interface do participante (T04).
+
 - **H05** (turmas pequenas) deverá ficar **sustentada ou refutada**, a partir da visão de professores (I02) e de participantes (I03).
-- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 também contribuirá para avaliar a compreensão desses rótulos na interface.
-- **Usabilidade do resumo e da personalização (I04):** deverá ser verificado se os docentes conseguem localizar uma reunião concluída, compreender os indicadores, personalizar a visualização e salvar as alterações sem dificuldades. Os problemas identificados orientarão melhorias na navegação, organização das informações e controles de edição.
+
+- **H06** (necessidade de personalização) deverá ser **sustentada, refutada ou refinada** a partir das respostas do I01 e dos agrupamentos realizados no I04. O I04 permitirá identificar diferenças na organização das informações entre os docentes, contribuindo para avaliar possíveis necessidades de personalização. Entretanto, diferenças nos agrupamentos não comprovam, isoladamente, que os usuários desejam personalizar a interface.
+
+- **R03 — Acompanhamento pós-aula (I04):** espera-se identificar como os docentes relacionam informações sobre participação, dificuldades, atividades e planejamento das aulas. Os agrupamentos poderão orientar a organização das informações apresentadas após uma sessão.
+
+- **?02, ?03 e ?04** deverão ser **parcialmente respondidas**: se professores, instrutores e apresentadores compartilham as mesmas tarefas e se os rótulos engajamento, tédio, confusão e frustração fazem sentido para eles. O I04 contribuirá especificamente para compreender a organização e o vocabulário utilizados por docentes no acompanhamento pós-aula.
+
+- **Organização das informações (I04):** espera-se identificar quais cartões são frequentemente agrupados, quais categorias são criadas pelos participantes e quais informações são consideradas pouco utilizadas. Esses resultados poderão orientar melhorias na arquitetura da informação e na apresentação dos dados, sem pressupor a necessidade de um dashboard.
+
 - **Recorte comercial (I05):** ?02 e ?03 deverão indicar se a reunião comercial B2B permanece no escopo como contexto a atender ou apenas como variação. Se a situação do C01 se repetir nos registros, H01 e H02 ganham evidência em contexto de clientes externos e a T05 é ajustada; se for rara, o recorte sai do escopo prioritário.
+
 - **H04** e **?01** não dependem desta coleta (foram tratadas na Entrega 2).
 
-Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas e elementos da interface afetados serão revisados.
+Quando os dados forem coletados e analisados, o histórico será atualizado em `RASTREABILIDADE.md` (seções 2 e 5), e as personas, cenários, tarefas, requisitos e elementos da interface afetados serão revisados.
 
 ## Checklist
 
 - [x] Hipóteses/lacunas prioritárias da Entrega 1 foram revisitadas.
 - [x] Se o escopo de IHC foi derivado de TCC técnico, a coleta investiga a plausibilidade do usuário, tarefa e contexto adotados.
-- [x] Perguntas não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam a necessidade.
+- [x] Perguntas e atividades não pressupõem que dashboard, CRUD, filtros ou relatórios sejam necessários; investigam as necessidades dos usuários.
 - [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
 - [x] Parte A identifica dados e perfis de coleta de forma específica.
 - [x] Aspectos éticos são contextualizados para o projeto.
 - [x] Há uma técnica completa por integrante e técnicas distintas.
 - [x] Questionário está incluído entre as técnicas.
 - [ ] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
-- [x] Perguntas evitam indução e coletam apenas dados necessários.
+- [x] Perguntas e atividades evitam indução e coletam apenas dados necessários.
 - [x] Está claro como os dados serão analisados e usados no design.
