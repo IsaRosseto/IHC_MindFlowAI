@@ -514,20 +514,19 @@ O sistema visual segue a identidade apresentada nas interfaces da extensão Mind
 
 ## Verificação de acessibilidade básica
 
-A interface deve considerar critérios pertinentes da WCAG para melhorar a acessibilidade e a compreensão das informações.
+**Como foi verificado (25/11/2026):** nas telas públicas do sistema publicado (página inicial e tela de entrada), rodamos o **axe-core 4.10**, ferramenta automática que testa os critérios WCAG 2.0/2.1 níveis A e AA, e percorremos a tela com a tecla **Tab** para conferir ordem e foco visível. As telas internas (resumo, dashboard, extensão) exigem login e foram avaliadas pelos prints, sem teste automático.
 
 | Critério | Aplicação no protótipo | Verificação |
 |---|---|---|
-| Contraste | Manter contraste adequado entre textos, cartões e fundo. | Pendente de validação das combinações de cores. |
-| Uso de cores | Não depender exclusivamente de cores para diferenciar os indicadores. | Associar cores aos nomes e valores dos estados. |
-| Legibilidade | Priorizar textos legíveis no tamanho reduzido do pop-up. | Verificar especialmente os textos auxiliares e informações técnicas. |
-| Navegação por teclado | Permitir acessar os controles de iniciar, expandir e recolher. | Pendente de simulação e validação. |
-| Foco visível | Destacar o controle selecionado durante a navegação por teclado. | Pendente de prototipação. |
-| Identificação dos controles | Utilizar nomes compreensíveis para os botões e ações. | Verificar os controles de expansão, sincronização e início da análise. |
-| Compreensão dos resultados | Apresentar nomes, valores e contexto das estimativas. | Parcialmente contemplado nas interfaces fornecidas. |
+| Contraste (WCAG 1.4.3) | Contraste adequado entre textos, cartões e fundo | **Atende nas telas públicas:** o axe-core não encontrou nenhuma falha de contraste na página inicial nem na tela de entrada. Telas internas: não verificado automaticamente. |
+| Uso de cores (WCAG 1.4.1) | Não depender só da cor para diferenciar os indicadores | **Atende parcialmente:** os indicadores têm nome e valor junto da cor, mas as cores mudam entre o pop-up e o gráfico do resumo (HC08 da Entrega 13). |
+| Legibilidade | Textos legíveis no tamanho reduzido do pop-up | **Atende parcialmente:** os rótulos principais são legíveis; os textos técnicos do rodapé do pop-up são pequenos e disputam espaço (HC03). |
+| Navegação por teclado (WCAG 2.1.1) | Acessar os controles por teclado | **Atende nas telas públicas:** com Tab, o foco passa por todos os links e botões na ordem visual (menu, "Entrar", "Criar conta", campos de e-mail e senha, "Mostrar senha", "Esqueci minha senha", "Entrar", "Ajuda"). |
+| Foco visível (WCAG 2.4.7) | Destacar o controle selecionado | **Atende:** os campos e o botão de ajuda têm destaque próprio (borda de 3 px com sombra); os demais botões usam o contorno padrão do navegador, visível, mas fino. Recomendação: usar o mesmo destaque dos campos em todos os botões. |
+| Identificação dos controles (WCAG 4.1.2) | Nomes compreensíveis para botões e ações | **Falha encontrada:** na página inicial, os três botões de navegação do carrossel ("pontos") usam atributos ARIA não permitidos, e o grupo que os contém tem papel ARIA com filhos inválidos (regras `aria-allowed-attr` e `aria-required-children`, impacto crítico no axe). Um leitor de tela pode anunciar esses controles de forma errada. Os demais controles têm nome. |
+| Compreensão dos resultados | Nomes, valores e contexto das estimativas | **Atende parcialmente:** o gráfico explica o que as linhas representam, mas as porcentagens têm significados diferentes sem rótulo (HC05). |
 
-**Observação:** as imagens demonstram a organização visual da extensão, mas não comprovam, isoladamente, conformidade com os critérios de acessibilidade. A navegação e os estados de foco deverão ser verificados no protótipo.
----
+**Correções recomendadas:** ajustar os atributos ARIA dos pontos do carrossel da página inicial; aplicar o mesmo destaque de foco dos campos a todos os botões; e repetir o teste automático nas telas internas com uma conta de teste.
 
 ## Checklist
 
@@ -544,7 +543,7 @@ A interface deve considerar critérios pertinentes da WCAG para melhorar a acess
 - [x] Os estados de processamento, indisponibilidade e recuperação foram considerados.
 - [x] Os resultados técnicos são apresentados por conceitos compreensíveis ao instrutor.
 - [x] Os estados previstos foram diferenciados das interfaces já implementadas.
-- [ ] A acessibilidade básica foi verificada no protótipo navegável — pendente de verificação de contraste, teclado e foco.
+- [x] A acessibilidade básica foi verificada no protótipo navegável (axe-core e teclado nas telas públicas; telas internas pelos prints).
 - [x] A cobertura dos diagramas MoLIC da equipe foi consolidada (seção "Resumo da cobertura").
 
 **Observação final:** o catálogo reúne as telas de todos os fluxos com numeração única (F00 a F17). F01, F02 e F09 a F11 existem no sistema publicado. F00 e F03 a F08 (extensão) e F12 a F17 (anotação e interface do participante) são estados previstos nos MoLICs que ainda não foram implementados e ficam como melhorias, ligadas aos problemas HC02, HC03, HC04 e HC11 da avaliação heurística (Entrega 13).
