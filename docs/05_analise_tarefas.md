@@ -30,6 +30,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
 | T01 | Personalizar a visualização dos resultados de uma aula concluída no MindFlow AI | P01 / C02 — docente analisando uma aula já finalizada e personalizando a apresentação dos resultados | Média frequência / Alta criticidade | Kayky Pires de Paula — 22.222.040-2 || T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | P01 / C01 — docente analisando os resultados de uma aula on-line após seu término | Média frequência / Alta criticidade | Rafael Dias Silva Costa - 22.222.039-4 |
+| T02 | Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula | P01 / C02 — docente consultando os indicadores durante uma aula on-line. Natureza: tarefa projetada com o MindFlow | Alta frequência / Alta criticidade | Rafael Dias Silva Costa — 22.222.039-4 |
 | T03 | Perceber, durante a aula, se a turma está acompanhando uma explicação nova e decidir se reforça o conteúdo | P02 / C05 — professora de inglês explicando uma estrutura gramatical nova para uma turma pequena. Natureza: prática atual, sem o MindFlow | Alta frequência / Alta criticidade | Isabella Vieira Silva Rosseto — 22.222.036-0 |
 | T04 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | P05 / C03 — Bruno entrando atrasado na aula de Cálculo, sem saber o que é feito com a imagem dele nem se a câmera ligada (ou desligada) pode pesar contra ele | Alta frequência (toda aula com o MindFlow ativo) / Alta criticidade | Gustavo Bertoluzzi Cardoso — 22.123.016-2 |
 | T05 | Conduzir a apresentação comercial percebendo a reação dos clientes e decidindo se avança, reforça ou reexplica um ponto da proposta | P04 / C01 — Manoel apresentando uma proposta pelo Teams com a tela compartilhada, sem conseguir ver nem ouvir todos os clientes, do preparo da reunião até a comparação das anotações com o retorno do cliente no follow-up. Natureza: prática atual, sem o MindFlow | Alta frequência (toda reunião comercial) / Alta criticidade | Matheus Ferreira de Freitas — 22.125.085-5 |
@@ -292,11 +293,11 @@ Em seguida, analisa a visualização resultante. A personalização e a avaliaç
 
 ---
 
-# HTA — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
+## HTA — T02 Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
-## Descrição da tarefa
+### Descrição da tarefa
 
 A tarefa tem como objetivo permitir que o docente interprete os indicadores apresentados pelo MindFlow AI durante uma aula on-line e utilize essas informações como apoio para decidir se deve manter ou adaptar a condução da aula.
 
@@ -304,7 +305,7 @@ A tarefa se inicia quando o MindFlow AI apresenta os estados dos participantes n
 
 A tarefa é concluída quando o docente decide manter a condução atual ou realizar uma adaptação. Esse processo pode se repetir diversas vezes durante a aula conforme novos estados são apresentados pelo sistema.
 
-## Diagrama
+### Diagrama
 
 ```mermaid
 flowchart TB
@@ -346,7 +347,7 @@ flowchart TB
     class T11,T12,T21,T22,T31,T32 operacao;
 ```
 
-## Decomposição e planos
+### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
@@ -371,11 +372,11 @@ flowchart TB
 ---
 
 
-# GOMS — T02: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
+## GOMS — T02: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
-## GOAL 0: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
+### GOAL 0: Interpretar os indicadores do MindFlow AI e decidir se deve adaptar a condução durante a aula
 
 - **OP. 0.1:** analisar o estado atual dos participantes (GOAL 1);
 - **OP. 0.2:** avaliar a relevância da situação (GOAL 2);
@@ -384,16 +385,16 @@ flowchart TB
 
 ---
 
-## GOAL 1: Analisar o estado atual dos participantes
+### GOAL 1: Analisar o estado atual dos participantes
 
-### GOAL 1.1: Observar o indicador geral do estado do grupo
+#### GOAL 1.1: Observar o indicador geral do estado do grupo
 
 - **OP. 1.1.1:** direcionar a atenção para o indicador geral;
 - **OP. 1.1.2:** observar o estado predominante apresentado;
 - **OP. 1.1.3:** verificar o valor associado ao estado;
 - **OP. 1.1.4:** interpretar a informação apresentada.
 
-### GOAL 1.2: Consultar os indicadores específicos
+#### GOAL 1.2: Consultar os indicadores específicos
 
 - **OP. 1.2.1:** direcionar a atenção para os indicadores específicos;
 - **OP. 1.2.2:** observar os valores de engajamento, tédio, confusão e frustração;
@@ -402,15 +403,15 @@ flowchart TB
 
 ---
 
-## GOAL 2: Avaliar a relevância da situação
+### GOAL 2: Avaliar a relevância da situação
 
-### GOAL 2.1: Interpretar a alteração observada
+#### GOAL 2.1: Interpretar a alteração observada
 
 - **OP. 2.1.1:** identificar os estados que merecem atenção;
 - **OP. 2.1.2:** relacionar os indicadores ao conteúdo ou à atividade em andamento;
 - **OP. 2.1.3:** interpretar o significado dos estados observados no contexto da aula.
 
-### GOAL 2.B: Avaliar a necessidade de intervenção
+#### GOAL 2.B: Avaliar a necessidade de intervenção
 
 - **OP. 2.2.1:** considerar a relevância dos indicadores observados;
 - **OP. 2.2.2:** avaliar se os estados identificados podem comprometer o andamento da aula;
@@ -418,9 +419,9 @@ flowchart TB
 
 ---
 
-## GOAL 3: Decidir como prosseguir com a aula
+### GOAL 3: Decidir como prosseguir com a aula
 
-### METHOD 3.1: Manter a condução atual
+#### METHOD 3.1: Manter a condução atual
 
 **SEL. RULE:** utilizar quando os indicadores não demonstrarem uma situação que justifique adaptação da aula.
 
@@ -428,7 +429,7 @@ flowchart TB
 - **OP. 3.1.2:** continuar a condução da aula sem alterações;
 - **OP. 3.1.3:** acompanhar os próximos indicadores apresentados pelo sistema.
 
-### METHOD 3.2: Definir uma adaptação na condução da aula
+#### METHOD 3.2: Definir uma adaptação na condução da aula
 
 **SEL. RULE:** utilizar quando os indicadores e o contexto da aula demonstrarem necessidade de intervenção.
 
@@ -440,7 +441,7 @@ flowchart TB
 
 ---
 
-## Síntese do modelo GOMS
+### Síntese do modelo GOMS
 
 * **Goal principal:** interpretar os indicadores do MindFlow AI e decidir como prosseguir com a aula.
 * **Goals secundários:** compreender o estado atual, identificar mudanças relevantes, interpretar a situação e definir como continuar.
@@ -452,15 +453,15 @@ flowchart TB
 
 ---
 
-# CTT — T02: Interpretar os indicadores do MindFlow AI
+## CTT — T02: Interpretar os indicadores do MindFlow AI
 
 **Autor(a):** Rafael Dias — 22.222.039-4
 
-## Diagrama CTT
+### Diagrama CTT
 
 [https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_rafael.png](https://github.com/IsaRosseto/IHC_MindFlowAI/blob/main/assets/05_tarefas/ctt_rafael.png)
 
-### Legenda e relações temporais usadas
+#### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
