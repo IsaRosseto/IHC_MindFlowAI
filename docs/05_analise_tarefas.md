@@ -657,125 +657,50 @@ A tarefa é considerada concluída quando a aula termina com Bruno tendo partici
 
 ### Diagrama
 
-```mermaid
-%%{init: {"flowchart": {"wrappingWidth": 600, "nodeSpacing": 18, "rankSpacing": 70, "curve": "basis"}}}%%
-flowchart LR
+![HTA T04 — Participar de uma aula com o MindFlow ativo controlando a própria participação na análise](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/05_tarefas/hta_t04.png)
 
-    T0["<b>0. Participar de uma aula com o MindFlow ativo</b><br/><b>controlando a própria participação na análise</b><br/><br/><b>Plano 0:</b> 1 > 2 > [3] > 4 > 5* até o fim da aula > [6]<br/>[3] se ainda tiver dúvida · 5* sempre que a situação mudar<br/>se já conhece o MindFlow de outras aulas: 1 > 4 > 5* > [6]"]
-
-    T1["<b>1. Perceber que a análise está ativa</b><br/><b>Plano 1:</b> (1.1 ou 1.2) > 1.3"]
-    T2["<b>2. Entender o que é processado</b><br/><b>Plano 2:</b> 2.1, 2.2 e 2.3 em qualquer ordem"]
-    T3["<b>3. Tirar uma dúvida específica</b><br/><b>Plano 3:</b> 3.1 > 3.2 > [3.3, se não achar]"]
-    T4["<b>4. Decidir como participar</b><br/><b>Plano 4:</b> 4.1 > (4.2 ou 4.3 ou 4.4) > 4.5"]
-    T5["<b>5. Ajustar a participação durante a aula</b><br/><b>Plano 5:</b> 5.1 > (5.2 ou 5.3) > 5.4"]
-    T6["<b>6. Conferir depois o que foi processado</b><br/><b>Plano 6:</b> 6.1 > 6.2 > [6.3, se ainda tiver dúvida]"]
-
-    T0 --> T1
-    T0 --> T2
-    T0 --> T3
-    T0 --> T4
-    T0 --> T5
-    T0 --> T6
-
-    T11[["1.1 Notar o aviso ao entrar na chamada"]]
-    T12[["1.2 Encontrar o aviso com a aula já em andamento"]]
-    T13[["1.3 Ler a mensagem curta do aviso"]]
-
-    T1 --> T11
-    T1 --> T12
-    T1 --> T13
-
-    T21[["2.1 Ver o que é captado pela webcam"]]
-    T22[["2.2 Ver o que a professora recebe"]]
-    T23[["2.3 Ver o que não é feito com os dados"]]
-
-    T2 --> T21
-    T2 --> T22
-    T2 --> T23
-
-    T31[["3.1 Abrir as informações completas"]]
-    T32[["3.2 Procurar a resposta para a dúvida"]]
-    T33[["3.3 Descobrir a quem perguntar"]]
-
-    T3 --> T31
-    T3 --> T32
-    T3 --> T33
-
-    T41[["4.1 Pesar o próprio conforto e a aula"]]
-    T42[["4.2 Ligar a câmera e participar da análise"]]
-    T43[["4.3 Ligar a câmera sem participar da análise [H]"]]
-    T44[["4.4 Manter a câmera desligada"]]
-    T45[["4.5 Conferir o indicador de participação"]]
-
-    T4 --> T41
-    T4 --> T42
-    T4 --> T43
-    T4 --> T44
-    T4 --> T45
-
-    T51[["5.1 Perceber que a situação mudou"]]
-    T52[["5.2 Desligar ou religar a câmera"]]
-    T53[["5.3 Pausar ou retomar só a análise [H]"]]
-    T54[["5.4 Conferir o indicador de participação"]]
-
-    T5 --> T51
-    T5 --> T52
-    T5 --> T53
-    T5 --> T54
-
-    T61[["6.1 Abrir o resumo de transparência da aula [H]"]]
-    T62[["6.2 Confirmar que nada foi registrado sobre ele"]]
-    T63[["6.3 Perguntar ao contato indicado"]]
-
-    T6 --> T61
-    T6 --> T62
-    T6 --> T63
-
-    classDef objetivo fill:#ffffff,stroke:#333,stroke-width:1.5px,color:#111;
-    classDef operacao fill:#f7f7f7,stroke:#333,stroke-width:2.5px,color:#111;
-
-    class T0,T1,T2,T3,T4,T5,T6 objetivo;
-    class T11,T12,T13,T21,T22,T23,T31,T32,T33,T41,T42,T43,T44,T45,T51,T52,T53,T54,T61,T62,T63 operacao;
-```
+*Figura T04-HTA — as caixas com borda grossa e traço embaixo são operações (ponto de parada da decomposição). Fonte editável: [`hta_t04.svg`](https://raw.githubusercontent.com/IsaRosseto/IHC_MindFlowAI/main/assets/05_tarefas/hta_t04.svg).*
 
 ### Decomposição e planos
 
-| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
-|---|---|---|---|
-| 0 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | **1 > 2 > [3, se ainda tiver dúvida] > 4 > repetir 5 sempre que a situação mudar, até o fim da aula > [6, se quiser]**; se Bruno já conhece o MindFlow de outras aulas, **1 > 4 > 5\* > [6]** | No C03, Bruno entra atrasado e já com a aula começando. As subtarefas 1 a 4 precisam levar segundos e não podem competir com o início da explicação. O atalho do plano existe para que quem já entendeu o sistema não precise reler tudo a cada aula. |
-| 1 | Perceber que a análise está ativa | **(1.1 ou 1.2) > 1.3** | Bruno nunca ouviu falar de um sistema que analisa expressão facial em aula (P05). Se ele não perceber o aviso, nenhuma das outras subtarefas acontece. |
-| 1.1 | Notar o aviso ao entrar na chamada | Alternativa a 1.2, quando ele entra no horário | Existe um conflito a investigar: um aviso que bloqueia a entrada garante a leitura, mas atrasa quem já está atrasado; um aviso discreto não atrapalha, mas pode passar despercebido. |
-| 1.2 | Encontrar o aviso com a aula já em andamento | Alternativa a 1.1, quando ele entra atrasado ou fecha o aviso sem ler | O aviso não pode existir só no momento da entrada. Um indicador permanente e pequeno deve levar de volta a ele a qualquer momento da aula. |
-| 1.3 | Ler a mensagem curta do aviso | Após 1.1 ou 1.2 | A mensagem deve ter poucas linhas e linguagem simples, sem termos técnicos de IA (RC04). |
-| 2 | Entender o que é processado | **2.1, 2.2 e 2.3 em qualquer ordem** | As três informações são independentes. Podem aparecer como três blocos curtos que Bruno lê na ordem que quiser. |
-| 2.1 | Ver o que é captado pela webcam | Qualquer ordem dentro de 2 | Deve dizer que são sinais visuais processados no próprio computador dele. O processamento local também ajuda a diminuir a sensação de estar sendo vigiado (decisão de design da P05). |
-| 2.2 | Ver o que a professora recebe | Qualquer ordem dentro de 2 | É a informação que responde ao medo central do Bruno no C03: a professora recebe só um resultado agregado da turma, sem apontar nenhum aluno (H03; decisão de design da P05). |
-| 2.3 | Ver o que não é feito com os dados | Qualquer ordem dentro de 2 | Dizer o que **não** acontece (vídeo não é guardado, não existe avaliação individual) responde à dúvida do Bruno de forma mais direta do que só listar o que o sistema faz. Segue o padrão da página de transparência do Education Insights (Entrega 2). |
-| 3 | Tirar uma dúvida específica | **3.1 > 3.2 > [3.3, se não encontrar a resposta]** | É opcional no Plano 0. Só acontece quando o resumo do aviso não bastou. |
-| 3.1 | Abrir as informações completas | Primeira operação de 3 | A página completa é o equivalente, no MindFlow, da página de transparência para o aluno do Education Insights (RC04). |
-| 3.2 | Procurar a resposta para a dúvida | Após 3.1 | As dúvidas do Bruno são concretas: “isso conta na nota?”, “a professora vê o meu rosto?”. As informações devem estar organizadas por perguntas com as palavras do aluno, e não por termos técnicos. |
-| 3.3 | Descobrir a quem perguntar | Opcional, quando 3.2 não resolve | No C03 (Q5), não existe nenhum canal para Bruno tirar esse tipo de dúvida, e ele nunca mandou e-mail para a professora porque achou que ia parecer estranho. A página deve indicar um contato para perguntas sobre os dados. |
-| 4 | Decidir como participar | **4.1 > (4.2 ou 4.3 ou 4.4) > 4.5** | A decisão é do Bruno. A interface não deve pressioná-lo para nenhuma das opções. |
-| 4.1 | Pesar o próprio conforto e a aula | Primeira operação de 4 | Professor e aluno têm níveis diferentes de autoridade, e o participante pode não se sentir à vontade para recusar (Entrega 3, linha “Ambiente social/organizacional”). |
-| 4.2 | Ligar a câmera e participar da análise | Alternativa | É o caminho que a professora espera, mas não deve ser apresentado como o “certo”. |
-| 4.3 | Ligar a câmera sem participar da análise **[H]** | Alternativa | A forma de consentimento ou recusa ainda precisa ser investigada (Entrega 3, linha “Papéis/permissões/governança”). Se essa opção não existir, a única forma de não ser analisado é desligar a câmera, ou seja, sumir da aula. Isso reproduz exatamente o conflito do C03, em que privacidade e participação ficam presas uma à outra. |
-| 4.4 | Manter a câmera desligada | Alternativa | Não deve gerar consequência individual. A contagem de participantes que contribuem para o sinal, prevista para o comunicador (decisão de design da P04), precisa continuar sendo só um número, sem dizer quem está de câmera desligada. |
-| 4.5 | Conferir o indicador de participação | Última operação de 4 | Sem confirmação, Bruno não tem certeza se a escolha dele foi aplicada. O indicador deve ser pequeno e permanente e funcionar também no celular, que é um dos dispositivos que Bruno usa para assistir aula (P05). |
-| 5 | Ajustar a participação durante a aula | **5.1 > (5.2 ou 5.3) > 5.4**; executada zero ou mais vezes, sempre que a situação mudar | A escolha feita em 4 não é definitiva. O controle precisa continuar disponível durante toda a aula sem tirar a atenção do Bruno da explicação. |
-| 5.1 | Perceber que a situação mudou | Primeira operação de 5 | Exemplos da P05 e do C03: alguém da família entra no quarto, ou Bruno percebe que está num dia em que entendeu menos e não quer se expor. |
-| 5.2 | Desligar ou religar a câmera | Alternativa a 5.3, quando ele também quer sumir (ou voltar a aparecer) para a turma | É feita na plataforma de videoconferência, fora do MindFlow. Ao religar a câmera, Bruno precisa saber se a análise volta junto ou continua como ele deixou. |
-| 5.3 | Pausar ou retomar só a análise **[H]** | Alternativa a 5.2, quando ele quer continuar visível para a turma | Depende da mesma hipótese de 4.3. Sem ela, a única forma de parar de ser analisado no meio da aula é desligar a câmera. |
-| 5.4 | Conferir o indicador de participação | Última operação de 5 | O estado “participando” ou “pausado” precisa ser fácil de distinguir de relance. |
-| 6 | Conferir depois o que foi processado | **6.1 > 6.2 > [6.3, se ainda tiver dúvida]**; opcional no Plano 0 | Responde à última ruptura do C03: depois da aula, Bruno fica sem saber se algo pode voltar contra ele (Q5). |
-| 6.1 | Abrir o resumo de transparência da aula **[H]** | Primeira operação de 6 | Proposta a validar com alunos. O resumo deve falar só do que aconteceu com os dados do próprio Bruno naquela aula, sem mostrar nenhum resultado da turma, já que o Semáforo e o Dashboard são exclusivos do comunicador (RC09). |
-| 6.2 | Confirmar que nada foi registrado sobre ele | Após 6.1 | A informação que importa para o Bruno é negativa: nada foi guardado sobre ele individualmente e o vídeo não foi armazenado. |
-| 6.3 | Perguntar ao contato indicado | Opcional, quando 6.2 não basta | É o mesmo contato de 3.3. Ter um canal claro evita que a dúvida fique sem resposta de uma aula para outra, como acontece hoje no C03. |
+Notação dos planos: `>` sequência, `/` escolha, `+` em qualquer ordem, `*` repetição e `[ ]` opcional. As condições aparecem por extenso na última coluna.
+
+| ID | Objetivo/operação | Input | Feedback | Plano | Ações, problemas e recomendações |
+|---|---|---|---|---|---|
+| 0 | Participar de uma aula com o MindFlow ativo controlando a própria participação na análise | Bruno entra numa aula on-line em que o MindFlow está ativo (Cenário C03) | A aula termina com Bruno tendo participado da forma que escolheu: o indicador mostra o estado da participação e, depois, o resumo de transparência confirma o que foi processado | 1 > 2 > [3] > 4 > 5* > [6] | Condição: 1 > 2 > [3, se ainda tiver dúvida] > 4 > repetir 5 sempre que a situação mudar, até o fim da aula > [6, se quiser]; se Bruno já conhece o MindFlow de outras aulas, 1 > 4 > 5\* > [6]. No C03, Bruno entra atrasado e já com a aula começando. As subtarefas 1 a 4 precisam levar segundos e não podem competir com o início da explicação. O atalho do plano existe para que quem já entendeu o sistema não precise reler tudo a cada aula. |
+| 1 | Perceber que a análise está ativa | — | — | (1.1 / 1.2) > 1.3 | Bruno nunca ouviu falar de um sistema que analisa expressão facial em aula (P05). Se ele não perceber o aviso, nenhuma das outras subtarefas acontece. |
+| 1.1 | Notar o aviso ao entrar na chamada | — | — | — | Alternativa a 1.2, quando ele entra no horário. Existe um conflito a investigar: um aviso que bloqueia a entrada garante a leitura, mas atrasa quem já está atrasado; um aviso discreto não atrapalha, mas pode passar despercebido. |
+| 1.2 | Encontrar o aviso com a aula já em andamento | — | — | — | Alternativa a 1.1, quando ele entra atrasado ou fecha o aviso sem ler. O aviso não pode existir só no momento da entrada. Um indicador permanente e pequeno deve levar de volta a ele a qualquer momento da aula. |
+| 1.3 | Ler a mensagem curta do aviso | — | — | — | Após 1.1 ou 1.2. A mensagem deve ter poucas linhas e linguagem simples, sem termos técnicos de IA (RC04). |
+| 2 | Entender o que é processado | — | — | 2.1 + 2.2 + 2.3 | As três informações são independentes. Podem aparecer como três blocos curtos que Bruno lê na ordem que quiser. |
+| 2.1 | Ver o que é captado pela webcam | — | — | — | Qualquer ordem dentro de 2. Deve dizer que são sinais visuais processados no próprio computador dele. O processamento local também ajuda a diminuir a sensação de estar sendo vigiado (decisão de design da P05). |
+| 2.2 | Ver o que a professora recebe | — | — | — | Qualquer ordem dentro de 2. É a informação que responde ao medo central do Bruno no C03: a professora recebe só um resultado agregado da turma, sem apontar nenhum aluno (H03; decisão de design da P05). |
+| 2.3 | Ver o que não é feito com os dados | — | — | — | Qualquer ordem dentro de 2. Dizer o que **não** acontece (vídeo não é guardado, não existe avaliação individual) responde à dúvida do Bruno de forma mais direta do que só listar o que o sistema faz. Segue o padrão da página de transparência do Education Insights (Entrega 2). |
+| 3 | Tirar uma dúvida específica | — | — | 3.1 > 3.2 > [3.3] | Condição: 3.1 > 3.2 > [3.3, se não encontrar a resposta]. É opcional no Plano 0. Só acontece quando o resumo do aviso não bastou. |
+| 3.1 | Abrir as informações completas | — | — | — | Primeira operação de 3. A página completa é o equivalente, no MindFlow, da página de transparência para o aluno do Education Insights (RC04). |
+| 3.2 | Procurar a resposta para a dúvida | — | — | — | Após 3.1. As dúvidas do Bruno são concretas: “isso conta na nota?”, “a professora vê o meu rosto?”. As informações devem estar organizadas por perguntas com as palavras do aluno, e não por termos técnicos. |
+| 3.3 | Descobrir a quem perguntar | — | — | — | Opcional, quando 3.2 não resolve. No C03 (Q5), não existe nenhum canal para Bruno tirar esse tipo de dúvida, e ele nunca mandou e-mail para a professora porque achou que ia parecer estranho. A página deve indicar um contato para perguntas sobre os dados. |
+| 4 | Decidir como participar | — | — | 4.1 > (4.2 / 4.3 / 4.4) > 4.5 | A decisão é do Bruno. A interface não deve pressioná-lo para nenhuma das opções. |
+| 4.1 | Pesar o próprio conforto e a aula | — | — | — | Primeira operação de 4. Professor e aluno têm níveis diferentes de autoridade, e o participante pode não se sentir à vontade para recusar (Entrega 3, linha “Ambiente social/organizacional”). |
+| 4.2 | Ligar a câmera e participar da análise | — | — | — | Alternativa. É o caminho que a professora espera, mas não deve ser apresentado como o “certo”. |
+| 4.3 | Ligar a câmera sem participar da análise **[H]** | — | — | — | Alternativa. A forma de consentimento ou recusa ainda precisa ser investigada (Entrega 3, linha “Papéis/permissões/governança”). Se essa opção não existir, a única forma de não ser analisado é desligar a câmera, ou seja, sumir da aula. Isso reproduz exatamente o conflito do C03, em que privacidade e participação ficam presas uma à outra. |
+| 4.4 | Manter a câmera desligada | — | — | — | Alternativa. Não deve gerar consequência individual. A contagem de participantes que contribuem para o sinal, prevista para o comunicador (decisão de design da P04), precisa continuar sendo só um número, sem dizer quem está de câmera desligada. |
+| 4.5 | Conferir o indicador de participação | — | — | — | Última operação de 4. Sem confirmação, Bruno não tem certeza se a escolha dele foi aplicada. O indicador deve ser pequeno e permanente e funcionar também no celular, que é um dos dispositivos que Bruno usa para assistir aula (P05). |
+| 5 | Ajustar a participação durante a aula | — | — | 5.1 > (5.2 / 5.3) > 5.4 | Condição: 5.1 > (5.2 ou 5.3) > 5.4; executada zero ou mais vezes, sempre que a situação mudar. A escolha feita em 4 não é definitiva. O controle precisa continuar disponível durante toda a aula sem tirar a atenção do Bruno da explicação. |
+| 5.1 | Perceber que a situação mudou | — | — | — | Primeira operação de 5. Exemplos da P05 e do C03: alguém da família entra no quarto, ou Bruno percebe que está num dia em que entendeu menos e não quer se expor. |
+| 5.2 | Desligar ou religar a câmera | — | — | — | Alternativa a 5.3, quando ele também quer sumir (ou voltar a aparecer) para a turma. É feita na plataforma de videoconferência, fora do MindFlow. Ao religar a câmera, Bruno precisa saber se a análise volta junto ou continua como ele deixou. |
+| 5.3 | Pausar ou retomar só a análise **[H]** | — | — | — | Alternativa a 5.2, quando ele quer continuar visível para a turma. Depende da mesma hipótese de 4.3. Sem ela, a única forma de parar de ser analisado no meio da aula é desligar a câmera. |
+| 5.4 | Conferir o indicador de participação | — | — | — | Última operação de 5. O estado “participando” ou “pausado” precisa ser fácil de distinguir de relance. |
+| 6 | Conferir depois o que foi processado | — | — | 6.1 > 6.2 > [6.3] | Condição: 6.1 > 6.2 > [6.3, se ainda tiver dúvida]; opcional no Plano 0. Responde à última ruptura do C03: depois da aula, Bruno fica sem saber se algo pode voltar contra ele (Q5). |
+| 6.1 | Abrir o resumo de transparência da aula **[H]** | — | — | — | Primeira operação de 6. Proposta a validar com alunos. O resumo deve falar só do que aconteceu com os dados do próprio Bruno naquela aula, sem mostrar nenhum resultado da turma, já que o Semáforo e o Dashboard são exclusivos do comunicador (RC09). |
+| 6.2 | Confirmar que nada foi registrado sobre ele | — | — | — | Após 6.1. A informação que importa para o Bruno é negativa: nada foi guardado sobre ele individualmente e o vídeo não foi armazenado. |
+| 6.3 | Perguntar ao contato indicado | — | — | — | Opcional, quando 6.2 não basta. É o mesmo contato de 3.3. Ter um canal claro evita que a dúvida fique sem resposta de uma aula para outra, como acontece hoje no C03. |
 
 **Verificação do HTA:**
 
 - O objetivo 0 representa uma meta do usuário? Sim. É a meta do Bruno de assistir à aula sabendo o que acontece com a imagem dele e decidindo como participa, que é a necessidade registrada na P05. Não é uma função do sistema.
 - As subtarefas são necessárias e suficientes? Sim. Elas cobrem a aula inteira do ponto de vista do participante: antes de decidir (1 a 3), a decisão (4), a mudança de decisão durante a aula (5) e a confirmação depois (6). A subtarefa 3.3 e a 6 foram incluídas porque a falta de canal para tirar dúvidas é um dos problemas levantados no C03.
-- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. O Plano 0 tem subtarefas opcionais (3 e 6), repetição (5) e condição (quem já conhece o sistema pula de 1 para 4). Os Planos 1, 4 e 5 têm alternativas. O Plano 2 indica ordem livre. Os Planos 3 e 6 têm operações condicionais.
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim, na notação da disciplina (`>`, `/`, `+`, `*`, `[ ]`). O Plano 0 tem subtarefas opcionais (3 e 6), repetição (5) e condição (quem já conhece o sistema pula de 1 para 4). Os Planos 1, 4 e 5 têm alternativas. O Plano 2 indica ordem livre. Os Planos 3 e 6 têm operações condicionais.
 - A decomposição parou em nível útil para projeto de interação? Sim. Parou em ações que viram elementos de interface (aviso, indicador, página de informações, opções de participação, controle de pausa, resumo), sem descer a cliques em telas que ainda não foram desenhadas.
 
 ---
@@ -820,7 +745,8 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 - **OP. 1.C.2:** percorrer as perguntas com o olhar;
 - **OP. 1.C.3:** escolher a pergunta mais parecida com a própria dúvida;
 - **OP. 1.C.4:** ler a resposta;
-- **OP. 1.C.5:** se a resposta não bastar, anotar o contato indicado para perguntas sobre os dados.
+- **OP. 1.C.5:** se a resposta não bastar, anotar o contato indicado para perguntas sobre os dados;
+- **OP. 1.C.6:** verificar se já entende o que acontece com a própria imagem ou se ainda precisa perguntar ao contato (GOAL 5, METHOD 5.B).
 
 ---
 
@@ -832,7 +758,7 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 
 - **OP. 2.A.1:** clicar no botão de câmera da plataforma;
 - **OP. 2.A.2:** confirmar a participação na análise;
-- **OP. 2.A.3:** ler o estado “participando” no indicador.
+- **OP. 2.A.3:** ler o estado “participando” no indicador e confirmar que a escolha foi aplicada.
 
 #### METHOD 2.B: Ligar a câmera sem participar da análise **[H]**
 
@@ -840,14 +766,14 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 
 - **OP. 2.B.1:** clicar no botão de câmera da plataforma;
 - **OP. 2.B.2:** selecionar a opção de não participar da análise;
-- **OP. 2.B.3:** ler o estado “não participando” no indicador.
+- **OP. 2.B.3:** ler o estado “não participando” no indicador e confirmar que a escolha foi aplicada.
 
 #### METHOD 2.C: Manter a câmera desligada
 
 **SEL. RULE:** utilizar quando Bruno não quer aparecer para a turma, como no C03, em que o quarto está bagunçado e ele não estudou a aula anterior.
 
 - **OP. 2.C.1:** deixar a câmera desligada na plataforma;
-- **OP. 2.C.2:** ler o estado “não participando” no indicador.
+- **OP. 2.C.2:** ler o estado “não participando” no indicador e confirmar que a escolha foi aplicada.
 
 ---
 
@@ -890,7 +816,7 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 - **OP. 4.B.1:** localizar o controle de participação do MindFlow;
 - **OP. 4.B.2:** selecionar pausar ou retomar;
 - **OP. 4.B.3:** perceber que a câmera continuou como estava;
-- **OP. 4.B.4:** ler o novo estado no indicador.
+- **OP. 4.B.4:** ler o novo estado no indicador e confirmar que a mudança foi aplicada.
 
 ---
 
@@ -911,7 +837,9 @@ O modelo mostra por que a interface precisa separar duas coisas que hoje andam j
 
 - **OP. 5.B.1:** localizar o contato indicado nas informações completas;
 - **OP. 5.B.2:** escrever a pergunta;
-- **OP. 5.B.3:** enviar a pergunta.
+- **OP. 5.B.3:** enviar a pergunta;
+- **OP. 5.B.4:** ler a resposta recebida;
+- **OP. 5.B.5:** verificar se a resposta esclarece o que foi processado; se não, perguntar de novo.
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
@@ -1359,13 +1287,17 @@ As cinco tarefas cobrem três momentos do uso do MindFlow: **durante a sessão**
 
 ## Checklist
 
-- [x] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+Revisado depois do feedback do professor (Entrega 5).
+
+- [x] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT (T01 a T05).
 - [x] Cada artefato identifica autor e tarefa.
-- [x] Diagramas são legíveis e possuem fonte editável quando possível.
+- [x] Diagramas são legíveis e possuem fonte editável quando possível (T03, T04 e T05 com SVG; T01 e T02 em Mermaid no próprio documento).
 - [x] HTA contém planos, não apenas árvore de tópicos.
-- [x] GOMS distingue Goals, Operators, Methods e Selection Rules.
-- [x] CTT usa operadores temporais e tipos de tarefa coerentes.
+- [ ] A tabela auxiliar do HTA registra Input, Feedback e Plano na tarefa 0 — feito em T03, T04 e T05; falta em T01 e T02.
+- [ ] As operações terminais do HTA aparecem grifadas na base — feito em T03, T04 e T05; T02 ainda usa caixas com laterais duplas (`[[ ]]`).
+- [x] GOMS distingue Goals, Operators, Methods e Selection Rules (sem "method único" e sem METHOD 0.A).
+- [x] CTT usa operadores temporais e tipos de tarefa coerentes, com ao menos uma tarefa de sistema em cada modelo.
 - [x] Há texto explicando cada diagrama.
-- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
+- [x] Tarefas estão ligadas a cenários/personas na rastreabilidade (necessidades R01 a R05).
 - [x] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
 - [x] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
